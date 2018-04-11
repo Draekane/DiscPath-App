@@ -1,0 +1,28 @@
+{
+	"company": "EMSCO Group",
+	"companyId": 22,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "ESP Driver",
+		"type": "F",
+		"range": 312,
+		"hst": -41,
+		"lsf": 29
+	},	{
+		"discId": 2,
+		"name": "ESP Midrange",
+		"type": "M",
+		"range": 294,
+		"hst": -39,
+		"lsf": 27
+	},	{
+		"discId": 3,
+		"name": "ESP Putter",
+		"type": "P",
+		"range": 251,
+		"hst": -45,
+		"lsf": 18
+	}]
+}
+	

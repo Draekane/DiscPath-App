@@ -1,0 +1,14 @@
+{
+	"company": "Hole 19",
+	"companyId": 34,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "All in One",
+		"type": "P",
+		"range": 262,
+		"hst": -36,
+		"lsf": 18
+	}]
+}
+	

@@ -1,0 +1,4 @@
+export const LOAD_DISC_DATA = 'LOAD_DISC_DATA';
+export const DISABLE_DISC = 'DISABLE_DISC';
+export const ENABLE_DISC = 'ENABLE_DISC';
+export const UPDATE_DISC_WEAR = 'UPDATE_DISC_WEAR';

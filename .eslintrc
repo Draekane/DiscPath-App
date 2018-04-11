@@ -1,0 +1,51 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "globals": {
+    "describe": false,
+    "it": false,
+    "before": false,
+    "after": false,
+    "beforeEach": false,
+    "afterEach": false,
+    "expect": false
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    }
+  },
+  "extends": "airbnb",
+  "rules": {
+    "import/prefer-default-export": "off",
+    "jsx-a11y/anchor-is-valid":["error", {"specialLink":["to"]}],
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/label-has-for": [1, {"required": { "some": ["nesting", "id"] }}],
+    "linebreak-style":"off",
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "no-shadow": "off",
+    "no-use-before-define":"off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-no-bind": "off",
+    "react/no-array-index-key": 1,
+    "react/no-find-dom-node": "off",
+    "react/prefer-stateless-function": "off",
+    "react/require-default-props": "off",
+    "max-params": ["error", 5]
+  },
+  "plugins": [
+    "react"
+  ],
+  "settings": {
+    "react": {
+      "version": "16.2.0"
+    }
+  }
+}
+

@@ -1,0 +1,190 @@
+{
+	"company": "Quest AT",
+	"companyId": 53,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "Classic Inferno",
+		"type": "D",
+		"range": 423,
+		"hst": -49,
+		"lsf": 39
+	},	{
+		"discId": 2,
+		"name": "Raging Inferno",
+		"type": "D",
+		"range": 407,
+		"hst": -4,
+		"lsf": 58
+	},	{
+		"discId": 3,
+		"name": "Terminator",
+		"type": "D",
+		"range": 443,
+		"hst": -39,
+		"lsf": 89
+	},	{
+		"discId": 4,
+		"name": "Rock-It",
+		"type": "M",
+		"range": 298,
+		"hst": -41,
+		"lsf": 16
+	},	{
+		"discId": 5,
+		"name": "Crossfire",
+		"type": "P",
+		"range": 263,
+		"hst": -24,
+		"lsf": 30
+	},	{
+		"discId": 6,
+		"name": "100 M Lazer",
+		"type": "F",
+		"range": 379,
+		"hst": -38,
+		"lsf": 38
+	},	{
+		"discId": 7,
+		"name": "The Wheel",
+		"type": "P",
+		"range": 239,
+		"hst": -6,
+		"lsf": 36
+	},	{
+		"discId": 8,
+		"name": "T-Bone",
+		"type": "F",
+		"range": 356,
+		"hst": -19,
+		"lsf": 21
+	},	{
+		"discId": 9,
+		"name": "Odyssey True Line Putter",
+		"type": "P",
+		"range": 238,
+		"hst": -18,
+		"lsf": 45
+	},	{
+		"discId": 10,
+		"name": "Double D",
+		"type": "D",
+		"range": 385,
+		"hst": -7,
+		"lsf": 79
+	},	{
+		"discId": 11,
+		"name": "Odyssey Power Driver",
+		"type": "D",
+		"range": 369,
+		"hst": -28,
+		"lsf": 48
+	},	{
+		"discId": 12,
+		"name": "Odyssey Midrange & Approach",
+		"type": "M",
+		"range": 307,
+		"hst": -51,
+		"lsf": 23
+	},	{
+		"discId": 13,
+		"name": "Scorcher",
+		"type": "D",
+		"range": 368,
+		"hst": 12,
+		"lsf": 88
+	},	{
+		"discId": 14,
+		"name": "Scream Max",
+		"type": "D",
+		"range": 371,
+		"hst": 19,
+		"lsf": 57
+	},	{
+		"discId": 15,
+		"name": "Wildfire",
+		"type": "M",
+		"range": 306,
+		"hst": -49,
+		"lsf": 33
+	},	{
+		"discId": 16,
+		"name": "Backbone",
+		"type": "M",
+		"range": 307,
+		"hst": -18,
+		"lsf": 35
+	},	{
+		"discId": 17,
+		"name": "Odyssey Control Driver",
+		"type": "F",
+		"range": 304,
+		"hst": -18,
+		"lsf": 27
+	},	{
+		"discId": 18,
+		"name": "Inferno",
+		"type": "D",
+		"range": 401,
+		"hst": -34,
+		"lsf": 24
+	},	{
+		"discId": 19,
+		"name": "Raging Inferno DT",
+		"type": "D",
+		"range": 417,
+		"hst": -27,
+		"lsf": 51
+	},	{
+		"discId": 20,
+		"name": "Scream",
+		"type": "D",
+		"range": 389,
+		"hst": -19,
+		"lsf": 24
+	},	{
+		"discId": 21,
+		"name": "Odyssey Ultra Long-Range Driver",
+		"type": "D",
+		"range": 368,
+		"hst": -38,
+		"lsf": 35
+	},	{
+		"discId": 22,
+		"name": "10 M Brick",
+		"type": "P",
+		"range": 226,
+		"hst": -8,
+		"lsf": 11
+	},	{
+		"discId": 23,
+		"name": "Defender DT",
+		"type": "D",
+		"range": 383,
+		"hst": -51,
+		"lsf": 22
+	},	{
+		"discId": 24,
+		"name": "Turbo Putt",
+		"type": "P",
+		"range": 226,
+		"hst": -32,
+		"lsf": 17
+	},	{
+		"discId": 25,
+		"name": "10 M Crossfire",
+		"type": "P",
+		"range": 226,
+		"hst": -11,
+		"lsf": 17
+	},	{
+		"discId": 26,
+		"name": "Scream DT",
+		"type": "D",
+		"range": 378,
+		"hst": -53,
+		"lsf": 24
+	}]
+}
+
+	

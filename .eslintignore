@@ -1,0 +1,27 @@
+# node_modules ignored by default
+
+# Ignore files compiled from TypeScript and CoffeeScript
+**/*.{ts,coffee}.js
+
+# Ignore scss files
+**/*.scss
+
+# Ignore files in the lib folder
+**/src/client/www/*
+
+# Ignore Gulp Tasks
+./gulp/*
+
+# Ignore webpack configs
+**/webpack.*.js
+
+# Ignore webpack Dll
+**/dll/dll.*.js
+
+# Ignore tools
+./tools/*
+
+# Ignore hot reload scripts
+**/src/client/scripts/**
+
+src/client/polyfills.js

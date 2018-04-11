@@ -1,0 +1,29 @@
+{
+	"company": "Pacific Cycle",
+	"companyId": 48,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "Mercury",
+		"type": "P",
+		"range": 228,
+		"hst": -22,
+		"lsf": 4
+	},	{
+		"discId": 2,
+		"name": "Saturn",
+		"type": "M",
+		"range": 288,
+		"hst": -47,
+		"lsf": 13
+	},	{
+		"discId": 3,
+		"name": "Pluto",
+		"type": "F",
+		"range": 292,
+		"hst": -55,
+		"lsf": 13
+	}]
+}
+
+	

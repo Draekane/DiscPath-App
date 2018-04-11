@@ -1,0 +1,64 @@
+{
+	"company": "Kastaplast",
+	"companyId": 37,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "Falk",
+		"type": "F",
+		"range": 368,
+		"hst": -38,
+		"lsf": 38
+	},	{
+		"discId": 2,
+		"name": "Grym X",
+		"type": "D",
+		"range": 418,
+		"hst": 0,
+		"lsf": 59
+	},	{
+		"discId": 3,
+		"name": "Kaxe",
+		"type": "M",
+		"range": 305,
+		"hst": 0,
+		"lsf": 44
+	},	{
+		"discId": 4,
+		"name": "Grym",
+		"type": "D",
+		"range": 432,
+		"hst": -29,
+		"lsf": 49
+	},	{
+		"discId": 5,
+		"name": "Reko",
+		"type": "P",
+		"range": 258,
+		"hst": 0,
+		"lsf": 18
+	},	{
+		"discId": 6,
+		"name": "Kaxe Z",
+		"type": "M",
+		"range": 305,
+		"hst": -9,
+		"lsf": 32
+	},	{
+		"discId": 7,
+		"name": "Berg",
+		"type": "P",
+		"range": 228,
+		"hst": 0,
+		"lsf": 36
+	},	{
+		"discId": 8,
+		"name": "Rask",
+		"type": "D",
+		"range": 401,
+		"hst": 2,
+		"lsf": 80
+	}]
+}
+
+	

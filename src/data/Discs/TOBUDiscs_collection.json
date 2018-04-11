@@ -1,0 +1,22 @@
+{
+	"company": "TOBU Discs",
+	"companyId": 62,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "Kyng Roller",
+		"type": "F",
+		"range": 344,
+		"hst": -76,
+		"lsf": 19
+	},	{
+		"discId": 2,
+		"name": "Charge",
+		"type": "F",
+		"range": 350,
+		"hst": -23,
+		"lsf": 38
+	}]
+}
+
+	

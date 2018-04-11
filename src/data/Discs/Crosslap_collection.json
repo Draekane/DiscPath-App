@@ -1,0 +1,20 @@
+{
+	"company": "Crosslap",
+	"companyId": 11,
+	"discs": [
+	{
+      "discId": 1,
+      "name": "Credo",
+      "range": 253,
+      "hst": 0,
+      "lsf": 54,
+      "type": "P"
+    },{
+      "discId": 2,
+      "name": "Lucky",
+      "range": 297,
+      "hst": -37,
+      "lsf": 18,
+      "type": "M"
+    }]
+}

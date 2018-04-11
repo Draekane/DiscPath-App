@@ -1,0 +1,41 @@
+{
+	"company": "Aerobie",
+	"companyId": 4,
+	"discs": [
+	{
+      "discId": 1,
+      "name": "Arrow",
+      "range": 239,
+      "hst": 0,
+      "lsf": 45,
+      "type": "P"
+    },{
+      "discId": 2,
+      "name": "Epic",
+      "range": 367,
+      "hst": -38,
+      "lsf": 76,
+      "type": "D"
+    },{
+      "discId": 3,
+      "name": "Sharpshooter #1",
+      "range": 309,
+      "hst": 0,
+      "lsf": 56,
+      "type": "F"
+    },{
+      "discId": 4,
+      "name": "Sharpshooter #2",
+      "range": 263,
+      "hst": 0,
+      "lsf": 54,
+      "type": "M"
+    },{
+      "discId": 5,
+      "name": "Sharpshooter #3",
+      "range": 238,
+      "hst": 0,
+      "lsf": 54,
+      "type": "P"
+    }]
+}

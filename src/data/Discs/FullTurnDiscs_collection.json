@@ -1,0 +1,49 @@
+{
+	"company": "Full Turn Discs",
+	"companyId": 29,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "Passport",
+		"type": "M",
+		"range": 278,
+		"hst": -18,
+		"lsf": 18
+	},	{
+		"discId": 2,
+		"name": "Navigator",
+		"type": "M",
+		"range": 294,
+		"hst": -18,
+		"lsf": 37
+	},	{
+		"discId": 3,
+		"name": "Traveler",
+		"type": "F",
+		"range": 364,
+		"hst": 0,
+		"lsf": 38
+	},	{
+		"discId": 4,
+		"name": "Drifter",
+		"type": "F",
+		"range": 363,
+		"hst": -19,
+		"lsf": 38
+	},	{
+		"discId": 5,
+		"name": "Voyage",
+		"type": "D",
+		"range": 418,
+		"hst": 0,
+		"lsf": 59
+	},	{
+		"discId": 6,
+		"name": "Cruise",
+		"type": "D",
+		"range": 431,
+		"hst": -39,
+		"lsf": 59
+	}]
+}
+	

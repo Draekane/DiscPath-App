@@ -1,0 +1,202 @@
+{
+	"company": "DynamicDiscs",
+	"companyId": 21,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "Deputy",
+		"type": "P",
+		"range": 261,
+		"hst": -27,
+		"lsf": 0
+	},{
+		"discId": 2,
+		"name": "Escape",
+		"type": "F",
+		"range": 373,
+		"hst": -19,
+		"lsf": 43
+	},{
+		"discId": 3,
+		"name": "Sheriff",
+		"type": "D",
+		"range": 436,
+		"hst": -1,
+		"lsf": 39
+	},{
+		"discId": 4,
+		"name": "Judge",
+		"type": "P",
+		"range": 250,
+		"hst": -9,
+		"lsf": 18
+	},{
+		"discId": 5,
+		"name": "Slammer",
+		"type": "P",
+		"range": 253,
+		"hst": 0,
+		"lsf": 54
+	},{
+		"discId": 6,
+		"name": "Evidence",
+		"type": "M",
+		"range": 294,
+		"hst": -21,
+		"lsf": 15
+	},{
+		"discId": 7,
+		"name": "Suspect",
+		"type": "M",
+		"range": 272,
+		"hst": 0,
+		"lsf": 52
+	},{
+		"discId": 8,
+		"name": "Witness",
+		"type": "F",
+		"range": 358,
+		"hst": -53,
+		"lsf": 25
+	},{
+		"discId": 9,
+		"name": "Criminal",
+		"type": "F",
+		"range": 376,
+		"hst": 19,
+		"lsf": 77
+	},{
+		"discId": 10,
+		"name": "Felon",
+		"type": "D",
+		"range": 355,
+		"hst": 3,
+		"lsf": 79
+	},{
+		"discId": 11,
+		"name": "Breakout",
+		"type": "F",
+		"range": 358,
+		"hst": -23,
+		"lsf": 38
+	},{
+		"discId": 12,
+		"name": "Warrant",
+		"type": "M",
+		"range": 298,
+		"hst": -37,
+		"lsf": 0
+	},{
+		"discId": 13,
+		"name": "Marshal",
+		"type": "P",
+		"range": 261,
+		"hst": 0,
+		"lsf": 18
+	},{
+		"discId": 14,
+		"name": "Thief",
+		"type": "F",
+		"range": 350,
+		"hst": -12,
+		"lsf": 44
+	},{
+		"discId": 15,
+		"name": "Warden",
+		"type": "P",
+		"range": 254,
+		"hst": -1,
+		"lsf": 20
+	},{
+		"discId": 16,
+		"name": "Renegade",
+		"type": "D",
+		"range": 418,
+		"hst": -36,
+		"lsf": 58
+	},{
+		"discId": 17,
+		"name": "Proof",
+		"type": "M",
+		"range": 301,
+		"hst": -55,
+		"lsf": 18
+	},{
+		"discId": 18,
+		"name": "EMACTruth",
+		"type": "M",
+		"range": 300,
+		"hst": 0,
+		"lsf": 37
+	},{
+		"discId": 19,
+		"name": "Enforcer",
+		"type": "D",
+		"range": 414,
+		"hst": 6,
+		"lsf": 78
+	},{
+		"discId": 20,
+		"name": "Freedom",
+		"type": "D",
+		"range": 448,
+		"hst": -39,
+		"lsf": 59
+	},{
+		"discId": 21,
+		"name": "Fugitive",
+		"type": "M",
+		"range": 299,
+		"hst": -16,
+		"lsf": 32
+	},{
+		"discId": 22,
+		"name": "Defender",
+		"type": "D",
+		"range": 438,
+		"hst": 0,
+		"lsf": 59
+	},{
+		"discId": 23,
+		"name": "Justice",
+		"type": "M",
+		"range": 274,
+		"hst": 9,
+		"lsf": 64
+	},{
+		"discId": 24,
+		"name": "Gavel",
+		"type": "P",
+		"range": 265,
+		"hst": -36,
+		"lsf": 13
+	},{
+		"discId": 25,
+		"name": "Trespass",
+		"type": "D",
+		"range": 431,
+		"hst": -14,
+		"lsf": 56
+	},{
+		"discId": 26,
+		"name": "Verdict",
+		"type": "M",
+		"range": 289,
+		"hst": 0,
+		"lsf": 60
+	},{
+		"discId": 27,
+		"name": "Truth",
+		"type": "M",
+		"range": 305,
+		"hst": -2,
+		"lsf": 37
+	},{
+		"discId": 28,
+		"name": "Convict",
+		"type": "F",
+		"range": 363,
+		"hst": -9,
+		"lsf": 57
+	}]
+}

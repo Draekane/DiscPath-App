@@ -1,0 +1,155 @@
+{
+	"company": "Millenium",
+	"companyId": 43,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "Omega Big Bead",
+		"type": "P",
+		"range": 246,
+		"hst": -3,
+		"lsf": 33
+	},	{
+		"discId": 2,
+		"name": "EXP1",
+		"type": "D",
+		"range": 368,
+		"hst": 19,
+		"lsf": 76
+	},	{
+		"discId": 3,
+		"name": "Omega Super Soft Putter",
+		"type": "P",
+		"range": 247,
+		"hst": -18,
+		"lsf": 20
+	},	{
+		"discId": 4,
+		"name": "Sentinel MF",
+		"type": "M",
+		"range": 291,
+		"hst": 0,
+		"lsf": 69
+	},	{
+		"discId": 5,
+		"name": "Polaris LF",
+		"type": "F",
+		"range": 357,
+		"hst": -28,
+		"lsf": 47
+	},	{
+		"discId": 6,
+		"name": "Aquarius",
+		"type": "D",
+		"range": 381,
+		"hst": -77,
+		"lsf": 38
+	},	{
+		"discId": 7,
+		"name": "Polaris LS",
+		"type": "F",
+		"range": 341,
+		"hst": -33,
+		"lsf": 28
+	},	{
+		"discId": 8,
+		"name": "Taurus",
+		"type": "M",
+		"range": 276,
+		"hst": 0,
+		"lsf": 73
+	},	{
+		"discId": 9,
+		"name": "Omega AP",
+		"type": "P",
+		"range": 245,
+		"hst": -12,
+		"lsf": 18
+	},	{
+		"discId": 10,
+		"name": "Orion LF",
+		"type": "D",
+		"range": 384,
+		"hst": -16,
+		"lsf": 48
+	},	{
+		"discId": 11,
+		"name": "Aries",
+		"type": "D",
+		"range": 424,
+		"hst": -49,
+		"lsf": 39
+	},	{
+		"discId": 12,
+		"name": "Aurora MF",
+		"type": "M",
+		"range": 281,
+		"hst": 0,
+		"lsf": 36
+	},	{
+		"discId": 13,
+		"name": "Quasar",
+		"type": "D",
+		"range": 443,
+		"hst": -12,
+		"lsf": 72
+	},	{
+		"discId": 14,
+		"name": "Orion LS",
+		"type": "D",
+		"range": 385,
+		"hst": -31,
+		"lsf": 38
+	},	{
+		"discId": 15,
+		"name": "Tachyon LS",
+		"type": "F",
+		"range": 309,
+		"hst": -24,
+		"lsf": 48
+	},	{
+		"discId": 16,
+		"name": "Scorpius",
+		"type": "D",
+		"range": 431,
+		"hst": -12,
+		"lsf": 59
+	},	{
+		"discId": 17,
+		"name": "Astra",
+		"type": "D",
+		"range": 416,
+		"hst": -44,
+		"lsf": 44
+	},	{
+		"discId": 18,
+		"name": "Aurora MS",
+		"type": "M",
+		"range": 285,
+		"hst": -13,
+		"lsf": 13
+	},	{
+		"discId": 19,
+		"name": "Tachyon LF",
+		"type": "F",
+		"range": 306,
+		"hst": 25,
+		"lsf": 91
+	},	{
+		"discId": 20,
+		"name": "Astra-X",
+		"type": "D",
+		"range": 401,
+		"hst": -29,
+		"lsf": 48
+	},	{
+		"discId": 21,
+		"name": "JLS",
+		"type": "F",
+		"range": 362,
+		"hst": -33,
+		"lsf": 35
+	}]
+}
+
+	

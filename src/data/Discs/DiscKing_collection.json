@@ -1,0 +1,13 @@
+{
+	"company": "Disc King",
+	"companyId": 17,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "Lex",
+		"type": "P",
+		"range": 244,
+		"hst": 0,
+		"lsf": 27
+	}]
+}

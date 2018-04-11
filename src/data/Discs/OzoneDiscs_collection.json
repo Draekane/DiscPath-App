@@ -1,0 +1,36 @@
+{
+	"company": "Ozone Discs",
+	"companyId": 47,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "Andro C",
+		"type": "M",
+		"range": 311,
+		"hst": -18,
+		"lsf": 37
+	},	{
+		"discId": 2,
+		"name": "Andro 1",
+		"type": "M",
+		"range": 310,
+		"hst": -18,
+		"lsf": 37
+	},	{
+		"discId": 3,
+		"name": "Andro C (Retooled)",
+		"type": "M",
+		"range": 311,
+		"hst": -37,
+		"lsf": 18
+	},	{
+		"discId": 4,
+		"name": "Hyperion",
+		"type": "D",
+		"range": 400,
+		"hst": 0,
+		"lsf": 78
+	}]
+}
+
+	

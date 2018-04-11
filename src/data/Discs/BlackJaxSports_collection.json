@@ -1,0 +1,27 @@
+{
+	"company": "Black Jax Sports",
+	"companyId": 8,
+	"discs": [
+	{
+      "discId": 1,
+      "name": "Axe Driver",
+      "range": 338,
+      "hst": 0,
+      "lsf": 66,
+      "type": "F"
+    },{
+      "discId": 2,
+      "name": "Midknight",
+      "range": 276,
+      "hst": -36,
+      "lsf": 27,
+      "type": "F"
+    },{
+      "discId": 3,
+      "name": "PinDRAGON",
+      "range": 241,
+      "hst": -45,
+      "lsf": 27,
+      "type": "M"
+    }]
+}

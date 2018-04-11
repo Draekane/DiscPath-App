@@ -1,0 +1,14 @@
+{
+	"company": "Destiny Discs",
+	"companyId": 16,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "Super Puppy",
+		"type": "P",
+		"range": 236,
+		"hst": -36,
+		"lsf": 18
+	}]
+}
+	

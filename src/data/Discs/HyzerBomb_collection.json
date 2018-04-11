@@ -1,0 +1,42 @@
+{
+	"company": "Hyzer Bomb",
+	"companyId": 35,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "Mortar",
+		"type": "M",
+		"range": 283,
+		"hst": 3,
+		"lsf": 55
+	},	{
+		"discId": 2,
+		"name": "MOAB",
+		"type": "F",
+		"range": 306,
+		"hst": 25,
+		"lsf": 92
+	},	{
+		"discId": 3,
+		"name": "Panzer Tank",
+		"type": "P",
+		"range": 242,
+		"hst": 0,
+		"lsf": 47
+	},	{
+		"discId": 4,
+		"name": "Tank",
+		"type": "P",
+		"range": 241,
+		"hst": 0,
+		"lsf": 36
+	},	{
+		"discId": 5,
+		"name": "Veteran",
+		"type": "F",
+		"range": 350,
+		"hst": -4,
+		"lsf": 57
+	}]
+}
+	

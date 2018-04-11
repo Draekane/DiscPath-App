@@ -1,0 +1,22 @@
+{
+	"company": "Streamline",
+	"companyId": 61,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "Trace",
+		"type": "D",
+		"range": 401,
+		"hst": -19,
+		"lsf": 39
+	},	{
+		"discId": 2,
+		"name": "Pilot",
+		"type": "P",
+		"range": 246,
+		"hst": -18,
+		"lsf": 18
+	}]
+}
+
+	

@@ -1,0 +1,29 @@
+{
+	"company": "RIP",
+	"companyId": 54,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "Relic",
+		"type": "P",
+		"range": 257,
+		"hst": -27,
+		"lsf": 36
+	},	{
+		"discId": 2,
+		"name": "Grabboid",
+		"type": "P",
+		"range": 259,
+		"hst": 4,
+		"lsf": 54
+	},	{
+		"discId": 3,
+		"name": "Ballistic",
+		"type": "D",
+		"range": 412,
+		"hst": -39,
+		"lsf": 58
+	}]
+}
+
+	

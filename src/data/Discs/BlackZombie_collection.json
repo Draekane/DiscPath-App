@@ -1,0 +1,13 @@
+{
+	"company": "Black Zombie",
+	"companyId": 9,
+	"discs": [
+	{
+      "discId": 1,
+      "name": "Chainsaw",
+      "range": 292,
+      "hst": 0,
+      "lsf": 18,
+      "type": "P"
+    }]
+}

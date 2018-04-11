@@ -1,0 +1,49 @@
+{
+	"company": "Element Discs",
+	"companyId": 23,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "Chromium",
+		"type": "F",
+		"range": 367,
+		"hst": -19,
+		"lsf": 19
+	},	{
+		"discId": 2,
+		"name": "Uranium",
+		"type": "M",
+		"range": 272,
+		"hst": 0,
+		"lsf": 36
+	},	{
+		"discId": 3,
+		"name": "Radium",
+		"type": "M",
+		"range": 310,
+		"hst": -18,
+		"lsf": 56
+	},	{
+		"discId": 4,
+		"name": "Lithium",
+		"type": "M",
+		"range": 294,
+		"hst": -37,
+		"lsf": 18
+	},	{
+		"discId": 5,
+		"name": "Iridium",
+		"type": "P",
+		"range": 240,
+		"hst": 0,
+		"lsf": 36
+	},	{
+		"discId": 6,
+		"name": "Plutonium",
+		"type": "P",
+		"range": 258,
+		"hst": 0,
+		"lsf": 18
+	}]
+}
+	

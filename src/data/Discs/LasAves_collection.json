@@ -1,0 +1,21 @@
+{
+	"company": "Las Aves",
+	"companyId": 38,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "Wo-Hoo",
+		"type": "F",
+		"range": 315,
+		"hst": 0,
+		"lsf": 37
+	},	{
+		"discId": 2,
+		"name": "Ka-Kaa",
+		"type": "D",
+		"range": 417,
+		"hst": -39,
+		"lsf": 39
+	}]
+}
+	

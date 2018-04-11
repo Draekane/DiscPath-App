@@ -1,0 +1,189 @@
+{
+	"company": "DGA",
+	"companyId": 12,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "Shockwave",
+		"type": "M",
+		"range": 279,
+		"hst": -2,
+		"lsf": 48
+	},{
+		"discId": 2,
+		"name": "Sail",
+		"type": "D",
+		"range": 400,
+		"hst": -97,
+		"lsf": 19
+	},{
+		"discId": 3,
+		"name": "Hellfire",
+		"type": "D",
+		"range": 354,
+		"hst": 4,
+		"lsf": 81
+	},{
+		"discId": 4,
+		"name": "Blowfly",
+		"type": "P",
+		"range": 244,
+		"hst": -13,
+		"lsf": 36
+	},{
+		"discId": 5,
+		"name": "Blowfly II",
+		"type": "P",
+		"range": 241,
+		"hst": -27,
+		"lsf": 22
+	},{
+		"discId": 6,
+		"name": "Blunt Driver",
+		"type": "P",
+		"range": 260,
+		"hst": -18,
+		"lsf": 36
+	},{
+		"discId": 7,
+		"name": "Blunt Gumbputt",
+		"type": "P",
+		"range": 253,
+		"hst": -13,
+		"lsf": 27
+	},{
+		"discId": 8,
+		"name": "Flathead Cyclone",
+		"type": "F",
+		"range": 331,
+		"hst": -18,
+		"lsf": 37
+	},{
+		"discId": 9,
+		"name": "Powerdrive Gumbputt",
+		"type": "P",
+		"range": 264,
+		"hst": -30,
+		"lsf": 18
+	},{
+		"discId": 10,
+		"name": "Rogue",
+		"type": "D",
+		"range": 408,
+		"hst": -19,
+		"lsf": 48
+	},{
+		"discId": 11,
+		"name": "Hurricane",
+		"type": "D",
+		"range": 431,
+		"hst": -19,
+		"lsf": 46
+	},{
+		"discId": 12,
+		"name": "Undertow",
+		"type": "F",
+		"range": 364,
+		"hst": -31,
+		"lsf": 28
+	},{
+		"discId": 13,
+		"name": "Breaker",
+		"type": "P",
+		"range": 255,
+		"hst": 0,
+		"lsf": 47
+	},{
+		"discId": 14,
+		"name": "Tsunami",
+		"type": "D",
+		"range": 383,
+		"hst": 0,
+		"lsf": 70
+	},{
+		"discId": 15,
+		"name": "Tremor",
+		"type": "M",
+		"range": 312,
+		"hst": -74,
+		"lsf": 18
+	},{
+		"discId": 16,
+		"name": "Torrent",
+		"type": "D",
+		"range": 453,
+		"hst": -29,
+		"lsf": 55
+	},{
+		"discId": 17,
+		"name": "Riptide",
+		"type": "D",
+		"range": 381,
+		"hst": -6,
+		"lsf": 58
+	},{
+		"discId": 18,
+		"name": "Reef",
+		"type": "P",
+		"range": 242,
+		"hst": -22,
+		"lsf": 22
+	},{
+		"discId": 19,
+		"name": "Pipeline",
+		"type": "F",
+		"range": 352,
+		"hst": 0,
+		"lsf": 38
+	},{
+		"discId": 20,
+		"name": "Squall",
+		"type": "M",
+		"range": 299,
+		"hst": -18,
+		"lsf": 25
+	},{
+		"discId": 21,
+		"name": "Steady",
+		"type": "P",
+		"range": 245,
+		"hst": 0,
+		"lsf": 36
+	},{
+		"discId": 22,
+		"name": "Aftershock",
+		"type": "M",
+		"range": 283,
+		"hst": -4,
+		"lsf": 36
+	},{
+		"discId": 23,
+		"name": "Titanic",
+		"type": "P",
+		"range": 244,
+		"hst": 0,
+		"lsf": 36
+	},{
+		"discId": 24,
+		"name": "Quake",
+		"type": "M",
+		"range": 291,
+		"hst": 0,
+		"lsf": 55
+	},{
+		"discId": 25,
+		"name": "GlowFly",
+		"type": "P",
+		"range": 236,
+		"hst": -18,
+		"lsf": 36
+	},{
+		"discId": 26,
+		"name": "XL-Superdrive",
+		"type": "F",
+		"range": 347,
+		"hst": -19,
+		"lsf": 28
+	}]
+}
+	

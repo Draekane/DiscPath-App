@@ -1,0 +1,64 @@
+{
+	"company": "DKG",
+	"companyId": 13,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "Tempest",
+		"type": "D",
+		"range": 421,
+		"hst": -39,
+		"lsf": 59
+	},{
+		"discId": 2,
+		"name": "Miracle",
+		"type": "F",
+		"range": 307,
+		"hst": -93,
+		"lsf": 37
+	},{
+		"discId": 3,
+		"name": "Merc",
+		"type": "D",
+		"range": 421,
+		"hst": 0,
+		"lsf": 78
+	},{
+		"discId": 4,
+		"name": "Kraken",
+		"type": "D",
+		"range": 420,
+		"hst": -59,
+		"lsf": 59
+	},{
+		"discId": 5,
+		"name": "Boom",
+		"type": "D",
+		"range": 421,
+		"hst": -19,
+		"lsf": 59
+	},{
+		"discId": 6,
+		"name": "Protege",
+		"type": "D",
+		"range": 420,
+		"hst": -78,
+		"lsf": 39
+	},{
+		"discId": 7,
+		"name": "Hail Mary",
+		"type": "D",
+		"range": 344,
+		"hst": -19,
+		"lsf": 38
+	},{
+		"discId": 8,
+		"name": "Wing and a Prayer",
+		"type": "F",
+		"range": 326,
+		"hst": -56,
+		"lsf": 18
+	}]
+}
+
+	

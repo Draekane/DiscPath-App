@@ -1,0 +1,204 @@
+{
+	"company": "Lightning",
+	"companyId": 41,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "#3 Driver",
+		"type": "F",
+		"range": 324,
+		"hst": -28,
+		"lsf": 56
+	},	{
+		"discId": 2,
+		"name": "U-2",
+		"type": "P",
+		"range": 243,
+		"hst": -18,
+		"lsf": 18
+	},	{
+		"discId": 3,
+		"name": "#1 Driver",
+		"type": "F",
+		"range": 335,
+		"hst": -37,
+		"lsf": 41
+	},	{
+		"discId": 4,
+		"name": "#3 Flyer",
+		"type": "F",
+		"range": 314,
+		"hst": -28,
+		"lsf": 37
+	},	{
+		"discId": 5,
+		"name": "#2 Hyzer",
+		"type": "M",
+		"range": 288,
+		"hst": 18,
+		"lsf": 74
+	},	{
+		"discId": 6,
+		"name": "#1 Roller",
+		"type": "F",
+		"range": 330,
+		"hst": -25,
+		"lsf": 18
+	},	{
+		"discId": 7,
+		"name": "#3 Slice",
+		"type": "M",
+		"range": 292,
+		"hst": -23,
+		"lsf": 37
+	},	{
+		"discId": 8,
+		"name": "#1 Slice",
+		"type": "F",
+		"range": 325,
+		"hst": -50,
+		"lsf": 28
+	},	{
+		"discId": 9,
+		"name": "#1 Flyer",
+		"type": "D",
+		"range": 352,
+		"hst": -15,
+		"lsf": 41
+	},	{
+		"discId": 10,
+		"name": "#2 Driver",
+		"type": "F",
+		"range": 341,
+		"hst": -18,
+		"lsf": 56
+	},	{
+		"discId": 11,
+		"name": "MX-1",
+		"type": "D",
+		"range": 403,
+		"hst": -39,
+		"lsf": 58
+	},	{
+		"discId": 12,
+		"name": "#4 Driver",
+		"type": "F",
+		"range": 334,
+		"hst": -28,
+		"lsf": 56
+	},	{
+		"discId": 13,
+		"name": "#2 Flyer",
+		"type": "D",
+		"range": 348,
+		"hst": -25,
+		"lsf": 44
+	},	{
+		"discId": 14,
+		"name": "#2 Putter",
+		"type": "P",
+		"range": 227,
+		"hst": -35,
+		"lsf": 17
+	},	{
+		"discId": 15,
+		"name": "#2 Helix",
+		"type": "D",
+		"range": 363,
+		"hst": -15,
+		"lsf": 51
+	},	{
+		"discId": 16,
+		"name": "#3 Hookshot",
+		"type": "M",
+		"range": 281,
+		"hst": -9,
+		"lsf": 36
+	},	{
+		"discId": 17,
+		"name": "#2 Roller",
+		"type": "F",
+		"range": 305,
+		"hst": -18,
+		"lsf": 56
+	},	{
+		"discId": 18,
+		"name": "#1 Helix",
+		"type": "D",
+		"range": 347,
+		"hst": -19,
+		"lsf": 57
+	},	{
+		"discId": 19,
+		"name": "#2 Slice",
+		"type": "F",
+		"range": 314,
+		"hst": -56,
+		"lsf": 14
+	},	{
+		"discId": 20,
+		"name": "#2 Upshot",
+		"type": "M",
+		"range": 247,
+		"hst": -18,
+		"lsf": 18
+	},	{
+		"discId": 21,
+		"name": "#3 Hyzer",
+		"type": "M",
+		"range": 279,
+		"hst": 0,
+		"lsf": 73
+	},	{
+		"discId": 22,
+		"name": "#2 Hookshot",
+		"type": "M",
+		"range": 293,
+		"hst": -13,
+		"lsf": 55
+	},	{
+		"discId": 23,
+		"name": "#1 Hookshot",
+		"type": "F",
+		"range": 305,
+		"hst": -9,
+		"lsf": 56
+	},	{
+		"discId": 24,
+		"name": "Driver",
+		"type": "D",
+		"range": 345,
+		"hst": -19,
+		"lsf": 57
+	},	{
+		"discId": 25,
+		"name": "K-2",
+		"type": "M",
+		"range": 276,
+		"hst": -18,
+		"lsf": 55
+	},	{
+		"discId": 26,
+		"name": "#1 Hyzer",
+		"type": "F",
+		"range": 317,
+		"hst": 0,
+		"lsf": 75
+	},	{
+		"discId": 27,
+		"name": "Rubber Putter",
+		"type": "P",
+		"range": 256,
+		"hst": -18,
+		"lsf": 18
+	},	{
+		"discId": 28,
+		"name": "Upshot",
+		"type": "P",
+		"range": 240,
+		"hst": -36,
+		"lsf": 0
+	}]
+}
+
+	

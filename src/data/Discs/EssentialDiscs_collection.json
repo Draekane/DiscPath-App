@@ -1,0 +1,14 @@
+{
+	"company": "Essential Discs",
+	"companyId": 24,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "Honey",
+		"type": "M",
+		"range": 277,
+		"hst": 0,
+		"lsf": 42
+	}]
+}
+	

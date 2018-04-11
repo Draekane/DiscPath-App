@@ -1,0 +1,22 @@
+{
+	"company": "Plastic Addicts",
+	"companyId": 50,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "Habit",
+		"type": "P",
+		"range": 265,
+		"hst": -1,
+		"lsf": 2
+	},	{
+		"discId": 2,
+		"name": "Intervention",
+		"type": "D",
+		"range": 409,
+		"hst": 0,
+		"lsf": 78
+	}]
+}
+
+	

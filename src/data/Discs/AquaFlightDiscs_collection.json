@@ -1,0 +1,41 @@
+{
+	"company": "AquaFlight Disc",
+	"companyId": 5,
+	"discs": [
+	{
+      "discId": 1,
+      "name": "Dragonfly",
+      "range": 294,
+      "hst": -46,
+      "lsf": 37,
+      "type": "M"
+    },{
+      "discId": 2,
+      "name": "Osprey",
+      "range": 433,
+      "hst": -39,
+      "lsf": 39,
+      "type": "D"
+    },{
+      "discId": 3,
+      "name": "Peace Frog",
+      "range": 26,
+      "hst": 0,
+      "lsf": 18,
+      "type": "P"
+    },{
+      "discId": 4,
+      "name": "Pelican",
+      "range": 328,
+      "hst": -50,
+      "lsf": 37,
+      "type": "F"
+    },{
+      "discId": 5,
+      "name": "Swift",
+      "range": 367,
+      "hst": -38,
+      "lsf": 19,
+      "type": "F"
+    }]
+}

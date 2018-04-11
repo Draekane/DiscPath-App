@@ -1,0 +1,21 @@
+{
+	"company": "GGGT",
+	"companyId": 30,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "Optimizer",
+		"type": "M",
+		"range": 277,
+		"hst": -55,
+		"lsf": 0
+	},	{
+		"discId": 2,
+		"name": "Maximizer",
+		"type": "F",
+		"range": 330,
+		"hst": -56,
+		"lsf": 9
+	}]
+}
+	

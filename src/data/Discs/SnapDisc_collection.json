@@ -1,0 +1,22 @@
+{
+	"company": "Snap Disc",
+	"companyId": 60,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "Whitler",
+		"type": "P",
+		"range": 241,
+		"hst": -36,
+		"lsf": 15
+	},	{
+		"discId": 2,
+		"name": "Helios",
+		"type": "D",
+		"range": 394,
+		"hst": -48,
+		"lsf": 32
+	}]
+}
+
+	

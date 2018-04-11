@@ -1,0 +1,35 @@
+{
+	"company": "Guru",
+	"companyId": 33,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "Mjolner",
+		"type": "P",
+		"range": 241,
+		"hst": 0,
+		"lsf": 18
+	},	{
+		"discId": 2,
+		"name": "Midgard",
+		"type": "F",
+		"range": 315,
+		"hst": -18,
+		"lsf": 18
+	},	{
+		"discId": 3,
+		"name": "Thor",
+		"type": "M",
+		"range": 278,
+		"hst": 0,
+		"lsf": 36
+	},	{
+		"discId": 4,
+		"name": "Sleipner",
+		"type": "D",
+		"range": 450,
+		"hst": -19,
+		"lsf": 39
+	}]
+}
+	

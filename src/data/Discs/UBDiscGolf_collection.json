@@ -1,0 +1,29 @@
+{
+	"company": "UB Disc Golf",
+	"companyId": 63,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "Lex (Original)",
+		"type": "P",
+		"range": 239,
+		"hst": 0,
+		"lsf": 18
+	},	{
+		"discId": 2,
+		"name": "Procul",
+		"type": "D",
+		"range": 404,
+		"hst": -45,
+		"lsf": 45
+	},	{
+		"discId": 3,
+		"name": "Monstrum",
+		"type": "D",
+		"range": 411,
+		"hst": -9,
+		"lsf": 58
+	}]
+}
+
+	

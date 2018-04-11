@@ -1,0 +1,76 @@
+{
+	"company": "CHING",
+	"companyId": 10,
+	"discs": [
+	{
+      "discId": 1,
+      "name": "Bomb",
+      "range": 326,
+      "hst": -14,
+      "lsf": 47,
+      "type": "F"
+    },{
+      "discId": 2,
+      "name": "Genesis",
+      "range": 40,
+      "hst": -3,
+      "lsf": 58,
+      "type": "D"
+    },{
+      "discId": 3,
+      "name": "Juju",
+      "range": 256,
+      "hst": -18,
+      "lsf": 18,
+      "type": "P"
+    },{
+      "discId": 4,
+      "name": "Legacy",
+      "range": 279,
+      "hst": -18,
+      "lsf": 36,
+      "type": "M"
+    },{
+      "discId": 5,
+      "name": "Oracle",
+      "range": 279,
+      "hst": -18,
+      "lsf": 18,
+      "type": "M"
+    },{
+      "discId": 6,
+      "name": "Precision",
+      "range": 292,
+      "hst": -21,
+      "lsf": 34,
+      "type": "M"
+    },{
+      "discId": 7,
+      "name": "Sniper",
+      "range": 295,
+      "hst": 0,
+      "lsf": 37,
+      "type": "M"
+    },{
+      "discId": 8,
+      "name": "Stinger",
+      "range": 271,
+      "hst": -55,
+      "lsf": 18,
+      "type": "M"
+    },{
+      "discId": 9,
+      "name": "Tank (Original)",
+      "range": 240,
+      "hst": 0,
+      "lsf": 36,
+      "type": "P"
+    },{
+      "discId": 10,
+      "name": "Velocity",
+      "range": 346,
+      "hst": -34,
+      "lsf": 38,
+      "type": "F"
+    }]
+}

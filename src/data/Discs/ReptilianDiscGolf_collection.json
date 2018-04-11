@@ -1,0 +1,64 @@
+{
+	"company": "Reptilian Disc Golf",
+	"companyId": 56,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "Croc",
+		"type": "M",
+		"range": 278,
+		"hst": 0,
+		"lsf": 36
+	},	{
+		"discId": 2,
+		"name": "Serpent",
+		"type": "P",
+		"range": 258,
+		"hst": -9,
+		"lsf": 18
+	},	{
+		"discId": 3,
+		"name": "Raptor",
+		"type": "F",
+		"range": 359,
+		"hst": 4,
+		"lsf": 76
+	},	{
+		"discId": 4,
+		"name": "Ptero",
+		"type": "F",
+		"range": 333,
+		"hst": -18,
+		"lsf": 18
+	},	{
+		"discId": 5,
+		"name": "Scale",
+		"type": "P",
+		"range": 245,
+		"hst": 0,
+		"lsf": 54
+	},	{
+		"discId": 6,
+		"name": "Stego",
+		"type": "P",
+		"range": 217,
+		"hst": 17,
+		"lsf": 71
+	},	{
+		"discId": 7,
+		"name": "Tyrant",
+		"type": "F",
+		"range": 329,
+		"hst": 0,
+		"lsf": 56
+	},	{
+		"discId": 8,
+		"name": "Gila",
+		"type": "M",
+		"range": 294,
+		"hst": 0,
+		"lsf": 55
+	}]
+}
+
+	

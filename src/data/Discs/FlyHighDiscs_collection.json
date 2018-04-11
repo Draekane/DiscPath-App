@@ -1,0 +1,56 @@
+{
+	"company": "Fly High Discs",
+	"companyId": 26,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "AK-47",
+		"type": "P",
+		"range": 261,
+		"hst": 0,
+		"lsf": 18
+	},	{
+		"discId": 2,
+		"name": "Jack the Ripper",
+		"type": "F",
+		"range": 368,
+		"hst": 0,
+		"lsf": 19
+	},	{
+		"discId": 3,
+		"name": "Diesel",
+		"type": "D",
+		"range": 401,
+		"hst": 0,
+		"lsf": 58
+	},	{
+		"discId": 4,
+		"name": "KGB",
+		"type": "M",
+		"range": 298,
+		"hst": -18,
+		"lsf": 18
+	},	{
+		"discId": 5,
+		"name": "White Widow",
+		"type": "P",
+		"range": 261,
+		"hst": -18,
+		"lsf": 0
+	},	{
+		"discId": 6,
+		"name": "Pure O.G.",
+		"type": "M",
+		"range": 311,
+		"hst": -18,
+		"lsf": 37
+	},	{
+		"discId": 7,
+		"name": "Train Wreck",
+		"type": "D",
+		"range": 435,
+		"hst": -39,
+		"lsf": 39
+	}]
+}
+	

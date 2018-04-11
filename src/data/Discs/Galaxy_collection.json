@@ -1,0 +1,35 @@
+{
+	"company": "Galaxy",
+	"companyId": 31,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "Shooting Star",
+		"type": "F",
+		"range": 332,
+		"hst": -37,
+		"lsf": 18
+	},	{
+		"discId": 2,
+		"name": "Orbit",
+		"type": "M",
+		"range": 294,
+		"hst": 0,
+		"lsf": 55
+	},	{
+		"discId": 3,
+		"name": "Magneton",
+		"type": "P",
+		"range": 240,
+		"hst": 0,
+		"lsf": 36
+	},	{
+		"discId": 4,
+		"name": "Meteorite",
+		"type": "D",
+		"range": 401,
+		"hst": -97,
+		"lsf": 19
+	}]
+}
+	

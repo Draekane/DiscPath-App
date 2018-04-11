@@ -1,0 +1,28 @@
+{
+	"company": "Eurodisc",
+	"companyId": 25,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "Transporter",
+		"type": "F",
+		"range": 335,
+		"hst": -37,
+		"lsf": 18
+	},	{
+		"discId": 2,
+		"name": "Delivery",
+		"type": "P",
+		"range": 242,
+		"hst": 0,
+		"lsf": 4
+	},	{
+		"discId": 3,
+		"name": "Transition",
+		"type": "M",
+		"range": 299,
+		"hst": 0,
+		"lsf": 18
+	}]
+}
+	

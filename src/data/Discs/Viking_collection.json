@@ -1,0 +1,57 @@
+{
+	"company": "Viking",
+	"companyId": 65,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "Rune",
+		"type": "P",
+		"range": 245,
+		"hst": -3,
+		"lsf": 3
+	},	{
+		"discId": 2,
+		"name": "Knife",
+		"type": "P",
+		"range": 240,
+		"hst": 0,
+		"lsf": 36
+	},	{
+		"discId": 3,
+		"name": "Berserker",
+		"type": "P",
+		"range": 382,
+		"hst": -58,
+		"lsf": 38
+	},	{
+		"discId": 4,
+		"name": "Cosmos",
+		"type": "F",
+		"range": 334,
+		"hst": 0,
+		"lsf": 18
+	},	{
+		"discId": 5,
+		"name": "Thunder God Thor",
+		"type": "D",
+		"range": 454,
+		"hst": 0,
+		"lsf": 39
+	},	{
+		"discId": 6,
+		"name": "Nordic Warrior",
+		"type": "D",
+		"range": 278,
+		"hst": 0,
+		"lsf": 36
+	},	{
+		"discId": 7,
+		"name": "Axe",
+		"type": "M",
+		"range": 276,
+		"hst": 0,
+		"lsf": 18
+	}]
+}
+
+	

@@ -1,0 +1,13 @@
+{
+	"company": "Deity Discs",
+	"companyId": 15,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "Chimera",
+		"type": "D",
+		"range": 425,
+		"hst": -29,
+		"lsf": 59
+	}]
+}

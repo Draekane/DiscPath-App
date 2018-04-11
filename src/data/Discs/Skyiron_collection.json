@@ -1,0 +1,15 @@
+{
+	"company": "Skyiron",
+	"companyId": 58,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "Flagship",
+		"type": "D",
+		"range": 396,
+		"hst": -58,
+		"lsf": 38
+	}]
+}
+
+	

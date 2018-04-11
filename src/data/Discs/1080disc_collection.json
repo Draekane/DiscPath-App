@@ -1,0 +1,13 @@
+{
+	"company": "1080 Disc Golf",
+	"companyId": 1,
+	"discs": [
+	{
+      "discId": 1,
+      "name": "Radius",
+      "range": 236,
+      "hst": 0,
+      "lsf": 18,
+      "type": "P"
+    }]
+}

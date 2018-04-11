@@ -1,0 +1,28 @@
+{
+	"company": "Franklin",
+	"companyId": 28,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "RT Nite Owl",
+		"type": "P",
+		"range": 233,
+		"hst": -67,
+		"lsf": 18
+	},	{
+		"discId": 2,
+		"name": "RT Albatross",
+		"type": "F",
+		"range": 312,
+		"hst": -93,
+		"lsf": 9
+	},	{
+		"discId": 3,
+		"name": "RT Sparrow",
+		"type": "M",
+		"range": 276,
+		"hst": -73,
+		"lsf": 18
+	}]
+}
+	

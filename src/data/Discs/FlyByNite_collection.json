@@ -1,0 +1,21 @@
+{
+	"company": "Fly-by-nite",
+	"companyId": 27,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "The Bat",
+		"type": "F",
+		"range": 275,
+		"hst": -36,
+		"lsf": 46
+	},	{
+		"discId": 2,
+		"name": "The Owl",
+		"type": "F",
+		"range": 279,
+		"hst": -18,
+		"lsf": 46
+	}]
+}
+	

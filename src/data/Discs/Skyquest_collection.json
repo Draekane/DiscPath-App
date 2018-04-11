@@ -1,0 +1,22 @@
+{
+	"company": "Skyquest",
+	"companyId": 59,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "Medusa",
+		"type": "D",
+		"range": 393,
+		"hst": -38,
+		"lsf": 38
+	},	{
+		"discId": 2,
+		"name": "L13",
+		"type": "D",
+		"range": 380,
+		"hst": -57,
+		"lsf": 38
+	}]
+}
+
+	

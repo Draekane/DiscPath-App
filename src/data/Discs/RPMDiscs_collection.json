@@ -1,0 +1,64 @@
+{
+	"company": "RPM Discs",
+	"companyId": 55,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "Taniwha",
+		"type": "F",
+		"range": 331,
+		"hst": -56,
+		"lsf": 18
+	},	{
+		"discId": 2,
+		"name": "Te Moko",
+		"type": "M",
+		"range": 256,
+		"hst": 0,
+		"lsf": 22
+	},	{
+		"discId": 3,
+		"name": "Arcturus",
+		"type": "F",
+		"range": 303,
+		"hst": -27,
+		"lsf": 27
+	},	{
+		"discId": 4,
+		"name": "Kahu",
+		"type": "D",
+		"range": 431,
+		"hst": -12,
+		"lsf": 59
+	},	{
+		"discId": 5,
+		"name": "Atomic Raptor X",
+		"type": "D",
+		"range": 396,
+		"hst": -4,
+		"lsf": 58
+	},	{
+		"discId": 6,
+		"name": "Piwakawaka",
+		"type": "M",
+		"range": 285,
+		"hst": -32,
+		"lsf": 27
+	},	{
+		"discId": 7,
+		"name": "Tui",
+		"type": "F",
+		"range": 277,
+		"hst": -36,
+		"lsf": 18
+	},	{
+		"discId": 8,
+		"name": "Rippa",
+		"type": "P",
+		"range": 238,
+		"hst": -36,
+		"lsf": 0
+	}]
+}
+
+	

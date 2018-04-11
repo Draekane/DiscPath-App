@@ -1,0 +1,29 @@
+{
+	"company": "Obsidian Discs",
+	"companyId": 46,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "Splinter",
+		"type": "P",
+		"range": 255,
+		"hst": 0,
+		"lsf": 45
+	},	{
+		"discId": 2,
+		"name": "Caldera",
+		"type": "D",
+		"range": 418,
+		"hst": -19,
+		"lsf": 39
+	},	{
+		"discId": 3,
+		"name": "Cinder",
+		"type": "F",
+		"range": 329,
+		"hst": 0,
+		"lsf": 56
+	}]
+}
+
+	

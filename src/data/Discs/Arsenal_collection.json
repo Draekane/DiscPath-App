@@ -1,0 +1,41 @@
+{
+	"company": "Arsenal",
+	"companyId": 6,
+	"discs": [
+	{
+      "discId": 1,
+      "name": "50 Cal",
+      "range": 379,
+      "hst": -38,
+      "lsf": 57,
+      "type": "F"
+    },{
+      "discId": 2,
+      "name": "Air Strike",
+      "range": 417,
+      "hst": -19,
+      "lsf": 58,
+      "type": "D"
+    },{
+      "discId": 3,
+      "name": "C4",
+      "range": 258,
+      "hst": 0,
+      "lsf": 18,
+      "type": "P"
+    },{
+      "discId": 4,
+      "name": "Cyborg",
+      "range": 364,
+      "hst": -76,
+      "lsf": 19,
+      "type": "F"
+    },{
+      "discId": 5,
+      "name": "Morningstar",
+      "range": 294,
+      "hst": -18,
+      "lsf": 37,
+      "type": "M"
+    }]
+}

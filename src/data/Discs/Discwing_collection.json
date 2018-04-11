@@ -1,0 +1,35 @@
+{
+	"company": "Discwing",
+	"companyId": 20,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "Crosshair",
+		"type": "P",
+		"range": 242,
+		"hst": -33,
+		"lsf": 18
+	},	{
+		"discId": 2,
+		"name": "Transcend",
+		"type": "M",
+		"range": 281,
+		"hst": -39,
+		"lsf": 18
+	},	{
+		"discId": 3,
+		"name": "Quarter K",
+		"type": "D",
+		"range": 405,
+		"hst": 0,
+		"lsf": 74
+	},	{
+		"discId": 4,
+		"name": "Quarter K II",
+		"type": "D",
+		"range": 417,
+		"hst": -26,
+		"lsf": 49
+	}]
+}
+	

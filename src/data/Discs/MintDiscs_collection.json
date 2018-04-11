@@ -1,0 +1,15 @@
+{
+	"company": "Mint Discs",
+	"companyId": 44,
+	"discs": [
+	{
+		"discId": 1,
+		"name": "Alpha",
+		"type": "F",
+		"range": 347,
+		"hst": 0,
+		"lsf": 38
+	}]
+}
+
+	

@@ -1,5 +1,3 @@
-import update from 'immutability-helper';
-
 import * as companyActionTypes from '../actionTypes/company';
 
 const intiialState = {
@@ -9,21 +7,11 @@ const intiialState = {
 const company = (state = intiialState, action = {}) => {
   switch (action.type) {
     case companyActionTypes.LOAD_COMPANY_DATA:
-      return (() => {
-        const { companies } = action.data;
-
-        if (!companies) {
-          return state;
-        }
-        return update(
-          state,
-          {
-            companies: {
-              $set: companies,
-            },
-          },
-        );
-      })();
+      const { companies } = action.companies;
+      if (!companies) {
+        return state;
+      }
+      return Object.assign({}, state, { companies });
     default:
       return state;
   }

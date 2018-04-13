@@ -4,13 +4,8 @@ import _ from 'lodash';
 import Select from 'react-select';
 
 import { companyShape } from '../../propTypeShapes/companyShapes';
-import * as companyActions from '../../actions/company';
 
 class CompanyDiscs extends Component {
-  componentDidMount() {
-    companyActions.loadCompanies();
-  }
-
   createCompanyDiscSelections = () => {
     const { companies } = this.props;
     const newOptions = [];

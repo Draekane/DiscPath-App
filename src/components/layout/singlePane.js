@@ -1,12 +1,26 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import DocumentTitle from 'react-document-title';
 
 import FlightMap from '../map/flightMap';
 import CompanyDiscs from '../company/companyDiscs';
 import { companyShape } from '../../propTypeShapes/companyShapes';
+import * as CompanyActions from '../../actions/company';
 
 class SinglePane extends Component {
+  constructor(props, context) {
+    super(props, context);
+    this.loadCompanies = this.loadAllCompanies.bind(this);
+  }
+  componentWillMount() {
+    this.loadAllCompanies()
+  }
+  loadAllCompanies() {
+    const { dispatch } = this.props;
+    const action = CompanyActions.loadCompanies()
+    dispatch(action);
+  }
   render() {
     const { pageTitle, pageHeader, companies } = this.props;
     const discs = [{
@@ -66,6 +80,7 @@ SinglePane.propTypes = {
   pageTitle: PropTypes.string,
   pageHeader: PropTypes.string,
   companies: PropTypes.arrayOf(companyShape),
+  dispatch: PropTypes.func,
 };
 
 SinglePane.defaultProps = {
@@ -73,4 +88,10 @@ SinglePane.defaultProps = {
   pageHeader: 'Experimental Disc Golf Flight Path Visualizer',
 };
 
-export default SinglePane;
+function mapStateToProps(state) {
+  return {
+      companies: state.companies,
+  };
+}
+
+export default connect(mapStateToProps)(SinglePane);

@@ -17,7 +17,6 @@ export const loadCompaniesAction = () => {
   };
 };
 
-export const loadCompanies = () => (dispatch) => {
-  const companyLoad = loadCompaniesAction();
-  dispatch(companyLoad);
+export const loadCompanies = () => {
+  return loadCompaniesAction();
 };

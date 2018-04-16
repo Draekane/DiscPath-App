@@ -7,11 +7,10 @@ const intiialState = {
 const company = (state = intiialState, action = {}) => {
   switch (action.type) {
     case companyActionTypes.LOAD_COMPANY_DATA:
-      const { companies } = action.companies;
-      if (!companies) {
+      if (!action.companies) {
         return state;
       }
-      return Object.assign({}, state, { companies });
+      return Object.assign({}, state, { companies: action.companies });
     default:
       return state;
   }

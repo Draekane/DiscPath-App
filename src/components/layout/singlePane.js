@@ -14,11 +14,11 @@ class SinglePane extends Component {
     this.loadCompanies = this.loadAllCompanies.bind(this);
   }
   componentWillMount() {
-    this.loadAllCompanies()
+    this.loadAllCompanies();
   }
   loadAllCompanies() {
     const { dispatch } = this.props;
-    const action = CompanyActions.loadCompanies()
+    const action = CompanyActions.loadCompanies();
     dispatch(action);
   }
   render() {
@@ -90,7 +90,7 @@ SinglePane.defaultProps = {
 
 function mapStateToProps(state) {
   return {
-      companies: state.companies,
+    companies: state.companies,
   };
 }
 

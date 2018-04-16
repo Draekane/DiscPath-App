@@ -7,7 +7,7 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-const store = createStore(rootReducer, window.STATE_FROM_SERVER);
+const store = createStore(rootReducer);
 
 render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
 registerServiceWorker();

@@ -2,57 +2,59 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import DocumentTitle from 'react-document-title';
+import _ from 'lodash';
 
-import FlightMap from '../map/flightMap';
-import CompanyDiscs from '../company/companyDiscs';
+import FlightMap from '../../components/map/flightMap';
+import CompanyDiscs from '../../components/company/companyDiscs';
 import { companyShape } from '../../propTypeShapes/companyShapes';
 import * as CompanyActions from '../../actions/company';
 
+const discs = [{
+  discId: -1,
+  company: 'Dynamic Discs',
+  name: 'Breakout',
+  range: 358,
+  hst: -23,
+  lsf: 38,
+  type: 'F',
+  enabled: true,
+  wear: 10,
+}, {
+  discId: -1,
+  company: 'Dynamic Discs',
+  name: 'Deputy',
+  range: 261,
+  hst: -27,
+  lsf: 0,
+  type: 'P',
+  enabled: true,
+  wear: 10,
+}];
+
+const thrower = {
+  throwType: 'rhbh',
+  power: 32,
+  fanPower: true,
+  pathsShown: 'one',
+  lieDistance: true,
+  lieCircle: true,
+  isRequired: {},
+};
+
 class SinglePane extends Component {
-  constructor(props, context) {
-    super(props, context);
-    this.loadCompanies = this.loadAllCompanies.bind(this);
-  }
   componentWillMount() {
-    this.loadAllCompanies();
-  }
-  loadAllCompanies() {
     const { dispatch } = this.props;
-    const action = CompanyActions.loadCompanies();
-    dispatch(action);
+    dispatch(CompanyActions.loadCompanies());
   }
+  componentDidUpdate(props) {
+    const { companies } = props;
+
+    _.forEach(companies, company => console.log(company));
+  }
+  component
+
   render() {
     const { pageTitle, pageHeader, companies } = this.props;
-    const discs = [{
-      discId: -1,
-      company: 'Dynamic Discs',
-      name: 'Breakout',
-      range: 358,
-      hst: -23,
-      lsf: 38,
-      type: 'F',
-      enabled: true,
-      wear: 10,
-    }, {
-      discId: -1,
-      company: 'Dynamic Discs',
-      name: 'Deputy',
-      range: 261,
-      hst: -27,
-      lsf: 0,
-      type: 'P',
-      enabled: true,
-      wear: 10,
-    }];
-    const thrower = {
-      throwType: 'rhbh',
-      power: 32,
-      fanPower: true,
-      pathsShown: 'one',
-      lieDistance: true,
-      lieCircle: true,
-      isRequired: {},
-    };
     const content = (
       <DocumentTitle title={pageTitle}>
         <div className="workspace-container grid-container" >
@@ -88,10 +90,9 @@ SinglePane.defaultProps = {
   pageHeader: 'Experimental Disc Golf Flight Path Visualizer',
 };
 
-function mapStateToProps(state) {
-  return {
-    companies: state.companies,
-  };
-}
+const mapStateToProps = state => ({
+  companies: state.companies,
+  dispatch: state.dispatch,
+});
 
 export default connect(mapStateToProps)(SinglePane);

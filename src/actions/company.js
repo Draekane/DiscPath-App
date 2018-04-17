@@ -17,6 +17,4 @@ export const loadCompaniesAction = () => {
   };
 };
 
-export const loadCompanies = () => {
-  return loadCompaniesAction();
-};
+export const loadCompanies = () => loadCompaniesAction();

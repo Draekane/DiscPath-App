@@ -10,7 +10,7 @@ const company = (state = intiialState, action = {}) => {
       if (!action.companies) {
         return state;
       }
-      return Object.assign({}, state, { companies: action.companies });
+      return { ...state, companies: action.companies };
     default:
       return state;
   }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import 'babel-register';
 import './App.css';
-import SinglePane from './components/layout/singlePane';
+import SinglePane from './containers/layout/singlePane';
 
 class App extends Component {
   render() {

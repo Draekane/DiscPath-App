@@ -6,32 +6,12 @@ import _ from 'lodash';
 
 import FlightMap from '../../components/map/flightMap';
 import CompanyDiscs from '../../components/company/companyDiscs';
+import Bag from '../../components/bag/bag';
 import { companyShape } from '../../propTypeShapes/companyShapes';
+import { discShape } from '../../propTypeShapes/bagShapes';
 import * as CompanyActions from '../../actions/company';
 import * as BagActions from '../../actions/bag';
 import { currentCompaniesSelector, currentSelectionSelector } from '../../selector/companiesSelector';
-
-const discs = [{
-  discId: -1,
-  company: 'Dynamic Discs',
-  name: 'Breakout',
-  range: 358,
-  hst: -23,
-  lsf: 38,
-  type: 'F',
-  enabled: true,
-  wear: 10,
-}, {
-  discId: -1,
-  company: 'Dynamic Discs',
-  name: 'Deputy',
-  range: 261,
-  hst: -27,
-  lsf: 0,
-  type: 'P',
-  enabled: true,
-  wear: 10,
-}];
 
 const thrower = {
   throwType: 'rhbh',
@@ -56,9 +36,9 @@ class SinglePane extends Component {
     const { dispatch, companies, currentSelection } = this.props;
     const currSel = currentSelection.split('-');
     if (currSel.length === 2) {
-      const company = _.find(companies, (company) =>  company.companyId == currSel[0])
+      const company = _.find(companies, company => company.companyId === parseInt(currSel[0], 10));
       if (company !== null) {
-        const disc = _.find(company.discs, (disc) => disc.discId == currSel[1]);
+        const disc = _.find(company.discs, disc => disc.discId === parseInt(currSel[1], 10));
         const selectDisc = {
           ...disc,
           discId: currentSelection,
@@ -73,7 +53,9 @@ class SinglePane extends Component {
   }
 
   render() {
-    const { pageTitle, pageHeader, companies, currentSelection, currentDiscs } = this.props;
+    const {
+      pageTitle, pageHeader, companies, currentSelection, currentDiscs,
+    } = this.props;
     const content = (
       <DocumentTitle title={pageTitle}>
         <div className="workspace-container grid-container" >
@@ -84,7 +66,12 @@ class SinglePane extends Component {
             <FlightMap discs={currentDiscs} thrower={thrower} />
           </div>
           <div className="grid-item2">
-            <CompanyDiscs companies={companies} onSelectHandler={this.handleDiscSelection} currentSelection={currentSelection} />
+            <Bag discs={currentDiscs} />
+            <CompanyDiscs
+              companies={companies}
+              onSelectHandler={this.handleDiscSelection}
+              currentSelection={currentSelection}
+            />
             <button onClick={this.handleAddDiscToBag} >Add To Bag</button>
           </div>
           <div className="grid-item3">Throw Selector Goes Here</div>
@@ -102,6 +89,8 @@ SinglePane.propTypes = {
   pageTitle: PropTypes.string,
   pageHeader: PropTypes.string,
   companies: PropTypes.arrayOf(companyShape),
+  currentSelection: PropTypes.string,
+  currentDiscs: PropTypes.arrayOf(discShape),
   dispatch: PropTypes.func,
 };
 

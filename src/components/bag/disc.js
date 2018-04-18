@@ -9,38 +9,34 @@ const Disc = (props) => {
     wear,
   } = props;
 
-  const handleChangeValue = (value, event) => {
+  const handleChangeValue = (value) => {
     const { discId, setWearFunc } = props;
     if (setWearFunc != null) {
-      setWearFunc(value, discId, event);
+      setWearFunc(value, discId);
     }
   };
 
-  const handleRemove = (event) => {
+  const handleRemove = () => {
     const { discId, removeFunc } = props;
     if (removeFunc != null) {
-      removeFunc(discId, event);
+      removeFunc(discId);
     }
   };
 
-  const handleSetEnable = (event) => {
+  const handleSetEnable = () => {
     const { discId, enableFunc } = props;
     if (enableFunc != null) {
-      enableFunc(discId, !enabled, event);
+      enableFunc(discId, !enabled);
     }
   };
 
-  const boundHandleChangeValue = handleChangeValue.bind(this, this.value);
-  const boundHandleRemove = handleRemove.bind(this);
-  const boundHandleSetEnable = handleSetEnable.bind(this);
-
   return (
-    <div>
-      <input type="check" checked={enabled} onClick={boundHandleSetEnable} />
+    <React.Fragment>
+      <input type="check" checked={enabled} onClick={handleSetEnable} />
       {company} {name}
-      <input type="range" min="1" max="10" value={wear} onChange={boundHandleChangeValue} />
-      <button onClick={boundHandleRemove} type="button">Remove</button>
-    </div>
+      <input type="range" min="1" max="10" value={wear} onChange={handleChangeValue} />
+      <button onClick={handleRemove} type="button">Remove</button>
+    </React.Fragment>
   );
 };
 

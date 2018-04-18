@@ -5,24 +5,24 @@ import Select from 'react-select';
 
 import { companyShape } from '../../propTypeShapes/companyShapes';
 
-const CompanyDiscs = ({ companies }) => {
+const CompanyDiscs = ({ companies, currentSelection, onSelectHandler }) => {
   const createCompanyDiscSelections = () => {
     const newOptions = [];
     _.forEach(companies, (company) => {
       _.forEach(company.discs, (disc) => {
-        newOptions.push({ label: `${company.name} ${disc.name}`, value: `${company.companyId}-${disc.discId}` });
+        newOptions.push({ label: `${company.company} ${disc.name}`, value: `${company.companyId}-${disc.discId}` });
       });
     });
 
     return newOptions;
   };
-
   const displaySuggestions = createCompanyDiscSelections();
   const selectDisplay = (<Select
     name="CompanyDiscSelector"
     id="CompanyDiscSelector"
     options={displaySuggestions}
-    onChange={this.onSuggestionSelected}
+    value={currentSelection}
+    onChange={onSelectHandler}
     autosize={false}
   />);
 
@@ -35,6 +35,8 @@ const CompanyDiscs = ({ companies }) => {
 
 CompanyDiscs.propTypes = {
   companies: PropTypes.shape(companyShape),
+  currentSelection: PropTypes.string,
+  onSelectHandler : PropTypes.func,
 };
 
 export default CompanyDiscs;

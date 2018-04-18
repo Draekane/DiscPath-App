@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
 
-import disc from './disc';
+import bag from './bag';
 import company from './company';
 
 const rootReducer = combineReducers({
-  disc,
+  bag,
   company,
 });
 

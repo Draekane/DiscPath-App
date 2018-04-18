@@ -1,8 +1,6 @@
-// import _ from 'lodash';
-
 import * as companyActionTypes from '../actionTypes/company';
 
-export const loadCompaniesAction = () => {
+export const loadCompanies = () => {
   const context = require.context('../data/Discs', true, /\.(json)$/);
   const companies = [];
 
@@ -17,4 +15,9 @@ export const loadCompaniesAction = () => {
   };
 };
 
-export const loadCompanies = () => loadCompaniesAction();
+export const selectDisc = (disc) => {
+  return {
+    type: companyActionTypes.SELECT_COMPANY_DISC,
+    disc,
+  }
+}

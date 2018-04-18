@@ -2,6 +2,7 @@ import * as companyActionTypes from '../actionTypes/company';
 
 const intiialState = {
   companies: null,
+  currentSelection: null
 };
 
 const company = (state = intiialState, action = {}) => {
@@ -11,6 +12,8 @@ const company = (state = intiialState, action = {}) => {
         return state;
       }
       return { ...state, companies: action.companies };
+    case companyActionTypes.SELECT_COMPANY_DISC:
+      return { ...state, currentSelection: action.disc };
     default:
       return state;
   }

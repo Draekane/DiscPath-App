@@ -8,6 +8,8 @@ import FlightMap from '../../components/map/flightMap';
 import CompanyDiscs from '../../components/company/companyDiscs';
 import { companyShape } from '../../propTypeShapes/companyShapes';
 import * as CompanyActions from '../../actions/company';
+import * as BagActions from '../../actions/bag';
+import { currentCompaniesSelector, currentSelectionSelector } from '../../selector/companiesSelector';
 
 const discs = [{
   discId: -1,
@@ -46,30 +48,48 @@ class SinglePane extends Component {
     const { dispatch } = this.props;
     dispatch(CompanyActions.loadCompanies());
   }
-  componentDidUpdate(props) {
-    const { companies } = props;
-
-    _.forEach(companies, company => console.log(company));
+  handleDiscSelection = (selectedOptions) => {
+    const { dispatch } = this.props;
+    dispatch(CompanyActions.selectDisc(selectedOptions.value));
   }
-  component
+  handleAddDiscToBag = () => {
+    const { dispatch, companies, currentSelection } = this.props;
+    const currSel = currentSelection.split('-');
+    if (currSel.length === 2) {
+      const company = _.find(companies, (company) =>  company.companyId == currSel[0])
+      if (company !== null) {
+        const disc = _.find(company.discs, (disc) => disc.discId == currSel[1]);
+        const selectDisc = {
+          ...disc,
+          discId: currentSelection,
+          company: company.company,
+          enabled: true,
+          wear: 10,
+        };
+
+        dispatch(BagActions.loadDisc(selectDisc));
+      }
+    }
+  }
 
   render() {
-    const { pageTitle, pageHeader, companies } = this.props;
+    const { pageTitle, pageHeader, companies, currentSelection, currentDiscs } = this.props;
     const content = (
       <DocumentTitle title={pageTitle}>
         <div className="workspace-container grid-container" >
           <header className="App-header grid-item-header">
             <h1 className="App-title">{pageHeader}</h1>
           </header>
-          <div className="grid-item2">
-            <FlightMap discs={discs} thrower={thrower} />
+          <div className="grid-item1">
+            <FlightMap discs={currentDiscs} thrower={thrower} />
           </div>
           <div className="grid-item2">
-            <CompanyDiscs companies={companies} />
+            <CompanyDiscs companies={companies} onSelectHandler={this.handleDiscSelection} currentSelection={currentSelection} />
+            <button onClick={this.handleAddDiscToBag} >Add To Bag</button>
           </div>
-          <div className="grid-item1">Throw Selector Goes Here</div>
-          <div className="grid-item1">Display Options Goes Here</div>
-          <div className="grid-item1">Import/Export Options Go Here</div>
+          <div className="grid-item3">Throw Selector Goes Here</div>
+          <div className="grid-item3">Display Options Goes Here</div>
+          <div className="grid-item3">Import/Export Options Go Here</div>
         </div>
       </DocumentTitle>
     );
@@ -91,7 +111,9 @@ SinglePane.defaultProps = {
 };
 
 const mapStateToProps = state => ({
-  companies: state.companies,
+  companies: currentCompaniesSelector(state),
+  currentSelection: currentSelectionSelector(state),
+  currentDiscs: state.bag.discs,
   dispatch: state.dispatch,
 });
 

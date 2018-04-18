@@ -1,7 +1,7 @@
 import * as companyActionTypes from '../actionTypes/company';
 
 const intiialState = {
-  companies: [],
+  companies: null,
 };
 
 const company = (state = intiialState, action = {}) => {

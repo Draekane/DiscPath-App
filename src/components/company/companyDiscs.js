@@ -26,11 +26,7 @@ const CompanyDiscs = ({ companies, currentSelection, onSelectHandler }) => {
     autosize={false}
   />);
 
-  return (
-    <div>
-      {selectDisplay}
-    </div>
-  );
+  return selectDisplay;
 };
 
 CompanyDiscs.propTypes = {

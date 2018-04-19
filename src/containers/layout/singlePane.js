@@ -7,21 +7,14 @@ import _ from 'lodash';
 import FlightMap from '../../components/map/flightMap';
 import CompanyDiscs from '../../components/company/companyDiscs';
 import Bag from '../../components/bag/bag';
+import Thrower from '../../components/bag/thrower';
+import DisplayOptions from '../../components/bag/displayOptions';
 import { companyShape } from '../../propTypeShapes/companyShapes';
-import { discShape } from '../../propTypeShapes/bagShapes';
+import { discShape, throwerShape, displayOptionsShape } from '../../propTypeShapes/bagShapes';
 import * as CompanyActions from '../../actions/company';
 import * as BagActions from '../../actions/bag';
 import { currentCompaniesSelector, currentSelectionSelector } from '../../selector/companiesSelector';
-
-const thrower = {
-  throwType: 'rhbh',
-  power: 32,
-  fanPower: true,
-  pathsShown: 'one',
-  lieDistance: true,
-  lieCircle: true,
-  isRequired: {},
-};
+import { throwerSelector, baggedDiscSelector, displayOptionsSelector } from '../../selector/bagSelector';
 
 class SinglePane extends Component {
   componentWillMount() {
@@ -82,9 +75,51 @@ class SinglePane extends Component {
     dispatch(BagActions.removeDiscFromBag(baggedDiscId));
   }
 
+  handleChangeThrowerType = (throwerType) => {
+    const { dispatch } = this.props;
+
+    dispatch(BagActions.changeThrowerType(throwerType));
+  }
+
+  handleChangeThrowerPower = (throwerPower) => {
+    const { dispatch } = this.props;
+
+    dispatch(BagActions.changeThrowerPower(throwerPower));
+  }
+
+  handleChangeFanPower = () => {
+    const { dispatch } = this.props;
+
+    dispatch(BagActions.changeFanPower());
+  }
+
+  handleChangePaths = (paths) => {
+    const { dispatch } = this.props;
+
+    dispatch(BagActions.changePaths(paths));
+  }
+
+  handleChangeLieDistance = () => {
+    const { dispatch } = this.props;
+
+    dispatch(BagActions.changeLieDistance());
+  }
+
+  handleChangeLieCircle = () => {
+    const { dispatch } = this.props;
+
+    dispatch(BagActions.changeLieCircles());
+  }
+
   render() {
     const {
-      pageTitle, pageHeader, companies, currentSelection, currentDiscs,
+      pageTitle,
+      pageHeader,
+      companies,
+      currentSelection,
+      currentDiscs,
+      thrower,
+      displayOptions,
     } = this.props;
     const content = (
       <DocumentTitle title={pageTitle}>
@@ -93,7 +128,7 @@ class SinglePane extends Component {
             <h1 className="App-title">{pageHeader}</h1>
           </header>
           <div className="grid-item1">
-            <FlightMap discs={currentDiscs} thrower={thrower} />
+            <FlightMap discs={currentDiscs} thrower={thrower} displayOptions={displayOptions} />
           </div>
           <div className="grid-item2">
             <Bag
@@ -110,9 +145,22 @@ class SinglePane extends Component {
             />
             <button onClick={this.handleAddDiscToBag} >Add To Bag</button>
           </div>
-          <div className="grid-item3">Throw Selector Goes Here</div>
-          <div className="grid-item3">Display Options Goes Here</div>
-          <div className="grid-item3">Import/Export Options Go Here</div>
+          <div className="grid-item3">
+            <Thrower
+              thrower={thrower}
+              changePower={this.handleChangeThrowerPower}
+              changeThrowerType={this.handleChangeThrowerType}
+            />
+          </div>
+          <div className="grid-item3">
+            <DisplayOptions
+              options={displayOptions}
+              changeFanPower={this.handleChangeFanPower}
+              changePaths={this.handleChangePaths}
+              changeDistance={this.handleChangeLieDistance}
+              changeCircles={this.handleChangeLieCircle}
+            />
+          </div>
         </div>
       </DocumentTitle>
     );
@@ -128,6 +176,8 @@ SinglePane.propTypes = {
   companies: PropTypes.arrayOf(companyShape),
   currentSelection: PropTypes.string,
   currentDiscs: PropTypes.arrayOf(discShape),
+  thrower: PropTypes.shape(throwerShape),
+  displayOptions: PropTypes.shape(displayOptionsShape),
   dispatch: PropTypes.func,
 };
 
@@ -139,7 +189,9 @@ SinglePane.defaultProps = {
 const mapStateToProps = state => ({
   companies: currentCompaniesSelector(state),
   currentSelection: currentSelectionSelector(state),
-  currentDiscs: state.bag.discs,
+  currentDiscs: baggedDiscSelector(state),
+  thrower: throwerSelector(state),
+  displayOptions: displayOptionsSelector(state),
   dispatch: state.dispatch,
 });
 

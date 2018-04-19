@@ -3,6 +3,16 @@ import * as bagActionTypes from '../actionTypes/bag';
 
 const intiialState = {
   discs: [],
+  thrower: {
+    throwType: 'rhbh',
+    power: 32,
+  },
+  displayOptions: {
+    fanPower: true,
+    pathsShown: 'one',
+    lieDistance: true,
+    lieCircle: true,
+  },
   lastDiscId: 0,
 };
 
@@ -43,6 +53,54 @@ const disc = (state = intiialState, action = {}) => {
       return {
         ...state,
         discs: _.filter(state.discs, disc => disc.baggedDiscId !== action.baggedDiscId),
+      };
+    case bagActionTypes.CHANGE_THROWER_TYPE:
+      return {
+        ...state,
+        thrower: {
+          ...state.thrower,
+          throwType: action.throwerType,
+        },
+      };
+    case bagActionTypes.CHANGE_THROWER_POWER:
+      return {
+        ...state,
+        thrower: {
+          ...state.thrower,
+          power: action.throwerPower,
+        },
+      };
+    case bagActionTypes.CHANGE_FAN_POWER:
+      return {
+        ...state,
+        displayOptions: {
+          ...state.displayOptions,
+          fanPower: (!state.displayOptions.fanPower),
+        },
+      };
+    case bagActionTypes.CHANGE_PATHS:
+      return {
+        ...state,
+        displayOptions: {
+          ...state.displayOptions,
+          pathsShown: action.paths,
+        },
+      };
+    case bagActionTypes.CHANGE_LIE_DISTANCE:
+      return {
+        ...state,
+        displayOptions: {
+          ...state.displayOptions,
+          lieDistance: (!state.displayOptions.lieDistance),
+        },
+      };
+    case bagActionTypes.CHANGE_LIE_CIRCLE:
+      return {
+        ...state,
+        displayOptions: {
+          ...state.displayOptions,
+          lieCircle: (!state.displayOptions.lieCircle),
+        },
       };
     default:
       return state;

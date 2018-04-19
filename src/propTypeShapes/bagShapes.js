@@ -15,6 +15,9 @@ export const discShape = PropTypes.shape({
 export const throwerShape = PropTypes.shape({
   throwType: PropTypes.string,
   power: PropTypes.number,
+});
+
+export const displayOptionsShape = PropTypes.shape({
   fanPower: PropTypes.bool,
   pathsShown: PropTypes.string,
   lieDistance: PropTypes.bool,

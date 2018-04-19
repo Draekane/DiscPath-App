@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import _ from 'lodash';
 
-import { discShape, throwerShape } from '../../propTypeShapes/bagShapes';
+import { discShape, throwerShape, displayOptionsShape } from '../../propTypeShapes/bagShapes';
 import { processForHex, hb, drawPath, drawLie } from '../../utils/calculatorUtils';
 
 const lieConfig = {
@@ -79,7 +79,7 @@ class FlightMap extends Component {
   }
 
   updateCanvas() {
-    const { thrower, discs } = this.props;
+    const { thrower, discs, displayOptions } = this.props;
     const pwi = thrower.power;
     const pw = 0.6 + ((pwi / 48) * 0.6);
     let lie;
@@ -99,7 +99,7 @@ class FlightMap extends Component {
       if (!disc.enabled) { return; }
 
       // Draw fan/landing zone if true
-      if (thrower.fanPower) {
+      if (displayOptions.fanPower) {
         for (let i = 0; i <= 24; i++) {
           pws = i / 24.0;
           ry = processForHex(splinePoints.spr, pws, 8);
@@ -118,7 +118,7 @@ class FlightMap extends Component {
             wear: disc.wear,
             throwType: thrower.throwType,
             color: pointColor,
-            drawPath: (thrower.pathsShown === 'all' && i % 2 === 0),
+            drawPath: (displayOptions.pathsShown === 'all' && i % 2 === 0),
             pathBuffer,
             canvas,
           };
@@ -152,7 +152,7 @@ class FlightMap extends Component {
         wear: disc.wear,
         throwType: thrower.throwType,
         color: pointColor,
-        drawPath: (thrower.pathsShown === 'all' || thrower.pathsShown === 'one'),
+        drawPath: (displayOptions.pathsShown === 'all' || displayOptions.pathsShown === 'one'),
         pathBuffer,
         canvas,
       };
@@ -174,7 +174,7 @@ class FlightMap extends Component {
 
     const context = canvas.getContext('2d');
 
-    if (thrower.lieCircle) {
+    if (displayOptions.lieCircle) {
       context.globalAlpha = 0.35;
       context.globalCompositeOperation = 'source-over';
       context.drawImage(outlineBuffer, 0, 0);
@@ -187,7 +187,7 @@ class FlightMap extends Component {
 
     context.drawImage(pathBuffer, 0, 0);
 
-    if (thrower.lieDistance) {
+    if (displayOptions.lieDistance) {
       _.forEach(lieLabels, (key) => {
         const lie = key[0];
         const dn = key[1];
@@ -227,30 +227,12 @@ FlightMap.propTypes = {
   height: PropTypes.number,
   discs: PropTypes.arrayOf(discShape),
   thrower: PropTypes.shape(throwerShape),
+  displayOptions: PropTypes.shape(displayOptionsShape),
 };
 
 FlightMap.defaultProps = {
   width: 350,
   height: 550,
-  discs: [{
-    discId: -1,
-    company: 'Dynamic Discs',
-    name: 'Deputy',
-    range: 261,
-    hst: -27,
-    lsf: 0,
-    type: 4,
-    enabled: true,
-    wear: 10,
-  }],
-  thrower: {
-    throwType: 'rhbh',
-    power: 100,
-    fanPower: true,
-    pathsShown: 'one',
-    lieDistance: true,
-    lieCircle: true,
-  },
 };
 
 export default FlightMap;

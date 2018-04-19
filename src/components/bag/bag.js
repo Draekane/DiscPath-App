@@ -20,6 +20,8 @@ const Bag = (props) => {
 
   const getDiscFrame = () => (
     <React.Fragment>
+      <strong>Discs in Bag</strong>
+      <hr />
       <DiscType
         discs={distanceDrivers}
         title="Distance Drivers"

@@ -9,22 +9,18 @@ const getCompanies = (state) => {
 
 export const currentCompaniesSelector = createSelector(
   [getCompanies],
-  (currentCompanies) => {
-    return currentCompanies;
-  },
+  currentCompanies => currentCompanies,
 );
 
 const getCurrentSelection = (state) => {
   const currentSelection = get(state, 'company.currentSelection', null);
 
   return !isEmpty(currentSelection) ? currentSelection : null;
-}
+};
 
 export const currentSelectionSelector = createSelector(
   [getCurrentSelection],
-  (selection) => {
-    return selection;
-  },
+  selection => selection,
 );
 
 export default currentCompaniesSelector;

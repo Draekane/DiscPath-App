@@ -21,3 +21,30 @@ export const removeDiscFromBag = baggedDiscId => ({
   type: bagActionTypes.REMOVE_DISC_FROM_BAG,
   baggedDiscId,
 });
+
+export const changeThrowerType = throwerType => ({
+  type: bagActionTypes.CHANGE_THROWER_TYPE,
+  throwerType,
+});
+
+export const changeThrowerPower = throwerPower => ({
+  type: bagActionTypes.CHANGE_THROWER_POWER,
+  throwerPower,
+});
+
+export const changeFanPower = () => ({
+  type: bagActionTypes.CHANGE_FAN_POWER,
+});
+
+export const changePaths = paths => ({
+  type: bagActionTypes.CHANGE_PATHS,
+  paths,
+});
+
+export const changeLieDistance = () => ({
+  type: bagActionTypes.CHANGE_LIE_DISTANCE,
+});
+
+export const changeLieCircles = () => ({
+  type: bagActionTypes.CHANGE_LIE_CIRCLE,
+});

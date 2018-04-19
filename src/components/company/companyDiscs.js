@@ -34,9 +34,9 @@ const CompanyDiscs = ({ companies, currentSelection, onSelectHandler }) => {
 };
 
 CompanyDiscs.propTypes = {
-  companies: PropTypes.shape(companyShape),
+  companies: PropTypes.arrayOf(companyShape),
   currentSelection: PropTypes.string,
-  onSelectHandler : PropTypes.func,
+  onSelectHandler: PropTypes.func,
 };
 
 export default CompanyDiscs;

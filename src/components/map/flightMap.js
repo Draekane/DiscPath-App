@@ -92,8 +92,10 @@ class FlightMap extends Component {
     this.resetBuffers();
     const lieLabels = [];
 
+    const orderedDiscs = _.orderBy(discs, d => d.type);
+
     // Cycle through Discs
-    _.forEach(discs, (disc) => {
+    _.forEach(orderedDiscs, (disc) => {
       if (!disc.enabled) { return; }
 
       // Draw fan/landing zone if true
@@ -209,7 +211,13 @@ class FlightMap extends Component {
     const { width, height } = this.props;
     return (
       <div>
-        <canvas ref={el => this.canvasRef = el} id="splineCanvas" className="splineCanvas" width={width} height={height} /> {/* eslint-disable-line no-return-assign */}
+        <canvas
+          ref={el => this.canvasRef = el} /* eslint-disable-line no-return-assign */
+          id="splineCanvas"
+          className="splineCanvas"
+          width={width}
+          height={height}
+        />
       </div>);
   }
 }

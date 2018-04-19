@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import * as companyActionTypes from '../actionTypes/company';
 
 export const loadCompanies = () => {
@@ -6,7 +7,8 @@ export const loadCompanies = () => {
 
   context.keys().forEach((filename) => {
     const company = context(filename);
-    companies.push(company);
+    const { discs } = company;
+    companies.push({ ...company, discs: _.sortBy(discs, d => d.name) });
   });
 
   return {
@@ -15,9 +17,7 @@ export const loadCompanies = () => {
   };
 };
 
-export const selectDisc = (disc) => {
-  return {
-    type: companyActionTypes.SELECT_COMPANY_DISC,
-    disc,
-  }
-}
+export const selectDisc = disc => ({
+  type: companyActionTypes.SELECT_COMPANY_DISC,
+  disc,
+});

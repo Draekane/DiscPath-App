@@ -37,7 +37,8 @@
     "react/no-find-dom-node": "off",
     "react/prefer-stateless-function": "off",
     "react/require-default-props": "off",
-    "max-params": ["error", 5]
+    "max-params": ["error", 5],
+    "max-len": ["error", 125]
   },
   "plugins": [
     "react"

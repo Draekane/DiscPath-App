@@ -2,3 +2,4 @@ export const ADD_DISC_TO_BAG = 'ADD_DISC_TO_BAG';
 export const DISABLE_DISC = 'DISABLE_DISC';
 export const ENABLE_DISC = 'ENABLE_DISC';
 export const UPDATE_DISC_WEAR = 'UPDATE_DISC_WEAR';
+export const REMOVE_DISC_FROM_BAG = 'REMOVE_DISC_FROM_BAG';

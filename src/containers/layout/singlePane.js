@@ -46,7 +46,7 @@ class SinglePane extends Component {
     if (selectedOptions !== null) dispatch(CompanyActions.selectDisc(selectedOptions.value));
   }
   handleAddDiscToBag = () => {
-    const { dispatch, companies, currentSelection } = this.props;
+    const { dispatch, currentSelection } = this.props;
     if (currentSelection !== null) {
       const currDisc = this.getDiscById(currentSelection);
 
@@ -66,7 +66,7 @@ class SinglePane extends Component {
 
   handleEnableDisc = (baggedDiscId, enable) => {
     const { dispatch } = this.props;
-    
+
     dispatch(BagActions.setDiscEnable(baggedDiscId, enable));
   }
 
@@ -74,6 +74,12 @@ class SinglePane extends Component {
     const { dispatch } = this.props;
 
     dispatch(BagActions.setDiscWear(baggedDiscId, wear));
+  }
+
+  handleDiscRemove = (baggedDiscId) => {
+    const { dispatch } = this.props;
+
+    dispatch(BagActions.removeDiscFromBag(baggedDiscId));
   }
 
   render() {
@@ -90,10 +96,11 @@ class SinglePane extends Component {
             <FlightMap discs={currentDiscs} thrower={thrower} />
           </div>
           <div className="grid-item2">
-            <Bag 
-            discs={currentDiscs} 
-            handleEnableDisc={this.handleEnableDisc} 
-            handleSetDiscWear={this.handleSetDiscWear}
+            <Bag
+              discs={currentDiscs}
+              handleEnableDisc={this.handleEnableDisc}
+              handleSetDiscWear={this.handleSetDiscWear}
+              handleRemoveDisc={this.handleDiscRemove}
             />
             <hr />
             <CompanyDiscs
@@ -115,25 +122,25 @@ class SinglePane extends Component {
 }
 
 
-  SinglePane.propTypes = {
-    pageTitle: PropTypes.string,
-    pageHeader: PropTypes.string,
-    companies: PropTypes.arrayOf(companyShape),
-    currentSelection: PropTypes.string,
-    currentDiscs: PropTypes.arrayOf(discShape),
-    dispatch: PropTypes.func,
-  };
+SinglePane.propTypes = {
+  pageTitle: PropTypes.string,
+  pageHeader: PropTypes.string,
+  companies: PropTypes.arrayOf(companyShape),
+  currentSelection: PropTypes.string,
+  currentDiscs: PropTypes.arrayOf(discShape),
+  dispatch: PropTypes.func,
+};
 
-  SinglePane.defaultProps = {
-    pageTitle: 'DiscPath',
-    pageHeader: 'Experimental Disc Golf Flight Path Visualizer',
-  };
+SinglePane.defaultProps = {
+  pageTitle: 'DiscPath',
+  pageHeader: 'Experimental Disc Golf Flight Path Visualizer',
+};
 
-  const mapStateToProps = state => ({
-    companies: currentCompaniesSelector(state),
-    currentSelection: currentSelectionSelector(state),
-    currentDiscs: state.bag.discs,
-    dispatch: state.dispatch,
-  });
+const mapStateToProps = state => ({
+  companies: currentCompaniesSelector(state),
+  currentSelection: currentSelectionSelector(state),
+  currentDiscs: state.bag.discs,
+  dispatch: state.dispatch,
+});
 
-  export default connect(mapStateToProps)(SinglePane);
+export default connect(mapStateToProps)(SinglePane);

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import 'babel-register';
-import './App.css';
+import "react-table/react-table.css";
 import '../node_modules/react-select/dist/react-select.css';
+import './App.css';
 import SinglePane from './containers/layout/singlePane';
 
 class App extends Component {

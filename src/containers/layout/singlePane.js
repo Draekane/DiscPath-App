@@ -28,21 +28,33 @@ class SinglePane extends Component {
     const { dispatch } = this.props;
     dispatch(CompanyActions.loadCompanies());
   }
+  getDiscById = (discId) => {
+    const { companies } = this.props;
+    const discData = discId.split('-');
+
+    if (discData.length === 2) {
+      const company = _.find(companies, company => company.companyId === parseInt(discData[0], 10));
+      if (company !== null) {
+        const disc = _.find(company.discs, disc => disc.discId === parseInt(discData[1], 10));
+        return { company, disc };
+      }
+    }
+    return null;
+  }
   handleDiscSelection = (selectedOptions) => {
     const { dispatch } = this.props;
-    dispatch(CompanyActions.selectDisc(selectedOptions.value));
+    if (selectedOptions !== null) dispatch(CompanyActions.selectDisc(selectedOptions.value));
   }
   handleAddDiscToBag = () => {
     const { dispatch, companies, currentSelection } = this.props;
-    const currSel = currentSelection.split('-');
-    if (currSel.length === 2) {
-      const company = _.find(companies, company => company.companyId === parseInt(currSel[0], 10));
-      if (company !== null) {
-        const disc = _.find(company.discs, disc => disc.discId === parseInt(currSel[1], 10));
+    if (currentSelection !== null) {
+      const currDisc = this.getDiscById(currentSelection);
+
+      if (currDisc !== null) {
         const selectDisc = {
-          ...disc,
-          discId: currentSelection,
-          company: company.company,
+          ...currDisc.disc,
+          discId: currDisc.disc.discId,
+          company: currDisc.company.company,
           enabled: true,
           wear: 10,
         };
@@ -50,6 +62,18 @@ class SinglePane extends Component {
         dispatch(BagActions.loadDisc(selectDisc));
       }
     }
+  }
+
+  handleEnableDisc = (baggedDiscId, enable) => {
+    const { dispatch } = this.props;
+    
+    dispatch(BagActions.setDiscEnable(baggedDiscId, enable));
+  }
+
+  handleSetDiscWear = (baggedDiscId, wear) => {
+    const { dispatch } = this.props;
+
+    dispatch(BagActions.setDiscWear(baggedDiscId, wear));
   }
 
   render() {
@@ -66,7 +90,12 @@ class SinglePane extends Component {
             <FlightMap discs={currentDiscs} thrower={thrower} />
           </div>
           <div className="grid-item2">
-            <Bag discs={currentDiscs} />
+            <Bag 
+            discs={currentDiscs} 
+            handleEnableDisc={this.handleEnableDisc} 
+            handleSetDiscWear={this.handleSetDiscWear}
+            />
+            <hr />
             <CompanyDiscs
               companies={companies}
               onSelectHandler={this.handleDiscSelection}
@@ -85,25 +114,26 @@ class SinglePane extends Component {
   }
 }
 
-SinglePane.propTypes = {
-  pageTitle: PropTypes.string,
-  pageHeader: PropTypes.string,
-  companies: PropTypes.arrayOf(companyShape),
-  currentSelection: PropTypes.string,
-  currentDiscs: PropTypes.arrayOf(discShape),
-  dispatch: PropTypes.func,
-};
 
-SinglePane.defaultProps = {
-  pageTitle: 'DiscPath',
-  pageHeader: 'Experimental Disc Golf Flight Path Visualizer',
-};
+  SinglePane.propTypes = {
+    pageTitle: PropTypes.string,
+    pageHeader: PropTypes.string,
+    companies: PropTypes.arrayOf(companyShape),
+    currentSelection: PropTypes.string,
+    currentDiscs: PropTypes.arrayOf(discShape),
+    dispatch: PropTypes.func,
+  };
 
-const mapStateToProps = state => ({
-  companies: currentCompaniesSelector(state),
-  currentSelection: currentSelectionSelector(state),
-  currentDiscs: state.bag.discs,
-  dispatch: state.dispatch,
-});
+  SinglePane.defaultProps = {
+    pageTitle: 'DiscPath',
+    pageHeader: 'Experimental Disc Golf Flight Path Visualizer',
+  };
 
-export default connect(mapStateToProps)(SinglePane);
+  const mapStateToProps = state => ({
+    companies: currentCompaniesSelector(state),
+    currentSelection: currentSelectionSelector(state),
+    currentDiscs: state.bag.discs,
+    dispatch: state.dispatch,
+  });
+
+  export default connect(mapStateToProps)(SinglePane);

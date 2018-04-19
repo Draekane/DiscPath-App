@@ -30,12 +30,12 @@
 
 .grid-item1 {
     grid-column: 1 / 2;
-    border: #00FF00 solid 5px;
+    border: rgb(122, 122, 122) solid 1px;
 }
 
 .grid-item2 {
     grid-column: 2 / 3;
-    border: #0000FF solid 5px;
+    border: rgb(122, 122, 122) solid 1px;
 }
 
 .grid-item3 {
@@ -46,4 +46,29 @@
 .splineCanvas {
     border: 1px solid #000000;
     padding: 10px;
+}
+
+.disc-bag-table {
+    width: 100%;
+}
+
+.ReactTable .rt-td {
+    font-size: smaller;
+    padding: 2px 2px;
+}
+
+.distance-header {
+    background-color: #b65f5f;
+}
+
+.fairway-header {
+    background-color: #65c065;
+}
+
+.midrange-header {
+    background-color: #7474eb;
+}
+
+.putter-header {
+    background-color: #009eb3
 }

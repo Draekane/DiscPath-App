@@ -1,8 +1,10 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import Select from 'react-select';
 
 const Disc = (props) => {
   const {
+    discId,
     company,
     name,
     enabled,
@@ -30,13 +32,35 @@ const Disc = (props) => {
     }
   };
 
+  const createWearSelector = (disc) => {
+    const selectOptions = []
+    for(let i = 10; i > 0; i -= 1) {
+      selectOptions.push({ label: `${i}/10`, value: i });
+    }
+
+    return (
+      <Select 
+      name={`${disc.discId}_discWearSelector`}
+      id={`${disc.discId}_discWearSelector`}
+    options={selectOptions}
+    value={disc.wear}
+    autosize={true} 
+    />
+    )
+  }
+
   return (
-    <React.Fragment>
-      <input type="check" checked={enabled} onClick={handleSetEnable} />
+    <tr>
+      <td>
+      <input type="checkBox" checked={enabled} onClick={handleSetEnable} />
+      </td><td>
       {company} {name}
-      <input type="range" min="1" max="10" value={wear} onChange={handleChangeValue} />
+      </td><td>
+        {createWearSelector(discId, wear)}
+        </td><td>
       <button onClick={handleRemove} type="button">Remove</button>
-    </React.Fragment>
+      </td>
+    </tr>
   );
 };
 

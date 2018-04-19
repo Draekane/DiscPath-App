@@ -6,3 +6,19 @@ export const loadDisc = (disc) => {
     disc,
   };
 }
+
+export const setDiscEnable = (baggedDiscId, enable) => {
+    return {
+      type: enable ? bagActionTypes.DISABLE_DISC : bagActionTypes.ENABLE_DISC,
+      baggedDiscId,
+      enabled: !enable
+    }
+}
+
+export const setDiscWear = (baggedDiscId, wear) => {
+  return {
+    type: bagActionTypes.UPDATE_DISC_WEAR,
+    baggedDiscId,
+     wear,
+  }
+}

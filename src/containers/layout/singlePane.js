@@ -126,6 +126,14 @@ class SinglePane extends Component {
         <div className="workspace-container grid-container" >
           <header className="App-header grid-item-header">
             <h1 className="App-title">{pageHeader}</h1>
+            To report problems or offer suggestions&nbsp;
+            <a
+              href="https://github.com/MichaelPalmer-Orange/DiscPath-App/issues"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="help-request"
+            >click here
+            </a>
           </header>
           <div className="grid-item1">
             <FlightMap discs={currentDiscs} thrower={thrower} displayOptions={displayOptions} />

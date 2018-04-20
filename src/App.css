@@ -86,3 +86,11 @@
     width: 100%;
     height: 150px;
 }
+
+.help-request {
+    color: grey;
+}
+
+.help-requeset :visited {
+    color: grey;
+}

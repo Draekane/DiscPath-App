@@ -45,34 +45,33 @@ const DisplayOptions = ({
 
   return (
     <React.Fragment>
-      <strong>Display Options:</strong>
-      <hr />
-      <table width="100%">
-        <tr>;
-          <td>
-            <strong>Spread:</strong>
-            {getCurrentSpread(options.fanPower)}
-          </td>
-          <td>
-            <strong>Paths Per Disc:</strong>
-            <Select
-              name="PathsSelector"
-              id="PathsSelector"
-              options={pathsOptions}
-              value={options.pathsShown}
-              onChange={handleChangePaths}
-            />
-          </td>
-          <td>
-            <strong>Labels:</strong>
-            {getLabels(options.lieDistance)}
-          </td>
-          <td>
-            <strong>Circles (10m/15m):</strong>
-            {getCircles(options.lieCircle)}
-          </td>
-        </tr>
-      </table>
+      <div className="display-options-title" >Display Options:</div>
+      <div className="display-options" >
+        <div className="display-options-item item1" >
+          <strong>Spread:</strong>
+          {getCurrentSpread(options.fanPower)}
+        </div>
+        <div className="display-options-item item2" >
+          <strong className="path-per-disc-title">Paths Per Disc:</strong>
+          <Select
+            name="PathsSelector"
+            id="PathsSelector"
+            className="path-per-disc-select"
+            options={pathsOptions}
+            value={options.pathsShown}
+            onChange={handleChangePaths}
+            scrollMenuIntoView={false}
+          />
+        </div>
+        <div className="display-options-item item3" >
+          <strong>Labels:</strong>
+          {getLabels(options.lieDistance)}
+        </div>
+        <div className="display-options-item item4" >
+          <strong>Circles (10m/15m):</strong>
+          {getCircles(options.lieCircle)}
+        </div>
+      </div>
     </React.Fragment>
   );
 };

@@ -1,0 +1,81 @@
+.App-header {
+    background-color: #222;
+    padding: 10px;
+    color: white;
+    grid-column: 1 / 2;
+}
+
+.App-title {
+    font-size: 1.5em;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+.help-request {
+    color: grey;
+
+    :visited {
+        color: grey;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-column-gap: 5px;
+    grid-template-columns: 400px 400px;
+
+    .grid-item {
+        border: rgb(122, 122, 122) solid 1px;
+        text-align: center;
+    }
+
+    .grid-item-credits {
+        grid-column: 1 / 3;
+        padding: 10px 0;
+    }
+    
+    .grid-item1 {
+        grid-column: 1 / 2;
+    
+        .splineCanvas {
+            border: 1px solid #000000;
+            padding: 10px;
+        }
+    }
+    
+    .grid-item2 {
+        grid-column: 2 / 3;
+        display: flex;
+        flex-direction: column;
+
+        .bag-item3 {
+            align-self: center;
+        }
+    }
+    
+    .grid-item3 {
+        grid-column: 1 / 3;
+    }
+}
+
+.disc-bag-table {
+    width: 100%;
+}
+
+.ReactTable {
+    .rt-noData {
+        display: none;
+    }
+
+    .rt-td {
+    font-size: smaller;
+    padding: 2px 2px;
+    }
+}
+
+
+
+
+

@@ -29,38 +29,37 @@ const Thrower = ({ thrower, changePower, changeThrowerType }) => {
 
   return (
     <React.Fragment>
-      <strong>Thrower:</strong>
-      <hr />
-      <table>
-        <tr>
-          <td>
-            <strong>Type:</strong>
-          </td>
-          <td width="150px">
-            <Select
-              name="ThrowerTypeSelector"
-              id="ThrowerTypeSelector"
-              options={throwerTypeOptions}
-              value={thrower.throwType}
-              onChange={handleThrowerTypeChange}
-            />
-          </td>
-          <td><strong>Power:</strong></td>
-          <td width="300px">
-            <Slider
-              value={thrower.power}
-              orientation="horizontal"
-              min={0}
-              max={48}
-              format={powerPercentage}
-              onChange={handlePowerChange}
-            />
-          </td>
-          <td className="thrower-power-output">
+      <div className="thrower-title" >
+      Thrower:
+      </div>
+      <div className="thrower-container" >
+        <div className="thrower-item item1" >
+          <strong className="type-title" >Type:</strong>
+          <Select
+            name="ThrowerTypeSelector"
+            id="ThrowerTypeSelector"
+            className="type-select"
+            options={throwerTypeOptions}
+            value={thrower.throwType}
+            onChange={handleThrowerTypeChange}
+          />
+        </div>
+        <div className="thrower-item item2" >
+          <strong className="power-title" >Power:</strong>
+          <Slider
+            value={thrower.power}
+            orientation="horizontal"
+            min={0}
+            max={48}
+            className="power-slider"
+            format={powerPercentage}
+            onChange={handlePowerChange}
+          />
+        </div>
+        <div className="thrower-item power-output">
             (<strong>{powerPercentage(thrower.power)}</strong> of nominal airspeed required)
-          </td>
-        </tr>
-      </table>
+        </div>
+      </div>
     </React.Fragment>
   );
 };

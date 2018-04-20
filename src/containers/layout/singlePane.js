@@ -122,8 +122,9 @@ class SinglePane extends Component {
       displayOptions,
     } = this.props;
     const content = (
+
       <DocumentTitle title={pageTitle}>
-        <div className="workspace-container grid-container" >
+        <React.Fragment>
           <header className="App-header grid-item-header">
             <h1 className="App-title">{pageHeader}</h1>
             To report problems or offer suggestions&nbsp;
@@ -135,41 +136,57 @@ class SinglePane extends Component {
             >click here
             </a>
           </header>
-          <div className="grid-item1">
-            <FlightMap discs={currentDiscs} thrower={thrower} displayOptions={displayOptions} />
+          <div className="workspace-container grid-container" >
+            <div className="grid-item-credits">
+              Disc flight information from&nbsp;
+              <a
+                href="http://www.inboundsdiscgolf.com/content/?page_id=431"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Inbounds Disc Golf InFlight Guide
+              </a>
+            </div>
+            <div className="grid-item1 grid-item">
+              <FlightMap discs={currentDiscs} thrower={thrower} displayOptions={displayOptions} />
+            </div>
+            <div className="grid-item2 grid-item">
+              <Bag
+                discs={currentDiscs}
+                handleEnableDisc={this.handleEnableDisc}
+                handleSetDiscWear={this.handleSetDiscWear}
+                handleRemoveDisc={this.handleDiscRemove}
+                className="bag-item1"
+              />
+              <CompanyDiscs
+                companies={companies}
+                onSelectHandler={this.handleDiscSelection}
+                currentSelection={currentSelection}
+                className="bag-item2"
+              />
+              <button
+                onClick={this.handleAddDiscToBag}
+                className="bag-item3"
+              >Add To Bag
+              </button>
+            </div>
+            <div className="grid-item3 grid-item">
+              <Thrower
+                thrower={thrower}
+                changePower={this.handleChangeThrowerPower}
+                changeThrowerType={this.handleChangeThrowerType}
+              />
+            </div>
+            <div className="grid-item3 grid-item">
+              <DisplayOptions
+                options={displayOptions}
+                changeFanPower={this.handleChangeFanPower}
+                changePaths={this.handleChangePaths}
+                changeDistance={this.handleChangeLieDistance}
+                changeCircles={this.handleChangeLieCircle}
+              />
+            </div>
           </div>
-          <div className="grid-item2">
-            <Bag
-              discs={currentDiscs}
-              handleEnableDisc={this.handleEnableDisc}
-              handleSetDiscWear={this.handleSetDiscWear}
-              handleRemoveDisc={this.handleDiscRemove}
-            />
-            <hr />
-            <CompanyDiscs
-              companies={companies}
-              onSelectHandler={this.handleDiscSelection}
-              currentSelection={currentSelection}
-            />
-            <button onClick={this.handleAddDiscToBag} >Add To Bag</button>
-          </div>
-          <div className="grid-item3">
-            <Thrower
-              thrower={thrower}
-              changePower={this.handleChangeThrowerPower}
-              changeThrowerType={this.handleChangeThrowerType}
-            />
-          </div>
-          <div className="grid-item3">
-            <DisplayOptions
-              options={displayOptions}
-              changeFanPower={this.handleChangeFanPower}
-              changePaths={this.handleChangePaths}
-              changeDistance={this.handleChangeLieDistance}
-              changeCircles={this.handleChangeLieCircle}
-            />
-          </div>
-        </div>
+        </React.Fragment>
       </DocumentTitle>
     );
 
@@ -192,6 +209,11 @@ SinglePane.propTypes = {
 SinglePane.defaultProps = {
   pageTitle: 'DiscPath',
   pageHeader: 'Experimental Disc Golf Flight Path Visualizer',
+  companies: [],
+  currentSelection: null,
+  currentDiscs: [],
+  thrower: null,
+  displayOptions: null,
 };
 
 const mapStateToProps = state => ({

@@ -1,0 +1,49 @@
+.thrower-title {
+    border-bottom: 1px solid grey;
+    font-weight: bolder;
+    font-size: larger;
+    padding: 5px 0;
+}
+
+.thrower-container {
+    display: flex;
+    text-align: center;
+
+    .thrower-item {
+        padding-top: 20px;
+    }
+
+    .item1 {
+        flex-grow: 2;
+        display: flex;
+
+        .type-title {
+            flex-grow: 1;
+        }
+
+        .type-select {
+            flex-grow: 4;
+            margin-top: -5px;
+        }
+    }
+
+    .item2 {
+        flex-grow: 3;
+        display: flex;
+
+        .power-title {
+            flex-grow: 1;
+        }
+
+        .power-slider {
+            flex-grow: 3;
+            margin-top: 5px;
+        }
+    }
+
+    .power-output {
+        font-size: smaller;
+        flex-grow: 1;
+    }
+}
+

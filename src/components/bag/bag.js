@@ -19,16 +19,15 @@ const Bag = (props) => {
   const putters = _.filter(discs, disc => disc.type === 'P');
 
   const getDiscFrame = () => (
-    <React.Fragment>
-      <strong>Discs in Bag</strong>
-      <hr />
+    <div className="bag-container">
+      <div className="bag-title" >Discs in Bag:</div>
       <DiscType
         discs={distanceDrivers}
         title="Distance Drivers"
         handleEnableDisc={handleEnableDisc}
         handleSetDiscWear={handleSetDiscWear}
         handleRemoveDisc={handleRemoveDisc}
-        headerClassName="distance-header"
+        headerClassName="disc-type distance-header"
       />
       <DiscType
         discs={fairwayDrivers}
@@ -36,7 +35,7 @@ const Bag = (props) => {
         handleEnableDisc={handleEnableDisc}
         handleSetDiscWear={handleSetDiscWear}
         handleRemoveDisc={handleRemoveDisc}
-        headerClassName="fairway-header"
+        headerClassName="disc-type fairway-header"
       />
       <DiscType
         discs={midrange}
@@ -44,7 +43,7 @@ const Bag = (props) => {
         handleEnableDisc={handleEnableDisc}
         handleSetDiscWear={handleSetDiscWear}
         handleRemoveDisc={handleRemoveDisc}
-        headerClassName="midrange-header"
+        headerClassName="disc-type midrange-header"
       />
       <DiscType
         discs={putters}
@@ -52,9 +51,9 @@ const Bag = (props) => {
         handleEnableDisc={handleEnableDisc}
         handleSetDiscWear={handleSetDiscWear}
         handleRemoveDisc={handleRemoveDisc}
-        headerClassName="putter-header"
+        headerClassName="disc-type putter-header"
       />
-    </React.Fragment>
+    </div>
   );
 
   return getDiscFrame();

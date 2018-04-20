@@ -1,6 +1,6 @@
 {
   "name": "discflight_path",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "private": true,
   "engines": {
     "node": "8.x",
@@ -9,13 +9,17 @@
   "scripts": {
     "start": "node server.js",
     "start-dev": "react-scripts start",
-    "build": "react-scripts build",
+    "start-watch": "npm-run-all -p watch-css start-dev",
+    "build": "npm-run-all build-css build-js",
+    "build-js": "react-scripts build",
+    "build-css": "node-sass-chokidar src/ -o src/",
     "clean": "rimraf dist",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "lint": "eslint \"./src/**/*.js\"",
     "lintClean": "eslint --fix src/**/*.{js,jsx}",
-    "lint-sass": "sass-lint -v"
+    "lint-sass": "sass-lint -v",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive"
   },
   "dependencies": {
     "babel-preset-env": "^1.6.1",
@@ -23,6 +27,8 @@
     "express": "4.16.3",
     "immutability-helper": "^2.6.6",
     "lodash": "^4.17.5",
+    "node-sass-chokidar": "0.0.2",
+    "npm-run-all": "^4.1.2",
     "prop-types": "^15.6.1",
     "react": "^16.2.0",
     "react-document-title": "^2.0.3",

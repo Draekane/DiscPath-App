@@ -46,7 +46,6 @@ const DiscType = (props) => {
       data={discs}
       minRows="0"
       showPagination={false}
-      noDataText={`Add ${title}`}
       columns={[
         {
           Header: title,

@@ -1,0 +1,30 @@
+
+.bag-container {
+    .bag-title {
+        border-bottom: 1px solid grey;
+        font-weight: bolder;
+        font-size: larger;
+        padding: 5px 0;
+    }
+
+    .disc-type {
+        font-weight: bold;
+        color: rgb(70, 70, 70);
+    }
+
+    .distance-header {
+        background-color: #b65f5f;
+    }
+
+    .fairway-header {
+        background-color: #65c065;
+    }
+
+    .midrange-header {
+        background-color: #7474eb;
+    }
+
+    .putter-header {
+        background-color: #009eb3
+    }
+}

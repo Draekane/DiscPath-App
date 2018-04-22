@@ -14,7 +14,7 @@ import { discShape, throwerShape, displayOptionsShape } from '../../propTypeShap
 import * as CompanyActions from '../../actions/company';
 import * as BagActions from '../../actions/bag';
 import { currentCompaniesSelector, currentSelectionSelector } from '../../selector/companiesSelector';
-import { throwerSelector, baggedDiscSelector, displayOptionsSelector } from '../../selector/bagSelector';
+import { throwerSelector, baggedDiscSelector, displayOptionsSelector, discTypesSelector } from '../../selector/bagSelector';
 
 class SinglePane extends Component {
   componentWillMount() {
@@ -61,6 +61,12 @@ class SinglePane extends Component {
     const { dispatch } = this.props;
 
     dispatch(BagActions.setDiscEnable(baggedDiscId, enable));
+  }
+
+  handleEnableDiscType = (discType, enable) => {
+    const { dispatch } = this.props;
+
+    dispatch(BagActions.setDiscTypeEnable(discType, enable));
   }
 
   handleSetDiscWear = (baggedDiscId, wear) => {
@@ -120,7 +126,20 @@ class SinglePane extends Component {
       currentDiscs,
       thrower,
       displayOptions,
+      discTypes,
     } = this.props;
+
+    const bagOptions = {
+      discs: currentDiscs,
+      discTypes,
+      functions: {
+        handleEnableDisc: this.handleEnableDisc,
+        handleEnableDiscType: this.handleEnableDiscType,
+        handleSetDiscWear: this.handleSetDiscWear,
+        handleRemoveDisc: this.handleDiscRemove,
+      }
+    }
+
     const content = (
 
       <DocumentTitle title={pageTitle}>
@@ -151,10 +170,7 @@ class SinglePane extends Component {
             </div>
             <div className="grid-item2 grid-item">
               <Bag
-                discs={currentDiscs}
-                handleEnableDisc={this.handleEnableDisc}
-                handleSetDiscWear={this.handleSetDiscWear}
-                handleRemoveDisc={this.handleDiscRemove}
+                props={bagOptions}
                 className="bag-item1"
               />
               <CompanyDiscs
@@ -203,6 +219,7 @@ SinglePane.propTypes = {
   currentDiscs: PropTypes.arrayOf(discShape),
   thrower: PropTypes.shape(throwerShape),
   displayOptions: PropTypes.shape(displayOptionsShape),
+  discTypes: PropTypes.shape({ discType: PropTypes.string, enabled: PropTypes.bool}),
   dispatch: PropTypes.func,
 };
 
@@ -214,6 +231,7 @@ SinglePane.defaultProps = {
   currentDiscs: [],
   thrower: null,
   displayOptions: null,
+  discTypes: null,
 };
 
 const mapStateToProps = state => ({
@@ -222,6 +240,7 @@ const mapStateToProps = state => ({
   currentDiscs: baggedDiscSelector(state),
   thrower: throwerSelector(state),
   displayOptions: displayOptionsSelector(state),
+  discTypes: discTypesSelector(state),
   dispatch: state.dispatch,
 });
 

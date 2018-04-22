@@ -14,6 +14,28 @@ const intiialState = {
     lieCircle: true,
   },
   lastDiscId: 0,
+  discTypes: [
+    {
+      discType: 'D',
+      enabled: true,
+      title: "Distance Drivers",
+    },
+    {
+      discType: 'F',
+      enabled: true,
+      title: "Fairway Drivers",
+    },
+    {
+      discType: 'M',
+      enabled: true,
+      title: "Midranges",
+    },
+    {
+      discType: 'P',
+      enabled: true,
+      title: "Putt and Approach",
+    }
+  ]
 };
 
 const disc = (state = intiialState, action = {}) => {
@@ -47,6 +69,23 @@ const disc = (state = intiialState, action = {}) => {
             return { ...disc, enabled: action.enabled };
           }
           return disc;
+        }),
+      };
+      case bagActionTypes.DISABLE_DISC_TYPE:
+      case bagActionTypes.ENABLE_DISC_TYPE:
+      return {
+        ...state,
+        discs: state.discs.map((disc) => {
+          if (disc.type === action.discType) {
+            return { ...disc, enabled: action.enabled };
+          }
+          return disc;
+        }),
+        discTypes: state.discTypes.map((discType) => {
+          if (discType.discType === action.discType) {
+            return { ...discType, enabled: action.enabled };
+          }
+          return discType;
         }),
       };
     case bagActionTypes.REMOVE_DISC_FROM_BAG:

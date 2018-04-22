@@ -8,12 +8,10 @@ import { discShape } from '../../propTypeShapes/bagShapes';
 const DiscType = (props) => {
   const {
     discs,
-    title,
-    handleEnableDisc,
+    functions,
+    discType,
     headerClassName,
-    handleSetDiscWear,
-    handleRemoveDisc,
-  } = props;
+  } = props.props;
 
   const createWearValues = (baggedDiscId) => {
     const options = [];
@@ -28,18 +26,35 @@ const DiscType = (props) => {
   const handleDisableDisc = (value) => {
     const { original } = value;
     const { baggedDiscId, enabled } = original;
-    handleEnableDisc(baggedDiscId, enabled);
+    functions.handleEnableDisc(baggedDiscId, enabled);
   };
+
+  const handleDisableDiscType = (value) => {
+    functions.handleEnableDiscType(discType.discType, discType.enabled);
+  }
 
   const handleSetWear = (wearObj) => {
     const wearData = JSON.parse(wearObj.target.value);
 
-    handleSetDiscWear(wearData.baggedDiscId, wearData.wear);
+    functions.handleSetDiscWear(wearData.baggedDiscId, wearData.wear);
   };
 
   const handleDiscRemove = (baggedDiscId) => {
-    handleRemoveDisc(baggedDiscId);
+    functions.handleRemoveDisc(baggedDiscId);
   };
+
+  const createHeader = () => {
+    const { enabled, discType: discFlightType, title } = discType;
+    if (discFlightType !== null && discFlightType !== undefined && discs.length > 0) {
+      if (enabled) {
+        return <div className={headerClassName}><FaDotCircleO onClick={handleDisableDiscType} />&nbsp;&nbsp;{title}</div>;
+      } else {
+        return <div className={headerClassName}><FaCircleO onClick={handleDisableDiscType} />&nbsp;&nbsp;{title}</div>;
+      }
+    } else {
+      return <div className={headerClassName}>&nbsp;&nbsp;{title}</div>;
+    }
+  }
 
   return (
     <ReactTable
@@ -48,7 +63,7 @@ const DiscType = (props) => {
       showPagination={false}
       columns={[
         {
-          Header: title,
+          Header: createHeader(),
           headerClassName,
           columns: [
             {
@@ -93,12 +108,21 @@ const DiscType = (props) => {
 };
 
 DiscType.propTypes = {
-  discs: PropTypes.arrayOf(discShape),
-  title: PropTypes.string,
-  headerClassName: PropTypes.string,
-  handleEnableDisc: PropTypes.func,
-  handleSetDiscWear: PropTypes.func,
-  handleRemoveDisc: PropTypes.func,
+  props: PropTypes.shape({
+    discs: PropTypes.arrayOf(discShape),
+    discType: PropTypes.shape({
+      title: PropTypes.string,
+      enabled: PropTypes.bool,
+      discType: PropTypes.string,
+    }),
+        headerClassName: PropTypes.string,
+    functions: PropTypes.shape({
+    
+      handleEnableDisc: PropTypes.func,
+      handleSetDiscWear: PropTypes.func,
+      handleRemoveDisc: PropTypes.func,
+    }),
+  })
 };
 
 export default DiscType;

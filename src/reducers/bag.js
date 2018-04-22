@@ -18,24 +18,24 @@ const intiialState = {
     {
       discType: 'D',
       enabled: true,
-      title: "Distance Drivers",
+      title: 'Distance Drivers',
     },
     {
       discType: 'F',
       enabled: true,
-      title: "Fairway Drivers",
+      title: 'Fairway Drivers',
     },
     {
       discType: 'M',
       enabled: true,
-      title: "Midranges",
+      title: 'Midranges',
     },
     {
       discType: 'P',
       enabled: true,
-      title: "Putt and Approach",
-    }
-  ]
+      title: 'Putt and Approach',
+    },
+  ],
 };
 
 const disc = (state = intiialState, action = {}) => {
@@ -71,8 +71,8 @@ const disc = (state = intiialState, action = {}) => {
           return disc;
         }),
       };
-      case bagActionTypes.DISABLE_DISC_TYPE:
-      case bagActionTypes.ENABLE_DISC_TYPE:
+    case bagActionTypes.DISABLE_DISC_TYPE:
+    case bagActionTypes.ENABLE_DISC_TYPE:
       return {
         ...state,
         discs: state.discs.map((disc) => {

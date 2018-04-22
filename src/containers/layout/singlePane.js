@@ -137,8 +137,8 @@ class SinglePane extends Component {
         handleEnableDiscType: this.handleEnableDiscType,
         handleSetDiscWear: this.handleSetDiscWear,
         handleRemoveDisc: this.handleDiscRemove,
-      }
-    }
+      },
+    };
 
     const content = (
 
@@ -219,7 +219,7 @@ SinglePane.propTypes = {
   currentDiscs: PropTypes.arrayOf(discShape),
   thrower: PropTypes.shape(throwerShape),
   displayOptions: PropTypes.shape(displayOptionsShape),
-  discTypes: PropTypes.shape({ discType: PropTypes.string, enabled: PropTypes.bool}),
+  discTypes: PropTypes.shape({ discType: PropTypes.string, enabled: PropTypes.bool }),
   dispatch: PropTypes.func,
 };
 

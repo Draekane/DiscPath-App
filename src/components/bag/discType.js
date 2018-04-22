@@ -29,9 +29,9 @@ const DiscType = (props) => {
     functions.handleEnableDisc(baggedDiscId, enabled);
   };
 
-  const handleDisableDiscType = (value) => {
+  const handleDisableDiscType = () => {
     functions.handleEnableDiscType(discType.discType, discType.enabled);
-  }
+  };
 
   const handleSetWear = (wearObj) => {
     const wearData = JSON.parse(wearObj.target.value);
@@ -48,13 +48,11 @@ const DiscType = (props) => {
     if (discFlightType !== null && discFlightType !== undefined && discs.length > 0) {
       if (enabled) {
         return <div className={headerClassName}><FaDotCircleO onClick={handleDisableDiscType} />&nbsp;&nbsp;{title}</div>;
-      } else {
-        return <div className={headerClassName}><FaCircleO onClick={handleDisableDiscType} />&nbsp;&nbsp;{title}</div>;
       }
-    } else {
-      return <div className={headerClassName}>&nbsp;&nbsp;{title}</div>;
+      return <div className={headerClassName}><FaCircleO onClick={handleDisableDiscType} />&nbsp;&nbsp;{title}</div>;
     }
-  }
+    return <div className={headerClassName}>&nbsp;&nbsp;{title}</div>;
+  };
 
   return (
     <ReactTable
@@ -115,14 +113,14 @@ DiscType.propTypes = {
       enabled: PropTypes.bool,
       discType: PropTypes.string,
     }),
-        headerClassName: PropTypes.string,
+    headerClassName: PropTypes.string,
     functions: PropTypes.shape({
-    
+      handleEnableDiscType: PropTypes.func,
       handleEnableDisc: PropTypes.func,
       handleSetDiscWear: PropTypes.func,
       handleRemoveDisc: PropTypes.func,
     }),
-  })
+  }),
 };
 
 export default DiscType;

@@ -2,7 +2,7 @@ import * as companyActionTypes from '../actionTypes/company';
 
 const intiialState = {
   companies: null,
-  currentSelection: null
+  currentSelection: null,
 };
 
 const company = (state = intiialState, action = {}) => {

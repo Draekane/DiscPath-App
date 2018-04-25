@@ -26,9 +26,9 @@ class SinglePane extends Component {
     const discData = discId.split('-');
 
     if (discData.length === 2) {
-      const company = _.find(companies, company => company.companyId === parseInt(discData[0], 10));
+      const company = _.find(companies, company => company.companyId === discData[0]);
       if (company !== null) {
-        const disc = _.find(company.discs, disc => disc.discId === parseInt(discData[1], 10));
+        const disc = _.find(company.discs, disc => disc.discId === discData[1]);
         return { company, disc };
       }
     }

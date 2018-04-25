@@ -1,125 +1,176 @@
 {
 	"company": "Axiom",
-	"companyId": 7,
+	"companyId": "2c5d94dd609855f43c21c46744afec3d",
 	"discs": [
-	{
-      "discId": 1,
-      "name": "Alias",
-      "range": 280,
-      "hst": -13,
-      "lsf": 13,
-      "type": "M"
-    },{
-      "discId": 2,
-      "name": "Clash",
-      "range": 340,
-      "hst": -14,
-      "lsf": 56,
-      "type": "F"
-    },{
-      "discId": 3,
-      "name": "Crave",
-      "range": 342,
-      "hst": -21,
-      "lsf": 30,
-      "type": "F"
-    },{
-      "discId": 4,
-      "name": "Defy",
-      "range": 418,
-      "hst": -19,
-      "lsf": 39,
-      "type": "D"
-    },{
-      "discId": 5,
-      "name": "Envy",
-      "range": 245,
-      "hst": 0,
-      "lsf": 30,
-      "type": "P"
-    },{
-      "discId": 6,
-      "name": "Fireball",
-      "range": 377,
-      "hst": 0,
-      "lsf": 70,
-      "type": "D"
-    },{
-      "discId": 7,
-      "name": "Insanity",
-      "range": 390,
-      "hst": -51,
-      "lsf": 32,
-      "type": "D"
-    },{
-      "discId": 8,
-      "name": "Inspire",
-      "range": 344,
-      "hst": -49,
-      "lsf": 34,
-      "type": "F"
-    },{
-      "discId": 9,
-      "name": "Mayhem",
-      "range": 437,
-      "hst": -59,
-      "lsf": 39,
-      "type": "D"
-    },{
-      "discId": 10,
-      "name": "Panic",
-      "range": 436,
-      "hst": 0,
-      "lsf": 59,
-      "type": "D"
-    },{
-      "discId": 11,
-      "name": "Proxy",
-      "range": 253,
-      "hst": -18,
-      "lsf": 18,
-      "type": "P"
-    },{
-      "discId": 12,
-      "name": "Tenacity",
-      "range": 438,
-      "hst": -59,
-      "lsf": 19,
-      "type": "D"
-    },{
-      "discId": 13,
-      "name": "Theory",
-      "range": 289,
-      "hst": -34,
-      "lsf": 16,
-      "type": "M"
-    },{
-      "discId": 14,
-      "name": "Thrill",
-      "range": 418,
-      "hst": 0,
-      "lsf": 59,
-      "type": "D"
-    },{
-      "discId": 15,
-      "name": "Vanish",
-      "range": 418,
-      "hst": -39,
-      "lsf": 19,
-      "type": "D"
-    },{
-      "discId": 16,
-      "name": "Virus",
-      "range": 377,
-      "hst": -57,
-      "lsf": 28,
-      "type": "D"
-    },{
-      "discId": 17,
-      "name": "Wrath",
-      "range": 396,
-      "hst": -9,
-      "lsf": 48,
-      "type": "D"
-    }]
+		{
+			"discId": "effdb9ce6c5d44df31b89d7069c8e0fb",
+			"name": "Alias",
+			"type": "M",
+			"range": 280,
+			"hst": -13,
+			"lsf": 13,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "d3ea5af450fafb77cc11358608b40381",
+			"name": "Clash",
+			"type": "F",
+			"range": 340,
+			"hst": -14,
+			"lsf": 56,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "793f61767f801fd89dc3a2c0b4bb85c4",
+			"name": "Crave",
+			"type": "F",
+			"range": 342,
+			"hst": -21,
+			"lsf": 30,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "ba197673301ae3096b5bbdbe46168817",
+			"name": "Defy",
+			"type": "D",
+			"range": 418,
+			"hst": -19,
+			"lsf": 39,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "9bfbee9ca8a689f3a593fa0cf118982f",
+			"name": "Envy",
+			"type": "P",
+			"range": 245,
+			"hst": 0,
+			"lsf": 30,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "a8155b0ea02bae01cd41369018837d6b",
+			"name": "Fireball",
+			"type": "D",
+			"range": 377,
+			"hst": 0,
+			"lsf": 70,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
+		} , {
+			"discId": "ef97df9d746d0e65ed18786ab30031c6",
+			"name": "Insanity",
+			"type": "D",
+			"range": 390,
+			"hst": -51,
+			"lsf": 32,
+			"pdga": "Y",
+			"matrix_x": 6,
+			"matrix_y": 6
+		} , {
+			"discId": "52bc99d5390cae1d4097906abde0560e",
+			"name": "Inspire",
+			"type": "F",
+			"range": 344,
+			"hst": -49,
+			"lsf": 34,
+			"pdga": "Y",
+			"matrix_x": 6,
+			"matrix_y": 6
+		} , {
+			"discId": "a09633237c07a2d334952914bfd17327",
+			"name": "Mayhem",
+			"type": "D",
+			"range": 437,
+			"hst": -59,
+			"lsf": 39,
+			"pdga": "Y",
+			"matrix_x": 6,
+			"matrix_y": 6
+		} , {
+			"discId": "d4dbdf6f8e0aa2f9cb0e0efa247d4762",
+			"name": "Panic",
+			"type": "D",
+			"range": 436,
+			"hst": 0,
+			"lsf": 59,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
+		} , {
+			"discId": "f56ec2ab97d604832d90f6394e3f341f",
+			"name": "Proxy",
+			"type": "P",
+			"range": 253,
+			"hst": -18,
+			"lsf": 18,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "5a727a99621f9e7f1d95f26fb6e5c529",
+			"name": "Tenacity",
+			"type": "D",
+			"range": 438,
+			"hst": -59,
+			"lsf": 19,
+			"pdga": "Y",
+			"matrix_x": 7,
+			"matrix_y": 7
+		} , {
+			"discId": "700172587c791cceb2ca5c6744e211db",
+			"name": "Theory",
+			"type": "M",
+			"range": 289,
+			"hst": -34,
+			"lsf": 16,
+			"pdga": "Y",
+			"matrix_x": 6,
+			"matrix_y": 6
+		} , {
+			"discId": "a5f799ea7465e196f726736ff8551980",
+			"name": "Thrill",
+			"type": "D",
+			"range": 418,
+			"hst": 0,
+			"lsf": 59,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
+		} , {
+			"discId": "bf5b9a8cd84acfc66a57b8a4903fb353",
+			"name": "Vanish",
+			"type": "D",
+			"range": 418,
+			"hst": -39,
+			"lsf": 19,
+			"pdga": "Y",
+			"matrix_x": 6,
+			"matrix_y": 6
+		} , {
+			"discId": "a94d4950bba6053ab0fa6feb2ebe04ec",
+			"name": "Virus",
+			"type": "D",
+			"range": 377,
+			"hst": -57,
+			"lsf": 28,
+			"pdga": "Y",
+			"matrix_x": 7,
+			"matrix_y": 7
+		} , {
+			"discId": "9b1271f437c566a7fb4836696ee65de6",
+			"name": "Wrath",
+			"type": "D",
+			"range": 396,
+			"hst": -9,
+			"lsf": 48,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+	}]
 }

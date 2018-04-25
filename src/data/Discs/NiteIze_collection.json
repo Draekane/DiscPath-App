@@ -1,29 +1,36 @@
 {
 	"company": "Nite Ize",
-	"companyId": 45,
+	"companyId": "0c6b3a8758e8b158717a16296e60d37f",
 	"discs": [
-	{
-		"discId": 1,
-		"name": "Flashflight LED Driver",
-		"type": "D",
-		"range": 376,
-		"hst": -56,
-		"lsf": 38
-	},	{
-		"discId": 2,
-		"name": "Flashflight LED Midrange",
-		"type": "M",
-		"range": 277,
-		"hst": -23,
-		"lsf": 36
-	},	{
-		"discId": 3,
-		"name": "Flashflight LED Putter",
-		"type": "P",
-		"range": 240,
-		"hst": -9,
-		"lsf": 27
+		{
+			"discId": "afa60ee532d92015220ce78e1c83a186",
+			"name": "Flashflight LED Driver",
+			"type": "D",
+			"range": 376,
+			"hst": -56,
+			"lsf": 38,
+			"pdga": "N",
+			"matrix_x": 6,
+			"matrix_y": 6
+		} , {
+			"discId": "91d85d10733c9ef43fbdce8415c78b41",
+			"name": "Flashflight LED Midrange",
+			"type": "M",
+			"range": 277,
+			"hst": -23,
+			"lsf": 36,
+			"pdga": "N",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "c317bd7c96108aacc7b2d99df5c82f34",
+			"name": "Flashflight LED Putter",
+			"type": "P",
+			"range": 240,
+			"hst": -9,
+			"lsf": 27,
+			"pdga": "N",
+			"matrix_x": 5,
+			"matrix_y": 5
 	}]
 }
-
-	

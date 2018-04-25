@@ -1,13 +1,16 @@
 {
 	"company": "Black Zombie",
-	"companyId": 9,
+	"companyId": "59b069903fd34e7fd467d12a108c2d26",
 	"discs": [
-	{
-      "discId": 1,
-      "name": "Chainsaw",
-      "range": 292,
-      "hst": 0,
-      "lsf": 18,
-      "type": "P"
-    }]
+		{
+			"discId": "21de0335eff140f1016b34f30cc83ae0",
+			"name": "Chainsaw",
+			"type": "P",
+			"range": 292,
+			"hst": 0,
+			"lsf": 18,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+	}]
 }

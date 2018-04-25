@@ -1,22 +1,26 @@
 {
 	"company": "Plastic Addicts",
-	"companyId": 50,
+	"companyId": "21a6c32845b2fee6fc491f2488b90a50",
 	"discs": [
-	{
-		"discId": 1,
-		"name": "Habit",
-		"type": "P",
-		"range": 265,
-		"hst": -1,
-		"lsf": 2
-	},	{
-		"discId": 2,
-		"name": "Intervention",
-		"type": "D",
-		"range": 409,
-		"hst": 0,
-		"lsf": 78
+		{
+			"discId": "ed39614395abc84cc06199f96fd4e6ca",
+			"name": "Habit",
+			"type": "P",
+			"range": 265,
+			"hst": -1,
+			"lsf": 2,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "c143a2430949511de6ed78cf1c63afc9",
+			"name": "Intervention",
+			"type": "D",
+			"range": 409,
+			"hst": 0,
+			"lsf": 78,
+			"pdga": "Y",
+			"matrix_x": 2,
+			"matrix_y": 2
 	}]
 }
-
-	

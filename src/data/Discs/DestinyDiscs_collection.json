@@ -1,14 +1,16 @@
 {
 	"company": "Destiny Discs",
-	"companyId": 16,
+	"companyId": "0a3c316bdfbdd0bf2205e0de0be24439",
 	"discs": [
-	{
-		"discId": 1,
-		"name": "Super Puppy",
-		"type": "P",
-		"range": 236,
-		"hst": -36,
-		"lsf": 18
+		{
+			"discId": "a14185666db91fb238d679343c6a7001",
+			"name": "Super Puppy",
+			"type": "P",
+			"range": 236,
+			"hst": -36,
+			"lsf": 18,
+			"pdga": "Y",
+			"matrix_x": 6,
+			"matrix_y": 6
 	}]
 }
-	

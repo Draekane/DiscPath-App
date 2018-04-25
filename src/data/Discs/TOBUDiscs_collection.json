@@ -1,22 +1,26 @@
 {
 	"company": "TOBU Discs",
-	"companyId": 62,
+	"companyId": "c7bdee8907ff0f8d90da8299c0ebd111",
 	"discs": [
-	{
-		"discId": 1,
-		"name": "Kyng Roller",
-		"type": "F",
-		"range": 344,
-		"hst": -76,
-		"lsf": 19
-	},	{
-		"discId": 2,
-		"name": "Charge",
-		"type": "F",
-		"range": 350,
-		"hst": -23,
-		"lsf": 38
+		{
+			"discId": "517349a3cdc1acf50617693e3ba33988",
+			"name": "Charge",
+			"type": "F",
+			"range": 350,
+			"hst": -23,
+			"lsf": 38,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "b750cbe48ba63dcbcfab49acf140686d",
+			"name": "Kyng Roller",
+			"type": "F",
+			"range": 344,
+			"hst": -76,
+			"lsf": 19,
+			"pdga": "N",
+			"matrix_x": 8,
+			"matrix_y": 8
 	}]
 }
-
-	

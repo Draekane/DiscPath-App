@@ -1,28 +1,36 @@
 {
 	"company": "EMSCO Group",
-	"companyId": 22,
+	"companyId": "9e20ebba41abfaf60bc1073e420a67b8",
 	"discs": [
-	{
-		"discId": 1,
-		"name": "ESP Driver",
-		"type": "F",
-		"range": 312,
-		"hst": -41,
-		"lsf": 29
-	},	{
-		"discId": 2,
-		"name": "ESP Midrange",
-		"type": "M",
-		"range": 294,
-		"hst": -39,
-		"lsf": 27
-	},	{
-		"discId": 3,
-		"name": "ESP Putter",
-		"type": "P",
-		"range": 251,
-		"hst": -45,
-		"lsf": 18
+		{
+			"discId": "94e083ab5729524ca4970d99390e643e",
+			"name": "ESP Driver",
+			"type": "F",
+			"range": 312,
+			"hst": -41,
+			"lsf": 29,
+			"pdga": "Y",
+			"matrix_x": 6,
+			"matrix_y": 6
+		} , {
+			"discId": "7000924f138abc9a6666011cbd28459b",
+			"name": "ESP Midrange",
+			"type": "M",
+			"range": 294,
+			"hst": -39,
+			"lsf": 27,
+			"pdga": "Y",
+			"matrix_x": 6,
+			"matrix_y": 6
+		} , {
+			"discId": "1f0771affaab58ad4059bd607268abab",
+			"name": "ESP Putter",
+			"type": "P",
+			"range": 251,
+			"hst": -45,
+			"lsf": 18,
+			"pdga": "Y",
+			"matrix_x": 7,
+			"matrix_y": 7
 	}]
 }
-	

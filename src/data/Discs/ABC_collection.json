@@ -1,48 +1,66 @@
 {
 	"company": "ABC",
-	"companyId": 2,
+	"companyId": "902fbdd2b1df0c4f70b4a5d23525e932",
 	"discs": [
-	{
-      "discId": 1,
-      "name": "Bee Line",
-      "range": 435,
-      "hst": -52,
-      "lsf": 39,
-      "type": "D"
-    },{
-      "discId": 2,
-      "name": "Flying Squirrel",
-      "range": 295,
-      "hst": -55,
-      "lsf": 18,
-      "type": "M"
-    },{
-      "discId": 3,
-      "name": "Gamma Ray",
-      "range": 401,
-      "hst": -39,
-      "lsf": 39,
-      "type": "D"
-    },{
-      "discId": 4,
-      "name": "Money",
-      "range": 246,
-      "hst": -6,
-      "lsf": 33,
-      "type": "P"
-    },{
-      "discId": 5,
-      "name": "Secret Weapon",
-      "range": 379,
-      "hst": -51,
-      "lsf": 35,
-      "type": "D"
-    },{
-      "discId": 6,
-      "name": "The Mission",
-      "range": 288,
-      "hst": -18,
-      "lsf": 33,
-      "type": "M"
-    }]
+		{
+			"discId": "57adb874c41b51d508a1f64a39d07b39",
+			"name": "Bee Line",
+			"type": "D",
+			"range": 435,
+			"hst": -52,
+			"lsf": 39,
+			"pdga": "Y",
+			"matrix_x": 6,
+			"matrix_y": 6
+		} , {
+			"discId": "7bc1d13a27455a627ac35ea610b05c25",
+			"name": "Flying Squirrel",
+			"type": "M",
+			"range": 295,
+			"hst": -55,
+			"lsf": 18,
+			"pdga": "Y",
+			"matrix_x": 7,
+			"matrix_y": 7
+		} , {
+			"discId": "7c87a20a7933e20ae9ee8badcc9fb82a",
+			"name": "Gamma Ray",
+			"type": "D",
+			"range": 401,
+			"hst": -39,
+			"lsf": 39,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "a93312829ec4c71aac461cec296faa0e",
+			"name": "Money",
+			"type": "P",
+			"range": 246,
+			"hst": -6,
+			"lsf": 33,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "eea3e2e23d55a3acb82913bfa2938119",
+			"name": "Secret Weapon",
+			"type": "D",
+			"range": 379,
+			"hst": -51,
+			"lsf": 35,
+			"pdga": "Y",
+			"matrix_x": 6,
+			"matrix_y": 6
+		} , {
+			"discId": "25d813ba0496672a2481e871cd5488ba",
+			"name": "The Mission",
+			"type": "M",
+			"range": 288,
+			"hst": -18,
+			"lsf": 33,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+	}]
 }

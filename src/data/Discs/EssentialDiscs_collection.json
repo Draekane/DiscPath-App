@@ -1,14 +1,16 @@
 {
 	"company": "Essential Discs",
-	"companyId": 24,
+	"companyId": "8b420e782fc5eeb3c93c27a7ec405ae3",
 	"discs": [
-	{
-		"discId": 1,
-		"name": "Honey",
-		"type": "M",
-		"range": 277,
-		"hst": 0,
-		"lsf": 42
+		{
+			"discId": "8dc0611245a871ac51bbeebb85f33a58",
+			"name": "Honey",
+			"type": "M",
+			"range": 277,
+			"hst": 0,
+			"lsf": 42,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
 	}]
 }
-	

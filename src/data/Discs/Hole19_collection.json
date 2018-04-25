@@ -1,14 +1,16 @@
 {
 	"company": "Hole 19",
-	"companyId": 34,
+	"companyId": "15543c4bc84eabf1598ee4737645a79b",
 	"discs": [
-	{
-		"discId": 1,
-		"name": "All in One",
-		"type": "P",
-		"range": 262,
-		"hst": -36,
-		"lsf": 18
+		{
+			"discId": "dc2b6dab45e2e02c39a2e9721f177453",
+			"name": "All in One",
+			"type": "P",
+			"range": 262,
+			"hst": -36,
+			"lsf": 18,
+			"pdga": "Y",
+			"matrix_x": 6,
+			"matrix_y": 6
 	}]
 }
-	

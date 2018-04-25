@@ -67,7 +67,7 @@ for company in disc_companies:
 					out_handle.write("\t\t\t\"hst\": " + disc_data_arr[4].replace("%","") + ",\n")
 				if len(disc_data_arr) >= 6:
 					# print("        \"lsf\": " + disc_data_arr[5].replace("%","") + ",")
-					out_handle.write("\t\t\t\"lst\": " + disc_data_arr[5].replace("%","") + ",\n")
+					out_handle.write("\t\t\t\"lsf\": " + disc_data_arr[5].replace("%","") + ",\n")
 				if len(disc_data_arr) >= 8:
 					# print("        \"pdga\": \"" + disc_data_arr[7] + "\",")
 					out_handle.write("\t\t\t\"pdga\": \"" + disc_data_arr[7] + "\",\n")
@@ -75,9 +75,9 @@ for company in disc_companies:
 					# print("        \"matrix\": \"" + disc_data_arr[9] + ",")
 					# print("        \"matrix_x\": \"" + disc_data_arr[9].split("-")[1] + ",")
 					# print("        \"matrix_y\": \"" + disc_data_arr[9].split("-")[0] + ",")
-					out_handle.write("\t\t\t\"matrix_x\": " + disc_data_arr[9].split("-")[1] + ",\n\t\t\t\"matrix_y\": " + disc_data_arr[9].split("-")[1] + ",\n")
+					out_handle.write("\t\t\t\"matrix_x\": " + disc_data_arr[9].split("-")[1] + ",\n\t\t\t\"matrix_y\": " + disc_data_arr[9].split("-")[1] + "\n")
 			# print("    }]")
 			# print("}")
-			out_handle.write("\t}]\n}")
+			out_handle.write("\t}]\n}\n")
 			out_handle.close()
 

@@ -1,41 +1,56 @@
 {
-	"company": "AquaFlight Disc",
-	"companyId": 5,
+	"company": "AquaFlight Discs",
+	"companyId": "b6312002a471fd641e60bf47ebf3681a",
 	"discs": [
-	{
-      "discId": 1,
-      "name": "Dragonfly",
-      "range": 294,
-      "hst": -46,
-      "lsf": 37,
-      "type": "M"
-    },{
-      "discId": 2,
-      "name": "Osprey",
-      "range": 433,
-      "hst": -39,
-      "lsf": 39,
-      "type": "D"
-    },{
-      "discId": 3,
-      "name": "Peace Frog",
-      "range": 26,
-      "hst": 0,
-      "lsf": 18,
-      "type": "P"
-    },{
-      "discId": 4,
-      "name": "Pelican",
-      "range": 328,
-      "hst": -50,
-      "lsf": 37,
-      "type": "F"
-    },{
-      "discId": 5,
-      "name": "Swift",
-      "range": 367,
-      "hst": -38,
-      "lsf": 19,
-      "type": "F"
-    }]
+		{
+			"discId": "48f63cb503df1d50950dbdf8c3b84e0c",
+			"name": "Dragonfly",
+			"type": "M",
+			"range": 294,
+			"hst": -46,
+			"lsf": 37,
+			"pdga": "Y",
+			"matrix_x": 6,
+			"matrix_y": 6
+		} , {
+			"discId": "8ead667a956b4d987491bc9346c2c3b6",
+			"name": "Osprey",
+			"type": "D",
+			"range": 433,
+			"hst": -39,
+			"lsf": 39,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "bc7b25f9a21537aa9f3027177d3647eb",
+			"name": "Peace Frog",
+			"type": "P",
+			"range": 256,
+			"hst": 0,
+			"lsf": 18,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "a6d15caf7e8c9d203af5aa134219bab2",
+			"name": "Pelican",
+			"type": "F",
+			"range": 328,
+			"hst": -50,
+			"lsf": 37,
+			"pdga": "Y",
+			"matrix_x": 6,
+			"matrix_y": 6
+		} , {
+			"discId": "ae832e9b5bda2699db45f3fa6aa8c556",
+			"name": "Swift",
+			"type": "F",
+			"range": 367,
+			"hst": -38,
+			"lsf": 19,
+			"pdga": "Y",
+			"matrix_x": 6,
+			"matrix_y": 6
+	}]
 }

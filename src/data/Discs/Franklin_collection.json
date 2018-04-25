@@ -1,28 +1,36 @@
 {
 	"company": "Franklin",
-	"companyId": 28,
+	"companyId": "58d72e8e4929313bdba8dc247ef3aa5f",
 	"discs": [
-	{
-		"discId": 1,
-		"name": "RT Nite Owl",
-		"type": "P",
-		"range": 233,
-		"hst": -67,
-		"lsf": 18
-	},	{
-		"discId": 2,
-		"name": "RT Albatross",
-		"type": "F",
-		"range": 312,
-		"hst": -93,
-		"lsf": 9
-	},	{
-		"discId": 3,
-		"name": "RT Sparrow",
-		"type": "M",
-		"range": 276,
-		"hst": -73,
-		"lsf": 18
+		{
+			"discId": "5e49874caecd515994bdc2f66565fc0c",
+			"name": "RT Albatross",
+			"type": "F",
+			"range": 312,
+			"hst": -93,
+			"lsf": 9,
+			"pdga": "Y",
+			"matrix_x": 8,
+			"matrix_y": 8
+		} , {
+			"discId": "7446381aabf40dc9f8eea27868fcd59e",
+			"name": "RT Nite Owl",
+			"type": "P",
+			"range": 233,
+			"hst": -67,
+			"lsf": 18,
+			"pdga": "N",
+			"matrix_x": 7,
+			"matrix_y": 7
+		} , {
+			"discId": "2e8b3574f89b4660e35afe8be69d1748",
+			"name": "RT Sparrow",
+			"type": "M",
+			"range": 276,
+			"hst": -73,
+			"lsf": 18,
+			"pdga": "N",
+			"matrix_x": 8,
+			"matrix_y": 8
 	}]
 }
-	

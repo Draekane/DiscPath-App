@@ -1,15 +1,16 @@
 {
 	"company": "Mint Discs",
-	"companyId": 44,
+	"companyId": "3f45882d9e49d1f1b79dc8c11c10e53a",
 	"discs": [
-	{
-		"discId": 1,
-		"name": "Alpha",
-		"type": "F",
-		"range": 347,
-		"hst": 0,
-		"lsf": 38
+		{
+			"discId": "6132295fcf5570fb8b0a944ef322a598",
+			"name": "Alpha",
+			"type": "F",
+			"range": 347,
+			"hst": 0,
+			"lsf": 38,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
 	}]
 }
-
-	

@@ -17,7 +17,7 @@ const DiscType = (props) => {
     const options = [];
 
     for (let i = 10; i > 0; i -= 1) {
-      options.push(<option value={`{"wear": ${i}, "baggedDiscId": ${baggedDiscId}}`}>{i}/10</option>);
+      options.push(<option key={`wear_${i}_${baggedDiscId}`} value={`{"wear": ${i}, "baggedDiscId": ${baggedDiscId}}`}>{i}/10</option>);
     }
 
     return (options);
@@ -86,7 +86,7 @@ const DiscType = (props) => {
               Cell: row => (
                 <select
                   onChange={handleSetWear}
-                  selectedValue={row.value}
+                  selectedvalue={row.value}
                 >
                   {createWearValues(row.original.baggedDiscId)}
                 </select>

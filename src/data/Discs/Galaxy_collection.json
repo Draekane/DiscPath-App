@@ -1,35 +1,46 @@
 {
 	"company": "Galaxy",
-	"companyId": 31,
+	"companyId": "756fb2b980ffa9a26e5290293efba3aa",
 	"discs": [
-	{
-		"discId": 1,
-		"name": "Shooting Star",
-		"type": "F",
-		"range": 332,
-		"hst": -37,
-		"lsf": 18
-	},	{
-		"discId": 2,
-		"name": "Orbit",
-		"type": "M",
-		"range": 294,
-		"hst": 0,
-		"lsf": 55
-	},	{
-		"discId": 3,
-		"name": "Magneton",
-		"type": "P",
-		"range": 240,
-		"hst": 0,
-		"lsf": 36
-	},	{
-		"discId": 4,
-		"name": "Meteorite",
-		"type": "D",
-		"range": 401,
-		"hst": -97,
-		"lsf": 19
+		{
+			"discId": "352c90d85805ab45658a7796c4e58e5e",
+			"name": "Magneton",
+			"type": "P",
+			"range": 240,
+			"hst": 0,
+			"lsf": 36,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "1575857b201534c60c0d158e46839777",
+			"name": "Meteorite",
+			"type": "D",
+			"range": 401,
+			"hst": -97,
+			"lsf": 19,
+			"pdga": "Y",
+			"matrix_x": 8,
+			"matrix_y": 8
+		} , {
+			"discId": "76e1ab7a1df8e64fe867b420645c8a68",
+			"name": "Orbit",
+			"type": "M",
+			"range": 294,
+			"hst": 0,
+			"lsf": 55,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
+		} , {
+			"discId": "b75f61136a59b68470a74f4eb72119be",
+			"name": "Shooting Star",
+			"type": "F",
+			"range": 332,
+			"hst": -37,
+			"lsf": 18,
+			"pdga": "Y",
+			"matrix_x": 6,
+			"matrix_y": 6
 	}]
 }
-	

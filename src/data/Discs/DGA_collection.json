@@ -1,189 +1,266 @@
 {
 	"company": "DGA",
-	"companyId": 12,
+	"companyId": "1a0fb2bccd2d8774934f42de18a75106",
 	"discs": [
-	{
-		"discId": 1,
-		"name": "Shockwave",
-		"type": "M",
-		"range": 279,
-		"hst": -2,
-		"lsf": 48
-	},{
-		"discId": 2,
-		"name": "Sail",
-		"type": "D",
-		"range": 400,
-		"hst": -97,
-		"lsf": 19
-	},{
-		"discId": 3,
-		"name": "Hellfire",
-		"type": "D",
-		"range": 354,
-		"hst": 4,
-		"lsf": 81
-	},{
-		"discId": 4,
-		"name": "Blowfly",
-		"type": "P",
-		"range": 244,
-		"hst": -13,
-		"lsf": 36
-	},{
-		"discId": 5,
-		"name": "Blowfly II",
-		"type": "P",
-		"range": 241,
-		"hst": -27,
-		"lsf": 22
-	},{
-		"discId": 6,
-		"name": "Blunt Driver",
-		"type": "P",
-		"range": 260,
-		"hst": -18,
-		"lsf": 36
-	},{
-		"discId": 7,
-		"name": "Blunt Gumbputt",
-		"type": "P",
-		"range": 253,
-		"hst": -13,
-		"lsf": 27
-	},{
-		"discId": 8,
-		"name": "Flathead Cyclone",
-		"type": "F",
-		"range": 331,
-		"hst": -18,
-		"lsf": 37
-	},{
-		"discId": 9,
-		"name": "Powerdrive Gumbputt",
-		"type": "P",
-		"range": 264,
-		"hst": -30,
-		"lsf": 18
-	},{
-		"discId": 10,
-		"name": "Rogue",
-		"type": "D",
-		"range": 408,
-		"hst": -19,
-		"lsf": 48
-	},{
-		"discId": 11,
-		"name": "Hurricane",
-		"type": "D",
-		"range": 431,
-		"hst": -19,
-		"lsf": 46
-	},{
-		"discId": 12,
-		"name": "Undertow",
-		"type": "F",
-		"range": 364,
-		"hst": -31,
-		"lsf": 28
-	},{
-		"discId": 13,
-		"name": "Breaker",
-		"type": "P",
-		"range": 255,
-		"hst": 0,
-		"lsf": 47
-	},{
-		"discId": 14,
-		"name": "Tsunami",
-		"type": "D",
-		"range": 383,
-		"hst": 0,
-		"lsf": 70
-	},{
-		"discId": 15,
-		"name": "Tremor",
-		"type": "M",
-		"range": 312,
-		"hst": -74,
-		"lsf": 18
-	},{
-		"discId": 16,
-		"name": "Torrent",
-		"type": "D",
-		"range": 453,
-		"hst": -29,
-		"lsf": 55
-	},{
-		"discId": 17,
-		"name": "Riptide",
-		"type": "D",
-		"range": 381,
-		"hst": -6,
-		"lsf": 58
-	},{
-		"discId": 18,
-		"name": "Reef",
-		"type": "P",
-		"range": 242,
-		"hst": -22,
-		"lsf": 22
-	},{
-		"discId": 19,
-		"name": "Pipeline",
-		"type": "F",
-		"range": 352,
-		"hst": 0,
-		"lsf": 38
-	},{
-		"discId": 20,
-		"name": "Squall",
-		"type": "M",
-		"range": 299,
-		"hst": -18,
-		"lsf": 25
-	},{
-		"discId": 21,
-		"name": "Steady",
-		"type": "P",
-		"range": 245,
-		"hst": 0,
-		"lsf": 36
-	},{
-		"discId": 22,
-		"name": "Aftershock",
-		"type": "M",
-		"range": 283,
-		"hst": -4,
-		"lsf": 36
-	},{
-		"discId": 23,
-		"name": "Titanic",
-		"type": "P",
-		"range": 244,
-		"hst": 0,
-		"lsf": 36
-	},{
-		"discId": 24,
-		"name": "Quake",
-		"type": "M",
-		"range": 291,
-		"hst": 0,
-		"lsf": 55
-	},{
-		"discId": 25,
-		"name": "GlowFly",
-		"type": "P",
-		"range": 236,
-		"hst": -18,
-		"lsf": 36
-	},{
-		"discId": 26,
-		"name": "XL-Superdrive",
-		"type": "F",
-		"range": 347,
-		"hst": -19,
-		"lsf": 28
+		{
+			"discId": "92882c9a224e34ab965385738d63d302",
+			"name": "Aftershock",
+			"type": "M",
+			"range": 283,
+			"hst": -4,
+			"lsf": 36,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "3fb043cb12c4f76468e6ac668dd0644c",
+			"name": "Blowfly",
+			"type": "P",
+			"range": 244,
+			"hst": -13,
+			"lsf": 36,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "e9a177a6d9705bed4e8f285c3a88911b",
+			"name": "Blowfly II",
+			"type": "P",
+			"range": 241,
+			"hst": -27,
+			"lsf": 22,
+			"pdga": "Y",
+			"matrix_x": 6,
+			"matrix_y": 6
+		} , {
+			"discId": "312fd9348ded119df29f7e11ce1bab47",
+			"name": "Blunt Driver",
+			"type": "P",
+			"range": 260,
+			"hst": -18,
+			"lsf": 36,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "e12ab2bfc2fd5e20a7ef6f6e3487989a",
+			"name": "Blunt Gumbputt",
+			"type": "P",
+			"range": 253,
+			"hst": -13,
+			"lsf": 27,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "c08eafd7027026f20fd775dc48555fa0",
+			"name": "Breaker",
+			"type": "P",
+			"range": 255,
+			"hst": 0,
+			"lsf": 47,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "630c42ef42edcd14f8469d6e33bb590c",
+			"name": "Flathead Cyclone",
+			"type": "F",
+			"range": 331,
+			"hst": -18,
+			"lsf": 37,
+			"pdga": "N",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "b0ac73c1d59071eac85ec8b7716f6372",
+			"name": "GlowFly",
+			"type": "P",
+			"range": 236,
+			"hst": -18,
+			"lsf": 36,
+			"pdga": "N",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "2ad0245c6d5a228e1be1b32e8a755de9",
+			"name": "Hellfire",
+			"type": "D",
+			"range": 354,
+			"hst": 4,
+			"lsf": 81,
+			"pdga": "Y",
+			"matrix_x": 2,
+			"matrix_y": 2
+		} , {
+			"discId": "17c6115bae2de2648edea8a22105cec5",
+			"name": "Hurricane",
+			"type": "D",
+			"range": 431,
+			"hst": -19,
+			"lsf": 46,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "aeaeaec51b4e6b88122f10ad96a8de72",
+			"name": "Pipeline",
+			"type": "F",
+			"range": 352,
+			"hst": 0,
+			"lsf": 38,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "02ef6b32719c1c27b78c5324f0de5a01",
+			"name": "Powerdrive Gumbputt",
+			"type": "P",
+			"range": 264,
+			"hst": -30,
+			"lsf": 18,
+			"pdga": "Y",
+			"matrix_x": 6,
+			"matrix_y": 6
+		} , {
+			"discId": "c64c84c88b991458b38eeaaa0bbd44cb",
+			"name": "Quake",
+			"type": "M",
+			"range": 291,
+			"hst": 0,
+			"lsf": 55,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
+		} , {
+			"discId": "b1aa18115590c753cd6b41341f26f1bf",
+			"name": "Reef",
+			"type": "P",
+			"range": 242,
+			"hst": -22,
+			"lsf": 22,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "6fa86beeec3a9f12ada1a3b61145624e",
+			"name": "Riptide",
+			"type": "D",
+			"range": 381,
+			"hst": -6,
+			"lsf": 58,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
+		} , {
+			"discId": "ae412534db3879501923fa67e0ea0174",
+			"name": "Rogue",
+			"type": "D",
+			"range": 408,
+			"hst": -19,
+			"lsf": 48,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "8e186b0baca79ffd79eab25c9e181793",
+			"name": "Sail",
+			"type": "D",
+			"range": 400,
+			"hst": -97,
+			"lsf": 19,
+			"pdga": "Y",
+			"matrix_x": 8,
+			"matrix_y": 8
+		} , {
+			"discId": "822b02e1b751097d290eaad55252eb81",
+			"name": "Shockwave",
+			"type": "M",
+			"range": 279,
+			"hst": -2,
+			"lsf": 48,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "e65acb2fd0e719eda9fe38a611fcef04",
+			"name": "Squall",
+			"type": "M",
+			"range": 299,
+			"hst": -18,
+			"lsf": 25,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "9ede786e1e3175585aacb6d383a09aaf",
+			"name": "Steady",
+			"type": "P",
+			"range": 245,
+			"hst": 0,
+			"lsf": 36,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "c54e6f7dd4dacc1ac5b0fa66565a4a60",
+			"name": "Titanic",
+			"type": "P",
+			"range": 244,
+			"hst": 0,
+			"lsf": 36,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "673299d94aecab173d7dd92565babe1f",
+			"name": "Torrent",
+			"type": "D",
+			"range": 453,
+			"hst": -29,
+			"lsf": 55,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "68e74607c15e37d209b335c0c1b7bde4",
+			"name": "Tremor",
+			"type": "M",
+			"range": 312,
+			"hst": -74,
+			"lsf": 18,
+			"pdga": "Y",
+			"matrix_x": 8,
+			"matrix_y": 8
+		} , {
+			"discId": "174147762fec5d9537f498ef166b4a59",
+			"name": "Tsunami",
+			"type": "D",
+			"range": 383,
+			"hst": 0,
+			"lsf": 70,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
+		} , {
+			"discId": "399033f75fcf47d6736c9c5209222ab8",
+			"name": "Undertow",
+			"type": "F",
+			"range": 364,
+			"hst": -31,
+			"lsf": 28,
+			"pdga": "Y",
+			"matrix_x": 6,
+			"matrix_y": 6
+		} , {
+			"discId": "c828725960182de228181f5059118a3d",
+			"name": "XL-Superdrive",
+			"type": "F",
+			"range": 347,
+			"hst": -19,
+			"lsf": 28,
+			"pdga": "N",
+			"matrix_x": 5,
+			"matrix_y": 5
 	}]
 }
-	

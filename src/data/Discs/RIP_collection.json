@@ -1,29 +1,36 @@
 {
 	"company": "RIP",
-	"companyId": 54,
+	"companyId": "a195b7c9fc241f3da0599717060f898d",
 	"discs": [
-	{
-		"discId": 1,
-		"name": "Relic",
-		"type": "P",
-		"range": 257,
-		"hst": -27,
-		"lsf": 36
-	},	{
-		"discId": 2,
-		"name": "Grabboid",
-		"type": "P",
-		"range": 259,
-		"hst": 4,
-		"lsf": 54
-	},	{
-		"discId": 3,
-		"name": "Ballistic",
-		"type": "D",
-		"range": 412,
-		"hst": -39,
-		"lsf": 58
+		{
+			"discId": "272076ee2e40acec00f8329b4b278d51",
+			"name": "Ballistic",
+			"type": "D",
+			"range": 412,
+			"hst": -39,
+			"lsf": 58,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "3146af3cf4221a521292df1f72d18268",
+			"name": "Grabboid",
+			"type": "P",
+			"range": 259,
+			"hst": 4,
+			"lsf": 54,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
+		} , {
+			"discId": "95bacd099548cd6ef0c33642a7a43ccf",
+			"name": "Relic",
+			"type": "P",
+			"range": 257,
+			"hst": -27,
+			"lsf": 36,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
 	}]
 }
-
-	

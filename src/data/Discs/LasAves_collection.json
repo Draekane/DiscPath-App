@@ -1,21 +1,26 @@
 {
 	"company": "Las Aves",
-	"companyId": 38,
+	"companyId": "d62e85720b966baadc41677f309928b8",
 	"discs": [
-	{
-		"discId": 1,
-		"name": "Wo-Hoo",
-		"type": "F",
-		"range": 315,
-		"hst": 0,
-		"lsf": 37
-	},	{
-		"discId": 2,
-		"name": "Ka-Kaa",
-		"type": "D",
-		"range": 417,
-		"hst": -39,
-		"lsf": 39
+		{
+			"discId": "168d8d67bee14de32354e2ec1743c2f3",
+			"name": "Ka-Kaa",
+			"type": "D",
+			"range": 417,
+			"hst": -39,
+			"lsf": 39,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "d99cb1c5b514248bc4a6df39380f7799",
+			"name": "Wo-Hoo",
+			"type": "F",
+			"range": 315,
+			"hst": 0,
+			"lsf": 37,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
 	}]
 }
-	

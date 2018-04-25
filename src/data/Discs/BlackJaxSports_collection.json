@@ -1,27 +1,36 @@
 {
 	"company": "Black Jax Sports",
-	"companyId": 8,
+	"companyId": "8b0fc2dc891158e6c19d237fc8277d0e",
 	"discs": [
-	{
-      "discId": 1,
-      "name": "Axe Driver",
-      "range": 338,
-      "hst": 0,
-      "lsf": 66,
-      "type": "F"
-    },{
-      "discId": 2,
-      "name": "Midknight",
-      "range": 276,
-      "hst": -36,
-      "lsf": 27,
-      "type": "F"
-    },{
-      "discId": 3,
-      "name": "PinDRAGON",
-      "range": 241,
-      "hst": -45,
-      "lsf": 27,
-      "type": "M"
-    }]
+		{
+			"discId": "9edf24039f18cd890a0c22a1ab9de4f0",
+			"name": "Axe Driver",
+			"type": "F",
+			"range": 338,
+			"hst": 0,
+			"lsf": 66,
+			"pdga": "N",
+			"matrix_x": 3,
+			"matrix_y": 3
+		} , {
+			"discId": "6fec57a55c285057a2b0267ad4729f3f",
+			"name": "Midknight",
+			"type": "F",
+			"range": 276,
+			"hst": -36,
+			"lsf": 27,
+			"pdga": "N",
+			"matrix_x": 6,
+			"matrix_y": 6
+		} , {
+			"discId": "2778fd21ca7bdb83da3f7eb9a44f13ab",
+			"name": "PinDRAGON",
+			"type": "M",
+			"range": 241,
+			"hst": -45,
+			"lsf": 27,
+			"pdga": "N",
+			"matrix_x": 6,
+			"matrix_y": 6
+	}]
 }

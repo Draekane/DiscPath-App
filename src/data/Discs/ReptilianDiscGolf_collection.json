@@ -1,64 +1,86 @@
 {
 	"company": "Reptilian Disc Golf",
-	"companyId": 56,
+	"companyId": "a345b9f92af3145f98feffa9a8b68290",
 	"discs": [
-	{
-		"discId": 1,
-		"name": "Croc",
-		"type": "M",
-		"range": 278,
-		"hst": 0,
-		"lsf": 36
-	},	{
-		"discId": 2,
-		"name": "Serpent",
-		"type": "P",
-		"range": 258,
-		"hst": -9,
-		"lsf": 18
-	},	{
-		"discId": 3,
-		"name": "Raptor",
-		"type": "F",
-		"range": 359,
-		"hst": 4,
-		"lsf": 76
-	},	{
-		"discId": 4,
-		"name": "Ptero",
-		"type": "F",
-		"range": 333,
-		"hst": -18,
-		"lsf": 18
-	},	{
-		"discId": 5,
-		"name": "Scale",
-		"type": "P",
-		"range": 245,
-		"hst": 0,
-		"lsf": 54
-	},	{
-		"discId": 6,
-		"name": "Stego",
-		"type": "P",
-		"range": 217,
-		"hst": 17,
-		"lsf": 71
-	},	{
-		"discId": 7,
-		"name": "Tyrant",
-		"type": "F",
-		"range": 329,
-		"hst": 0,
-		"lsf": 56
-	},	{
-		"discId": 8,
-		"name": "Gila",
-		"type": "M",
-		"range": 294,
-		"hst": 0,
-		"lsf": 55
+		{
+			"discId": "76cd75b6b8f0def9bc45032dcc32a611",
+			"name": "Croc",
+			"type": "M",
+			"range": 278,
+			"hst": 0,
+			"lsf": 36,
+			"pdga": "N",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "248f0922f4fdb9d4ed9094e7d3a3ff83",
+			"name": "Gila",
+			"type": "M",
+			"range": 294,
+			"hst": 0,
+			"lsf": 55,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
+		} , {
+			"discId": "4f74be77f2ec1b9ebd391a47fbb05263",
+			"name": "Ptero",
+			"type": "F",
+			"range": 333,
+			"hst": -18,
+			"lsf": 18,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "6cb576ec13726583fab7df279410f9b2",
+			"name": "Raptor",
+			"type": "F",
+			"range": 359,
+			"hst": 4,
+			"lsf": 76,
+			"pdga": "N",
+			"matrix_x": 2,
+			"matrix_y": 2
+		} , {
+			"discId": "85a7cd587d6142dbfc1a4de05af7b75d",
+			"name": "Scale",
+			"type": "P",
+			"range": 245,
+			"hst": 0,
+			"lsf": 54,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
+		} , {
+			"discId": "7cde8b0cc9c769422774241c9f7baf60",
+			"name": "Serpent",
+			"type": "P",
+			"range": 258,
+			"hst": -9,
+			"lsf": 18,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "7a835ef8e67cf95cfd25fc50e0897201",
+			"name": "Stego",
+			"type": "P",
+			"range": 217,
+			"hst": 17,
+			"lsf": 71,
+			"pdga": "Y",
+			"matrix_x": 2,
+			"matrix_y": 2
+		} , {
+			"discId": "ad4b2a3a54fa0bade40663a48c59eff1",
+			"name": "Tyrant",
+			"type": "F",
+			"range": 329,
+			"hst": 0,
+			"lsf": 56,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
 	}]
 }
-
-	

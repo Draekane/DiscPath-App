@@ -1,42 +1,56 @@
 {
 	"company": "Hyzer Bomb",
-	"companyId": 35,
+	"companyId": "c46a7e8159b294ca44f9a6624c665035",
 	"discs": [
-	{
-		"discId": 1,
-		"name": "Mortar",
-		"type": "M",
-		"range": 283,
-		"hst": 3,
-		"lsf": 55
-	},	{
-		"discId": 2,
-		"name": "MOAB",
-		"type": "F",
-		"range": 306,
-		"hst": 25,
-		"lsf": 92
-	},	{
-		"discId": 3,
-		"name": "Panzer Tank",
-		"type": "P",
-		"range": 242,
-		"hst": 0,
-		"lsf": 47
-	},	{
-		"discId": 4,
-		"name": "Tank",
-		"type": "P",
-		"range": 241,
-		"hst": 0,
-		"lsf": 36
-	},	{
-		"discId": 5,
-		"name": "Veteran",
-		"type": "F",
-		"range": 350,
-		"hst": -4,
-		"lsf": 57
+		{
+			"discId": "e05c3537a288214785d96cbfe77fc3f0",
+			"name": "MOAB",
+			"type": "F",
+			"range": 306,
+			"hst": 25,
+			"lsf": 92,
+			"pdga": "Y",
+			"matrix_x": 1,
+			"matrix_y": 1
+		} , {
+			"discId": "90232e671a3437d278a825bfe0c7d7e0",
+			"name": "Mortar",
+			"type": "M",
+			"range": 283,
+			"hst": 3,
+			"lsf": 55,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
+		} , {
+			"discId": "c224349e63d180d6b3987260a5c73796",
+			"name": "Panzer Tank",
+			"type": "P",
+			"range": 242,
+			"hst": 0,
+			"lsf": 47,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "e4419464d570c4b497ba1979e790b104",
+			"name": "Tank",
+			"type": "P",
+			"range": 241,
+			"hst": 0,
+			"lsf": 36,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "55a8998f66694a4e848bede0fad3684a",
+			"name": "Veteran",
+			"type": "F",
+			"range": 350,
+			"hst": -4,
+			"lsf": 57,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
 	}]
 }
-	

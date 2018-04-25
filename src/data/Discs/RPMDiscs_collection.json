@@ -1,64 +1,86 @@
 {
 	"company": "RPM Discs",
-	"companyId": 55,
+	"companyId": "c1afed7bd673c6369497c2c9efe3f47c",
 	"discs": [
-	{
-		"discId": 1,
-		"name": "Taniwha",
-		"type": "F",
-		"range": 331,
-		"hst": -56,
-		"lsf": 18
-	},	{
-		"discId": 2,
-		"name": "Te Moko",
-		"type": "M",
-		"range": 256,
-		"hst": 0,
-		"lsf": 22
-	},	{
-		"discId": 3,
-		"name": "Arcturus",
-		"type": "F",
-		"range": 303,
-		"hst": -27,
-		"lsf": 27
-	},	{
-		"discId": 4,
-		"name": "Kahu",
-		"type": "D",
-		"range": 431,
-		"hst": -12,
-		"lsf": 59
-	},	{
-		"discId": 5,
-		"name": "Atomic Raptor X",
-		"type": "D",
-		"range": 396,
-		"hst": -4,
-		"lsf": 58
-	},	{
-		"discId": 6,
-		"name": "Piwakawaka",
-		"type": "M",
-		"range": 285,
-		"hst": -32,
-		"lsf": 27
-	},	{
-		"discId": 7,
-		"name": "Tui",
-		"type": "F",
-		"range": 277,
-		"hst": -36,
-		"lsf": 18
-	},	{
-		"discId": 8,
-		"name": "Rippa",
-		"type": "P",
-		"range": 238,
-		"hst": -36,
-		"lsf": 0
+		{
+			"discId": "8eda1196d04a460dd7d43c3df6c98782",
+			"name": "Arcturus",
+			"type": "F",
+			"range": 303,
+			"hst": -27,
+			"lsf": 27,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "a3defc8271ce21e12b9b60adde1a892a",
+			"name": "Atomic Raptor X",
+			"type": "D",
+			"range": 396,
+			"hst": -4,
+			"lsf": 58,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
+		} , {
+			"discId": "d0aa5acce64468f26ff2b42ec5489314",
+			"name": "Kahu",
+			"type": "D",
+			"range": 431,
+			"hst": -12,
+			"lsf": 59,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "dccaf01b0544731273c64d6ea6a4f7a5",
+			"name": "Piwakawaka",
+			"type": "M",
+			"range": 285,
+			"hst": -32,
+			"lsf": 27,
+			"pdga": "Y",
+			"matrix_x": 6,
+			"matrix_y": 6
+		} , {
+			"discId": "ddac0bfa21c086ffd64b4dc42f6034f9",
+			"name": "Rippa",
+			"type": "P",
+			"range": 238,
+			"hst": -36,
+			"lsf": 0,
+			"pdga": "Y",
+			"matrix_x": 7,
+			"matrix_y": 7
+		} , {
+			"discId": "9e22bdd38d58738d3d9c0df541d4bdff",
+			"name": "Taniwha",
+			"type": "F",
+			"range": 331,
+			"hst": -56,
+			"lsf": 18,
+			"pdga": "Y",
+			"matrix_x": 7,
+			"matrix_y": 7
+		} , {
+			"discId": "36e1de8354bcf3c375bcecad7c201067",
+			"name": "Te Moko",
+			"type": "M",
+			"range": 256,
+			"hst": 0,
+			"lsf": 22,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "9e85181ac3f10499ff3a66980f48c7cb",
+			"name": "Tui",
+			"type": "F",
+			"range": 277,
+			"hst": -36,
+			"lsf": 18,
+			"pdga": "Y",
+			"matrix_x": 6,
+			"matrix_y": 6
 	}]
 }
-
-	

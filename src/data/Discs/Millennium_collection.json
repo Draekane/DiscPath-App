@@ -1,0 +1,216 @@
+{
+	"company": "Millennium",
+	"companyId": "0388b77fda588f777c357c808bcac7b6",
+	"discs": [
+		{
+			"discId": "a0678bcea04dbd6852c219062ab2bb3c",
+			"name": "Aquarius",
+			"type": "D",
+			"range": 381,
+			"hst": -77,
+			"lsf": 38,
+			"pdga": "Y",
+			"matrix_x": 7,
+			"matrix_y": 7
+		} , {
+			"discId": "397cbf6db9d7ae6906ae420aedc5346c",
+			"name": "Aries",
+			"type": "D",
+			"range": 424,
+			"hst": -49,
+			"lsf": 39,
+			"pdga": "Y",
+			"matrix_x": 6,
+			"matrix_y": 6
+		} , {
+			"discId": "3cce5f3eaf76e098ba8e28f7bbba3f92",
+			"name": "Astra",
+			"type": "D",
+			"range": 416,
+			"hst": -44,
+			"lsf": 44,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "caf63a695e9b39a1dd4dda61918e2589",
+			"name": "Astra-X",
+			"type": "D",
+			"range": 401,
+			"hst": -29,
+			"lsf": 48,
+			"pdga": "N",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "ac93382a9df95a1c9ddc5e6e052f3007",
+			"name": "Aurora MF",
+			"type": "M",
+			"range": 281,
+			"hst": 0,
+			"lsf": 36,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "5f61a9b7bf80ed70545ac17279666316",
+			"name": "Aurora MS",
+			"type": "M",
+			"range": 285,
+			"hst": -13,
+			"lsf": 13,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "d77d49c13fa357d3e951da9cfd01270d",
+			"name": "EXP1",
+			"type": "D",
+			"range": 368,
+			"hst": 19,
+			"lsf": 76,
+			"pdga": "Y",
+			"matrix_x": 2,
+			"matrix_y": 2
+		} , {
+			"discId": "f0124ab87a56fb8b9d5388e502bffcd2",
+			"name": "JLS",
+			"type": "F",
+			"range": 362,
+			"hst": -33,
+			"lsf": 35,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "27674c3b6f43bec60cdda129d703b736",
+			"name": "Omega AP",
+			"type": "P",
+			"range": 245,
+			"hst": -12,
+			"lsf": 18,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "825378b937a81a5b1430279d99a99e60",
+			"name": "Omega Big Bead",
+			"type": "P",
+			"range": 246,
+			"hst": -3,
+			"lsf": 33,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "beb72a09d4a280782119f7e5cb71f123",
+			"name": "Omega Super Soft Putter",
+			"type": "P",
+			"range": 247,
+			"hst": -18,
+			"lsf": 20,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "89d4985fd9a24d7c5c7f3c0873c7d8d0",
+			"name": "Orion LF",
+			"type": "D",
+			"range": 384,
+			"hst": -16,
+			"lsf": 48,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "e445c44738302f368201d1cb840d98e3",
+			"name": "Orion LS",
+			"type": "D",
+			"range": 385,
+			"hst": -31,
+			"lsf": 38,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "81a3565d2b09dcefc93277fff519cc13",
+			"name": "Polaris LF",
+			"type": "F",
+			"range": 357,
+			"hst": -28,
+			"lsf": 47,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "4d12a57e1a8519f0f30ad7acc6c004d5",
+			"name": "Polaris LS",
+			"type": "F",
+			"range": 341,
+			"hst": -33,
+			"lsf": 28,
+			"pdga": "Y",
+			"matrix_x": 6,
+			"matrix_y": 6
+		} , {
+			"discId": "d19ab717497af52699b73126bf3d9944",
+			"name": "Quasar",
+			"type": "D",
+			"range": 443,
+			"hst": -12,
+			"lsf": 72,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
+		} , {
+			"discId": "cade02da531ec7b83540ce770161b4d3",
+			"name": "Scorpius",
+			"type": "D",
+			"range": 431,
+			"hst": -12,
+			"lsf": 59,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "583f4e97c5e19fa60586877a2adef4ee",
+			"name": "Sentinel MF",
+			"type": "M",
+			"range": 291,
+			"hst": 0,
+			"lsf": 69,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
+		} , {
+			"discId": "8dd179092876db14002c8202b69063c2",
+			"name": "Tachyon LF",
+			"type": "F",
+			"range": 306,
+			"hst": 25,
+			"lsf": 91,
+			"pdga": "Y",
+			"matrix_x": 1,
+			"matrix_y": 1
+		} , {
+			"discId": "7850a9832d955be91c703dda9e6be412",
+			"name": "Tachyon LS",
+			"type": "F",
+			"range": 309,
+			"hst": -24,
+			"lsf": 48,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "b9c94e8a87e3647c5a0fa4ff358ecc65",
+			"name": "Taurus",
+			"type": "M",
+			"range": 276,
+			"hst": 0,
+			"lsf": 73,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
+	}]
+}

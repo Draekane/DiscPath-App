@@ -1,85 +1,116 @@
 {
 	"company": "Prodiscus",
-	"companyId": 52,
+	"companyId": "f9fad85384d427e052721620d227a784",
 	"discs": [
-	{
-		"discId": 1,
-		"name": "STARi",
-		"type": "M",
-		"range": 295,
-		"hst": -37,
-		"lsf": 0
-	},	{
-		"discId": 2,
-		"name": "LASERi",
-		"type": "F",
-		"range": 365,
-		"hst": -21,
-		"lsf": 43
-	},	{
-		"discId": 3,
-		"name": "SLAIDi",
-		"type": "D",
-		"range": 425,
-		"hst": -12,
-		"lsf": 56
-	},	{
-		"discId": 4,
-		"name": "RAZERi",
-		"type": "D",
-		"range": 417,
-		"hst": -19,
-		"lsf": 58
-	},	{
-		"discId": 5,
-		"name": "LEGENDa",
-		"type": "D",
-		"range": 419,
-		"hst": -7,
-		"lsf": 54
-	},	{
-		"discId": 6,
-		"name": "Titan",
-		"type": "D",
-		"range": 381,
-		"hst": 0,
-		"lsf": 58
-	},	{
-		"discId": 7,
-		"name": "Rocket",
-		"type": "F",
-		"range": 364,
-		"hst": 0,
-		"lsf": 38
-	},	{
-		"discId": 8,
-		"name": "JOKERi",
-		"type": "P",
-		"range": 278,
-		"hst": 0,
-		"lsf": 39
-	},	{
-		"discId": 9,
-		"name": "Sparta",
-		"type": "P",
-		"range": 279,
-		"hst": 0,
-		"lsf": 18
-	},	{
-		"discId": 10,
-		"name": "MIDARi",
-		"type": "M",
-		"range": 296,
-		"hst": -11,
-		"lsf": 39
-	},	{
-		"discId": 11,
-		"name": "RESPECTi",
-		"type": "D",
-		"range": 350,
-		"hst": 0,
-		"lsf": 47
+		{
+			"discId": "cc69100515102368c639591f8f73b39f",
+			"name": "JOKERi",
+			"type": "P",
+			"range": 278,
+			"hst": 0,
+			"lsf": 39,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "03a3f12a3a2236d64bb80e9f35f68896",
+			"name": "LASERi",
+			"type": "F",
+			"range": 365,
+			"hst": -21,
+			"lsf": 43,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "3b0b9eb6434ae45ae469113d40d7b904",
+			"name": "LEGENDa",
+			"type": "D",
+			"range": 419,
+			"hst": -7,
+			"lsf": 54,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "827ff9e3a74daf657ebf18a4b7ddaa1a",
+			"name": "MIDARi",
+			"type": "M",
+			"range": 296,
+			"hst": -11,
+			"lsf": 39,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "3e69c288cb6565300a58f8a8eb1e7436",
+			"name": "RAZERi",
+			"type": "D",
+			"range": 417,
+			"hst": -19,
+			"lsf": 58,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "602a327d08d536809f44eb66d634f452",
+			"name": "RESPECTi",
+			"type": "D",
+			"range": 350,
+			"hst": 0,
+			"lsf": 47,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "15e8bfff2c10ca22da244d85b2bf7d94",
+			"name": "Rocket",
+			"type": "F",
+			"range": 364,
+			"hst": 0,
+			"lsf": 38,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "132f319930c0aa1987d00e2211a41fa2",
+			"name": "SLAIDi",
+			"type": "D",
+			"range": 425,
+			"hst": -12,
+			"lsf": 56,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "1728d316289a8302c0438a42389e8eb0",
+			"name": "Sparta",
+			"type": "P",
+			"range": 279,
+			"hst": 0,
+			"lsf": 18,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "f70b3954adfbf935ee18ef03ae6bfa0f",
+			"name": "STARi",
+			"type": "M",
+			"range": 295,
+			"hst": -37,
+			"lsf": 0,
+			"pdga": "Y",
+			"matrix_x": 7,
+			"matrix_y": 7
+		} , {
+			"discId": "e2bb3f9679fec6d4836fcf8abcc3eeac",
+			"name": "Titan",
+			"type": "D",
+			"range": 381,
+			"hst": 0,
+			"lsf": 58,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
 	}]
 }
-
-	

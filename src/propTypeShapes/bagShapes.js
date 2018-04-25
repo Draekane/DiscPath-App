@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 export const discShape = PropTypes.shape({
-  discId: PropTypes.number,
+  discId: PropTypes.string,
   company: PropTypes.string,
   name: PropTypes.string,
   range: PropTypes.number,

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 export const discShape = PropTypes.shape({
-  discId: PropTypes.number,
+  discId: PropTypes.string,
   name: PropTypes.string,
   range: PropTypes.number,
   hst: PropTypes.number,
@@ -11,6 +11,6 @@ export const discShape = PropTypes.shape({
 
 export const companyShape = PropTypes.shape({
   name: PropTypes.string,
-  companyId: PropTypes.number,
+  companyId: PropTypes.string,
   discs: PropTypes.arrayOf(discShape),
 });

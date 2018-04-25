@@ -1,35 +1,46 @@
 {
 	"company": "Guru",
-	"companyId": 33,
+	"companyId": "45d909a817398ff956eb79ff1146c5e4",
 	"discs": [
-	{
-		"discId": 1,
-		"name": "Mjolner",
-		"type": "P",
-		"range": 241,
-		"hst": 0,
-		"lsf": 18
-	},	{
-		"discId": 2,
-		"name": "Midgard",
-		"type": "F",
-		"range": 315,
-		"hst": -18,
-		"lsf": 18
-	},	{
-		"discId": 3,
-		"name": "Thor",
-		"type": "M",
-		"range": 278,
-		"hst": 0,
-		"lsf": 36
-	},	{
-		"discId": 4,
-		"name": "Sleipner",
-		"type": "D",
-		"range": 450,
-		"hst": -19,
-		"lsf": 39
+		{
+			"discId": "ad98f5ef187a1cc052fac73ad2723e03",
+			"name": "Midgard",
+			"type": "F",
+			"range": 315,
+			"hst": -18,
+			"lsf": 18,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "4e3e41dcef407466836f0959a3f1ff5e",
+			"name": "Mjolner",
+			"type": "P",
+			"range": 241,
+			"hst": 0,
+			"lsf": 18,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "b9cd44ae52040aa080f8c068a46ddbfa",
+			"name": "Sleipner",
+			"type": "D",
+			"range": 450,
+			"hst": -19,
+			"lsf": 39,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "a92da8d9ebd1059f11a0e2f66c0b8e44",
+			"name": "Thor",
+			"type": "M",
+			"range": 278,
+			"hst": 0,
+			"lsf": 36,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
 	}]
 }
-	

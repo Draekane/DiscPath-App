@@ -1,13 +1,16 @@
 {
 	"company": "Disc King",
-	"companyId": 17,
+	"companyId": "61d7eef9ff2284c16889112368e6e5e9",
 	"discs": [
-	{
-		"discId": 1,
-		"name": "Lex",
-		"type": "P",
-		"range": 244,
-		"hst": 0,
-		"lsf": 27
+		{
+			"discId": "976472a144efa6a4b849b24ac6b18867",
+			"name": "Lex",
+			"type": "P",
+			"range": 244,
+			"hst": 0,
+			"lsf": 27,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
 	}]
 }

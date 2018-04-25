@@ -1,202 +1,286 @@
 {
 	"company": "Dynamic Discs",
-	"companyId": 21,
+	"companyId": "15fec10c7649c4da97b0f9c35ebf19f1",
 	"discs": [
-	{
-		"discId": 1,
-		"name": "Deputy",
-		"type": "P",
-		"range": 261,
-		"hst": -27,
-		"lsf": 0
-	},{
-		"discId": 2,
-		"name": "Escape",
-		"type": "F",
-		"range": 373,
-		"hst": -19,
-		"lsf": 43
-	},{
-		"discId": 3,
-		"name": "Sheriff",
-		"type": "D",
-		"range": 436,
-		"hst": -1,
-		"lsf": 39
-	},{
-		"discId": 4,
-		"name": "Judge",
-		"type": "P",
-		"range": 250,
-		"hst": -9,
-		"lsf": 18
-	},{
-		"discId": 5,
-		"name": "Slammer",
-		"type": "P",
-		"range": 253,
-		"hst": 0,
-		"lsf": 54
-	},{
-		"discId": 6,
-		"name": "Evidence",
-		"type": "M",
-		"range": 294,
-		"hst": -21,
-		"lsf": 15
-	},{
-		"discId": 7,
-		"name": "Suspect",
-		"type": "M",
-		"range": 272,
-		"hst": 0,
-		"lsf": 52
-	},{
-		"discId": 8,
-		"name": "Witness",
-		"type": "F",
-		"range": 358,
-		"hst": -53,
-		"lsf": 25
-	},{
-		"discId": 9,
-		"name": "Criminal",
-		"type": "F",
-		"range": 376,
-		"hst": 19,
-		"lsf": 77
-	},{
-		"discId": 10,
-		"name": "Felon",
-		"type": "D",
-		"range": 355,
-		"hst": 3,
-		"lsf": 79
-	},{
-		"discId": 11,
-		"name": "Breakout",
-		"type": "F",
-		"range": 358,
-		"hst": -23,
-		"lsf": 38
-	},{
-		"discId": 12,
-		"name": "Warrant",
-		"type": "M",
-		"range": 298,
-		"hst": -37,
-		"lsf": 0
-	},{
-		"discId": 13,
-		"name": "Marshal",
-		"type": "P",
-		"range": 261,
-		"hst": 0,
-		"lsf": 18
-	},{
-		"discId": 14,
-		"name": "Thief",
-		"type": "F",
-		"range": 350,
-		"hst": -12,
-		"lsf": 44
-	},{
-		"discId": 15,
-		"name": "Warden",
-		"type": "P",
-		"range": 254,
-		"hst": -1,
-		"lsf": 20
-	},{
-		"discId": 16,
-		"name": "Renegade",
-		"type": "D",
-		"range": 418,
-		"hst": -36,
-		"lsf": 58
-	},{
-		"discId": 17,
-		"name": "Proof",
-		"type": "M",
-		"range": 301,
-		"hst": -55,
-		"lsf": 18
-	},{
-		"discId": 18,
-		"name": "EMACTruth",
-		"type": "M",
-		"range": 300,
-		"hst": 0,
-		"lsf": 37
-	},{
-		"discId": 19,
-		"name": "Enforcer",
-		"type": "D",
-		"range": 414,
-		"hst": 6,
-		"lsf": 78
-	},{
-		"discId": 20,
-		"name": "Freedom",
-		"type": "D",
-		"range": 448,
-		"hst": -39,
-		"lsf": 59
-	},{
-		"discId": 21,
-		"name": "Fugitive",
-		"type": "M",
-		"range": 299,
-		"hst": -16,
-		"lsf": 32
-	},{
-		"discId": 22,
-		"name": "Defender",
-		"type": "D",
-		"range": 438,
-		"hst": 0,
-		"lsf": 59
-	},{
-		"discId": 23,
-		"name": "Justice",
-		"type": "M",
-		"range": 274,
-		"hst": 9,
-		"lsf": 64
-	},{
-		"discId": 24,
-		"name": "Gavel",
-		"type": "P",
-		"range": 265,
-		"hst": -36,
-		"lsf": 13
-	},{
-		"discId": 25,
-		"name": "Trespass",
-		"type": "D",
-		"range": 431,
-		"hst": -14,
-		"lsf": 56
-	},{
-		"discId": 26,
-		"name": "Verdict",
-		"type": "M",
-		"range": 289,
-		"hst": 0,
-		"lsf": 60
-	},{
-		"discId": 27,
-		"name": "Truth",
-		"type": "M",
-		"range": 305,
-		"hst": -2,
-		"lsf": 37
-	},{
-		"discId": 28,
-		"name": "Convict",
-		"type": "F",
-		"range": 363,
-		"hst": -9,
-		"lsf": 57
+		{
+			"discId": "26ae749644663c649950cd240b55236f",
+			"name": "Breakout",
+			"type": "F",
+			"range": 358,
+			"hst": -23,
+			"lsf": 38,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "b68d4110f8abe315b142bb9c99666ebf",
+			"name": "Convict",
+			"type": "F",
+			"range": 363,
+			"hst": -9,
+			"lsf": 57,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "4d79c341966242c047f3833289ee3a13",
+			"name": "Criminal",
+			"type": "F",
+			"range": 376,
+			"hst": 19,
+			"lsf": 77,
+			"pdga": "Y",
+			"matrix_x": 2,
+			"matrix_y": 2
+		} , {
+			"discId": "ee90445284a3f5eb04b08417e16ecb95",
+			"name": "Defender",
+			"type": "D",
+			"range": 438,
+			"hst": 0,
+			"lsf": 59,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
+		} , {
+			"discId": "0083de73c8ba563027a200f888b9a66b",
+			"name": "Deputy",
+			"type": "P",
+			"range": 261,
+			"hst": -27,
+			"lsf": 0,
+			"pdga": "Y",
+			"matrix_x": 7,
+			"matrix_y": 7
+		} , {
+			"discId": "403597e197dfe22f3268fd3f4c9215e8",
+			"name": "EMAC Truth",
+			"type": "M",
+			"range": 300,
+			"hst": 0,
+			"lsf": 37,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "d730e65d54d6c0479561d25724afd813",
+			"name": "Enforcer",
+			"type": "D",
+			"range": 414,
+			"hst": 6,
+			"lsf": 78,
+			"pdga": "Y",
+			"matrix_x": 2,
+			"matrix_y": 2
+		} , {
+			"discId": "013ec032d3460d4be4431c6ab1f8f224",
+			"name": "Escape",
+			"type": "F",
+			"range": 373,
+			"hst": -19,
+			"lsf": 43,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "c7b2a4d55fbea4d044644cf5b2b45d29",
+			"name": "Evidence",
+			"type": "M",
+			"range": 294,
+			"hst": -21,
+			"lsf": 15,
+			"pdga": "Y",
+			"matrix_x": 6,
+			"matrix_y": 6
+		} , {
+			"discId": "6d986e41efc21989b96792b4716a1794",
+			"name": "Felon",
+			"type": "D",
+			"range": 355,
+			"hst": 3,
+			"lsf": 79,
+			"pdga": "Y",
+			"matrix_x": 2,
+			"matrix_y": 2
+		} , {
+			"discId": "c99ee435c9c0c0ccb662cc9e3769bcb3",
+			"name": "Freedom",
+			"type": "D",
+			"range": 448,
+			"hst": -39,
+			"lsf": 59,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "34946d546d22eaf06fdbe795b8de802b",
+			"name": "Fugitive",
+			"type": "M",
+			"range": 299,
+			"hst": -16,
+			"lsf": 32,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "ceb404457a31d093fa13dcaad2f31236",
+			"name": "Gavel",
+			"type": "P",
+			"range": 265,
+			"hst": -36,
+			"lsf": 13,
+			"pdga": "Y",
+			"matrix_x": 6,
+			"matrix_y": 6
+		} , {
+			"discId": "935ff3fccfa3798b3c08602dfaefa45b",
+			"name": "Judge",
+			"type": "P",
+			"range": 250,
+			"hst": -9,
+			"lsf": 18,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "8cec7d6c891fc360bfd61e14b8512896",
+			"name": "Justice",
+			"type": "M",
+			"range": 274,
+			"hst": 9,
+			"lsf": 64,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
+		} , {
+			"discId": "7e56b6ea95ce6426cae0d1526aa27f5a",
+			"name": "Marshal",
+			"type": "P",
+			"range": 261,
+			"hst": 0,
+			"lsf": 18,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "85d2c1a86d34d86b5b30f6286e1f13df",
+			"name": "Proof",
+			"type": "M",
+			"range": 301,
+			"hst": -55,
+			"lsf": 18,
+			"pdga": "Y",
+			"matrix_x": 7,
+			"matrix_y": 7
+		} , {
+			"discId": "6538678193e2ccb5c6d5c65b895aaaca",
+			"name": "Renegade",
+			"type": "D",
+			"range": 418,
+			"hst": -36,
+			"lsf": 58,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "66986f021496bd405ea299467006ae54",
+			"name": "Sheriff",
+			"type": "D",
+			"range": 436,
+			"hst": -19,
+			"lsf": 39,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "ed254637b0e89d98c81a83bb136ba0e3",
+			"name": "Slammer",
+			"type": "P",
+			"range": 253,
+			"hst": 0,
+			"lsf": 54,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
+		} , {
+			"discId": "06197f478ef19e4e580f3517579137a3",
+			"name": "Suspect",
+			"type": "M",
+			"range": 272,
+			"hst": 0,
+			"lsf": 52,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
+		} , {
+			"discId": "608f488597ee8de18664d975b04d8be8",
+			"name": "Thief",
+			"type": "F",
+			"range": 350,
+			"hst": -12,
+			"lsf": 44,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "c19f69e33fc45a3d96e04a7cea5aad87",
+			"name": "Trespass",
+			"type": "D",
+			"range": 431,
+			"hst": -14,
+			"lsf": 56,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "2a51e262d3148a04a4f58661818704be",
+			"name": "Truth",
+			"type": "M",
+			"range": 305,
+			"hst": -2,
+			"lsf": 37,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "dd83256af5ca245530d216b14c63cf42",
+			"name": "Verdict",
+			"type": "M",
+			"range": 289,
+			"hst": 0,
+			"lsf": 60,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
+		} , {
+			"discId": "246d4b1d4f9480e46c982d4111d95378",
+			"name": "Warden",
+			"type": "P",
+			"range": 254,
+			"hst": -1,
+			"lsf": 20,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "ce8c6664b0edd146bbd34fad79751612",
+			"name": "Warrant",
+			"type": "M",
+			"range": 298,
+			"hst": -37,
+			"lsf": 0,
+			"pdga": "Y",
+			"matrix_x": 7,
+			"matrix_y": 7
+		} , {
+			"discId": "74342e05e74e067a6ec4e5bba8d2565a",
+			"name": "Witness",
+			"type": "F",
+			"range": 358,
+			"hst": -53,
+			"lsf": 25,
+			"pdga": "Y",
+			"matrix_x": 7,
+			"matrix_y": 7
 	}]
 }

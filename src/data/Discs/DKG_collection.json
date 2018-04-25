@@ -1,64 +1,86 @@
 {
 	"company": "DKG",
-	"companyId": 13,
+	"companyId": "c55790328ec544ef423f16d5754653fa",
 	"discs": [
-	{
-		"discId": 1,
-		"name": "Tempest",
-		"type": "D",
-		"range": 421,
-		"hst": -39,
-		"lsf": 59
-	},{
-		"discId": 2,
-		"name": "Miracle",
-		"type": "F",
-		"range": 307,
-		"hst": -93,
-		"lsf": 37
-	},{
-		"discId": 3,
-		"name": "Merc",
-		"type": "D",
-		"range": 421,
-		"hst": 0,
-		"lsf": 78
-	},{
-		"discId": 4,
-		"name": "Kraken",
-		"type": "D",
-		"range": 420,
-		"hst": -59,
-		"lsf": 59
-	},{
-		"discId": 5,
-		"name": "Boom",
-		"type": "D",
-		"range": 421,
-		"hst": -19,
-		"lsf": 59
-	},{
-		"discId": 6,
-		"name": "Protege",
-		"type": "D",
-		"range": 420,
-		"hst": -78,
-		"lsf": 39
-	},{
-		"discId": 7,
-		"name": "Hail Mary",
-		"type": "D",
-		"range": 344,
-		"hst": -19,
-		"lsf": 38
-	},{
-		"discId": 8,
-		"name": "Wing and a Prayer",
-		"type": "F",
-		"range": 326,
-		"hst": -56,
-		"lsf": 18
+		{
+			"discId": "e68a20cce237a139d82cc2dd85b7d917",
+			"name": "Boom",
+			"type": "D",
+			"range": 421,
+			"hst": -19,
+			"lsf": 59,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "a03f7e7a2c767de4828c63ffec4df118",
+			"name": "Hail Mary",
+			"type": "D",
+			"range": 344,
+			"hst": -19,
+			"lsf": 38,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "049a956dfeb0eb2e19c417a1dde4d680",
+			"name": "Kraken",
+			"type": "D",
+			"range": 420,
+			"hst": -59,
+			"lsf": 59,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "c68859532fdd1ea8ac56dfb4798d14b8",
+			"name": "Merc",
+			"type": "D",
+			"range": 421,
+			"hst": 0,
+			"lsf": 78,
+			"pdga": "Y",
+			"matrix_x": 2,
+			"matrix_y": 2
+		} , {
+			"discId": "b70395798360bbb770035dbf6e68101f",
+			"name": "Miracle",
+			"type": "F",
+			"range": 307,
+			"hst": -93,
+			"lsf": 37,
+			"pdga": "Y",
+			"matrix_x": 8,
+			"matrix_y": 8
+		} , {
+			"discId": "d4e3ffcfd9ace08d57b9ca593e928bfc",
+			"name": "Protege",
+			"type": "D",
+			"range": 420,
+			"hst": -78,
+			"lsf": 39,
+			"pdga": "N",
+			"matrix_x": 7,
+			"matrix_y": 7
+		} , {
+			"discId": "0d779f7363c613edb7eb8b713a68dc80",
+			"name": "Tempest",
+			"type": "D",
+			"range": 421,
+			"hst": -39,
+			"lsf": 59,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "4c8541507e69b53222fa37ddce985ddd",
+			"name": "Wing and a Prayer",
+			"type": "F",
+			"range": 326,
+			"hst": -56,
+			"lsf": 18,
+			"pdga": "Y",
+			"matrix_x": 7,
+			"matrix_y": 7
 	}]
 }
-
-	

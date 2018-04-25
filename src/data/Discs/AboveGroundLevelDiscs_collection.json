@@ -1,0 +1,16 @@
+{
+	"company": "Above Ground Level Discs",
+	"companyId": "68f5cab9f732a5890313091d9989c8a9",
+	"discs": [
+		{
+			"discId": "598dc6cac8e88fcb24b8947ff0c8566e",
+			"name": "Cypress",
+			"type": "D",
+			"range": 414,
+			"hst": 0,
+			"lsf": 78,
+			"pdga": "Y",
+			"matrix_x": 2,
+			"matrix_y": 2
+	}]
+}

@@ -9,6 +9,7 @@ import CompanyDiscs from '../../components/company/companyDiscs';
 import Bag from '../../components/bag/bag';
 import Thrower from '../../components/bag/thrower';
 import DisplayOptions from '../../components/bag/displayOptions';
+import ImportExport from '../../components/bag/importExport';
 import { companyShape } from '../../propTypeShapes/companyShapes';
 import { discShape, throwerShape, displayOptionsShape } from '../../propTypeShapes/bagShapes';
 import * as CompanyActions from '../../actions/company';
@@ -200,6 +201,9 @@ class SinglePane extends Component {
                 changeDistance={this.handleChangeLieDistance}
                 changeCircles={this.handleChangeLieCircle}
               />
+            </div>
+            <div className="grid-item4 grid-item">
+              <ImportExport />
             </div>
           </div>
         </React.Fragment>

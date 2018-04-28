@@ -43,7 +43,7 @@ const Bag = (props) => {
 
   const getDiscFrame = () => (
     <div className="bag-container">
-      <div className="bag-title" >Discs in Bag:</div>
+      <div className="title-block" >Discs in Bag:</div>
       <DiscType
         props={distanceOptions}
       />

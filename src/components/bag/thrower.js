@@ -29,7 +29,7 @@ const Thrower = ({ thrower, changePower, changeThrowerType }) => {
 
   return (
     <React.Fragment>
-      <div className="thrower-title" >
+      <div className="title-block" >
       Thrower:
       </div>
       <div className="thrower-container" >

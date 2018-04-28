@@ -45,7 +45,7 @@ const DisplayOptions = ({
 
   return (
     <React.Fragment>
-      <div className="display-options-title" >Display Options:</div>
+      <div className="title-block" >Display Options:</div>
       <div className="display-options" >
         <div className="display-options-item item1" >
           <strong>Spread:</strong>

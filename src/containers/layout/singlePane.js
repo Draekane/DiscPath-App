@@ -118,6 +118,18 @@ class SinglePane extends Component {
     dispatch(BagActions.changeLieCircles());
   }
 
+  handleExportToFile = () => {
+    const { dispatch } = this.props;
+
+    dispatch(BagActions.exportBagToFile());
+  }
+
+  handleImportFromFile = (file) => {
+    const { dispatch } = this.props;
+
+    dispatch(BagActions.importBagFromFile(file));
+  }
+
   render() {
     const {
       pageTitle,
@@ -203,7 +215,7 @@ class SinglePane extends Component {
               />
             </div>
             <div className="grid-item4 grid-item">
-              <ImportExport />
+              <ImportExport importFunction={this.handleImportFromFile} exportFunction={this.handleExportToFile} />
             </div>
           </div>
         </React.Fragment>

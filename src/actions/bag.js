@@ -54,3 +54,12 @@ export const changeLieDistance = () => ({
 export const changeLieCircles = () => ({
   type: bagActionTypes.CHANGE_LIE_CIRCLE,
 });
+
+export const exportBagToFile = () => ({
+  type: bagActionTypes.EXPORT_BAG_TO_FILE,
+});
+
+export const importBagFromFile = fileData => ({
+  type: bagActionTypes.IMPORT_BAG_FROM_FILE,
+  fileData,
+});

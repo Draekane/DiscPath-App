@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import { saveAs } from 'file-saver';
 import * as bagActionTypes from '../actionTypes/bag';
 
 const intiialState = {
@@ -39,6 +40,8 @@ const intiialState = {
 };
 
 const disc = (state = intiialState, action = {}) => {
+  let thisFile;
+
   switch (action.type) {
     case bagActionTypes.ADD_DISC_TO_BAG:
       if (action.disc === null) return state;
@@ -141,6 +144,17 @@ const disc = (state = intiialState, action = {}) => {
           lieCircle: (!state.displayOptions.lieCircle),
         },
       };
+    case bagActionTypes.IMPORT_BAG_FROM_FILE:
+      return { ...action.fileData };
+    case bagActionTypes.EXPORT_BAG_TO_FILE:
+      if (state.discs.length > 0) {
+        thisFile = new Blob([JSON.stringify(state)], { type: 'text/plain;charset=utf-8' });
+        saveAs(thisFile, 'bag.json');
+      } else {
+        console.log('No Bag Data to Export');
+        alert('No Bag Data to Export.  Add discs to bag before exporting');
+      }
+      return state;
     default:
       return state;
   }

@@ -1,3 +1,36 @@
 .import-export-container {
   height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 15px 5px;
+
+  .import-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 5px 0;
+
+    .import-bag-label {
+      flex-grow: 1;
+    }
+
+    .import-bag-button {
+      position: relative;
+      left: -1px;
+    }
+
+    .import-bag-select {
+      flex-grow: 5;
+      opacity:0;
+      position: relative;
+      left: -145px;
+    }
+  }
+
+  .export-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
 }

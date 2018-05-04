@@ -3,6 +3,11 @@
 @import "./sass/layout.scss";
 @import "./sass/thrower.scss";
 @import "./sass/importExport.scss";
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Open+Sans|Skranji');
+
+body {
+  font-family: 'Do Hyeon', 'Skranji', 'Open Sans', sans-serif;
+}
 
 .title-block {
   border-bottom: 1px solid grey;

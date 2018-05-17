@@ -55,11 +55,31 @@ export const changeLieCircles = () => ({
   type: bagActionTypes.CHANGE_LIE_CIRCLE,
 });
 
-export const exportBagToFile = () => ({
-  type: bagActionTypes.EXPORT_BAG_TO_FILE,
+export const exportBagsToFile = () => ({
+  type: bagActionTypes.EXPORT_BAGS_TO_FILE,
 });
 
-export const importBagFromFile = fileData => ({
-  type: bagActionTypes.IMPORT_BAG_FROM_FILE,
+export const importBagsFromFile = fileData => ({
+  type: bagActionTypes.IMPORT_BAGS_FROM_FILE,
   fileData,
+});
+
+export const selectBag = selectBagId => ({
+  type: bagActionTypes.SELECT_BAG,
+  selectBagId,
+});
+
+export const addNewBag = bagName => ({
+  type: bagActionTypes.ADD_NEW_BAG,
+  bagName,
+});
+
+export const updateBagName = bagName => ({
+  type: bagActionTypes.UPDATE_BAG_NAME,
+  bagName,
+});
+
+export const removeExistingBag = bagId => ({
+  type: bagActionTypes.REMOVE_DISC_FROM_BAG,
+  bagId,
 });

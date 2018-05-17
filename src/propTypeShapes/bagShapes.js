@@ -12,6 +12,12 @@ export const discShape = PropTypes.shape({
   wear: PropTypes.number,
 });
 
+export const bagShape = PropTypes.shape({
+  bagId: PropTypes.number,
+  name: PropTypes.string,
+  discs: PropTypes.arrayOf(discShape),
+});
+
 export const throwerShape = PropTypes.shape({
   throwType: PropTypes.string,
   power: PropTypes.number,

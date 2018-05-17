@@ -12,15 +12,15 @@ export const throwerSelector = createSelector(
   thrower => thrower,
 );
 
-const getBaggedDiscs = (state) => {
-  const baggedDiscs = get(state, 'bag.discs', null);
+const getBags = (state) => {
+  const bags = get(state, 'bag.bags', null);
 
-  return !isEmpty(baggedDiscs) ? baggedDiscs : null;
-};
+  return !isEmpty(bags) ? bags : null;
+}
 
-export const baggedDiscSelector = createSelector(
-  [getBaggedDiscs],
-  baggedDiscs => baggedDiscs,
+export const bagSelector = createSelector(
+  [getBags],
+  bags => bags,
 );
 
 const getDisplayOptions = (state) => {

@@ -11,11 +11,11 @@ import Thrower from '../../components/bag/thrower';
 import DisplayOptions from '../../components/bag/displayOptions';
 import ImportExport from '../../components/bag/importExport';
 import { companyShape } from '../../propTypeShapes/companyShapes';
-import { discShape, throwerShape, displayOptionsShape } from '../../propTypeShapes/bagShapes';
+import { throwerShape, displayOptionsShape, bagShape } from '../../propTypeShapes/bagShapes';
 import * as CompanyActions from '../../actions/company';
 import * as BagActions from '../../actions/bag';
 import { currentCompaniesSelector, currentSelectionSelector } from '../../selector/companiesSelector';
-import { throwerSelector, baggedDiscSelector, displayOptionsSelector, discTypesSelector } from '../../selector/bagSelector';
+import { throwerSelector, bagSelector, displayOptionsSelector, discTypesSelector } from '../../selector/bagSelector';
 
 class SinglePane extends Component {
   componentWillMount() {
@@ -121,13 +121,13 @@ class SinglePane extends Component {
   handleExportToFile = () => {
     const { dispatch } = this.props;
 
-    dispatch(BagActions.exportBagToFile());
+    dispatch(BagActions.exportBagsToFile());
   }
 
   handleImportFromFile = (file) => {
     const { dispatch } = this.props;
 
-    dispatch(BagActions.importBagFromFile(file));
+    dispatch(BagActions.importBagsFromFile(file));
   }
 
   render() {
@@ -136,15 +136,17 @@ class SinglePane extends Component {
       pageHeader,
       companies,
       currentSelection,
-      currentDiscs,
+      currentBags,
       thrower,
       displayOptions,
       discTypes,
+      selectedBagId,
     } = this.props;
 
     const bagOptions = {
-      discs: currentDiscs,
+      bags: currentBags,
       discTypes,
+      selectedBagId: selectedBagId,
       functions: {
         handleEnableDisc: this.handleEnableDisc,
         handleEnableDiscType: this.handleEnableDiscType,
@@ -152,6 +154,8 @@ class SinglePane extends Component {
         handleRemoveDisc: this.handleDiscRemove,
       },
     };
+
+    const currentBag = _.first(currentBags, bag => bag.bagId === selectedBagId);
 
     const content = (
 
@@ -172,14 +176,14 @@ class SinglePane extends Component {
             <div className="grid-item-credits">
               Disc flight information from&nbsp;
               <a
-                href="http://www.inboundsdiscgolf.com/content/?page_id=431"
+                href="http://www.inboun = dsdiscgolf.com/content/?page_id=431"
                 target="_blank"
                 rel="noopener noreferrer"
               >Inbounds Disc Golf InFlight Guide
               </a>
             </div>
             <div className="grid-item1 grid-item">
-              <FlightMap discs={currentDiscs} thrower={thrower} displayOptions={displayOptions} />
+              <FlightMap discs={currentBag.discs} thrower={thrower} displayOptions={displayOptions} />
             </div>
             <div className="grid-item2 grid-item">
               <Bag
@@ -232,7 +236,7 @@ SinglePane.propTypes = {
   pageHeader: PropTypes.string,
   companies: PropTypes.arrayOf(companyShape),
   currentSelection: PropTypes.string,
-  currentDiscs: PropTypes.arrayOf(discShape),
+  currentBags: PropTypes.arrayOf(bagShape),
   thrower: PropTypes.shape(throwerShape),
   displayOptions: PropTypes.shape(displayOptionsShape),
   discTypes: PropTypes.shape({ discType: PropTypes.string, enabled: PropTypes.bool }),
@@ -244,19 +248,21 @@ SinglePane.defaultProps = {
   pageHeader: 'Experimental Disc Golf Flight Path Visualizer',
   companies: [],
   currentSelection: null,
-  currentDiscs: [],
+  currentBags: [],
   thrower: null,
   displayOptions: null,
   discTypes: null,
+  selectedBagId: 1,
 };
 
 const mapStateToProps = state => ({
   companies: currentCompaniesSelector(state),
   currentSelection: currentSelectionSelector(state),
-  currentDiscs: baggedDiscSelector(state),
+  currentBags: bagSelector(state),
   thrower: throwerSelector(state),
   displayOptions: displayOptionsSelector(state),
   discTypes: discTypesSelector(state),
+  selectedBagId: state.selectedBagId,
   dispatch: state.dispatch,
 });
 

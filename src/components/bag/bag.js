@@ -4,18 +4,19 @@ import _ from 'lodash';
 
 import { bagShape } from '../../propTypeShapes/bagShapes';
 import DiscType from './discType';
+import BagSelector from './bagSelector';
 
 const Bag = (props) => {
   const {
     bags,
     selectedBagId,
+    addBag,
+    updateBag,
     discTypes,
     functions,
   } = props.props;
 
-  const currentBag = _.first(bags, bag => bag.bagId === selectedBagId);
-
-  const currentBagOptions = bags.map((bag) => (<option value={bag.bagId} selected={bag.bagId === selectedBagId} >{bag.name}</option>));
+  const currentBag = _.filter(bags, bag => bag.bagId === parseInt(selectedBagId, 10))[0];
 
   const distanceOptions = {
     discs: _.filter(currentBag.discs, disc => disc.type === 'D'),
@@ -45,13 +46,17 @@ const Bag = (props) => {
     functions,
   };
 
-  const bagSelector = (<select id="bag-selector" >
-    {currentBagOptions}
-  </select>);
+  const bagSelectorOptions = {
+    addBag,
+    updateBag,
+    bags,
+    functions,
+    selectedBagId,
+  };
 
   const getDiscFrame = () => (
     <div className="bag-container">
-      <div className="bag-name" >Bag: {bagSelector}</div>
+      <BagSelector props={bagSelectorOptions} />
       <div className="title-block" >Discs in Bag:</div>
       <DiscType
         props={distanceOptions}
@@ -76,11 +81,20 @@ Bag.propTypes = {
     bags: PropTypes.arrayOf(bagShape),
     selectedBagId: PropTypes.number,
     discTypes: PropTypes.shape({ discType: PropTypes.string, enabled: PropTypes.bool }),
+    addBag: PropTypes.bool,
+    updateBag: PropTypes.bool,
     functiones: PropTypes.shape({
       handleEnableDisc: PropTypes.func,
       handleSetDiscWear: PropTypes.func,
       handleRemoveDisc: PropTypes.func,
       handleEnableDiscType: PropTypes.func,
+      handleAddBagStart: PropTypes.func,
+      handleAddBagFinish: PropTypes.func,
+      handleAddBagCacnel: PropTypes.func,
+      handleUpdateBagNameStart: PropTypes.func,
+      handleUpdateBagNameFinish: PropTypes.func,
+      handleUpdateBagNameCancel: PropTypes.func,
+      handleSelectBag: PropTypes.func,
     }),
   }),
 };

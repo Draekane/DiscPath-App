@@ -130,6 +130,48 @@ class SinglePane extends Component {
     dispatch(BagActions.importBagsFromFile(file));
   }
 
+  handleAddBagStart = () => {
+    const { dispatch } = this.props;
+
+    dispatch(BagActions.addNewBagStart());
+  }
+
+  handleAddBagFinish = (bagName) => {
+    const { dispatch } = this.props;
+
+    dispatch(BagActions.addNewBagFinish(bagName));
+  }
+
+  handleAddBagCancel = () => {
+    const { dispatch } = this.props;
+
+    dispatch(BagActions.addNewBagCancel());
+  }
+
+  handleUpdateBagNameStart = () => {
+    const { dispatch } = this.props;
+
+    dispatch(BagActions.updateBagNameStart());
+  }
+
+  handleUpdateBagNameFinish = (bagName) => {
+    const { dispatch } = this.props;
+
+    dispatch(BagActions.updateBagNameFinish(bagName));
+  }
+
+  handleUpdateBagNameCancel = () => {
+    const { dispatch } = this.props;
+
+    dispatch(BagActions.updateBagNameCancel());
+  }
+
+  handleSelectBag = (bagId) => {
+    const { dispatch } = this.props;
+
+    dispatch(BagActions.selectBag(bagId));
+  }
+
   render() {
     const {
       pageTitle,
@@ -141,21 +183,32 @@ class SinglePane extends Component {
       displayOptions,
       discTypes,
       selectedBagId,
+      addBag,
+      updateBag,
     } = this.props;
 
     const bagOptions = {
       bags: currentBags,
       discTypes,
-      selectedBagId: selectedBagId,
+      selectedBagId,
+      addBag,
+      updateBag,
       functions: {
         handleEnableDisc: this.handleEnableDisc,
         handleEnableDiscType: this.handleEnableDiscType,
         handleSetDiscWear: this.handleSetDiscWear,
         handleRemoveDisc: this.handleDiscRemove,
+        handleAddBagStart: this.handleAddBagStart,
+        handleAddBagFinish: this.handleAddBagFinish,
+        handleAddBagCancel: this.handleAddBagCancel,
+        handleUpdateBagNameStart: this.handleUpdateBagNameStart,
+        handleUpdateBagNameFinish: this.handleUpdateBagNameFinish,
+        handleUpdateBagNameCancel: this.handleUpdateBagNameCancel,
+        handleSelectBag: this.handleSelectBag,
       },
     };
 
-    const currentBag = _.first(currentBags, bag => bag.bagId === selectedBagId);
+    const currentBag = _.filter(currentBags, bag => bag.bagId === parseInt(selectedBagId, 10))[0];
 
     const content = (
 
@@ -241,6 +294,9 @@ SinglePane.propTypes = {
   displayOptions: PropTypes.shape(displayOptionsShape),
   discTypes: PropTypes.shape({ discType: PropTypes.string, enabled: PropTypes.bool }),
   dispatch: PropTypes.func,
+  selectedBagId: PropTypes.number,
+  addBag: PropTypes.bool,
+  updateBag: PropTypes.bool,
 };
 
 SinglePane.defaultProps = {
@@ -253,6 +309,8 @@ SinglePane.defaultProps = {
   displayOptions: null,
   discTypes: null,
   selectedBagId: 1,
+  addBag: false,
+  updateBag: false,
 };
 
 const mapStateToProps = state => ({
@@ -262,8 +320,10 @@ const mapStateToProps = state => ({
   thrower: throwerSelector(state),
   displayOptions: displayOptionsSelector(state),
   discTypes: discTypesSelector(state),
-  selectedBagId: state.selectedBagId,
+  selectedBagId: state.bag.selectedBagId,
   dispatch: state.dispatch,
+  addBag: state.bag.addBag,
+  updateBag: state.bag.updateBag,
 });
 
 export default connect(mapStateToProps)(SinglePane);

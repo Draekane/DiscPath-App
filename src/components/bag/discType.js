@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import ReactTable from 'react-table';
-import { FaCircleO, FaDotCircleO, FaTrashO } from 'react-icons/lib/fa';
+import { FaEyeSlash, FaEye, FaTrashO } from 'react-icons/lib/fa';
 
 import { discShape } from '../../propTypeShapes/bagShapes';
 
@@ -17,7 +17,10 @@ const DiscType = (props) => {
     const options = [];
 
     for (let i = 10; i > 0; i -= 1) {
-      options.push(<option key={`wear_${i}_${baggedDiscId}`} value={`{"wear": ${i}, "baggedDiscId": ${baggedDiscId}}`}>{i}/10</option>);
+      options.push((
+        <option key={`wear_${i}_${baggedDiscId}`} value={`{"wear": ${i}, "baggedDiscId": ${baggedDiscId}}`}>
+          {i}/10
+        </option>));
     }
 
     return (options);
@@ -47,9 +50,13 @@ const DiscType = (props) => {
     const { enabled, discType: discFlightType, title } = discType;
     if (discFlightType !== null && discFlightType !== undefined && discs.length > 0) {
       if (enabled) {
-        return <div className={headerClassName}><FaDotCircleO onClick={handleDisableDiscType} />&nbsp;&nbsp;{title}</div>;
+        return (
+          <div className={headerClassName}>
+            <FaEye onClick={handleDisableDiscType} color="green" />
+            {title}
+          </div>);
       }
-      return <div className={headerClassName}><FaCircleO onClick={handleDisableDiscType} />&nbsp;&nbsp;{title}</div>;
+      return <div className={headerClassName}><FaEyeSlash onClick={handleDisableDiscType} />&nbsp;&nbsp;{title}</div>;
     }
     return <div className={headerClassName}>&nbsp;&nbsp;{title}</div>;
   };
@@ -68,9 +75,9 @@ const DiscType = (props) => {
               accessor: 'enabled',
               Cell: (row) => {
                 if (row.value === true) {
-                  return <FaDotCircleO onClick={handleDisableDisc.bind(this, row)} />;
+                  return <FaEye onClick={handleDisableDisc.bind(this, row)} color="green" />;
                 }
-                return <FaCircleO onClick={handleDisableDisc.bind(this, row)} />;
+                return <FaEyeSlash onClick={handleDisableDisc.bind(this, row)} />;
               },
               width: 25,
             },

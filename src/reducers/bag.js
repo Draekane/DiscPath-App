@@ -4,7 +4,7 @@ import * as bagActionTypes from '../actionTypes/bag';
 
 const intiialState = {
   bags: [{
-    name: "Default Bag",
+    name: 'Default Bag',
     bagId: 1,
     discs: [],
   }],
@@ -21,6 +21,8 @@ const intiialState = {
   lastDiscId: 0,
   lastBagId: 1,
   selectedBagId: 1,
+  addBag: false,
+  updateBag: false,
   discTypes: [
     {
       discType: 'D',
@@ -60,10 +62,10 @@ const disc = (state = intiialState, action = {}) => {
               discs: [
                 ...bag.discs, {
                   ...action.disc,
-                  baggedDiscId: state.lastDiscId + 1
-                }
-              ]
-            }
+                  baggedDiscId: state.lastDiscId + 1,
+                },
+              ],
+            };
           } return bag;
         }),
         lastDiscId: state.lastDiscId + 1,
@@ -78,8 +80,8 @@ const disc = (state = intiialState, action = {}) => {
               discs: bag.discs.map((disc) => {
                 if (disc.baggedDiscId === action.baggedDiscId) return { ...disc, wear: action.wear };
                 return disc;
-              })
-            }
+              }),
+            };
           } return bag;
         }),
       };
@@ -89,13 +91,14 @@ const disc = (state = intiialState, action = {}) => {
         ...state,
         bags: state.bags.map((bag) => {
           if (bag.bagId === state.selectedBagId) {
-            return {...bag, 
+            return {
+              ...bag,
               discs: bag.discs.map((disc) => {
-                if (disc.discId === action.baggedDiscId) {
-                  return {...disc, enabled: action.enabled}
+                if (disc.baggedDiscId === action.baggedDiscId) {
+                  return { ...disc, enabled: action.enabled };
                 } return disc;
               }),
-            }
+            };
           }
           return bag;
         }),
@@ -104,15 +107,14 @@ const disc = (state = intiialState, action = {}) => {
     case bagActionTypes.ENABLE_DISC_TYPE:
       return {
         ...state,
-        bags: state.bags.map((bag) => {
-          return {...bag,
-            discs: state.discs.map((disc) => {
-              if (disc.type === action.discType) {
-                return { ...disc, enabled: action.enabled };
-              } return disc;
-            }),
-          }
-        }),
+        bags: state.bags.map(bag => ({
+          ...bag,
+          discs: bag.discs.map((disc) => {
+            if (disc.type === action.discType) {
+              return { ...disc, enabled: action.enabled };
+            } return disc;
+          }),
+        })),
         discTypes: state.discTypes.map((discType) => {
           if (discType.discType === action.discType) {
             return { ...discType, enabled: action.enabled };
@@ -128,9 +130,9 @@ const disc = (state = intiialState, action = {}) => {
             return {
               ...bag,
               discs: _.filter(bag.discs, disc => disc.baggedDiscId !== action.baggedDiscId),
-            }
+            };
           } return bag;
-        })
+        }),
       };
     case bagActionTypes.CHANGE_THROWER_TYPE:
       return {
@@ -181,9 +183,9 @@ const disc = (state = intiialState, action = {}) => {
         },
       };
     case bagActionTypes.IMPORT_BAGS_FROM_FILE:
-      return { 
-        ...state, 
-        bags: action.fileData 
+      return {
+        ...state,
+        bags: action.fileData,
       };
     case bagActionTypes.EXPORT_BAGS_TO_FILE:
       if (state.bags.length > 0) {
@@ -199,35 +201,65 @@ const disc = (state = intiialState, action = {}) => {
         ...state,
         selectedBagId: action.selectBagId,
       };
-    case bagActionTypes.ADD_NEW_BAG:
+    case bagActionTypes.ADD_NEW_BAG_START:
       return {
         ...state,
+        addBag: true,
+        updateBag: false,
+      };
+    case bagActionTypes.ADD_NEW_BAG_FINISH:
+      return {
+        ...state,
+        addBag: false,
+        updateBag: false,
+        selectedBagId: state.lastBagId + 1,
         bags: [
           ...state.bags,
           {
             name: action.bagName,
             bagId: state.lastBagId + 1,
-          }
+            discs: [],
+          },
         ],
         lastBagId: state.lastBagId + 1,
       };
-    case bagActionTypes.UPDATE_BAG_NAME:
+    case bagActionTypes.ADD_NEW_BAG_CANCEL:
       return {
         ...state,
+        addBag: false,
+        updateBag: false,
+      };
+    case bagActionTypes.UPDATE_BAG_NAME_START:
+      return {
+        ...state,
+        addBag: false,
+        updateBag: true,
+      };
+    case bagActionTypes.UPDATE_BAG_NAME_FINISH:
+      return {
+        ...state,
+        addBag: false,
+        updateBag: false,
         bags: state.bags.map((bag) => {
           if (bag.bagId === state.selectedBagId) {
             return {
               ...bag,
               name: action.bagName,
-            }
+            };
           } return bag;
         }),
+      };
+    case bagActionTypes.UPDATE_BAG_NAME_CANCEL:
+      return {
+        ...state,
+        addBag: false,
+        updateBag: false,
       };
     case bagActionTypes.REMOVE_EXISTING_BAG:
       return {
         ...state,
         bags: _.filter(state.bags, bag => bag.bagId !== action.bagId),
-      }
+      };
     default:
       return state;
   }

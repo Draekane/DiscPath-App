@@ -55,11 +55,47 @@ export const changeLieCircles = () => ({
   type: bagActionTypes.CHANGE_LIE_CIRCLE,
 });
 
-export const exportBagToFile = () => ({
-  type: bagActionTypes.EXPORT_BAG_TO_FILE,
+export const exportBagsToFile = () => ({
+  type: bagActionTypes.EXPORT_BAGS_TO_FILE,
 });
 
-export const importBagFromFile = fileData => ({
-  type: bagActionTypes.IMPORT_BAG_FROM_FILE,
+export const importBagsFromFile = fileData => ({
+  type: bagActionTypes.IMPORT_BAGS_FROM_FILE,
   fileData,
+});
+
+export const selectBag = selectBagId => ({
+  type: bagActionTypes.SELECT_BAG,
+  selectBagId,
+});
+
+export const addNewBagStart = () => ({
+  type: bagActionTypes.ADD_NEW_BAG_START,
+});
+
+export const addNewBagFinish = bagName => ({
+  type: bagActionTypes.ADD_NEW_BAG_FINISH,
+  bagName,
+});
+
+export const addNewBagCancel = () => ({
+  type: bagActionTypes.ADD_NEW_BAG_CANCEL,
+});
+
+export const updateBagNameStart = () => ({
+  type: bagActionTypes.UPDATE_BAG_NAME_START,
+});
+
+export const updateBagNameFinish = bagName => ({
+  type: bagActionTypes.UPDATE_BAG_NAME_FINISH,
+  bagName,
+});
+
+export const updateBagNameCancel = () => ({
+  type: bagActionTypes.UPDATE_BAG_NAME_CANCEL,
+});
+
+export const removeExistingBag = bagId => ({
+  type: bagActionTypes.REMOVE_DISC_FROM_BAG,
+  bagId,
 });

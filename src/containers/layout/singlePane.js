@@ -11,11 +11,11 @@ import Thrower from '../../components/bag/thrower';
 import DisplayOptions from '../../components/bag/displayOptions';
 import ImportExport from '../../components/bag/importExport';
 import { companyShape } from '../../propTypeShapes/companyShapes';
-import { discShape, throwerShape, displayOptionsShape } from '../../propTypeShapes/bagShapes';
+import { throwerShape, displayOptionsShape, bagShape } from '../../propTypeShapes/bagShapes';
 import * as CompanyActions from '../../actions/company';
 import * as BagActions from '../../actions/bag';
 import { currentCompaniesSelector, currentSelectionSelector } from '../../selector/companiesSelector';
-import { throwerSelector, baggedDiscSelector, displayOptionsSelector, discTypesSelector } from '../../selector/bagSelector';
+import { throwerSelector, bagSelector, displayOptionsSelector, discTypesSelector } from '../../selector/bagSelector';
 
 class SinglePane extends Component {
   componentWillMount() {
@@ -121,13 +121,55 @@ class SinglePane extends Component {
   handleExportToFile = () => {
     const { dispatch } = this.props;
 
-    dispatch(BagActions.exportBagToFile());
+    dispatch(BagActions.exportBagsToFile());
   }
 
   handleImportFromFile = (file) => {
     const { dispatch } = this.props;
 
-    dispatch(BagActions.importBagFromFile(file));
+    dispatch(BagActions.importBagsFromFile(file));
+  }
+
+  handleAddBagStart = () => {
+    const { dispatch } = this.props;
+
+    dispatch(BagActions.addNewBagStart());
+  }
+
+  handleAddBagFinish = (bagName) => {
+    const { dispatch } = this.props;
+
+    dispatch(BagActions.addNewBagFinish(bagName));
+  }
+
+  handleAddBagCancel = () => {
+    const { dispatch } = this.props;
+
+    dispatch(BagActions.addNewBagCancel());
+  }
+
+  handleUpdateBagNameStart = () => {
+    const { dispatch } = this.props;
+
+    dispatch(BagActions.updateBagNameStart());
+  }
+
+  handleUpdateBagNameFinish = (bagName) => {
+    const { dispatch } = this.props;
+
+    dispatch(BagActions.updateBagNameFinish(bagName));
+  }
+
+  handleUpdateBagNameCancel = () => {
+    const { dispatch } = this.props;
+
+    dispatch(BagActions.updateBagNameCancel());
+  }
+
+  handleSelectBag = (bagId) => {
+    const { dispatch } = this.props;
+
+    dispatch(BagActions.selectBag(bagId));
   }
 
   render() {
@@ -136,22 +178,37 @@ class SinglePane extends Component {
       pageHeader,
       companies,
       currentSelection,
-      currentDiscs,
+      currentBags,
       thrower,
       displayOptions,
       discTypes,
+      selectedBagId,
+      addBag,
+      updateBag,
     } = this.props;
 
     const bagOptions = {
-      discs: currentDiscs,
+      bags: currentBags,
       discTypes,
+      selectedBagId,
+      addBag,
+      updateBag,
       functions: {
         handleEnableDisc: this.handleEnableDisc,
         handleEnableDiscType: this.handleEnableDiscType,
         handleSetDiscWear: this.handleSetDiscWear,
         handleRemoveDisc: this.handleDiscRemove,
+        handleAddBagStart: this.handleAddBagStart,
+        handleAddBagFinish: this.handleAddBagFinish,
+        handleAddBagCancel: this.handleAddBagCancel,
+        handleUpdateBagNameStart: this.handleUpdateBagNameStart,
+        handleUpdateBagNameFinish: this.handleUpdateBagNameFinish,
+        handleUpdateBagNameCancel: this.handleUpdateBagNameCancel,
+        handleSelectBag: this.handleSelectBag,
       },
     };
+
+    const currentBag = _.filter(currentBags, bag => bag.bagId === parseInt(selectedBagId, 10))[0];
 
     const content = (
 
@@ -179,7 +236,7 @@ class SinglePane extends Component {
               </a>
             </div>
             <div className="grid-item1 grid-item">
-              <FlightMap discs={currentDiscs} thrower={thrower} displayOptions={displayOptions} />
+              <FlightMap discs={currentBag.discs} thrower={thrower} displayOptions={displayOptions} />
             </div>
             <div className="grid-item2 grid-item">
               <Bag
@@ -232,11 +289,14 @@ SinglePane.propTypes = {
   pageHeader: PropTypes.string,
   companies: PropTypes.arrayOf(companyShape),
   currentSelection: PropTypes.string,
-  currentDiscs: PropTypes.arrayOf(discShape),
+  currentBags: PropTypes.arrayOf(bagShape),
   thrower: PropTypes.shape(throwerShape),
   displayOptions: PropTypes.shape(displayOptionsShape),
   discTypes: PropTypes.shape({ discType: PropTypes.string, enabled: PropTypes.bool }),
   dispatch: PropTypes.func,
+  selectedBagId: PropTypes.number,
+  addBag: PropTypes.bool,
+  updateBag: PropTypes.bool,
 };
 
 SinglePane.defaultProps = {
@@ -244,20 +304,26 @@ SinglePane.defaultProps = {
   pageHeader: 'Experimental Disc Golf Flight Path Visualizer',
   companies: [],
   currentSelection: null,
-  currentDiscs: [],
+  currentBags: [],
   thrower: null,
   displayOptions: null,
   discTypes: null,
+  selectedBagId: 1,
+  addBag: false,
+  updateBag: false,
 };
 
 const mapStateToProps = state => ({
   companies: currentCompaniesSelector(state),
   currentSelection: currentSelectionSelector(state),
-  currentDiscs: baggedDiscSelector(state),
+  currentBags: bagSelector(state),
   thrower: throwerSelector(state),
   displayOptions: displayOptionsSelector(state),
   discTypes: discTypesSelector(state),
+  selectedBagId: state.bag.selectedBagId,
   dispatch: state.dispatch,
+  addBag: state.bag.addBag,
+  updateBag: state.bag.updateBag,
 });
 
 export default connect(mapStateToProps)(SinglePane);

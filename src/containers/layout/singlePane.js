@@ -229,7 +229,7 @@ class SinglePane extends Component {
             <div className="grid-item-credits">
               Disc flight information from&nbsp;
               <a
-                href="http://www.inboun = dsdiscgolf.com/content/?page_id=431"
+                href="http://www.inboundsdiscgolf.com/content/?page_id=431"
                 target="_blank"
                 rel="noopener noreferrer"
               >Inbounds Disc Golf InFlight Guide

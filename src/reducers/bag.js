@@ -199,7 +199,7 @@ const disc = (state = intiialState, action = {}) => {
     case bagActionTypes.SELECT_BAG:
       return {
         ...state,
-        selectedBagId: action.selectBagId,
+        selectedBagId: parseInt(action.selectBagId, 10),
       };
     case bagActionTypes.ADD_NEW_BAG_START:
       return {

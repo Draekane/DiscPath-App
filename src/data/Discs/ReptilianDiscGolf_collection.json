@@ -3,6 +3,16 @@
 	"companyId": "a345b9f92af3145f98feffa9a8b68290",
 	"discs": [
 		{
+			"discId": "4b4643db7fff6ab6d867f0ed96c221ad",
+			"name": "Boa",
+			"type": "F",
+			"range": 361,
+			"hst": 0,
+			"lsf": 47,
+			"pdga": "N",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
 			"discId": "76cd75b6b8f0def9bc45032dcc32a611",
 			"name": "Croc",
 			"type": "M",
@@ -12,6 +22,16 @@
 			"pdga": "N",
 			"matrix_x": 4,
 			"matrix_y": 4
+		} , {
+			"discId": "6825c011de2b6c1a3d4ecfecf5732359",
+			"name": "Death Adder",
+			"type": "D",
+			"range": 435,
+			"hst": -39,
+			"lsf": 39,
+			"pdga": "N",
+			"matrix_x": 5,
+			"matrix_y": 5
 		} , {
 			"discId": "248f0922f4fdb9d4ed9094e7d3a3ff83",
 			"name": "Gila",
@@ -32,16 +52,6 @@
 			"pdga": "Y",
 			"matrix_x": 5,
 			"matrix_y": 5
-		} , {
-			"discId": "6cb576ec13726583fab7df279410f9b2",
-			"name": "Raptor",
-			"type": "F",
-			"range": 359,
-			"hst": 4,
-			"lsf": 76,
-			"pdga": "N",
-			"matrix_x": 2,
-			"matrix_y": 2
 		} , {
 			"discId": "85a7cd587d6142dbfc1a4de05af7b75d",
 			"name": "Scale",
@@ -82,5 +92,15 @@
 			"pdga": "Y",
 			"matrix_x": 3,
 			"matrix_y": 3
+		} , {
+			"discId": "f1d8deb2f01716e709aba61388c2e7b7",
+			"name": "Velociraptor",
+			"type": "F",
+			"range": 359,
+			"hst": 4,
+			"lsf": 76,
+			"pdga": "Y",
+			"matrix_x": 2,
+			"matrix_y": 2
 	}]
 }

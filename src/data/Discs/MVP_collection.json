@@ -323,6 +323,16 @@
 			"matrix_x": 3,
 			"matrix_y": 3
 		} , {
+			"discId": "b22b929ba52471a02d18bb3a4e4472e6",
+			"name": "Vertex",
+			"type": "F",
+			"range": 296,
+			"hst": -55,
+			"lsf": 18,
+			"pdga": "Y",
+			"matrix_x": 7,
+			"matrix_y": 7
+		} , {
 			"discId": "e991c96ea6cbafafe60de03464daeadc",
 			"name": "Volt",
 			"type": "F",

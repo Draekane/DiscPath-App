@@ -157,11 +157,11 @@
 			"name": "Journey",
 			"type": "D",
 			"range": 422,
-			"hst": 19,
+			"hst": -19,
 			"lsf": 19,
 			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
+			"matrix_x": 5,
+			"matrix_y": 5
 		} , {
 			"discId": "ec775c48945f0790ef23f3820f985a78",
 			"name": "Karma",
@@ -209,6 +209,16 @@
 			"range": 402,
 			"hst": 0,
 			"lsf": 39,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "5d3eb1ba601507d9163c141ab195283d",
+			"name": "Prophecy",
+			"type": "M",
+			"range": 298,
+			"hst": 0,
+			"lsf": 37,
 			"pdga": "Y",
 			"matrix_x": 4,
 			"matrix_y": 4

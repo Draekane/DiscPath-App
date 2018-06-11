@@ -3,6 +3,16 @@
 	"companyId": "668c39e0dc06284d37ed849abaa09f31",
 	"discs": [
 		{
+			"discId": "a54b6a3e35542af4b77806be3207b2fd",
+			"name": "Drift",
+			"type": "F",
+			"range": 332,
+			"hst": -37,
+			"lsf": 18,
+			"pdga": "Y",
+			"matrix_x": 6,
+			"matrix_y": 6
+		} , {
 			"discId": "27cb6a9c075369d09f4a30b8996ec6c3",
 			"name": "Pilot",
 			"type": "P",

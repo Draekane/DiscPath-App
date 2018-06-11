@@ -193,6 +193,16 @@
 			"matrix_x": 4,
 			"matrix_y": 4
 		} , {
+			"discId": "830652084dda69b6b957e2c3a7bd9b18",
+			"name": "H5",
+			"type": "D",
+			"range": 403,
+			"hst": 39,
+			"lsf": -39,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
 			"discId": "f31e1eef20f64733a18c538073e78396",
 			"name": "M1",
 			"type": "M",

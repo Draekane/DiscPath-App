@@ -93,6 +93,16 @@
 			"matrix_x": 4,
 			"matrix_y": 4
 		} , {
+			"discId": "e07af1c614934165914f7c456b1383d3",
+			"name": "Twin Swords",
+			"type": "D",
+			"range": 418,
+			"hst": -19,
+			"lsf": 49,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
 			"discId": "4351cfebe4b61d8aa5efa1d020710005",
 			"name": "View",
 			"type": "F",

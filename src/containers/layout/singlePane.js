@@ -223,6 +223,14 @@ class SinglePane extends Component {
               rel="noopener noreferrer"
               className="help-request"
             >click here
+            </a><br />
+            To view documentation and ask questions&nbsp;
+            <a
+              href="https://discpath.readme.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="help-request"
+            >click here
             </a>
           </header>
           <div className="workspace-container grid-container" >

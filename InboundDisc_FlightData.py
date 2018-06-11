@@ -33,8 +33,8 @@ for company in disc_companies:
 			print("Company: " + company.strip())
 			print("Disc Count:" + str(len(company_discs)))
 			print("------------------------------------------------------------------------------------------------")
-			pathlib.Path('/output').mkdir(parents=True, exist_ok=True)
-			filename = "/output/" + company.strip().replace(" ","") + "_collection.json"
+			pathlib.Path('./src/data/Discs').mkdir(parents=True, exist_ok=True)
+			filename = "./src/data/Discs/" + company.strip().replace(" ","") + "_collection.json"
 			out_handle = open(filename,'w')
 			# print("{")
 			# print("    \"company\": \"" + company + "\",")

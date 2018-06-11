@@ -13,6 +13,16 @@
 			"matrix_x": 4,
 			"matrix_y": 4
 		} , {
+			"discId": "0bd420a223ef0865c903053eb97ff957",
+			"name": "Banzai",
+			"type": "F",
+			"range": 346,
+			"hst": 0,
+			"lsf": 57,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
+		} , {
 			"discId": "3fb043cb12c4f76468e6ac668dd0644c",
 			"name": "Blowfly",
 			"type": "P",

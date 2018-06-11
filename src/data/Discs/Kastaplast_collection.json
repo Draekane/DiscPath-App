@@ -82,5 +82,15 @@
 			"pdga": "Y",
 			"matrix_x": 5,
 			"matrix_y": 5
+		} , {
+			"discId": "6e69c06403ce4f04a9c3266819915af9",
+			"name": "Stal",
+			"type": "F",
+			"range": 363,
+			"hst": 0,
+			"lsf": 57,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
 	}]
 }

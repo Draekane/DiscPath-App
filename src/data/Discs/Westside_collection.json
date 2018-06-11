@@ -13,6 +13,16 @@
 			"matrix_x": 2,
 			"matrix_y": 2
 		} , {
+			"discId": "762ee0989af33569108ad1e457093045",
+			"name": "Anvil",
+			"type": "M",
+			"range": 270,
+			"hst": 0,
+			"lsf": 73,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
+		} , {
 			"discId": "51a547788c5ebad8e66b330b9fa747c5",
 			"name": "Bard",
 			"type": "M",
@@ -122,6 +132,16 @@
 			"pdga": "Y",
 			"matrix_x": 3,
 			"matrix_y": 3
+		} , {
+			"discId": "d6182c2fac305a56db89613f408882c3",
+			"name": "Maiden",
+			"type": "P",
+			"range": 261,
+			"hst": 0,
+			"lsf": 18,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
 		} , {
 			"discId": "dd5aee407850e8289bd215f45650f01f",
 			"name": "Northman",
@@ -272,6 +292,16 @@
 			"pdga": "Y",
 			"matrix_x": 7,
 			"matrix_y": 7
+		} , {
+			"discId": "00cf20699546cf94c9b80e773fb0051b",
+			"name": "War Horse",
+			"type": "D",
+			"range": 432,
+			"hst": 0,
+			"lsf": 79,
+			"pdga": "Y",
+			"matrix_x": 2,
+			"matrix_y": 2
 		} , {
 			"discId": "e520e0b54cb18625457ca0b3d7a43fd2",
 			"name": "Warship",

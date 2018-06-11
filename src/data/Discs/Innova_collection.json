@@ -99,9 +99,19 @@
 			"range": 240,
 			"hst": 0,
 			"lsf": 36,
-			"pdga": "N",
+			"pdga": "Y",
 			"matrix_x": 4,
 			"matrix_y": 4
+		} , {
+			"discId": "11c441a78fbdb76f4b1d3ad030e01eec",
+			"name": "AviarX3",
+			"type": "P",
+			"range": 253,
+			"hst": 0,
+			"lsf": 54,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
 		} , {
 			"discId": "5e6ebd9253806afff39f3f2e3c1b4e42",
 			"name": "Banshee",
@@ -873,6 +883,16 @@
 			"matrix_x": 5,
 			"matrix_y": 5
 		} , {
+			"discId": "ecd331596f91ddaac07c6e600ed166f1",
+			"name": "Rat",
+			"type": "P",
+			"range": 271,
+			"hst": 0,
+			"lsf": 55,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
+		} , {
 			"discId": "8875a6e498ff20b1553ff264e9b07a53",
 			"name": "Raven",
 			"type": "F",
@@ -919,7 +939,7 @@
 			"range": 291,
 			"hst": 0,
 			"lsf": 64,
-			"pdga": "N",
+			"pdga": "Y",
 			"matrix_x": 3,
 			"matrix_y": 3
 		} , {
@@ -1046,7 +1066,7 @@
 			"discId": "ddcd55b5ff14d8c587704bbbf2e1b8c5",
 			"name": "Stingray",
 			"type": "M",
-			"range": 290,
+			"range": 303,
 			"hst": -53,
 			"lsf": 23,
 			"pdga": "Y",

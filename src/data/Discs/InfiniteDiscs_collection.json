@@ -1,0 +1,66 @@
+{
+	"company": "Infinite Discs",
+	"companyId": "216f018ee36a46de254edc55a7e3609c",
+	"discs": [
+		{
+			"discId": "88ba9066926c3d917bb1a7b60fb1ea85",
+			"name": "Chariot",
+			"type": "M",
+			"range": 299,
+			"hst": 0,
+			"lsf": 18,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "0cdf051c93865faa15cbc5cd3d2b69fb",
+			"name": "Exodus",
+			"type": "F",
+			"range": 332,
+			"hst": -9,
+			"lsf": 37,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "5e920a170bf5c13903501ebee13e041e",
+			"name": "Myth",
+			"type": "P",
+			"range": 240,
+			"hst": 0,
+			"lsf": 36,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "62f940d608846429bdbe3c578d4ccc22",
+			"name": "Pharaoh",
+			"type": "D",
+			"range": 439,
+			"hst": -19,
+			"lsf": 39,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "dcdfb5b00489d42db3d4b6344c40b8a8",
+			"name": "Sphinx",
+			"type": "F",
+			"range": 368,
+			"hst": -57,
+			"lsf": 19,
+			"pdga": "Y",
+			"matrix_x": 7,
+			"matrix_y": 7
+		} , {
+			"discId": "a9f6ce6304650ee5aefc4aef1c35ba7c",
+			"name": "Tomb",
+			"type": "P",
+			"range": 261,
+			"hst": 0,
+			"lsf": 18,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+	}]
+}

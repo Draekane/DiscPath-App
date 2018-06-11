@@ -53,6 +53,16 @@
 			"matrix_x": 4,
 			"matrix_y": 4
 		} , {
+			"discId": "367648c2bd291d5f051540a44e75327d",
+			"name": "Excite",
+			"type": "D",
+			"range": 438,
+			"hst": -59,
+			"lsf": 19,
+			"pdga": "Y",
+			"matrix_x": 7,
+			"matrix_y": 7
+		} , {
 			"discId": "a8155b0ea02bae01cd41369018837d6b",
 			"name": "Fireball",
 			"type": "D",
@@ -109,6 +119,16 @@
 			"range": 253,
 			"hst": -18,
 			"lsf": 18,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
+			"discId": "09b530d59645f71d7b2ac90a69ba18de",
+			"name": "Tantrum",
+			"type": "D",
+			"range": 439,
+			"hst": -19,
+			"lsf": 39,
 			"pdga": "Y",
 			"matrix_x": 5,
 			"matrix_y": 5

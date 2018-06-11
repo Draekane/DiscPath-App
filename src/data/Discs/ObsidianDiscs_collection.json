@@ -23,6 +23,16 @@
 			"matrix_x": 3,
 			"matrix_y": 3
 		} , {
+			"discId": "09223d8b66c0ee1dfeb4c58b2665037e",
+			"name": "Rift",
+			"type": "P",
+			"range": 401,
+			"hst": 0,
+			"lsf": 58,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
+		} , {
 			"discId": "a9d65d8a88f3a9898dd84007bca04115",
 			"name": "Splinter",
 			"type": "P",

@@ -33,6 +33,16 @@
 			"matrix_x": 3,
 			"matrix_y": 3
 		} , {
+			"discId": "1d126135e3d4dcd0786d289777d2a14f",
+			"name": "Four20",
+			"type": "D",
+			"range": 384,
+			"hst": -2,
+			"lsf": 75,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
+		} , {
 			"discId": "59b94cc044ff8a12b703e25e7cc41b1f",
 			"name": "Ibex",
 			"type": "M",

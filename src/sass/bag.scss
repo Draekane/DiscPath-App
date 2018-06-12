@@ -21,4 +21,12 @@
     .putter-header {
         background-color: #ccf9ff
     }
+
+    .rt-resizable-header {
+        display: none;
+    }
+
+    .rt-tr-group:last-child {
+        border-bottom: grey 5px solid !important;
+    }
 }

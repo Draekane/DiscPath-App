@@ -72,6 +72,7 @@ const DiscType = (props) => {
           headerClassName,
           columns: [
             {
+              Header: 'View',
               accessor: 'enabled',
               Cell: (row) => {
                 if (row.value === true) {
@@ -82,12 +83,15 @@ const DiscType = (props) => {
               width: 25,
             },
             {
+              Header: 'Company',
               accessor: 'company',
             },
             {
+              Header: 'Disc',
               accessor: 'name',
             },
             {
+              Header: 'Edit',
               accessor: 'wear',
               width: 75,
               Cell: row => (
@@ -100,6 +104,7 @@ const DiscType = (props) => {
               ),
             },
             {
+              Header: 'Remove',
               accessor: 'baggedDiscId',
               width: 40,
               Cell: row => (<FaTrashO onClick={handleDiscRemove.bind(this, row.value)} color="red" />),

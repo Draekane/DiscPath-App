@@ -2,7 +2,7 @@ import _ from 'lodash';
 import { saveAs } from 'file-saver';
 import * as bagActionTypes from '../actionTypes/bag';
 
-const intiialState = {
+const initialState = {
   bags: [{
     name: 'Default Bag',
     bagId: 1,
@@ -47,13 +47,29 @@ const intiialState = {
   ],
 };
 
-const disc = (state = intiialState, action = {}) => {
+const localStoreName = 'Discpath.CurrentState';
+
+const getInitialState = () => {
+  const savedState = localStorage.getItem(localStoreName);
+
+  if (savedState !== null && savedState !== undefined) {
+    return JSON.parse(savedState);
+  }
+  return initialState;
+};
+
+const saveToLocalStore = (updateState) => {
+  localStorage.setItem(localStoreName, JSON.stringify(updateState));
+};
+
+const disc = (state = getInitialState(), action = {}) => {
   let thisFile;
+  let newState;
 
   switch (action.type) {
     case bagActionTypes.ADD_DISC_TO_BAG:
       if (action.disc === null) return state;
-      return {
+      newState = {
         ...state,
         bags: state.bags.map((bag) => {
           if (bag.bagId === state.selectedBagId) {
@@ -70,8 +86,9 @@ const disc = (state = intiialState, action = {}) => {
         }),
         lastDiscId: state.lastDiscId + 1,
       };
+      break;
     case bagActionTypes.UPDATE_DISC_WEAR:
-      return {
+      newState = {
         ...state,
         bags: state.bags.map((bag) => {
           if (bag.bagId === state.selectedBagId) {
@@ -85,9 +102,10 @@ const disc = (state = intiialState, action = {}) => {
           } return bag;
         }),
       };
+      break;
     case bagActionTypes.DISABLE_DISC:
     case bagActionTypes.ENABLE_DISC:
-      return {
+      newState = {
         ...state,
         bags: state.bags.map((bag) => {
           if (bag.bagId === state.selectedBagId) {
@@ -103,9 +121,10 @@ const disc = (state = intiialState, action = {}) => {
           return bag;
         }),
       };
+      break;
     case bagActionTypes.DISABLE_DISC_TYPE:
     case bagActionTypes.ENABLE_DISC_TYPE:
-      return {
+      newState = {
         ...state,
         bags: state.bags.map(bag => ({
           ...bag,
@@ -122,8 +141,9 @@ const disc = (state = intiialState, action = {}) => {
           return discType;
         }),
       };
+      break;
     case bagActionTypes.REMOVE_DISC_FROM_BAG:
-      return {
+      newState = {
         ...state,
         bags: state.bags.map((bag) => {
           if (bag.bagId === state.selectedBagId) {
@@ -134,59 +154,67 @@ const disc = (state = intiialState, action = {}) => {
           } return bag;
         }),
       };
+      break;
     case bagActionTypes.CHANGE_THROWER_TYPE:
-      return {
+      newState = {
         ...state,
         thrower: {
           ...state.thrower,
           throwType: action.throwerType,
         },
       };
+      break;
     case bagActionTypes.CHANGE_THROWER_POWER:
-      return {
+      newState = {
         ...state,
         thrower: {
           ...state.thrower,
           power: action.throwerPower,
         },
       };
+      break;
     case bagActionTypes.CHANGE_FAN_POWER:
-      return {
+      newState = {
         ...state,
         displayOptions: {
           ...state.displayOptions,
           fanPower: (!state.displayOptions.fanPower),
         },
       };
+      break;
     case bagActionTypes.CHANGE_PATHS:
-      return {
+      newState = {
         ...state,
         displayOptions: {
           ...state.displayOptions,
           pathsShown: action.paths,
         },
       };
+      break;
     case bagActionTypes.CHANGE_LIE_DISTANCE:
-      return {
+      newState = {
         ...state,
         displayOptions: {
           ...state.displayOptions,
           lieDistance: (!state.displayOptions.lieDistance),
         },
       };
+      break;
     case bagActionTypes.CHANGE_LIE_CIRCLE:
-      return {
+      newState = {
         ...state,
         displayOptions: {
           ...state.displayOptions,
           lieCircle: (!state.displayOptions.lieCircle),
         },
       };
+      break;
     case bagActionTypes.IMPORT_BAGS_FROM_FILE:
-      return {
+      newState = {
         ...state,
         bags: action.fileData,
       };
+      break;
     case bagActionTypes.EXPORT_BAGS_TO_FILE:
       if (state.bags.length > 0) {
         thisFile = new Blob([JSON.stringify(state.bags)], { type: 'text/plain;charset=utf-8' });
@@ -195,20 +223,23 @@ const disc = (state = intiialState, action = {}) => {
         console.log('No Bag Data to Export');
         alert('No Bag Data to Export.  Add discs to bag before exporting');
       }
-      return state;
+      newState = state;
+      break;
     case bagActionTypes.SELECT_BAG:
-      return {
+      newState = {
         ...state,
         selectedBagId: parseInt(action.selectBagId, 10),
       };
+      break;
     case bagActionTypes.ADD_NEW_BAG_START:
-      return {
+      newState = {
         ...state,
         addBag: true,
         updateBag: false,
       };
+      break;
     case bagActionTypes.ADD_NEW_BAG_FINISH:
-      return {
+      newState = {
         ...state,
         addBag: false,
         updateBag: false,
@@ -223,20 +254,23 @@ const disc = (state = intiialState, action = {}) => {
         ],
         lastBagId: state.lastBagId + 1,
       };
+      break;
     case bagActionTypes.ADD_NEW_BAG_CANCEL:
-      return {
+      newState = {
         ...state,
         addBag: false,
         updateBag: false,
       };
+      break;
     case bagActionTypes.UPDATE_BAG_NAME_START:
-      return {
+      newState = {
         ...state,
         addBag: false,
         updateBag: true,
       };
+      break;
     case bagActionTypes.UPDATE_BAG_NAME_FINISH:
-      return {
+      newState = {
         ...state,
         addBag: false,
         updateBag: false,
@@ -249,20 +283,27 @@ const disc = (state = intiialState, action = {}) => {
           } return bag;
         }),
       };
+      break;
     case bagActionTypes.UPDATE_BAG_NAME_CANCEL:
-      return {
+      newState = {
         ...state,
         addBag: false,
         updateBag: false,
       };
+      break;
     case bagActionTypes.REMOVE_EXISTING_BAG:
-      return {
+      newState = {
         ...state,
         bags: _.filter(state.bags, bag => bag.bagId !== action.bagId),
       };
+      break;
     default:
-      return state;
+      newState = state;
+      break;
   }
+
+  saveToLocalStore(newState);
+  return newState;
 };
 
 export default disc;

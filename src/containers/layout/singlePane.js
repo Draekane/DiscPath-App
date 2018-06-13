@@ -5,8 +5,7 @@ import DocumentTitle from 'react-document-title';
 import _ from 'lodash';
 
 import FlightMap from '../../components/map/flightMap';
-import CompanyDiscs from '../../components/company/companyDiscs';
-import Bag from '../../components/bag/bag';
+import BagContainer from '../bag';
 import Thrower from '../../components/bag/thrower';
 import DisplayOptions from '../../components/bag/displayOptions';
 import ImportExport from '../../components/bag/importExport';
@@ -35,52 +34,7 @@ class SinglePane extends Component {
     }
     return null;
   }
-  handleDiscSelection = (selectedOptions) => {
-    const { dispatch } = this.props;
-    if (selectedOptions !== null) dispatch(CompanyActions.selectDisc(selectedOptions.value));
-  }
-  handleAddDiscToBag = () => {
-    const { dispatch, currentSelection } = this.props;
-    if (currentSelection !== null) {
-      const currDisc = this.getDiscById(currentSelection);
 
-      if (currDisc !== null) {
-        const selectDisc = {
-          ...currDisc.disc,
-          discId: currDisc.disc.discId,
-          company: currDisc.company.company,
-          enabled: true,
-          wear: 10,
-        };
-
-        dispatch(BagActions.loadDisc(selectDisc));
-      }
-    }
-  }
-
-  handleEnableDisc = (baggedDiscId, enable) => {
-    const { dispatch } = this.props;
-
-    dispatch(BagActions.setDiscEnable(baggedDiscId, enable));
-  }
-
-  handleEnableDiscType = (discType, enable) => {
-    const { dispatch } = this.props;
-
-    dispatch(BagActions.setDiscTypeEnable(discType, enable));
-  }
-
-  handleSetDiscWear = (baggedDiscId, wear) => {
-    const { dispatch } = this.props;
-
-    dispatch(BagActions.setDiscWear(baggedDiscId, wear));
-  }
-
-  handleDiscRemove = (baggedDiscId) => {
-    const { dispatch } = this.props;
-
-    dispatch(BagActions.removeDiscFromBag(baggedDiscId));
-  }
 
   handleChangeThrowerType = (throwerType) => {
     const { dispatch } = this.props;
@@ -130,88 +84,19 @@ class SinglePane extends Component {
     dispatch(BagActions.importBagsFromFile(file));
   }
 
-  handleAddBagStart = () => {
-    const { dispatch } = this.props;
-
-    dispatch(BagActions.addNewBagStart());
-  }
-
-  handleAddBagFinish = (bagName) => {
-    const { dispatch } = this.props;
-
-    dispatch(BagActions.addNewBagFinish(bagName));
-  }
-
-  handleAddBagCancel = () => {
-    const { dispatch } = this.props;
-
-    dispatch(BagActions.addNewBagCancel());
-  }
-
-  handleUpdateBagNameStart = () => {
-    const { dispatch } = this.props;
-
-    dispatch(BagActions.updateBagNameStart());
-  }
-
-  handleUpdateBagNameFinish = (bagName) => {
-    const { dispatch } = this.props;
-
-    dispatch(BagActions.updateBagNameFinish(bagName));
-  }
-
-  handleUpdateBagNameCancel = () => {
-    const { dispatch } = this.props;
-
-    dispatch(BagActions.updateBagNameCancel());
-  }
-
-  handleSelectBag = (bagId) => {
-    const { dispatch } = this.props;
-
-    dispatch(BagActions.selectBag(bagId));
-  }
-
   render() {
     const {
       pageTitle,
       pageHeader,
-      companies,
-      currentSelection,
-      currentBags,
       thrower,
       displayOptions,
-      discTypes,
+      currentBags,
       selectedBagId,
-      addBag,
-      updateBag,
     } = this.props;
-
-    const bagOptions = {
-      bags: currentBags,
-      discTypes,
-      selectedBagId,
-      addBag,
-      updateBag,
-      functions: {
-        handleEnableDisc: this.handleEnableDisc,
-        handleEnableDiscType: this.handleEnableDiscType,
-        handleSetDiscWear: this.handleSetDiscWear,
-        handleRemoveDisc: this.handleDiscRemove,
-        handleAddBagStart: this.handleAddBagStart,
-        handleAddBagFinish: this.handleAddBagFinish,
-        handleAddBagCancel: this.handleAddBagCancel,
-        handleUpdateBagNameStart: this.handleUpdateBagNameStart,
-        handleUpdateBagNameFinish: this.handleUpdateBagNameFinish,
-        handleUpdateBagNameCancel: this.handleUpdateBagNameCancel,
-        handleSelectBag: this.handleSelectBag,
-      },
-    };
 
     const currentBag = _.filter(currentBags, bag => bag.bagId === parseInt(selectedBagId, 10))[0];
 
     const content = (
-
       <DocumentTitle title={pageTitle}>
         <React.Fragment>
           <header className="App-header grid-item-header">
@@ -247,21 +132,7 @@ class SinglePane extends Component {
               <FlightMap discs={currentBag.discs} thrower={thrower} displayOptions={displayOptions} />
             </div>
             <div className="grid-item2 grid-item">
-              <Bag
-                props={bagOptions}
-                className="bag-item1"
-              />
-              <CompanyDiscs
-                companies={companies}
-                onSelectHandler={this.handleDiscSelection}
-                currentSelection={currentSelection}
-                className="bag-item2"
-              />
-              <button
-                onClick={this.handleAddDiscToBag}
-                className="bag-item3"
-              >Add To Bag
-              </button>
+              <BagContainer state/>
             </div>
             <div className="grid-item3 grid-item">
               <Thrower

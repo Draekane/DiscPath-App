@@ -53,7 +53,7 @@ const DiscType = (props) => {
         return (
           <div className={headerClassName}>
             <FaEye onClick={handleDisableDiscType} color="green" />
-            {title}
+            &nbsp;&nbsp;{title}
           </div>);
       }
       return <div className={headerClassName}><FaEyeSlash onClick={handleDisableDiscType} />&nbsp;&nbsp;{title}</div>;
@@ -97,7 +97,8 @@ const DiscType = (props) => {
               Cell: row => (
                 <select
                   onChange={handleSetWear}
-                  selectedvalue={row.value}
+                  value={row.value}
+                  defaultValue={row.value}
                 >
                   {createWearValues(row.original.baggedDiscId)}
                 </select>

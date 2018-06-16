@@ -1,31 +1,37 @@
 import PropTypes from 'prop-types';
 
 export const discShape = PropTypes.shape({
-  discId: PropTypes.string,
+  color: PropTypes.string,
   company: PropTypes.string,
-  name: PropTypes.string,
-  range: PropTypes.number,
+  discId: PropTypes.string,
+  displayName: PropTypes.string,
+  enabled: PropTypes.bool,
   hst: PropTypes.number,
   lsf: PropTypes.number,
+  maxWeight: PropTypes.number,
+  name: PropTypes.string,
+  power: PropTypes.number,
+  range: PropTypes.number,
+  throwType: PropTypes.string,
   type: PropTypes.string,
-  enabled: PropTypes.bool,
   wear: PropTypes.number,
+  weight: PropTypes.number,
 });
 
 export const bagShape = PropTypes.shape({
   bagId: PropTypes.number,
-  name: PropTypes.string,
   discs: PropTypes.arrayOf(discShape),
+  name: PropTypes.string,
 });
 
 export const throwerShape = PropTypes.shape({
-  throwType: PropTypes.string,
   power: PropTypes.number,
+  throwType: PropTypes.string,
 });
 
 export const displayOptionsShape = PropTypes.shape({
   fanPower: PropTypes.bool,
-  pathsShown: PropTypes.string,
-  lieDistance: PropTypes.bool,
   lieCircle: PropTypes.bool,
+  lieDistance: PropTypes.bool,
+  pathsShown: PropTypes.string,
 });

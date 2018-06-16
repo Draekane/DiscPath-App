@@ -1,0 +1,21 @@
+{
+	"company": "Pacific Cycle",
+	"companyId": "5c193248ae9e2d61091dedb5bfbfa0a3",
+	"discs": [
+		{
+			"discId": "fd99a598e51991511e38991da40708e1",
+			"name": "Mercury Putter",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "0d9e06a95918f056ec79d2c5c47f3fca",
+			"name": "Pluto Driver",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "de4048fe92026e4384d6ce8ac4b3b5f6",
+			"name": "Saturn Mid Range",
+			"maxWeight": "174"
+		}
+	]
+}

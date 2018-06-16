@@ -1,0 +1,31 @@
+{
+	"company": "Arsenal Discs",
+	"companyId": "4fc9baf210346939946d5a49f255588b",
+	"discs": [
+		{
+			"discId": "a09c8fcbd98fee6aec6aca0861fa2d59",
+			"name": "50 Cal",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "6c3b0371f38792d7188548a13f84458b",
+			"name": "Air Strike",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "b713e6323a68d3ddabf4855826c50148",
+			"name": "C4",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "a6bd532925bc80301e01986d101d0bb2",
+			"name": "Cyborg",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "064b1dd62886517f23389d1fe8e63e49",
+			"name": "Morningstar",
+			"maxWeight": "180"
+		}
+	]
+}

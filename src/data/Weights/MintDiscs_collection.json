@@ -1,0 +1,11 @@
+{
+	"company": "Mint Discs",
+	"companyId": "06ab05a60354ecc94a62aff0f6a7ca42",
+	"discs": [
+		{
+			"discId": "6132295fcf5570fb8b0a944ef322a598",
+			"name": "Alpha",
+			"maxWeight": "175"
+		}
+	]
+}

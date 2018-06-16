@@ -1,0 +1,211 @@
+{
+	"company": "Prodigy Disc",
+	"companyId": "84af51387c57624e185ac85c73e2b86d",
+	"discs": [
+		{
+			"discId": "27f237e6b7f96587b6202ff3607ad88a",
+			"name": "A1",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "c6bdf6f65f3845da9085e9ae5790b494",
+			"name": "A2",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "6593d7b12fd418cdb35bbf438de72f66",
+			"name": "A3",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "0c2f3adf2a48bab3adb470f4da57f3d0",
+			"name": "A4",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "4a4079e06eb2f7ba7a12821c7c58a3f6",
+			"name": "D1",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "c4d62b6dcca08e5caf06c01889282859",
+			"name": "D2",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "a3deb6e481689f1d3303caecb8a6c401",
+			"name": "D3",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "2521dc256a4368da87585c936b451dd7",
+			"name": "D4",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "ea8ea3bfaa27cf4c2f61470447c87eea",
+			"name": "D5",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "ea8ea3bfaa27cf4c2f61470447c87eea",
+			"name": "D5",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "e06ae0fa0b466d7a0d9696a11fc3246a",
+			"name": "D6",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "e1dffc8709f31a4987c8a88334107e89",
+			"name": "F1",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "fe5c3684dce76cdd9f7f42430868aa74",
+			"name": "F2",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "4b6bf4b531770872d4328ce69bef5627",
+			"name": "F3",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "37f438df6a6d5ba4c17ef8ca58562f00",
+			"name": "F5",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "47489eb597b7db34caa24b1fc78fc839",
+			"name": "F7",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "106530dc42baa21c67f8a3af4d7fd9e1",
+			"name": "H1",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "106530dc42baa21c67f8a3af4d7fd9e1",
+			"name": "H1",
+			"maxWeight": "178"
+		},
+		{
+			"discId": "ca2bf3f6b7e18a508253e9521510a4b5",
+			"name": "H2",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "ca2bf3f6b7e18a508253e9521510a4b5",
+			"name": "H2",
+			"maxWeight": "178"
+		},
+		{
+			"discId": "b14763210c3ab7284e9cbe731d7dc2a5",
+			"name": "H3",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "b14763210c3ab7284e9cbe731d7dc2a5",
+			"name": "H3",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "6b57370ba89bd88a2d6d819d65f6007a",
+			"name": "H4",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "6b57370ba89bd88a2d6d819d65f6007a",
+			"name": "H4",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "830652084dda69b6b957e2c3a7bd9b18",
+			"name": "H5",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "f31e1eef20f64733a18c538073e78396",
+			"name": "M1",
+			"maxWeight": "180"
+		},
+		{
+			"discId": "9d8322530b67e2366e5b1ba67081ded9",
+			"name": "M2",
+			"maxWeight": "180"
+		},
+		{
+			"discId": "f1c6eb6f4e48eb34ab40b2987d4976a8",
+			"name": "M3",
+			"maxWeight": "180"
+		},
+		{
+			"discId": "66b543df60a981ccfcd2d3114605a39a",
+			"name": "M4",
+			"maxWeight": "180"
+		},
+		{
+			"discId": "3f44a84e6e34fdb5a2f89c68d8c36175",
+			"name": "M5",
+			"maxWeight": "180"
+		},
+		{
+			"discId": "49033f5b1ae20916e451d8e6990fddd1",
+			"name": "New M1",
+			"maxWeight": "181"
+		},
+		{
+			"discId": "a710c83fe312da3eb8c7181f531aa942",
+			"name": "PA1",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "66a5975770c45a804145b45d5e86f0be",
+			"name": "PA2",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "f9655bf94621c5bd54a8810f1960da64",
+			"name": "PA3",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "af4fff688c389f7897b6900d79cb907a",
+			"name": "PA4",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "959092b0b6e441ad0745cc923b0cc010",
+			"name": "Prodigy X2",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "bb7f5ae6220c9828e5ec91faf054197c",
+			"name": "X1",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "0541026d4fa57ca1cc1a6fe30f57fea1",
+			"name": "X3",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "7d71ed2af4cc5c6a8380324d9bc4a45f",
+			"name": "X4",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "4dc1b469e5c13f47868c5fc0aea6d538",
+			"name": "X5",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "df2412d1342fd25951cfc44de6f49acd",
+			"name": "X6",
+			"maxWeight": "175"
+		}
+	]
+}

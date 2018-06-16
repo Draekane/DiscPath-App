@@ -132,7 +132,7 @@ class SinglePane extends Component {
               <FlightMap discs={currentBag.discs} thrower={thrower} displayOptions={displayOptions} />
             </div>
             <div className="grid-item2 grid-item">
-              <BagContainer state/>
+              <BagContainer state />
             </div>
             <div className="grid-item3 grid-item">
               <Thrower
@@ -167,29 +167,21 @@ SinglePane.propTypes = {
   pageTitle: PropTypes.string,
   pageHeader: PropTypes.string,
   companies: PropTypes.arrayOf(companyShape),
-  currentSelection: PropTypes.string,
   currentBags: PropTypes.arrayOf(bagShape),
   thrower: PropTypes.shape(throwerShape),
   displayOptions: PropTypes.shape(displayOptionsShape),
-  discTypes: PropTypes.shape({ discType: PropTypes.string, enabled: PropTypes.bool }),
   dispatch: PropTypes.func,
   selectedBagId: PropTypes.number,
-  addBag: PropTypes.bool,
-  updateBag: PropTypes.bool,
 };
 
 SinglePane.defaultProps = {
   pageTitle: 'DiscPath',
   pageHeader: 'Experimental Disc Golf Flight Path Visualizer',
   companies: [],
-  currentSelection: null,
   currentBags: [],
   thrower: null,
   displayOptions: null,
-  discTypes: null,
   selectedBagId: 1,
-  addBag: false,
-  updateBag: false,
 };
 
 const mapStateToProps = state => ({

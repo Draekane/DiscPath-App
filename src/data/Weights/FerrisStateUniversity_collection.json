@@ -1,0 +1,11 @@
+{
+	"company": "Ferris State University",
+	"companyId": "1d1061bd7f28d64213d86bf1689d2560",
+	"discs": [
+		{
+			"discId": "f54a3493468c124273bca8c69487fd15",
+			"name": "Imagine",
+			"maxWeight": "192"
+		}
+	]
+}

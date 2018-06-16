@@ -1,0 +1,11 @@
+{
+	"company": "Millennium/Hyzerbomb",
+	"companyId": "b42f3ede608560815bfe074aa590db0e",
+	"discs": [
+		{
+			"discId": "3c87d47145074c7cee8a08ba7862bb71",
+			"name": "Sabot",
+			"maxWeight": "175"
+		}
+	]
+}

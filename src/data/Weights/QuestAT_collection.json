@@ -1,0 +1,141 @@
+{
+	"company": "Quest Applied Technologies",
+	"companyId": "17dc11a3f7cba93aaad3b10c594e5002",
+	"discs": [
+		{
+			"discId": "3449e0949944175a7b03c195f69e2992",
+			"name": "10 Meter Brick",
+			"maxWeight": "178"
+		},
+		{
+			"discId": "ba4191eea1b578a8ccdc815a82e43ea3",
+			"name": "10 Meter Crossfire",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "3c7cd4294a44ee39ac5cdab822984c50",
+			"name": "100 Meter Lazer",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "653ac32c6b9de96c55a6fcac6480ec00",
+			"name": "Backbone",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "f48ec0108666d39849a87dcb978b3591",
+			"name": "Crossfire",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "21521308da36f7f96edf16d6b29b93fc",
+			"name": "Double D",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "8bb279f735c1d9c831e935cca2613b58",
+			"name": "Inferno",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "7d8fb6889fe54b87100a931c2063448e",
+			"name": "Low Speed Driver",
+			"maxWeight": "194"
+		},
+		{
+			"discId": "d31b73ac83f1b972cce2aab5eee8ad47",
+			"name": "Nighthawk",
+			"maxWeight": "178"
+		},
+		{
+			"discId": "59e668826bba1ae6c9bdb30958546e32",
+			"name": "Odyssey Approach & Putter",
+			"maxWeight": "178"
+		},
+		{
+			"discId": "0e09f02fb04c1fbc30afe6eee9d8f778",
+			"name": "Odyssey Driver",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "b3c80d5572495c1109ba969cb125c236",
+			"name": "Odyssey Midrange",
+			"maxWeight": "178"
+		},
+		{
+			"discId": "44c0173a80cd2dab24c924cefdbbaebf",
+			"name": "Odyssey Power Driver",
+			"maxWeight": "178"
+		},
+		{
+			"discId": "0502efd9dab6cf8608fd7e9c02b44896",
+			"name": "Odyssey Putter",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "405e100cc472905f052417e29a6a2cdb",
+			"name": "Odyssey True Line Putter",
+			"maxWeight": "178"
+		},
+		{
+			"discId": "688cbd3903f1216f1c9cd268a5a9fe63",
+			"name": "Raging Inferno DT",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "59565f5f0a133217e5d2e846d7f64b4f",
+			"name": "Ragning Inferno",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "644aafdf0b1acbcff5d3ff11611fb693",
+			"name": "Rock-It",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "f7e8d36587091bcdd5df7204e3ce8a56",
+			"name": "Scorcher",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "a8ae3ea8d3880644ab6f2512a184f124",
+			"name": "Scream",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "ee80835f4550ff562c52c0b3251b5c68",
+			"name": "Scream DT",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "3619c89b6783c878e33a4f5c34016eb5",
+			"name": "Scream DT Max",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "6635157b50f80d379fbe77dc14dbe909",
+			"name": "Scream DT Ultra",
+			"maxWeight": "178"
+		},
+		{
+			"discId": "9b7a1a31694bc57cfe1804ed32337759",
+			"name": "Scream DT Ultra 2",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "9e0cd5f2bf71c6c88be9c9b2f9d7a270",
+			"name": "Scream II",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "9fd8d1092c5cf5a5319cb4f8827d5a06",
+			"name": "T-Bone",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "d2b7960eb34cd7f1989438643c580295",
+			"name": "Wildfire",
+			"maxWeight": "176"
+		}
+	]
+}

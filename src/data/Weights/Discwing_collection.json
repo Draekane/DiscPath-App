@@ -1,0 +1,41 @@
+{
+	"company": "Discwing",
+	"companyId": "65fdefd71fc2a7c2e0fd1597c2ec6f61",
+	"discs": [
+		{
+			"discId": "0a7ad1fc7e1bda1d661fc937c4e6eedd",
+			"name": "Crosshair",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "73f31c95f8721a0b4aec712e00892d72",
+			"name": "Fluent",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "b82a9a13f4651e9abcbde90cd24ce2cb",
+			"name": "Mark",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "59cf1f57d3847d7757a355da0d6f9386",
+			"name": "Quarter K",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "8a3425632873044de37290d12d4f69e3",
+			"name": "Quarter K II",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "9ad6d7cdeb2e26f20bce4c187edde1a8",
+			"name": "Transcend",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "974eda0190ebc43bc56aa7aefe63a3c0",
+			"name": "Vantage",
+			"maxWeight": "175"
+		}
+	]
+}

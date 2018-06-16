@@ -1,0 +1,21 @@
+{
+	"company": "DMI Sports",
+	"companyId": "bf32e75257625db4c31fd46757864d66",
+	"discs": [
+		{
+			"discId": "636065b2f2a8255a8dc4ff43e54cb286",
+			"name": "Assault",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "431d180fb4d475f30c9596ad5a7267d6",
+			"name": "Sabotage",
+			"maxWeight": "178"
+		},
+		{
+			"discId": "798b913462fe08225a3c8ba1e31b3531",
+			"name": "Vendetta",
+			"maxWeight": "175"
+		}
+	]
+}

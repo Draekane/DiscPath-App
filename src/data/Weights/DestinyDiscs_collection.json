@@ -1,0 +1,31 @@
+{
+	"company": "Destiny/Dynamic Discs",
+	"companyId": "68794c66fc240dfd83d7e97ba3927999",
+	"discs": [
+		{
+			"discId": "8a37d035d41cb0020681831c4b749a84",
+			"name": "Floater",
+			"maxWeight": "200"
+		},
+		{
+			"discId": "11d66959d85c26d5dd61b23b5125a5b7",
+			"name": "Jeteye",
+			"maxWeight": "180"
+		},
+		{
+			"discId": "d0d6b0f82ad2d19962244d599530ace4",
+			"name": "Long Ranger",
+			"maxWeight": "180"
+		},
+		{
+			"discId": "936c653149c0fbcb331b8e343887e739",
+			"name": "Puppy",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "a14185666db91fb238d679343c6a7001",
+			"name": "Super Puppy",
+			"maxWeight": "174"
+		}
+	]
+}

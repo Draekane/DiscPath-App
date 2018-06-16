@@ -1,0 +1,21 @@
+{
+	"company": "Streamline Discs",
+	"companyId": "668c39e0dc06284d37ed849abaa09f31",
+	"discs": [
+		{
+			"discId": "a54b6a3e35542af4b77806be3207b2fd",
+			"name": "Drift",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "27cb6a9c075369d09f4a30b8996ec6c3",
+			"name": "Pilot",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "dd4ec0ac4e58f7c32a01244ae91150b1",
+			"name": "Trace",
+			"maxWeight": "176"
+		}
+	]
+}

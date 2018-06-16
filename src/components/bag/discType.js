@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import ReactTable from 'react-table';
-import { FaEyeSlash, FaEye, FaTrashO } from 'react-icons/lib/fa';
+import { FaEyeSlash, FaEye, FaTrashO, FaEdit } from 'react-icons/lib/fa';
 
 import { discShape } from '../../propTypeShapes/bagShapes';
 
@@ -13,19 +13,6 @@ const DiscType = (props) => {
     headerClassName,
   } = props.props;
 
-  const createWearValues = (baggedDiscId) => {
-    const options = [];
-
-    for (let i = 10; i > 0; i -= 1) {
-      options.push((
-        <option key={`wear_${i}_${baggedDiscId}`} value={`{"wear": ${i}, "baggedDiscId": ${baggedDiscId}}`}>
-          {i}/10
-        </option>));
-    }
-
-    return (options);
-  };
-
   const handleDisableDisc = (value) => {
     const { original } = value;
     const { baggedDiscId, enabled } = original;
@@ -36,14 +23,12 @@ const DiscType = (props) => {
     functions.handleEnableDiscType(discType.discType, discType.enabled);
   };
 
-  const handleSetWear = (wearObj) => {
-    const wearData = JSON.parse(wearObj.target.value);
-
-    functions.handleSetDiscWear(wearData.baggedDiscId, wearData.wear);
-  };
-
   const handleDiscRemove = (baggedDiscId) => {
     functions.handleRemoveDisc(baggedDiscId);
+  };
+
+  const handleDiscEdit = (discId) => {
+    functions.handleEditDisc(discId);
   };
 
   const createHeader = () => {
@@ -83,31 +68,22 @@ const DiscType = (props) => {
               width: 25,
             },
             {
+              id: 'discDisplayName',
               Header: 'Company',
-              accessor: 'company',
-            },
-            {
-              Header: 'Disc',
-              accessor: 'name',
+              accessor: d => ((d.displayName && d.displayName !== '') ? d.displayName : `${d.company} ${d.name}`),
+              Cell: row => (row.value),
+              className: 'leftAlignCell',
             },
             {
               Header: 'Edit',
-              accessor: 'wear',
-              width: 75,
-              Cell: row => (
-                <select
-                  onChange={handleSetWear}
-                  value={row.value}
-                  defaultValue={row.value}
-                >
-                  {createWearValues(row.original.baggedDiscId)}
-                </select>
-              ),
+              accessor: 'baggedDiscId',
+              width: 25,
+              Cell: row => (<FaEdit onClick={handleDiscEdit.bind(this, row.value)} color="green" />),
             },
             {
               Header: 'Remove',
               accessor: 'baggedDiscId',
-              width: 40,
+              width: 25,
               Cell: row => (<FaTrashO onClick={handleDiscRemove.bind(this, row.value)} color="red" />),
             },
           ],
@@ -130,8 +106,8 @@ DiscType.propTypes = {
     functions: PropTypes.shape({
       handleEnableDiscType: PropTypes.func,
       handleEnableDisc: PropTypes.func,
-      handleSetDiscWear: PropTypes.func,
       handleRemoveDisc: PropTypes.func,
+      handleEditDisc: PropTypes.func,
     }),
   }),
 };

@@ -1,0 +1,41 @@
+{
+	"company": "Fly High Discs",
+	"companyId": "ce1800ce677cbca044a254348f19b9e0",
+	"discs": [
+		{
+			"discId": "b9b496de945590519c2bb309a086a593",
+			"name": "AK-47",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "6fc795a056016eb1191a79f75069dd4d",
+			"name": "Diesel",
+			"maxWeight": "178"
+		},
+		{
+			"discId": "95488f9053a88b5821b857840e63153e",
+			"name": "Jack the Ripper",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "86683e042c764a6ee5d7e518931a4b67",
+			"name": "KGB",
+			"maxWeight": "181"
+		},
+		{
+			"discId": "8549270f0a5a2bea25a0d696e940b357",
+			"name": "Pure O.G.",
+			"maxWeight": "181"
+		},
+		{
+			"discId": "bbb391dcb32a24c4a38b849207adb848",
+			"name": "Train Wreck",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "8df06fd6da3b981e2beada01c2fb7ff9",
+			"name": "White Widow",
+			"maxWeight": "174"
+		}
+	]
+}

@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import _ from 'lodash';
-import Modal from 'react-modal';
 
 import { bagShape } from '../../propTypeShapes/bagShapes';
 import DiscType from './discType';
@@ -57,9 +56,6 @@ const Bag = (props) => {
 
   const getDiscFrame = () => (
     <div className="bag-container">
-      <Modal >
-        Put Some Stuff Here to eventually Edit a disc.
-      </Modal>
       <BagSelector props={bagSelectorOptions} />
       <div className="title-block" >Discs in Bag:</div>
       <DiscType
@@ -99,6 +95,7 @@ Bag.propTypes = {
       handleUpdateBagNameFinish: PropTypes.func,
       handleUpdateBagNameCancel: PropTypes.func,
       handleSelectBag: PropTypes.func,
+      handleEditDisc: PropTypes.func,
     }),
   }),
 };

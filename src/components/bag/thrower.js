@@ -4,19 +4,9 @@ import Select from 'react-select';
 import Slider from 'react-rangeslider';
 
 import { throwerShape } from '../../propTypeShapes/bagShapes';
+import { powerPercentage, throwerTypeOptions } from '../../utils/throwerValueUtils';
 
 const Thrower = ({ thrower, changePower, changeThrowerType }) => {
-  const throwerTypeOptions = [
-    {
-      label: 'RhBh/LhFh',
-      value: 'rhbh',
-    },
-    {
-      label: 'LhBh/RhFh',
-      value: 'lhbh',
-    },
-  ];
-
   const handlePowerChange = (value) => {
     changePower(value);
   };
@@ -24,8 +14,6 @@ const Thrower = ({ thrower, changePower, changeThrowerType }) => {
   const handleThrowerTypeChange = (value) => {
     if (value !== null) { changeThrowerType(value.value); }
   };
-
-  const powerPercentage = value => `${Math.floor((0.6 + ((value / 48) * 0.6)) * 100)}%`;
 
   return (
     <React.Fragment>

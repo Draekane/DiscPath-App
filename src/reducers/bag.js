@@ -21,6 +21,7 @@ const initialState = {
   lastDiscId: 0,
   lastBagId: 1,
   selectedBagId: 1,
+  editingDiscId: null,
   addBag: false,
   updateBag: false,
   discTypes: [
@@ -95,7 +96,71 @@ const disc = (state = getInitialState(), action = {}) => {
             return {
               ...bag,
               discs: bag.discs.map((disc) => {
-                if (disc.baggedDiscId === action.baggedDiscId) return { ...disc, wear: action.wear };
+                if (disc.baggedDiscId === state.editingDiscId) return { ...disc, wear: action.wear };
+                return disc;
+              }),
+            };
+          } return bag;
+        }),
+      };
+      break;
+    case bagActionTypes.EDIT_DISC_WEIGHT:
+      newState = {
+        ...state,
+        bags: state.bags.map((bag) => {
+          if (bag.bagId === state.selectedBagId) {
+            return {
+              ...bag,
+              discs: bag.discs.map((disc) => {
+                if (disc.baggedDiscId === state.editingDiscId) return { ...disc, weight: action.weight };
+                return disc;
+              }),
+            };
+          } return bag;
+        }),
+      };
+      break;
+    case bagActionTypes.EDIT_DISC_POWER:
+      newState = {
+        ...state,
+        bags: state.bags.map((bag) => {
+          if (bag.bagId === state.selectedBagId) {
+            return {
+              ...bag,
+              discs: bag.discs.map((disc) => {
+                if (disc.baggedDiscId === state.editingDiscId) return { ...disc, power: action.power };
+                return disc;
+              }),
+            };
+          } return bag;
+        }),
+      };
+      break;
+    case bagActionTypes.EDIT_DISC_THROW_TYPE:
+      newState = {
+        ...state,
+        bags: state.bags.map((bag) => {
+          if (bag.bagId === state.selectedBagId) {
+            return {
+              ...bag,
+              discs: bag.discs.map((disc) => {
+                if (disc.baggedDiscId === state.editingDiscId) return { ...disc, throwType: action.throwType };
+                return disc;
+              }),
+            };
+          } return bag;
+        }),
+      };
+      break;
+    case bagActionTypes.EDIT_DISC_NAME:
+      newState = {
+        ...state,
+        bags: state.bags.map((bag) => {
+          if (bag.bagId === state.selectedBagId) {
+            return {
+              ...bag,
+              discs: bag.discs.map((disc) => {
+                if (disc.baggedDiscId === state.editingDiscId) return { ...disc, displayName: action.displayName };
                 return disc;
               }),
             };
@@ -295,6 +360,18 @@ const disc = (state = getInitialState(), action = {}) => {
       newState = {
         ...state,
         bags: _.filter(state.bags, bag => bag.bagId !== action.bagId),
+      };
+      break;
+    case bagActionTypes.OPEN_DISC_EDIT_MODAL:
+      newState = {
+        ...state,
+        editingDiscId: action.discId,
+      };
+      break;
+    case bagActionTypes.CLOSE_DISC_EDIT_MODAL:
+      newState = {
+        ...state,
+        editingDiscId: null,
       };
       break;
     default:

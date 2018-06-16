@@ -1,0 +1,36 @@
+{
+	"company": "Full Turn Discs",
+	"companyId": "6dd6530012c9d644243625437f2a1b32",
+	"discs": [
+		{
+			"discId": "b4137253e38d50243b9983114c671d69",
+			"name": "Cruise",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "568aa93c8690d77c4f8ebb71929b742b",
+			"name": "Drifter",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "7392e5a07cc56647b45a9598ce4d646d",
+			"name": "Navigator",
+			"maxWeight": "179"
+		},
+		{
+			"discId": "916df6dabccb420c1ee355d7dd7dd89b",
+			"name": "Passport",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "1e7f595c80ee79d6776cc844c6fe6c10",
+			"name": "Traveler",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "68fa09a24e1866a929b1d87a34e1e8ef",
+			"name": "Voyage",
+			"maxWeight": "175"
+		}
+	]
+}

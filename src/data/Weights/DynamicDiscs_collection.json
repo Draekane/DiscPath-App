@@ -1,0 +1,171 @@
+{
+	"company": "Dynamic Discs",
+	"companyId": "58b5e88860535b6f4c0b579896a03e85",
+	"discs": [
+		{
+			"discId": "521a6fd96d873da1423224c645a67337",
+			"name": "Aviator",
+			"maxWeight": "200"
+		},
+		{
+			"discId": "26ae749644663c649950cd240b55236f",
+			"name": "Breakout",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "bc9d8ff48a9f3679ea9e4b2ca69b535b",
+			"name": "Captain",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "b68d4110f8abe315b142bb9c99666ebf",
+			"name": "Convict",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "4d79c341966242c047f3833289ee3a13",
+			"name": "Criminal",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "ee90445284a3f5eb04b08417e16ecb95",
+			"name": "Defender",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "0083de73c8ba563027a200f888b9a66b",
+			"name": "Deputy",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "403597e197dfe22f3268fd3f4c9215e8",
+			"name": "EMAC Truth",
+			"maxWeight": "180"
+		},
+		{
+			"discId": "d730e65d54d6c0479561d25724afd813",
+			"name": "Enforcer",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "013ec032d3460d4be4431c6ab1f8f224",
+			"name": "Escape",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "c7b2a4d55fbea4d044644cf5b2b45d29",
+			"name": "Evidence",
+			"maxWeight": "180"
+		},
+		{
+			"discId": "6d986e41efc21989b96792b4716a1794",
+			"name": "Felon",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "c99ee435c9c0c0ccb662cc9e3769bcb3",
+			"name": "Freedom",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "34946d546d22eaf06fdbe795b8de802b",
+			"name": "Fugitive",
+			"maxWeight": "181"
+		},
+		{
+			"discId": "ceb404457a31d093fa13dcaad2f31236",
+			"name": "Gavel",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "921aff1e7ec636e854703470caed1fd3",
+			"name": "Getaway",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "935ff3fccfa3798b3c08602dfaefa45b",
+			"name": "Judge",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "8cec7d6c891fc360bfd61e14b8512896",
+			"name": "Justice",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "7e56b6ea95ce6426cae0d1526aa27f5a",
+			"name": "Marshal",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "04282d9922258bf1b152e6f8e1f281e8",
+			"name": "Maverick",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "df7a8712303eeadde5d19f0e2955085c",
+			"name": "Patrol",
+			"maxWeight": "180"
+		},
+		{
+			"discId": "85d2c1a86d34d86b5b30f6286e1f13df",
+			"name": "Proof",
+			"maxWeight": "178"
+		},
+		{
+			"discId": "6538678193e2ccb5c6d5c65b895aaaca",
+			"name": "Renegade",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "66986f021496bd405ea299467006ae54",
+			"name": "Sheriff",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "ed254637b0e89d98c81a83bb136ba0e3",
+			"name": "Slammer",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "06197f478ef19e4e580f3517579137a3",
+			"name": "Suspect",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "608f488597ee8de18664d975b04d8be8",
+			"name": "Thief",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "c19f69e33fc45a3d96e04a7cea5aad87",
+			"name": "Trespass",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "2a51e262d3148a04a4f58661818704be",
+			"name": "Truth",
+			"maxWeight": "180"
+		},
+		{
+			"discId": "dd83256af5ca245530d216b14c63cf42",
+			"name": "Verdict",
+			"maxWeight": "180"
+		},
+		{
+			"discId": "246d4b1d4f9480e46c982d4111d95378",
+			"name": "Warden",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "ce8c6664b0edd146bbd34fad79751612",
+			"name": "Warrant",
+			"maxWeight": "180"
+		},
+		{
+			"discId": "74342e05e74e067a6ec4e5bba8d2565a",
+			"name": "Witness",
+			"maxWeight": "175"
+		}
+	]
+}

@@ -1,0 +1,11 @@
+{
+	"company": "Deity Discs",
+	"companyId": "0339bf277df9228259c49b5e89e7982e",
+	"discs": [
+		{
+			"discId": "eafb40b97da5fca964bdc14251a27571",
+			"name": "Chimera",
+			"maxWeight": "175"
+		}
+	]
+}

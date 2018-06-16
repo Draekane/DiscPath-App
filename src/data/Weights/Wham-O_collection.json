@@ -1,0 +1,226 @@
+{
+	"company": "Wham-O / DTW",
+	"companyId": "d09883bb9662cbd8c1a1048e74038eef",
+	"discs": [
+		{
+			"discId": "62c93d572955f9d00844bd9b1be69391",
+			"name": "119g",
+			"maxWeight": "195"
+		},
+		{
+			"discId": "b84849f7121f9240ce7032845b883262",
+			"name": "141g",
+			"maxWeight": "200"
+		},
+		{
+			"discId": "6cedfbfcff56f4f452bc86bccf815797",
+			"name": "165g",
+			"maxWeight": "200"
+		},
+		{
+			"discId": "de84ded6be2a32214dbab96bf9b8a71b",
+			"name": "44 Mold",
+			"maxWeight": "179"
+		},
+		{
+			"discId": "b0e81c76e1d3dda50421b69124f318c0",
+			"name": "77 Mold",
+			"maxWeight": "180"
+		},
+		{
+			"discId": "72b8d67d1cd82b9c86ed56d7215db1fd",
+			"name": "78 Mold",
+			"maxWeight": "180"
+		},
+		{
+			"discId": "540b3fcc87ebc8bad3e2b42118d18a04",
+			"name": "86 Mold",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "4a536b1ea597149bc7452dce8ccc627b",
+			"name": "86 Softie",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "c90a1d5da8b969ec0984630e6a2d6bfc",
+			"name": "90 Mold",
+			"maxWeight": "200"
+		},
+		{
+			"discId": "b3a0197b86fabfd1d8f9223dbb90afeb",
+			"name": "91 Mold",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "821448ea73af313fd60da84884bab003",
+			"name": "97g",
+			"maxWeight": "187"
+		},
+		{
+			"discId": "821448ea73af313fd60da84884bab003",
+			"name": "97g",
+			"maxWeight": "187"
+		},
+		{
+			"discId": "a6c3e0efd0f84503604553bf11b7d40e",
+			"name": "Apollo",
+			"maxWeight": "179"
+		},
+		{
+			"discId": "3aa0aad7d9d947312530ab804bb77145",
+			"name": "Fairway Driver",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "3aa0aad7d9d947312530ab804bb77145",
+			"name": "Fairway Driver",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "7f6dbeb7f08545c7fc7eb548fbe939c0",
+			"name": "Fastback",
+			"maxWeight": "197"
+		},
+		{
+			"discId": "766cc4dd4d5005652e8514e3513683f8",
+			"name": "Gemini",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "f03bde11d261f185cbacfa32c1c6538c",
+			"name": "Master",
+			"maxWeight": "200"
+		},
+		{
+			"discId": "f06171e5a26d7933b5c9b20baeb47703",
+			"name": "Max Flight",
+			"maxWeight": "184"
+		},
+		{
+			"discId": "039bbe7fde44b91d1e40db008c0bf15a",
+			"name": "Mid-Range",
+			"maxWeight": "180"
+		},
+		{
+			"discId": "66779291a520ed838dc5cfe7004ecba3",
+			"name": "Mid Range Approach",
+			"maxWeight": "179"
+		},
+		{
+			"discId": "75881e20340a862ad932ed55a45f9a97",
+			"name": "Midnight Flyer",
+			"maxWeight": "200"
+		},
+		{
+			"discId": "75881e20340a862ad932ed55a45f9a97",
+			"name": "Midnight Flyer",
+			"maxWeight": "195"
+		},
+		{
+			"discId": "75881e20340a862ad932ed55a45f9a97",
+			"name": "Midnight Flyer",
+			"maxWeight": "200"
+		},
+		{
+			"discId": "75881e20340a862ad932ed55a45f9a97",
+			"name": "Midnight Flyer",
+			"maxWeight": "187"
+		},
+		{
+			"discId": "75881e20340a862ad932ed55a45f9a97",
+			"name": "Midnight Flyer",
+			"maxWeight": "200"
+		},
+		{
+			"discId": "75881e20340a862ad932ed55a45f9a97",
+			"name": "Midnight Flyer",
+			"maxWeight": "197"
+		},
+		{
+			"discId": "18a208acedf139f6241f90694df0fc74",
+			"name": "Night Flyer",
+			"maxWeight": "195"
+		},
+		{
+			"discId": "1fb340ffa4982c782cb3eaf7bf10e7fc",
+			"name": "Olympic/Collegiate",
+			"maxWeight": "200"
+		},
+		{
+			"discId": "0ff3229fd0d462ea4fdb22a216118f60",
+			"name": "Pluto Platter",
+			"maxWeight": "193"
+		},
+		{
+			"discId": "9e8b160226c9fe22a910c782ce5076e2",
+			"name": "Professional",
+			"maxWeight": "198"
+		},
+		{
+			"discId": "02503efd350bdcb2c0eefaa49f98c58a",
+			"name": "Putter",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "7e0add7900a1ac3c4c15ef89c00aa7d0",
+			"name": "S Driver",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "79b015ba7a93060739e4f689158fc516",
+			"name": "Super Pro",
+			"maxWeight": "200"
+		},
+		{
+			"discId": "3a9f391365a4c43496fe8ef54f144fb5",
+			"name": "Superturn Driver",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "798c25c311f27220b79d7466c7556544",
+			"name": "The Tool",
+			"maxWeight": "200"
+		},
+		{
+			"discId": "86dea6fcc779775636eeeee2cffe6b1d",
+			"name": "Touchline Bank/Long Range Driver",
+			"maxWeight": "180"
+		},
+		{
+			"discId": "90593a4a6f47e37cd64a32a79617d523",
+			"name": "Touchline Over",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "034eeff94da8faea1d010e3d42fdb99a",
+			"name": "Touchline Putter/Putter",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "8e912e19e058fac09d6e4e4ec3ee0263",
+			"name": "Touchline True/Mid Range Approach",
+			"maxWeight": "180"
+		},
+		{
+			"discId": "860242aef07ee47288eef00522d97612",
+			"name": "Touchline Under",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "c88c6e5e44dbfd298caeea79c826439e",
+			"name": "Turnover Driver",
+			"maxWeight": "180"
+		},
+		{
+			"discId": "ce783a5725e5a2a89d732697563f75fc",
+			"name": "Voyager",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "4f7713e77157de93d8b21c9c2c6b082a",
+			"name": "Voyager II",
+			"maxWeight": "175"
+		}
+	]
+}

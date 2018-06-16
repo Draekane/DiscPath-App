@@ -1,0 +1,46 @@
+{
+	"company": "DKG Disc Sports",
+	"companyId": "c55790328ec544ef423f16d5754653fa",
+	"discs": [
+		{
+			"discId": "e68a20cce237a139d82cc2dd85b7d917",
+			"name": "Boom",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "a03f7e7a2c767de4828c63ffec4df118",
+			"name": "Hail Mary",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "049a956dfeb0eb2e19c417a1dde4d680",
+			"name": "Kraken",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "c68859532fdd1ea8ac56dfb4798d14b8",
+			"name": "Merc",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "b70395798360bbb770035dbf6e68101f",
+			"name": "Miracle",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "534e189696b336d38e0e63a067571467",
+			"name": "Protégé",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "0d779f7363c613edb7eb8b713a68dc80",
+			"name": "Tempest",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "8ba902805977e0789813af059077a300",
+			"name": "Wing & A Prayer",
+			"maxWeight": "174"
+		}
+	]
+}

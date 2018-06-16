@@ -1,0 +1,26 @@
+{
+	"company": "Ozone Discs",
+	"companyId": "fc103c77d661e400b4e602eeaafb2325",
+	"discs": [
+		{
+			"discId": "545c556b07e79a110469deeb3750d43c",
+			"name": "Andro 1",
+			"maxWeight": "178"
+		},
+		{
+			"discId": "3f06a209a918ae153dc955ffaae1ab79",
+			"name": "Andro C",
+			"maxWeight": "178"
+		},
+		{
+			"discId": "3f06a209a918ae153dc955ffaae1ab79",
+			"name": "Andro C",
+			"maxWeight": "179"
+		},
+		{
+			"discId": "57ae9ee5592123dd79c8912bf768cf99",
+			"name": "Hyperion",
+			"maxWeight": "174"
+		}
+	]
+}

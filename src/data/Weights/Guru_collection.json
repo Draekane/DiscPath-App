@@ -1,0 +1,31 @@
+{
+	"company": "Guru Disc Golf",
+	"companyId": "45d909a817398ff956eb79ff1146c5e4",
+	"discs": [
+		{
+			"discId": "0f23971da2be2e19a1d8ace766fdddbc",
+			"name": "Fenris",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "ad98f5ef187a1cc052fac73ad2723e03",
+			"name": "Midgard",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "b6ef155fcea3970ac90cfb42bc2c0ed7",
+			"name": "Mjølner",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "b9cd44ae52040aa080f8c068a46ddbfa",
+			"name": "Sleipner",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "a92da8d9ebd1059f11a0e2f66c0b8e44",
+			"name": "Thor",
+			"maxWeight": "180"
+		}
+	]
+}

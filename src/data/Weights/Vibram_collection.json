@@ -1,0 +1,111 @@
+{
+	"company": "Vibram Disc Golf",
+	"companyId": "ac6f1d5e05247ade1199b5896647f0f7",
+	"discs": [
+		{
+			"discId": "efd717440ab790091beef4a125935a73",
+			"name": "Arch",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "fc76a68e99896582334ae980a263e926",
+			"name": "Ascent",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "2b4c8e8ccb8fbb9359c6d857f74c5031",
+			"name": "Crag",
+			"maxWeight": "178"
+		},
+		{
+			"discId": "1d126135e3d4dcd0786d289777d2a14f",
+			"name": "Four20",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "59b94cc044ff8a12b703e25e7cc41b1f",
+			"name": "Ibex",
+			"maxWeight": "178"
+		},
+		{
+			"discId": "4baf40580f3e78b55d1c7f8d7bec2b1b",
+			"name": "Lace",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "9506f0fd0f7f1b07960b15b4c9e68d1a",
+			"name": "Launch",
+			"maxWeight": "178"
+		},
+		{
+			"discId": "a70ec028ca3f03d3bf0f8016f8c072a3",
+			"name": "Notch",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "0a70246dd0ebb4ff470bb022ecfa1d50",
+			"name": "Obex",
+			"maxWeight": "178"
+		},
+		{
+			"discId": "3c408c9b060cbd6d92e3a75b7617c7d5",
+			"name": "O-Lace",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "a92f2418fb7a402879ffa1127f6bc408",
+			"name": "Onyx",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "e9eeca48aa5cccacde08760c6ec9dd5a",
+			"name": "Ridge",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "1bee8cb1d4d1c503df6f067495d70d06",
+			"name": "Trak",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "86c6544fcd4cef7107842dcf59febcfc",
+			"name": "Trek",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "d0464741df45c5e7a119360659dcf136",
+			"name": "Solace",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "424309b92b75ff5abe03c1aa7d06d86b",
+			"name": "Sole",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "99ce2ea4de279c28bb0315848da8a486",
+			"name": "Summit",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "a6f18eda38d5a3b37e9ae973da7a2a7a",
+			"name": "unLace",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "6c92ef33cb2e34237d16fdf3d1a907ee",
+			"name": "Valley",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "b9147e4f1b049994ebc17d37bafaa2e9",
+			"name": "Vamp",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "58c5aedc91bf7182f9171eb4d5e4d87e",
+			"name": "V.P.",
+			"maxWeight": "175"
+		}
+	]
+}

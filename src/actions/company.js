@@ -2,12 +2,34 @@ import _ from 'lodash';
 import * as companyActionTypes from '../actionTypes/company';
 
 export const loadCompanies = () => {
-  const context = require.context('../data/Discs', true, /\.(json)$/);
+  const discData = require.context('../data/Discs', true, /\.(json)$/);
+  const weightData = require.context('../data/Weights', true, /\.(json)$/);
   const companies = [];
+  const weightDataKeys = weightData.keys();
 
-  context.keys().forEach((filename) => {
-    const company = context(filename);
-    const { discs } = company;
+  discData.keys().forEach((filename) => {
+    const company = discData(filename);
+    let { discs } = company;
+
+    let companyWeight = null;
+    let discsWeight = null;
+
+    console.log(filename);
+    if (_.includes(weightDataKeys, filename)) {
+      companyWeight = weightData(filename);
+      discsWeight = companyWeight.discs;
+    }
+
+    if (discsWeight) {
+      const newDiscs = [];
+      discs.forEach((disc) => {
+        const discWeight = _.find(discsWeight, dw => dw.discId === disc.discId);
+        if (discWeight) newDiscs.push({ ...disc, maxWeight: parseInt(discWeight.maxWeight, 10) });
+        else newDiscs.push(disc);
+      });
+      discs = { ...newDiscs };
+    }
+
     companies.push({ ...company, discs: _.sortBy(discs, d => d.name) });
   });
 

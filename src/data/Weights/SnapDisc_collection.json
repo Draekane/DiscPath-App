@@ -1,0 +1,16 @@
+{
+	"company": "Snap Discsports",
+	"companyId": "87e74f9d7ebd0c0d16cd9a4f71f48891",
+	"discs": [
+		{
+			"discId": "da12b58d9ebaa72df266a2c870bf92ec",
+			"name": "Helios",
+			"maxWeight": "180"
+		},
+		{
+			"discId": "361d9bfd8df7eabe714a7d3408e55e12",
+			"name": "Whitler",
+			"maxWeight": "188"
+		}
+	]
+}

@@ -1,0 +1,106 @@
+{
+	"company": "Legacy Discs",
+	"companyId": "0cc0a0507cf3d31e5089f420a4cf8b4b",
+	"discs": [
+		{
+			"discId": "c4b01705fe2a1eccec52d7eb50d8df07",
+			"name": "Aftermath",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "7534759ceb94c0e91b13a22fe6e16980",
+			"name": "Bandit",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "22ef5d9468d7aa2f806d865b88a27a52",
+			"name": "Cannon",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "6adb46561c24655e0455d9b3fdc5698b",
+			"name": "Clozer",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "32c8fe1016e60a1bfbdb800b686f7921",
+			"name": "Clutch",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "8c6d21187fb58b7a079d70030686b33e",
+			"name": "Enemy",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "5db14795d4c6928f94927d0c0a060bee",
+			"name": "Fighter",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "948f0edf37b92d0717053d38e5ea12c2",
+			"name": "Gauge",
+			"maxWeight": "181"
+		},
+		{
+			"discId": "401357e57c765967393ba391a338e89b",
+			"name": "Ghost",
+			"maxWeight": "180"
+		},
+		{
+			"discId": "5e409e09f43d85c6e61301149e4f803b",
+			"name": "Hunter",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "cadcdedb567abae643e15dcf0974e503",
+			"name": "Mongoose",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "456d479c879155333c0624219803ec40",
+			"name": "Nemesis",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "06901dc7d18b6a1edf9a231ac920acfa",
+			"name": "Outlaw",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "06901dc7d18b6a1edf9a231ac920acfa",
+			"name": "Outlaw",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "fac0490b44c07d87f82bc6d669f94a5f",
+			"name": "Patriot",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "58f332d938d8e9152234b4fd6063a006",
+			"name": "Phenom",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "332e3c4d6a5e42e0078a388219fb54a7",
+			"name": "Prowler",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "a9744fc5b0ca952b17ef07c0aa99602e",
+			"name": "Rampage",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "d7c2fc77cc2089548863602b1c63c59a",
+			"name": "Recon",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "eea9d021db5d7c44a2db94cf7ceeba0d",
+			"name": "Rival",
+			"maxWeight": "177"
+		}
+	]
+}

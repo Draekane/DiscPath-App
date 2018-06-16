@@ -1,0 +1,31 @@
+{
+	"company": "Galaxy Disc Golf",
+	"companyId": "b8668c34d1c1eb37fb4ab9fec9698c95",
+	"discs": [
+		{
+			"discId": "352c90d85805ab45658a7796c4e58e5e",
+			"name": "Magneton",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "1575857b201534c60c0d158e46839777",
+			"name": "Meteorite",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "76e1ab7a1df8e64fe867b420645c8a68",
+			"name": "Orbit",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "c2b5e73361a4bf9d26a73413d0abee5e",
+			"name": "Satellite",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "b75f61136a59b68470a74f4eb72119be",
+			"name": "Shooting Star",
+			"maxWeight": "174"
+		}
+	]
+}

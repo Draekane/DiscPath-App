@@ -1,0 +1,21 @@
+{
+	"company": "Paradigm Disc Golf",
+	"companyId": "3e9adbb1694363232ef581246d090ea7",
+	"discs": [
+		{
+			"discId": "a5b2239b15865f4435020f62c917a1c5",
+			"name": "Bird-Dog",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "fc8dcf45e808e06e45fb3fbaa899e7ab",
+			"name": "Terrapin",
+			"maxWeight": "180"
+		},
+		{
+			"discId": "454c9843110686bf6f67ce5115b66617",
+			"name": "Tiger",
+			"maxWeight": "175"
+		}
+	]
+}

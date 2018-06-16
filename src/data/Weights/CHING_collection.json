@@ -1,0 +1,136 @@
+{
+	"company": "CHING Sports",
+	"companyId": "b37c27128c0a1e24fa211cc7b84f1310",
+	"discs": [
+		{
+			"discId": "8c5f94981d9f5f09e6097ba1ac4d8280",
+			"name": "Ching Big Heavy",
+			"maxWeight": "200"
+		},
+		{
+			"discId": "cd3abfc2f377a4c3fd9181f919d9de82",
+			"name": "Bomb",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "b97dd62646f686460b3d179061a8ffbc",
+			"name": "Fusion Genesis",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "20809196dfbb8485db53b308efefd0c1",
+			"name": "Fusion Juju",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "13ed71daf832a9c1b8bbc15482d2c1d2",
+			"name": "Fusion Legacy",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "bf4e7e74db284496447bae5a2649b6f2",
+			"name": "Fusion Velocity",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "3a529698a97cff2883ed6a1e65d90f79",
+			"name": "Power Celerity",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "d9c623f2020bf5728811a2375d0c7d14",
+			"name": "Power Genesis",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "2dd9014507d21fdece7f6618c039a81a",
+			"name": "Power Juju",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "13d4bd720f492d2f07eb44fd1296c4db",
+			"name": "Power Legacy",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "6c4dc90c837abaadec94d3a97dc7de4f",
+			"name": "Power Oracle",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "d7951cb7d9b9791236327845eb6f590d",
+			"name": "Power Precision",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "d7d5003e9a682bfc811172c3db4e4d12",
+			"name": "Power Prodigy",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "cdd2b9f6340fe0a51cfd9a031b56f92a",
+			"name": "Power Velocity",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "1db2d05294380881c996d20d44dcbffb",
+			"name": "Prodigy",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "007be3acd5669d100711b13d79e23369",
+			"name": "Sniper",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "e60b65c860681c0a53fcded0e33fc6de",
+			"name": "Stinger",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "97783c30b51859e121455f9384505f02",
+			"name": "Supreme Celerity",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "fced931905878ef3068673c686e82f81",
+			"name": "Supreme Genesis",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "7fd30d898f6abfc496c5bd20501ac3c6",
+			"name": "Supreme Juju",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "9853dfcda60474954939e2cfca35e0cd",
+			"name": "Supreme Legacy",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "ab976b8abf501064b8b86e0c73dd09fa",
+			"name": "Supreme Oracle",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "5200a61781b7f5b9eefe409d4a78c9c9",
+			"name": "Supreme Prodigy",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "7fdd5fe10bd2cb91dab97d83313f180b",
+			"name": "Supreme Velocity",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "e4419464d570c4b497ba1979e790b104",
+			"name": "Tank",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "1bd21fd58db6a7c392f760202776565a",
+			"name": "Ching Ultimate",
+			"maxWeight": "200"
+		}
+	]
+}

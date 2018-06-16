@@ -1,0 +1,36 @@
+{
+	"company": "Eurodisc",
+	"companyId": "19c8aed1b1aec4d2c80e3827a94feb5c",
+	"discs": [
+		{
+			"discId": "065ab3a28ca4f16f55f103adc7d0226f",
+			"name": "Delivery",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "ea6b60219960e9c3d47a5bab4a3b74ce",
+			"name": "Delivery Organic",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "afedf9afee367f51f98d7cf030c976a6",
+			"name": "Transition",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "2f8686043b84155c8f1b9bae8e9d8e0c",
+			"name": "Transition Organic",
+			"maxWeight": "178"
+		},
+		{
+			"discId": "6df09443dfcc41174e580b7facfdc08a",
+			"name": "Transporter",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "ae8358be870f7051d0d584e1caeed54f",
+			"name": "Transporter Organic",
+			"maxWeight": "176"
+		}
+	]
+}

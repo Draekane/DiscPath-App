@@ -1,0 +1,251 @@
+{
+	"company": "Gateway Disc Sports",
+	"companyId": "926dec9494209cb088b4962509df1a91",
+	"discs": [
+		{
+			"discId": "cc028826c2ce14737af08d8f80530c23",
+			"name": "844 Sabre",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "e9713ae04a02a810d6f33dd956f42794",
+			"name": "Apache",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "e9713ae04a02a810d6f33dd956f42794",
+			"name": "Apache",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "9b2dd2ace4fae2ba85df02e3ebf3f89e",
+			"name": "Assassin",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "9b2dd2ace4fae2ba85df02e3ebf3f89e",
+			"name": "Assassin",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "c005b78b4260d0a0d9851029042c13f6",
+			"name": "Big Dog",
+			"maxWeight": "188"
+		},
+		{
+			"discId": "9cea88d14785c0b145df7e518e06fe77",
+			"name": "Blast DT",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "897ee373c9e482f9a323fe188494520b",
+			"name": "Blaze",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "8b2d28da94140c59da11d223104372ad",
+			"name": "Blurr",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "ba23ed47917bf1a079d513b1df2395de",
+			"name": "Chief",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "ba23ed47917bf1a079d513b1df2395de",
+			"name": "Chief",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "153639c7a4699d60a257b7a5b40c14a5",
+			"name": "Chief OS",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "300d4af0950c89b847cf6f7500e6060c",
+			"name": "Demon",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "40c1153d30055e7629fe4fe1d321dfe8",
+			"name": "Devilhawk",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "689cfedf4da4270a472b7e6ee0eab835",
+			"name": "Diablo",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "ac56de0615f0bd9166c6bbccbd4be673",
+			"name": "Diablo DT",
+			"maxWeight": "179"
+		},
+		{
+			"discId": "5204e44191e06fb79c5522190295c1db",
+			"name": "Doggy Style",
+			"maxWeight": "188"
+		},
+		{
+			"discId": "231afe47f3f37d3808096b36c28b4ded",
+			"name": "Element",
+			"maxWeight": "183"
+		},
+		{
+			"discId": "ead2be33ee0fecae00d84ec6ab40aaa6",
+			"name": "Element X",
+			"maxWeight": "182"
+		},
+		{
+			"discId": "fb1b6e23a3767d2a31ef7899e6dd3f1e",
+			"name": "Hybrid",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "b89d6bd44fd0021f05a1f829a425f0c9",
+			"name": "Illusion",
+			"maxWeight": "178"
+		},
+		{
+			"discId": "5772f203c29890a9e25e077514f3096f",
+			"name": "Journey - LS",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "ec775c48945f0790ef23f3820f985a78",
+			"name": "Karma",
+			"maxWeight": "182"
+		},
+		{
+			"discId": "02700e454d679f31f27c6f0768986dd1",
+			"name": "Magic",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "7b28158d613ea1869441676fa32a3b5a",
+			"name": "Mystic",
+			"maxWeight": "181"
+		},
+		{
+			"discId": "7b28158d613ea1869441676fa32a3b5a",
+			"name": "Mystic",
+			"maxWeight": "183"
+		},
+		{
+			"discId": "afb87b393d9c759e8a218b56d0f895e0",
+			"name": "Ninja",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "5d3eb1ba601507d9163c141ab195283d",
+			"name": "Prophecy",
+			"maxWeight": "182"
+		},
+		{
+			"discId": "f467834a619fdbc994d37e84f5fef567",
+			"name": "Rage",
+			"maxWeight": "178"
+		},
+		{
+			"discId": "f467834a619fdbc994d37e84f5fef567",
+			"name": "Rage",
+			"maxWeight": "178"
+		},
+		{
+			"discId": "dca095c8198150f390922fb9fbada318",
+			"name": "Sabre",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "4f4e9c93bf39b356f6ba5aa21f9d267d",
+			"name": "Savage",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "3d7491a4536e8a468755c3c70a3c3016",
+			"name": "Samurai",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "71e79ef80600d398d90cfebe3b0b758d",
+			"name": "Scout",
+			"maxWeight": "181"
+		},
+		{
+			"discId": "71e79ef80600d398d90cfebe3b0b758d",
+			"name": "Scout",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "578f6b829abd7b984a8465def59115cc",
+			"name": "Shaman",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "58a84e851e55175d22158ca97af58a1f",
+			"name": "Siren",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "121189969c46f49b8249633c2d5a7bfa",
+			"name": "Slayer",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "92d663bef11ad2b6525f7a391c3655d3",
+			"name": "Speed Demon",
+			"maxWeight": "178"
+		},
+		{
+			"discId": "3764df279d89c58a6f7f3054c14c6166",
+			"name": "Speed Demon DT",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "ae4cccea87290717523772f7472e7f5e",
+			"name": "Spirit",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "63de9e841d4cf83086572ee61663adfe",
+			"name": "Voodoo",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "63de9e841d4cf83086572ee61663adfe",
+			"name": "Voodoo",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "21305b754e03843876abc27387a0e57e",
+			"name": "Warlock",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "7ee7fa010d64b90a36803a8445f2e943",
+			"name": "Warrior",
+			"maxWeight": "183"
+		},
+		{
+			"discId": "7ee7fa010d64b90a36803a8445f2e943",
+			"name": "Warrior",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "cf7f3bb27598baac66046527e73bf4df",
+			"name": "Warspear",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "5af874093e5efcbaeb4377b84c5f2ec5",
+			"name": "Wizard",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "5af874093e5efcbaeb4377b84c5f2ec5",
+			"name": "Wizard",
+			"maxWeight": "176"
+		}
+	]
+}

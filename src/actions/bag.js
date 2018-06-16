@@ -17,9 +17,8 @@ export const setDiscTypeEnable = (discType, enable) => ({
   enabled: !enable,
 });
 
-export const setDiscWear = (baggedDiscId, wear) => ({
+export const setDiscWear = wear => ({
   type: bagActionTypes.UPDATE_DISC_WEAR,
-  baggedDiscId,
   wear,
 });
 
@@ -98,4 +97,33 @@ export const updateBagNameCancel = () => ({
 export const removeExistingBag = bagId => ({
   type: bagActionTypes.REMOVE_DISC_FROM_BAG,
   bagId,
+});
+
+export const openDiscEditModal = discId => ({
+  type: bagActionTypes.OPEN_DISC_EDIT_MODAL,
+  discId,
+});
+
+export const closeDiscEditModal = () => ({
+  type: bagActionTypes.CLOSE_DISC_EDIT_MODAL,
+});
+
+export const editDiscName = displayName => ({
+  type: bagActionTypes.EDIT_DISC_NAME,
+  displayName,
+});
+
+export const editDiscWeight = weight => ({
+  type: bagActionTypes.EDIT_DISC_WEIGHT,
+  weight,
+});
+
+export const editDiscPower = power => ({
+  type: bagActionTypes.EDIT_DISC_POWER,
+  power,
+});
+
+export const editDiscThrowType = throwType => ({
+  type: bagActionTypes.EDIT_DISC_THROW_TYPE,
+  throwType,
 });

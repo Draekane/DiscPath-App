@@ -1,0 +1,26 @@
+{
+	"company": "Obsidian Discs Oy",
+	"companyId": "1fc3791eb3db38fee26a2515b7399198",
+	"discs": [
+		{
+			"discId": "a31dbcfd422faec3264da06d3bbec738",
+			"name": "Caldera",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "a7173cc5cdd0e31df00cd34f058b1d33",
+			"name": "Cinder",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "09223d8b66c0ee1dfeb4c58b2665037e",
+			"name": "Rift",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "a9d65d8a88f3a9898dd84007bca04115",
+			"name": "Splinter",
+			"maxWeight": "177"
+		}
+	]
+}

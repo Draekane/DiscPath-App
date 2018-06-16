@@ -80,14 +80,18 @@ class FlightMap extends Component {
 
   updateCanvas() {
     const { thrower, discs, displayOptions } = this.props;
-    const pwi = thrower.power;
-    const pw = 0.6 + ((pwi / 48) * 0.6);
+    let pwi;
+    let pw;
     let lie;
     let ry;
     let gy;
     let by;
     let pws;
     let pointColor;
+    let weightDiff;
+    let powerShift;
+
+    const { power: throwerPower, throwType: throwerThrowType } = thrower;
 
     this.resetBuffers();
     const lieLabels = [];
@@ -97,6 +101,24 @@ class FlightMap extends Component {
     // Cycle through Discs
     _.forEach(orderedDiscs, (disc) => {
       if (!disc.enabled) { return; }
+
+      const {
+        maxWeight,
+        weight,
+        power: discPower,
+        throwType: discThrowType,
+      } = disc;
+
+      pwi = discPower || throwerPower;
+
+      if (maxWeight && weight) {
+        weightDiff = maxWeight - weight;
+        powerShift = (weightDiff * 0.005) + 1;
+
+        pwi *= powerShift;
+      }
+
+      pw = 0.6 + ((pwi / 48) * 0.6);
 
       // Draw fan/landing zone if true
       if (displayOptions.fanPower) {
@@ -116,7 +138,7 @@ class FlightMap extends Component {
             lsf: disc.lsf,
             armspeed: pwf,
             wear: disc.wear,
-            throwType: thrower.throwType,
+            throwType: discThrowType || throwerThrowType,
             color: pointColor,
             drawPath: (displayOptions.pathsShown === 'all' && i % 2 === 0),
             pathBuffer,
@@ -150,7 +172,7 @@ class FlightMap extends Component {
         lsf: disc.lsf,
         armspeed: pw,
         wear: disc.wear,
-        throwType: thrower.throwType,
+        throwType: discThrowType || throwerThrowType,
         color: pointColor,
         drawPath: (displayOptions.pathsShown === 'all' || displayOptions.pathsShown === 'one'),
         pathBuffer,

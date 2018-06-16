@@ -1,0 +1,21 @@
+{
+	"company": "Rip Disc Golf",
+	"companyId": "a195b7c9fc241f3da0599717060f898d",
+	"discs": [
+		{
+			"discId": "272076ee2e40acec00f8329b4b278d51",
+			"name": "Ballistic",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "81e0a6a3790c73e557a51b81cdb884d4",
+			"name": "Graboide",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "95bacd099548cd6ef0c33642a7a43ccf",
+			"name": "Relic",
+			"maxWeight": "176"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"company": "Crosslap Discgolf Parks",
+	"companyId": "4cecc11257c23214bfe4bff0670dab25",
+	"discs": [
+		{
+			"discId": "edb4ceb8cf8684a7271dc8cd42056f6e",
+			"name": "Credo",
+			"maxWeight": "180"
+		},
+		{
+			"discId": "7398d4c606ff87e5349e0a72326c1a15",
+			"name": "Lucky",
+			"maxWeight": "180"
+		}
+	]
+}

@@ -1,0 +1,31 @@
+{
+	"company": "Salient Discs",
+	"companyId": "5d9256cf69d2279399c1c9658ec77250",
+	"discs": [
+		{
+			"discId": "7c1a80448a8607f3484d7d628516b8d6",
+			"name": "Antidote",
+			"maxWeight": "178"
+		},
+		{
+			"discId": "02f88c3356ac83cf7cd1b57a59780161",
+			"name": "Backdraft",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "e1723a08afd7bca35570fd31a7656f59",
+			"name": "Prometheus",
+			"maxWeight": "188"
+		},
+		{
+			"discId": "f0f31c9700c6b10d8a20dc487b2ae6a8",
+			"name": "Touch",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "39766c8eaaf3f751ce22b99f747e442d",
+			"name": "Vein",
+			"maxWeight": "177"
+		}
+	]
+}

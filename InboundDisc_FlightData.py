@@ -34,13 +34,14 @@ for company in disc_companies:
 			print("Disc Count:" + str(len(company_discs)))
 			print("------------------------------------------------------------------------------------------------")
 			pathlib.Path('./src/data/Discs').mkdir(parents=True, exist_ok=True)
-			filename = "./src/data/Discs/" + company.strip().replace(" ","") + "_collection.json"
+			shortenedName = company.strip().replace(" ","")
+			filename = "./src/data/Discs/" + shortenedName + "_collection.json"
 			out_handle = open(filename,'w')
 			# print("{")
 			# print("    \"company\": \"" + company + "\",")
 			# print("    \"companyId\": ,")
 			# print("    \"discs\": [")
-			out_handle.write("{\n\t\"company\": \"" + company + "\",\n\t\"companyId\": \"" + str(hashlib.md5(str.encode(company)).hexdigest()) +"\",\n\t\"discs\": [\n")
+			out_handle.write("{\n\t\"company\": \"" + company + "\",\n\t\"companyId\": \"" + str(hashlib.md5(str.encode(shortenedName)).hexdigest()) +"\",\n\t\"discs\": [\n")
 			disc_count = 0
 			for disc in company_discs:
 				disc_count += 1

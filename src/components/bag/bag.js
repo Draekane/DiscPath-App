@@ -96,6 +96,7 @@ Bag.propTypes = {
       handleUpdateBagNameCancel: PropTypes.func,
       handleSelectBag: PropTypes.func,
       handleEditDisc: PropTypes.func,
+      handleRemoveBag: PropTypes.func,
     }),
   }),
 };

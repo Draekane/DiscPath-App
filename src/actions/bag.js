@@ -94,9 +94,8 @@ export const updateBagNameCancel = () => ({
   type: bagActionTypes.UPDATE_BAG_NAME_CANCEL,
 });
 
-export const removeExistingBag = bagId => ({
-  type: bagActionTypes.REMOVE_DISC_FROM_BAG,
-  bagId,
+export const removeExistingBag = () => ({
+  type: bagActionTypes.REMOVE_EXISTING_BAG,
 });
 
 export const openDiscEditModal = discId => ({

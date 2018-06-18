@@ -2,11 +2,16 @@ import _ from 'lodash';
 import { saveAs } from 'file-saver';
 import * as bagActionTypes from '../actionTypes/bag';
 
+const initialBag = {
+  name: 'Default Bag',
+  bagId: -1,
+  discs: [],
+};
+
 const initialState = {
   bags: [{
-    name: 'Default Bag',
+    ...initialBag,
     bagId: 1,
-    discs: [],
   }],
   thrower: {
     throwType: 'rhbh',
@@ -66,6 +71,7 @@ const saveToLocalStore = (updateState) => {
 const disc = (state = getInitialState(), action = {}) => {
   let thisFile;
   let newState;
+  let newBags;
 
   switch (action.type) {
     case bagActionTypes.ADD_DISC_TO_BAG:
@@ -357,10 +363,21 @@ const disc = (state = getInitialState(), action = {}) => {
       };
       break;
     case bagActionTypes.REMOVE_EXISTING_BAG:
-      newState = {
-        ...state,
-        bags: _.filter(state.bags, bag => bag.bagId !== action.bagId),
-      };
+      newBags = _.filter(state.bags, bag => bag.bagId !== state.selectedBagId);
+      if (newBags.length === 0) {
+        newState = {
+          ...state,
+          bags: [{ ...initialBag, bagId: 1 }],
+          lastBagId: 1,
+          selectedBagId: 1,
+        };
+      } else {
+        newState = {
+          ...state,
+          bags: newBags,
+          selectedBagId: newBags[0].bagId,
+        };
+      }
       break;
     case bagActionTypes.OPEN_DISC_EDIT_MODAL:
       newState = {

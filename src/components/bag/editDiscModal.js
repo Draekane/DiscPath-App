@@ -78,8 +78,8 @@ const EditDiscModal = (props) => {
   const displayWeightSelector = (weight, maxWeight) => {
     if (maxWeight) {
       return (
-        <div>
-          <label htmlFor="discWeight">Weight (optional): </label>
+        <div className="editBlock">
+          <label htmlFor="discWeight">Weight (optional): {weight || maxWeight}</label>
           <Slider
             value={weight || maxWeight}
             orientation="horizontal"
@@ -104,8 +104,8 @@ const EditDiscModal = (props) => {
       <h2><EditLabel value={displayedName} updateFunction={handleDiscDisplayNameChange} /></h2>
       <div>
         {displayWeightSelector(weight, maxWeight)}
-        <div>
-          <label htmlFor="discPower">Power (optional): </label>
+        <div className="editBlock">
+          <label htmlFor="discPower">Power (optional): {powerPercentage(power || throwerPower)}</label>
           <Slider
             value={power || throwerPower}
             orientation="horizontal"
@@ -116,7 +116,7 @@ const EditDiscModal = (props) => {
             onChange={handleDiscPowerChange}
           />
         </div>
-        <div>
+        <div className="editBlock">
           <label htmlFor="discThrowType">ThrowType (optional): </label>
           <Select
             name="ThrowerTypeSelector"
@@ -127,8 +127,8 @@ const EditDiscModal = (props) => {
             onChange={handleDiscThrowTypeChange}
           />
         </div>
-        <div>
-          <label htmlFor="discWear">Wear (optional): </label>
+        <div className="editBlock">
+          <label htmlFor="discWear">Wear (optional): {wear}</label>
           <Slider
             value={wear}
             orientation="horizontal"

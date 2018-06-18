@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import _ from 'lodash';
-import { FaPencil, FaPlusSquareO, FaFloppyO, FaTimesCircleO } from 'react-icons/lib/fa';
+import { FaPencil, FaPlusSquareO, FaFloppyO, FaTimesCircleO, FaTrashO } from 'react-icons/lib/fa';
 
 import { bagShape } from '../../propTypeShapes/bagShapes';
 
@@ -21,6 +21,10 @@ const BagSelector = (props) => {
 
   const handleAddBagStart = () => {
     functions.handleAddBagStart();
+  };
+
+  const handleRemoveBag = () => {
+    functions.handleRemoveBag();
   };
 
   const handleUpdateBagNameStart = () => {
@@ -87,8 +91,9 @@ const BagSelector = (props) => {
       <select id="bag-selector" defaultValue={selectedBagId} onChange={handleSelectBag} >
         {currentBagOptions}
       </select>&nbsp;&nbsp;&nbsp;
-      <FaPencil onClick={handleUpdateBagNameStart} color="green" >Edit Name</FaPencil>&nbsp;&nbsp;&nbsp;
-      <FaPlusSquareO onClick={handleAddBagStart} color="blue">Add New Bag</FaPlusSquareO>
+      <FaPencil onClick={handleUpdateBagNameStart} color="green" />&nbsp;&nbsp;&nbsp;
+      <FaPlusSquareO onClick={handleAddBagStart} color="blue" />&nbsp;&nbsp;&nbsp;
+      <FaTrashO onClick={handleRemoveBag} color="red" />
     </React.Fragment>
   );
 
@@ -110,6 +115,7 @@ BagSelector.propTypes = {
     handleUpdateBagNameFinish: PropTypes.func,
     handleUpdateBagNameCancel: PropTypes.func,
     handleSelectBag: PropTypes.func,
+    handleRemoveBag: PropTypes.func,
   }),
 };
 

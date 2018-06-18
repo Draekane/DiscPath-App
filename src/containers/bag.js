@@ -131,6 +131,12 @@ class BagContainer extends Component {
       dispatch(BagActions.addNewBagCancel());
     }
 
+    handleRemoveBag = () => {
+      const { dispatch } = this.props;
+
+      dispatch(BagActions.removeExistingBag());
+    }
+
     handleUpdateBagNameStart = () => {
       const { dispatch } = this.props;
 
@@ -211,6 +217,7 @@ class BagContainer extends Component {
           handleUpdateBagNameCancel: this.handleUpdateBagNameCancel,
           handleUpdateBagNameFinish: this.handleUpdateBagNameFinish,
           handleUpdateBagNameStart: this.handleUpdateBagNameStart,
+          handleRemoveBag: this.handleRemoveBag,
         },
       };
 

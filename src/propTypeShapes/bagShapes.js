@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 
 export const discShape = PropTypes.shape({
+  baggedDiscId: PropTypes.number,
   color: PropTypes.string,
   company: PropTypes.string,
   discId: PropTypes.string,

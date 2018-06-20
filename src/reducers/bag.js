@@ -72,6 +72,8 @@ const disc = (state = getInitialState(), action = {}) => {
   let thisFile;
   let newState;
   let newBags;
+  let newBag;
+  let newBagId;
 
   switch (action.type) {
     case bagActionTypes.ADD_DISC_TO_BAG:
@@ -297,9 +299,10 @@ const disc = (state = getInitialState(), action = {}) => {
       newState = state;
       break;
     case bagActionTypes.SELECT_BAG:
+      newBagId = parseInt(action.selectBagId, 10);
       newState = {
         ...state,
-        selectedBagId: parseInt(action.selectBagId, 10),
+        selectedBagId: _.some(state.bags, bag => bag.bagId === newBagId) ? newBagId : state.selectedBagId,
       };
       break;
     case bagActionTypes.ADD_NEW_BAG_START:
@@ -380,9 +383,10 @@ const disc = (state = getInitialState(), action = {}) => {
       }
       break;
     case bagActionTypes.OPEN_DISC_EDIT_MODAL:
+      newBag = _.find(state.bags, bag => bag.bagId === state.selectedBagId);
       newState = {
         ...state,
-        editingDiscId: action.discId,
+        editingDiscId: _.some(newBag.discs, disc => disc.baggedDiscId === action.discId) ? action.discId : null,
       };
       break;
     case bagActionTypes.CLOSE_DISC_EDIT_MODAL:

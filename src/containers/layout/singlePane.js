@@ -129,7 +129,7 @@ class SinglePane extends Component {
               </a>
             </div>
             <div className="grid-item1 grid-item">
-              <FlightMap discs={currentBag.discs} thrower={thrower} displayOptions={displayOptions} />
+              <FlightMap discs={currentBag.discs} thrower={thrower} displayOptions={displayOptions} zoom={1.5} />
             </div>
             <div className="grid-item2 grid-item">
               <BagContainer state />

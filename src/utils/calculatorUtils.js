@@ -5,6 +5,8 @@ export const hb = (n) => {
   return s;
 };
 
+const conversionSize = 1.5;
+
 export const catmull = (p, i, pc) => {
   const k = Math.floor(i * (pc - 1));
   const t = (i * (pc - 1)) - k;
@@ -34,6 +36,7 @@ export const drawPath = (options) => {
     drawPath,
     pathBuffer,
     canvas,
+    zoom,
   } = options;
   const yscale = 2.5;
   const xscale = 0.7;
@@ -45,7 +48,6 @@ export const drawPath = (options) => {
   let ehss = hss;
   let elsf = lsf;
   const turnsign = (throwType === 'rhbh') ? 1.0 : -1.0;
-  // 0.4+(1.0-airspeed*airspeed)*0.3;
   const fadestart = 0.4 + ((1.0 - (airspeed ** 2)) * 0.3);
   const impact = (1.0 - airspeed) / 5;
   const turnend = 0.8 - ((airspeed ** 2) * 0.36);

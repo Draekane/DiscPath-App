@@ -8,6 +8,9 @@ export const discShape = PropTypes.shape({
   range: PropTypes.number,
   type: PropTypes.string,
   maxWeight: PropTypes.number,
+  pdga: PropTypes.string,
+  matrix_x: PropTypes.number,
+  matrix_y: PropTypes.number,
 });
 
 export const companyShape = PropTypes.shape({

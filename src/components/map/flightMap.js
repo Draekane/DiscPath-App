@@ -33,6 +33,8 @@ class FlightMap extends Component {
   }
 
   resetBuffers() {
+    // THIS IS WHAT DRAWS THE CANVAS AND THE GRID
+    const { zoom } = this.props;
     canvas = this.canvasRef;
 
     pathBuffer = document.createElement('canvas');
@@ -54,21 +56,24 @@ class FlightMap extends Component {
     context.fillStyle = '#999';
     context.strokeStyle = '#446';
     let i;
+    let j;
     for (i = 0; i < canvas.width; i += 50) {
+      const newI = i * zoom;
       context.beginPath();
-      context.moveTo(i, 0);
-      context.lineTo(i, canvas.height);
+      context.moveTo(newI, 0);
+      context.lineTo(newI, canvas.height);
       context.stroke();
     }
-    for (i = 0; i <= canvas.height; i += 50) {
+    for (j = 0; j <= canvas.height; j += 50) {
+      const newJ = j * zoom;
       context.beginPath();
-      context.moveTo(0, i);
-      context.lineTo(canvas.height, i);
+      context.moveTo(0, newJ);
+      context.lineTo(canvas.height, newJ);
       context.stroke();
       context.textAlign = 'left';
-      context.fillText(`${canvas.height - i}'`, 5, i - 3);
+      context.fillText(`${(canvas.height - newJ)/1.5}'`, 5, newJ - 3);
       context.textAlign = 'right';
-      context.fillText(`${Math.floor((canvas.height - i) / 3.33)}m`, canvas.width - 5, i - 3);
+      context.fillText(`${Math.floor((canvas.height - newJ) / (3.33 * 1.5))}m`, canvas.width - 5, newJ - 3);
     }
     const pathContext = pathBuffer.getContext('2d');
     const lieContext = lieBuffer.getContext('2d');
@@ -79,7 +84,7 @@ class FlightMap extends Component {
   }
 
   updateCanvas() {
-    const { thrower, discs, displayOptions } = this.props;
+    const { thrower, discs, displayOptions, zoom } = this.props;
     let pwi;
     let pw;
     let lie;
@@ -109,7 +114,7 @@ class FlightMap extends Component {
         throwType: discThrowType,
       } = disc;
 
-      pwi = discPower || throwerPower;
+      pwi = (discPower || throwerPower);
 
       if (maxWeight && weight) {
         weightDiff = maxWeight - weight;
@@ -143,6 +148,7 @@ class FlightMap extends Component {
             drawPath: (displayOptions.pathsShown === 'all' && i % 2 === 0),
             pathBuffer,
             canvas,
+            zoom,
           };
           lie = drawPath(drawPathOptions);
           const drawLieOptions = {
@@ -155,6 +161,7 @@ class FlightMap extends Component {
             pathBuffer,
             lieBuffer,
             outlineBuffer,
+            zoom,
           };
           drawLie(drawLieOptions);
         }
@@ -230,15 +237,15 @@ class FlightMap extends Component {
 
 
   render() {
-    const { width, height } = this.props;
+    const { width, height, zoom } = this.props;
     return (
       <div>
         <canvas
           ref={el => this.canvasRef = el} /* eslint-disable-line no-return-assign */
           id="splineCanvas"
           className="splineCanvas"
-          width={width}
-          height={height}
+          width={width * zoom}
+          height={height * zoom}
         />
       </div>);
   }
@@ -250,11 +257,13 @@ FlightMap.propTypes = {
   discs: PropTypes.arrayOf(discShape),
   thrower: PropTypes.shape(throwerShape),
   displayOptions: PropTypes.shape(displayOptionsShape),
+  zoom: PropTypes.number,
 };
 
 FlightMap.defaultProps = {
   width: 350,
   height: 550,
+  zoom: 1,
 };
 
 export default FlightMap;

@@ -12,6 +12,9 @@ This is being build using Node.js and can be started by calling:
 `npm run start`
 
 Tests have been added and can be run with:
+
 `npm run test`  - runs ALL tests
+
 `npm run test-reducers` - runs just the reducer tests
+
 `npm run test-actions` - runs just the action tests

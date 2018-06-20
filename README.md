@@ -5,8 +5,13 @@ This is an attempt to create a web app based off the single page application of 
 The end goal is to have something that looks similar to and functions similar to the original, but with a more robust and expandable set of components, and an easier way to update the existing disc data (possibly even adding an add/update discs capability through the UI).
 
 ## For More Information
-Visit the [wiki](https://github.com/MichaelPalmer-Orange/DiscPath-App/wiki) for all the current features and future projected features.
+Visit the [documentation](https://discpath.readme.io/) for all the current features and future projected features.
 
 This is being build using Node.js and can be started by calling:
 
 `npm run start`
+
+Tests have been added and can be run with:
+`npm run test`  - runs ALL tests
+`npm run test-reducers` - runs just the reducer tests
+`npm run test-actions` - runs just the action tests

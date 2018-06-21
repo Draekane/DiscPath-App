@@ -126,3 +126,15 @@ export const editDiscThrowType = throwType => ({
   type: bagActionTypes.EDIT_DISC_THROW_TYPE,
   throwType,
 });
+
+export const enlargeMap = () => ({
+  type: bagActionTypes.ENLARG_MAP,
+});
+
+export const shrinkMap = () => ({
+  type: bagActionTypes.SHRINK_MAP,
+});
+
+export const resetMap = () => ({
+  type: bagActionTypes.RESET_MAP,
+});

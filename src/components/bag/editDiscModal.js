@@ -83,7 +83,7 @@ const EditDiscModal = (props) => {
           <Slider
             value={weight || maxWeight}
             orientation="horizontal"
-            min={0}
+            min={120}
             max={maxWeight}
             className="wear-slider"
             onChange={handleDiscWeightChange}

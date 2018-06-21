@@ -36,12 +36,12 @@ const DiscType = (props) => {
     if (discFlightType !== null && discFlightType !== undefined && discs.length > 0) {
       if (enabled) {
         return (
-          <div className={headerClassName}>
+          <div className={headerClassName} title={`Hide All ${title}`}>
             <FaEye onClick={handleDisableDiscType} color="green" />
             &nbsp;&nbsp;{title}
           </div>);
       }
-      return <div className={headerClassName}><FaEyeSlash onClick={handleDisableDiscType} />&nbsp;&nbsp;{title}</div>;
+      return <div className={headerClassName} title={`Show All ${title}`}><FaEyeSlash onClick={handleDisableDiscType} />&nbsp;&nbsp;{title}</div>;
     }
     return <div className={headerClassName}>&nbsp;&nbsp;{title}</div>;
   };
@@ -61,9 +61,15 @@ const DiscType = (props) => {
               accessor: 'enabled',
               Cell: (row) => {
                 if (row.value === true) {
-                  return <FaEye onClick={handleDisableDisc.bind(this, row)} color="green" />;
+                  return (
+                    <span title="Click to Hide this Disc" >
+                      <FaEye onClick={handleDisableDisc.bind(this, row)} color="green" />
+                    </span>);
                 }
-                return <FaEyeSlash onClick={handleDisableDisc.bind(this, row)} />;
+                return (
+                  <span title="Click to Show this Disc" >
+                    <FaEyeSlash onClick={handleDisableDisc.bind(this, row)} />
+                  </span>);
               },
               width: 25,
             },
@@ -78,13 +84,20 @@ const DiscType = (props) => {
               Header: 'Edit',
               accessor: 'baggedDiscId',
               width: 25,
-              Cell: row => (<FaEdit onClick={handleDiscEdit.bind(this, row.value)} color="green" />),
+              Cell: row => (
+                <span title="Click to Edit this Disc" >
+                  <FaEdit onClick={handleDiscEdit.bind(this, row.value)} color="green" />
+                </span>
+              ),
             },
             {
               Header: 'Remove',
               accessor: 'baggedDiscId',
               width: 25,
-              Cell: row => (<FaTrashO onClick={handleDiscRemove.bind(this, row.value)} color="red" />),
+              Cell: row => (
+                <span title="Click to Remove Disc from Basket" >
+                  <FaTrashO onClick={handleDiscRemove.bind(this, row.value)} color="red" />
+                </span>),
             },
           ],
         },

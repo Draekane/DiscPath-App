@@ -84,6 +84,24 @@ class SinglePane extends Component {
     dispatch(BagActions.importBagsFromFile(file));
   }
 
+  handleMapEnlarge = () => {
+    const { dispatch } = this.props;
+
+    dispatch(BagActions.enlargeMap());
+  }
+
+  handleMapShrink = () => {
+    const { dispatch } = this.props;
+
+    dispatch(BagActions.shrinkMap());
+  }
+
+  handleMapReset = () => {
+    const { dispatch } = this.props;
+
+    dispatch(BagActions.resetMap());
+  }
+
   render() {
     const {
       pageTitle,
@@ -92,9 +110,16 @@ class SinglePane extends Component {
       displayOptions,
       currentBags,
       selectedBagId,
+      zoom,
     } = this.props;
 
     const currentBag = _.filter(currentBags, bag => bag.bagId === parseInt(selectedBagId, 10))[0];
+
+    const mapFunctions = {
+      handleMapEnlarge: this.handleMapEnlarge,
+      handleMapShrink: this.handleMapShrink,
+      handleMapReset: this.handleMapReset,
+    };
 
     const content = (
       <DocumentTitle title={pageTitle}>
@@ -129,7 +154,13 @@ class SinglePane extends Component {
               </a>
             </div>
             <div className="grid-item1 grid-item">
-              <FlightMap discs={currentBag.discs} thrower={thrower} displayOptions={displayOptions} />
+              <FlightMap
+                discs={currentBag.discs}
+                thrower={thrower}
+                displayOptions={displayOptions}
+                zoom={zoom}
+                functions={mapFunctions}
+              />
             </div>
             <div className="grid-item2 grid-item">
               <BagContainer state />
@@ -172,6 +203,7 @@ SinglePane.propTypes = {
   displayOptions: PropTypes.shape(displayOptionsShape),
   dispatch: PropTypes.func,
   selectedBagId: PropTypes.number,
+  zoom: PropTypes.number,
 };
 
 SinglePane.defaultProps = {
@@ -182,6 +214,7 @@ SinglePane.defaultProps = {
   thrower: null,
   displayOptions: null,
   selectedBagId: 1,
+  zoom: 1,
 };
 
 const mapStateToProps = state => ({
@@ -195,6 +228,7 @@ const mapStateToProps = state => ({
   dispatch: state.dispatch,
   addBag: state.bag.addBag,
   updateBag: state.bag.updateBag,
+  zoom: state.bag.zoom,
 });
 
 export default connect(mapStateToProps)(SinglePane);

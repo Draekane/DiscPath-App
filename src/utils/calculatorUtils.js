@@ -34,10 +34,13 @@ export const drawPath = (options) => {
     drawPath,
     pathBuffer,
     canvas,
+    zoom,
   } = options;
   const yscale = 2.5;
   const xscale = 0.7;
   const pathContext = pathBuffer.getContext('2d');
+  const setWidth = canvas.width / zoom;
+  const setHeight = canvas.height / zoom;
   pathContext.strokeStyle = color;
   pathContext.lineWidth = 2.4;
 
@@ -45,18 +48,17 @@ export const drawPath = (options) => {
   let ehss = hss;
   let elsf = lsf;
   const turnsign = (throwType === 'rhbh') ? 1.0 : -1.0;
-  // 0.4+(1.0-airspeed*airspeed)*0.3;
   const fadestart = 0.4 + ((1.0 - (airspeed ** 2)) * 0.3);
   const impact = (1.0 - airspeed) / 5;
   const turnend = 0.8 - ((airspeed ** 2) * 0.36);
   let x;
   let y;
-  let ox = canvas.width / 2;
-  let oy = canvas.height;
+  let ox = setWidth / 2;
+  let oy = setHeight;
   let vx = 0.0;
   const vy = -1.0;
   const ht = yscale * dist;
-  const deltav = yscale / ht;
+  const deltav = (yscale / ht);
   const wm = wear / 10.0;
 
   // calculate effective HSS and LSF

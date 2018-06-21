@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import _ from 'lodash';
+import { FaMinusSquare, FaPlusSquare, FaCircle } from 'react-icons/lib/fa';
 
 import { discShape, throwerShape, displayOptionsShape } from '../../propTypeShapes/bagShapes';
 import { processForHex, hb, drawPath, drawLie } from '../../utils/calculatorUtils';
@@ -36,6 +37,8 @@ class FlightMap extends Component {
     // THIS IS WHAT DRAWS THE CANVAS AND THE GRID
     const { zoom } = this.props;
     canvas = this.canvasRef;
+    const setWidth = canvas.width / zoom;
+    const setHeight = canvas.height / zoom;
 
     pathBuffer = document.createElement('canvas');
     pathBuffer.width = canvas.width;
@@ -57,34 +60,44 @@ class FlightMap extends Component {
     context.strokeStyle = '#446';
     let i;
     let j;
+    // Draw Vertical Lines
     for (i = 0; i < canvas.width; i += 50) {
-      const newI = i * zoom;
+      const adjustI = i * zoom;
       context.beginPath();
-      context.moveTo(newI, 0);
-      context.lineTo(newI, canvas.height);
+      context.moveTo(adjustI, canvas.height);
+      context.lineTo(adjustI, 0);
       context.stroke();
     }
+    // Draw and Label Horizontal lines
     for (j = 0; j <= canvas.height; j += 50) {
-      const newJ = j * zoom;
+      const adjustJ = j * zoom;
       context.beginPath();
-      context.moveTo(0, newJ);
-      context.lineTo(canvas.height, newJ);
+      context.moveTo(canvas.height, adjustJ);
+      context.lineTo(0, adjustJ);
       context.stroke();
       context.textAlign = 'left';
-      context.fillText(`${(canvas.height - newJ)/1.5}'`, 5, newJ - 3);
+      context.fillText(`${j}'`, 5, (canvas.height - adjustJ) - 3);
       context.textAlign = 'right';
-      context.fillText(`${Math.floor((canvas.height - newJ) / (3.33 * 1.5))}m`, canvas.width - 5, newJ - 3);
+      context.fillText(`${Math.floor((j) / 3.33)}m`, canvas.width - 5, (canvas.height - adjustJ) - 3);
     }
     const pathContext = pathBuffer.getContext('2d');
     const lieContext = lieBuffer.getContext('2d');
     const outlineContext = outlineBuffer.getContext('2d');
-    pathContext.clearRect(0, 0, canvas.width, canvas.height);
-    lieContext.clearRect(0, 0, canvas.width, canvas.height);
-    outlineContext.clearRect(0, 0, canvas.width, canvas.height);
+    pathContext.scale(zoom, zoom);
+    lieContext.scale(zoom, zoom);
+    outlineContext.scale(zoom, zoom);
+    pathContext.clearRect(0, 0, setWidth, setHeight);
+    lieContext.clearRect(0, 0, setWidth, setHeight);
+    outlineContext.clearRect(0, 0, setWidth, setHeight);
   }
 
   updateCanvas() {
-    const { thrower, discs, displayOptions, zoom } = this.props;
+    const {
+      thrower,
+      discs,
+      displayOptions,
+      zoom,
+    } = this.props;
     let pwi;
     let pw;
     let lie;
@@ -184,6 +197,7 @@ class FlightMap extends Component {
         drawPath: (displayOptions.pathsShown === 'all' || displayOptions.pathsShown === 'one'),
         pathBuffer,
         canvas,
+        zoom,
       };
       lie = drawPath(drawPathOptions);
       const drawLieOptions = {
@@ -196,12 +210,14 @@ class FlightMap extends Component {
         pathBuffer,
         lieBuffer,
         outlineBuffer,
+        zoom,
       };
       drawLie(drawLieOptions);
       lieLabels.push([lie, `${disc.company} ${disc.name}`]);
     });
 
     const context = canvas.getContext('2d');
+    const setHeight = canvas.height / zoom;
 
     if (displayOptions.lieCircle) {
       context.globalAlpha = 0.35;
@@ -220,26 +236,57 @@ class FlightMap extends Component {
       _.forEach(lieLabels, (key) => {
         const lie = key[0];
         const dn = key[1];
-        const txt = `${canvas.height - lie[1]}' ${Math.floor((canvas.height - lie[1]) / 3.33)}m`;
+        const txt = `${setHeight - lie[1]}' ${Math.floor((setHeight - lie[1]) / 3.33)}m`;
         context.font = '10px helvetica';
         context.textAlign = 'center';
         context.strokeStyle = '#000';
         context.fillStyle = '#c0ffee';
         context.lineWidth = 3;
-        context.strokeText(txt, lie[0], lie[1] - 6);
-        context.fillText(txt, lie[0], lie[1] - 6);
+        const adjustX = lie[0] * zoom;
+        const adjustY = lie[1] * zoom;
+        context.strokeText(txt, adjustX, adjustY - 6);
+        context.fillText(txt, adjustX, adjustY - 6);
         context.font = '9px helvetica';
-        context.strokeText(dn, lie[0], lie[1] - 18);
-        context.fillText(dn, lie[0], lie[1] - 18);
+        context.strokeText(dn, adjustX, adjustY - 18);
+        context.fillText(dn, adjustX, adjustY - 18);
       });
     }
   }
 
+  handleEnlargeMap = () => {
+    const { functions } = this.props;
+
+    functions.handleMapEnlarge();
+  }
+
+  handleResetMap = () => {
+    const { functions } = this.props;
+
+    functions.handleMapReset();
+  }
+
+  handleShrinkMap = () => {
+    const { functions } = this.props;
+
+    functions.handleMapShrink();
+  }
 
   render() {
     const { width, height, zoom } = this.props;
     return (
-      <div>
+      <div className="canvasContainer" >
+        <div className="zoomButtons" >
+          <span style={{ color: 'white' }} >Map Size: </span>
+          <span title="Shrink Map" >
+            <FaMinusSquare onClick={this.handleShrinkMap} color="white" className="zoomButton" />
+          </span>
+          <span title="Reset Map">
+            <FaCircle color="white" onClick={this.handleResetMap} className="zoomButton" />
+          </span>
+          <span title="Enlarge Map">
+            <FaPlusSquare color="white" onClick={this.handleEnlargeMap} className="zoomButton" />
+          </span>
+        </div>
         <canvas
           ref={el => this.canvasRef = el} /* eslint-disable-line no-return-assign */
           id="splineCanvas"
@@ -258,12 +305,13 @@ FlightMap.propTypes = {
   thrower: PropTypes.shape(throwerShape),
   displayOptions: PropTypes.shape(displayOptionsShape),
   zoom: PropTypes.number,
+  functions: PropTypes.arrayOf(PropTypes.Func),
 };
 
 FlightMap.defaultProps = {
   width: 350,
   height: 550,
-  zoom: 1,
+  zoom: 2,
 };
 
 export default FlightMap;

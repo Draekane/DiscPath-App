@@ -23,6 +23,7 @@ const initialState = {
     lieDistance: true,
     lieCircle: true,
   },
+  zoom: 1,
   lastDiscId: 0,
   lastBagId: 1,
   selectedBagId: 1,
@@ -393,6 +394,24 @@ const disc = (state = getInitialState(), action = {}) => {
       newState = {
         ...state,
         editingDiscId: null,
+      };
+      break;
+    case bagActionTypes.ENLARG_MAP:
+      newState = {
+        ...state,
+        zoom: (state.zoom + 0.2) <= 2 ? (state.zoom + 0.2) : state.zoom,
+      };
+      break;
+    case bagActionTypes.SHRINK_MAP:
+      newState = {
+        ...state,
+        zoom: (state.zoom - 0.2) >= 0.6 ? (state.zoom - 0.2) : state.zoom,
+      };
+      break;
+    case bagActionTypes.RESET_MAP:
+      newState = {
+        ...state,
+        zoom: 1,
       };
       break;
     default:

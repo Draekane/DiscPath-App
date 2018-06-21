@@ -67,8 +67,12 @@ const BagSelector = (props) => {
         ref={(ref) => { this.bagName = ref; }}
         defaultValue={currentBag.name}
       />&nbsp;&nbsp;&nbsp;
-      <FaFloppyO onClick={handleUpdateBagNameFinish} color="green" />&nbsp;&nbsp;&nbsp;
-      <FaTimesCircleO onClick={handleUpdateBagNameCancel} color="red" />
+      <span title="Save Bag Name Update" >
+        <FaFloppyO onClick={handleUpdateBagNameFinish} color="green" />
+      </span>&nbsp;&nbsp;&nbsp;
+      <span title="Cancel Bag Name Update" >
+        <FaTimesCircleO onClick={handleUpdateBagNameCancel} color="red" />
+      </span>
     </React.Fragment>
   );
 
@@ -80,8 +84,12 @@ const BagSelector = (props) => {
         ref={(ref) => { this.bagName = ref; }}
         defaultValue={currentBag.name}
       />&nbsp;&nbsp;&nbsp;
-      <FaPlusSquareO onClick={handleAddBagFinish} color="green" />&nbsp;&nbsp;&nbsp;
-      <FaTimesCircleO onClick={handleAddBagCancel} color="red" />
+      <span title="Save New Bag">
+        <FaPlusSquareO onClick={handleAddBagFinish} color="green" />
+      </span>&nbsp;&nbsp;&nbsp;
+      <span title="Cancel Adding New Bag" >
+        <FaTimesCircleO onClick={handleAddBagCancel} color="red" />
+      </span>
     </React.Fragment>
   );
 
@@ -91,9 +99,15 @@ const BagSelector = (props) => {
       <select id="bag-selector" defaultValue={selectedBagId} onChange={handleSelectBag} >
         {currentBagOptions}
       </select>&nbsp;&nbsp;&nbsp;
-      <FaPencil onClick={handleUpdateBagNameStart} color="green" />&nbsp;&nbsp;&nbsp;
-      <FaPlusSquareO onClick={handleAddBagStart} color="blue" />&nbsp;&nbsp;&nbsp;
-      <FaTrashO onClick={handleRemoveBag} color="red" />
+      <span title="Edit Current Bag Name" >
+        <FaPencil onClick={handleUpdateBagNameStart} color="green" />
+      </span>&nbsp;&nbsp;&nbsp;
+      <span title="Add New Bag" >
+        <FaPlusSquareO onClick={handleAddBagStart} color="blue" />
+      </span>&nbsp;&nbsp;&nbsp;
+      <span title="Remove Existing Bag" >
+        <FaTrashO onClick={handleRemoveBag} color="red" />
+      </span>
     </React.Fragment>
   );
 

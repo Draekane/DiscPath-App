@@ -42,7 +42,7 @@ export const drawPath = (options) => {
   const setWidth = canvas.width / zoom;
   const setHeight = canvas.height / zoom;
   pathContext.strokeStyle = color;
-  pathContext.lineWidth = 2.4;
+  pathContext.lineWidth = 2.4 / zoom;
 
   let airspeed = armspeed;
   let ehss = hss;

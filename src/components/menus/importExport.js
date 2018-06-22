@@ -1,10 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Modal from 'react-modal';
 import _ from 'lodash';
+import { FaClose } from 'react-icons/lib/fa';
 
-const ImportExport = (props) => {
+const ImportExport = ({
+  importFunction,
+  exportFunction,
+  openModal,
+  closeModal,
+}) => {
   const handleImportOnChange = (selectorFiles) => {
-    const { importFunction } = props;
     const reader = new FileReader();
     _.forEach(selectorFiles, (file) => {
       reader.onload = () => {
@@ -16,12 +22,32 @@ const ImportExport = (props) => {
   };
 
   const handleExportOnClick = () => {
-    const { exportFunction } = props;
     exportFunction();
   };
 
+  const customStyles = {
+    overlay: {
+      backgroundColor: 'rgba(0, 0, 0, 0.6)',
+    },
+    content: {
+      top: '25%',
+      left: '25%',
+      width: '25%',
+      right: 'auto',
+      bottom: 'auto',
+      marginRight: '-20%',
+      transform: 'translate(-20%, -20%)',
+      border: 'none',
+    },
+  };
+
   return (
-    <React.Fragment>
+    <Modal
+      isOpen={openModal}
+      onRequestClose={closeModal}
+      style={customStyles}
+    >
+      <FaClose onClick={closeModal} color="red" style={{ float: 'right', 'z-index': '100' }} />
       <div className="title-block" >
           Import / Export Bag
       </div>
@@ -44,12 +70,14 @@ const ImportExport = (props) => {
           <button id="exportBag" name="exportBag" onClick={handleExportOnClick} >Export Bag to File</button>
         </div>
       </div>
-    </React.Fragment>);
+    </Modal>);
 };
 
 ImportExport.propTypes = {
   importFunction: PropTypes.func,
   exportFunction: PropTypes.func,
+  openModal: PropTypes.bool,
+  closeModal: PropTypes.func,
 };
 
 export default ImportExport;

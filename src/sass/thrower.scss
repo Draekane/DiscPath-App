@@ -1,8 +1,4 @@
 .thrower-container {
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: auto auto;
-    text-align: center;
 
     .thrower-item {
         padding-top: 20px;
@@ -16,12 +12,14 @@
         grid-template-columns: auto auto;
 
         .type-title {
-            grid-column: 1 / 2
+            padding-right: 10px;
+            display: inline-block;
         }
 
         .type-select {
+            display: inline-block;
             margin-top: -5px;
-            grid-column: 2 / 3;
+            width: 150px;
         }
     }
 
@@ -29,7 +27,7 @@
         grid-row: 2 / 3;
         grid-column: 1 / 5;
         display: grid;
-        grid-template-columns: 20% 80%;
+        grid-template-columns: 1fr 5fr;
         
         .power-title {
             grid-column: 1 / 2;
@@ -42,6 +40,7 @@
     }
 
     .power-output {
+        margin-top: -20px;
         font-size: smaller;
         grid-column: 5 / 6;
         grid-row: 2 / 3;

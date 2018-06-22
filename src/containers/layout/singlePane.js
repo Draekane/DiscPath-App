@@ -6,13 +6,14 @@ import _ from 'lodash';
 
 import FlightMap from '../../components/map/flightMap';
 import BagContainer from '../bag';
-import Thrower from '../../components/bag/thrower';
-import DisplayOptions from '../../components/bag/displayOptions';
-import ImportExport from '../../components/bag/importExport';
+import Thrower from '../../components/menus/thrower';
+import DisplayOptions from '../../components/menus/displayOptions';
+import ImportExport from '../../components/menus/importExport';
 import { companyShape } from '../../propTypeShapes/companyShapes';
 import { throwerShape, displayOptionsShape, bagShape } from '../../propTypeShapes/bagShapes';
 import * as CompanyActions from '../../actions/company';
 import * as BagActions from '../../actions/bag';
+import * as MenuActions from '../../actions/menus';
 import { currentCompaniesSelector, currentSelectionSelector } from '../../selector/companiesSelector';
 import { throwerSelector, bagSelector, displayOptionsSelector, discTypesSelector } from '../../selector/bagSelector';
 
@@ -35,6 +36,35 @@ class SinglePane extends Component {
     return null;
   }
 
+  handleToggleThrowerModal = () => {
+    const { dispatch, throwerModal } = this.props;
+
+    if (throwerModal) {
+      dispatch(MenuActions.closerThrowerModal());
+    } else {
+      dispatch(MenuActions.openThrowerModal());
+    }
+  }
+
+  handleToggleDisplayOptionModal = () => {
+    const { dispatch, displayOptionModal } = this.props;
+
+    if (displayOptionModal) {
+      dispatch(MenuActions.closeDisplayOptionsModal());
+    } else {
+      dispatch(MenuActions.openDisplayOptionsModal());
+    }
+  }
+
+  handleToggleImportExportModal = () => {
+    const { dispatch, importExportModal } = this.props;
+
+    if (importExportModal) {
+      dispatch(MenuActions.closeImportExportModal());
+    } else {
+      dispatch(MenuActions.openImportExportModal());
+    }
+  }
 
   handleChangeThrowerType = (throwerType) => {
     const { dispatch } = this.props;
@@ -111,6 +141,9 @@ class SinglePane extends Component {
       currentBags,
       selectedBagId,
       zoom,
+      throwerModal,
+      displayOptionModal,
+      importExportModal,
     } = this.props;
 
     const currentBag = _.filter(currentBags, bag => bag.bagId === parseInt(selectedBagId, 10))[0];
@@ -153,6 +186,11 @@ class SinglePane extends Component {
               >Inbounds Disc Golf InFlight Guide
               </a>
             </div>
+            <div className="grid-item-menu" >
+              <button onClick={this.handleToggleThrowerModal} >Thrower</button>
+              <button onClick={this.handleToggleDisplayOptionModal}>Display Options</button>
+              <button onClick={this.handleToggleImportExportModal}>Import/Export</button>
+            </div>
             <div className="grid-item1 grid-item">
               <FlightMap
                 discs={currentBag.discs}
@@ -165,25 +203,28 @@ class SinglePane extends Component {
             <div className="grid-item2 grid-item">
               <BagContainer state />
             </div>
-            <div className="grid-item3 grid-item">
-              <Thrower
-                thrower={thrower}
-                changePower={this.handleChangeThrowerPower}
-                changeThrowerType={this.handleChangeThrowerType}
-              />
-            </div>
-            <div className="grid-item3 grid-item">
-              <DisplayOptions
-                options={displayOptions}
-                changeFanPower={this.handleChangeFanPower}
-                changePaths={this.handleChangePaths}
-                changeDistance={this.handleChangeLieDistance}
-                changeCircles={this.handleChangeLieCircle}
-              />
-            </div>
-            <div className="grid-item4 grid-item">
-              <ImportExport importFunction={this.handleImportFromFile} exportFunction={this.handleExportToFile} />
-            </div>
+            <Thrower
+              thrower={thrower}
+              changePower={this.handleChangeThrowerPower}
+              changeThrowerType={this.handleChangeThrowerType}
+              openModal={throwerModal}
+              closeModal={this.handleToggleThrowerModal}
+            />
+            <DisplayOptions
+              options={displayOptions}
+              changeFanPower={this.handleChangeFanPower}
+              changePaths={this.handleChangePaths}
+              changeDistance={this.handleChangeLieDistance}
+              changeCircles={this.handleChangeLieCircle}
+              openModal={displayOptionModal}
+              closeModal={this.handleToggleDisplayOptionModal}
+            />
+            <ImportExport
+              importFunction={this.handleImportFromFile}
+              exportFunction={this.handleExportToFile}
+              openModal={importExportModal}
+              closeModal={this.handleToggleImportExportModal}
+            />
           </div>
         </React.Fragment>
       </DocumentTitle>
@@ -204,6 +245,9 @@ SinglePane.propTypes = {
   dispatch: PropTypes.func,
   selectedBagId: PropTypes.number,
   zoom: PropTypes.number,
+  throwerModal: PropTypes.bool,
+  displayOptionModal: PropTypes.bool,
+  importExportModal: PropTypes.bool,
 };
 
 SinglePane.defaultProps = {
@@ -229,6 +273,9 @@ const mapStateToProps = state => ({
   addBag: state.bag.addBag,
   updateBag: state.bag.updateBag,
   zoom: state.bag.zoom,
+  throwerModal: state.menus.throwerModal,
+  displayOptionModal: state.menus.displayOptionModal,
+  importExportModal: state.menus.importExportModal,
 });
 
 export default connect(mapStateToProps)(SinglePane);

@@ -1,35 +1,17 @@
 .display-options {
-    display: flex;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1.5fr 3fr;
 
     .display-options-item {
-        padding: 20px 0;
+        // padding: 20px 0;
         padding-top: 20px;
     }
 
-    .item1 {
-        flex-grow: 1;
+    .item1, .item3, .item5, .item7 {
+        grid-column: 1 / 2;
     }
 
-    .item2 {
-        flex-grow: 4;
-        display: flex;
-
-        .path-per-disc-title {
-            flex-grow: 1;
-        }
-
-        .path-per-disc-select { 
-            flex-grow: 5;
-            margin-top: -8px;
-        }
-    }
-
-    .item3 {
-        flex-grow:1;
-    }
-
-    .item4 {
-        flex-grow: 1;
+    .item2, .item4, .item6, .item8 {
+        grid-column: 2 / 3;
     }
 }

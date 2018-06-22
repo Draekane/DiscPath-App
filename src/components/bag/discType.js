@@ -41,7 +41,10 @@ const DiscType = (props) => {
             &nbsp;&nbsp;{title}
           </div>);
       }
-      return <div className={headerClassName} title={`Show All ${title}`}><FaEyeSlash onClick={handleDisableDiscType} />&nbsp;&nbsp;{title}</div>;
+      return (
+        <div className={headerClassName} title={`Show All ${title}`}>
+          <FaEyeSlash onClick={handleDisableDiscType} />&nbsp;&nbsp;{title}
+        </div>);
     }
     return <div className={headerClassName}>&nbsp;&nbsp;{title}</div>;
   };
@@ -79,6 +82,7 @@ const DiscType = (props) => {
               accessor: d => ((d.displayName && d.displayName !== '') ? d.displayName : `${d.company} ${d.name}`),
               Cell: row => (row.value),
               className: 'leftAlignCell',
+              width: 250,
             },
             {
               Header: 'Edit',

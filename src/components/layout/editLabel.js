@@ -118,7 +118,6 @@ export default class EditLabel extends Component {
             onClick={this.handleTextboxClick}
             onFocus={this.handleFocus}
             onBlur={onTextboxBlur}
-            autoFocus
           />
           <span>
             <button className={saveButtonClassName} title="Saves Edits" type="button" onClick={this.handleSave}>

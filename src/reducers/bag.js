@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import { saveAs } from 'file-saver';
 import * as bagActionTypes from '../actionTypes/bag';
+import { discTypes } from '../utils/discTypeConsts';
 
 const initialBag = {
   name: 'Default Bag',
@@ -13,16 +14,6 @@ const initialState = {
     ...initialBag,
     bagId: 1,
   }],
-  thrower: {
-    throwType: 'rhbh',
-    power: 32,
-  },
-  displayOptions: {
-    fanPower: true,
-    pathsShown: 'one',
-    lieDistance: true,
-    lieCircle: true,
-  },
   zoom: 1,
   lastDiscId: 0,
   lastBagId: 1,
@@ -30,28 +21,7 @@ const initialState = {
   editingDiscId: null,
   addBag: false,
   updateBag: false,
-  discTypes: [
-    {
-      discType: 'D',
-      enabled: true,
-      title: 'Distance Drivers',
-    },
-    {
-      discType: 'F',
-      enabled: true,
-      title: 'Fairway Drivers',
-    },
-    {
-      discType: 'M',
-      enabled: true,
-      title: 'Midranges',
-    },
-    {
-      discType: 'P',
-      enabled: true,
-      title: 'Putt and Approach',
-    },
-  ],
+  discTypes,
 };
 
 const localStoreName = 'Discpath.CurrentState';
@@ -227,60 +197,6 @@ const disc = (state = getInitialState(), action = {}) => {
             };
           } return bag;
         }),
-      };
-      break;
-    case bagActionTypes.CHANGE_THROWER_TYPE:
-      newState = {
-        ...state,
-        thrower: {
-          ...state.thrower,
-          throwType: action.throwerType,
-        },
-      };
-      break;
-    case bagActionTypes.CHANGE_THROWER_POWER:
-      newState = {
-        ...state,
-        thrower: {
-          ...state.thrower,
-          power: action.throwerPower,
-        },
-      };
-      break;
-    case bagActionTypes.CHANGE_FAN_POWER:
-      newState = {
-        ...state,
-        displayOptions: {
-          ...state.displayOptions,
-          fanPower: (!state.displayOptions.fanPower),
-        },
-      };
-      break;
-    case bagActionTypes.CHANGE_PATHS:
-      newState = {
-        ...state,
-        displayOptions: {
-          ...state.displayOptions,
-          pathsShown: action.paths,
-        },
-      };
-      break;
-    case bagActionTypes.CHANGE_LIE_DISTANCE:
-      newState = {
-        ...state,
-        displayOptions: {
-          ...state.displayOptions,
-          lieDistance: (!state.displayOptions.lieDistance),
-        },
-      };
-      break;
-    case bagActionTypes.CHANGE_LIE_CIRCLE:
-      newState = {
-        ...state,
-        displayOptions: {
-          ...state.displayOptions,
-          lieCircle: (!state.displayOptions.lieCircle),
-        },
       };
       break;
     case bagActionTypes.IMPORT_BAGS_FROM_FILE:

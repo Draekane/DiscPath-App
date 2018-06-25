@@ -1,21 +1,29 @@
+// External Imports
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import DocumentTitle from 'react-document-title';
 import _ from 'lodash';
-
+// Internal Imports
 import FlightMap from '../../components/map/flightMap';
 import BagContainer from '../bag';
 import Thrower from '../../components/menus/thrower';
 import DisplayOptions from '../../components/menus/displayOptions';
 import ImportExport from '../../components/menus/importExport';
+// Shapes
 import { companyShape } from '../../propTypeShapes/companyShapes';
 import { throwerShape, displayOptionsShape, bagShape } from '../../propTypeShapes/bagShapes';
-import * as CompanyActions from '../../actions/company';
+// Actions
 import * as BagActions from '../../actions/bag';
+import * as CompanyActions from '../../actions/company';
+import * as DisplayOptionActions from '../../actions/displayOptions';
 import * as MenuActions from '../../actions/menus';
+import * as ThrowerActions from '../../actions/thrower';
+// Selectors
 import { currentCompaniesSelector, currentSelectionSelector } from '../../selector/companiesSelector';
-import { throwerSelector, bagSelector, displayOptionsSelector, discTypesSelector } from '../../selector/bagSelector';
+import { bagSelector, discTypesSelector } from '../../selector/bagSelector';
+import { displayOptionsSelector } from '../../selector/displayOptionsSelector';
+import { throwerSelector } from '../../selector/throwerSelector';
 
 class SinglePane extends Component {
   componentWillMount() {
@@ -69,37 +77,37 @@ class SinglePane extends Component {
   handleChangeThrowerType = (throwerType) => {
     const { dispatch } = this.props;
 
-    dispatch(BagActions.changeThrowerType(throwerType));
+    dispatch(ThrowerActions.changeThrowerType(throwerType));
   }
 
   handleChangeThrowerPower = (throwerPower) => {
     const { dispatch } = this.props;
 
-    dispatch(BagActions.changeThrowerPower(throwerPower));
+    dispatch(ThrowerActions.changeThrowerPower(throwerPower));
   }
 
   handleChangeFanPower = () => {
     const { dispatch } = this.props;
 
-    dispatch(BagActions.changeFanPower());
+    dispatch(DisplayOptionActions.changeFanPower());
   }
 
   handleChangePaths = (paths) => {
     const { dispatch } = this.props;
 
-    dispatch(BagActions.changePaths(paths));
+    dispatch(DisplayOptionActions.changePaths(paths));
   }
 
   handleChangeLieDistance = () => {
     const { dispatch } = this.props;
 
-    dispatch(BagActions.changeLieDistance());
+    dispatch(DisplayOptionActions.changeLieDistance());
   }
 
   handleChangeLieCircle = () => {
     const { dispatch } = this.props;
 
-    dispatch(BagActions.changeLieCircles());
+    dispatch(DisplayOptionActions.changeLieCircles());
   }
 
   handleExportToFile = () => {

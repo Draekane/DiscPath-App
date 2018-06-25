@@ -255,7 +255,7 @@
 		} , {
 			"discId": "26af1b4c2c56012da7e4d0bde330b9b3",
 			"name": "Glide",
-			"type": "F",
+			"type": "M",
 			"range": 319,
 			"hst": -54,
 			"lsf": 16,
@@ -285,7 +285,7 @@
 		} , {
 			"discId": "7d486371bb65b0633535ceba4189d8ed",
 			"name": "Heat",
-			"type": "D",
+			"type": "F",
 			"range": 372,
 			"hst": -52,
 			"lsf": 22,
@@ -625,7 +625,7 @@
 		} , {
 			"discId": "44624033971ec6a5d099818ab8cfddb6",
 			"name": "Thrasher",
-			"type": "F",
+			"type": "D",
 			"range": 418,
 			"hst": -59,
 			"lsf": 39,

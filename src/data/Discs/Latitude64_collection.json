@@ -195,7 +195,7 @@
 		} , {
 			"discId": "02752885df8d50fc2f489ad17fcab9e8",
 			"name": "Fury",
-			"type": "D",
+			"type": "F",
 			"range": 367,
 			"hst": -36,
 			"lsf": 30,
@@ -385,7 +385,7 @@
 		} , {
 			"discId": "9f423c39b5906497d7be7fcc228a6554",
 			"name": "Primitus",
-			"type": "D",
+			"type": "F",
 			"range": 371,
 			"hst": 0,
 			"lsf": 67,
@@ -455,7 +455,7 @@
 		} , {
 			"discId": "26269474bc6e14f4f9449c36056d92d3",
 			"name": "Saint",
-			"type": "D",
+			"type": "F",
 			"range": 375,
 			"hst": -19,
 			"lsf": 40,
@@ -465,7 +465,7 @@
 		} , {
 			"discId": "f0bdc2abc9162784bd0ef705ffc2e55b",
 			"name": "Saint Pro",
-			"type": "D",
+			"type": "F",
 			"range": 357,
 			"hst": 0,
 			"lsf": 71,
@@ -535,7 +535,7 @@
 		} , {
 			"discId": "5588cb8830fdb8ac7159b7cf5d1e611e",
 			"name": "Striker",
-			"type": "D",
+			"type": "F",
 			"range": 382,
 			"hst": -14,
 			"lsf": 38,

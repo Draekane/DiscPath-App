@@ -5,7 +5,7 @@
 		{
 			"discId": "27f237e6b7f96587b6202ff3607ad88a",
 			"name": "A1",
-			"type": "M",
+			"type": "P",
 			"range": 273,
 			"hst": 0,
 			"lsf": 73,
@@ -15,7 +15,7 @@
 		} , {
 			"discId": "c6bdf6f65f3845da9085e9ae5790b494",
 			"name": "A2",
-			"type": "M",
+			"type": "P",
 			"range": 277,
 			"hst": 0,
 			"lsf": 55,
@@ -25,7 +25,7 @@
 		} , {
 			"discId": "6593d7b12fd418cdb35bbf438de72f66",
 			"name": "A3",
-			"type": "M",
+			"type": "P",
 			"range": 274,
 			"hst": -18,
 			"lsf": 36,
@@ -35,7 +35,7 @@
 		} , {
 			"discId": "0c2f3adf2a48bab3adb470f4da57f3d0",
 			"name": "A4",
-			"type": "M",
+			"type": "P",
 			"range": 273,
 			"hst": -36,
 			"lsf": 36,
@@ -155,7 +155,7 @@
 		} , {
 			"discId": "106530dc42baa21c67f8a3af4d7fd9e1",
 			"name": "H1",
-			"type": "D",
+			"type": "F",
 			"range": 345,
 			"hst": 19,
 			"lsf": 80,
@@ -165,7 +165,7 @@
 		} , {
 			"discId": "ca2bf3f6b7e18a508253e9521510a4b5",
 			"name": "H2",
-			"type": "D",
+			"type": "F",
 			"range": 348,
 			"hst": 0,
 			"lsf": 71,
@@ -175,7 +175,7 @@
 		} , {
 			"discId": "b14763210c3ab7284e9cbe731d7dc2a5",
 			"name": "H3",
-			"type": "D",
+			"type": "F",
 			"range": 348,
 			"hst": -9,
 			"lsf": 61,
@@ -185,7 +185,7 @@
 		} , {
 			"discId": "6b57370ba89bd88a2d6d819d65f6007a",
 			"name": "H4",
-			"type": "D",
+			"type": "F",
 			"range": 370,
 			"hst": -28,
 			"lsf": 54,
@@ -195,10 +195,10 @@
 		} , {
 			"discId": "830652084dda69b6b957e2c3a7bd9b18",
 			"name": "H5",
-			"type": "D",
+			"type": "F",
 			"range": 403,
-			"hst": 39,
-			"lsf": -39,
+			"hst": -39,
+			"lsf": 39,
 			"pdga": "Y",
 			"matrix_x": 5,
 			"matrix_y": 5

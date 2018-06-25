@@ -15,7 +15,7 @@
 		} , {
 			"discId": "27c7a71d1d7ddc13a9cf6d80b7827bc4",
 			"name": "#1 Flyer",
-			"type": "D",
+			"type": "F",
 			"range": 352,
 			"hst": -15,
 			"lsf": 41,
@@ -25,7 +25,7 @@
 		} , {
 			"discId": "4e664323e6601a9ba1c57ad00d3e7858",
 			"name": "#1 Helix",
-			"type": "D",
+			"type": "F",
 			"range": 347,
 			"hst": -19,
 			"lsf": 57,
@@ -85,7 +85,7 @@
 		} , {
 			"discId": "8443fc818215a5fde729a67f5d5d5452",
 			"name": "#2 Flyer",
-			"type": "D",
+			"type": "F",
 			"range": 348,
 			"hst": -25,
 			"lsf": 44,
@@ -95,7 +95,7 @@
 		} , {
 			"discId": "046d32ee6617e078bfd368c36ee4ce26",
 			"name": "#2 Helix",
-			"type": "D",
+			"type": "F",
 			"range": 363,
 			"hst": -15,
 			"lsf": 51,
@@ -155,7 +155,7 @@
 		} , {
 			"discId": "173f8fce9daa26cfb08fc88f5bfe91d0",
 			"name": "#2 Upshot",
-			"type": "M",
+			"type": "P",
 			"range": 247,
 			"hst": -18,
 			"lsf": 18,
@@ -225,7 +225,7 @@
 		} , {
 			"discId": "48cf24486d9a8e65a142b25682f19949",
 			"name": "Driver",
-			"type": "D",
+			"type": "F",
 			"range": 345,
 			"hst": -19,
 			"lsf": 57,

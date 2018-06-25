@@ -35,7 +35,7 @@
 		} , {
 			"discId": "4d79c341966242c047f3833289ee3a13",
 			"name": "Criminal",
-			"type": "F",
+			"type": "D",
 			"range": 376,
 			"hst": 19,
 			"lsf": 77,
@@ -105,7 +105,7 @@
 		} , {
 			"discId": "6d986e41efc21989b96792b4716a1794",
 			"name": "Felon",
-			"type": "D",
+			"type": "F",
 			"range": 355,
 			"hst": 3,
 			"lsf": 79,

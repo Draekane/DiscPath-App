@@ -25,7 +25,7 @@
 		} , {
 			"discId": "ea4903372166fdab4df55d5b4e46a27e",
 			"name": "100 M Lazer",
-			"type": "F",
+			"type": "D",
 			"range": 379,
 			"hst": -38,
 			"lsf": 38,
@@ -115,7 +115,7 @@
 		} , {
 			"discId": "44c0173a80cd2dab24c924cefdbbaebf",
 			"name": "Odyssey Power Driver",
-			"type": "D",
+			"type": "F",
 			"range": 369,
 			"hst": -28,
 			"lsf": 48,
@@ -135,7 +135,7 @@
 		} , {
 			"discId": "ab1e4b73eee2ddb33669feba986a3424",
 			"name": "Odyssey Ultra Long-Range Driver",
-			"type": "D",
+			"type": "F",
 			"range": 368,
 			"hst": -38,
 			"lsf": 35,
@@ -175,7 +175,7 @@
 		} , {
 			"discId": "f7e8d36587091bcdd5df7204e3ce8a56",
 			"name": "Scorcher",
-			"type": "D",
+			"type": "F",
 			"range": 368,
 			"hst": 12,
 			"lsf": 88,
@@ -205,7 +205,7 @@
 		} , {
 			"discId": "34a5fbac4557da3eee92b0b9312f6c87",
 			"name": "Scream Max",
-			"type": "D",
+			"type": "FGetMerchantClassStoreCatagories",
 			"range": 371,
 			"hst": 19,
 			"lsf": 57,

@@ -65,7 +65,7 @@
 		} , {
 			"discId": "d77d49c13fa357d3e951da9cfd01270d",
 			"name": "EXP1",
-			"type": "D",
+			"type": "F",
 			"range": 368,
 			"hst": 19,
 			"lsf": 76,
@@ -115,7 +115,7 @@
 		} , {
 			"discId": "89d4985fd9a24d7c5c7f3c0873c7d8d0",
 			"name": "Orion LF",
-			"type": "D",
+			"type": "F",
 			"range": 384,
 			"hst": -16,
 			"lsf": 48,
@@ -125,7 +125,7 @@
 		} , {
 			"discId": "e445c44738302f368201d1cb840d98e3",
 			"name": "Orion LS",
-			"type": "D",
+			"type": "F",
 			"range": 385,
 			"hst": -31,
 			"lsf": 38,

@@ -15,7 +15,7 @@
 		} , {
 			"discId": "7534759ceb94c0e91b13a22fe6e16980",
 			"name": "Bandit",
-			"type": "D",
+			"type": "F",
 			"range": 372,
 			"hst": -38,
 			"lsf": 21,
@@ -95,7 +95,7 @@
 		} , {
 			"discId": "cadcdedb567abae643e15dcf0974e503",
 			"name": "Mongoose",
-			"type": "D",
+			"type": "F",
 			"range": 371,
 			"hst": -54,
 			"lsf": 19,

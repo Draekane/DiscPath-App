@@ -55,7 +55,7 @@
 		} , {
 			"discId": "602a327d08d536809f44eb66d634f452",
 			"name": "RESPECTi",
-			"type": "D",
+			"type": "F",
 			"range": 350,
 			"hst": 0,
 			"lsf": 47,
@@ -105,7 +105,7 @@
 		} , {
 			"discId": "e2bb3f9679fec6d4836fcf8abcc3eeac",
 			"name": "Titan",
-			"type": "D",
+			"type": "F",
 			"range": 381,
 			"hst": 0,
 			"lsf": 58,

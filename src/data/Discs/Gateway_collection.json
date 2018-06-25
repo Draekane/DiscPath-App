@@ -15,7 +15,7 @@
 		} , {
 			"discId": "9b2dd2ace4fae2ba85df02e3ebf3f89e",
 			"name": "Assassin",
-			"type": "D",
+			"type": "F",
 			"range": 385,
 			"hst": -33,
 			"lsf": 26,
@@ -35,7 +35,7 @@
 		} , {
 			"discId": "897ee373c9e482f9a323fe188494520b",
 			"name": "Blaze",
-			"type": "F",
+			"type": "M",
 			"range": 334,
 			"hst": -4,
 			"lsf": 61,
@@ -85,7 +85,7 @@
 		} , {
 			"discId": "853e0fdc949d1097ca9a58ea3059aa6f",
 			"name": "Devil Hawk",
-			"type": "M",
+			"type": "P",
 			"range": 268,
 			"hst": 3,
 			"lsf": 36,
@@ -335,7 +335,7 @@
 		} , {
 			"discId": "3cfb5fa4e90be91638c9825dfa9f9e8a",
 			"name": "War Spear",
-			"type": "M",
+			"type": "P",
 			"range": 269,
 			"hst": -24,
 			"lsf": 12,

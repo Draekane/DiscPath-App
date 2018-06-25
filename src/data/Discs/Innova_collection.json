@@ -355,7 +355,7 @@
 		} , {
 			"discId": "583f4be146b6127f9e4f3f036ce7df43",
 			"name": "Dragon",
-			"type": "D",
+			"type": "F",
 			"range": 358,
 			"hst": -38,
 			"lsf": 40,
@@ -395,7 +395,7 @@
 		} , {
 			"discId": "859e00b3f78bddd5452dd5f4b5c869ba",
 			"name": "Firebird",
-			"type": "D",
+			"type": "F",
 			"range": 359,
 			"hst": 2,
 			"lsf": 76,
@@ -405,7 +405,7 @@
 		} , {
 			"discId": "bfab5516d2a78356d41c874c25e4caab",
 			"name": "Firebird-L (FL)",
-			"type": "D",
+			"type": "F",
 			"range": 361,
 			"hst": 0,
 			"lsf": 47,
@@ -515,7 +515,7 @@
 		} , {
 			"discId": "0a79d2e788f647cf8c8bee8cad4bf94e",
 			"name": "Hydra",
-			"type": "M",
+			"type": "P",
 			"range": 260,
 			"hst": 0,
 			"lsf": 36,
@@ -885,7 +885,7 @@
 		} , {
 			"discId": "ecd331596f91ddaac07c6e600ed166f1",
 			"name": "Rat",
-			"type": "P",
+			"type": "M",
 			"range": 271,
 			"hst": 0,
 			"lsf": 55,
@@ -915,7 +915,7 @@
 		} , {
 			"discId": "ee462bf6f7ec744a4b6507d6363035a0",
 			"name": "Roadrunner",
-			"type": "D",
+			"type": "F",
 			"range": 379,
 			"hst": -70,
 			"lsf": 19,
@@ -1005,7 +1005,7 @@
 		} , {
 			"discId": "e365b9c6ee6e24cb5e7162ba21c149c3",
 			"name": "Sidewinder",
-			"type": "D",
+			"type": "F",
 			"range": 379,
 			"hst": -55,
 			"lsf": 24,
@@ -1185,7 +1185,7 @@
 		} , {
 			"discId": "0af3f80a54716414f24a166e5c1b6c26",
 			"name": "Valkyrie",
-			"type": "D",
+			"type": "F6869",
 			"range": 378,
 			"hst": -38,
 			"lsf": 43,
@@ -1205,7 +1205,7 @@
 		} , {
 			"discId": "f48a8f161502989fca609408a80bd754",
 			"name": "Viking",
-			"type": "D",
+			"type": "F",
 			"range": 379,
 			"hst": -21,
 			"lsf": 41,
@@ -1365,7 +1365,7 @@
 		} , {
 			"discId": "85122087e3f252874f22ae45bf974115",
 			"name": "Zephyr",
-			"type": "M",
+			"type": "P",
 			"range": 264,
 			"hst": -9,
 			"lsf": 4,

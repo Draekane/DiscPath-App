@@ -1,18 +1,22 @@
+// External Imports
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import _ from 'lodash';
-
+// Internal Imports
 import CompanyDiscs from '../components/company/companyDiscs';
 import Bag from '../components/bag/bag';
 import EditDiscModal from '../components/bag/editDiscModal';
-
+// Shapes
 import { companyShape } from '../propTypeShapes/companyShapes';
 import { throwerShape, bagShape } from '../propTypeShapes/bagShapes';
+// Actions
 import * as CompanyActions from '../actions/company';
 import * as BagActions from '../actions/bag';
+// Selectors
 import { currentCompaniesSelector, currentSelectionSelector } from '../selector/companiesSelector';
-import { throwerSelector, bagSelector, discTypesSelector } from '../selector/bagSelector';
+import { bagSelector, discTypesSelector } from '../selector/bagSelector';
+import { throwerSelector } from '../selector/throwerSelector';
 
 class BagContainer extends Component {
     getDiscById = (discId) => {
@@ -252,10 +256,11 @@ BagContainer.propTypes = {
   companies: PropTypes.arrayOf(companyShape),
   currentSelection: PropTypes.string,
   currentBags: PropTypes.arrayOf(bagShape),
-  discTypes: PropTypes.shape({
+  discTypes: PropTypes.arrayOf(PropTypes.shape({
     discType: PropTypes.string,
     enabled: PropTypes.bool,
-  }),
+    title: PropTypes.string,
+  })),
   dispatch: PropTypes.func,
   selectedBagId: PropTypes.number,
   editingDiscId: PropTypes.number,
@@ -267,7 +272,7 @@ BagContainer.propTypes = {
 BagContainer.defaultProps = {
   currentSelection: null,
   currentBags: [],
-  discTypes: null,
+  discTypes: [],
   selectedBagId: 1,
   editingDiscId: 0,
   addBag: false,

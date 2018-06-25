@@ -1,3 +1,6 @@
+// External Imports
+import _ from 'lodash';
+// Internal Imports
 import * as bagActionTypes from '../actionTypes/bag';
 
 export const loadDisc = disc => ({
@@ -25,33 +28,6 @@ export const setDiscWear = wear => ({
 export const removeDiscFromBag = baggedDiscId => ({
   type: bagActionTypes.REMOVE_DISC_FROM_BAG,
   baggedDiscId,
-});
-
-export const changeThrowerType = throwerType => ({
-  type: bagActionTypes.CHANGE_THROWER_TYPE,
-  throwerType,
-});
-
-export const changeThrowerPower = throwerPower => ({
-  type: bagActionTypes.CHANGE_THROWER_POWER,
-  throwerPower,
-});
-
-export const changeFanPower = () => ({
-  type: bagActionTypes.CHANGE_FAN_POWER,
-});
-
-export const changePaths = paths => ({
-  type: bagActionTypes.CHANGE_PATHS,
-  paths,
-});
-
-export const changeLieDistance = () => ({
-  type: bagActionTypes.CHANGE_LIE_DISTANCE,
-});
-
-export const changeLieCircles = () => ({
-  type: bagActionTypes.CHANGE_LIE_CIRCLE,
 });
 
 export const exportBagsToFile = () => ({
@@ -138,3 +114,32 @@ export const shrinkMap = () => ({
 export const resetMap = () => ({
   type: bagActionTypes.RESET_MAP,
 });
+
+export const checkBagForUpdates = (companies, bag) => {
+  const updateBag = {
+    ...bag,
+    bags: _.map(bag.bags, bag2 => ({
+      ...bag2,
+      discs: _.map(bag2.discs, (disc) => {
+        const companySet = _.find(companies, comp => comp.company === disc.company);
+        const updateDisc = _.find(companySet.discs, cdisc => cdisc.discId === disc.discId);
+        return {
+          ...disc,
+          hst: updateDisc.hst,
+          lsf: updateDisc.lsf,
+          range: updateDisc.range,
+          type: updateDisc.type,
+          maxWeight: updateDisc.maxWeight,
+          pdga: updateDisc.pdga,
+          matrix_x: updateDisc.matrix_x,
+          matrix_y: updateDisc.matrix_y,
+        };
+      }),
+    })),
+  };
+
+  return {
+    type: bagActionTypes.CHECK_BAG_FOR_UPDATES,
+    updateBag,
+  };
+};

@@ -12,14 +12,6 @@ describe('Bag Reducer Test', () => {
   describe('Initialization', () => {
     it('Should not be empty', () => {
       expect(initialState.bags.length).toEqual(1);
-      expect(initialState.thrower).toBeDefined();
-      expect(initialState.thrower.throwType).toEqual('rhbh');
-      expect(initialState.thrower.power).toEqual(32);
-      expect(initialState.displayOptions).toBeDefined();
-      expect(initialState.displayOptions.fanPower).toBeTruthy();
-      expect(initialState.displayOptions.lieDistance).toBeTruthy();
-      expect(initialState.displayOptions.lieCircle).toBeTruthy();
-      expect(initialState.displayOptions.pathsShown).toEqual('one');
       expect(initialState.lastDiscId).toEqual(0);
       expect(initialState.lastBagId).toEqual(1);
       expect(initialState.selectedBagId).toEqual(1);
@@ -93,78 +85,6 @@ describe('Bag Reducer Test', () => {
 
       expect(target.addBag).toBeTruthy();
       expect(target.updateBag).toBeFalsy();
-    });
-  });
-
-  describe('CHANGE_FAN_POWER', () => {
-    it('Should change the Display Option Fan Power Display', () => {
-      const testInitialState = _.cloneDeep(initialState);
-      const action = bagActions.changeFanPower(false);
-
-      const target = bagReducer(testInitialState, action);
-
-      expect(target.displayOptions).toBeDefined();
-      expect(target.displayOptions.fanPower).toBeFalsy();
-    });
-  });
-
-  describe('CHANGE_LIE_CIRCLE', () => {
-    it('Should change the Display Option Lie Circle Display', () => {
-      const testInitialState = _.cloneDeep(initialState);
-      const action = bagActions.changeLieCircles(false);
-
-      const target = bagReducer(testInitialState, action);
-
-      expect(target.displayOptions).toBeDefined();
-      expect(target.displayOptions.lieCircle).toBeFalsy();
-    });
-  });
-
-  describe('CHANGE_LIE_DISTANCE', () => {
-    it('Should change the Display Option Lie Distance Display', () => {
-      const testInitialState = _.cloneDeep(initialState);
-      const action = bagActions.changeLieDistance(false);
-
-      const target = bagReducer(testInitialState, action);
-
-      expect(target.displayOptions).toBeDefined();
-      expect(target.displayOptions.lieDistance).toBeFalsy();
-    });
-  });
-
-  describe('CHANGE_PATHS', () => {
-    it('Should change the Display Option Paths to Display', () => {
-      const testInitialState = _.cloneDeep(initialState);
-      const action = bagActions.changePaths('none');
-
-      const target = bagReducer(testInitialState, action);
-
-      expect(target.displayOptions).toBeDefined();
-      expect(target.displayOptions.pathsShown).toEqual('none');
-    });
-  });
-
-  describe('CHANGE_THROWER_POWER', () => {
-    it('Should change the high-level Thrower Power', () => {
-      const testInitialState = _.cloneDeep(initialState);
-      const action = bagActions.changeThrowerPower(27);
-
-      const target = bagReducer(testInitialState, action);
-
-      expect(target.thrower).toBeDefined();
-      expect(target.thrower.power).toEqual(27);
-    });
-  });
-
-  describe('CHANGE_THROWER_TYPE', () => {
-    it('Should change the high-level Thrower Type', () => {
-      const testInitialState = _.cloneDeep(initialState);
-      const action = bagActions.changeThrowerType('lhbh');
-
-      const target = bagReducer(testInitialState, action);
-
-      expect(target.thrower).toBeDefined();
-      expect(target.thrower.throwType).toEqual('lhbh');
     });
   });
 

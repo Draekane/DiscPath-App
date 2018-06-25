@@ -256,10 +256,11 @@ BagContainer.propTypes = {
   companies: PropTypes.arrayOf(companyShape),
   currentSelection: PropTypes.string,
   currentBags: PropTypes.arrayOf(bagShape),
-  discTypes: PropTypes.shape({
+  discTypes: PropTypes.arrayOf(PropTypes.shape({
     discType: PropTypes.string,
     enabled: PropTypes.bool,
-  }),
+    title: PropTypes.string,
+  })),
   dispatch: PropTypes.func,
   selectedBagId: PropTypes.number,
   editingDiscId: PropTypes.number,
@@ -271,7 +272,7 @@ BagContainer.propTypes = {
 BagContainer.defaultProps = {
   currentSelection: null,
   currentBags: [],
-  discTypes: null,
+  discTypes: [],
   selectedBagId: 1,
   editingDiscId: 0,
   addBag: false,

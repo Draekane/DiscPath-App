@@ -28,3 +28,5 @@ export const EDIT_DISC_THROW_TYPE = 'EDIT_DISC_THROW_TYPE';
 export const ENLARG_MAP = 'ENLARGE_MAP';
 export const SHRINK_MAP = 'SHRINK_MAP';
 export const RESET_MAP = 'RESET_MAP';
+
+export const CHECK_BAG_FOR_UPDATES = 'CHECK_BAG_FOR_UPDATES';

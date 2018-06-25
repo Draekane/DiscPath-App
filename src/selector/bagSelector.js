@@ -13,9 +13,9 @@ export const bagSelector = createSelector(
 );
 
 const getDiscTypes = (state) => {
-  const discTypes = get(state, 'bag.discTypes', null);
+  const discTypes = get(state, 'bag.discTypes', []);
 
-  return !isEmpty(discTypes) ? discTypes : null;
+  return !isEmpty(discTypes) ? discTypes : [];
 };
 
 export const discTypesSelector = createSelector(

@@ -305,7 +305,11 @@ FlightMap.propTypes = {
   thrower: PropTypes.shape(throwerShape),
   displayOptions: PropTypes.shape(displayOptionsShape),
   zoom: PropTypes.number,
-  functions: PropTypes.arrayOf(PropTypes.Func),
+  functions: PropTypes.shape({
+    handleMapEnlarge: PropTypes.func,
+    handleMapShrink: PropTypes.func,
+    handleMapReset: PropTypes.func,
+  }),
 };
 
 FlightMap.defaultProps = {

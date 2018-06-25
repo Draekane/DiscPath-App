@@ -80,7 +80,11 @@ Bag.propTypes = {
   props: PropTypes.shape({
     bags: PropTypes.arrayOf(bagShape),
     selectedBagId: PropTypes.number,
-    discTypes: PropTypes.shape({ discType: PropTypes.string, enabled: PropTypes.bool }),
+    discTypes: PropTypes.arrayOf(PropTypes.shape({
+      discType: PropTypes.string,
+      enabled: PropTypes.bool,
+      title: PropTypes.string,
+    })),
     addBag: PropTypes.bool,
     updateBag: PropTypes.bool,
     functiones: PropTypes.shape({

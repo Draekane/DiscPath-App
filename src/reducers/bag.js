@@ -22,17 +22,18 @@ const initialState = {
   addBag: false,
   updateBag: false,
   discTypes,
+  ranUpdateCheck: false,
 };
 
 const localStoreName = 'Discpath.CurrentState';
 
 const getInitialState = () => {
+  let newState = initialState;
   const savedState = localStorage.getItem(localStoreName);
-
   if (savedState !== null && savedState !== undefined) {
-    return JSON.parse(savedState);
+    newState = { ...JSON.parse(savedState), ranUpdateCheck: false };
   }
-  return initialState;
+  return newState;
 };
 
 const saveToLocalStore = (updateState) => {
@@ -328,6 +329,12 @@ const disc = (state = getInitialState(), action = {}) => {
       newState = {
         ...state,
         zoom: 1,
+      };
+      break;
+    case bagActionTypes.CHECK_BAG_FOR_UPDATES:
+      newState = {
+        ...action.updateBag,
+        ranUpdateCheck: true,
       };
       break;
     default:

@@ -14,7 +14,6 @@ export const loadCompanies = () => {
     let companyWeight = null;
     let discsWeight = null;
 
-    console.log(filename);
     if (_.includes(weightDataKeys, filename)) {
       companyWeight = weightData(filename);
       discsWeight = companyWeight.discs;

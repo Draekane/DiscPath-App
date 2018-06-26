@@ -151,7 +151,6 @@ class BagSetup extends Component {
   render() {
     const {
       pageTitle,
-      pageHeader,
       thrower,
       displayOptions,
       bag,
@@ -173,25 +172,7 @@ class BagSetup extends Component {
     const content = (
       <DocumentTitle title={pageTitle}>
         <React.Fragment>
-          <header className="App-header grid-item-header">
-            <h1 className="App-title">{pageHeader}</h1>
-            To report problems or offer suggestions&nbsp;
-            <a
-              href="https://github.com/MichaelPalmer-Orange/DiscPath-App/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="help-request"
-            >click here
-            </a><br />
-            To view documentation and ask questions&nbsp;
-            <a
-              href="https://discpath.readme.io/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="help-request"
-            >click here
-            </a>
-          </header>
+          
           <div className="workspace-container grid-container" >
             <div className="grid-item-credits">
               Disc flight information from&nbsp;
@@ -253,7 +234,6 @@ class BagSetup extends Component {
 
 BagSetup.propTypes = {
   pageTitle: PropTypes.string,
-  pageHeader: PropTypes.string,
   companies: PropTypes.arrayOf(companyShape),
   bag: PropTypes.shape({
     bags: PropTypes.arrayOf(bagShape),
@@ -283,7 +263,6 @@ BagSetup.propTypes = {
 
 BagSetup.defaultProps = {
   pageTitle: 'DiscPath',
-  pageHeader: 'Experimental Disc Golf Flight Path Visualizer',
   companies: [],
   bag: {},
   thrower: null,

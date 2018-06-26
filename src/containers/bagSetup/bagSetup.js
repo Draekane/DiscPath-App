@@ -2,7 +2,6 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
 import DocumentTitle from 'react-document-title';
 import _ from 'lodash';
 // Internal Imports
@@ -310,9 +309,4 @@ const mapStateToProps = state => ({
   importExportModal: state.menus.importExportModal,
 });
 
-const withWrappers = _.flowRight([
-  connect(mapStateToProps),
-  withRouter,
-]);
-
-export default withWrappers(BagSetup);
+export default connect(mapStateToProps)(BagSetup);

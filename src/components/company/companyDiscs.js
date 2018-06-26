@@ -3,6 +3,7 @@ import React from 'react';
 import _ from 'lodash';
 import Select from 'react-select';
 import { FaThumbsUp } from 'react-icons/lib/fa';
+import PDGA from '../../img/pdga.png';
 
 import { companyShape } from '../../propTypeShapes/companyShapes';
 
@@ -34,7 +35,7 @@ const CompanyDiscs = ({ companies, currentSelection, onSelectHandler }) => {
 
   const renderOptionItem = (isPdga, label) => {
     let pdgaImg = null;
-    if (isPdga) pdgaImg = (<span className="pdgaApproval" >(PDGA <FaThumbsUp />)</span>);
+    if (isPdga) pdgaImg = (<img className="pdgaApproval" alt="PDGA Approved" src={PDGA} />);
 
     return <div className="Select-value" >{label}{pdgaImg}</div>;
   };

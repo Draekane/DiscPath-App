@@ -4,19 +4,19 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import _ from 'lodash';
 // Internal Imports
-import CompanyDiscs from '../components/company/companyDiscs';
-import Bag from '../components/bag/bag';
-import EditDiscModal from '../components/bag/editDiscModal';
+import CompanyDiscs from '../../components/company/companyDiscs';
+import Bag from '../../components/bag/bag';
+import EditDiscModal from '../../components/bag/editDiscModal';
 // Shapes
-import { companyShape } from '../propTypeShapes/companyShapes';
-import { throwerShape, bagShape } from '../propTypeShapes/bagShapes';
+import { companyShape } from '../../propTypeShapes/companyShapes';
+import { throwerShape, bagShape } from '../../propTypeShapes/bagShapes';
 // Actions
-import * as CompanyActions from '../actions/company';
-import * as BagActions from '../actions/bag';
+import * as CompanyActions from '../../actions/company';
+import * as BagActions from '../../actions/bag';
 // Selectors
-import { currentCompaniesSelector, currentSelectionSelector } from '../selector/companiesSelector';
-import { bagSelector, discTypesSelector } from '../selector/bagSelector';
-import { throwerSelector } from '../selector/throwerSelector';
+import { currentCompaniesSelector, currentSelectionSelector } from '../../selector/companiesSelector';
+import { bagSelector, discTypesSelector } from '../../selector/bagSelector';
+import { throwerSelector } from '../../selector/throwerSelector';
 
 class BagContainer extends Component {
     getDiscById = (discId) => {

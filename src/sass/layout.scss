@@ -13,6 +13,52 @@
     font-size: large;
 }
 
+.lower {
+    display: flex;
+    position: relative;
+    flex: 1 1 auto;
+    overflow-y: auto;
+}
+
+.sidebar {
+    width: 60px;
+    min-width: 60px; // prevent sidebar from shrinking on small screens
+    background-color: black;
+}
+
+.main-container {
+    width: 100%;
+}
+
+.header-image {
+    height: 40px;
+    width: 40px;
+    margin-left: 0px;
+    margin-top: 0px;
+    border: 1px solid white;
+}
+
+.list-accordion { padding: 0; }
+
+ul.list-accordion {
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+}
+
+.nav-image {
+    opacity: 1;
+
+    a img {
+        top: 7px;
+        left: 5px;
+        width: 40px;
+        height: 40px;
+        padding: 4px;
+        position: inherit;
+    }
+}
+
 .help-request {
     color: grey;
 
@@ -78,7 +124,8 @@
 
 .pdgaApproval {
     font-size: x-small;
-    color:green;
+    height: 20px;
+    margin: -5px;
     padding-left: 20px;
 }
 

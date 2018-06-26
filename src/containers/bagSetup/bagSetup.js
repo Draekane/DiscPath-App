@@ -6,10 +6,11 @@ import DocumentTitle from 'react-document-title';
 import _ from 'lodash';
 // Internal Imports
 import FlightMap from '../../components/map/flightMap';
-import BagContainer from '../bag';
+import BagContainer from './bag';
 import Thrower from '../../components/menus/thrower';
 import DisplayOptions from '../../components/menus/displayOptions';
 import ImportExport from '../../components/menus/importExport';
+import WithHeaderAndNav from '../../components/layout/withHeaderAndNav';
 // Shapes
 import { companyShape } from '../../propTypeShapes/companyShapes';
 import { throwerShape, displayOptionsShape, bagShape } from '../../propTypeShapes/bagShapes';
@@ -25,7 +26,7 @@ import { discTypesSelector } from '../../selector/bagSelector';
 import { displayOptionsSelector } from '../../selector/displayOptionsSelector';
 import { throwerSelector } from '../../selector/throwerSelector';
 
-class SinglePane extends Component {
+class BagSetup extends Component {
   componentWillMount() {
     const { dispatch } = this.props;
     dispatch(CompanyActions.loadCompanies());
@@ -151,7 +152,6 @@ class SinglePane extends Component {
   render() {
     const {
       pageTitle,
-      pageHeader,
       thrower,
       displayOptions,
       bag,
@@ -173,25 +173,6 @@ class SinglePane extends Component {
     const content = (
       <DocumentTitle title={pageTitle}>
         <React.Fragment>
-          <header className="App-header grid-item-header">
-            <h1 className="App-title">{pageHeader}</h1>
-            To report problems or offer suggestions&nbsp;
-            <a
-              href="https://github.com/MichaelPalmer-Orange/DiscPath-App/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="help-request"
-            >click here
-            </a><br />
-            To view documentation and ask questions&nbsp;
-            <a
-              href="https://discpath.readme.io/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="help-request"
-            >click here
-            </a>
-          </header>
           <div className="workspace-container grid-container" >
             <div className="grid-item-credits">
               Disc flight information from&nbsp;
@@ -251,9 +232,8 @@ class SinglePane extends Component {
 }
 
 
-SinglePane.propTypes = {
+BagSetup.propTypes = {
   pageTitle: PropTypes.string,
-  pageHeader: PropTypes.string,
   companies: PropTypes.arrayOf(companyShape),
   bag: PropTypes.shape({
     bags: PropTypes.arrayOf(bagShape),
@@ -281,9 +261,8 @@ SinglePane.propTypes = {
   importExportModal: PropTypes.bool,
 };
 
-SinglePane.defaultProps = {
+BagSetup.defaultProps = {
   pageTitle: 'DiscPath',
-  pageHeader: 'Experimental Disc Golf Flight Path Visualizer',
   companies: [],
   bag: {},
   thrower: null,
@@ -309,4 +288,6 @@ const mapStateToProps = state => ({
   importExportModal: state.menus.importExportModal,
 });
 
-export default connect(mapStateToProps)(SinglePane);
+const withWrappers = _.flowRight(connect(mapStateToProps), [WithHeaderAndNav]);
+
+export default withWrappers(BagSetup);

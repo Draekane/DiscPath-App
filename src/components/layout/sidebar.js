@@ -1,47 +1,37 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import _ from 'lodash';
+import Backpack from '../../img/Backpack_White.png';
+import SimilarDisc from '../../img/SimilarDisc_White.png';
 
 const APPNAV_ROUTES = [
   {
     navTitle: 'Bag Setup',
-    path: '/bagSetup',
-    id: 'bagSetupLink',
+    path: 'bagSetup',
+    image: {
+      src: Backpack,
+      altText: 'Backpack_White.png',
+    },
   },
   {
     navTitle: 'Similar Disc',
     path: '/similarDisc',
-    id: 'similarDiscLink',
+    image: {
+      src: SimilarDisc,
+      altText: 'SimilarDisc_White.png',
+    },
   },
 ];
 
 class SideBar extends React.Component {
-  buildNavBarItem({ RoutePermissions, FeatureFlags }, route = null, index = 0) {
+  buildNavBarItem(route = null, index = 0) {
     if (route === null) {
       return [];
     }
 
     const navbarItems = [];
-    const navKey = `nav_${index + 1}`;
-    navbarItems.push(<li key={navKey} className="list-title">{route.navTitle}</li>);
-
-    const childRoutes = [];
-    if (route.routes) {
-      route.routes.forEach((childRoute) => {
-        if (this.userHasFeaturePermissions(childRoute.feature, FeatureFlags) &&
-            this.userHasRoutePermissions(RoutePermissions, route.permissions)) {
-          const childNavKey = `ChildNavKey_${childRoute.path}`;
-          childRoutes.push(
-            <li key={childNavKey}>
-              <Link
-                to={childRoute.path}
-                target={childRoute.linkType === 'external' ? childRoute.target : null}
-              >{childRoute.navTitle}
-              </Link>
-            </li>);
-        }
-      });
-    }
+    // const navKey = `nav_${index + 1}`;
+    // navbarItems.push(<li key={navKey} >{route.navTitle}</li>);
 
     const menuNavKey = `menu_nav_${index + 1}`;
 
@@ -54,7 +44,7 @@ class SideBar extends React.Component {
         key={menuNavKey}
       >
         <Link to={route.path} >
-          <img alt={route.image.src} src={route.image.src} />
+          <img alt={route.image.altText} src={route.image.src} />
           <span className="list-label">{route.navTitle}</span>
         </Link>
       </li>);
@@ -64,7 +54,7 @@ class SideBar extends React.Component {
 
   configureNavbar() {
     const navbarItems = [];
-    APPNAV_ROUTES.forEach((route, index) => {
+    _.forEach(APPNAV_ROUTES, (route, index) => {
       const items = this.buildNavBarItem(route, index);
       navbarItems.push(...items);
     });

@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import DocumentTitle from 'react-document-title';
+import _ from 'lodash';
+
+import WithHeaderAndNav from '../../components/layout/withHeaderAndNav';
 
 class SimilarDisc extends Component {
   render() {
@@ -33,4 +36,6 @@ const mapStateToProps = state => ({
   dispatch: state.dispatch,
 });
 
-export default connect(mapStateToProps)(SimilarDisc);
+const withWrappers = _.flowRight(connect(mapStateToProps), [WithHeaderAndNav]);
+
+export default withWrappers(SimilarDisc);

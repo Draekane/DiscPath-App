@@ -1,13 +1,13 @@
 /* eslint-disable react/prefer-stateless-function */
 
 import PropTypes from 'prop-types';
-
 import React from 'react';
+import { connect } from 'react-redux';
 
 import Header from './header';
 import Sidebar from './sidebar';
 
-const MainPage = (WrappedComponent) => {
+const WithHeaderAndNav = (WrappedComponent) => {
   const WithHeaderAndNavContainer = (props) => {
     const {
       dispatch,
@@ -33,7 +33,13 @@ const MainPage = (WrappedComponent) => {
     dispatch: PropTypes.func.isRequired,
   };
 
-  return WithHeaderAndNavContainer;
+  function select(state) {
+    return {
+      dispatch: state.dispatch,
+    };
+  }
+
+  return connect(select)(WithHeaderAndNavContainer);
 };
 
-export default MainPage;
+export default WithHeaderAndNav;

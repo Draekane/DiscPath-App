@@ -10,6 +10,7 @@ import BagContainer from './bag';
 import Thrower from '../../components/menus/thrower';
 import DisplayOptions from '../../components/menus/displayOptions';
 import ImportExport from '../../components/menus/importExport';
+import WithHeaderAndNav from '../../components/layout/withHeaderAndNav';
 // Shapes
 import { companyShape } from '../../propTypeShapes/companyShapes';
 import { throwerShape, displayOptionsShape, bagShape } from '../../propTypeShapes/bagShapes';
@@ -172,7 +173,6 @@ class BagSetup extends Component {
     const content = (
       <DocumentTitle title={pageTitle}>
         <React.Fragment>
-          
           <div className="workspace-container grid-container" >
             <div className="grid-item-credits">
               Disc flight information from&nbsp;
@@ -288,4 +288,6 @@ const mapStateToProps = state => ({
   importExportModal: state.menus.importExportModal,
 });
 
-export default connect(mapStateToProps)(BagSetup);
+const withWrappers = _.flowRight(connect(mapStateToProps), [WithHeaderAndNav]);
+
+export default withWrappers(BagSetup);

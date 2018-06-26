@@ -2,11 +2,12 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import DocumentTitle from 'react-document-title';
 import _ from 'lodash';
 // Internal Imports
 import FlightMap from '../../components/map/flightMap';
-import BagContainer from '../bag';
+import BagContainer from './bag';
 import Thrower from '../../components/menus/thrower';
 import DisplayOptions from '../../components/menus/displayOptions';
 import ImportExport from '../../components/menus/importExport';
@@ -25,7 +26,7 @@ import { discTypesSelector } from '../../selector/bagSelector';
 import { displayOptionsSelector } from '../../selector/displayOptionsSelector';
 import { throwerSelector } from '../../selector/throwerSelector';
 
-class SinglePane extends Component {
+class BagSetup extends Component {
   componentWillMount() {
     const { dispatch } = this.props;
     dispatch(CompanyActions.loadCompanies());
@@ -251,7 +252,7 @@ class SinglePane extends Component {
 }
 
 
-SinglePane.propTypes = {
+BagSetup.propTypes = {
   pageTitle: PropTypes.string,
   pageHeader: PropTypes.string,
   companies: PropTypes.arrayOf(companyShape),
@@ -281,7 +282,7 @@ SinglePane.propTypes = {
   importExportModal: PropTypes.bool,
 };
 
-SinglePane.defaultProps = {
+BagSetup.defaultProps = {
   pageTitle: 'DiscPath',
   pageHeader: 'Experimental Disc Golf Flight Path Visualizer',
   companies: [],
@@ -309,4 +310,9 @@ const mapStateToProps = state => ({
   importExportModal: state.menus.importExportModal,
 });
 
-export default connect(mapStateToProps)(SinglePane);
+const withWrappers = _.flowRight([
+  connect(mapStateToProps),
+  withRouter,
+]);
+
+export default withWrappers(BagSetup);

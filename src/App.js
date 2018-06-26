@@ -1,19 +1,32 @@
-import React, { Component } from 'react';
+// import PropTypes from 'prop-types';
+import React from 'react';
+import { hot } from 'react-hot-loader';
+import { Switch } from 'react-router-dom';
+import { ConnectedRouter } from 'react-router-redux';
+
 import 'babel-register';
 import 'react-table/react-table.css';
 import 'react-rangeslider/lib/index.css';
 import '../node_modules/react-select/dist/react-select.css';
 import './App.css';
-import SinglePane from './containers/layout/singlePane';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <SinglePane companies={null} />
+import Routing from './app/routing';
+
+const App = () => {
+  const dataReactRootProperty = { 'data-reactroot': '' };
+  return (
+    <ConnectedRouter>
+      <div {...dataReactRootProperty} >
+        <Switch>
+          <Routing />
+        </Switch>
       </div>
-    );
-  }
-}
+    </ConnectedRouter>
+  );
+};
 
-export default App;
+// App.PropTypes = {
+
+// };
+
+export default hot(module)(App);

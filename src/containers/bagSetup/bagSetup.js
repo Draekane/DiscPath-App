@@ -172,50 +172,49 @@ class BagSetup extends Component {
 
     const content = (
       <DocumentTitle title={`DiscPath: ${pageTitle}`} >
-        <React.Fragment>
-          <div className="workspace-container grid-container" >
-            <div className="pageTitle-header">{pageTitle}</div>
-            <div className="grid-item-menu" >
-              <button onClick={this.handleToggleThrowerModal} >Thrower</button>
-              <button onClick={this.handleToggleDisplayOptionModal}>Display Options</button>
-              <button onClick={this.handleToggleImportExportModal}>Import/Export</button>
-            </div>
-            <div className="grid-item1 grid-item">
-              <FlightMap
-                discs={currentBag.discs}
-                thrower={thrower}
-                displayOptions={displayOptions}
-                zoom={zoom}
-                functions={mapFunctions}
-              />
-            </div>
-            <div className="grid-item2 grid-item">
-              <BagContainer state />
-            </div>
-            <Thrower
+        <div className="workspace-container grid-container" >
+          <div className="pageTitle-header">{pageTitle}</div>
+          <div className="grid-item-menu" >
+            <button onClick={this.handleToggleThrowerModal} >Thrower</button>
+            <button onClick={this.handleToggleDisplayOptionModal}>Display Options</button>
+            <button onClick={this.handleToggleImportExportModal}>Import/Export</button>
+          </div>
+          <div className="grid-item1 grid-item">
+            <FlightMap
+              id="discSetupMap"
+              discs={currentBag.discs}
               thrower={thrower}
-              changePower={this.handleChangeThrowerPower}
-              changeThrowerType={this.handleChangeThrowerType}
-              openModal={throwerModal}
-              closeModal={this.handleToggleThrowerModal}
-            />
-            <DisplayOptions
-              options={displayOptions}
-              changeFanPower={this.handleChangeFanPower}
-              changePaths={this.handleChangePaths}
-              changeDistance={this.handleChangeLieDistance}
-              changeCircles={this.handleChangeLieCircle}
-              openModal={displayOptionModal}
-              closeModal={this.handleToggleDisplayOptionModal}
-            />
-            <ImportExport
-              importFunction={this.handleImportFromFile}
-              exportFunction={this.handleExportToFile}
-              openModal={importExportModal}
-              closeModal={this.handleToggleImportExportModal}
+              displayOptions={displayOptions}
+              zoom={zoom}
+              functions={mapFunctions}
             />
           </div>
-        </React.Fragment>
+          <div className="grid-item2 grid-item">
+            <BagContainer state />
+          </div>
+          <Thrower
+            thrower={thrower}
+            changePower={this.handleChangeThrowerPower}
+            changeThrowerType={this.handleChangeThrowerType}
+            openModal={throwerModal}
+            closeModal={this.handleToggleThrowerModal}
+          />
+          <DisplayOptions
+            options={displayOptions}
+            changeFanPower={this.handleChangeFanPower}
+            changePaths={this.handleChangePaths}
+            changeDistance={this.handleChangeLieDistance}
+            changeCircles={this.handleChangeLieCircle}
+            openModal={displayOptionModal}
+            closeModal={this.handleToggleDisplayOptionModal}
+          />
+          <ImportExport
+            importFunction={this.handleImportFromFile}
+            exportFunction={this.handleExportToFile}
+            openModal={importExportModal}
+            closeModal={this.handleToggleImportExportModal}
+          />
+        </div>
       </DocumentTitle>
     );
 

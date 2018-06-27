@@ -29,7 +29,7 @@ SimilarDisc.propTypes = {
 };
 
 SimilarDisc.defaultProps = {
-  pageTitle: 'Similar Disc',
+  pageTitle: 'DiscPath: Similar Disc',
 };
 
 const mapStateToProps = state => ({

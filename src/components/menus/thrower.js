@@ -45,7 +45,7 @@ const Thrower = ({
       onRequestClose={closeModal}
       style={customStyles}
     >
-      <FaClose onClick={closeModal} color="red" style={{ float: 'right', 'z-index': '100' }} />
+      <FaClose onClick={closeModal} className="fa-close-icon" />
       <div className="title-block" >
       Thrower:
       </div>

@@ -20,18 +20,18 @@ const DisplayOptions = ({
   };
 
   const getCurrentSpread = (fanPower) => {
-    if (fanPower) return (<FaToggleOn onClick={changeFanPower} color="blue" />);
-    return (<FaToggleOff onClick={changeFanPower} color="darkBlue" />);
+    if (fanPower) return (<FaToggleOn onClick={changeFanPower} className="fa-toggle-on-icon" />);
+    return (<FaToggleOff onClick={changeFanPower} className="fa-toggle-on-icon" />);
   };
 
   const getLabels = (lieDistance) => {
-    if (lieDistance) return (<FaToggleOn onClick={changeDistance} color="blue" />);
-    return (<FaToggleOff onClick={changeDistance} color="darkBlue" />);
+    if (lieDistance) return (<FaToggleOn onClick={changeDistance} className="fa-toggle-on-icon" />);
+    return (<FaToggleOff onClick={changeDistance} className="fa-toggle-on-icon" />);
   };
 
   const getCircles = (lieCircle) => {
-    if (lieCircle) return (<FaToggleOn onClick={changeCircles} color="blue" />);
-    return (<FaToggleOff onClick={changeCircles} color="darkBlue" />);
+    if (lieCircle) return (<FaToggleOn onClick={changeCircles} className="fa-toggle-on-icon" />);
+    return (<FaToggleOff onClick={changeCircles} className="fa-toggle-on-icon" />);
   };
 
   const pathsOptions = [
@@ -68,7 +68,7 @@ const DisplayOptions = ({
       onRequestClose={closeModal}
       style={customStyles}
     >
-      <FaClose onClick={closeModal} color="red" style={{ float: 'right', 'z-index': '100' }} />
+      <FaClose onClick={closeModal} className="fa-close-icon" />
       <div className="title-block" >Display Options:</div>
       <div className="display-options" >
         <div className="display-options-item item1" >

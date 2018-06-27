@@ -1,3 +1,4 @@
+@import "./sass/variables/colors.scss";
 @import "./sass/bag.scss";
 @import "./sass/displayOptions.scss";
 @import "./sass/layout.scss";
@@ -6,13 +7,80 @@
 @import "./sass/rangeslider.scss";
 @import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Open+Sans|Skranji');
 
+html {
+  min-height: 100%;
+  position: relative;
+}
+
 body {
   font-family: 'Do Hyeon', 'Skranji', 'Open Sans', sans-serif;
+  height: 100%;
 }
 
 .title-block {
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid $grey04;
   font-weight: bolder;
   font-size: larger;
   padding: 5px 0;
+}
+
+
+.fa-eye-icon, 
+.fa-pencil-icon, 
+.fa-floppyO-icon,
+.fa-edit-icon,
+.fa-question-circle-icon {
+  color: $green10;
+  fill: $green10;
+
+  &:hover {
+    color: $green14;
+    fill: $green14;
+  }
+}
+
+.fa-eye-slash-icon,
+.fa-database-icon {
+  color: $grey04;
+  fill: $grey04;
+
+  &:hover {
+    color: $grey10;
+    fill: $grey10;
+  }
+}
+
+.fa-times-circleO-icon,
+.fa-trashO-icon,
+.fa-exclamation-triangle-icon {
+  color: $red10;
+  fill: $red10;
+
+  &:hover {
+    color: $red14;
+    fill: $red14;
+  }
+}
+
+.fa-close-icon {
+  color: $red10;
+  fill: $red10;
+  float: right;
+  z-index: '100';
+
+  &:hover {
+    color: $red14;
+    fill: $red14;
+  }
+}
+
+.fa-plus-squareO-icon,
+.fa-toggle-on-icon {
+  color: $blue10;
+  fill: $blue10;
+
+  &:hover {
+    color: $turquoise14;
+    fill: $turquoise14;
+  }
 }

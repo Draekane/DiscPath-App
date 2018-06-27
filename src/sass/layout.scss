@@ -1,7 +1,7 @@
 .App-header {
-    background-color: #222;
+    background-color: $grey02;
     padding: 10px;
-    color: white;
+    color: $grey15;
     grid-column: 1 / 2;
 }
 
@@ -13,21 +13,30 @@
     font-size: large;
 }
 
+.pageTitle-header {
+    font-size: 1.25em;
+    color: $blue13;
+}
+
 .lower {
     display: flex;
     position: relative;
     flex: 1 1 auto;
     overflow-y: auto;
+    height: 100%;
 }
 
 .sidebar {
     width: 60px;
     min-width: 60px; // prevent sidebar from shrinking on small screens
-    background-color: black;
+    background-color: $grey01;
 }
 
 .main-container {
+    padding-left: 15px;
+    padding-top: 15px;
     width: 100%;
+    height: 100%
 }
 
 .header-image {
@@ -35,7 +44,7 @@
     width: 40px;
     margin-left: 0px;
     margin-top: 0px;
-    border: 1px solid white;
+    border: 1px solid $grey15;
 }
 
 .list-accordion { padding: 0; }
@@ -49,6 +58,11 @@ ul.list-accordion {
 .nav-image {
     opacity: 1;
 
+    a {
+        color: $grey15;
+        text-decoration: none;
+    }
+
     a img {
         top: 7px;
         left: 5px;
@@ -57,13 +71,18 @@ ul.list-accordion {
         padding: 4px;
         position: inherit;
     }
+
+    &:hover {
+      background-color: $grey02;
+      text-decoration: underline;
+    }
 }
 
 .help-request {
-    color: grey;
+    color: $grey06;
 
-    :visited {
-        color: grey;
+    &:visited {
+        color: $grey08;
     }
 }
 
@@ -73,7 +92,7 @@ ul.list-accordion {
     grid-template-columns: auto auto;
 
     .grid-item {
-        border: rgb(122, 122, 122) solid 1px;
+        border: $grey04 solid 1px;
     }
 
     .grid-item-credits {
@@ -91,7 +110,7 @@ ul.list-accordion {
         grid-column: 1 / 2;
     
         .splineCanvas {
-            border: 1px solid #000000;
+            border: 1px solid $grey00;
             padding: 10px;
         }
     }
@@ -132,20 +151,25 @@ ul.list-accordion {
 .zoomButtons {
     margin-top: 15px;
     margin-left: 15px;
-    background-color: grey;
+    background-color: $grey06;
     opacity: 0.5;
     position: absolute;
-}
 
-.zoomButtons:hover {
-    opacity: 1;
-}
+    &:hover {
+      opacity: 1;
+    }
 
-.zoomButton {
-    padding-right: 5px;
-}
+    .zoomButton {
+      padding-right: 5px;
+      color: $grey14;
+      fill: $grey14;
 
-.zoomButton:hover {
-    color: green;
-    fill: green;
-}
+      &:hover {
+        color: $grey10;
+        fill: $grey10;
+      }
+    }
+  }
+
+
+

@@ -171,18 +171,10 @@ class BagSetup extends Component {
     };
 
     const content = (
-      <DocumentTitle title={pageTitle}>
+      <DocumentTitle title={`DiscPath: ${pageTitle}`} >
         <React.Fragment>
           <div className="workspace-container grid-container" >
-            <div className="grid-item-credits">
-              Disc flight information from&nbsp;
-              <a
-                href="http://www.inboundsdiscgolf.com/content/?page_id=431"
-                target="_blank"
-                rel="noopener noreferrer"
-              >Inbounds Disc Golf InFlight Guide
-              </a>
-            </div>
+            <div className="pageTitle-header">{pageTitle}</div>
             <div className="grid-item-menu" >
               <button onClick={this.handleToggleThrowerModal} >Thrower</button>
               <button onClick={this.handleToggleDisplayOptionModal}>Display Options</button>
@@ -262,7 +254,7 @@ BagSetup.propTypes = {
 };
 
 BagSetup.defaultProps = {
-  pageTitle: 'DiscPath',
+  pageTitle: 'Bag Setup',
   companies: [],
   bag: {},
   thrower: null,

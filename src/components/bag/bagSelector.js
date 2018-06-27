@@ -68,10 +68,10 @@ const BagSelector = (props) => {
         defaultValue={currentBag.name}
       />&nbsp;&nbsp;&nbsp;
       <span title="Save Bag Name Update" >
-        <FaFloppyO onClick={handleUpdateBagNameFinish} color="green" />
+        <FaFloppyO onClick={handleUpdateBagNameFinish} className="fa-floppyO-icon" />
       </span>&nbsp;&nbsp;&nbsp;
       <span title="Cancel Bag Name Update" >
-        <FaTimesCircleO onClick={handleUpdateBagNameCancel} color="red" />
+        <FaTimesCircleO onClick={handleUpdateBagNameCancel} className="fa-times-circleO-icon" />
       </span>
     </React.Fragment>
   );
@@ -85,10 +85,10 @@ const BagSelector = (props) => {
         defaultValue={currentBag.name}
       />&nbsp;&nbsp;&nbsp;
       <span title="Save New Bag">
-        <FaPlusSquareO onClick={handleAddBagFinish} color="green" />
+        <FaFloppyO onClick={handleAddBagFinish} className="fa-floppyO-icon" />
       </span>&nbsp;&nbsp;&nbsp;
       <span title="Cancel Adding New Bag" >
-        <FaTimesCircleO onClick={handleAddBagCancel} color="red" />
+        <FaTimesCircleO onClick={handleAddBagCancel} className="fa-times-circleO-icon" />
       </span>
     </React.Fragment>
   );
@@ -100,13 +100,13 @@ const BagSelector = (props) => {
         {currentBagOptions}
       </select>&nbsp;&nbsp;&nbsp;
       <span title="Edit Current Bag Name" >
-        <FaPencil onClick={handleUpdateBagNameStart} color="green" />
+        <FaPencil onClick={handleUpdateBagNameStart} className="fa-pencil-icon" />
       </span>&nbsp;&nbsp;&nbsp;
       <span title="Add New Bag" >
-        <FaPlusSquareO onClick={handleAddBagStart} color="blue" />
+        <FaPlusSquareO onClick={handleAddBagStart} className="fa-plus-squareO-icon" />
       </span>&nbsp;&nbsp;&nbsp;
       <span title="Remove Existing Bag" >
-        <FaTrashO onClick={handleRemoveBag} color="red" />
+        <FaTrashO onClick={handleRemoveBag} className="fa-trashO-icon" />
       </span>
     </React.Fragment>
   );

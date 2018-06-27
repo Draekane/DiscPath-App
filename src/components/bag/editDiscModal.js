@@ -100,7 +100,7 @@ const EditDiscModal = (props) => {
       onRequestClose={handleCloseEdit}
       style={customStyles}
     >
-      <FaClose onClick={handleCloseEdit} color="red" style={{ float: 'right', 'z-index': '100' }} />
+      <FaClose onClick={handleCloseEdit} className="fa-close-icon" />
       <h2><EditLabel value={displayedName} updateFunction={handleDiscDisplayNameChange} /></h2>
       <div>
         {displayWeightSelector(weight, maxWeight)}

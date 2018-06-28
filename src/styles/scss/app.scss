@@ -1,4 +1,4 @@
-@import "./variables/variable--colors";
+@import "variables/variable--colors";
 @import "bag";
 @import "displayOptions";
 @import "importExport";
@@ -24,7 +24,6 @@ body {
   font-size: larger;
   font-weight: bolder;
 }
-
 
 .fa-eye-icon, 
 .fa-pencil-icon, 

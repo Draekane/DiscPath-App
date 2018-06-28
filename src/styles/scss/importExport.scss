@@ -1,8 +1,8 @@
 .import-export-container {
-  height: 75px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  height: 75px;
   padding: 15px 5px;
 
   .import-container {
@@ -21,10 +21,10 @@
     }
 
     .import-bag-select {
-      flex-grow: 5;
-      opacity:0;
       position: relative;
       left: -145px;
+      flex-grow: 5;
+      opacity:0;
     }
   }
 

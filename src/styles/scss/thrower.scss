@@ -1,0 +1,49 @@
+.thrower-container {
+
+  .thrower-item {
+    padding-top: 20px;
+  }
+
+  .item1 {
+    display: grid;
+    width: 30%;
+    grid-row: 1 / 2;
+    grid-column: 1 / 6;
+    grid-template-columns: auto auto;
+
+    .type-title {
+      display: inline-block;
+      padding-right: 10px;
+    }
+
+    .type-select {
+      display: inline-block;
+      width: 150px;
+      margin-top: -5px;
+    }
+  }
+
+  .item2 {
+    display: grid;
+    grid-row: 2 / 3;
+    grid-column: 1 / 5;
+    grid-template-columns: 1fr 5fr;
+
+    .power-title {
+      grid-column: 1 / 2;
+    }
+
+    .power-slider {
+      margin-top: 5px;
+      grid-column: 2 / 3;
+    }
+  }
+
+  .power-output {
+    margin-top: -20px;
+    font-size: smaller;
+    grid-column: 5 / 6;
+    grid-row: 2 / 3;
+  }
+}
+

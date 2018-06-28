@@ -1,0 +1,41 @@
+
+.bag-container {
+  .disc-type {
+    float: left;
+    color: $grey07;
+    font-weight: bold;
+  }
+
+  .distance-header {
+    background-color: $orange14;
+  }
+
+  .fairway-header {
+    background-color: $lime14;
+  }
+
+  .midrange-header {
+    background-color: $periwinkle14;
+  }
+
+  .putter-header {
+    background-color: $turquoise14;
+  }
+
+  .rt-resizable-header {
+    display: none;
+  }
+
+  .rt-tr-group:last-child {
+    border-bottom: $grey08 5px solid !important;
+  }
+
+  .leftAlignCell {
+    text-align: left;
+  }
+}
+
+.editBlock {
+  padding: 15px;
+  border: 1px solid $grey12;
+}

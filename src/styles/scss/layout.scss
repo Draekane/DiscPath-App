@@ -1,0 +1,175 @@
+.App-header {
+  padding: 10px;
+  background-color: $grey02;
+  color: $grey15;
+  grid-column: 1 / 2;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.pageTitle-header {
+  color: $blue13;
+  font-size: 1.25em;
+}
+
+.lower {
+  display: flex;
+  position: relative;
+  flex: 1 1 auto;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.sidebar {
+  width: 60px;
+  min-width: 60px; // prevent sidebar from shrinking on small screens
+  background-color: $grey01;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.header-image {
+  width: 40px;
+  height: 40px;
+  margin-top: 0px;
+  margin-left: 0px;
+  border: 1px solid $grey15;
+}
+
+.list-accordion { padding: 0; }
+
+ul.list-accordion {
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.nav-image {
+  opacity: 1;
+
+  a {
+    color: $grey15;
+    text-decoration: none;
+  }
+
+  a img {
+    position: inherit;
+    top: 7px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+  }
+
+  &:hover {
+    background-color: $grey02;
+    text-decoration: underline;
+  }
+}
+
+.help-request {
+  color: $grey06;
+
+  &:visited {
+    color: $grey08;
+  }
+}
+
+.grid-container {
+  display: inline-grid;
+  grid-column-gap: 5px;
+  grid-template-columns: auto auto;
+
+  .grid-item {
+    border: $grey04 solid 1px;
+  }
+
+  .grid-item-credits {
+    padding: 10px 0;
+    grid-column: 1 / 2;
+  }
+
+  .grid-item-menu {
+    align-self: center;
+    grid-column: 2 / 3;
+    justify-self: center;
+  }
+
+  .grid-item1 {
+    grid-column: 1 / 2;
+
+    .splineCanvas {
+      padding: 10px;
+      border: 1px solid $grey00;
+    }
+  }
+
+  .grid-item2 {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 / 3;
+
+    .bag-item3 {
+      align-self: center;
+    }
+  }
+}
+
+.disc-bag-table {
+  width: 500px;
+}
+
+.ReactTable {
+  .rt-noData {
+    display: none;
+  }
+
+  .rt-td {
+    padding: 2px 2px;
+    font-size: smaller;
+  }
+}
+
+.pdgaApproval {
+  height: 20px;
+  margin: -5px;
+  padding-left: 20px;
+  font-size: x-small;
+}
+
+.zoomButtons {
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 15px;
+  background-color: $grey06;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  .zoomButton {
+    padding-right: 5px;
+    color: $grey14;
+    fill: $grey14;
+
+    &:hover {
+      color: $grey10;
+      fill: $grey10;
+    }
+  }
+  }
+
+
+

@@ -13,7 +13,7 @@
     "start-watch": "npm-run-all -p watch-css start-dev",
     "build": "npm-run-all build-css build-js",
     "build-js": "react-scripts build",
-    "build-css": "node-sass-chokidar src/ -o src/",
+    "build-css": "node-sass-chokidar src/ -o ./src/styles/css",
     "clean": "rimraf dist",
     "test": "mocha --require babel-core/register --require mock-local-storage --require babel-polyfill \"./tests/**/*.js\"",
     "test-actions": "mocha --require babel-core/register --require mock-local-storage --require babel-polyfill \"./tests/actions/*.js\"",
@@ -22,7 +22,7 @@
     "lint": "eslint \"./src/**/*.js\"",
     "lintClean": "eslint --fix src/**/*.{js,jsx}",
     "lint-sass": "sass-lint -v",
-    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive"
+    "watch-css": "npm run build-css && node-sass-chokidar \"./src/styles/scss\" -o \"./src/styles/css\" --watch --recursive"
   },
   "dependencies": {
     "babel-preset-env": "^1.6.1",
@@ -79,5 +79,14 @@
     "redux-mock-store": "^1.5.3",
     "sass-lint": "^1.12.1",
     "webpack": "3.11.0"
+  },
+  "nyc": {
+    "exclude": [
+      "tests/**/*.js",
+      "node_modules"
+    ],
+    "sourceMap": false,
+    "instrument": false,
+    "lines": 0
   }
 }

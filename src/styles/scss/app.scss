@@ -1,28 +1,28 @@
-@import "./sass/variables/colors.scss";
-@import "./sass/bag.scss";
-@import "./sass/displayOptions.scss";
-@import "./sass/layout.scss";
-@import "./sass/thrower.scss";
-@import "./sass/importExport.scss";
-@import "./sass/rangeslider.scss";
-@import "./sass/similarDisc.scss";
+@import "./variables/variable--colors";
+@import "bag";
+@import "displayOptions";
+@import "importExport";
+@import "layout";
+@import "rangeslider";
+@import "similarDisc";
+@import "thrower";
 @import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Open+Sans|Skranji');
 
 html {
-  min-height: 100%;
   position: relative;
+  min-height: 100%;
 }
 
 body {
-  font-family: 'Do Hyeon', 'Skranji', 'Open Sans', sans-serif;
   height: 100%;
+  font-family: 'Do Hyeon', 'Skranji', 'Open Sans', sans-serif;
 }
 
 .title-block {
-  border-bottom: 1px solid $grey04;
-  font-weight: bolder;
-  font-size: larger;
   padding: 5px 0;
+  border-bottom: 1px solid $grey04;
+  font-size: larger;
+  font-weight: bolder;
 }
 
 
@@ -64,10 +64,10 @@ body {
 }
 
 .fa-close-icon {
+  float: right;  
   color: $red10;
-  fill: $red10;
-  float: right;
   z-index: '100';
+  fill: $red10;
 
   &:hover {
     color: $red14;

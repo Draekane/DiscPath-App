@@ -202,10 +202,15 @@ class SimilarDisc extends Component {
     const content = (
       <DocumentTitle title={pageTitle}>
         <div className="workspace-container grid-container" >
-          <div className="pageTitle-header">{pageTitle}</div>
+          <div className="pageTitle-header">{pageTitle}<span style={{ color: 'red' }} > **ALPHA** </span></div>
           <div className="grid-item-menu" >
             <button onClick={this.handleToggleThrowerModal} >Thrower</button>
             <button onClick={this.handleToggleDisplayOptionModal}>Display Options</button>
+          </div>
+          <div style={{ wordwrap: 'true' }}>
+          NOTE: this is still very rough, has a lot of polish<br />
+          that needs to be done to it, but I am putting it<br />
+          out as a proof of concept for people to take a look at...
           </div>
           <div className="grid-item1 grid-item">
             <FlightMap

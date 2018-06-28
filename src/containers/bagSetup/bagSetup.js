@@ -171,59 +171,50 @@ class BagSetup extends Component {
     };
 
     const content = (
-      <DocumentTitle title={pageTitle}>
-        <React.Fragment>
-          <div className="workspace-container grid-container" >
-            <div className="grid-item-credits">
-              Disc flight information from&nbsp;
-              <a
-                href="http://www.inboundsdiscgolf.com/content/?page_id=431"
-                target="_blank"
-                rel="noopener noreferrer"
-              >Inbounds Disc Golf InFlight Guide
-              </a>
-            </div>
-            <div className="grid-item-menu" >
-              <button onClick={this.handleToggleThrowerModal} >Thrower</button>
-              <button onClick={this.handleToggleDisplayOptionModal}>Display Options</button>
-              <button onClick={this.handleToggleImportExportModal}>Import/Export</button>
-            </div>
-            <div className="grid-item1 grid-item">
-              <FlightMap
-                discs={currentBag.discs}
-                thrower={thrower}
-                displayOptions={displayOptions}
-                zoom={zoom}
-                functions={mapFunctions}
-              />
-            </div>
-            <div className="grid-item2 grid-item">
-              <BagContainer state />
-            </div>
-            <Thrower
+      <DocumentTitle title={`DiscPath: ${pageTitle}`} >
+        <div className="workspace-container grid-container" >
+          <div className="pageTitle-header">{pageTitle}</div>
+          <div className="grid-item-menu" >
+            <button onClick={this.handleToggleThrowerModal} >Thrower</button>
+            <button onClick={this.handleToggleDisplayOptionModal}>Display Options</button>
+            <button onClick={this.handleToggleImportExportModal}>Import/Export</button>
+          </div>
+          <div className="grid-item1 grid-item">
+            <FlightMap
+              id="discSetupMap"
+              discs={currentBag.discs}
               thrower={thrower}
-              changePower={this.handleChangeThrowerPower}
-              changeThrowerType={this.handleChangeThrowerType}
-              openModal={throwerModal}
-              closeModal={this.handleToggleThrowerModal}
-            />
-            <DisplayOptions
-              options={displayOptions}
-              changeFanPower={this.handleChangeFanPower}
-              changePaths={this.handleChangePaths}
-              changeDistance={this.handleChangeLieDistance}
-              changeCircles={this.handleChangeLieCircle}
-              openModal={displayOptionModal}
-              closeModal={this.handleToggleDisplayOptionModal}
-            />
-            <ImportExport
-              importFunction={this.handleImportFromFile}
-              exportFunction={this.handleExportToFile}
-              openModal={importExportModal}
-              closeModal={this.handleToggleImportExportModal}
+              displayOptions={displayOptions}
+              zoom={zoom}
+              functions={mapFunctions}
             />
           </div>
-        </React.Fragment>
+          <div className="grid-item2 grid-item">
+            <BagContainer state />
+          </div>
+          <Thrower
+            thrower={thrower}
+            changePower={this.handleChangeThrowerPower}
+            changeThrowerType={this.handleChangeThrowerType}
+            openModal={throwerModal}
+            closeModal={this.handleToggleThrowerModal}
+          />
+          <DisplayOptions
+            options={displayOptions}
+            changeFanPower={this.handleChangeFanPower}
+            changePaths={this.handleChangePaths}
+            changeDistance={this.handleChangeLieDistance}
+            changeCircles={this.handleChangeLieCircle}
+            openModal={displayOptionModal}
+            closeModal={this.handleToggleDisplayOptionModal}
+          />
+          <ImportExport
+            importFunction={this.handleImportFromFile}
+            exportFunction={this.handleExportToFile}
+            openModal={importExportModal}
+            closeModal={this.handleToggleImportExportModal}
+          />
+        </div>
       </DocumentTitle>
     );
 
@@ -262,7 +253,7 @@ BagSetup.propTypes = {
 };
 
 BagSetup.defaultProps = {
-  pageTitle: 'DiscPath',
+  pageTitle: 'Bag Setup',
   companies: [],
   bag: {},
   thrower: null,

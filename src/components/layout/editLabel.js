@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import _ from 'lodash';
-import { FaEdit } from 'react-icons/lib/fa';
+import { FaEdit, FaFloppyO, FaTimesCircleO } from 'react-icons/lib/fa';
 import * as KeyPress from '../../utils/keyPress';
 
 export default class EditLabel extends Component {
@@ -98,10 +98,8 @@ export default class EditLabel extends Component {
     event.stopPropagation();
   }
   render() {
-    const { saveButtonShouldNotBePrimary, onTextboxBlur } = this.props;
+    const { onTextboxBlur } = this.props;
     let displayBlock = null;
-
-    const saveButtonClassName = saveButtonShouldNotBePrimary ? 'button md' : 'button md primary';
 
     if (this.state.editing) {
       const canSave = this.state.enableSave ? 'has-success' : '';
@@ -119,15 +117,11 @@ export default class EditLabel extends Component {
             onFocus={this.handleFocus}
             onBlur={onTextboxBlur}
           />
-          <span>
-            <button className={saveButtonClassName} title="Saves Edits" type="button" onClick={this.handleSave}>
-              <span>Save</span>
-            </button>
+          <span title="Save Name Edit" style={{ 'padding-left': '10px' }} >
+            <FaFloppyO className="fa-floppyO-icon" onClick={this.handleSave} />
           </span>
-          <span>
-            <button className="button md" title="Cancel Edits" type="button" onClick={this.resetState}>
-              <span>Cancel</span>
-            </button>
+          <span title="Cancel Name Edit" style={{ 'padding-left': '10px' }} >
+            <FaTimesCircleO className="fa-times-circleO-icon" onClick={this.resetState} />
           </span>
         </div>
       );
@@ -139,7 +133,7 @@ export default class EditLabel extends Component {
             title={`${this.state.editValue} (Double click to edit)`}
             className="edit-label_value"
           >
-            {this.state.editValue} <FaEdit onClick={this.handleDoubleClick} color="green" />
+            {this.state.editValue} <FaEdit onClick={this.handleDoubleClick} className="fa-edit-icon" />
           </div>
         </div>
       );
@@ -154,5 +148,4 @@ EditLabel.propTypes = {
   updateFunction: PropTypes.func.isRequired,
   onTextboxFocus: PropTypes.func,
   onTextboxBlur: PropTypes.func,
-  saveButtonShouldNotBePrimary: PropTypes.bool,
 };

@@ -6,9 +6,6 @@ import 'react-rangeslider/lib/index.css';
 
 import Routing from './app/routing';
 
-import '../node_modules/react-select/dist/react-select.css';
-import './App.css';
-
 const App = () => {
   const dataReactRootProperty = { 'data-reactroot': '' };
 

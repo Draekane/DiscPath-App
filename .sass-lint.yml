@@ -1,0 +1,53 @@
+files:
+  include: 'src/**/*.scss'
+  ignore:
+    - 'node_modules/**/*.scss'
+options:
+  merge-default-rules: false
+rules:
+  indentation:
+    - 2
+    -
+      size: 2
+  final-newline:
+    - 2
+  property-sort-order:
+    - 2
+    -
+      order: 'smacss'
+  brace-style:
+    - 2
+    -
+      style: '1tbs'
+      allow-single-line: true
+  one-declaration-per-line:
+    - 2
+  trailing-semicolon:
+    - 2
+  max-line-length:
+    - 2
+    -
+      length: 140
+  nesting-depth:
+    - 2
+    -
+      max-depth: 4
+  no-color-literals:
+    - 2
+    -
+      allow-rgba: true
+  single-line-per-selector:
+    - 2
+  space-around-operator:
+    - 2
+  space-before-brace:
+    - 2
+  empty-line-between-blocks:
+    - 2
+  property-units:
+    - 1
+    -
+      per-property:
+        font-size:
+          - 'em'
+          - 'rem'

@@ -7,10 +7,10 @@ import { discShape, throwerShape, displayOptionsShape } from '../../propTypeShap
 import { processForHex, hb, drawPath, drawLie } from '../../utils/calculatorUtils';
 
 const lieConfig = {
-  D: { color: '#efdcdc', outline: '#c78585' }, // Distance Driver Colors
-  F: { color: '#dbf0db', outline: '#80cb80' }, // Fairway Driver Colors
-  M: { color: '#d2d2f9', outline: '#6363e9' }, // Mid Colors
-  P: { color: '#ccf9ff', outline: '#4deaff' }, // Putt and Approach Colors
+  D: { color: '#FF7800', outline: '#884000' }, // Distance Driver Colors
+  F: { color: '#78FF00', outline: '#408800' }, // Fairway Driver Colors
+  M: { color: '#0078FF', outline: '#004088' }, // Mid Colors
+  P: { color: '#00FFFF', outline: '#008888' }, // Putt and Approach Colors
 };
 
 const splinePoints = {
@@ -155,7 +155,7 @@ class FlightMap extends Component {
             hss: disc.hst,
             lsf: disc.lsf,
             armspeed: pwf,
-            wear: disc.wear,
+            wear: disc.wear || 10,
             throwType: discThrowType || throwerThrowType,
             color: pointColor,
             drawPath: (displayOptions.pathsShown === 'all' && i % 2 === 0),
@@ -191,7 +191,7 @@ class FlightMap extends Component {
         hss: disc.hst,
         lsf: disc.lsf,
         armspeed: pw,
-        wear: disc.wear,
+        wear: disc.wear || 10,
         throwType: discThrowType || throwerThrowType,
         color: pointColor,
         drawPath: (displayOptions.pathsShown === 'all' || displayOptions.pathsShown === 'one'),
@@ -272,7 +272,12 @@ class FlightMap extends Component {
   }
 
   render() {
-    const { width, height, zoom } = this.props;
+    const {
+      width,
+      height,
+      zoom,
+      id,
+    } = this.props;
     return (
       <div className="canvasContainer" >
         <div className="zoomButtons" >
@@ -289,7 +294,7 @@ class FlightMap extends Component {
         </div>
         <canvas
           ref={el => this.canvasRef = el} /* eslint-disable-line no-return-assign */
-          id="splineCanvas"
+          id={`${id}splineCanvas`}
           className="splineCanvas"
           width={width * zoom}
           height={height * zoom}
@@ -299,6 +304,7 @@ class FlightMap extends Component {
 }
 
 FlightMap.propTypes = {
+  id: PropTypes.string.isRequired,
   width: PropTypes.number,
   height: PropTypes.number,
   discs: PropTypes.arrayOf(discShape),

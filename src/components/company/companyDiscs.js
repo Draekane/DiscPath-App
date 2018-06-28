@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import _ from 'lodash';
 import Select from 'react-select';
-import { FaThumbsUp } from 'react-icons/lib/fa';
 import PDGA from '../../img/pdga.png';
 
 import { companyShape } from '../../propTypeShapes/companyShapes';

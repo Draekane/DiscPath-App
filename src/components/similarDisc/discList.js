@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import ReactTable from 'react-table';
-import { FaEyeSlash, FaEye } from 'react-icons/lib/fa';
+// import { FaEyeSlash, FaEye } from 'react-icons/lib/fa';
 
 import { discShape } from '../../propTypeShapes/bagShapes';
 
@@ -12,34 +12,34 @@ const DiscList = (props) => {
     title,
   } = props.props;
 
-  const createHeader = () => <div className={headerClassName}>&nbsp;&nbsp;{title}</div>;
+  const createHeader = () => <div className={headerClassName}>&nbsp;&nbsp;{`${title} (total discs: ${discs.length})`}</div>;
 
   return (
     <ReactTable
       data={discs}
       minRows="0"
-      showPagination={false}
+      showPagination
       columns={[
         {
           Header: createHeader(),
           headerClassName,
           columns: [
-            {
-              accessor: 'enabled',
-              Cell: (row) => {
-                if (row.value === true) {
-                  return (
-                    <span title="Click to Hide this Disc" >
-                      <FaEye className="fa-eye-icon" />
-                    </span>);
-                }
-                return (
-                  <span title="Click to Show this Disc" >
-                    <FaEyeSlash className="fa-eye-slash-icon" />
-                  </span>);
-              },
-              width: 25,
-            },
+            // {
+            //   accessor: 'enabled',
+            //   Cell: (row) => {
+            //     if (row.value === true) {
+            //       return (
+            //         <span title="Click to Hide this Disc" >
+            //           <FaEye className="fa-eye-icon" />
+            //         </span>);
+            //     }
+            //     return (
+            //       <span title="Click to Show this Disc" >
+            //         <FaEyeSlash className="fa-eye-slash-icon" />
+            //       </span>);
+            //   },
+            //   width: 25,
+            // },
             {
               id: 'discDisplayName',
               accessor: d => `${d.company} ${d.name}`,

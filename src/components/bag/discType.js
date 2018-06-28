@@ -53,6 +53,7 @@ const DiscType = (props) => {
     <ReactTable
       data={discs}
       minRows="0"
+      defaultPageSize={100}
       showPagination={false}
       columns={[
         {

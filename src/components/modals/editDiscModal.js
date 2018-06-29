@@ -14,6 +14,10 @@ const EditDiscModal = (props) => {
     editDisc,
     functions,
     thrower,
+    hideWeight,
+    hidePower,
+    hideThrowType,
+    hideWear,
   } = props.props;
   if (!editDisc) return null;
 
@@ -103,41 +107,44 @@ const EditDiscModal = (props) => {
       <FaClose onClick={handleCloseEdit} className="fa-close-icon" />
       <h2><EditLabel value={displayedName} updateFunction={handleDiscDisplayNameChange} /></h2>
       <div>
-        {displayWeightSelector(weight, maxWeight)}
-        <div className="editBlock">
-          <label htmlFor="discPower">Power (optional): {powerPercentage(power || throwerPower)}</label>
-          <Slider
-            value={power || throwerPower}
-            orientation="horizontal"
-            min={0}
-            max={48}
-            className="power-slider"
-            format={powerPercentage}
-            onChange={handleDiscPowerChange}
-          />
-        </div>
-        <div className="editBlock">
-          <label htmlFor="discThrowType">ThrowType (optional): </label>
-          <Select
-            name="ThrowerTypeSelector"
-            id="ThrowerTypeSelector"
-            className="type-select"
-            options={throwerTypeOptions}
-            value={throwType || throwerThrowType}
-            onChange={handleDiscThrowTypeChange}
-          />
-        </div>
-        <div className="editBlock">
-          <label htmlFor="discWear">Wear (optional): {wear}</label>
-          <Slider
-            value={wear}
-            orientation="horizontal"
-            min={0}
-            max={10}
-            className="wear-slider"
-            onChange={handleDiscWearChange}
-          />
-        </div>
+        { (!hideWeight) ? displayWeightSelector(weight, maxWeight) : null}
+        { (!hidePower) ? (
+          <div className="editBlock">
+            <label htmlFor="discPower">Power (optional): {powerPercentage(power || throwerPower)}</label>
+            <Slider
+              value={power || throwerPower}
+              orientation="horizontal"
+              min={0}
+              max={48}
+              className="power-slider"
+              format={powerPercentage}
+              onChange={handleDiscPowerChange}
+            />
+          </div>) : null }
+        { (!hideThrowType) ? (
+          <div className="editBlock" >
+            <label htmlFor="discThrowType">ThrowType (optional): </label>
+            <Select
+              name="ThrowerTypeSelector"
+              id="ThrowerTypeSelector"
+              className="type-select"
+              options={throwerTypeOptions}
+              value={throwType || throwerThrowType}
+              onChange={handleDiscThrowTypeChange}
+            />
+          </div>) : null }
+        { (!hideWear) ? (
+          <div className="editBlock">
+            <label htmlFor="discWear">Wear (optional): {wear}</label>
+            <Slider
+              value={wear}
+              orientation="horizontal"
+              min={0}
+              max={10}
+              className="wear-slider"
+              onChange={handleDiscWearChange}
+            />
+          </div>) : null }
       </div>
     </Modal>
   );
@@ -147,6 +154,10 @@ EditDiscModal.propTypes = {
   props: PropTypes.shape({
     editDisc: PropTypes.shape(discShape),
     thrower: PropTypes.shape(throwerShape),
+    hideWeight: PropTypes.bool,
+    hidePower: PropTypes.bool,
+    hideThrowType: PropTypes.bool,
+    hideWear: PropTypes.bool,
     functions: PropTypes.shape({
       changeDisplayName: PropTypes.func,
       changeDiscWeight: PropTypes.func,

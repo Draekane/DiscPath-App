@@ -205,7 +205,7 @@
 		} , {
 			"discId": "34a5fbac4557da3eee92b0b9312f6c87",
 			"name": "Scream Max",
-			"type": "FGetMerchantClassStoreCatagories",
+			"type": "F",
 			"range": 371,
 			"hst": 19,
 			"lsf": 57,

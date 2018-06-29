@@ -7,10 +7,11 @@ import { discShape, throwerShape, displayOptionsShape } from '../../propTypeShap
 import { processForHex, hb, drawPath, drawLie } from '../../utils/calculatorUtils';
 
 const lieConfig = {
-  D: { color: '#FF7800', outline: '#884000' }, // Distance Driver Colors
-  F: { color: '#78FF00', outline: '#408800' }, // Fairway Driver Colors
-  M: { color: '#0078FF', outline: '#004088' }, // Mid Colors
-  P: { color: '#00FFFF', outline: '#008888' }, // Putt and Approach Colors
+  D: { color: '#ff7800', outline: '#884000' }, // Distance Driver Colors
+  F: { color: '#78ff00', outline: '#408800' }, // Fairway Driver Colors
+  M: { color: '#0078ff', outline: '#004088' }, // Mid Colors
+  P: { color: '#00ffff', outline: '#008888' }, // Putt and Approach Colors
+  S: { color: '#ff0000', outline: '#880000' }, // Selected Similar Disc Colors
 };
 
 const splinePoints = {

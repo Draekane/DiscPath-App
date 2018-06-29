@@ -6,7 +6,7 @@ import _ from 'lodash';
 // Internal Imports
 import CompanyDiscs from '../../components/company/companyDiscs';
 import Bag from '../../components/bag/bag';
-import EditDiscModal from '../../components/bag/editDiscModal';
+import EditDiscModal from '../../components/modals/editDiscModal';
 // Shapes
 import { companyShape } from '../../propTypeShapes/companyShapes';
 import { throwerShape, bagShape } from '../../propTypeShapes/bagShapes';

@@ -9,14 +9,14 @@ import Slider from 'react-rangeslider';
 import WithHeaderAndNav from '../../components/layout/withHeaderAndNav';
 import FlightMap from '../../components/map/flightMap';
 import DiscSelector from '../../components/similarDisc/discSelector';
-import Thrower from '../../components/menus/thrower';
-import DisplayOptions from '../../components/menus/displayOptions';
+import Thrower from '../../components/modals/thrower';
+import DisplayOptions from '../../components/modals/displayOptions';
 import DiscList from '../../components/similarDisc/discList';
 // Shapes
-import { companyShape } from '../../propTypeShapes/companyShapes';
+import { companyShape, discShape } from '../../propTypeShapes/companyShapes';
 import { throwerShape, displayOptionsShape } from '../../propTypeShapes/bagShapes';
 // Selectors
-import { currentCompaniesSelector, currentSelectionSelector } from '../../selector/companiesSelector';
+import { currentCompaniesSelector } from '../../selector/companiesSelector';
 import { discTypesSelector } from '../../selector/bagSelector';
 import { displayOptionsSelector } from '../../selector/displayOptionsSelector';
 import { throwerSelector } from '../../selector/throwerSelector';
@@ -27,10 +27,8 @@ import * as MenuActions from '../../actions/menus';
 import * as ThrowerActions from '../../actions/thrower';
 import * as DisplayOptionActions from '../../actions/displayOptions';
 import * as SimilarDiscActions from '../../actions/similarDisc';
-// Models
-import Disc from '../../models/disc';
 
-import { similarityPercentage } from '../../utils/similarDiscUtils';
+import * as simDiscUtils from '../../utils/similarDiscUtils';
 
 class SimilarDisc extends Component {
   componentWillMount() {
@@ -71,8 +69,13 @@ class SimilarDisc extends Component {
   }
 
   handleChangeSimilarity = (similarity) => {
-    const { dispatch } = this.props;
+    const { dispatch, selectedDisc, companies } = this.props;
+
     dispatch(SimilarDiscActions.changeSimilarity(similarity));
+    if (selectedDisc) {
+      const similarDiscs = simDiscUtils.getSimilarDiscs(selectedDisc, companies, similarity);
+      dispatch(SimilarDiscActions.setSimilarDiscs(similarDiscs));
+    }
   }
 
   handleChangeFanPower = () => {
@@ -118,8 +121,27 @@ class SimilarDisc extends Component {
   }
 
   handleDiscSelection = (selectedOptions) => {
+    const { dispatch, companies, similarity } = this.props;
+
+    if (selectedOptions !== null) {
+      const selectedDisc = simDiscUtils.getSelectedDisc(selectedOptions.value, companies);
+      const similarDiscs = simDiscUtils.getSimilarDiscs(selectedDisc, companies, similarity);
+
+      dispatch(SimilarDiscActions.selectSimilarDisc(selectedDisc, selectedOptions.value));
+      dispatch(SimilarDiscActions.setSimilarDiscs(similarDiscs));
+    }
+  }
+
+  handleEnableSelectDisc = (enabled) => {
     const { dispatch } = this.props;
-    if (selectedOptions !== null) dispatch(CompanyActions.selectDisc(selectedOptions.value));
+
+    dispatch(SimilarDiscActions.enableSelectedDisc(enabled));
+  }
+
+  handleEnableSimilarDisc = (discId, enabled) => {
+    const { dispatch } = this.props;
+
+    dispatch(SimilarDiscActions.enableSimilarDisc(discId, enabled));
   }
 
   render() {
@@ -131,7 +153,9 @@ class SimilarDisc extends Component {
       throwerModal,
       displayOptionModal,
       companies,
-      currentSelection,
+      selectedDisc,
+      selectedDiscId,
+      similarDiscs,
       similarity,
     } = this.props;
 
@@ -140,63 +164,17 @@ class SimilarDisc extends Component {
       handleMapShrink: this.handleMapShrink,
       handleMapReset: this.handleMapReset,
     };
-
-    const getSelectedDisc = () => {
-      let foundDisc = null;
-      if (!currentSelection) return foundDisc;
-      const currentParse = currentSelection.split('-');
-      _.forEach(companies, (company) => {
-        if (company.companyId === currentParse[0]) {
-          _.forEach(company.discs, (disc) => {
-            if (disc.discId === currentParse[1]) {
-              foundDisc = new Disc({ ...disc, company: company.company });
-            }
-          });
-        }
-      });
-
-      return foundDisc;
-    };
-
-    const getSimilarDiscs = (selectedDisc) => {
-      if (!selectedDisc) return [];
-      const percent = similarity;
-      const checkParams = {
-        hstA: selectedDisc.hst - (selectedDisc.hst * percent),
-        hstB: selectedDisc.hst + (selectedDisc.hst * percent),
-        lsfA: selectedDisc.lsf - (selectedDisc.lsf * percent),
-        lsfB: selectedDisc.lsf + (selectedDisc.lsf * percent),
-        rangeA: selectedDisc.range - (100 * percent),
-        rangeB: selectedDisc.range + (100 * percent),
-      };
-
-      const similarDiscs = [];
-      _.forEach(companies, (company) => {
-        _.forEach(company.discs, (disc) => {
-          const convertDisc = new Disc({ ...disc, company: company.company });
-          if (convertDisc.isDiscSimilar(checkParams)) similarDiscs.push(convertDisc);
-        });
-      });
-
-      return similarDiscs;
-    };
-
-    const getDisplayDiscs = () => {
-      const selectedDisc = getSelectedDisc();
-
-      if (!selectedDisc) return [];
-
-      const similarDiscs = getSimilarDiscs(selectedDisc);
-
-      return _.union([selectedDisc], similarDiscs);
-    };
-
-    const displayDiscs = getDisplayDiscs();
+    const displayDiscs = _.union(similarDiscs, [{ ...selectedDisc, type: 'S' }]);
 
     const discListProps = {
-      discs: getSimilarDiscs(getSelectedDisc()),
+      discs: similarDiscs,
       headerClassName: 'doesntMatter',
       title: 'Similar Disc List',
+      selectedDisc,
+      functions: {
+        handleEnableSelectedDisc: this.handleEnableSelectDisc,
+        handleEnableSimilarDisc: this.handleEnableSimilarDisc,
+      },
     };
 
     const content = (
@@ -206,11 +184,6 @@ class SimilarDisc extends Component {
           <div className="grid-item-menu" >
             <button onClick={this.handleToggleThrowerModal} >Thrower</button>
             <button onClick={this.handleToggleDisplayOptionModal}>Display Options</button>
-          </div>
-          <div style={{ wordwrap: 'true' }}>
-          NOTE: this is still very rough, has a lot of polish<br />
-          that needs to be done to it, but I am putting it<br />
-          out as a proof of concept for people to take a look at...
           </div>
           <div className="grid-item1 grid-item">
             <FlightMap
@@ -225,18 +198,18 @@ class SimilarDisc extends Component {
           <div className="grid-item2 grid-item similar-disc-table">
             <DiscSelector
               companies={companies}
-              currentSelection={currentSelection}
+              currentSelection={selectedDiscId}
               handleDiscSelection={this.handleDiscSelection}
             />
-            Allowable Divergence: {similarityPercentage(similarity)}
+            Allowable Divergence: {simDiscUtils.similarityPercentage(similarity)}
             <Slider
               value={similarity}
               orientation="horizontal"
               min={0.1}
-              max={1.0}
-              step={0.1}
+              max={0.5}
+              step={0.01}
               className="similarity-slider"
-              format={similarityPercentage}
+              format={simDiscUtils.similarityPercentage}
               onChange={this.handleChangeSimilarity}
             />
             <div className="selectedDisc_Display" >
@@ -271,7 +244,9 @@ class SimilarDisc extends Component {
 SimilarDisc.propTypes = {
   pageTitle: PropTypes.string,
   companies: PropTypes.arrayOf(companyShape),
-  currentSelection: PropTypes.string,
+  selectedDisc: PropTypes.shape(discShape),
+  selectedDiscId: PropTypes.string,
+  similarDiscs: PropTypes.arrayOf(discShape),
   thrower: PropTypes.shape(throwerShape),
   displayOptions: PropTypes.shape(displayOptionsShape),
   dispatch: PropTypes.func,
@@ -292,7 +267,9 @@ SimilarDisc.defaultProps = {
 
 const mapStateToProps = state => ({
   companies: currentCompaniesSelector(state),
-  currentSelection: currentSelectionSelector(state),
+  selectedDisc: state.similarDisc.selectedDisc,
+  selectedDiscId: state.similarDisc.selectedDiscId,
+  similarDiscs: state.similarDisc.similarDiscs,
   thrower: throwerSelector(state),
   displayOptions: displayOptionsSelector(state),
   discTypes: discTypesSelector(state),

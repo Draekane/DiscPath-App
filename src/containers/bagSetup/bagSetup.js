@@ -7,9 +7,9 @@ import _ from 'lodash';
 // Internal Imports
 import FlightMap from '../../components/map/flightMap';
 import BagContainer from './bag';
-import Thrower from '../../components/menus/thrower';
-import DisplayOptions from '../../components/menus/displayOptions';
-import ImportExport from '../../components/menus/importExport';
+import Thrower from '../../components/modals/thrower';
+import DisplayOptions from '../../components/modals/displayOptions';
+import ImportExport from '../../components/modals/importExport';
 import WithHeaderAndNav from '../../components/layout/withHeaderAndNav';
 // Shapes
 import { companyShape } from '../../propTypeShapes/companyShapes';

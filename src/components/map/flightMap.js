@@ -107,7 +107,7 @@ class FlightMap extends Component {
     let by;
     let pws;
     let pointColor;
-    let weightDiff;
+    let weightDiff = 0;
     let powerShift;
 
     const { power: throwerPower, throwType: throwerThrowType } = thrower;
@@ -152,7 +152,7 @@ class FlightMap extends Component {
 
           const pointColor = `#${hb(a * ry)}${hb(a * gy)}${hb(a * by)}`;
           const drawPathOptions = {
-            dist: disc.range,
+            dist: (disc.range * ((weightDiff * 0.005) + 1)),
             hss: disc.hst,
             lsf: disc.lsf,
             armspeed: pwf,
@@ -188,7 +188,7 @@ class FlightMap extends Component {
       by = processForHex(splinePoints.spb, pws, 8);
       pointColor = `#${hb(ry)}${hb(gy)}${hb(by)}`;
       const drawPathOptions = {
-        dist: disc.range,
+        dist: (disc.range * ((weightDiff * 0.005) + 1)),
         hss: disc.hst,
         lsf: disc.lsf,
         armspeed: pw,

@@ -43,6 +43,7 @@ export const drawPath = (options) => {
   const setHeight = canvas.height / zoom;
   pathContext.strokeStyle = color;
   pathContext.lineWidth = 2.4 / zoom;
+  const pathCoords = [];
 
   let airspeed = armspeed;
   let ehss = hss;
@@ -74,6 +75,8 @@ export const drawPath = (options) => {
   ehss *= airspeed ** 4;
   elsf *= 1.0 / (airspeed * airspeed);
 
+  pathCoords.push({ x: ox, y: oy });
+
   // iterate through the flight path
   do {
     y = oy + vy;
@@ -91,6 +94,7 @@ export const drawPath = (options) => {
         pathContext.moveTo(ox, oy);
         pathContext.lineTo(x, y);
         pathContext.stroke();
+        pathCoords.push({ x, y });
       }
       ox = x; oy = y;
     }
@@ -145,4 +149,72 @@ export const drawLie = (options) => {
   lieContext.arc(x, y, 33, 0, 2 * 3.1415926);
   lieContext.stroke();
   lieContext.fill();
+};
+
+export const calculatePath = (options) => {
+  const {
+    dist,
+    hss,
+    lsf,
+    armspeed,
+    wear,
+    throwType,
+    canvas,
+    zoom,
+  } = options;
+  const yscale = 2.5;
+  const xscale = 0.7;
+  const setWidth = canvas.width / zoom;
+  const setHeight = canvas.height / zoom;
+  const pathCoords = [];
+
+  let airspeed = armspeed;
+  let ehss = hss;
+  let elsf = lsf;
+  const turnsign = (throwType === 'rhbh') ? 1.0 : -1.0;
+  const fadestart = 0.4 + ((1.0 - (airspeed ** 2)) * 0.3);
+  const impact = (1.0 - airspeed) / 5;
+  const turnend = 0.8 - ((airspeed ** 2) * 0.36);
+  let x;
+  let y;
+  let ox = setWidth / 2;
+  let oy = setHeight;
+  let vx = 0.0;
+  const vy = -1.0;
+  const ht = yscale * dist;
+  const deltav = (yscale / ht);
+  const wm = wear / 10.0;
+
+  // calculate effective HSS and LSF
+  ehss *= 1.0 + (1.0 - wm);
+  ehss -= ((1.0 - wm) / 0.05) * (dist / 100);
+  elsf *= wm;
+  if (airspeed > 0.8) {
+    let op = (airspeed - 0.8) / 0.4;
+    op *= op * 2;
+    const dc = Math.max(0.0, (350 - dist)) / 10.0; // emphasize high-speed turn on sub-350ft discs
+    ehss -= op * dc;
+  }
+  ehss *= airspeed ** 4;
+  elsf *= 1.0 / (airspeed * airspeed);
+
+  // iterate through the flight path
+  do {
+    y = oy + vy;
+    x = ox + (vx * xscale);
+    airspeed -= deltav;
+    if (airspeed > turnend) {
+      vx -= turnsign * (ehss / 14000) * (turnend / airspeed);
+    }
+    if (airspeed < fadestart) {
+      vx -= (turnsign * (elsf / 4000) * (fadestart - airspeed)) / fadestart;
+    }
+    if (airspeed > 0.0) {
+      pathCoords.push({ x, y });
+      ox = x; oy = y;
+    }
+  } while (airspeed > impact);
+
+  // return lie coordinates to caller
+  return pathCoords;
 };

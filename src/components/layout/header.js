@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { FaExclamationTriangle, FaQuestionCircle, FaDatabase } from 'react-icons/lib/fa';
+import { FaExclamationTriangle, FaQuestionCircle, FaDatabase, FaMoney } from 'react-icons/lib/fa';
 
 const Header = (props) => {
   const { pageHeader } = props;
@@ -11,6 +11,13 @@ const Header = (props) => {
         <div className="logo">
           <header className="App-header grid-item-header">
             <h1 className="App-title">{pageHeader}</h1>
+            <a
+              href="https://www.patreon.com/draekane"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="help-request"
+            ><FaMoney className="fa-money-icon" /> Support us on Patreon<br />
+            </a>
             <FaExclamationTriangle className="fa-exclamation-triangle-icon" />  To report problems or offer suggestions&nbsp;
             <a
               href="https://github.com/MichaelPalmer-Orange/DiscPath-App/issues"

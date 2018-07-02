@@ -225,7 +225,6 @@ class FlightMap extends Component {
         zoom,
       };
       lie = drawPath(drawPathOptions);
-      const lastPath = disc.flightPath[disc.flightPath.length - 1];
       const drawLieOptions = {
         x: lie[0],
         y: lie[1],

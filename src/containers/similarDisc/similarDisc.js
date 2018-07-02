@@ -142,21 +142,60 @@ class SimilarDisc extends Component {
 
     const selectDisc = simDiscUtils.getSelectedDisc(selectedDisc, companies, thrower || stateThrower);
     const similarDiscs = simDiscUtils.getSimilarDiscs(selectDisc, companies, thrower || stateThrower, similarity);
-
     dispatch(SimilarDiscActions.selectSimilarDisc(selectDisc, selectedDisc));
+    dispatch(SimilarDiscActions.setSimilarDiscs(similarDiscs, true));
+  }
+
+  handleUpdateSelectedDisc = (selectDisc) => {
+    const {
+      dispatch,
+      companies,
+      similarity,
+      thrower,
+    } = this.props;
+
+    const newFlightPath = simDiscUtils.getNewFlightPath(selectDisc, thrower);
+    const similarDiscs = simDiscUtils.getSimilarDiscs(
+      { ...selectDisc, flightPath: newFlightPath },
+      companies,
+      thrower,
+      similarity,
+    );
     dispatch(SimilarDiscActions.setSimilarDiscs(similarDiscs, true));
   }
 
   handleEnableSelectDisc = (enabled) => {
     const { dispatch } = this.props;
-
     dispatch(SimilarDiscActions.enableSelectedDisc(enabled));
   }
 
   handleEnableSimilarDisc = (discId, enabled) => {
     const { dispatch } = this.props;
-
     dispatch(SimilarDiscActions.enableSimilarDisc(discId, enabled));
+  }
+
+  handleSimilarDiscEdit = () => {
+    const { dispatch } = this.props;
+    dispatch(SimilarDiscActions.toggleSelectedDiscModal());
+  }
+
+  handleSimilarDiscEditWeight = (weight) => {
+    const { dispatch, selectedDisc } = this.props;
+    dispatch(SimilarDiscActions.editSelectDiscWeight(weight));
+    const newRange = (selectedDisc.originalRange * (((selectedDisc.maxWeight - weight) * 0.005) + 1));
+    this.handleUpdateSelectedDisc({ ...selectedDisc, weight, range: newRange });
+  }
+
+  handleSimilarDiscEditWear = (wear) => {
+    const { dispatch, selectedDisc } = this.props;
+    dispatch(SimilarDiscActions.editSelectDiscWear(wear));
+    this.handleUpdateSelectedDisc({ ...selectedDisc, wear });
+  }
+
+  handleSimilarDiscEditPower = (power) => {
+    const { dispatch, selectedDisc } = this.props;
+    dispatch(SimilarDiscActions.editSelectDiscPower(power));
+    this.handleUpdateSelectedDisc({ ...selectedDisc, power });
   }
 
   render() {
@@ -171,6 +210,7 @@ class SimilarDisc extends Component {
       selectedDisc,
       selectedDiscId,
       similarDiscs,
+      similarDiscEditModal,
       similarity,
     } = this.props;
 
@@ -186,16 +226,22 @@ class SimilarDisc extends Component {
       headerClassName: 'doesntMatter',
       title: 'Similar Disc List',
       selectedDisc,
+      similarDiscEditModal,
+      thrower,
       functions: {
         handleEnableSelectedDisc: this.handleEnableSelectDisc,
         handleEnableSimilarDisc: this.handleEnableSimilarDisc,
+        handleSimilarDiscEdit: this.handleSimilarDiscEdit,
+        handleSimilarDiscEditWeight: this.handleSimilarDiscEditWeight,
+        handleSimilarDiscEditWear: this.handleSimilarDiscEditWear,
+        handleSimilarDiscEditPower: this.handleSimilarDiscEditPower,
       },
     };
 
     const content = (
       <DocumentTitle title={pageTitle}>
         <div className="workspace-container grid-container" >
-          <div className="pageTitle-header">{pageTitle}<span style={{ color: 'red' }} > **ALPHA** </span></div>
+          <div className="pageTitle-header">{pageTitle}<span style={{ color: 'orange' }} > **BETA** </span></div>
           <div className="grid-item-menu" >
             <button onClick={this.handleToggleThrowerModal} >Thrower</button>
             <button onClick={this.handleToggleDisplayOptionModal}>Display Options</button>
@@ -262,6 +308,7 @@ SimilarDisc.propTypes = {
   selectedDisc: PropTypes.shape(discShape),
   selectedDiscId: PropTypes.string,
   similarDiscs: PropTypes.arrayOf(discShape),
+  similarDiscEditModal: PropTypes.bool,
   thrower: PropTypes.shape(throwerShape),
   displayOptions: PropTypes.shape(displayOptionsShape),
   dispatch: PropTypes.func,
@@ -293,6 +340,7 @@ const mapStateToProps = state => ({
   throwerModal: state.menus.throwerModal,
   displayOptionModal: state.menus.displayOptionModal,
   similarity: state.similarDisc.similarity,
+  similarDiscEditModal: state.similarDisc.similarDiscEditModal,
 });
 
 const withWrappers = _.flowRight(connect(mapStateToProps), [WithHeaderAndNav]);

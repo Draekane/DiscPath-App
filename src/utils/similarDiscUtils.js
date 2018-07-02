@@ -34,6 +34,34 @@ export const getSelectedDisc = (selectedDisc, companies, thrower) => {
   return foundDisc;
 };
 
+export const getNewFlightPath = (selectedDisc, thrower) => {
+  const { maxWeight, weight } = selectedDisc;
+  let pwi = (selectedDisc.power || thrower.power);
+  let weightDiff = 0;
+  let powerShift;
+
+  if (maxWeight && weight) {
+    weightDiff = maxWeight - weight;
+    powerShift = (weightDiff * 0.005) + 1;
+
+    pwi *= powerShift;
+  }
+
+  const pw = 0.6 + ((pwi / 48) * 0.6);
+
+  const pathOptions = {
+    dist: selectedDisc.range,
+    hss: selectedDisc.hst,
+    lsf: selectedDisc.lsf,
+    armspeed: pw,
+    wear: selectedDisc.wear || 10,
+    throwType: selectedDisc.throwType || 'rhbh',
+  };
+  const flightPath = calculatePath(pathOptions);
+
+  return flightPath;
+};
+
 export const getSimilarDiscs = (selectedDisc, companies, thrower, similarity) => {
   if (!selectedDisc) return [];
   // const percent = similarity;

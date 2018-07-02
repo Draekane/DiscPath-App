@@ -19,6 +19,7 @@ export default class EditLabel extends Component {
       enableSave: false,
       editValue: props.value,
       originalValue: props.value,
+      disabled: (props.disabled || false),
     };
   }
   componentWillReceiveProps(nextProps) {
@@ -101,7 +102,7 @@ export default class EditLabel extends Component {
     const { onTextboxBlur } = this.props;
     let displayBlock = null;
 
-    if (this.state.editing) {
+    if (this.state.editing && !this.state.disabled) {
       const canSave = this.state.enableSave ? 'has-success' : '';
       const fullClass = `edit-label edit-label-editing ${canSave}`;
       displayBlock = (
@@ -148,4 +149,5 @@ EditLabel.propTypes = {
   updateFunction: PropTypes.func.isRequired,
   onTextboxFocus: PropTypes.func,
   onTextboxBlur: PropTypes.func,
+  disabled: PropTypes.bool,
 };

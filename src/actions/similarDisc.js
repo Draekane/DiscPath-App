@@ -12,9 +12,10 @@ export const selectSimilarDisc = (selectedDisc, selectedDiscId) => ({
   selectedDiscId,
 });
 
-export const setSimilarDiscs = similarDiscs => ({
+export const setSimilarDiscs = (similarDiscs, reset = false) => ({
   type: similarDiscActions.SIMILAR_SET_SIMILAR_DISCS,
   similarDiscs,
+  reset,
 });
 
 export const clearSimilarDiscSelection = () => ({
@@ -30,4 +31,23 @@ export const enableSimilarDisc = (discId, enabled) => ({
   type: similarDiscActions.SIMILAR_ENABLE_SIMILAR_DISC,
   discId,
   enabled,
+});
+
+export const toggleSelectedDiscModal = () => ({
+  type: similarDiscActions.SIMILAR_TOGGLE_SELECT_EDIT_MODAL,
+});
+
+export const editSelectDiscWeight = weight => ({
+  type: similarDiscActions.SIMILAR_EDIT_SELECT_WEIGHT,
+  weight,
+});
+
+export const editSelectDiscWear = wear => ({
+  type: similarDiscActions.SIMILAR_EDIT_SELECT_WEAR,
+  wear,
+});
+
+export const editSelectDiscPower = power => ({
+  type: similarDiscActions.SIMILAR_EDIT_SELECT_POWER,
+  power,
 });

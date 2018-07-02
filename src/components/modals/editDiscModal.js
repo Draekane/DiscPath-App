@@ -30,6 +30,7 @@ const EditDiscModal = (props) => {
     throwType,
     wear,
     weight,
+    disableNameEdit,
   } = editDisc;
 
   const {
@@ -105,7 +106,7 @@ const EditDiscModal = (props) => {
       style={customStyles}
     >
       <FaClose onClick={handleCloseEdit} className="fa-close-icon" />
-      <h2><EditLabel value={displayedName} updateFunction={handleDiscDisplayNameChange} /></h2>
+      <h2><EditLabel value={displayedName} updateFunction={handleDiscDisplayNameChange} disabled={disableNameEdit} /></h2>
       <div>
         { (!hideWeight) ? displayWeightSelector(weight, maxWeight) : null}
         { (!hidePower) ? (
@@ -158,6 +159,7 @@ EditDiscModal.propTypes = {
     hidePower: PropTypes.bool,
     hideThrowType: PropTypes.bool,
     hideWear: PropTypes.bool,
+    disableNameEdit: PropTypes.bool,
     functions: PropTypes.shape({
       changeDisplayName: PropTypes.func,
       changeDiscWeight: PropTypes.func,

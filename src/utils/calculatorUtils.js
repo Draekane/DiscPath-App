@@ -146,3 +146,72 @@ export const drawLie = (options) => {
   lieContext.stroke();
   lieContext.fill();
 };
+
+// This is intended to be used to figure out Similar Discs based on post-flight
+export const calculatePath = (options) => {
+  const {
+    dist,
+    hss,
+    lsf,
+    armspeed,
+    wear,
+    throwType,
+  } = options;
+  const yscale = 2.5;
+  const xscale = 0.7;
+  const setWidth = 350;
+  const setHeight = 550;
+  const pathCoords = [];
+
+  let airspeed = armspeed;
+  let ehss = hss;
+  let elsf = lsf;
+  const turnsign = (throwType === 'rhbh') ? 1.0 : -1.0;
+  const fadestart = 0.4 + ((1.0 - (airspeed ** 2)) * 0.3);
+  const impact = (1.0 - airspeed) / 5;
+  const turnend = 0.8 - ((airspeed ** 2) * 0.36);
+  let x;
+  let y;
+  let ox = setWidth / 2;
+  let oy = setHeight;
+  let vx = 0.0;
+  const vy = -1.0;
+  const ht = yscale * dist;
+  const deltav = (yscale / ht);
+  const wm = wear / 10.0;
+
+  // calculate effective HSS and LSF
+  ehss *= 1.0 + (1.0 - wm);
+  ehss -= ((1.0 - wm) / 0.05) * (dist / 100);
+  elsf *= wm;
+  if (airspeed > 0.8) {
+    let op = (airspeed - 0.8) / 0.4;
+    op *= op * 2;
+    const dc = Math.max(0.0, (350 - dist)) / 10.0; // emphasize high-speed turn on sub-350ft discs
+    ehss -= op * dc;
+  }
+  ehss *= airspeed ** 4;
+  elsf *= 1.0 / (airspeed * airspeed);
+
+  // iterate through the flight path
+  do {
+    y = oy + vy;
+    x = ox + (vx * xscale);
+    airspeed -= deltav;
+    if (airspeed > turnend) {
+      vx -= turnsign * (ehss / 14000) * (turnend / airspeed);
+    }
+    if (airspeed < fadestart) {
+      vx -= (turnsign * (elsf / 4000) * (fadestart - airspeed)) / fadestart;
+    }
+    if (airspeed > 0.0) {
+      pathCoords.push({ x: (175 - x), y: (550 - y) });
+      ox = x; oy = y;
+    }
+  } while (airspeed > impact);
+
+  pathCoords.push({ x: (175 - x), y: (550 - y) });
+
+  // return lie coordinates to caller
+  return pathCoords;
+};

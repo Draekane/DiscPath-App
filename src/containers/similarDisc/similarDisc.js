@@ -63,17 +63,23 @@ class SimilarDisc extends Component {
   }
 
   handleChangeThrowerPower = (throwerPower) => {
-    const { dispatch } = this.props;
+    const { dispatch, selectedDiscId, thrower } = this.props;
 
     dispatch(ThrowerActions.changeThrowerPower(throwerPower));
+    this.handleSetSelectedDisc(selectedDiscId, { ...thrower, power: throwerPower });
   }
 
   handleChangeSimilarity = (similarity) => {
-    const { dispatch, selectedDisc, companies } = this.props;
+    const {
+      dispatch,
+      selectedDisc,
+      companies,
+      thrower,
+    } = this.props;
 
     dispatch(SimilarDiscActions.changeSimilarity(similarity));
     if (selectedDisc) {
-      const similarDiscs = simDiscUtils.getSimilarDiscs(selectedDisc, companies, similarity);
+      const similarDiscs = simDiscUtils.getSimilarDiscs(selectedDisc, companies, thrower, similarity);
       dispatch(SimilarDiscActions.setSimilarDiscs(similarDiscs));
     }
   }
@@ -121,15 +127,24 @@ class SimilarDisc extends Component {
   }
 
   handleDiscSelection = (selectedOptions) => {
-    const { dispatch, companies, similarity } = this.props;
-
     if (selectedOptions !== null) {
-      const selectedDisc = simDiscUtils.getSelectedDisc(selectedOptions.value, companies);
-      const similarDiscs = simDiscUtils.getSimilarDiscs(selectedDisc, companies, similarity);
-
-      dispatch(SimilarDiscActions.selectSimilarDisc(selectedDisc, selectedOptions.value));
-      dispatch(SimilarDiscActions.setSimilarDiscs(similarDiscs));
+      this.handleSetSelectedDisc(selectedOptions.value);
     }
+  }
+
+  handleSetSelectedDisc = (selectedDisc, thrower = null) => {
+    const {
+      dispatch,
+      companies,
+      similarity,
+      thrower: stateThrower,
+    } = this.props;
+
+    const selectDisc = simDiscUtils.getSelectedDisc(selectedDisc, companies, thrower || stateThrower);
+    const similarDiscs = simDiscUtils.getSimilarDiscs(selectDisc, companies, thrower || stateThrower, similarity);
+
+    dispatch(SimilarDiscActions.selectSimilarDisc(selectDisc, selectedDisc));
+    dispatch(SimilarDiscActions.setSimilarDiscs(similarDiscs, true));
   }
 
   handleEnableSelectDisc = (enabled) => {

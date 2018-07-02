@@ -58,16 +58,40 @@ class FlightMap extends Component {
     context.lineWidth = 1.0;
     context.font = '9px helvetica';
     context.fillStyle = '#999';
-    context.strokeStyle = '#446';
+
     let i;
     let j;
     // Draw Vertical Lines
-    for (i = 0; i < canvas.width; i += 50) {
-      const adjustI = i * zoom;
+    context.strokeStyle = '#AAAAAA';
+    context.beginPath();
+    context.moveTo((175 * zoom), canvas.height);
+    context.lineTo((175 * zoom), 0);
+    context.stroke();
+    context.textAlign = 'bottom';
+    context.fillText(`${0}%`, (canvas.width - (175 * zoom)) + 8, canvas.height - 3);
+
+    context.strokeStyle = '#446';
+    for (i = 50; i < (175 * zoom); i += 50) {
+      const adjustIA = (175 * zoom) + (i * zoom);
+      const adjustIB = (175 * zoom) - (i * zoom);
+      // Values "Above" 0
       context.beginPath();
-      context.moveTo(adjustI, canvas.height);
-      context.lineTo(adjustI, 0);
+      context.moveTo(adjustIA, canvas.height);
+      context.lineTo(adjustIA, 0);
       context.stroke();
+      if (i < 150) {
+        context.textAlign = 'bottom';
+        context.fillText(`-${i}%`, adjustIA + 10, canvas.height - 3);
+      }
+      // Values "Below" 0
+      context.beginPath();
+      context.moveTo(adjustIB, canvas.height);
+      context.lineTo(adjustIB, 0);
+      context.stroke();
+      if (i < 200) {
+        context.textAlign = 'bottom';
+        context.fillText(`${i}%`, adjustIB + 10, canvas.height - 3);
+      }
     }
     // Draw and Label Horizontal lines
     for (j = 0; j <= canvas.height; j += 50) {
@@ -201,6 +225,7 @@ class FlightMap extends Component {
         zoom,
       };
       lie = drawPath(drawPathOptions);
+      const lastPath = disc.flightPath[disc.flightPath.length - 1];
       const drawLieOptions = {
         x: lie[0],
         y: lie[1],
@@ -238,6 +263,7 @@ class FlightMap extends Component {
         const lie = key[0];
         const dn = key[1];
         const txt = `${setHeight - lie[1]}' ${Math.floor((setHeight - lie[1]) / 3.33)}m`;
+        // const txt = `x: ${175 - lie[0]}, y: ${550 - lie[1]}`;
         context.font = '10px helvetica';
         context.textAlign = 'center';
         context.strokeStyle = '#000';

@@ -34,7 +34,7 @@ const DiscList = (props) => {
           <div className="selectedDisc-display">
             <span title="Click to Hide this Disc" >
               <FaEye onClick={handleDisableSelectedDisc} className="fa-eye-icon" />
-            </span> {selectedDisc.company} {selectedDisc.name}
+            </span> {selectedDisc.company} {selectedDisc.name} - ({getDiscType(selectedDisc.type)})
           </div>);
       }
       return (
@@ -45,6 +45,21 @@ const DiscList = (props) => {
         </div>);
     }
     return null;
+  };
+
+  const getDiscType = (discType) => {
+    switch (discType) {
+      case 'D':
+        return 'Distance Driver';
+      case 'F':
+        return 'Fairway Driver';
+      case 'M':
+        return 'Midrange';
+      case 'P':
+        return 'Putt & Approach';
+      default:
+        return 'Unknown';
+    }
   };
 
   return (
@@ -77,7 +92,7 @@ const DiscList = (props) => {
               },
               {
                 id: 'discDisplayName',
-                accessor: d => `${d.company} ${d.name}`,
+                accessor: d => `${d.company} ${d.name} - (${getDiscType(d.type)})`,
                 Cell: row => (row.value),
                 className: 'leftAlignCell',
                 width: 250,

@@ -1,12 +1,13 @@
 import _ from 'lodash';
 import Disc from '../models/disc';
+import { calculatePath } from './calculatorUtils';
 
 export const similarityPercentage = value => `${parseInt(value * 100, 10)}%`;
 
 export const hstValue = 50;
 export const lsfValue = 63;
 
-export const getSelectedDisc = (selectedDisc, companies) => {
+export const getSelectedDisc = (selectedDisc, companies, thrower) => {
   let foundDisc = null;
   if (!selectedDisc) return foundDisc;
   const currentParse = selectedDisc.split('-');
@@ -14,7 +15,17 @@ export const getSelectedDisc = (selectedDisc, companies) => {
     if (company.companyId === currentParse[0]) {
       _.forEach(company.discs, (disc) => {
         if (disc.discId === currentParse[1]) {
-          foundDisc = new Disc({ ...disc, company: company.company });
+          const pw = 0.6 + (((disc.power || thrower.power) / 48) * 0.6);
+          const pathOptions = {
+            dist: disc.range,
+            hss: disc.hst,
+            lsf: disc.lsf,
+            armspeed: pw,
+            wear: disc.wear || 10,
+            throwType: disc.throwType || 'rhbh',
+          };
+          const flightPath = calculatePath(pathOptions);
+          foundDisc = new Disc({ ...disc, company: company.company, flightPath });
         }
       });
     }
@@ -23,23 +34,34 @@ export const getSelectedDisc = (selectedDisc, companies) => {
   return foundDisc;
 };
 
-export const getSimilarDiscs = (selectedDisc, companies, similarity) => {
+export const getSimilarDiscs = (selectedDisc, companies, thrower, similarity) => {
   if (!selectedDisc) return [];
-  const percent = similarity;
-  const checkParams = {
-    hstA: selectedDisc.hst - (hstValue * percent),
-    hstB: selectedDisc.hst + (hstValue * percent),
-    lsfA: selectedDisc.lsf - (lsfValue * percent),
-    lsfB: selectedDisc.lsf + (lsfValue * percent),
-    rangeA: selectedDisc.range - (100 * percent),
-    rangeB: selectedDisc.range + (100 * percent),
-  };
+  // const percent = similarity;
+  // const checkParams = {
+  //   hstA: selectedDisc.hst - (hstValue * percent),
+  //   hstB: selectedDisc.hst + (hstValue * percent),
+  //   lsfA: selectedDisc.lsf - (lsfValue * percent),
+  //   lsfB: selectedDisc.lsf + (lsfValue * percent),
+  //   rangeA: selectedDisc.range - (100 * percent),
+  //   rangeB: selectedDisc.range + (100 * percent),
+  // };
 
   const similarDiscs = [];
   _.forEach(companies, (company) => {
     _.forEach(company.discs, (disc) => {
-      const convertDisc = new Disc({ ...disc, company: company.company });
-      if (convertDisc.isDiscSimilar(checkParams) && convertDisc.discId !== selectedDisc.discId) {
+      const pw = 0.6 + (((disc.power || thrower.power) / 48) * 0.6);
+      const pathOptions = {
+        dist: disc.range,
+        hss: disc.hst,
+        lsf: disc.lsf,
+        armspeed: pw,
+        wear: disc.wear || 10,
+        throwType: disc.throwType || 'rhbh',
+      };
+      const flightPath = calculatePath(pathOptions);
+      const convertDisc = new Disc({ ...disc, company: company.company, flightPath });
+      if (convertDisc.isDiscFlightPathSimilar(selectedDisc.flightPath, similarity)
+        && convertDisc.discId !== selectedDisc.discId) {
         similarDiscs.push(convertDisc);
       }
     });
@@ -48,12 +70,12 @@ export const getSimilarDiscs = (selectedDisc, companies, similarity) => {
   return similarDiscs;
 };
 
-export const getDisplayDiscs = (selectedDiscId, companies, similarity) => {
-  const selectedDisc = getSelectedDisc(selectedDiscId, companies);
+export const getDisplayDiscs = (selectedDiscId, companies, thrower, similarity) => {
+  const selectedDisc = getSelectedDisc(selectedDiscId, companies, thrower);
 
   if (!selectedDisc) return [];
 
-  const similarDiscs = getSimilarDiscs(selectedDisc, companies, similarity);
+  const similarDiscs = getSimilarDiscs(selectedDisc, companies, thrower, similarity);
 
   return _.union([selectedDisc], similarDiscs);
 };

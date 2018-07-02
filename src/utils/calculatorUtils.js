@@ -43,7 +43,6 @@ export const drawPath = (options) => {
   const setHeight = canvas.height / zoom;
   pathContext.strokeStyle = color;
   pathContext.lineWidth = 2.4 / zoom;
-  const pathCoords = [];
 
   let airspeed = armspeed;
   let ehss = hss;
@@ -75,8 +74,6 @@ export const drawPath = (options) => {
   ehss *= airspeed ** 4;
   elsf *= 1.0 / (airspeed * airspeed);
 
-  pathCoords.push({ x: ox, y: oy });
-
   // iterate through the flight path
   do {
     y = oy + vy;
@@ -94,7 +91,6 @@ export const drawPath = (options) => {
         pathContext.moveTo(ox, oy);
         pathContext.lineTo(x, y);
         pathContext.stroke();
-        pathCoords.push({ x, y });
       }
       ox = x; oy = y;
     }
@@ -151,6 +147,7 @@ export const drawLie = (options) => {
   lieContext.fill();
 };
 
+// This is intended to be used to figure out Similar Discs based on post-flight
 export const calculatePath = (options) => {
   const {
     dist,
@@ -159,13 +156,11 @@ export const calculatePath = (options) => {
     armspeed,
     wear,
     throwType,
-    canvas,
-    zoom,
   } = options;
   const yscale = 2.5;
   const xscale = 0.7;
-  const setWidth = canvas.width / zoom;
-  const setHeight = canvas.height / zoom;
+  const setWidth = 350;
+  const setHeight = 550;
   const pathCoords = [];
 
   let airspeed = armspeed;
@@ -210,10 +205,12 @@ export const calculatePath = (options) => {
       vx -= (turnsign * (elsf / 4000) * (fadestart - airspeed)) / fadestart;
     }
     if (airspeed > 0.0) {
-      pathCoords.push({ x, y });
+      pathCoords.push({ x: (175 - x), y: (550 - y) });
       ox = x; oy = y;
     }
   } while (airspeed > impact);
+
+  pathCoords.push({ x: (175 - x), y: (550 - y) });
 
   // return lie coordinates to caller
   return pathCoords;

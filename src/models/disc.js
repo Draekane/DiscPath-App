@@ -11,6 +11,7 @@ export default class Disc {
     this.name = discOptions.name || '';
     this.range = discOptions.range || 50;
     this.type = discOptions.type || 'D';
+    this.flightPath = discOptions.flightPath || [];
   }
 
   isDiscSimilar(checkParams) {
@@ -31,6 +32,23 @@ export default class Disc {
       }
     }
     return false;
+  }
+
+  isDiscFlightPathSimilar(checkPath, similarity) {
+    const xDiff = 2.4 * (similarity * 10);
+    const yDiff = 2.4 * (similarity * 10);
+    const checkPoint = checkPath[checkPath.length - 1];
+    const flightPoint = this.flightPath[this.flightPath.length - 1];
+
+    let isSimilar = false;
+
+    if (_.inRange(flightPoint.y, checkPoint.y - yDiff, checkPoint.y + yDiff)) {
+      if (_.inRange(flightPoint.x, checkPoint.x - xDiff, checkPoint.x + xDiff)) {
+        isSimilar = true;
+      }
+    }
+
+    return isSimilar;
   }
 }
 

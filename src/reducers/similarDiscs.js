@@ -8,6 +8,13 @@ const initialState = {
   selectedDiscId: null,
 };
 
+const getSimilarDiscs = (state, action) => {
+  if (action.reset) return action.similarDiscs;
+  return (state.similarDiscs.length < action.similarDiscs.length) ?
+    _.unionBy(state.similarDiscs, action.similarDiscs, disc => disc.discId) :
+    _.intersectionBy(state.similarDiscs, action.similarDiscs, disc => disc.discId);
+};
+
 const thrower = (state = initialState, action = {}) => {
   switch (action.type) {
     case similarDiscActionTypes.SIMILARITY_CHANGE:
@@ -24,9 +31,7 @@ const thrower = (state = initialState, action = {}) => {
     case similarDiscActionTypes.SIMILAR_SET_SIMILAR_DISCS:
       return {
         ...state,
-        similarDiscs: (state.similarDiscs.length < action.similarDiscs.length) ?
-          _.unionBy(state.similarDiscs, action.similarDiscs, disc => disc.discId) :
-          _.intersectionBy(state.similarDiscs, action.similarDiscs, disc => disc.discId),
+        similarDiscs: getSimilarDiscs(state, action),
       };
     case similarDiscActionTypes.SIMILAR_CLEAR_SELECT_DISC:
       return {

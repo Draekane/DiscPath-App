@@ -238,7 +238,19 @@ class FlightMap extends Component {
         zoom,
       };
       drawLie(drawLieOptions);
-      lieLabels.push([lie, `${disc.company} ${disc.name}`]);
+      let discName;
+      if (disc.displayName) {
+        if (disc.weight) {
+          discName = `${disc.displayName} - ${disc.weight}g`;
+        } else {
+          discName = disc.displayName;
+        }
+      } else if (disc.weight) {
+        discName = `${disc.company} ${disc.name} - ${disc.weight}g`;
+      } else {
+        discName = `${disc.company} ${disc.name}`;
+      }
+      lieLabels.push([lie, discName]);
     });
 
     const context = canvas.getContext('2d');

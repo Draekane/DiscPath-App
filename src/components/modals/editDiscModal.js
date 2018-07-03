@@ -84,13 +84,14 @@ const EditDiscModal = (props) => {
     if (maxWeight) {
       return (
         <div className="editBlock">
-          <label htmlFor="discWeight">Weight (optional): {weight || maxWeight}</label>
+          <label htmlFor="discWeight">Weight (optional): {weight || maxWeight}g</label>
           <Slider
             value={weight || maxWeight}
             orientation="horizontal"
             min={120}
             max={maxWeight}
             className="wear-slider"
+            format={(value) => `${value}g`}
             onChange={handleDiscWeightChange}
           />
         </div>
@@ -111,7 +112,7 @@ const EditDiscModal = (props) => {
         { (!hideWeight) ? displayWeightSelector(weight, maxWeight) : null}
         { (!hidePower) ? (
           <div className="editBlock">
-            <label htmlFor="discPower">Power (optional): {powerPercentage(power || throwerPower)}</label>
+            <label htmlFor="discPower">Power (optional, % of nominal airspeed required): {powerPercentage(power || throwerPower)}</label>
             <Slider
               value={power || throwerPower}
               orientation="horizontal"
@@ -124,7 +125,7 @@ const EditDiscModal = (props) => {
           </div>) : null }
         { (!hideThrowType) ? (
           <div className="editBlock" >
-            <label htmlFor="discThrowType">ThrowType (optional): </label>
+            <label htmlFor="discThrowType">Throw Type (optional): </label>
             <Select
               name="ThrowerTypeSelector"
               id="ThrowerTypeSelector"
@@ -136,7 +137,7 @@ const EditDiscModal = (props) => {
           </div>) : null }
         { (!hideWear) ? (
           <div className="editBlock">
-            <label htmlFor="discWear">Wear (optional): {wear}</label>
+            <label htmlFor="discWear">Wear (optional, using the sleepy scale): {wear}/10</label>
             <Slider
               value={wear}
               orientation="horizontal"

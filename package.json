@@ -49,12 +49,13 @@
     "react-scripts": "^1.1.4",
     "react-select": "1.2.1",
     "react-table": "^6.8.2",
+    "reactjs-popup": "^1.1.1",
     "redux": "^3.7.2",
     "redux-form": "^7.3.0",
     "redux-localstorage": "^0.4.1",
     "redux-thunk": "~2.3.0",
     "reselect": "^3.0.1",
-    "serve": "6.5.5"
+    "serve": "^9.2.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

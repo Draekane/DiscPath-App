@@ -1,10 +1,10 @@
-import express from 'express';
-import { join } from 'path';
+const express = require('express');
+const path = require('path');
 
 const app = express();
-app.use(express.static(join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, 'build')));
 app.get('/*', (req, res) => {
-  res.sendFilePath(join(__dirname, 'build', 'index.html'));
+  res.sendFilePath(path.join(__dirname, 'build', 'index.html'));
 });
 
 const port = 8080;

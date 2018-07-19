@@ -10,7 +10,7 @@ import BagContainer from './bag';
 import Thrower from '../../components/modals/thrower';
 import DisplayOptions from '../../components/modals/displayOptions';
 import ImportExport from '../../components/modals/importExport';
-import WithHeaderAndNav from '../../components/layout/withHeaderAndNav';
+import WithHeaderAndNav from '../../hoc/withHeaderAndNav';
 // Shapes
 import { companyShape } from '../../propTypeShapes/companyShapes';
 import { throwerShape, displayOptionsShape, bagShape } from '../../propTypeShapes/bagShapes';

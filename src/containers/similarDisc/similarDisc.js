@@ -6,7 +6,7 @@ import DocumentTitle from 'react-document-title';
 import _ from 'lodash';
 import Slider from 'react-rangeslider';
 
-import WithHeaderAndNav from '../../components/layout/withHeaderAndNav';
+import WithHeaderAndNav from '../../hoc/withHeaderAndNav';
 import FlightMap from '../../components/map/flightMap';
 import DiscSelector from '../../components/similarDisc/discSelector';
 import Thrower from '../../components/modals/thrower';

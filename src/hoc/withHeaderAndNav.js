@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { connect } from 'react-redux';
 
-import Header from './header';
-import Sidebar from './sidebar';
+import Header from '../components/layout/header/';
+import Sidebar from '../components/layout/sidebar';
 
 const WithHeaderAndNav = (WrappedComponent) => {
   const WithHeaderAndNavContainer = (props) => {

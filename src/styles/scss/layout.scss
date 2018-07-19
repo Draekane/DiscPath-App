@@ -5,6 +5,32 @@
   background-color: $grey02;
   color: $grey15;
   grid-column: 1 / 2;
+
+  .right-header-item {
+    display: inline;
+    padding-right: 25px;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .menu-items {
+    padding: 5px;
+    border: 1px solid $green10;
+    color: $blue08;
+
+    a {
+      color: $blue08;
+      text-decoration: none;
+
+      &:hover {
+        color: $blue12;
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 .App-title {
@@ -171,7 +197,39 @@ ul.list-accordion {
       fill: $grey10;
     }
   }
+}
+
+.topbar {
+  display: flex;
+  flex: 0 0 auto;
+  width: 100%;
+  height: 85px;
+  background: $grey02;
+
+  .topbar-left {
+    flex-basis: 0%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0;
+    background-color: $grey02;
   }
 
+  .topbar-right {
+    display: flex;
+    flex-basis: 0%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-left: auto;
+    padding-top: 10px;
 
+    & > div {
+      margin-right: 10px;
+      margin-left: 20px;
+    }
+
+    & > div:first-child {
+      margin-left: auto;
+    }
+  }
+}
 

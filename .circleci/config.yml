@@ -10,18 +10,7 @@ jobs:
     steps:
       - checkout
 
-      - restore_cache:
-          keys:
-          - v1-dependencies-8.11.3-{{ .Environment.CIRCLE_BRANCH }}-{{ checksum "package.json" }}
-          - v1-dependencies-8.11.3-{{ .Environment.CIRCLE_BRANCH }}-
-          - v1-dependencies-8.11.3-
-
       - run: cd src && npm install
-
-      - save_cache:
-          key: v1-dependencies-8.11.3-{{ .Environment.CIRCLE_BRANCH }}-{{ checksum "package.json" }}
-          paths:
-            - node_modules
 
       - persist_to_workspace:
           root: .

@@ -1,4 +1,4 @@
-version: 2
+ersion: 2
 jobs:
   one:
     docker:
@@ -6,32 +6,35 @@ jobs:
     steps:
       - checkout
       - run: echo "A first hello"
-      - run: mkdir -p discpath_workspace
-      - run: echo "Trying out workspaces" > discpath_workspace/echo-output
-      - persist_to_workspace"
-        root: discpath_workspace
-        paths:
-          - echo-output
+      - run: mkdir -p my_workspace
+      - run: echo "Trying out workspaces" > my_workspace/echo-output
+      - persist_to_workspace:
+          # Must be an absolute path, or relative path from working_directory
+          root: my_workspace
+          # Must be relative path from root
+          paths:
+            - echo-output      
   two:
     docker:
       - image: circleci/ruby:2.4.1-jessie
     steps:
       - checkout
-      - run: echo "A more familier hi"
+      - run: echo "A more familiar hi"  
       - attach_workspace:
-        at: discpaht_workspace
-          
+          # Must be absolute path or relative path from working_directory
+          at: my_workspace
+
       - run: |
-          if [[ $(cat discpath_workspace/echo-output) == "Trying out workspaces" ]]; then
-            echo "It Worked!";
+          if [[ $(cat my_workspace/echo-output) == "Trying out workspaces" ]]; then
+            echo "It worked!";
           else
-            echoe "Nope!"; exit 1
+            echo "Nope!"; exit 1
           fi
 workflows:
   version: 2
   one_and_two:
     jobs:
       - one
-      - two
-        requires:
-          - one
+      - two:
+          requires:
+            - one

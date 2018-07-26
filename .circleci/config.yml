@@ -25,7 +25,7 @@ jobs:
       - persist_to_workspace:
           root: src
           paths:
-            - dist
+            - build
 
   lint:
     docker:

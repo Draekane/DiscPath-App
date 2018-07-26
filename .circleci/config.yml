@@ -35,6 +35,7 @@ jobs:
       - checkout
       - attach_workspace:
           at: src
+      - run: cd src && npm run build-css
       - run: cd src && npm run lint
 
   unit-tests:

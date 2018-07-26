@@ -5,11 +5,11 @@ const LeftHeader = (props) => {
   const { pageHeader } = props;
 
   return (
-        <div className="logo">
-          <header className="App-header">
-            <h1 className="App-title">{pageHeader}</h1>
-          </header>
-        </div>);
+    <div className="logo">
+      <header className="App-header">
+        <h1 className="App-title">{pageHeader}</h1>
+      </header>
+    </div>);
 };
 
 LeftHeader.propTypes = {

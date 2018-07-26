@@ -38,7 +38,7 @@ class SideBar extends React.Component {
     const currentLocation = _.lowerCase(window.location.pathname);
     const itemRoute = _.lowerCase(route.path);
     const routeClass = (currentLocation === itemRoute) ? 'nav-image active' : 'nav-image';
-    navbarItems.push(
+    const navItemOne = (
       <li
         className={routeClass}
         key={menuNavKey}
@@ -48,6 +48,7 @@ class SideBar extends React.Component {
           <span className="list-label">{route.navTitle}</span>
         </Link>
       </li>);
+    navbarItems.push(navItemOne);
 
     return navbarItems;
   }

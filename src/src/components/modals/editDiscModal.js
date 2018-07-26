@@ -91,7 +91,7 @@ const EditDiscModal = (props) => {
             min={120}
             max={maxWeight}
             className="wear-slider"
-            format={(value) => `${value}g`}
+            format={value => `${value}g`}
             onChange={handleDiscWeightChange}
           />
         </div>
@@ -112,7 +112,9 @@ const EditDiscModal = (props) => {
         { (!hideWeight) ? displayWeightSelector(weight, maxWeight) : null}
         { (!hidePower) ? (
           <div className="editBlock">
-            <label htmlFor="discPower">Power (optional, % of nominal airspeed required): {powerPercentage(power || throwerPower)}</label>
+            <label htmlFor="discPower">
+              Power (optional, % of nominal airspeed required): {powerPercentage(power || throwerPower)}
+            </label>
             <Slider
               value={power || throwerPower}
               orientation="horizontal"

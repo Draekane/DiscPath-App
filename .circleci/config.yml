@@ -52,6 +52,7 @@ workflows:
   build-and-validate:
     jobs:
       - install-dependencies:
+          context: discpath
       - build:
           requires:
             - install-dependencies

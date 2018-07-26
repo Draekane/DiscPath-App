@@ -9,7 +9,7 @@ jobs:
       - checkout
       - run: cd src && npm install
       - persist_to_workspace:
-          root: .
+          root: src
           paths:
             - node_modules
 

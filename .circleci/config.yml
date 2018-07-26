@@ -8,8 +8,9 @@ jobs:
     steps:
       - checkout
       - run: cd src && npm install
+      - run: mkdir -p 
       - persist_to_workspace:
-          root: .
+          root: src
           paths:
             - node_modules
 
@@ -23,7 +24,7 @@ jobs:
           at: .
       - run: cd src && npm run build
       - persist_to_workspace:
-          root: .
+          root: src
           paths:
             - dist
 

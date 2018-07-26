@@ -9,9 +9,9 @@ jobs:
       - run: mkdir -p discpath_workspace
       - run: echo "Trying out workspaces" > discpath_workspace/echo-output
       - persist_to_workspace"
-          root: discpath_workspace
-          paths:
-            - echo-output
+        root: discpath_workspace
+        paths:
+          - echo-output
   two:
     docker:
       - image: circleci/ruby:2.4.1-jessie
@@ -19,7 +19,8 @@ jobs:
       - checkout
       - run: echo "A more familier hi"
       - attach_workspace:
-          at: discpaht_workspace
+        at: discpaht_workspace
+          
       - run: |
           if [[ $(cat discpath_workspace/echo-output) == "Trying out workspaces" ]]; then
             echo "It Worked!";
@@ -32,5 +33,5 @@ workflows:
     jobs:
       - one
       - two
-          requires:
-            - one
+        requires:
+          - one

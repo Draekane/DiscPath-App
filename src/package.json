@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node server.js",
     "start-parcel": "parcel ./public/index.html",
-    "start-dev": "react-scripts start",
+    "start-dev": "\"./src\" react-scripts start ",
     "start-watch": "npm-run-all -p watch-css start-dev",
     "build": "npm-run-all build-css build-js",
     "build-js": "react-scripts build",

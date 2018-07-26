@@ -20,10 +20,10 @@ jobs:
     steps:
       - checkout
       - attach_workspace:
-          at: .
-      - run: cd src && npm run build
+          at: src
+      - run: npm run build
       - persist_to_workspace:
-          root: .
+          root: src
           paths:
             - dist
 
@@ -34,8 +34,8 @@ jobs:
     steps:
       - checkout
       - attach_workspace:
-          at: .
-      - run: cd src && npm run lint
+          at: src
+      - run: npm run lint
 
   unit-tests:
     docker:
@@ -44,7 +44,7 @@ jobs:
     steps:
       - checkout
       - attach_workspace:
-          at: .
+          at: src
       - run: cd src && npm run test
 
 workflows:

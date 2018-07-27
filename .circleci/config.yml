@@ -58,7 +58,7 @@ jobs:
       - run: |
           gcloud auth activate-service-account --key-file=${HOME}/gcloud-service-key.json
           gcloud --quiet config set project ${GOOGLE_PROJECT_ID}
-          gcloud --quier config set compute/zone ${GCLOUD_COMPUTE_ZONE}
+          gcloud --quiet config set compute/zone ${GCLOUD_COMPUTE_ZONE}
       - run:
           name: Deploy Master to Googel App Engine
           command: ./deploy.sh

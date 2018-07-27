@@ -241,7 +241,7 @@ class SimilarDisc extends Component {
     const content = (
       <DocumentTitle title={pageTitle}>
         <div className="workspace-container grid-container" >
-          <div className="pageTitle-header">{pageTitle}<span style={{ color: 'orange' }} > **BETA** </span></div>
+          <div className="pageTitle-header">{pageTitle}</div>
           <div className="grid-item-menu" >
             <button onClick={this.handleToggleThrowerModal} >Thrower</button>
             <button onClick={this.handleToggleDisplayOptionModal}>Display Options</button>

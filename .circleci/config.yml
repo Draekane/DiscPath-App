@@ -54,15 +54,14 @@ jobs:
     steps:
       - checkout
       - attach_workspace:
-          at: src
+          at: .
+      - run: echo ${GCLOUD_SERVICE_KEY} > ${HOME}/gcr-key.json
+      - run: gcloud -q config set project ${GOOGLE_PROJECT_NAME}
+      - run: gcloud auth activate-service-account --key-file ${HOME}/gcr-key.json
       - run:
-          name: Store Service Account
-          command: echo $GCLOUD_SERVICE_KEY > ${HOME}/gcloud-service-key.json
-      - run: |
-          gcloud auth activate-service-account --key-file=${HOME}/gcloud-service-key.json
-          gcloud --quiet config set project ${GOOGLE_PROJECT_ID}
-          gcloud --quiet config set compute/zone ${GOOGLE_COMPUTE_ZONE}
-      - run: 
+          name: Deploy to AppEngine
+          command: cd src && gcloud app deploy --quiet
+          no_output_timeout: 20m
 
 workflows:
   version: 2

@@ -61,7 +61,8 @@ jobs:
           gcloud --quiet config set compute/zone ${GOOGLE_COMPUTE_ZONE}
       - run:
           name: Deploy Master to Googel App Engine
-          command: ./deploy/deploy.sh
+          command: echo "Running deploy script"
+      - run: cd deploy && deploy.sh
 
 workflows:
   version: 2

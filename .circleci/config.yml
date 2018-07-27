@@ -56,7 +56,7 @@ jobs:
           name: Store Service Account
           command: echo $GCLOUD_SERVICE_KEY > ${HOME}/gcloud-service-key.json
       - run: |
-          gcloud auth activate-service-account --key-files=${HOME}/gcloud-service-key.json
+          gcloud auth activate-service-account --key-file=${HOME}/gcloud-service-key.json
           gcloud --quiet config set project ${GOOGLE_PROJECT_ID}
           gcloud --quier config set compute/zone ${GCLOUD_COMPUTE_ZONE}
       - run:

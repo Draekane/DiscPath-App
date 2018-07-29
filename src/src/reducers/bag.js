@@ -15,6 +15,7 @@ const initialState = {
     bagId: 1,
   }],
   zoom: 1,
+  darkTheme: true,
   lastDiscId: 0,
   lastBagId: 1,
   selectedBagId: 1,
@@ -335,6 +336,12 @@ const disc = (state = getInitialState(), action = {}) => {
       newState = {
         ...action.updateBag,
         ranUpdateCheck: true,
+      };
+      break;
+    case bagActionTypes.SET_MAP_THEME:
+      newState = {
+        ...state,
+        darkTheme: action.darkTheme,
       };
       break;
     default:

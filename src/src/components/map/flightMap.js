@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import _ from 'lodash';
-import { FaMinusSquare, FaPlusSquare, FaCircle } from 'react-icons/lib/fa';
+import { FaMinusSquare, FaPlusSquare, FaCircle, FaSquare, FaSquareO } from 'react-icons/lib/fa';
 
 import { discShape, throwerShape, displayOptionsShape } from '../../propTypeShapes/bagShapes';
 import { processForHex, hb, drawPath, drawLie } from '../../utils/calculatorUtils';
@@ -12,6 +12,20 @@ const lieConfig = {
   M: { color: '#0078ff', outline: '#004088' }, // Mid Colors
   P: { color: '#00ffff', outline: '#008888' }, // Putt and Approach Colors
   S: { color: '#ff0000', outline: '#880000' }, // Selected Similar Disc Colors
+};
+
+const mapColorsLight = {
+  background: '#ffffff',
+  lines: '#000000',
+  centerLine: '#ff0000',
+  fonts: '#000000',
+};
+
+const mapColorsDark = {
+  background: '#000000',
+  lines: '#aaaaaa',
+  centerLine: '#ff0000',
+  fonts: '#aaaaaa',
 };
 
 const splinePoints = {
@@ -36,10 +50,13 @@ class FlightMap extends Component {
 
   resetBuffers() {
     // THIS IS WHAT DRAWS THE CANVAS AND THE GRID
-    const { zoom } = this.props;
+    const { zoom, darkTheme } = this.props;
+
     canvas = this.canvasRef;
     const setWidth = canvas.width / zoom;
     const setHeight = canvas.height / zoom;
+
+    const colors = darkTheme ? mapColorsDark : mapColorsLight;
 
     pathBuffer = document.createElement('canvas');
     pathBuffer.width = canvas.width;
@@ -53,24 +70,24 @@ class FlightMap extends Component {
     outlineBuffer.width = canvas.width;
     outlineBuffer.height = canvas.height;
     const context = canvas.getContext('2d');
-    context.fillStyle = '#000';
+    context.fillStyle = colors.background;
     context.fillRect(0, 0, canvas.width, canvas.height);
     context.lineWidth = 1.0;
     context.font = '9px helvetica';
-    context.fillStyle = '#999';
+    context.fillStyle = colors.fonts;
 
     let i;
     let j;
     // Draw Vertical Lines
-    context.strokeStyle = '#AAAAAA';
+    context.strokeStyle = colors.centerLine;
     context.beginPath();
     context.moveTo((175 * zoom), canvas.height);
     context.lineTo((175 * zoom), 0);
     context.stroke();
     context.textAlign = 'bottom';
     context.fillText(`${0}%`, (canvas.width - (175 * zoom)) + 8, canvas.height - 3);
-
-    context.strokeStyle = '#446';
+    // Label Vertical Lines
+    context.strokeStyle = colors.lines;
     for (i = 50; i < (175 * zoom); i += 50) {
       const adjustIA = (175 * zoom) + (i * zoom);
       const adjustIB = (175 * zoom) - (i * zoom);
@@ -94,6 +111,7 @@ class FlightMap extends Component {
       }
     }
     // Draw and Label Horizontal lines
+    context.strokeStyle = colors.lines;
     for (j = 0; j <= canvas.height; j += 50) {
       const adjustJ = j * zoom;
       context.beginPath();
@@ -122,6 +140,7 @@ class FlightMap extends Component {
       discs,
       displayOptions,
       zoom,
+      darkTheme,
     } = this.props;
     let pwi;
     let pw;
@@ -135,6 +154,7 @@ class FlightMap extends Component {
     let powerShift;
 
     const { power: throwerPower, throwType: throwerThrowType } = thrower;
+    const colors = darkTheme ? mapColorsDark : mapColorsLight;
 
     this.resetBuffers();
     const lieLabels = [];
@@ -277,9 +297,9 @@ class FlightMap extends Component {
         // const txt = `x: ${175 - lie[0]}, y: ${550 - lie[1]}`;
         context.font = '10px helvetica';
         context.textAlign = 'center';
-        context.strokeStyle = '#000';
-        context.fillStyle = '#c0ffee';
-        context.lineWidth = 3;
+        context.strokeStyle = colors.background;
+        context.fillStyle = colors.fonts;
+        context.lineWidth = 1;
         const adjustX = lie[0] * zoom;
         const adjustY = lie[1] * zoom;
         context.strokeText(txt, adjustX, adjustY - 6);
@@ -309,6 +329,18 @@ class FlightMap extends Component {
     functions.handleMapShrink();
   }
 
+  handleSetDarkTheme = () => {
+    const { functions } = this.props;
+
+    functions.handleSetTheme(true);
+  }
+
+  handleSetLightTheme = () => {
+    const { functions } = this.props;
+
+    functions.handleSetTheme(false);
+  }
+
   render() {
     const {
       width,
@@ -316,18 +348,28 @@ class FlightMap extends Component {
       zoom,
       id,
     } = this.props;
+
     return (
       <div className="canvasContainer" >
         <div className="zoomButtons" >
           <span style={{ color: 'white' }} >Map Size: </span>
           <span title="Shrink Map" >
-            <FaMinusSquare onClick={this.handleShrinkMap} color="white" className="zoomButton" />
+            <FaMinusSquare onClick={this.handleShrinkMap} className="zoomButton" />
           </span>
           <span title="Reset Map">
             <FaCircle color="white" onClick={this.handleResetMap} className="zoomButton" />
           </span>
           <span title="Enlarge Map">
             <FaPlusSquare color="white" onClick={this.handleEnlargeMap} className="zoomButton" />
+          </span>
+        </div>
+        <div className="themeButtons" >
+          <span style={{ color: 'white' }} >Theme: </span>
+          <span title="Light Theme" >
+            <FaSquare onClick={this.handleSetLightTheme} color="white" className="zoomButton" />
+          </span>
+          <span title="Dark Theme">
+            <FaSquareO color="white" onClick={this.handleSetDarkTheme} className="zoomButton" />
           </span>
         </div>
         <canvas
@@ -349,10 +391,12 @@ FlightMap.propTypes = {
   thrower: PropTypes.shape(throwerShape),
   displayOptions: PropTypes.shape(displayOptionsShape),
   zoom: PropTypes.number,
+  darkTheme: PropTypes.bool,
   functions: PropTypes.shape({
     handleMapEnlarge: PropTypes.func,
     handleMapShrink: PropTypes.func,
     handleMapReset: PropTypes.func,
+    handleSetTheme: PropTypes.func,
   }),
 };
 

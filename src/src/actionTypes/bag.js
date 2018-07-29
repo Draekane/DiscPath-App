@@ -30,3 +30,4 @@ export const SHRINK_MAP = 'SHRINK_MAP';
 export const RESET_MAP = 'RESET_MAP';
 
 export const CHECK_BAG_FOR_UPDATES = 'CHECK_BAG_FOR_UPDATES';
+export const SET_MAP_THEME = 'SET_MAP_THEME';

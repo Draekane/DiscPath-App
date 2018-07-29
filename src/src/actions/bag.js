@@ -143,3 +143,8 @@ export const checkBagForUpdates = (companies, bag) => {
     updateBag,
   };
 };
+
+export const setTheme = darkTheme => ({
+  type: bagActionTypes.SET_MAP_THEME,
+  darkTheme,
+});

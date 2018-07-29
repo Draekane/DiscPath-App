@@ -176,10 +176,35 @@ ul.list-accordion {
   font-size: x-small;
 }
 
+.themeButtons {
+  position: absolute;
+  margin-top: 38px;
+  margin-left: 15px;
+  padding-left: 3px;
+  background-color: $grey06;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  .zoomButton {
+    padding-right: 5px;
+    color: $grey14;
+    fill: $grey14;
+
+    &:hover {
+      color: $grey10;
+      fill: $grey10;
+    }
+  }
+}
+
 .zoomButtons {
   position: absolute;
   margin-top: 15px;
   margin-left: 15px;
+  padding-left: 3px;
   background-color: $grey06;
   opacity: 0.5;
 

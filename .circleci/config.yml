@@ -47,21 +47,21 @@ jobs:
       - attach_workspace:
           at: src
       - run: cd src && npm run test
-  deploy:
-    docker:
-      - image: google/cloud-sdk
-    working_directory: ~/repo
-    steps:
-      - checkout
-      - attach_workspace:
-          at: .
-      - run: echo ${GCLOUD_SERVICE_KEY} > ${HOME}/gcr-key.json
-      - run: gcloud -q config set project ${GOOGLE_PROJECT_ID}
-      - run: gcloud auth activate-service-account --key-file ${HOME}/gcr-key.json
-      - run:
-          name: Deploy to AppEngine
-          command: cd src && gcloud app deploy --quiet
-          no_output_timeout: 20m
+  # deploy:
+  #   docker:
+  #     - image: google/cloud-sdk
+  #   working_directory: ~/repo
+  #   steps:
+  #     - checkout
+  #     - attach_workspace:
+  #         at: .
+  #     - run: echo ${GCLOUD_SERVICE_KEY} > ${HOME}/gcr-key.json
+  #     - run: gcloud -q config set project ${GOOGLE_PROJECT_ID}
+  #     - run: gcloud auth activate-service-account --key-file ${HOME}/gcr-key.json
+  #     - run:
+  #         name: Deploy to AppEngine
+  #         command: cd src && gcloud app deploy --quiet
+  #         no_output_timeout: 20m
 
 workflows:
   version: 2
@@ -78,11 +78,11 @@ workflows:
       - unit-tests:
           requires:
             - install-dependencies
-      - deploy:
-          requires:
-            - build
-            - lint
-            - unit-tests
-          filters:
-            branches:
-              only: master
+      # - deploy:
+      #     requires:
+      #       - build
+      #       - lint
+      #       - unit-tests
+      #     filters:
+      #       branches:
+      #         only: master

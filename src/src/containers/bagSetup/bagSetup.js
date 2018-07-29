@@ -149,6 +149,12 @@ class BagSetup extends Component {
     dispatch(BagActions.resetMap());
   }
 
+  handleSetTheme = (darkTheme) => {
+    const { dispatch } = this.props;
+
+    dispatch(BagActions.setTheme(darkTheme));
+  }
+
   render() {
     const {
       pageTitle,
@@ -160,6 +166,7 @@ class BagSetup extends Component {
       throwerModal,
       displayOptionModal,
       importExportModal,
+      darkTheme,
     } = this.props;
 
     const currentBag = _.filter(bag.bags, bg => bg.bagId === parseInt(selectedBagId, 10))[0];
@@ -168,6 +175,7 @@ class BagSetup extends Component {
       handleMapEnlarge: this.handleMapEnlarge,
       handleMapShrink: this.handleMapShrink,
       handleMapReset: this.handleMapReset,
+      handleSetTheme: this.handleSetTheme,
     };
 
     const content = (
@@ -186,6 +194,7 @@ class BagSetup extends Component {
               thrower={thrower}
               displayOptions={displayOptions}
               zoom={zoom}
+              darkTheme={darkTheme}
               functions={mapFunctions}
             />
           </div>
@@ -247,6 +256,7 @@ BagSetup.propTypes = {
   dispatch: PropTypes.func,
   selectedBagId: PropTypes.number,
   zoom: PropTypes.number,
+  darkTheme: PropTypes.bool,
   throwerModal: PropTypes.bool,
   displayOptionModal: PropTypes.bool,
   importExportModal: PropTypes.bool,
@@ -260,6 +270,7 @@ BagSetup.defaultProps = {
   displayOptions: null,
   selectedBagId: 1,
   zoom: 1,
+  darkTheme: true,
 };
 
 const mapStateToProps = state => ({
@@ -274,6 +285,7 @@ const mapStateToProps = state => ({
   addBag: state.bag.addBag,
   updateBag: state.bag.updateBag,
   zoom: state.bag.zoom,
+  darkTheme: state.bag.darkTheme,
   throwerModal: state.menus.throwerModal,
   displayOptionModal: state.menus.displayOptionModal,
   importExportModal: state.menus.importExportModal,

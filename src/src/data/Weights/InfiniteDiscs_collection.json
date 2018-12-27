@@ -3,6 +3,11 @@
 	"companyId": "872dc1c073dab1c25eb9939cfbc667e9",
 	"discs": [
 		{
+			"discId": "449b4d758aa7151bc1bbb24c3ffb40bb",
+			"name": "Anubis",
+			"maxWeight": "181"
+		},
+		{
 			"discId": "88ba9066926c3d917bb1a7b60fb1ea85",
 			"name": "Chariot",
 			"maxWeight": "181"
@@ -21,6 +26,16 @@
 			"discId": "62f940d608846429bdbe3c578d4ccc22",
 			"name": "Pharaoh",
 			"maxWeight": "175"
+		},
+		{
+			"discId": "664461206e919c99ecfdade36d23e611",
+			"name": "Ra",
+			"maxWeight": "180"
+		},
+		{
+			"discId": "07605c26b7bd2e8b30a21a990c4cab00",
+			"name": "Slab",
+			"maxWeight": "176"
 		},
 		{
 			"discId": "dcdfb5b00489d42db3d4b6344c40b8a8",

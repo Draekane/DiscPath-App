@@ -83,6 +83,11 @@
 			"maxWeight": "175"
 		},
 		{
+			"discId": "57cc9b210b0e3ff7b28013cec3d36acf",
+			"name": "Guard",
+			"maxWeight": "174"
+		},
+		{
 			"discId": "935ff3fccfa3798b3c08602dfaefa45b",
 			"name": "Judge",
 			"maxWeight": "176"
@@ -146,6 +151,11 @@
 			"discId": "2a51e262d3148a04a4f58661818704be",
 			"name": "Truth",
 			"maxWeight": "180"
+		},
+		{
+			"discId": "4a72c5ae3d982865eff7412f02cf7a3a",
+			"name": "Vandal",
+			"maxWeight": "176"
 		},
 		{
 			"discId": "dd83256af5ca245530d216b14c63cf42",

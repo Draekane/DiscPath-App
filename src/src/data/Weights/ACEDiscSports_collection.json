@@ -1,0 +1,26 @@
+{
+	"company": "ACE Disc Sports",
+	"companyId": "13db1d2eb08fd395b06b9ac23c377f81",
+	"discs": [
+		{
+			"discId": "dc5e9fae3ebb092f234d86fa50d6742c",
+			"name": "D Model Distance Driver S",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "a72246772b7d5782799de7d30f99f986",
+			"name": "F Model Fairway Driver S",
+			"maxWeight": "177"
+		},
+		{
+			"discId": "5ec27539989c38c6f90eb1cd2124d16e",
+			"name": "M Model Mid Range OS",
+			"maxWeight": "180"
+		},
+		{
+			"discId": "ee26877a25723a40b07a5ac7b5cd2ccc",
+			"name": "P Model Putter OS",
+			"maxWeight": "175"
+		}
+	]
+}

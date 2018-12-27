@@ -33,6 +33,11 @@
 			"maxWeight": "174"
 		},
 		{
+			"discId": "64f11d52551be1c9cb27d573c767a4d6",
+			"name": "Marksman",
+			"maxWeight": "175"
+		},
+		{
 			"discId": "4b22a8d4e9bfac264a6f5786888cca2b",
 			"name": "Midrange MS/Aurora",
 			"maxWeight": "181"
@@ -40,7 +45,7 @@
 		{
 			"discId": "a0af9aa292e905b158a006fc4b365e65",
 			"name": "Moab",
-			"maxWeight": "182"
+			"maxWeight": "175"
 		},
 		{
 			"discId": "90232e671a3437d278a825bfe0c7d7e0",

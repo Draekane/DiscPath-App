@@ -18,6 +18,11 @@
 			"maxWeight": "177"
 		},
 		{
+			"discId": "2eb09daf06985538e2c1b9d080d0083c",
+			"name": "Apex",
+			"maxWeight": "178"
+		},
+		{
 			"discId": "9b2dd2ace4fae2ba85df02e3ebf3f89e",
 			"name": "Assassin",
 			"maxWeight": "174"
@@ -191,6 +196,11 @@
 			"discId": "121189969c46f49b8249633c2d5a7bfa",
 			"name": "Slayer",
 			"maxWeight": "174"
+		},
+		{
+			"discId": "121189969c46f49b8249633c2d5a7bfa",
+			"name": "Slayer",
+			"maxWeight": "175"
 		},
 		{
 			"discId": "92d663bef11ad2b6525f7a391c3655d3",

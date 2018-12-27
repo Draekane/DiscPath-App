@@ -18,6 +18,11 @@
 			"maxWeight": "176"
 		},
 		{
+			"discId": "db99f31dec8ffc565d264c0154ba4428",
+			"name": "Shard",
+			"maxWeight": "176"
+		},
+		{
 			"discId": "a9d65d8a88f3a9898dd84007bca04115",
 			"name": "Splinter",
 			"maxWeight": "177"

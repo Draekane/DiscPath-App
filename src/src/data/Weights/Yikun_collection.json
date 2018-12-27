@@ -23,6 +23,11 @@
 			"maxWeight": "176"
 		},
 		{
+			"discId": "ecd03afff3ba51979312a1114f791d13",
+			"name": "Crossbow",
+			"maxWeight": "177"
+		},
+		{
 			"discId": "107d7962e8cf68a9b80c09e477157f4e",
 			"name": "Da'e",
 			"maxWeight": "174"
@@ -35,6 +40,11 @@
 		{
 			"discId": "4532438350365f4f46d2c20d43a6246c",
 			"name": "Gui",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "e16aadf94681c0f97fa7a25d37e3c8c9",
+			"name": "Hammer",
 			"maxWeight": "175"
 		},
 		{

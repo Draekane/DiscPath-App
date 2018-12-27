@@ -1,0 +1,61 @@
+{
+	"company": "Kastaplast AB",
+	"companyId": "55b54e2a0a3de53d754f5d710785d28f",
+	"discs": [
+		{
+			"discId": "16fe4237fdb07a110c95a2627b35f219",
+			"name": "Berg",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "d16440703326ae8cceedecfc98948260",
+			"name": "Falk",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "98dd958b3be7823222e2080e2879d846",
+			"name": "Göte",
+			"maxWeight": "182"
+		},
+		{
+			"discId": "969f793c1bada763e510effd49d5564e",
+			"name": "Grym",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "cb6921f8f16a88c51a59eaf782fa727a",
+			"name": "Grym X",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "cf7802e8082b1d34610dc2eb8356877d",
+			"name": "Kaxe",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "dd197eb675f06d8d82d786bd3a19241e",
+			"name": "Kaxe Z",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "0eb962171b932c339d04adf6b1d033d1",
+			"name": "Rask",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "0eb962171b932c339d04adf6b1d033d1",
+			"name": "Rask",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "77669b825e3b22a6b555643c1e7e4557",
+			"name": "Reko",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "3d58584977d8b42f80847b0870fb9142",
+			"name": "Stål",
+			"maxWeight": "175"
+		}
+	]
+}

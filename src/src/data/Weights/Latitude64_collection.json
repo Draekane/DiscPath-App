@@ -198,6 +198,11 @@
 			"maxWeight": "179"
 		},
 		{
+			"discId": "f13e3963c9624dbc775c57d41fbe61ab",
+			"name": "Pioneer",
+			"maxWeight": "176"
+		},
+		{
 			"discId": "9f423c39b5906497d7be7fcc228a6554",
 			"name": "Primitus",
 			"maxWeight": "174"
@@ -211,6 +216,11 @@
 			"discId": "b93ecf0534ac09f3aae8409bd94bfcf5",
 			"name": "Raketen",
 			"maxWeight": "175"
+		},
+		{
+			"discId": "64f83bc1f166dab01765a6094a187908",
+			"name": "Recoil",
+			"maxWeight": "176"
 		},
 		{
 			"discId": "10c889c19aede5c855f07925611fa888",

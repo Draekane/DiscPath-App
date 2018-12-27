@@ -5,11 +5,11 @@ import hashlib
 import companyNameConsts
 import re
 
-workbook = xlrd.open_workbook('./pdga_approved_discs_053118.xls')
+workbook = xlrd.open_workbook('./pdga_approved_discs_121618a.xls')
 worksheet = workbook.sheet_by_index(0)
 rows = worksheet.nrows
 cols = worksheet.ncols
-removeParens = re.compile('\(.*\)')
+removeParens = re.compile(r'\(.*\)')
 
 columnsToRead = [1,2]
 companyName = ""

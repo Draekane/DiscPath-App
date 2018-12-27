@@ -74,7 +74,7 @@
 		},
 		{
 			"discId": "82a11dc0a74194d17019e6cbb6c98926",
-			"name": "Blunt",
+			"name": "Blunt \"Blowfly\"",
 			"maxWeight": "178"
 		},
 		{
@@ -238,6 +238,11 @@
 			"maxWeight": "176"
 		},
 		{
+			"discId": "88a7a288849d5738d3eefb5528d31b7d",
+			"name": "Steady - Beadless",
+			"maxWeight": "176"
+		},
+		{
 			"discId": "b0b71a21a3184e87fe4e5d804d743979",
 			"name": "Streamliner",
 			"maxWeight": "180"
@@ -251,6 +256,11 @@
 			"discId": "28ea14e7d1ba6e8caab80bc6166952c3",
 			"name": "Sureshot",
 			"maxWeight": "174"
+		},
+		{
+			"discId": "0d779f7363c613edb7eb8b713a68dc80",
+			"name": "Tempest",
+			"maxWeight": "175"
 		},
 		{
 			"discId": "c54e6f7dd4dacc1ac5b0fa66565a4a60",

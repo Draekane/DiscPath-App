@@ -108,6 +108,11 @@
 			"maxWeight": "175"
 		},
 		{
+			"discId": "ccc8e6be21cd3a0e60d3f3829ded5cc3",
+			"name": "Bullfrog",
+			"maxWeight": "175"
+		},
+		{
 			"discId": "b5be19c35c87a28b0a98aac255de3384",
 			"name": "Caiman",
 			"maxWeight": "175"
@@ -183,14 +188,14 @@
 			"maxWeight": "180"
 		},
 		{
-			"discId": "b4445552b92a4d0222daea9649b26b65",
-			"name": "Colt",
-			"maxWeight": "176"
-		},
-		{
 			"discId": "29a3615ef4135d094f83d4c334705691",
 			"name": "Colossus",
 			"maxWeight": "175"
+		},
+		{
+			"discId": "b4445552b92a4d0222daea9649b26b65",
+			"name": "Colt",
+			"maxWeight": "176"
 		},
 		{
 			"discId": "dabb37bf064307d71e8678f77482f407",
@@ -201,6 +206,11 @@
 			"discId": "30582a28a0964c371c35950f3eefa870",
 			"name": "Condor",
 			"maxWeight": "200"
+		},
+		{
+			"discId": "9605451b84c2e38a07f592f6136bbb98",
+			"name": "Corvette",
+			"maxWeight": "175"
 		},
 		{
 			"discId": "aa9dcf801f9b19532334ec5887243ea2",
@@ -285,6 +295,11 @@
 		{
 			"discId": "cb5415ba0348bb81d3749d02c8def6c9",
 			"name": "Gator",
+			"maxWeight": "176"
+		},
+		{
+			"discId": "9ddb58fbda0b890fb5aa850179b0ec23",
+			"name": "Gator3",
 			"maxWeight": "176"
 		},
 		{

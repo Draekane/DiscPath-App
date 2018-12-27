@@ -1,0 +1,21 @@
+{
+	"company": "Storm Disc Golf",
+	"companyId": "d1a8de7500019348a916a322d02bc5d8",
+	"discs": [
+		{
+			"discId": "43cabd0a298950a0ca5b41c551296dfe",
+			"name": "Jet Stream",
+			"maxWeight": "174"
+		},
+		{
+			"discId": "4ffbfff67de19e73e52f29fbd6a67bf7",
+			"name": "The Crater",
+			"maxWeight": "175"
+		},
+		{
+			"discId": "dd671fac9d89dd29b05d055ec33966b2",
+			"name": "The Eye",
+			"maxWeight": "182"
+		}
+	]
+}

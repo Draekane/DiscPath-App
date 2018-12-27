@@ -88,9 +88,19 @@
 			"maxWeight": "176"
 		},
 		{
+			"discId": "b43ae6e08115ed8931a9f6d0f9c520e1",
+			"name": "Pursuit",
+			"maxWeight": "177"
+		},
+		{
 			"discId": "a9744fc5b0ca952b17ef07c0aa99602e",
 			"name": "Rampage",
 			"maxWeight": "175"
+		},
+		{
+			"discId": "5f1c091063e6c276206d4bf1e5db727f",
+			"name": "Recluse",
+			"maxWeight": "177"
 		},
 		{
 			"discId": "d7c2fc77cc2089548863602b1c63c59a",
@@ -101,6 +111,11 @@
 			"discId": "eea9d021db5d7c44a2db94cf7ceeba0d",
 			"name": "Rival",
 			"maxWeight": "177"
+		},
+		{
+			"discId": "c55e0976a4f45ced356f8775d550307e",
+			"name": "Valor",
+			"maxWeight": "180"
 		}
 	]
 }

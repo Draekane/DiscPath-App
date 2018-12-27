@@ -14,7 +14,7 @@ uClient.close()
 #
 # HTML Parsing
 #
-page_soup = soup(page_html, "html.parser");
+page_soup = soup(page_html, "html.parser")
 # Grab each product
 discTable = page_soup.find_all("input", {"type": "hidden"})
 # Now, cycle through all of these, and search the page for each of these
@@ -81,4 +81,3 @@ for company in disc_companies:
 			# print("}")
 			out_handle.write("\t}]\n}\n")
 			out_handle.close()
-

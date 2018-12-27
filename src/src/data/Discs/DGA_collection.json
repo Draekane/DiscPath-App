@@ -213,6 +213,26 @@
 			"matrix_x": 4,
 			"matrix_y": 4
 		} , {
+			"discId": "3dfede8e1bbadff48233dc65d519cff6",
+			"name": "Steady BL",
+			"type": "P",
+			"range": 243,
+			"hst": 0,
+			"lsf": 36,
+			"pdga": "Y",
+			"matrix_x": 4,
+			"matrix_y": 4
+		} , {
+			"discId": "0d779f7363c613edb7eb8b713a68dc80",
+			"name": "Tempest",
+			"type": "D",
+			"range": 434,
+			"hst": -59,
+			"lsf": 39,
+			"pdga": "Y",
+			"matrix_x": 6,
+			"matrix_y": 6
+		} , {
 			"discId": "c54e6f7dd4dacc1ac5b0fa66565a4a60",
 			"name": "Titanic",
 			"type": "P",

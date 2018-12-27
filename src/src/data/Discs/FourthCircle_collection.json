@@ -1,0 +1,16 @@
+{
+	"company": "Fourth Circle",
+	"companyId": "fdf45a66b42ed92929716d24a254d51b",
+	"discs": [
+		{
+			"discId": "a50562e2d44b222992575907853ac76c",
+			"name": "Taipan",
+			"type": "D",
+			"range": 436,
+			"hst": 0,
+			"lsf": 59,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
+	}]
+}

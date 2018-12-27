@@ -13,9 +13,19 @@
 			"matrix_x": 5,
 			"matrix_y": 5
 		} , {
+			"discId": "2eb09daf06985538e2c1b9d080d0083c",
+			"name": "Apex",
+			"type": "D",
+			"range": 421,
+			"hst": -19,
+			"lsf": 39,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
 			"discId": "9b2dd2ace4fae2ba85df02e3ebf3f89e",
 			"name": "Assassin",
-			"type": "F",
+			"type": "D",
 			"range": 385,
 			"hst": -33,
 			"lsf": 26,
@@ -35,7 +45,7 @@
 		} , {
 			"discId": "897ee373c9e482f9a323fe188494520b",
 			"name": "Blaze",
-			"type": "M",
+			"type": "F",
 			"range": 334,
 			"hst": -4,
 			"lsf": 61,
@@ -85,7 +95,7 @@
 		} , {
 			"discId": "853e0fdc949d1097ca9a58ea3059aa6f",
 			"name": "Devil Hawk",
-			"type": "P",
+			"type": "M",
 			"range": 268,
 			"hst": 3,
 			"lsf": 36,
@@ -335,7 +345,7 @@
 		} , {
 			"discId": "3cfb5fa4e90be91638c9825dfa9f9e8a",
 			"name": "War Spear",
-			"type": "P",
+			"type": "M",
 			"range": 269,
 			"hst": -24,
 			"lsf": 12,

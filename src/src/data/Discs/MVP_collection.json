@@ -53,6 +53,16 @@
 			"matrix_x": 6,
 			"matrix_y": 6
 		} , {
+			"discId": "68e6202e50e4806f18d28cab574e0d82",
+			"name": "Deflector",
+			"type": "M",
+			"range": 292,
+			"hst": 0,
+			"lsf": 74,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
+		} , {
 			"discId": "9e0e31246b7b078403969b265870b3f4",
 			"name": "Dimension",
 			"type": "D",

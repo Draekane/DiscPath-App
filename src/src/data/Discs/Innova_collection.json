@@ -183,6 +183,16 @@
 			"matrix_x": 4,
 			"matrix_y": 4
 		} , {
+			"discId": "b5be19c35c87a28b0a98aac255de3384",
+			"name": "Caiman",
+			"type": "M",
+			"range": 298,
+			"hst": 0,
+			"lsf": 74,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
+		} , {
 			"discId": "369e090a0cbc18b56e0540034a35ce06",
 			"name": "Cheetah",
 			"type": "F",
@@ -437,6 +447,16 @@
 			"name": "Gator",
 			"type": "M",
 			"range": 287,
+			"hst": 0,
+			"lsf": 55,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
+		} , {
+			"discId": "9ddb58fbda0b890fb5aa850179b0ec23",
+			"name": "Gator3",
+			"type": "M",
+			"range": 288,
 			"hst": 0,
 			"lsf": 55,
 			"pdga": "Y",

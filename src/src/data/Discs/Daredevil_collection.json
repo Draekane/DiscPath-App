@@ -6,12 +6,12 @@
 			"discId": "2c7c7cfc6fda13471aba25999f4d9088",
 			"name": "Albatross",
 			"type": "D",
-			"range": 448,
-			"hst": 0,
-			"lsf": 99,
+			"range": 454,
+			"hst": -39,
+			"lsf": 59,
 			"pdga": "Y",
-			"matrix_x": 2,
-			"matrix_y": 2
+			"matrix_x": 5,
+			"matrix_y": 5
 		} , {
 			"discId": "4f7ac800f78d2ac09a74533d8b6d3149",
 			"name": "Beaver",
@@ -63,6 +63,16 @@
 			"matrix_x": 6,
 			"matrix_y": 6
 		} , {
+			"discId": "e6aafc63857fa679362236e988058ec2",
+			"name": "Gray Jay",
+			"type": "D",
+			"range": 448,
+			"hst": 0,
+			"lsf": 99,
+			"pdga": "Y",
+			"matrix_x": 2,
+			"matrix_y": 2
+		} , {
 			"discId": "ed058c379e189a2f746c6aaf54929c3e",
 			"name": "Great Horned Owl",
 			"type": "P",
@@ -96,12 +106,12 @@
 			"discId": "51148471b778017b70ba6f85a452dd17",
 			"name": "Merlin",
 			"type": "D",
-			"range": 447,
+			"range": 451,
 			"hst": -19,
-			"lsf": 99,
+			"lsf": 79,
 			"pdga": "Y",
-			"matrix_x": 2,
-			"matrix_y": 2
+			"matrix_x": 3,
+			"matrix_y": 3
 		} , {
 			"discId": "030acfd68d0c19e8b0f891a8c0b525a1",
 			"name": "Moose",
@@ -132,6 +142,16 @@
 			"pdga": "Y",
 			"matrix_x": 5,
 			"matrix_y": 5
+		} , {
+			"discId": "34c6a962590c840e9b679553472ddf22",
+			"name": "Pteranodon",
+			"type": "M",
+			"range": 283,
+			"hst": -36,
+			"lsf": 18,
+			"pdga": "Y",
+			"matrix_x": 6,
+			"matrix_y": 6
 		} , {
 			"discId": "52c22e4eb689fa9a542964eed8a63168",
 			"name": "Sabertooth",

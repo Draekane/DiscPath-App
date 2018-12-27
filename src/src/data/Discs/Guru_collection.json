@@ -3,6 +3,16 @@
 	"companyId": "45d909a817398ff956eb79ff1146c5e4",
 	"discs": [
 		{
+			"discId": "0f23971da2be2e19a1d8ace766fdddbc",
+			"name": "Fenris",
+			"type": "D",
+			"range": 436,
+			"hst": -19,
+			"lsf": 39,
+			"pdga": "Y",
+			"matrix_x": 5,
+			"matrix_y": 5
+		} , {
 			"discId": "ad98f5ef187a1cc052fac73ad2723e03",
 			"name": "Midgard",
 			"type": "F",

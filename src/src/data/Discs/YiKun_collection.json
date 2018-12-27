@@ -13,6 +13,16 @@
 			"matrix_x": 5,
 			"matrix_y": 5
 		} , {
+			"discId": "ecd03afff3ba51979312a1114f791d13",
+			"name": "Crossbow",
+			"type": "M",
+			"range": 268,
+			"hst": 9,
+			"lsf": 73,
+			"pdga": "Y",
+			"matrix_x": 2,
+			"matrix_y": 2
+		} , {
 			"discId": "f922e92fc4f8b1866a35f39b5d21eb87",
 			"name": "DaE",
 			"type": "D",
@@ -42,6 +52,16 @@
 			"pdga": "Y",
 			"matrix_x": 4,
 			"matrix_y": 4
+		} , {
+			"discId": "a42c5592edbcaa6a4e46809308838801",
+			"name": "Hammer (Chui)",
+			"type": "P",
+			"range": 238,
+			"hst": 0,
+			"lsf": 54,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
 		} , {
 			"discId": "9fabec19f0ee826f7822ccd41dd4f553",
 			"name": "Hu",

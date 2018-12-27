@@ -63,6 +63,16 @@
 			"matrix_x": 2,
 			"matrix_y": 2
 		} , {
+			"discId": "5db14795d4c6928f94927d0c0a060bee",
+			"name": "Fighter",
+			"type": "F",
+			"range": 376,
+			"hst": 0,
+			"lsf": 96,
+			"pdga": "Y",
+			"matrix_x": 2,
+			"matrix_y": 2
+		} , {
 			"discId": "948f0edf37b92d0717053d38e5ea12c2",
 			"name": "Gauge",
 			"type": "M",
@@ -152,6 +162,16 @@
 			"pdga": "Y",
 			"matrix_x": 4,
 			"matrix_y": 4
+		} , {
+			"discId": "b43ae6e08115ed8931a9f6d0f9c520e1",
+			"name": "Pursuit",
+			"type": "M",
+			"range": 291,
+			"hst": 0,
+			"lsf": 55,
+			"pdga": "Y",
+			"matrix_x": 3,
+			"matrix_y": 3
 		} , {
 			"discId": "a9744fc5b0ca952b17ef07c0aa99602e",
 			"name": "Rampage",

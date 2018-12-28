@@ -1,6 +1,6 @@
 {
   "name": "discflight_path",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "private": true,
   "engines": {
     "node": "8.x",
@@ -32,7 +32,7 @@
     "history": "^4.7.2",
     "immutability-helper": "^2.6.6",
     "lodash": "^4.17.5",
-    "node-sass-chokidar": "0.0.2",
+    "node-sass-chokidar": "^1.3.4",
     "npm-run-all": "^4.1.2",
     "prop-types": "^15.6.1",
     "react": "^16.2.0",

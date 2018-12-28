@@ -1,5 +1,5 @@
-env: flex
-runtime: nodejs
+env: standard
+runtime: nodejs8
 
 handlers:
 - url: /
@@ -7,4 +7,3 @@ handlers:
   upload: src/build/index.html
 - url: /
   static_dir: src/build
-  

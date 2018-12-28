@@ -7,7 +7,7 @@ const intiialState = {
 
 const company = (state = intiialState, action = {}) => {
   switch (action.type) {
-    case companyActionTypes.LOAD_COMPANY_DATA:
+    case companyActionTypes.LOAD_COMPANY_DATA_SUCCESS:
       if (!action.companies) {
         return state;
       }

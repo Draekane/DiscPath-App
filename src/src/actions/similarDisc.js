@@ -12,10 +12,21 @@ export const selectSimilarDisc = (selectedDisc, selectedDiscId) => ({
   selectedDiscId,
 });
 
-export const setSimilarDiscs = (similarDiscs, reset = false) => ({
+export const setSimilarDiscs = (newSimilarDiscs, currentSimilarDiscs, reset = false) => ({
   type: similarDiscActions.SIMILAR_SET_SIMILAR_DISCS,
-  similarDiscs,
+  newSimilarDiscs,
+  currentSimilarDiscs,
   reset,
+});
+
+export const setSimilarDiscsSuccess = similarDiscs => ({
+  type: similarDiscActions.SIMILAR_SET_SIMILAR_DISCS_SUCCESS,
+  similarDiscs,
+});
+
+export const setSimilarDiscsFailure = error => ({
+  type: similarDiscActions.SIMILAR_SET_SIMILAR_DISCS_FAILURE,
+  error,
 });
 
 export const clearSimilarDiscSelection = () => ({

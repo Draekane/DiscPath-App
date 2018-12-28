@@ -4,7 +4,7 @@ export const openThrowerModal = () => ({
   type: menuActionTypes.THROWER_OPEN_MODAL,
 });
 
-export const closerThrowerModal = () => ({
+export const closeThrowerModal = () => ({
   type: menuActionTypes.THROWER_CLOSE_MODAL,
 });
 

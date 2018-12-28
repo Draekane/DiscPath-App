@@ -1,5 +1,4 @@
 import { put, takeEvery } from 'redux-saga/effects';
-// import { push } from 'react-router-redux';
 import _ from 'lodash';
 import { saveAs } from 'file-saver';
 import * as actions from '../actions/bag';
@@ -268,4 +267,4 @@ export default function* () {
   yield takeEvery(actionTypes.ADD_NEW_BAG, addNewBagSaga);
   yield takeEvery(actionTypes.REMOVE_EXISTING_BAG, removeExistingBagSaga);
   yield takeEvery(actionTypes.EDIT_BAG_NAME, editBagNameSaga);
-};
+}

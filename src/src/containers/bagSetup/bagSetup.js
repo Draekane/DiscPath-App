@@ -28,15 +28,15 @@ import { throwerSelector } from '../../selector/throwerSelector';
 
 class BagSetup extends Component {
   componentWillMount() {
-    const { dispatch } = this.props;
-    dispatch(CompanyActions.loadCompanies());
+    const { loadCompanies } = this.props;
+    loadCompanies();
   }
 
   componentWillReceiveProps = (newProps) => {
-    const { dispatch } = this.props;
+    const { checkBagForUpdates } = this.props;
     const { companies, bag } = newProps;
 
-    if (companies && bag && !bag.ranUpdateCheck) dispatch(BagActions.checkBagForUpdates(companies, bag));
+    if (companies && bag && !bag.ranUpdateCheck) checkBagForUpdates(companies, bag);
   }
 
   getDiscById = (discId) => {
@@ -54,105 +54,33 @@ class BagSetup extends Component {
   }
 
   handleToggleThrowerModal = () => {
-    const { dispatch, throwerModal } = this.props;
+    const { openThrowerModal, closeThrowerModal, throwerModal } = this.props;
 
     if (throwerModal) {
-      dispatch(MenuActions.closerThrowerModal());
+      closeThrowerModal();
     } else {
-      dispatch(MenuActions.openThrowerModal());
+      openThrowerModal();
     }
   }
 
   handleToggleDisplayOptionModal = () => {
-    const { dispatch, displayOptionModal } = this.props;
+    const { openDisplayOptionsModal, closeDisplayOptionsModal, displayOptionModal } = this.props;
 
     if (displayOptionModal) {
-      dispatch(MenuActions.closeDisplayOptionsModal());
+      closeDisplayOptionsModal();
     } else {
-      dispatch(MenuActions.openDisplayOptionsModal());
+      openDisplayOptionsModal();
     }
   }
 
   handleToggleImportExportModal = () => {
-    const { dispatch, importExportModal } = this.props;
+    const { openImportExportModal, closeImportExportModal, importExportModal } = this.props;
 
     if (importExportModal) {
-      dispatch(MenuActions.closeImportExportModal());
+      closeImportExportModal();
     } else {
-      dispatch(MenuActions.openImportExportModal());
+      openImportExportModal();
     }
-  }
-
-  handleChangeThrowerType = (throwerType) => {
-    const { dispatch } = this.props;
-
-    dispatch(ThrowerActions.changeThrowerType(throwerType));
-  }
-
-  handleChangeThrowerPower = (throwerPower) => {
-    const { dispatch } = this.props;
-
-    dispatch(ThrowerActions.changeThrowerPower(throwerPower));
-  }
-
-  handleChangeFanPower = () => {
-    const { dispatch } = this.props;
-
-    dispatch(DisplayOptionActions.changeFanPower());
-  }
-
-  handleChangePaths = (paths) => {
-    const { dispatch } = this.props;
-
-    dispatch(DisplayOptionActions.changePaths(paths));
-  }
-
-  handleChangeLieDistance = () => {
-    const { dispatch } = this.props;
-
-    dispatch(DisplayOptionActions.changeLieDistance());
-  }
-
-  handleChangeLieCircle = () => {
-    const { dispatch } = this.props;
-
-    dispatch(DisplayOptionActions.changeLieCircles());
-  }
-
-  handleExportToFile = () => {
-    const { dispatch } = this.props;
-
-    dispatch(BagActions.exportBagsToFile());
-  }
-
-  handleImportFromFile = (file) => {
-    const { dispatch } = this.props;
-
-    dispatch(BagActions.importBagsFromFile(file));
-  }
-
-  handleMapEnlarge = () => {
-    const { dispatch } = this.props;
-
-    dispatch(BagActions.enlargeMap());
-  }
-
-  handleMapShrink = () => {
-    const { dispatch } = this.props;
-
-    dispatch(BagActions.shrinkMap());
-  }
-
-  handleMapReset = () => {
-    const { dispatch } = this.props;
-
-    dispatch(BagActions.resetMap());
-  }
-
-  handleSetTheme = (darkTheme) => {
-    const { dispatch } = this.props;
-
-    dispatch(BagActions.setTheme(darkTheme));
   }
 
   render() {
@@ -167,15 +95,27 @@ class BagSetup extends Component {
       displayOptionModal,
       importExportModal,
       darkTheme,
+      changeThrowerType,
+      changeThrowerPower,
+      changeFanPower,
+      changePaths,
+      changeLieDistance,
+      changeLieCircles,
+      exportBagsToFile,
+      importBagsFromFile,
+      enlargeMap,
+      shrinkMap,
+      resetMap,
+      setTheme,
     } = this.props;
 
     const currentBag = _.filter(bag.bags, bg => bg.bagId === parseInt(selectedBagId, 10))[0];
 
     const mapFunctions = {
-      handleMapEnlarge: this.handleMapEnlarge,
-      handleMapShrink: this.handleMapShrink,
-      handleMapReset: this.handleMapReset,
-      handleSetTheme: this.handleSetTheme,
+      handleMapEnlarge: enlargeMap,
+      handleMapShrink: shrinkMap,
+      handleMapReset: resetMap,
+      handleSetTheme: setTheme,
     };
 
     const content = (
@@ -203,23 +143,23 @@ class BagSetup extends Component {
           </div>
           <Thrower
             thrower={thrower}
-            changePower={this.handleChangeThrowerPower}
-            changeThrowerType={this.handleChangeThrowerType}
+            changePower={changeThrowerPower}
+            changeThrowerType={changeThrowerType}
             openModal={throwerModal}
             closeModal={this.handleToggleThrowerModal}
           />
           <DisplayOptions
             options={displayOptions}
-            changeFanPower={this.handleChangeFanPower}
-            changePaths={this.handleChangePaths}
-            changeDistance={this.handleChangeLieDistance}
-            changeCircles={this.handleChangeLieCircle}
+            changeFanPower={changeFanPower}
+            changePaths={changePaths}
+            changeDistance={changeLieDistance}
+            changeCircles={changeLieCircles}
             openModal={displayOptionModal}
             closeModal={this.handleToggleDisplayOptionModal}
           />
           <ImportExport
-            importFunction={this.handleImportFromFile}
-            exportFunction={this.handleExportToFile}
+            importFunction={importBagsFromFile}
+            exportFunction={exportBagsToFile}
             openModal={importExportModal}
             closeModal={this.handleToggleImportExportModal}
           />
@@ -253,13 +193,32 @@ BagSetup.propTypes = {
   }),
   thrower: PropTypes.shape(throwerShape),
   displayOptions: PropTypes.shape(displayOptionsShape),
-  dispatch: PropTypes.func,
   selectedBagId: PropTypes.number,
   zoom: PropTypes.number,
   darkTheme: PropTypes.bool,
   throwerModal: PropTypes.bool,
   displayOptionModal: PropTypes.bool,
   importExportModal: PropTypes.bool,
+  loadCompanies: PropTypes.func,
+  checkBagForUpdates: PropTypes.func,
+  openThrowerModal: PropTypes.func,
+  closeThrowerModal: PropTypes.func,
+  openDisplayOptionsModal: PropTypes.func,
+  closeDisplayOptionsModal: PropTypes.func,
+  openImportExportModal: PropTypes.func,
+  closeImportExportModal: PropTypes.func,
+  changeThrowerType: PropTypes.func,
+  changeThrowerPower: PropTypes.func,
+  changeFanPower: PropTypes.func,
+  changePaths: PropTypes.func,
+  changeLieDistance: PropTypes.func,
+  changeLieCircles: PropTypes.func,
+  exportBagsToFile: PropTypes.func,
+  importBagsFromFile: PropTypes.func,
+  enlargeMap: PropTypes.func,
+  shrinkMap: PropTypes.func,
+  resetMap: PropTypes.func,
+  setTheme: PropTypes.func,
 };
 
 BagSetup.defaultProps = {
@@ -281,7 +240,6 @@ const mapStateToProps = state => ({
   displayOptions: displayOptionsSelector(state),
   discTypes: discTypesSelector(state),
   selectedBagId: state.bag.selectedBagId,
-  dispatch: state.dispatch,
   addBag: state.bag.addBag,
   updateBag: state.bag.updateBag,
   zoom: state.bag.zoom,
@@ -291,6 +249,29 @@ const mapStateToProps = state => ({
   importExportModal: state.menus.importExportModal,
 });
 
-const withWrappers = _.flowRight(connect(mapStateToProps), [WithHeaderAndNav]);
+const mapDispatchToProps = dispatch => ({
+  loadCompanies: () => dispatch(CompanyActions.loadCompanies()),
+  checkBagForUpdates: (companies, bag) => dispatch(BagActions.checkBagForUpdates(companies, bag)),
+  openThrowerModal: () => dispatch(MenuActions.openThrowerModal()),
+  closeThrowerModal: () => dispatch(MenuActions.closeThrowerModal()),
+  openDisplayOptionsModal: () => dispatch(MenuActions.openDisplayOptionsModal()),
+  closeDisplayOptionsModal: () => dispatch(MenuActions.closeDisplayOptionsModal()),
+  openImportExportModal: () => dispatch(MenuActions.openImportExportModal()),
+  closeImportExportModal: () => dispatch(MenuActions.closeImportExportModal()),
+  changeThrowerType: throwerType => dispatch(ThrowerActions.changeThrowerType(throwerType)),
+  changeThrowerPower: throwerPower => dispatch(ThrowerActions.changeThrowerPower(throwerPower)),
+  changeFanPower: () => dispatch(DisplayOptionActions.changeFanPower()),
+  changePaths: paths => dispatch(DisplayOptionActions.changePaths(paths)),
+  changeLieDistance: () => dispatch(DisplayOptionActions.changeLieDistance()),
+  changeLieCircles: () => dispatch(DisplayOptionActions.changeLieCircles()),
+  exportBagsToFile: () => dispatch(BagActions.exportBagsToFile()),
+  importBagsFromFile: file => dispatch(BagActions.importBagsFromFile(file)),
+  enlargeMap: () => dispatch(BagActions.enlargeMap()),
+  shrinkMap: () => dispatch(BagActions.shrinkMap()),
+  resetMap: () => dispatch(BagActions.resetMap()),
+  setTheme: darkTheme => dispatch(BagActions.setTheme(darkTheme)),
+});
+
+const withWrappers = _.flowRight(connect(mapStateToProps, mapDispatchToProps), [WithHeaderAndNav]);
 
 export default withWrappers(BagSetup);

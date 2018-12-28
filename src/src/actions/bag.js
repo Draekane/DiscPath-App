@@ -41,7 +41,7 @@ export const editDiscWeight = (weight, disc, bag) => ({
   bag,
 });
 
-export const editDiscWeigthSuccess = bag => ({
+export const editDiscWeightSuccess = bag => ({
   type: bagActionTypes.EDIT_DISC_WEIGHT_SUCCESS,
   bag,
 });
@@ -98,7 +98,7 @@ export const editDiscNameSuccess = bag => ({
 });
 
 export const editDiscNameFailure = error => ({
-  type: bagActionTypes.EDIT_DISC_NAME_FAILURES,
+  type: bagActionTypes.EDIT_DISC_NAME_FAILURE,
   error,
 });
 
@@ -120,7 +120,7 @@ export const editDiscEnabledFailure = error => ({
 });
 
 export const editDiscTypeEnabled = (enabled, discType, bag) => ({
-  type: bagActionTypes.EDIT_TYPE_DISC_ENABLED,
+  type: bagActionTypes.EDIT_DISC_TYPE_ENABLED,
   enabled,
   discType,
   bag,
@@ -138,19 +138,19 @@ export const editDiscTypeEnabledFailure = error => ({
 });
 
 
-export const removeDiscFromBag = ({ disc, bag }) => ({
+export const removeDiscFromBag = (disc, bag) => ({
   type: bagActionTypes.REMOVE_DISC_FROM_BAG,
   disc,
   bag,
 });
 
 export const removeDiscFromBagSuccess = bag => ({
-  type: bagActionTypes.REMOVE_DISC_FROM_BAG,
+  type: bagActionTypes.REMOVE_DISC_FROM_BAG_SUCCESS,
   bag,
 });
 
 export const removeDiscFromBagFailure = error => ({
-  type: bagActionTypes.REMOVE_DISC_FROM_BAG,
+  type: bagActionTypes.REMOVE_DISC_FROM_BAG_FAILURE,
   error,
 });
 
@@ -162,7 +162,7 @@ export const exportBagsToFileSuccess = () => ({
   type: bagActionTypes.EXPORT_BAGS_TO_FILE_SUCCESS,
 });
 
-export const exportBagToFileFailure = error => ({
+export const exportBagsToFileFailure = error => ({
   type: bagActionTypes.EXPORT_BAGS_TO_FILE_FAILURE,
   error,
 });
@@ -178,7 +178,7 @@ export const selectBag = selectBagId => ({
 });
 
 export const selectBagSuccess = newBagId => ({
-  type: bagActionTypes.SELECT_BAG,
+  type: bagActionTypes.SELECT_BAG_SUCCESS,
   newBagId,
 });
 
@@ -206,12 +206,12 @@ export const addNewBag = (name, bags) => ({
 });
 
 export const addNewBagSuccess = bags => ({
-  type: bagActionTypes.ADD_DISC_TO_BAG_SUCCESS,
+  type: bagActionTypes.ADD_NEW_BAG_SUCCESS,
   bags,
 });
 
 export const addNewBagFailure = error => ({
-  type: bagActionTypes.ADD_DISC_TO_BAG_FAILURE,
+  type: bagActionTypes.ADD_NEW_BAG_FAILURE,
   error,
 });
 

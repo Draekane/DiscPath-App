@@ -19,6 +19,7 @@ import { bagSelector, discTypesSelector } from '../../selector/bagSelector';
 import { throwerSelector } from '../../selector/throwerSelector';
 
 class BagContainer extends Component {
+    /* INTERNAL HELPER METHODS START */
     getDiscById = (discId) => {
       const { companies } = this.props;
       if (!discId) return null;
@@ -45,137 +46,205 @@ class BagContainer extends Component {
       return null;
     }
 
+    getCurrentDisc = () => {
+      const { currentSelection } = this.props;
+      if (!currentSelection) return null;
+      return this.getDiscById(currentSelection);
+    }
+
+    getCurrentEditingDisc = () => {
+      const { editingDiscId } = this.props;
+      return this.getBaggedDiscById(editingDiscId);
+    }
+
+    getCurrentBag = () => {
+      const { currentBags, selectedBagId } = this.props;
+      if (!selectedBagId) return null;
+      const bag = _.find(currentBags, bag => bag.bagId === selectedBagId);
+      return bag;
+    }
+
+    /* INTERNAL HELPER METHODS END */
+
+    /* EDITING FUNCTIONS START */
+
     handleDiscSelection = (selectedOptions) => {
-      const { dispatch } = this.props;
-      if (selectedOptions !== null) dispatch(CompanyActions.selectDisc(selectedOptions.value));
+      const { selectDisc } = this.props;
+      if (selectedOptions !== null) selectDisc(selectedOptions.value);
     }
 
     handleAddDiscToBag = () => {
-      const { dispatch, currentSelection } = this.props;
-      if (currentSelection !== null) {
-        const currDisc = this.getDiscById(currentSelection);
+      const {
+        addDiscToBag,
+      } = this.props;
+      const currDisc = this.getCurrentDisc();
+      const currentBag = this.getCurrentBag();
 
-        if (currDisc !== null) {
-          const selectDisc = {
-            ...currDisc.disc,
-            discId: currDisc.disc.discId,
-            company: currDisc.company.company,
-            enabled: true,
-            wear: 10,
-          };
+      if (currDisc !== null) {
+        const selectDisc = {
+          ...currDisc.disc,
+          discId: currDisc.disc.discId,
+          company: currDisc.company.company,
+          enabled: true,
+          wear: 10,
+        };
 
-          dispatch(BagActions.loadDisc(selectDisc));
-        }
+        addDiscToBag(selectDisc, currentBag);
       }
     }
 
-    handleEnableDisc = (baggedDiscId, enable) => {
-      const { dispatch } = this.props;
+    handleEnableDisc = (baggedDiscId, enabled) => {
+      const {
+        editDiscEnabled,
+      } = this.props;
 
-      dispatch(BagActions.setDiscEnable(baggedDiscId, enable));
+      const bag = this.getCurrentBag();
+      const disc = this.getBaggedDiscById(baggedDiscId);
+
+      editDiscEnabled(enabled, disc, bag);
     }
 
-    handleEnableDiscType = (discType, enable) => {
-      const { dispatch } = this.props;
+    handleEnableDiscType = (discType, enabled) => {
+      const {
+        editDiscTypeEnabled,
+        discTypes,
+      } = this.props;
 
-      dispatch(BagActions.setDiscTypeEnable(discType, enable));
+      const bag = this.getCurrentBag();
+      const selecteDiscType = _.find(discTypes, dt => dt.discType === discType);
+
+      editDiscTypeEnabled(enabled, selecteDiscType, bag);
     }
 
     handleEditDiscName = (value) => {
-      const { dispatch } = this.props;
+      const { editDiscName } = this.props;
+      const bag = this.getCurrentBag();
+      const disc = this.getCurrentEditingDisc();
 
-      dispatch(BagActions.editDiscName(value));
+      editDiscName(value, disc, bag);
     }
 
     handleSetDiscWear = (wear) => {
-      const { dispatch } = this.props;
+      const { updateDiscWear } = this.props;
+      const bag = this.getCurrentBag();
+      const disc = this.getCurrentEditingDisc();
 
-      dispatch(BagActions.setDiscWear(wear));
+      updateDiscWear(wear, disc, bag);
     }
 
     handleSetDiscWeight = (weight) => {
-      const { dispatch } = this.props;
+      const { editDiscWeight } = this.props;
+      const bag = this.getCurrentBag();
+      const disc = this.getCurrentEditingDisc();
 
-      dispatch(BagActions.editDiscWeight(weight));
+      editDiscWeight(weight, disc, bag);
     }
 
     handleSetDiscPower = (power) => {
-      const { dispatch } = this.props;
+      const { editDiscPower } = this.props;
+      const bag = this.getCurrentBag();
+      const disc = this.getCurrentEditingDisc();
 
-      dispatch(BagActions.editDiscPower(power));
+      editDiscPower(power, disc, bag);
     }
 
     handleSetDiscThrowType = (throwType) => {
-      const { dispatch } = this.props;
+      const { editDiscThrowType } = this.props;
+      const bag = this.getCurrentBag();
+      const disc = this.getCurrentEditingDisc();
 
-      dispatch(BagActions.editDiscThrowType(throwType));
+      editDiscThrowType(throwType, disc, bag);
     }
 
     handleDiscRemove = (baggedDiscId) => {
-      const { dispatch } = this.props;
+      const { removeDiscFromBag } = this.props;
+      const bag = this.getCurrentBag();
+      const disc = this.getBaggedDiscById(baggedDiscId);
 
-      dispatch(BagActions.removeDiscFromBag(baggedDiscId));
+      removeDiscFromBag(disc, bag);
     }
 
-    handleAddBagStart = () => {
-      const { dispatch } = this.props;
+    handleAddNewBag = (name) => {
+      const { currentBags, addNewBag } = this.props;
 
-      dispatch(BagActions.addNewBagStart());
-    }
-
-    handleAddBagFinish = (bagName) => {
-      const { dispatch } = this.props;
-
-      dispatch(BagActions.addNewBagFinish(bagName));
-    }
-
-    handleAddBagCancel = () => {
-      const { dispatch } = this.props;
-
-      dispatch(BagActions.addNewBagCancel());
+      addNewBag(name, currentBags);
     }
 
     handleRemoveBag = () => {
-      const { dispatch } = this.props;
+      const { removeExistingBag, currentBags } = this.props;
+      const bag = this.getCurrentBag();
 
-      dispatch(BagActions.removeExistingBag());
-    }
-
-    handleUpdateBagNameStart = () => {
-      const { dispatch } = this.props;
-
-      dispatch(BagActions.updateBagNameStart());
-    }
-
-    handleUpdateBagNameFinish = (bagName) => {
-      const { dispatch } = this.props;
-
-      dispatch(BagActions.updateBagNameFinish(bagName));
-    }
-
-    handleUpdateBagNameCancel = () => {
-      const { dispatch } = this.props;
-
-      dispatch(BagActions.updateBagNameCancel());
+      removeExistingBag(currentBags, bag);
     }
 
     handleSelectBag = (bagId) => {
-      const { dispatch } = this.props;
+      const { selectBag } = this.props;
 
-      dispatch(BagActions.selectBag(bagId));
+      selectBag(bagId);
+    }
+
+    /* EDITING FUNCTIONS FINISH */
+
+    /* EDITING FLAG FUNCTIONS START */
+
+    handleAddBagStart = () => {
+      const { addNewBagStart } = this.props;
+
+      addNewBagStart();
+    }
+
+    handleAddBagFinish = (bagName) => {
+      const { addNewBagFinish } = this.props;
+
+      this.handleAddNewBag(bagName);
+      addNewBagFinish();
+    }
+
+    handleAddBagCancel = () => {
+      const { addNewBagCancel } = this.props;
+
+      addNewBagCancel();
+    }
+
+    handleUpdateBagName = (bagName) => {
+      const { editBagName } = this.props;
+      const bag = this.getCurrentBag();
+
+      editBagName(bagName, bag);
+    }
+
+    handleUpdateBagNameStart = () => {
+      const { updateBagNameStart } = this.props;
+
+      updateBagNameStart();
+    }
+
+    handleUpdateBagNameFinish = (bagName) => {
+      const { updateBagNameFinish } = this.props;
+
+      this.handleUpdateBagName(bagName);
+      updateBagNameFinish();
+    }
+
+    handleUpdateBagNameCancel = () => {
+      const { updateBagNameCancel } = this.props;
+
+      updateBagNameCancel();
     }
 
     handleEditDisc = (discId) => {
-      const { dispatch } = this.props;
+      const { openDiscEditModal } = this.props;
 
-      dispatch(BagActions.openDiscEditModal(discId));
+      openDiscEditModal(discId);
     }
 
     handleCloseEditDisc = () => {
-      const { dispatch } = this.props;
+      const { closeDiscEditModal } = this.props;
 
-      dispatch(BagActions.closeDiscEditModal());
+      closeDiscEditModal();
     }
+
+    /* EDITING FLAG FUNCTIONS FINISH */
 
     render() {
       const {
@@ -261,12 +330,33 @@ BagContainer.propTypes = {
     enabled: PropTypes.bool,
     title: PropTypes.string,
   })),
-  dispatch: PropTypes.func,
   selectedBagId: PropTypes.number,
   editingDiscId: PropTypes.number,
   addBag: PropTypes.bool,
   updateBag: PropTypes.bool,
   thrower: PropTypes.shape(throwerShape),
+  addDiscToBag: PropTypes.func,
+  selectDisc: PropTypes.func,
+  editDiscEnabled: PropTypes.func,
+  editDiscTypeEnabled: PropTypes.func,
+  editDiscName: PropTypes.func,
+  updateDiscWear: PropTypes.func,
+  editDiscWeight: PropTypes.func,
+  editDiscPower: PropTypes.func,
+  editDiscThrowType: PropTypes.func,
+  removeDiscFromBag: PropTypes.func,
+  removeExistingBag: PropTypes.func,
+  editBagName: PropTypes.func,
+  selectBag: PropTypes.func,
+  addNewBag: PropTypes.func,
+  addNewBagStart: PropTypes.func,
+  addNewBagFinish: PropTypes.func,
+  addNewBagCancel: PropTypes.func,
+  updateBagNameStart: PropTypes.func,
+  updateBagNameFinish: PropTypes.func,
+  updateBagNameCancel: PropTypes.func,
+  openDiscEditModal: PropTypes.func,
+  closeDiscEditModal: PropTypes.func,
 };
 
 BagContainer.defaultProps = {
@@ -293,4 +383,31 @@ const mapStateToProps = state => ({
   updateBag: state.bag.updateBag,
 });
 
-export default connect(mapStateToProps)(BagContainer);
+function mapDispatchToProps(dispatch) {
+  return {
+    addDiscToBag: (disc, bag) => dispatch(BagActions.addDiscToBag(disc, bag)),
+    selectDisc: value => dispatch(CompanyActions.selectDisc(value)),
+    editDiscEnabled: (enabled, disc, bag) => dispatch(BagActions.editDiscEnabled(enabled, disc, bag)),
+    editDiscTypeEnabled: (enabled, discType, bag) => dispatch(BagActions.editDiscTypeEnabled(enabled, discType, bag)),
+    editDiscName: (displayName, disc, bag) => dispatch(BagActions.editDiscName(displayName, disc, bag)),
+    updateDiscWear: (wear, disc, bag) => dispatch(BagActions.updateDiscWear(wear, disc, bag)),
+    editDiscWeight: (weight, disc, bag) => dispatch(BagActions.editDiscWeight(weight, disc, bag)),
+    editDiscPower: (power, disc, bag) => dispatch(BagActions.editDiscPower(power, disc, bag)),
+    editDiscThrowType: (throwType, disc, bag) => dispatch(BagActions.editDiscThrowType(throwType, disc, bag)),
+    removeDiscFromBag: (disc, bag) => dispatch(BagActions.removeDiscFromBag(disc, bag)),
+    removeExistingBag: (currentBags, bag) => dispatch(BagActions.removeExistingBag(currentBags, bag)),
+    editBagName: (name, bag) => dispatch(BagActions.editBagName(name, bag)),
+    selectBag: bagId => dispatch(BagActions.selectBag(bagId)),
+    addNewBag: (name, bags) => dispatch(BagActions.addNewBag(name, bags)),
+    addNewBagStart: () => dispatch(BagActions.addNewBagStart()),
+    addNewBagFinish: () => dispatch(BagActions.addNewBagFinish()),
+    addNewBagCancel: () => dispatch(BagActions.addNewBagCancel()),
+    updateBagNameStart: () => dispatch(BagActions.updateBagNameStart()),
+    updateBagNameFinish: () => dispatch(BagActions.updateBagNameFinish()),
+    updateBagNameCancel: () => dispatch(BagActions.updateBagNameCancel()),
+    openDiscEditModal: discId => dispatch(BagActions.openDiscEditModal(discId)),
+    closeDiscEditModal: () => dispatch(BagActions.closeDiscEditModal()),
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(BagContainer);

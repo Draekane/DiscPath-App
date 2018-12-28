@@ -26,11 +26,15 @@ export function* removeDiscFromBagSaga({ disc, bag }) {
   if (!disc || !bag) {
     yield put(actions.removeDiscFromBagFailure('Disc or Bag are not present'));
   }
-  const newBag = {
-    ...bag,
-    discs: _.filter(bag.discs, d => d.baggedDiscId !== disc.baggedDiscId),
-  };
-  yield put(actions.removeDiscFromBagSuccess(newBag));
+  try {
+    const newBag = {
+      ...bag,
+      discs: _.filter(bag.discs, d => d.baggedDiscId !== disc.baggedDiscId),
+    };
+    yield put(actions.removeDiscFromBagSuccess(newBag));
+  } catch (err) {
+    yield put(actions.removeDiscFromBagFailure(err));
+  }
 }
 
 export function* updateDiscWearSaga({ wear, disc, bag }) {
@@ -154,16 +158,16 @@ export function* editDiscTypeEnabledSaga({ enabled, discType, bag }) {
   yield put(actions.editDiscTypeEnabledSuccess(newBag, newDiscType));
 }
 
-export function* exportBagToFileSaga({ bags }) {
+export function* exportBagsToFileSaga({ bags }) {
   if (!bags || bags.length === 0) {
-    yield put(actions.exportBagToFileFailure('No Bags exist to export'));
+    yield put(actions.exportBagsToFileFailure('No Bags exist to export'));
   }
   try {
     const thisFile = new Blob([JSON.stringify(bags)], { type: 'text/plain;charset=utf-8' });
     saveAs(thisFile, 'bag.json');
-    yield put(actions.exportBagToFileSuccess());
+    yield put(actions.exportBagsToFileSuccess());
   } catch (err) {
-    yield put(actions.exportBagToFileFailure(err));
+    yield put(actions.exportBagsToFileFailure(err));
   }
 }
 
@@ -181,18 +185,18 @@ export function* selectBagSaga({ selectBagId }) {
 
 export function* addNewBagSaga({ name, bags }) {
   if (!name || !bags) {
-    yield put(actions.addNewBagsFailure('New Bag Name or Bags was not present'));
+    yield put(actions.addNewBagFailure('New Bag Name or Bags was not present'));
   }
   const newBags = [
     ...bags,
     {
       name,
-      bagId: _.max(_.map(bags, bag => bag.bagId)),
+      bagId: _.max(_.map(bags, bag => bag.bagId)) + 1,
       discs: [],
     },
   ];
 
-  yield put(actions.addNewbagsSuccess(newBags));
+  yield put(actions.addNewBagSuccess(newBags));
   yield put(actions.addNewBagFinish());
 }
 
@@ -259,8 +263,9 @@ export default function* () {
   yield takeEvery(actionTypes.EDIT_DISC_ENABLED, editDiscEnabledSaga);
   yield takeEvery(actionTypes.EDIT_DISC_TYPE_ENABLED, editDiscTypeEnabledSaga);
   yield takeEvery(actionTypes.REMOVE_DISC_FROM_BAG, removeDiscFromBagSaga);
-  yield takeEvery(actionTypes.EXPORT_BAGS_TO_FILE, exportBagToFileSaga);
+  yield takeEvery(actionTypes.EXPORT_BAGS_TO_FILE, exportBagsToFileSaga);
   yield takeEvery(actionTypes.SELECT_BAG, selectBagSaga);
   yield takeEvery(actionTypes.ADD_NEW_BAG, addNewBagSaga);
+  yield takeEvery(actionTypes.REMOVE_EXISTING_BAG, removeExistingBagSaga);
   yield takeEvery(actionTypes.EDIT_BAG_NAME, editBagNameSaga);
-}
+};

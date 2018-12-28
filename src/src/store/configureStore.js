@@ -1,14 +1,20 @@
-import { createStore, applyMiddleware } from 'redux';
+import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
-// import persistState from 'redux-localstorage';
+import createSagaMiddleware from 'redux-saga';
 
 import rootReducer from '../reducers/rootReducer';
+import rootSaga from '../sagas';
+
+const sagaMiddleware = createSagaMiddleware();
+
+const createStoreWithMiddleware = compose(
+  applyMiddleware(thunk),
+  applyMiddleware(sagaMiddleware),
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+)(createStore);
 
 export default function configureStore() {
-  return createStore(
-    rootReducer,
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
-    applyMiddleware(thunk),
-    // persistState('bag.bags'),
-  );
+  const store = createStoreWithMiddleware(rootReducer);
+  sagaMiddleware.run(rootSaga);
+  return store;
 }

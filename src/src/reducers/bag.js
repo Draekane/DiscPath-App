@@ -51,7 +51,7 @@ const bag = (state = getInitialState(), action = {}) => {
     case bagActionTypes.EDIT_DISC_THROW_TYPE_SUCCESS:
     case bagActionTypes.EDIT_DISC_NAME_SUCCESS:
     case bagActionTypes.EDIT_DISC_ENABLED_SUCCESS:
-    case bagActionTypes.REMOVE_DISC_FROM_BAG:
+    case bagActionTypes.REMOVE_DISC_FROM_BAG_SUCCESS:
     case bagActionTypes.EDIT_BAG_NAME_SUCCESS:
       if (action.bag === null) return state;
       newState = {
@@ -61,6 +61,13 @@ const bag = (state = getInitialState(), action = {}) => {
             return action.bag;
           } return bag;
         }),
+      };
+      break;
+    case bagActionTypes.ADD_NEW_BAG_SUCCESS:
+      if (action.bags === null) return state;
+      newState = {
+        ...state,
+        bags: action.bags,
       };
       break;
     case bagActionTypes.EDIT_DISC_TYPE_ENABLED_SUCCESS:

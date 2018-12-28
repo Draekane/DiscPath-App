@@ -41,7 +41,6 @@ const saveToLocalStore = (updateState) => {
 
 const bag = (state = getInitialState(), action = {}) => {
   let newState;
-  let newBags;
   let newBag;
 
   switch (action.type) {

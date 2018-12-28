@@ -269,12 +269,6 @@ export const closeDiscEditModal = () => ({
   type: bagActionTypes.CLOSE_DISC_EDIT_MODAL,
 });
 
-
-
-
-
-
-
 export const enlargeMap = () => ({
   type: bagActionTypes.ENLARG_MAP,
 });

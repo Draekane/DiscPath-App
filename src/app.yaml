@@ -1,9 +1,2 @@
 env: standard
 runtime: nodejs8
-
-handlers:
-- url: /
-  static_files: src/build/index.html
-  upload: src/build/index.html
-- url: /
-  static_dir: src/build

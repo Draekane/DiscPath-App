@@ -145,7 +145,7 @@ const bag = (state = getInitialState(), action = {}) => {
       newState = {
         ...state,
         bags: action.bags,
-        selectedBagId: action.bags[0].bagId || 1,
+        selectedBagId: action.bags.length >= 1 ? action.bags[0].bagId : 1,
       };
       break;
     case bagActionTypes.OPEN_DISC_EDIT_MODAL:

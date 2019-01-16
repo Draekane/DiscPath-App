@@ -122,14 +122,14 @@ export function* editDiscNameSaga({ displayName, disc, bag }) {
 }
 
 export function* editDiscEnabledSaga({ enabled, disc, bag }) {
-  if (!enabled || !disc || !bag) {
+  if (enabled === undefined || !disc || !bag) {
     yield put(actions.editDiscEnabledFailure('Enabled, Disc, or Bag are not present'));
   }
   const newBag = {
     ...bag,
     discs: _.map(bag.discs, (d) => {
       if (d.baggedDiscId === disc.baggedDiscId) {
-        return { ...disc, enabled };
+        return { ...disc, enabled: !enabled };
       }
       return d;
     }),
@@ -139,20 +139,20 @@ export function* editDiscEnabledSaga({ enabled, disc, bag }) {
 }
 
 export function* editDiscTypeEnabledSaga({ enabled, discType, bag }) {
-  if (!enabled || !discType || !bag) {
+  if (enabled === undefined || !discType || !bag) {
     yield put(actions.editDiscTypeEnabledFailure('Enabled, Disc Type, or Bag are not present'));
   }
   const newBag = {
     ...bag,
     discs: _.map(bag.discs, (d) => {
-      if (d.discType === discType.discType) {
-        return { ...d, enabled };
+      if (d.type === discType.discType) {
+        return { ...d, enabled: !enabled };
       }
       return d;
     }),
   };
 
-  const newDiscType = { ...discType, enabled };
+  const newDiscType = { ...discType, enabled: !enabled };
 
   yield put(actions.editDiscTypeEnabledSuccess(newBag, newDiscType));
 }

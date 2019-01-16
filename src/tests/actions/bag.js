@@ -230,28 +230,6 @@ describe('Bag Actions Tests', () => {
     });
   });
 
-  describe('loadDisc', () => {
-    const tester = (expectedActions) => {
-      const store = mockStore({});
-
-      return Promise.resolve(store.dispatch(bagActions.loadDisc()))
-        .then(() => {
-          const actionsDispatched = _.map(store.getActions(), action => action.type);
-          return expect(actionsDispatched).toEqual(expectedActions);
-        });
-    };
-
-    it('should create an object of the correct type', () => {
-      // ARRANGE
-      const expectedActions = [
-        bagActionTypes.ADD_DISC_TO_BAG,
-      ];
-
-      // ACT & ASSERT
-      return tester(expectedActions);
-    });
-  });
-
   describe('openDiscEditModal', () => {
     const tester = (expectedActions) => {
       const store = mockStore({});
@@ -333,72 +311,6 @@ describe('Bag Actions Tests', () => {
       // ARRANGE
       const expectedActions = [
         bagActionTypes.SELECT_BAG,
-      ];
-
-      // ACT & ASSERT
-      return tester(expectedActions);
-    });
-  });
-
-  describe('setDiscEnable', () => {
-    const tester = (expectedActions) => {
-      const store = mockStore({});
-
-      return Promise.resolve(store.dispatch(bagActions.setDiscEnable()))
-        .then(() => {
-          const actionsDispatched = _.map(store.getActions(), action => action.type);
-          return expect(actionsDispatched).toEqual(expectedActions);
-        });
-    };
-
-    it('should create an object of the correct type', () => {
-      // ARRANGE
-      const expectedActions = [
-        bagActionTypes.ENABLE_DISC,
-      ];
-
-      // ACT & ASSERT
-      return tester(expectedActions);
-    });
-  });
-
-  describe('setDiscTypeEnable', () => {
-    const tester = (expectedActions) => {
-      const store = mockStore({});
-
-      return Promise.resolve(store.dispatch(bagActions.setDiscTypeEnable()))
-        .then(() => {
-          const actionsDispatched = _.map(store.getActions(), action => action.type);
-          return expect(actionsDispatched).toEqual(expectedActions);
-        });
-    };
-
-    it('should create an object of the correct type', () => {
-      // ARRANGE
-      const expectedActions = [
-        bagActionTypes.ENABLE_DISC_TYPE,
-      ];
-
-      // ACT & ASSERT
-      return tester(expectedActions);
-    });
-  });
-
-  describe('setDiscWear', () => {
-    const tester = (expectedActions) => {
-      const store = mockStore({});
-
-      return Promise.resolve(store.dispatch(bagActions.setDiscWear()))
-        .then(() => {
-          const actionsDispatched = _.map(store.getActions(), action => action.type);
-          return expect(actionsDispatched).toEqual(expectedActions);
-        });
-    };
-
-    it('should create an object of the correct type', () => {
-      // ARRANGE
-      const expectedActions = [
-        bagActionTypes.UPDATE_DISC_WEAR,
       ];
 
       // ACT & ASSERT

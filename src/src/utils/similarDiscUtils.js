@@ -7,6 +7,7 @@ export const similarityPercentage = value => `${parseInt(value * 100, 10)}%`;
 export const hstValue = 50;
 export const lsfValue = 63;
 
+// This just a lookup - Takes selectedDisc, calculates flight path and returns
 export const getSelectedDisc = (selectedDisc, companies, thrower) => {
   let foundDisc = null;
   if (!selectedDisc) return foundDisc;
@@ -34,6 +35,7 @@ export const getSelectedDisc = (selectedDisc, companies, thrower) => {
   return foundDisc;
 };
 
+// Takes selectedDisc, thrower information, and calculates new flight path.
 export const getNewFlightPath = (selectedDisc, thrower) => {
   const { maxWeight, weight } = selectedDisc;
   let pwi = (selectedDisc.power || thrower.power);

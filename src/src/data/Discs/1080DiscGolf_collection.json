@@ -1,16 +1,17 @@
 {
-	"company": "1080 Disc Golf",
-	"companyId": "f2739fddd43b5b2221020b56cfcfac3f",
-	"discs": [
-		{
-			"discId": "d1106ccca74e98877ed6d7890c70bb2c",
-			"name": "Radius",
-			"type": "P",
-			"range": 236,
-			"hst": 0,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-	}]
+    "company": "1080 Disc Golf",
+    "companyId": "f2739fddd43b5b2221020b56cfcfac3f",
+    "discs": [
+        {
+            "discId": "d1106ccca74e98877ed6d7890c70bb2c",
+            "name": "Radius",
+            "type": "P",
+            "range": 236,
+            "hst": 0,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 12
+        }
+    ]
 }

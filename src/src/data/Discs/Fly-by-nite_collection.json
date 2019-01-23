@@ -1,26 +1,28 @@
 {
-	"company": "Fly-by-nite",
-	"companyId": "a8981f3cb6a50cfd4d75485e89f0693a",
-	"discs": [
-		{
-			"discId": "8ef80d438e771b62e99566ad482b0011",
-			"name": "The Bat",
-			"type": "F",
-			"range": 275,
-			"hst": -36,
-			"lsf": 46,
-			"pdga": "N",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "c511aaa26d53b0d02fbe6d083c555d7e",
-			"name": "The Owl",
-			"type": "F",
-			"range": 279,
-			"hst": -18,
-			"lsf": 46,
-			"pdga": "N",
-			"matrix_x": 4,
-			"matrix_y": 4
-	}]
+    "company": "Fly-by-nite",
+    "companyId": "a8981f3cb6a50cfd4d75485e89f0693a",
+    "discs": [
+        {
+            "discId": "8ef80d438e771b62e99566ad482b0011",
+            "name": "The Bat",
+            "type": "F",
+            "range": 275,
+            "hst": -36,
+            "lsf": 46,
+            "pdga": "N",
+            "matrix_x": 5,
+            "matrix_y": 10
+        },
+        {
+            "discId": "c511aaa26d53b0d02fbe6d083c555d7e",
+            "name": "The Owl",
+            "type": "F",
+            "range": 279,
+            "hst": -18,
+            "lsf": 46,
+            "pdga": "N",
+            "matrix_x": 4,
+            "matrix_y": 10
+        }
+    ]
 }

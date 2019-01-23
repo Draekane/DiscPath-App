@@ -1,66 +1,72 @@
 {
-	"company": "Full Turn Discs",
-	"companyId": "6dd6530012c9d644243625437f2a1b32",
-	"discs": [
-		{
-			"discId": "b4137253e38d50243b9983114c671d69",
-			"name": "Cruise",
-			"type": "D",
-			"range": 431,
-			"hst": -39,
-			"lsf": 59,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "568aa93c8690d77c4f8ebb71929b742b",
-			"name": "Drifter",
-			"type": "F",
-			"range": 363,
-			"hst": -19,
-			"lsf": 38,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "7392e5a07cc56647b45a9598ce4d646d",
-			"name": "Navigator",
-			"type": "M",
-			"range": 294,
-			"hst": -18,
-			"lsf": 37,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "916df6dabccb420c1ee355d7dd7dd89b",
-			"name": "Passport",
-			"type": "P",
-			"range": 278,
-			"hst": -18,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "1e7f595c80ee79d6776cc844c6fe6c10",
-			"name": "Traveler",
-			"type": "F",
-			"range": 364,
-			"hst": 0,
-			"lsf": 38,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "68fa09a24e1866a929b1d87a34e1e8ef",
-			"name": "Voyage",
-			"type": "D",
-			"range": 418,
-			"hst": 0,
-			"lsf": 59,
-			"pdga": "Y",
-			"matrix_x": 3,
-			"matrix_y": 3
-	}]
+    "company": "Full Turn Discs",
+    "companyId": "6dd6530012c9d644243625437f2a1b32",
+    "discs": [
+        {
+            "discId": "b4137253e38d50243b9983114c671d69",
+            "name": "Cruise",
+            "type": "D",
+            "range": 431,
+            "hst": -39,
+            "lsf": 59,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 2
+        },
+        {
+            "discId": "568aa93c8690d77c4f8ebb71929b742b",
+            "name": "Drifter",
+            "type": "F",
+            "range": 363,
+            "hst": -19,
+            "lsf": 38,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 5
+        },
+        {
+            "discId": "7392e5a07cc56647b45a9598ce4d646d",
+            "name": "Navigator",
+            "type": "M",
+            "range": 294,
+            "hst": -18,
+            "lsf": 37,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 9
+        },
+        {
+            "discId": "916df6dabccb420c1ee355d7dd7dd89b",
+            "name": "Passport",
+            "type": "M",
+            "range": 278,
+            "hst": -18,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 10
+        },
+        {
+            "discId": "1e7f595c80ee79d6776cc844c6fe6c10",
+            "name": "Traveler",
+            "type": "F",
+            "range": 364,
+            "hst": 0,
+            "lsf": 38,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 5
+        },
+        {
+            "discId": "68fa09a24e1866a929b1d87a34e1e8ef",
+            "name": "Voyage",
+            "type": "D",
+            "range": 418,
+            "hst": 0,
+            "lsf": 59,
+            "pdga": "Y",
+            "matrix_x": 3,
+            "matrix_y": 3
+        }
+    ]
 }

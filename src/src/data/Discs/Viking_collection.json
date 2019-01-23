@@ -1,76 +1,83 @@
 {
-	"company": "Viking",
-	"companyId": "f48a8f161502989fca609408a80bd754",
-	"discs": [
-		{
-			"discId": "ed4dd6cc118ab2500715cbd23b054573",
-			"name": "Axe",
-			"type": "M",
-			"range": 276,
-			"hst": 0,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "5ee5ec9d8e6b181960c2be1df5f1ad81",
-			"name": "Berserker",
+    "company": "Viking",
+    "companyId": "f48a8f161502989fca609408a80bd754",
+    "discs": [
+        {
+            "discId": "ed4dd6cc118ab2500715cbd23b054573",
+            "name": "Axe",
+            "type": "M",
+            "range": 276,
+            "hst": 0,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 10
+        },
+        {
+            "discId": "5ee5ec9d8e6b181960c2be1df5f1ad81",
+            "name": "Berserker",
 			"type": "D",
-			"range": 382,
-			"hst": -58,
-			"lsf": 38,
-			"pdga": "Y",
-			"matrix_x": 6,
-			"matrix_y": 6
-		} , {
-			"discId": "2c0847f66f16adcc6ddf93f1db5827e7",
-			"name": "Cosmos",
-			"type": "F",
-			"range": 334,
-			"hst": 0,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "d39d7a2bb6d430fd238a6aedc7f0cee2",
-			"name": "Knife",
-			"type": "P",
-			"range": 240,
-			"hst": 0,
-			"lsf": 36,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "1268db3870b3390265a7f4cb8ea33db8",
-			"name": "Nordic Warrior",
-			"type": "M",
-			"range": 278,
-			"hst": 0,
-			"lsf": 36,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "201011842cd44b96c4ed73dcff80ac1f",
-			"name": "Rune",
-			"type": "P",
-			"range": 245,
-			"hst": -3,
-			"lsf": 3,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "bcede9a59d312eee69efcc6df53b855c",
-			"name": "Thunder God Thor",
-			"type": "D",
-			"range": 454,
-			"hst": 0,
-			"lsf": 39,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-	}]
+            "range": 382,
+            "hst": -58,
+            "lsf": 38,
+            "pdga": "Y",
+            "matrix_x": 6,
+            "matrix_y": 4
+        },
+        {
+            "discId": "2c0847f66f16adcc6ddf93f1db5827e7",
+            "name": "Cosmos",
+            "type": "F",
+            "range": 334,
+            "hst": 0,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 7
+        },
+        {
+            "discId": "d39d7a2bb6d430fd238a6aedc7f0cee2",
+            "name": "Knife",
+            "type": "P",
+            "range": 240,
+            "hst": 0,
+            "lsf": 36,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 11
+        },
+        {
+            "discId": "1268db3870b3390265a7f4cb8ea33db8",
+            "name": "Nordic Warrior",
+            "type": "M",
+            "range": 278,
+            "hst": 0,
+            "lsf": 36,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 10
+        },
+        {
+            "discId": "201011842cd44b96c4ed73dcff80ac1f",
+            "name": "Rune",
+            "type": "P",
+            "range": 245,
+            "hst": -3,
+            "lsf": 3,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 11
+        },
+        {
+            "discId": "bcede9a59d312eee69efcc6df53b855c",
+            "name": "Thunder God Thor",
+            "type": "D",
+            "range": 454,
+            "hst": 0,
+            "lsf": 39,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 1
+        }
+    ]
 }

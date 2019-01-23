@@ -1,26 +1,28 @@
 {
-	"company": "Black Zombie",
-	"companyId": "9421499350632fc32954aab05155c6e8",
-	"discs": [
-		{
-			"discId": "4be76799cb03e2bd23b26ae9c14c5a44",
-			"name": "BerZerker",
-			"type": "D",
-			"range": 415,
-			"hst": 0,
-			"lsf": 58,
-			"pdga": "Y",
-			"matrix_x": 3,
-			"matrix_y": 3
-		} , {
-			"discId": "21de0335eff140f1016b34f30cc83ae0",
-			"name": "Chainsaw",
-			"type": "P",
-			"range": 292,
-			"hst": 0,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-	}]
+    "company": "Black Zombie",
+    "companyId": "9421499350632fc32954aab05155c6e8",
+    "discs": [
+        {
+            "discId": "4be76799cb03e2bd23b26ae9c14c5a44",
+            "name": "BerZerker",
+            "type": "D",
+            "range": 415,
+            "hst": 0,
+            "lsf": 58,
+            "pdga": "Y",
+            "matrix_x": 3,
+            "matrix_y": 3
+        },
+        {
+            "discId": "21de0335eff140f1016b34f30cc83ae0",
+            "name": "Chainsaw",
+            "type": "P",
+            "range": 292,
+            "hst": 0,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 9
+        }
+    ]
 }

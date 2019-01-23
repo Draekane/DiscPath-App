@@ -1,346 +1,380 @@
 {
-	"company": "Prodigy Disc",
-	"companyId": "84af51387c57624e185ac85c73e2b86d",
-	"discs": [
-		{
-			"discId": "27f237e6b7f96587b6202ff3607ad88a",
-			"name": "A1",
+    "company": "Prodigy Disc",
+    "companyId": "84af51387c57624e185ac85c73e2b86d",
+    "discs": [
+        {
+            "discId": "27f237e6b7f96587b6202ff3607ad88a",
+            "name": "A1",
 			"type": "P",
-			"range": 273,
-			"hst": 0,
-			"lsf": 73,
-			"pdga": "Y",
-			"matrix_x": 3,
-			"matrix_y": 3
-		} , {
-			"discId": "c6bdf6f65f3845da9085e9ae5790b494",
-			"name": "A2",
+            "range": 273,
+            "hst": 0,
+            "lsf": 73,
+            "pdga": "Y",
+            "matrix_x": 3,
+            "matrix_y": 10
+        },
+        {
+            "discId": "c6bdf6f65f3845da9085e9ae5790b494",
+            "name": "A2",
 			"type": "P",
-			"range": 277,
-			"hst": 0,
-			"lsf": 55,
-			"pdga": "Y",
-			"matrix_x": 3,
-			"matrix_y": 3
-		} , {
-			"discId": "6593d7b12fd418cdb35bbf438de72f66",
-			"name": "A3",
+            "range": 277,
+            "hst": 0,
+            "lsf": 55,
+            "pdga": "Y",
+            "matrix_x": 3,
+            "matrix_y": 10
+        },
+        {
+            "discId": "6593d7b12fd418cdb35bbf438de72f66",
+            "name": "A3",
 			"type": "P",
-			"range": 274,
-			"hst": -18,
-			"lsf": 36,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "0c2f3adf2a48bab3adb470f4da57f3d0",
-			"name": "A4",
+            "range": 274,
+            "hst": -18,
+            "lsf": 36,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 10
+        },
+        {
+            "discId": "0c2f3adf2a48bab3adb470f4da57f3d0",
+            "name": "A4",
 			"type": "P",
-			"range": 273,
-			"hst": -36,
-			"lsf": 36,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "4a4079e06eb2f7ba7a12821c7c58a3f6",
-			"name": "D1",
-			"type": "D",
-			"range": 435,
-			"hst": -1,
-			"lsf": 73,
-			"pdga": "Y",
-			"matrix_x": 3,
-			"matrix_y": 3
-		} , {
-			"discId": "c4d62b6dcca08e5caf06c01889282859",
-			"name": "D2",
-			"type": "D",
-			"range": 435,
-			"hst": -16,
-			"lsf": 55,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "a3deb6e481689f1d3303caecb8a6c401",
-			"name": "D3",
-			"type": "D",
-			"range": 432,
-			"hst": -31,
-			"lsf": 47,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "2521dc256a4368da87585c936b451dd7",
-			"name": "D4",
-			"type": "D",
-			"range": 434,
-			"hst": -52,
-			"lsf": 44,
-			"pdga": "Y",
-			"matrix_x": 6,
-			"matrix_y": 6
-		} , {
-			"discId": "ea8ea3bfaa27cf4c2f61470447c87eea",
-			"name": "D5",
-			"type": "D",
-			"range": 439,
-			"hst": -62,
-			"lsf": 50,
-			"pdga": "Y",
-			"matrix_x": 6,
-			"matrix_y": 6
-		} , {
-			"discId": "e06ae0fa0b466d7a0d9696a11fc3246a",
-			"name": "D6",
-			"type": "D",
-			"range": 433,
-			"hst": -98,
-			"lsf": 19,
-			"pdga": "Y",
-			"matrix_x": 8,
-			"matrix_y": 8
-		} , {
-			"discId": "e1dffc8709f31a4987c8a88334107e89",
-			"name": "F1",
+            "range": 273,
+            "hst": -36,
+            "lsf": 36,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 10
+        },
+        {
+            "discId": "4a4079e06eb2f7ba7a12821c7c58a3f6",
+            "name": "D1",
+            "type": "D",
+            "range": 435,
+            "hst": -1,
+            "lsf": 73,
+            "pdga": "Y",
+            "matrix_x": 3,
+            "matrix_y": 2
+        },
+        {
+            "discId": "c4d62b6dcca08e5caf06c01889282859",
+            "name": "D2",
+            "type": "D",
+            "range": 435,
+            "hst": -16,
+            "lsf": 55,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 2
+        },
+        {
+            "discId": "a3deb6e481689f1d3303caecb8a6c401",
+            "name": "D3",
+            "type": "D",
+            "range": 432,
+            "hst": -31,
+            "lsf": 47,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 2
+        },
+        {
+            "discId": "2521dc256a4368da87585c936b451dd7",
+            "name": "D4",
+            "type": "D",
+            "range": 434,
+            "hst": -52,
+            "lsf": 44,
+            "pdga": "Y",
+            "matrix_x": 6,
+            "matrix_y": 2
+        },
+        {
+            "discId": "ea8ea3bfaa27cf4c2f61470447c87eea",
+            "name": "D5",
+            "type": "D",
+            "range": 439,
+            "hst": -62,
+            "lsf": 50,
+            "pdga": "Y",
+            "matrix_x": 6,
+            "matrix_y": 2
+        },
+        {
+            "discId": "e06ae0fa0b466d7a0d9696a11fc3246a",
+            "name": "D6",
+            "type": "D",
+            "range": 433,
+            "hst": -98,
+            "lsf": 19,
+            "pdga": "Y",
+            "matrix_x": 8,
+            "matrix_y": 2
+        },
+        {
+            "discId": "e1dffc8709f31a4987c8a88334107e89",
+            "name": "F1",
+            "type": "F",
+            "range": 334,
+            "hst": 2,
+            "lsf": 76,
+            "pdga": "Y",
+            "matrix_x": 2,
+            "matrix_y": 7
+        },
+        {
+            "discId": "fe5c3684dce76cdd9f7f42430868aa74",
+            "name": "F2",
+            "type": "F",
+            "range": 335,
+            "hst": -15,
+            "lsf": 56,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 7
+        },
+        {
+            "discId": "4b6bf4b531770872d4328ce69bef5627",
+            "name": "F3",
+            "type": "F",
+            "range": 338,
+            "hst": -24,
+            "lsf": 42,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 7
+        },
+        {
+            "discId": "37f438df6a6d5ba4c17ef8ca58562f00",
+            "name": "F5",
+            "type": "F",
+            "range": 337,
+            "hst": -18,
+            "lsf": 34,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 7
+        },
+        {
+            "discId": "47489eb597b7db34caa24b1fc78fc839",
+            "name": "F7",
+            "type": "F",
+            "range": 336,
+            "hst": -54,
+            "lsf": 23,
+            "pdga": "Y",
+            "matrix_x": 7,
+            "matrix_y": 7
+        },
+        {
+            "discId": "106530dc42baa21c67f8a3af4d7fd9e1",
+            "name": "H1",
 			"type": "F",
-			"range": 334,
-			"hst": 2,
-			"lsf": 76,
-			"pdga": "Y",
-			"matrix_x": 2,
-			"matrix_y": 2
-		} , {
-			"discId": "fe5c3684dce76cdd9f7f42430868aa74",
-			"name": "F2",
+            "range": 345,
+            "hst": 19,
+            "lsf": 80,
+            "pdga": "Y",
+            "matrix_x": 2,
+            "matrix_y": 6
+        },
+        {
+            "discId": "ca2bf3f6b7e18a508253e9521510a4b5",
+            "name": "H2",
 			"type": "F",
-			"range": 335,
-			"hst": -15,
-			"lsf": 56,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "4b6bf4b531770872d4328ce69bef5627",
-			"name": "F3",
+            "range": 348,
+            "hst": 0,
+            "lsf": 71,
+            "pdga": "Y",
+            "matrix_x": 3,
+            "matrix_y": 6
+        },
+        {
+            "discId": "b14763210c3ab7284e9cbe731d7dc2a5",
+            "name": "H3",
 			"type": "F",
-			"range": 338,
-			"hst": -24,
-			"lsf": 42,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "37f438df6a6d5ba4c17ef8ca58562f00",
-			"name": "F5",
+            "range": 348,
+            "hst": -9,
+            "lsf": 61,
+            "pdga": "Y",
+            "matrix_x": 3,
+            "matrix_y": 6
+        },
+        {
+            "discId": "6b57370ba89bd88a2d6d819d65f6007a",
+            "name": "H4",
 			"type": "F",
-			"range": 337,
-			"hst": -18,
-			"lsf": 34,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "47489eb597b7db34caa24b1fc78fc839",
-			"name": "F7",
+            "range": 370,
+            "hst": -28,
+            "lsf": 54,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 5
+        },
+        {
+            "discId": "830652084dda69b6b957e2c3a7bd9b18",
+            "name": "H5",
 			"type": "F",
-			"range": 336,
-			"hst": -54,
-			"lsf": 23,
-			"pdga": "Y",
-			"matrix_x": 7,
-			"matrix_y": 7
-		} , {
-			"discId": "106530dc42baa21c67f8a3af4d7fd9e1",
-			"name": "H1",
-			"type": "F",
-			"range": 345,
-			"hst": 19,
-			"lsf": 80,
-			"pdga": "Y",
-			"matrix_x": 2,
-			"matrix_y": 2
-		} , {
-			"discId": "ca2bf3f6b7e18a508253e9521510a4b5",
-			"name": "H2",
-			"type": "F",
-			"range": 348,
-			"hst": 0,
-			"lsf": 71,
-			"pdga": "Y",
-			"matrix_x": 3,
-			"matrix_y": 3
-		} , {
-			"discId": "b14763210c3ab7284e9cbe731d7dc2a5",
-			"name": "H3",
-			"type": "F",
-			"range": 348,
-			"hst": -9,
-			"lsf": 61,
-			"pdga": "Y",
-			"matrix_x": 3,
-			"matrix_y": 3
-		} , {
-			"discId": "6b57370ba89bd88a2d6d819d65f6007a",
-			"name": "H4",
-			"type": "F",
-			"range": 370,
-			"hst": -28,
-			"lsf": 54,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "830652084dda69b6b957e2c3a7bd9b18",
-			"name": "H5",
-			"type": "F",
-			"range": 403,
-			"hst": -39,
-			"lsf": 39,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "f31e1eef20f64733a18c538073e78396",
-			"name": "M1",
-			"type": "M",
-			"range": 286,
-			"hst": 0,
-			"lsf": 53,
-			"pdga": "Y",
-			"matrix_x": 3,
-			"matrix_y": 3
-		} , {
-			"discId": "9d8322530b67e2366e5b1ba67081ded9",
-			"name": "M2",
-			"type": "M",
-			"range": 293,
-			"hst": -6,
-			"lsf": 43,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "f1c6eb6f4e48eb34ab40b2987d4976a8",
-			"name": "M3",
-			"type": "M",
-			"range": 295,
-			"hst": -21,
-			"lsf": 27,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "66b543df60a981ccfcd2d3114605a39a",
-			"name": "M4",
-			"type": "M",
-			"range": 295,
-			"hst": -31,
-			"lsf": 24,
-			"pdga": "Y",
-			"matrix_x": 6,
-			"matrix_y": 6
-		} , {
-			"discId": "3f44a84e6e34fdb5a2f89c68d8c36175",
-			"name": "M5",
-			"type": "M",
-			"range": 290,
-			"hst": -37,
-			"lsf": 27,
-			"pdga": "Y",
-			"matrix_x": 6,
-			"matrix_y": 6
-		} , {
-			"discId": "a710c83fe312da3eb8c7181f531aa942",
-			"name": "PA1",
-			"type": "P",
-			"range": 246,
-			"hst": 0,
-			"lsf": 42,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "66a5975770c45a804145b45d5e86f0be",
-			"name": "PA2",
-			"type": "P",
-			"range": 247,
-			"hst": -4,
-			"lsf": 26,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "f9655bf94621c5bd54a8810f1960da64",
-			"name": "PA3",
-			"type": "P",
-			"range": 244,
-			"hst": -4,
-			"lsf": 29,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "af4fff688c389f7897b6900d79cb907a",
-			"name": "PA4",
-			"type": "P",
-			"range": 246,
-			"hst": -22,
-			"lsf": 21,
-			"pdga": "Y",
-			"matrix_x": 6,
-			"matrix_y": 6
-		} , {
-			"discId": "bb7f5ae6220c9828e5ec91faf054197c",
-			"name": "X1",
-			"type": "D",
-			"range": 402,
-			"hst": 13,
-			"lsf": 81,
-			"pdga": "Y",
-			"matrix_x": 2,
-			"matrix_y": 2
-		} , {
-			"discId": "54105bddbfe3f639d49cbe8f5182c958",
-			"name": "X2",
-			"type": "D",
-			"range": 435,
-			"hst": 0,
-			"lsf": 79,
-			"pdga": "Y",
-			"matrix_x": 2,
-			"matrix_y": 2
-		} , {
-			"discId": "0541026d4fa57ca1cc1a6fe30f57fea1",
-			"name": "X3",
-			"type": "D",
-			"range": 439,
-			"hst": -19,
-			"lsf": 39,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "7d71ed2af4cc5c6a8380324d9bc4a45f",
-			"name": "X4",
-			"type": "D",
-			"range": 431,
-			"hst": -59,
-			"lsf": 39,
-			"pdga": "Y",
-			"matrix_x": 6,
-			"matrix_y": 6
-		} , {
-			"discId": "4dc1b469e5c13f47868c5fc0aea6d538",
-			"name": "X5",
-			"type": "D",
-			"range": 434,
-			"hst": -79,
-			"lsf": 19,
-			"pdga": "Y",
-			"matrix_x": 8,
-			"matrix_y": 8
-	}]
+            "range": 403,
+            "hst": 39,
+            "lsf": -39,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 3
+        },
+        {
+            "discId": "f31e1eef20f64733a18c538073e78396",
+            "name": "M1",
+            "type": "M",
+            "range": 286,
+            "hst": 0,
+            "lsf": 53,
+            "pdga": "Y",
+            "matrix_x": 3,
+            "matrix_y": 9
+        },
+        {
+            "discId": "9d8322530b67e2366e5b1ba67081ded9",
+            "name": "M2",
+            "type": "M",
+            "range": 293,
+            "hst": -6,
+            "lsf": 43,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 9
+        },
+        {
+            "discId": "f1c6eb6f4e48eb34ab40b2987d4976a8",
+            "name": "M3",
+            "type": "M",
+            "range": 295,
+            "hst": -21,
+            "lsf": 27,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 9
+        },
+        {
+            "discId": "66b543df60a981ccfcd2d3114605a39a",
+            "name": "M4",
+            "type": "M",
+            "range": 295,
+            "hst": -31,
+            "lsf": 24,
+            "pdga": "Y",
+            "matrix_x": 6,
+            "matrix_y": 9
+        },
+        {
+            "discId": "3f44a84e6e34fdb5a2f89c68d8c36175",
+            "name": "M5",
+            "type": "M",
+            "range": 290,
+            "hst": -37,
+            "lsf": 27,
+            "pdga": "Y",
+            "matrix_x": 6,
+            "matrix_y": 9
+        },
+        {
+            "discId": "a710c83fe312da3eb8c7181f531aa942",
+            "name": "PA1",
+            "type": "P",
+            "range": 246,
+            "hst": 0,
+            "lsf": 42,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 11
+        },
+        {
+            "discId": "66a5975770c45a804145b45d5e86f0be",
+            "name": "PA2",
+            "type": "P",
+            "range": 247,
+            "hst": -4,
+            "lsf": 26,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 11
+        },
+        {
+            "discId": "f9655bf94621c5bd54a8810f1960da64",
+            "name": "PA3",
+            "type": "P",
+            "range": 244,
+            "hst": -4,
+            "lsf": 29,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 11
+        },
+        {
+            "discId": "af4fff688c389f7897b6900d79cb907a",
+            "name": "PA4",
+            "type": "P",
+            "range": 246,
+            "hst": -22,
+            "lsf": 21,
+            "pdga": "Y",
+            "matrix_x": 6,
+            "matrix_y": 11
+        },
+        {
+            "discId": "bb7f5ae6220c9828e5ec91faf054197c",
+            "name": "X1",
+            "type": "D",
+            "range": 402,
+            "hst": 13,
+            "lsf": 81,
+            "pdga": "Y",
+            "matrix_x": 2,
+            "matrix_y": 3
+        },
+        {
+            "discId": "54105bddbfe3f639d49cbe8f5182c958",
+            "name": "X2",
+            "type": "D",
+            "range": 435,
+            "hst": 0,
+            "lsf": 79,
+            "pdga": "Y",
+            "matrix_x": 2,
+            "matrix_y": 2
+        },
+        {
+            "discId": "0541026d4fa57ca1cc1a6fe30f57fea1",
+            "name": "X3",
+            "type": "D",
+            "range": 439,
+            "hst": -19,
+            "lsf": 39,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 2
+        },
+        {
+            "discId": "7d71ed2af4cc5c6a8380324d9bc4a45f",
+            "name": "X4",
+            "type": "D",
+            "range": 431,
+            "hst": -59,
+            "lsf": 39,
+            "pdga": "Y",
+            "matrix_x": 6,
+            "matrix_y": 2
+        },
+        {
+            "discId": "4dc1b469e5c13f47868c5fc0aea6d538",
+            "name": "X5",
+            "type": "D",
+            "range": 434,
+            "hst": -79,
+            "lsf": 19,
+            "pdga": "Y",
+            "matrix_x": 8,
+            "matrix_y": 2
+        }
+    ]
 }

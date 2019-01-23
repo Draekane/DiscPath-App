@@ -1,66 +1,72 @@
 {
-	"company": "Element Discs",
-	"companyId": "eaf219a5cdcf1d798d5fc5504c7c6e44",
-	"discs": [
-		{
-			"discId": "65d5644b4049b4215a6faa532e7e5ad5",
-			"name": "Chromium",
-			"type": "F",
-			"range": 367,
-			"hst": -19,
-			"lsf": 19,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "603b50bf5216929f5d77e2fbfcdd1cf1",
-			"name": "Iridium",
-			"type": "P",
-			"range": 240,
-			"hst": 0,
-			"lsf": 36,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "a0a569e51b6942b08a4a72a5dbfabcb6",
-			"name": "Lithium",
-			"type": "M",
-			"range": 294,
-			"hst": -37,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 6,
-			"matrix_y": 6
-		} , {
-			"discId": "67f993309d1f63621f22d9f2f485b4c2",
-			"name": "Plutonium",
-			"type": "P",
-			"range": 258,
-			"hst": 0,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "858d5d4d6658569e29daf666063402d8",
-			"name": "Radium",
-			"type": "M",
-			"range": 310,
-			"hst": -18,
-			"lsf": 56,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "4ddad617ae03a4b0a7eebd557bdd9bde",
-			"name": "Uranium",
-			"type": "M",
-			"range": 272,
-			"hst": 0,
-			"lsf": 36,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-	}]
+    "company": "Element Discs",
+    "companyId": "eaf219a5cdcf1d798d5fc5504c7c6e44",
+    "discs": [
+        {
+            "discId": "65d5644b4049b4215a6faa532e7e5ad5",
+            "name": "Chromium",
+            "type": "F",
+            "range": 367,
+            "hst": -19,
+            "lsf": 19,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 5
+        },
+        {
+            "discId": "603b50bf5216929f5d77e2fbfcdd1cf1",
+            "name": "Iridium",
+            "type": "P",
+            "range": 240,
+            "hst": 0,
+            "lsf": 36,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 11
+        },
+        {
+            "discId": "a0a569e51b6942b08a4a72a5dbfabcb6",
+            "name": "Lithium",
+            "type": "M",
+            "range": 294,
+            "hst": -37,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 6,
+            "matrix_y": 9
+        },
+        {
+            "discId": "67f993309d1f63621f22d9f2f485b4c2",
+            "name": "Plutonium",
+            "type": "P",
+            "range": 258,
+            "hst": 0,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 11
+        },
+        {
+            "discId": "858d5d4d6658569e29daf666063402d8",
+            "name": "Radium",
+            "type": "M",
+            "range": 310,
+            "hst": -18,
+            "lsf": 56,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 8
+        },
+        {
+            "discId": "4ddad617ae03a4b0a7eebd557bdd9bde",
+            "name": "Uranium",
+            "type": "M",
+            "range": 272,
+            "hst": 0,
+            "lsf": 36,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 10
+        }
+    ]
 }

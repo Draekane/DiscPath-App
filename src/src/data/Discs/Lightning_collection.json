@@ -1,286 +1,314 @@
 {
-	"company": "Lightning",
-	"companyId": "457ba641340a812b28f949a26fca3e7b",
-	"discs": [
-		{
-			"discId": "68ba5903e2e11270ad0c98cf4f4de054",
-			"name": "#1 Driver",
+    "company": "Lightning",
+    "companyId": "457ba641340a812b28f949a26fca3e7b",
+    "discs": [
+        {
+            "discId": "68ba5903e2e11270ad0c98cf4f4de054",
+            "name": "#1 Driver",
+            "type": "F",
+            "range": 335,
+            "hst": -37,
+            "lsf": 41,
+            "pdga": "N",
+            "matrix_x": 5,
+            "matrix_y": 7
+        },
+        {
+            "discId": "27c7a71d1d7ddc13a9cf6d80b7827bc4",
+            "name": "#1 Flyer",
 			"type": "F",
-			"range": 335,
-			"hst": -37,
-			"lsf": 41,
-			"pdga": "N",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "27c7a71d1d7ddc13a9cf6d80b7827bc4",
-			"name": "#1 Flyer",
+            "range": 352,
+            "hst": -15,
+            "lsf": 41,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 6
+        },
+        {
+            "discId": "4e664323e6601a9ba1c57ad00d3e7858",
+            "name": "#1 Helix",
 			"type": "F",
-			"range": 352,
-			"hst": -15,
-			"lsf": 41,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "4e664323e6601a9ba1c57ad00d3e7858",
-			"name": "#1 Helix",
+            "range": 347,
+            "hst": -19,
+            "lsf": 57,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 6
+        },
+        {
+            "discId": "6583c6d03bdc5b151bf846d46635774e",
+            "name": "#1 Hookshot",
+            "type": "F",
+            "range": 305,
+            "hst": -9,
+            "lsf": 56,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 8
+        },
+        {
+            "discId": "a32984084da4c10c4e5dbc8edf39b402",
+            "name": "#1 Hyzer",
+            "type": "F",
+            "range": 317,
+            "hst": 0,
+            "lsf": 75,
+            "pdga": "Y",
+            "matrix_x": 3,
+            "matrix_y": 8
+        },
+        {
+            "discId": "e5519b3d4e8c21a59f64c58607e2ae96",
+            "name": "#1 Roller",
+            "type": "F",
+            "range": 330,
+            "hst": -25,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 6,
+            "matrix_y": 7
+        },
+        {
+            "discId": "81dca8d72e4cd45bb4026ac0e9617920",
+            "name": "#1 Slice",
+            "type": "F",
+            "range": 325,
+            "hst": -50,
+            "lsf": 28,
+            "pdga": "Y",
+            "matrix_x": 6,
+            "matrix_y": 7
+        },
+        {
+            "discId": "4d6b7bd6a0364b77fa20105eefda2928",
+            "name": "#2 Driver",
+            "type": "F",
+            "range": 341,
+            "hst": -18,
+            "lsf": 56,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 6
+        },
+        {
+            "discId": "8443fc818215a5fde729a67f5d5d5452",
+            "name": "#2 Flyer",
 			"type": "F",
-			"range": 347,
-			"hst": -19,
-			"lsf": 57,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "6583c6d03bdc5b151bf846d46635774e",
-			"name": "#1 Hookshot",
+            "range": 348,
+            "hst": -25,
+            "lsf": 44,
+            "pdga": "N",
+            "matrix_x": 5,
+            "matrix_y": 6
+        },
+        {
+            "discId": "046d32ee6617e078bfd368c36ee4ce26",
+            "name": "#2 Helix",
 			"type": "F",
-			"range": 305,
-			"hst": -9,
-			"lsf": 56,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "a32984084da4c10c4e5dbc8edf39b402",
-			"name": "#1 Hyzer",
-			"type": "F",
-			"range": 317,
-			"hst": 0,
-			"lsf": 75,
-			"pdga": "Y",
-			"matrix_x": 3,
-			"matrix_y": 3
-		} , {
-			"discId": "e5519b3d4e8c21a59f64c58607e2ae96",
-			"name": "#1 Roller",
-			"type": "F",
-			"range": 330,
-			"hst": -25,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 6,
-			"matrix_y": 6
-		} , {
-			"discId": "81dca8d72e4cd45bb4026ac0e9617920",
-			"name": "#1 Slice",
-			"type": "F",
-			"range": 325,
-			"hst": -50,
-			"lsf": 28,
-			"pdga": "Y",
-			"matrix_x": 6,
-			"matrix_y": 6
-		} , {
-			"discId": "4d6b7bd6a0364b77fa20105eefda2928",
-			"name": "#2 Driver",
-			"type": "F",
-			"range": 341,
-			"hst": -18,
-			"lsf": 56,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "8443fc818215a5fde729a67f5d5d5452",
-			"name": "#2 Flyer",
-			"type": "F",
-			"range": 348,
-			"hst": -25,
-			"lsf": 44,
-			"pdga": "N",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "046d32ee6617e078bfd368c36ee4ce26",
-			"name": "#2 Helix",
-			"type": "F",
-			"range": 363,
-			"hst": -15,
-			"lsf": 51,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "4ac059987be2507875f3de0604632f40",
-			"name": "#2 Hookshot",
-			"type": "M",
-			"range": 293,
-			"hst": -13,
-			"lsf": 55,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "f9d14a3195ceba8733b54eb143c82e9e",
-			"name": "#2 Hyzer",
-			"type": "M",
-			"range": 288,
-			"hst": 18,
-			"lsf": 74,
-			"pdga": "Y",
-			"matrix_x": 2,
-			"matrix_y": 2
-		} , {
-			"discId": "e8dd5df51f263ec5b54f2ac91b52765f",
-			"name": "#2 Putter",
+            "range": 363,
+            "hst": -15,
+            "lsf": 51,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 5
+        },
+        {
+            "discId": "4ac059987be2507875f3de0604632f40",
+            "name": "#2 Hookshot",
+            "type": "M",
+            "range": 293,
+            "hst": -13,
+            "lsf": 55,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 9
+        },
+        {
+            "discId": "f9d14a3195ceba8733b54eb143c82e9e",
+            "name": "#2 Hyzer",
+            "type": "M",
+            "range": 288,
+            "hst": 18,
+            "lsf": 74,
+            "pdga": "Y",
+            "matrix_x": 2,
+            "matrix_y": 9
+        },
+        {
+            "discId": "e8dd5df51f263ec5b54f2ac91b52765f",
+            "name": "#2 Putter",
+            "type": "P",
+            "range": 227,
+            "hst": -35,
+            "lsf": 17,
+            "pdga": "Y",
+            "matrix_x": 6,
+            "matrix_y": 12
+        },
+        {
+            "discId": "0e1d3bbc8ca93a743a3f082e9c533bd1",
+            "name": "#2 Roller",
+            "type": "F",
+            "range": 305,
+            "hst": -18,
+            "lsf": 56,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 8
+        },
+        {
+            "discId": "1788aeb24cc3a2a561c9d3eabda19475",
+            "name": "#2 Slice",
+            "type": "F",
+            "range": 314,
+            "hst": -56,
+            "lsf": 14,
+            "pdga": "Y",
+            "matrix_x": 7,
+            "matrix_y": 8
+        },
+        {
+            "discId": "173f8fce9daa26cfb08fc88f5bfe91d0",
+            "name": "#2 Upshot",
 			"type": "P",
-			"range": 227,
-			"hst": -35,
-			"lsf": 17,
-			"pdga": "Y",
-			"matrix_x": 6,
-			"matrix_y": 6
-		} , {
-			"discId": "0e1d3bbc8ca93a743a3f082e9c533bd1",
-			"name": "#2 Roller",
+            "range": 247,
+            "hst": -18,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 11
+        },
+        {
+            "discId": "365cc52a7eb12779a6ce1a1d0ccc83d2",
+            "name": "#3 Driver",
+            "type": "F",
+            "range": 324,
+            "hst": -28,
+            "lsf": 56,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 7
+        },
+        {
+            "discId": "18136fd683992c3120fcb4b3ad7e556f",
+            "name": "#3 Flyer",
+            "type": "F",
+            "range": 314,
+            "hst": -28,
+            "lsf": 37,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 8
+        },
+        {
+            "discId": "2f1e08625834d9162e06e5f58e6ea671",
+            "name": "#3 Hookshot",
+            "type": "M",
+            "range": 281,
+            "hst": -9,
+            "lsf": 36,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 9
+        },
+        {
+            "discId": "2495765464b6685ee6aecca45b82e1d6",
+            "name": "#3 Hyzer",
+            "type": "M",
+            "range": 279,
+            "hst": 0,
+            "lsf": 73,
+            "pdga": "N",
+            "matrix_x": 3,
+            "matrix_y": 10
+        },
+        {
+            "discId": "a6eb63c629feddb0bafe60ca8b25f6d4",
+            "name": "#3 Slice",
+            "type": "M",
+            "range": 292,
+            "hst": -23,
+            "lsf": 37,
+            "pdga": "N",
+            "matrix_x": 5,
+            "matrix_y": 9
+        },
+        {
+            "discId": "aea8f3bfde9ab8206760d2582c80320a",
+            "name": "#4 Driver",
+            "type": "F",
+            "range": 334,
+            "hst": -28,
+            "lsf": 56,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 7
+        },
+        {
+            "discId": "48cf24486d9a8e65a142b25682f19949",
+            "name": "Driver",
 			"type": "F",
-			"range": 305,
-			"hst": -18,
-			"lsf": 56,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "1788aeb24cc3a2a561c9d3eabda19475",
-			"name": "#2 Slice",
-			"type": "F",
-			"range": 314,
-			"hst": -56,
-			"lsf": 14,
-			"pdga": "Y",
-			"matrix_x": 7,
-			"matrix_y": 7
-		} , {
-			"discId": "173f8fce9daa26cfb08fc88f5bfe91d0",
-			"name": "#2 Upshot",
-			"type": "P",
-			"range": 247,
-			"hst": -18,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "365cc52a7eb12779a6ce1a1d0ccc83d2",
-			"name": "#3 Driver",
-			"type": "F",
-			"range": 324,
-			"hst": -28,
-			"lsf": 56,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "18136fd683992c3120fcb4b3ad7e556f",
-			"name": "#3 Flyer",
-			"type": "F",
-			"range": 314,
-			"hst": -28,
-			"lsf": 37,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "2f1e08625834d9162e06e5f58e6ea671",
-			"name": "#3 Hookshot",
-			"type": "M",
-			"range": 281,
-			"hst": -9,
-			"lsf": 36,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "2495765464b6685ee6aecca45b82e1d6",
-			"name": "#3 Hyzer",
-			"type": "M",
-			"range": 279,
-			"hst": 0,
-			"lsf": 73,
-			"pdga": "N",
-			"matrix_x": 3,
-			"matrix_y": 3
-		} , {
-			"discId": "a6eb63c629feddb0bafe60ca8b25f6d4",
-			"name": "#3 Slice",
-			"type": "M",
-			"range": 292,
-			"hst": -23,
-			"lsf": 37,
-			"pdga": "N",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "aea8f3bfde9ab8206760d2582c80320a",
-			"name": "#4 Driver",
-			"type": "F",
-			"range": 334,
-			"hst": -28,
-			"lsf": 56,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "48cf24486d9a8e65a142b25682f19949",
-			"name": "Driver",
-			"type": "F",
-			"range": 345,
-			"hst": -19,
-			"lsf": 57,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "dfb14eeccc7804a7245fd5255de0b30c",
-			"name": "K-2",
-			"type": "M",
-			"range": 276,
-			"hst": -18,
-			"lsf": 55,
-			"pdga": "N",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "8c51b84834912827caf22d1f91bf4d77",
-			"name": "MX-1",
-			"type": "D",
-			"range": 403,
-			"hst": -39,
-			"lsf": 58,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "ad4aaa78d75cbb6e40176d7a0befaf49",
-			"name": "Rubber Putter",
-			"type": "P",
-			"range": 256,
-			"hst": -18,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "8a15bf94afc38d935a451d1792ba19ac",
-			"name": "U-2",
-			"type": "P",
-			"range": 243,
-			"hst": -18,
-			"lsf": 18,
-			"pdga": "N",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "3cf38032f58c35658eeb35a180cf98ef",
-			"name": "Upshot",
-			"type": "P",
-			"range": 240,
-			"hst": -36,
-			"lsf": 0,
-			"pdga": "Y",
-			"matrix_x": 7,
-			"matrix_y": 7
-	}]
+            "range": 345,
+            "hst": -19,
+            "lsf": 57,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 6
+        },
+        {
+            "discId": "dfb14eeccc7804a7245fd5255de0b30c",
+            "name": "K-2",
+            "type": "M",
+            "range": 276,
+            "hst": -18,
+            "lsf": 55,
+            "pdga": "N",
+            "matrix_x": 4,
+            "matrix_y": 10
+        },
+        {
+            "discId": "8c51b84834912827caf22d1f91bf4d77",
+            "name": "MX-1",
+            "type": "D",
+            "range": 403,
+            "hst": -39,
+            "lsf": 58,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 3
+        },
+        {
+            "discId": "ad4aaa78d75cbb6e40176d7a0befaf49",
+            "name": "Rubber Putter",
+            "type": "P",
+            "range": 256,
+            "hst": -18,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 11
+        },
+        {
+            "discId": "8a15bf94afc38d935a451d1792ba19ac",
+            "name": "U-2",
+            "type": "P",
+            "range": 243,
+            "hst": -18,
+            "lsf": 18,
+            "pdga": "N",
+            "matrix_x": 5,
+            "matrix_y": 11
+        },
+        {
+            "discId": "3cf38032f58c35658eeb35a180cf98ef",
+            "name": "Upshot",
+            "type": "P",
+            "range": 240,
+            "hst": -36,
+            "lsf": 0,
+            "pdga": "Y",
+            "matrix_x": 7,
+            "matrix_y": 12
+        }
+    ]
 }

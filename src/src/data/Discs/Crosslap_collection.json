@@ -1,26 +1,28 @@
 {
-	"company": "Crosslap",
-	"companyId": "4cecc11257c23214bfe4bff0670dab25",
-	"discs": [
-		{
-			"discId": "edb4ceb8cf8684a7271dc8cd42056f6e",
-			"name": "Credo",
-			"type": "P",
-			"range": 253,
-			"hst": 0,
-			"lsf": 54,
-			"pdga": "Y",
-			"matrix_x": 3,
-			"matrix_y": 3
-		} , {
-			"discId": "7398d4c606ff87e5349e0a72326c1a15",
-			"name": "Lucky",
-			"type": "M",
-			"range": 297,
-			"hst": -37,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 6,
-			"matrix_y": 6
-	}]
+    "company": "Crosslap",
+    "companyId": "4cecc11257c23214bfe4bff0670dab25",
+    "discs": [
+        {
+            "discId": "edb4ceb8cf8684a7271dc8cd42056f6e",
+            "name": "Credo",
+            "type": "P",
+            "range": 253,
+            "hst": 0,
+            "lsf": 54,
+            "pdga": "Y",
+            "matrix_x": 3,
+            "matrix_y": 11
+        },
+        {
+            "discId": "7398d4c606ff87e5349e0a72326c1a15",
+            "name": "Lucky",
+            "type": "M",
+            "range": 297,
+            "hst": -37,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 6,
+            "matrix_y": 9
+        }
+    ]
 }

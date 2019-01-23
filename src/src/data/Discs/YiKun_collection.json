@@ -1,166 +1,182 @@
 {
-	"company": "YiKun",
-	"companyId": "c0399a8058bd7220648f28087ed73e62",
-	"discs": [
-		{
-			"discId": "1de085de1da2f0c5f6c05de8a3d2b2d1",
-			"name": "Claws",
-			"type": "P",
-			"range": 236,
-			"hst": 0,
-			"lsf": 13,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "ecd03afff3ba51979312a1114f791d13",
-			"name": "Crossbow",
-			"type": "M",
-			"range": 268,
-			"hst": 9,
-			"lsf": 73,
-			"pdga": "Y",
-			"matrix_x": 2,
-			"matrix_y": 2
-		} , {
-			"discId": "f922e92fc4f8b1866a35f39b5d21eb87",
-			"name": "DaE",
-			"type": "D",
-			"range": 414,
-			"hst": 0,
-			"lsf": 63,
-			"pdga": "Y",
-			"matrix_x": 3,
-			"matrix_y": 3
-		} , {
-			"discId": "655ee5bac05926e6f9c0ac17d629aa29",
-			"name": "Gou",
-			"type": "F",
-			"range": 348,
-			"hst": -66,
-			"lsf": 19,
-			"pdga": "Y",
-			"matrix_x": 7,
-			"matrix_y": 7
-		} , {
-			"discId": "4532438350365f4f46d2c20d43a6246c",
-			"name": "Gui",
-			"type": "P",
-			"range": 243,
-			"hst": 0,
-			"lsf": 40,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "a42c5592edbcaa6a4e46809308838801",
-			"name": "Hammer (Chui)",
-			"type": "P",
-			"range": 238,
-			"hst": 0,
-			"lsf": 54,
-			"pdga": "Y",
-			"matrix_x": 3,
-			"matrix_y": 3
-		} , {
-			"discId": "9fabec19f0ee826f7822ccd41dd4f553",
-			"name": "Hu",
-			"type": "F",
-			"range": 365,
-			"hst": -38,
-			"lsf": 38,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "9c0ed21e6f4d9f0ae25a10d918bcec6a",
-			"name": "Jiao",
-			"type": "F",
-			"range": 314,
-			"hst": -37,
-			"lsf": 28,
-			"pdga": "Y",
-			"matrix_x": 6,
-			"matrix_y": 6
-		} , {
-			"discId": "eb4b40c1221dad5b23fe7ef84d292be1",
-			"name": "Jun",
-			"type": "D",
-			"range": 425,
-			"hst": -14,
-			"lsf": 49,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "bf94cc52b38f186872942ca2a969f956",
-			"name": "Kui",
-			"type": "M",
-			"range": 298,
-			"hst": 0,
-			"lsf": 46,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "b3a17f7c339aaaad2c632e168123c7bc",
-			"name": "Lu",
-			"type": "D",
-			"range": 452,
-			"hst": -19,
-			"lsf": 59,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "e07af1c614934165914f7c456b1383d3",
-			"name": "Twin Swords",
-			"type": "D",
-			"range": 418,
-			"hst": -19,
-			"lsf": 49,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "4351cfebe4b61d8aa5efa1d020710005",
-			"name": "View",
-			"type": "F",
-			"range": 324,
-			"hst": -18,
-			"lsf": 42,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "d244953cca638489363cf2e17669faf0",
-			"name": "Wei",
-			"type": "D",
-			"range": 382,
-			"hst": -48,
-			"lsf": 38,
-			"pdga": "Y",
-			"matrix_x": 6,
-			"matrix_y": 6
-		} , {
-			"discId": "703e7b3b4e2a07715552e466e0d231bd",
-			"name": "Wings",
-			"type": "M",
-			"range": 260,
-			"hst": 0,
-			"lsf": 36,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "7e170de074e1630348aec1364ac26c3d",
-			"name": "Yao",
-			"type": "M",
-			"range": 282,
-			"hst": 0,
-			"lsf": 46,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-	}]
+    "company": "YiKun",
+    "companyId": "c0399a8058bd7220648f28087ed73e62",
+    "discs": [
+        {
+            "discId": "1de085de1da2f0c5f6c05de8a3d2b2d1",
+            "name": "Claws",
+            "type": "P",
+            "range": 236,
+            "hst": 0,
+            "lsf": 13,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 12
+        },
+        {
+            "discId": "ecd03afff3ba51979312a1114f791d13",
+            "name": "Crossbow",
+            "type": "M",
+            "range": 268,
+            "hst": 9,
+            "lsf": 73,
+            "pdga": "Y",
+            "matrix_x": 2,
+            "matrix_y": 10
+        },
+        {
+            "discId": "f922e92fc4f8b1866a35f39b5d21eb87",
+            "name": "DaE",
+            "type": "D",
+            "range": 414,
+            "hst": 0,
+            "lsf": 63,
+            "pdga": "Y",
+            "matrix_x": 3,
+            "matrix_y": 3
+        },
+        {
+            "discId": "655ee5bac05926e6f9c0ac17d629aa29",
+            "name": "Gou",
+            "type": "F",
+            "range": 348,
+            "hst": -66,
+            "lsf": 19,
+            "pdga": "Y",
+            "matrix_x": 7,
+            "matrix_y": 6
+        },
+        {
+            "discId": "4532438350365f4f46d2c20d43a6246c",
+            "name": "Gui",
+            "type": "P",
+            "range": 243,
+            "hst": 0,
+            "lsf": 40,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 11
+        },
+        {
+            "discId": "a42c5592edbcaa6a4e46809308838801",
+            "name": "Hammer (Chui)",
+            "type": "P",
+            "range": 238,
+            "hst": 0,
+            "lsf": 54,
+            "pdga": "Y",
+            "matrix_x": 3,
+            "matrix_y": 12
+        },
+        {
+            "discId": "9fabec19f0ee826f7822ccd41dd4f553",
+            "name": "Hu",
+            "type": "F",
+            "range": 365,
+            "hst": -38,
+            "lsf": 38,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 5
+        },
+        {
+            "discId": "9c0ed21e6f4d9f0ae25a10d918bcec6a",
+            "name": "Jiao",
+            "type": "F",
+            "range": 314,
+            "hst": -37,
+            "lsf": 28,
+            "pdga": "Y",
+            "matrix_x": 6,
+            "matrix_y": 8
+        },
+        {
+            "discId": "eb4b40c1221dad5b23fe7ef84d292be1",
+            "name": "Jun",
+            "type": "D",
+            "range": 425,
+            "hst": -14,
+            "lsf": 49,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 2
+        },
+        {
+            "discId": "bf94cc52b38f186872942ca2a969f956",
+            "name": "Kui",
+            "type": "M",
+            "range": 298,
+            "hst": 0,
+            "lsf": 46,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 9
+        },
+        {
+            "discId": "b3a17f7c339aaaad2c632e168123c7bc",
+            "name": "Lu",
+            "type": "D",
+            "range": 452,
+            "hst": -19,
+            "lsf": 59,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 1
+        },
+        {
+            "discId": "e07af1c614934165914f7c456b1383d3",
+            "name": "Twin Swords",
+            "type": "D",
+            "range": 418,
+            "hst": -19,
+            "lsf": 49,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 3
+        },
+        {
+            "discId": "4351cfebe4b61d8aa5efa1d020710005",
+            "name": "View",
+            "type": "F",
+            "range": 324,
+            "hst": -18,
+            "lsf": 42,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 7
+        },
+        {
+            "discId": "d244953cca638489363cf2e17669faf0",
+            "name": "Wei",
+            "type": "D",
+            "range": 382,
+            "hst": -48,
+            "lsf": 38,
+            "pdga": "Y",
+            "matrix_x": 6,
+            "matrix_y": 4
+        },
+        {
+            "discId": "703e7b3b4e2a07715552e466e0d231bd",
+            "name": "Wings",
+            "type": "M",
+            "range": 260,
+            "hst": 0,
+            "lsf": 36,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 11
+        },
+        {
+            "discId": "7e170de074e1630348aec1364ac26c3d",
+            "name": "Yao",
+            "type": "M",
+            "range": 282,
+            "hst": 0,
+            "lsf": 46,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 9
+        }
+    ]
 }

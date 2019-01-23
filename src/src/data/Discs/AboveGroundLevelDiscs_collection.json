@@ -1,16 +1,17 @@
 {
-	"company": "Above Ground Level Discs",
-	"companyId": "7c2cadc0ba9202828038b2d1b8189cf8",
-	"discs": [
-		{
-			"discId": "598dc6cac8e88fcb24b8947ff0c8566e",
-			"name": "Cypress",
-			"type": "D",
-			"range": 414,
-			"hst": 0,
-			"lsf": 78,
-			"pdga": "Y",
-			"matrix_x": 2,
-			"matrix_y": 2
-	}]
+    "company": "Above Ground Level Discs",
+    "companyId": "7c2cadc0ba9202828038b2d1b8189cf8",
+    "discs": [
+        {
+            "discId": "598dc6cac8e88fcb24b8947ff0c8566e",
+            "name": "Cypress",
+            "type": "D",
+            "range": 414,
+            "hst": 0,
+            "lsf": 78,
+            "pdga": "Y",
+            "matrix_x": 2,
+            "matrix_y": 3
+        }
+    ]
 }

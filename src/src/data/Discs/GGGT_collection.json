@@ -1,26 +1,28 @@
 {
-	"company": "GGGT",
-	"companyId": "8cfa060fa007bf2c3b7a54abc202868c",
-	"discs": [
-		{
-			"discId": "53fdaab60e2ca218fc44431726bf3d33",
-			"name": "Maximizer",
-			"type": "F",
-			"range": 330,
-			"hst": -56,
-			"lsf": 9,
-			"pdga": "Y",
-			"matrix_x": 7,
-			"matrix_y": 7
-		} , {
-			"discId": "7a865060b1a2be22d8c8a073670b2e0f",
-			"name": "Optimizer",
-			"type": "M",
-			"range": 277,
-			"hst": -55,
-			"lsf": 0,
-			"pdga": "Y",
-			"matrix_x": 8,
-			"matrix_y": 8
-	}]
+    "company": "GGGT",
+    "companyId": "8cfa060fa007bf2c3b7a54abc202868c",
+    "discs": [
+        {
+            "discId": "53fdaab60e2ca218fc44431726bf3d33",
+            "name": "Maximizer",
+            "type": "F",
+            "range": 330,
+            "hst": -56,
+            "lsf": 9,
+            "pdga": "Y",
+            "matrix_x": 7,
+            "matrix_y": 7
+        },
+        {
+            "discId": "7a865060b1a2be22d8c8a073670b2e0f",
+            "name": "Optimizer",
+            "type": "M",
+            "range": 277,
+            "hst": -55,
+            "lsf": 0,
+            "pdga": "Y",
+            "matrix_x": 8,
+            "matrix_y": 10
+        }
+    ]
 }

@@ -1,106 +1,116 @@
 {
-	"company": "CHING",
-	"companyId": "b37c27128c0a1e24fa211cc7b84f1310",
-	"discs": [
-		{
-			"discId": "cd3abfc2f377a4c3fd9181f919d9de82",
-			"name": "Bomb",
-			"type": "F",
-			"range": 325,
-			"hst": -14,
-			"lsf": 47,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "411f3239ffbefd44ebd08ac9eaec6489",
-			"name": "Genesis",
-			"type": "D",
-			"range": 404,
-			"hst": -3,
-			"lsf": 58,
-			"pdga": "Y",
-			"matrix_x": 3,
-			"matrix_y": 3
-		} , {
-			"discId": "8a1666bb08de7966b21214f071445e9d",
-			"name": "Juju",
-			"type": "P",
-			"range": 256,
-			"hst": -18,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "0cc0a0507cf3d31e5089f420a4cf8b4b",
-			"name": "Legacy",
-			"type": "M",
-			"range": 279,
-			"hst": -18,
-			"lsf": 36,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "30162ed78b6c10f731411f2fc440c24f",
-			"name": "Oracle",
-			"type": "M",
-			"range": 279,
-			"hst": -18,
-			"lsf": 32,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "be5edab59de4ea30531374e506b03822",
-			"name": "Precision",
-			"type": "M",
-			"range": 292,
-			"hst": -21,
-			"lsf": 34,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "007be3acd5669d100711b13d79e23369",
-			"name": "Sniper",
-			"type": "M",
-			"range": 295,
-			"hst": 0,
-			"lsf": 37,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "e60b65c860681c0a53fcded0e33fc6de",
-			"name": "Stinger",
-			"type": "M",
-			"range": 271,
-			"hst": -55,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 7,
-			"matrix_y": 7
-		} , {
-			"discId": "0fd2cfbc5c8adad8206c2b4c207740a0",
-			"name": "Tank (Original)",
-			"type": "P",
-			"range": 240,
-			"hst": 0,
-			"lsf": 36,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "88156d46910a2d733443c339a9231d12",
-			"name": "Velocity",
-			"type": "F",
-			"range": 346,
-			"hst": -34,
-			"lsf": 38,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-	}]
+    "company": "CHING",
+    "companyId": "b37c27128c0a1e24fa211cc7b84f1310",
+    "discs": [
+        {
+            "discId": "cd3abfc2f377a4c3fd9181f919d9de82",
+            "name": "Bomb",
+            "type": "F",
+            "range": 325,
+            "hst": -14,
+            "lsf": 47,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 7
+        },
+        {
+            "discId": "411f3239ffbefd44ebd08ac9eaec6489",
+            "name": "Genesis",
+            "type": "D",
+            "range": 404,
+            "hst": -3,
+            "lsf": 58,
+            "pdga": "Y",
+            "matrix_x": 3,
+            "matrix_y": 3
+        },
+        {
+            "discId": "8a1666bb08de7966b21214f071445e9d",
+            "name": "Juju",
+            "type": "P",
+            "range": 256,
+            "hst": -18,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 11
+        },
+        {
+            "discId": "0cc0a0507cf3d31e5089f420a4cf8b4b",
+            "name": "Legacy",
+            "type": "M",
+            "range": 279,
+            "hst": -18,
+            "lsf": 36,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 10
+        },
+        {
+            "discId": "30162ed78b6c10f731411f2fc440c24f",
+            "name": "Oracle",
+            "type": "M",
+            "range": 279,
+            "hst": -18,
+            "lsf": 32,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 10
+        },
+        {
+            "discId": "be5edab59de4ea30531374e506b03822",
+            "name": "Precision",
+            "type": "M",
+            "range": 292,
+            "hst": -21,
+            "lsf": 34,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 9
+        },
+        {
+            "discId": "007be3acd5669d100711b13d79e23369",
+            "name": "Sniper",
+            "type": "M",
+            "range": 295,
+            "hst": 0,
+            "lsf": 37,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 9
+        },
+        {
+            "discId": "e60b65c860681c0a53fcded0e33fc6de",
+            "name": "Stinger",
+            "type": "M",
+            "range": 271,
+            "hst": -55,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 7,
+            "matrix_y": 10
+        },
+        {
+            "discId": "0fd2cfbc5c8adad8206c2b4c207740a0",
+            "name": "Tank (Original)",
+            "type": "P",
+            "range": 240,
+            "hst": 0,
+            "lsf": 36,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 11
+        },
+        {
+            "discId": "88156d46910a2d733443c339a9231d12",
+            "name": "Velocity",
+            "type": "F",
+            "range": 346,
+            "hst": -34,
+            "lsf": 38,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 6
+        }
+    ]
 }

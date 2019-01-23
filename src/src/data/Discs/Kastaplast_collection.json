@@ -1,96 +1,105 @@
 {
-	"company": "Kastaplast",
-	"companyId": "a44610161d8193458a7de8a715a03169",
-	"discs": [
-		{
-			"discId": "16fe4237fdb07a110c95a2627b35f219",
-			"name": "Berg",
-			"type": "P",
-			"range": 228,
-			"hst": 0,
-			"lsf": 36,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "d16440703326ae8cceedecfc98948260",
-			"name": "Falk",
-			"type": "F",
-			"range": 368,
-			"hst": -38,
-			"lsf": 38,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "969f793c1bada763e510effd49d5564e",
-			"name": "Grym",
-			"type": "D",
-			"range": 432,
-			"hst": -29,
-			"lsf": 49,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "cb6921f8f16a88c51a59eaf782fa727a",
-			"name": "Grym X",
-			"type": "D",
-			"range": 418,
-			"hst": 0,
-			"lsf": 59,
-			"pdga": "Y",
-			"matrix_x": 3,
-			"matrix_y": 3
-		} , {
-			"discId": "cf7802e8082b1d34610dc2eb8356877d",
-			"name": "Kaxe",
-			"type": "M",
-			"range": 305,
-			"hst": 0,
-			"lsf": 44,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "dd197eb675f06d8d82d786bd3a19241e",
-			"name": "Kaxe Z",
-			"type": "M",
-			"range": 305,
-			"hst": -9,
-			"lsf": 32,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "0eb962171b932c339d04adf6b1d033d1",
-			"name": "Rask",
-			"type": "D",
-			"range": 401,
-			"hst": 2,
-			"lsf": 80,
-			"pdga": "Y",
-			"matrix_x": 2,
-			"matrix_y": 2
-		} , {
-			"discId": "77669b825e3b22a6b555643c1e7e4557",
-			"name": "Reko",
-			"type": "P",
-			"range": 258,
-			"hst": 0,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "6e69c06403ce4f04a9c3266819915af9",
-			"name": "Stal",
-			"type": "F",
-			"range": 363,
-			"hst": 0,
-			"lsf": 57,
-			"pdga": "Y",
-			"matrix_x": 3,
-			"matrix_y": 3
-	}]
+    "company": "Kastaplast",
+    "companyId": "a44610161d8193458a7de8a715a03169",
+    "discs": [
+        {
+            "discId": "16fe4237fdb07a110c95a2627b35f219",
+            "name": "Berg",
+            "type": "P",
+            "range": 228,
+            "hst": 0,
+            "lsf": 36,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 12
+        },
+        {
+            "discId": "d16440703326ae8cceedecfc98948260",
+            "name": "Falk",
+            "type": "F",
+            "range": 368,
+            "hst": -38,
+            "lsf": 38,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 5
+        },
+        {
+            "discId": "969f793c1bada763e510effd49d5564e",
+            "name": "Grym",
+            "type": "D",
+            "range": 432,
+            "hst": -29,
+            "lsf": 49,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 2
+        },
+        {
+            "discId": "cb6921f8f16a88c51a59eaf782fa727a",
+            "name": "Grym X",
+            "type": "D",
+            "range": 418,
+            "hst": 0,
+            "lsf": 59,
+            "pdga": "Y",
+            "matrix_x": 3,
+            "matrix_y": 3
+        },
+        {
+            "discId": "cf7802e8082b1d34610dc2eb8356877d",
+            "name": "Kaxe",
+            "type": "M",
+            "range": 305,
+            "hst": 0,
+            "lsf": 44,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 8
+        },
+        {
+            "discId": "dd197eb675f06d8d82d786bd3a19241e",
+            "name": "Kaxe Z",
+            "type": "M",
+            "range": 305,
+            "hst": -9,
+            "lsf": 32,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 8
+        },
+        {
+            "discId": "0eb962171b932c339d04adf6b1d033d1",
+            "name": "Rask",
+            "type": "D",
+            "range": 401,
+            "hst": 2,
+            "lsf": 80,
+            "pdga": "Y",
+            "matrix_x": 2,
+            "matrix_y": 3
+        },
+        {
+            "discId": "77669b825e3b22a6b555643c1e7e4557",
+            "name": "Reko",
+            "type": "P",
+            "range": 258,
+            "hst": 0,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 11
+        },
+        {
+            "discId": "6e69c06403ce4f04a9c3266819915af9",
+            "name": "Stal",
+            "type": "F",
+            "range": 363,
+            "hst": 0,
+            "lsf": 57,
+            "pdga": "Y",
+            "matrix_x": 3,
+            "matrix_y": 5
+        }
+    ]
 }

@@ -1,206 +1,226 @@
 {
-	"company": "Vibram",
-	"companyId": "ac6f1d5e05247ade1199b5896647f0f7",
-	"discs": [
-		{
-			"discId": "efd717440ab790091beef4a125935a73",
-			"name": "Arch",
-			"type": "F",
-			"range": 340,
-			"hst": -18,
-			"lsf": 34,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "fc76a68e99896582334ae980a263e926",
-			"name": "Ascent",
-			"type": "F",
-			"range": 349,
-			"hst": -3,
-			"lsf": 52,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "2b4c8e8ccb8fbb9359c6d857f74c5031",
-			"name": "Crag",
-			"type": "M",
-			"range": 276,
-			"hst": 0,
-			"lsf": 73,
-			"pdga": "Y",
-			"matrix_x": 3,
-			"matrix_y": 3
-		} , {
-			"discId": "1d126135e3d4dcd0786d289777d2a14f",
-			"name": "Four20",
-			"type": "D",
-			"range": 384,
-			"hst": -2,
-			"lsf": 75,
-			"pdga": "Y",
-			"matrix_x": 3,
-			"matrix_y": 3
-		} , {
-			"discId": "59b94cc044ff8a12b703e25e7cc41b1f",
-			"name": "Ibex",
-			"type": "M",
-			"range": 298,
-			"hst": -11,
-			"lsf": 23,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "4baf40580f3e78b55d1c7f8d7bec2b1b",
-			"name": "Lace",
-			"type": "D",
-			"range": 444,
-			"hst": -20,
-			"lsf": 53,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "9506f0fd0f7f1b07960b15b4c9e68d1a",
-			"name": "Launch",
-			"type": "M",
-			"range": 297,
-			"hst": -18,
-			"lsf": 37,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "a70ec028ca3f03d3bf0f8016f8c072a3",
-			"name": "Notch",
-			"type": "F",
-			"range": 339,
-			"hst": 0,
-			"lsf": 56,
-			"pdga": "Y",
-			"matrix_x": 3,
-			"matrix_y": 3
-		} , {
-			"discId": "3c408c9b060cbd6d92e3a75b7617c7d5",
-			"name": "O-Lace",
-			"type": "D",
-			"range": 425,
-			"hst": -4,
-			"lsf": 70,
-			"pdga": "Y",
-			"matrix_x": 3,
-			"matrix_y": 3
-		} , {
-			"discId": "0a70246dd0ebb4ff470bb022ecfa1d50",
-			"name": "Obex",
-			"type": "M",
-			"range": 294,
-			"hst": 0,
-			"lsf": 44,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "a92f2418fb7a402879ffa1127f6bc408",
-			"name": "Onyx",
-			"type": "F",
-			"range": 331,
-			"hst": -56,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 7,
-			"matrix_y": 7
-		} , {
-			"discId": "e9eeca48aa5cccacde08760c6ec9dd5a",
-			"name": "Ridge",
-			"type": "P",
-			"range": 246,
-			"hst": 0,
-			"lsf": 26,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "d0464741df45c5e7a119360659dcf136",
-			"name": "Solace",
-			"type": "D",
-			"range": 384,
-			"hst": -2,
-			"lsf": 75,
-			"pdga": "Y",
-			"matrix_x": 3,
-			"matrix_y": 3
-		} , {
-			"discId": "424309b92b75ff5abe03c1aa7d06d86b",
-			"name": "Sole",
-			"type": "P",
-			"range": 247,
-			"hst": 0,
-			"lsf": 34,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "99ce2ea4de279c28bb0315848da8a486",
-			"name": "Summit",
-			"type": "P",
-			"range": 249,
-			"hst": -19,
-			"lsf": 7,
-			"pdga": "Y",
-			"matrix_x": 6,
-			"matrix_y": 6
-		} , {
-			"discId": "1bee8cb1d4d1c503df6f067495d70d06",
-			"name": "Trak",
-			"type": "F",
-			"range": 343,
-			"hst": -19,
-			"lsf": 34,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "a6f18eda38d5a3b37e9ae973da7a2a7a",
-			"name": "unLace",
-			"type": "D",
-			"range": 439,
-			"hst": -60,
-			"lsf": 26,
-			"pdga": "Y",
-			"matrix_x": 7,
-			"matrix_y": 7
-		} , {
-			"discId": "6c92ef33cb2e34237d16fdf3d1a907ee",
-			"name": "Valley",
-			"type": "F",
-			"range": 361,
-			"hst": -25,
-			"lsf": 47,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "b9147e4f1b049994ebc17d37bafaa2e9",
-			"name": "Vamp",
-			"type": "F",
-			"range": 342,
-			"hst": -38,
-			"lsf": 19,
-			"pdga": "Y",
-			"matrix_x": 6,
-			"matrix_y": 6
-		} , {
-			"discId": "06423afae472db15357a531aa46dee1e",
-			"name": "VP",
-			"type": "P",
-			"range": 244,
-			"hst": 0,
-			"lsf": 52,
-			"pdga": "Y",
-			"matrix_x": 3,
-			"matrix_y": 3
-	}]
+    "company": "Vibram",
+    "companyId": "ac6f1d5e05247ade1199b5896647f0f7",
+    "discs": [
+        {
+            "discId": "efd717440ab790091beef4a125935a73",
+            "name": "Arch",
+            "type": "F",
+            "range": 340,
+            "hst": -18,
+            "lsf": 34,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 6
+        },
+        {
+            "discId": "fc76a68e99896582334ae980a263e926",
+            "name": "Ascent",
+            "type": "F",
+            "range": 349,
+            "hst": -3,
+            "lsf": 52,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 6
+        },
+        {
+            "discId": "2b4c8e8ccb8fbb9359c6d857f74c5031",
+            "name": "Crag",
+            "type": "M",
+            "range": 276,
+            "hst": 0,
+            "lsf": 73,
+            "pdga": "Y",
+            "matrix_x": 3,
+            "matrix_y": 10
+        },
+        {
+            "discId": "1d126135e3d4dcd0786d289777d2a14f",
+            "name": "Four20",
+            "type": "D",
+            "range": 384,
+            "hst": -2,
+            "lsf": 75,
+            "pdga": "Y",
+            "matrix_x": 3,
+            "matrix_y": 4
+        },
+        {
+            "discId": "59b94cc044ff8a12b703e25e7cc41b1f",
+            "name": "Ibex",
+            "type": "M",
+            "range": 298,
+            "hst": -11,
+            "lsf": 23,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 9
+        },
+        {
+            "discId": "4baf40580f3e78b55d1c7f8d7bec2b1b",
+            "name": "Lace",
+            "type": "D",
+            "range": 444,
+            "hst": -20,
+            "lsf": 53,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 1
+        },
+        {
+            "discId": "9506f0fd0f7f1b07960b15b4c9e68d1a",
+            "name": "Launch",
+            "type": "M",
+            "range": 297,
+            "hst": -18,
+            "lsf": 37,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 9
+        },
+        {
+            "discId": "a70ec028ca3f03d3bf0f8016f8c072a3",
+            "name": "Notch",
+            "type": "F",
+            "range": 339,
+            "hst": 0,
+            "lsf": 56,
+            "pdga": "Y",
+            "matrix_x": 3,
+            "matrix_y": 7
+        },
+        {
+            "discId": "3c408c9b060cbd6d92e3a75b7617c7d5",
+            "name": "O-Lace",
+            "type": "D",
+            "range": 425,
+            "hst": -4,
+            "lsf": 70,
+            "pdga": "Y",
+            "matrix_x": 3,
+            "matrix_y": 2
+        },
+        {
+            "discId": "0a70246dd0ebb4ff470bb022ecfa1d50",
+            "name": "Obex",
+            "type": "M",
+            "range": 294,
+            "hst": 0,
+            "lsf": 44,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 9
+        },
+        {
+            "discId": "a92f2418fb7a402879ffa1127f6bc408",
+            "name": "Onyx",
+            "type": "F",
+            "range": 331,
+            "hst": -56,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 7,
+            "matrix_y": 7
+        },
+        {
+            "discId": "e9eeca48aa5cccacde08760c6ec9dd5a",
+            "name": "Ridge",
+            "type": "P",
+            "range": 246,
+            "hst": 0,
+            "lsf": 26,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 11
+        },
+        {
+            "discId": "d0464741df45c5e7a119360659dcf136",
+            "name": "Solace",
+            "type": "D",
+            "range": 384,
+            "hst": -2,
+            "lsf": 75,
+            "pdga": "Y",
+            "matrix_x": 3,
+            "matrix_y": 4
+        },
+        {
+            "discId": "424309b92b75ff5abe03c1aa7d06d86b",
+            "name": "Sole",
+            "type": "P",
+            "range": 247,
+            "hst": 0,
+            "lsf": 34,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 11
+        },
+        {
+            "discId": "99ce2ea4de279c28bb0315848da8a486",
+            "name": "Summit",
+            "type": "P",
+            "range": 249,
+            "hst": -19,
+            "lsf": 7,
+            "pdga": "Y",
+            "matrix_x": 6,
+            "matrix_y": 11
+        },
+        {
+            "discId": "1bee8cb1d4d1c503df6f067495d70d06",
+            "name": "Trak",
+            "type": "F",
+            "range": 343,
+            "hst": -19,
+            "lsf": 34,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 6
+        },
+        {
+            "discId": "a6f18eda38d5a3b37e9ae973da7a2a7a",
+            "name": "unLace",
+            "type": "D",
+            "range": 439,
+            "hst": -60,
+            "lsf": 26,
+            "pdga": "Y",
+            "matrix_x": 7,
+            "matrix_y": 2
+        },
+        {
+            "discId": "6c92ef33cb2e34237d16fdf3d1a907ee",
+            "name": "Valley",
+            "type": "F",
+            "range": 361,
+            "hst": -25,
+            "lsf": 47,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 5
+        },
+        {
+            "discId": "b9147e4f1b049994ebc17d37bafaa2e9",
+            "name": "Vamp",
+            "type": "F",
+            "range": 342,
+            "hst": -38,
+            "lsf": 19,
+            "pdga": "Y",
+            "matrix_x": 6,
+            "matrix_y": 6
+        },
+        {
+            "discId": "06423afae472db15357a531aa46dee1e",
+            "name": "VP",
+            "type": "P",
+            "range": 244,
+            "hst": 0,
+            "lsf": 52,
+            "pdga": "Y",
+            "matrix_x": 3,
+            "matrix_y": 11
+        }
+    ]
 }

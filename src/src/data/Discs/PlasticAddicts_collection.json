@@ -1,26 +1,28 @@
 {
-	"company": "Plastic Addicts",
-	"companyId": "06cee8e0dec92600135338304bf626b7",
-	"discs": [
-		{
-			"discId": "ed39614395abc84cc06199f96fd4e6ca",
-			"name": "Habit",
-			"type": "P",
-			"range": 265,
-			"hst": -1,
-			"lsf": 2,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "c143a2430949511de6ed78cf1c63afc9",
-			"name": "Intervention",
-			"type": "D",
-			"range": 409,
-			"hst": 0,
-			"lsf": 78,
-			"pdga": "Y",
-			"matrix_x": 2,
-			"matrix_y": 2
-	}]
+    "company": "Plastic Addicts",
+    "companyId": "06cee8e0dec92600135338304bf626b7",
+    "discs": [
+        {
+            "discId": "ed39614395abc84cc06199f96fd4e6ca",
+            "name": "Habit",
+            "type": "P",
+            "range": 265,
+            "hst": -1,
+            "lsf": 2,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 10
+        },
+        {
+            "discId": "c143a2430949511de6ed78cf1c63afc9",
+            "name": "Intervention",
+            "type": "D",
+            "range": 409,
+            "hst": 0,
+            "lsf": 78,
+            "pdga": "Y",
+            "matrix_x": 2,
+            "matrix_y": 3
+        }
+    ]
 }

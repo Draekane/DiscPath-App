@@ -1,16 +1,17 @@
 {
-	"company": "Skyiron",
-	"companyId": "230333552fce62f48eb17e781b8ab605",
-	"discs": [
-		{
-			"discId": "c84f52a0c82fcb7a24b1adb18d34f5e3",
-			"name": "Flagship",
-			"type": "D",
-			"range": 396,
-			"hst": -58,
-			"lsf": 38,
-			"pdga": "Y",
-			"matrix_x": 6,
-			"matrix_y": 6
-	}]
+    "company": "Skyiron",
+    "companyId": "230333552fce62f48eb17e781b8ab605",
+    "discs": [
+        {
+            "discId": "c84f52a0c82fcb7a24b1adb18d34f5e3",
+            "name": "Flagship",
+            "type": "D",
+            "range": 396,
+            "hst": -58,
+            "lsf": 38,
+            "pdga": "Y",
+            "matrix_x": 6,
+            "matrix_y": 4
+        }
+    ]
 }

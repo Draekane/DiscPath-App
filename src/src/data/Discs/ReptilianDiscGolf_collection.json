@@ -1,106 +1,116 @@
 {
-	"company": "Reptilian Disc Golf",
-	"companyId": "c4d8ffb775a906cdc63358abbebefd23",
-	"discs": [
-		{
-			"discId": "4b4643db7fff6ab6d867f0ed96c221ad",
-			"name": "Boa",
-			"type": "F",
-			"range": 361,
-			"hst": 0,
-			"lsf": 47,
-			"pdga": "N",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "76cd75b6b8f0def9bc45032dcc32a611",
-			"name": "Croc",
-			"type": "M",
-			"range": 278,
-			"hst": 0,
-			"lsf": 36,
-			"pdga": "N",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "6825c011de2b6c1a3d4ecfecf5732359",
-			"name": "Death Adder",
-			"type": "D",
-			"range": 435,
-			"hst": -39,
-			"lsf": 39,
-			"pdga": "N",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "248f0922f4fdb9d4ed9094e7d3a3ff83",
-			"name": "Gila",
-			"type": "M",
-			"range": 294,
-			"hst": 0,
-			"lsf": 55,
-			"pdga": "Y",
-			"matrix_x": 3,
-			"matrix_y": 3
-		} , {
-			"discId": "4f74be77f2ec1b9ebd391a47fbb05263",
-			"name": "Ptero",
-			"type": "F",
-			"range": 333,
-			"hst": -18,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "85a7cd587d6142dbfc1a4de05af7b75d",
-			"name": "Scale",
-			"type": "P",
-			"range": 245,
-			"hst": 0,
-			"lsf": 54,
-			"pdga": "Y",
-			"matrix_x": 3,
-			"matrix_y": 3
-		} , {
-			"discId": "7cde8b0cc9c769422774241c9f7baf60",
-			"name": "Serpent",
-			"type": "P",
-			"range": 258,
-			"hst": -9,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "7a835ef8e67cf95cfd25fc50e0897201",
-			"name": "Stego",
-			"type": "P",
-			"range": 217,
-			"hst": 17,
-			"lsf": 71,
-			"pdga": "Y",
-			"matrix_x": 2,
-			"matrix_y": 2
-		} , {
-			"discId": "ad4b2a3a54fa0bade40663a48c59eff1",
-			"name": "Tyrant",
-			"type": "F",
-			"range": 329,
-			"hst": 0,
-			"lsf": 56,
-			"pdga": "Y",
-			"matrix_x": 3,
-			"matrix_y": 3
-		} , {
-			"discId": "f1d8deb2f01716e709aba61388c2e7b7",
-			"name": "Velociraptor",
-			"type": "F",
-			"range": 359,
-			"hst": 4,
-			"lsf": 76,
-			"pdga": "Y",
-			"matrix_x": 2,
-			"matrix_y": 2
-	}]
+    "company": "Reptilian Disc Golf",
+    "companyId": "c4d8ffb775a906cdc63358abbebefd23",
+    "discs": [
+        {
+            "discId": "4b4643db7fff6ab6d867f0ed96c221ad",
+            "name": "Boa",
+            "type": "F",
+            "range": 361,
+            "hst": 0,
+            "lsf": 47,
+            "pdga": "N",
+            "matrix_x": 4,
+            "matrix_y": 5
+        },
+        {
+            "discId": "76cd75b6b8f0def9bc45032dcc32a611",
+            "name": "Croc",
+            "type": "M",
+            "range": 278,
+            "hst": 0,
+            "lsf": 36,
+            "pdga": "N",
+            "matrix_x": 4,
+            "matrix_y": 10
+        },
+        {
+            "discId": "6825c011de2b6c1a3d4ecfecf5732359",
+            "name": "Death Adder",
+            "type": "D",
+            "range": 435,
+            "hst": -39,
+            "lsf": 39,
+            "pdga": "N",
+            "matrix_x": 5,
+            "matrix_y": 2
+        },
+        {
+            "discId": "248f0922f4fdb9d4ed9094e7d3a3ff83",
+            "name": "Gila",
+            "type": "M",
+            "range": 294,
+            "hst": 0,
+            "lsf": 55,
+            "pdga": "Y",
+            "matrix_x": 3,
+            "matrix_y": 9
+        },
+        {
+            "discId": "4f74be77f2ec1b9ebd391a47fbb05263",
+            "name": "Ptero",
+            "type": "F",
+            "range": 333,
+            "hst": -18,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 7
+        },
+        {
+            "discId": "85a7cd587d6142dbfc1a4de05af7b75d",
+            "name": "Scale",
+            "type": "P",
+            "range": 245,
+            "hst": 0,
+            "lsf": 54,
+            "pdga": "Y",
+            "matrix_x": 3,
+            "matrix_y": 11
+        },
+        {
+            "discId": "7cde8b0cc9c769422774241c9f7baf60",
+            "name": "Serpent",
+            "type": "P",
+            "range": 258,
+            "hst": -9,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 11
+        },
+        {
+            "discId": "7a835ef8e67cf95cfd25fc50e0897201",
+            "name": "Stego",
+            "type": "P",
+            "range": 217,
+            "hst": 17,
+            "lsf": 71,
+            "pdga": "Y",
+            "matrix_x": 2,
+            "matrix_y": 13
+        },
+        {
+            "discId": "ad4b2a3a54fa0bade40663a48c59eff1",
+            "name": "Tyrant",
+            "type": "F",
+            "range": 329,
+            "hst": 0,
+            "lsf": 56,
+            "pdga": "Y",
+            "matrix_x": 3,
+            "matrix_y": 7
+        },
+        {
+            "discId": "f1d8deb2f01716e709aba61388c2e7b7",
+            "name": "Velociraptor",
+            "type": "F",
+            "range": 359,
+            "hst": 4,
+            "lsf": 76,
+            "pdga": "Y",
+            "matrix_x": 2,
+            "matrix_y": 6
+        }
+    ]
 }

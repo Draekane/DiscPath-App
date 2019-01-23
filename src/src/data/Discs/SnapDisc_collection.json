@@ -1,26 +1,28 @@
 {
-	"company": "Snap Disc",
-	"companyId": "87e74f9d7ebd0c0d16cd9a4f71f48891",
-	"discs": [
-		{
-			"discId": "da12b58d9ebaa72df266a2c870bf92ec",
-			"name": "Helios",
-			"type": "D",
-			"range": 394,
-			"hst": -48,
-			"lsf": 32,
-			"pdga": "Y",
-			"matrix_x": 6,
-			"matrix_y": 6
-		} , {
-			"discId": "361d9bfd8df7eabe714a7d3408e55e12",
-			"name": "Whitler",
-			"type": "P",
-			"range": 241,
-			"hst": -36,
-			"lsf": 15,
-			"pdga": "Y",
-			"matrix_x": 6,
-			"matrix_y": 6
-	}]
+    "company": "Snap Disc",
+    "companyId": "87e74f9d7ebd0c0d16cd9a4f71f48891",
+    "discs": [
+        {
+            "discId": "da12b58d9ebaa72df266a2c870bf92ec",
+            "name": "Helios",
+            "type": "D",
+            "range": 394,
+            "hst": -48,
+            "lsf": 32,
+            "pdga": "Y",
+            "matrix_x": 6,
+            "matrix_y": 4
+        },
+        {
+            "discId": "361d9bfd8df7eabe714a7d3408e55e12",
+            "name": "Whitler",
+            "type": "P",
+            "range": 241,
+            "hst": -36,
+            "lsf": 15,
+            "pdga": "Y",
+            "matrix_x": 6,
+            "matrix_y": 11
+        }
+    ]
 }

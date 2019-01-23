@@ -1,46 +1,50 @@
 {
-	"company": "Obsidian Discs",
-	"companyId": "1fc3791eb3db38fee26a2515b7399198",
-	"discs": [
-		{
-			"discId": "a31dbcfd422faec3264da06d3bbec738",
-			"name": "Caldera",
-			"type": "D",
-			"range": 418,
-			"hst": -19,
-			"lsf": 39,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "a7173cc5cdd0e31df00cd34f058b1d33",
-			"name": "Cinder",
-			"type": "F",
-			"range": 329,
-			"hst": 0,
-			"lsf": 56,
-			"pdga": "Y",
-			"matrix_x": 3,
-			"matrix_y": 3
-		} , {
-			"discId": "09223d8b66c0ee1dfeb4c58b2665037e",
-			"name": "Rift",
-			"type": "D",
-			"range": 401,
-			"hst": 0,
-			"lsf": 58,
-			"pdga": "Y",
-			"matrix_x": 3,
-			"matrix_y": 3
-		} , {
-			"discId": "a9d65d8a88f3a9898dd84007bca04115",
-			"name": "Splinter",
-			"type": "P",
-			"range": 255,
-			"hst": 0,
-			"lsf": 45,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-	}]
+    "company": "Obsidian Discs",
+    "companyId": "1fc3791eb3db38fee26a2515b7399198",
+    "discs": [
+        {
+            "discId": "a31dbcfd422faec3264da06d3bbec738",
+            "name": "Caldera",
+            "type": "D",
+            "range": 418,
+            "hst": -19,
+            "lsf": 39,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 3
+        },
+        {
+            "discId": "a7173cc5cdd0e31df00cd34f058b1d33",
+            "name": "Cinder",
+            "type": "F",
+            "range": 329,
+            "hst": 0,
+            "lsf": 56,
+            "pdga": "Y",
+            "matrix_x": 3,
+            "matrix_y": 7
+        },
+        {
+            "discId": "09223d8b66c0ee1dfeb4c58b2665037e",
+            "name": "Rift",
+            "type": "P",
+            "range": 401,
+            "hst": 0,
+            "lsf": 58,
+            "pdga": "Y",
+            "matrix_x": 3,
+            "matrix_y": 3
+        },
+        {
+            "discId": "a9d65d8a88f3a9898dd84007bca04115",
+            "name": "Splinter",
+            "type": "P",
+            "range": 255,
+            "hst": 0,
+            "lsf": 45,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 11
+        }
+    ]
 }

@@ -1,36 +1,39 @@
 {
-	"company": "Pacific Cycle",
-	"companyId": "5c193248ae9e2d61091dedb5bfbfa0a3",
-	"discs": [
-		{
-			"discId": "34dae487e31f37aa74633258b7774d4f",
-			"name": "Mercury",
-			"type": "P",
-			"range": 228,
-			"hst": -22,
-			"lsf": 4,
-			"pdga": "Y",
-			"matrix_x": 6,
-			"matrix_y": 6
-		} , {
-			"discId": "ea8dbc7900082678e2e4f7275c945902",
-			"name": "Pluto",
-			"type": "F",
-			"range": 292,
-			"hst": -55,
-			"lsf": 13,
-			"pdga": "Y",
-			"matrix_x": 7,
-			"matrix_y": 7
-		} , {
-			"discId": "233ea1805dab5120a0ecc49b71a48063",
-			"name": "Saturn",
-			"type": "M",
-			"range": 288,
-			"hst": -47,
-			"lsf": 13,
-			"pdga": "Y",
-			"matrix_x": 7,
-			"matrix_y": 7
-	}]
+    "company": "Pacific Cycle",
+    "companyId": "5c193248ae9e2d61091dedb5bfbfa0a3",
+    "discs": [
+        {
+            "discId": "34dae487e31f37aa74633258b7774d4f",
+            "name": "Mercury",
+            "type": "P",
+            "range": 228,
+            "hst": -22,
+            "lsf": 4,
+            "pdga": "Y",
+            "matrix_x": 6,
+            "matrix_y": 12
+        },
+        {
+            "discId": "ea8dbc7900082678e2e4f7275c945902",
+            "name": "Pluto",
+            "type": "F",
+            "range": 292,
+            "hst": -55,
+            "lsf": 13,
+            "pdga": "Y",
+            "matrix_x": 7,
+            "matrix_y": 9
+        },
+        {
+            "discId": "233ea1805dab5120a0ecc49b71a48063",
+            "name": "Saturn",
+            "type": "M",
+            "range": 288,
+            "hst": -47,
+            "lsf": 13,
+            "pdga": "Y",
+            "matrix_x": 7,
+            "matrix_y": 9
+        }
+    ]
 }

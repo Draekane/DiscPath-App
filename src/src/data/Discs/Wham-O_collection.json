@@ -1,106 +1,116 @@
 {
-	"company": "Wham-O",
-	"companyId": "d09883bb9662cbd8c1a1048e74038eef",
-	"discs": [
-		{
-			"discId": "4a536b1ea597149bc7452dce8ccc627b",
-			"name": "86 Softie",
-			"type": "P",
-			"range": 232,
-			"hst": -36,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 6,
-			"matrix_y": 6
-		} , {
-			"discId": "3aa0aad7d9d947312530ab804bb77145",
-			"name": "Fairway Driver",
-			"type": "F",
-			"range": 312,
-			"hst": -28,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 6,
-			"matrix_y": 6
-		} , {
-			"discId": "66779291a520ed838dc5cfe7004ecba3",
-			"name": "Mid Range Approach",
-			"type": "M",
-			"range": 268,
-			"hst": -4,
-			"lsf": 27,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "02503efd350bdcb2c0eefaa49f98c58a",
-			"name": "Putter",
-			"type": "P",
-			"range": 248,
-			"hst": 0,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "1359839c136094a0bf7b5044daa6620f",
-			"name": "Touchline Bank",
-			"type": "F",
-			"range": 279,
-			"hst": -36,
-			"lsf": 36,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "90593a4a6f47e37cd64a32a79617d523",
-			"name": "Touchline Over",
-			"type": "F",
-			"range": 335,
-			"hst": -28,
-			"lsf": 47,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "1a0a6e649cc02ed9b52bd93f4bc01942",
-			"name": "Touchline Putter",
-			"type": "P",
-			"range": 235,
-			"hst": -36,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 6,
-			"matrix_y": 6
-		} , {
-			"discId": "604e71a52c1c3d0ca078c2f0331c0740",
-			"name": "Touchline True",
-			"type": "M",
-			"range": 280,
-			"hst": -18,
-			"lsf": 36,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "860242aef07ee47288eef00522d97612",
-			"name": "Touchline Under",
-			"type": "D",
-			"range": 366,
-			"hst": -38,
-			"lsf": 38,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "ce783a5725e5a2a89d732697563f75fc",
-			"name": "Voyager",
-			"type": "F",
-			"range": 347,
-			"hst": -38,
-			"lsf": 19,
-			"pdga": "Y",
-			"matrix_x": 6,
-			"matrix_y": 6
-	}]
+    "company": "Wham-O",
+    "companyId": "d09883bb9662cbd8c1a1048e74038eef",
+    "discs": [
+        {
+            "discId": "4a536b1ea597149bc7452dce8ccc627b",
+            "name": "86 Softie",
+            "type": "P",
+            "range": 232,
+            "hst": -36,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 6,
+            "matrix_y": 12
+        },
+        {
+            "discId": "3aa0aad7d9d947312530ab804bb77145",
+            "name": "Fairway Driver",
+            "type": "F",
+            "range": 312,
+            "hst": -28,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 6,
+            "matrix_y": 8
+        },
+        {
+            "discId": "66779291a520ed838dc5cfe7004ecba3",
+            "name": "Mid Range Approach",
+            "type": "M",
+            "range": 268,
+            "hst": -4,
+            "lsf": 27,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 10
+        },
+        {
+            "discId": "02503efd350bdcb2c0eefaa49f98c58a",
+            "name": "Putter",
+            "type": "P",
+            "range": 248,
+            "hst": 0,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 11
+        },
+        {
+            "discId": "1359839c136094a0bf7b5044daa6620f",
+            "name": "Touchline Bank",
+            "type": "F",
+            "range": 279,
+            "hst": -36,
+            "lsf": 36,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 10
+        },
+        {
+            "discId": "90593a4a6f47e37cd64a32a79617d523",
+            "name": "Touchline Over",
+            "type": "F",
+            "range": 335,
+            "hst": -28,
+            "lsf": 47,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 7
+        },
+        {
+            "discId": "1a0a6e649cc02ed9b52bd93f4bc01942",
+            "name": "Touchline Putter",
+            "type": "P",
+            "range": 235,
+            "hst": -36,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 6,
+            "matrix_y": 12
+        },
+        {
+            "discId": "604e71a52c1c3d0ca078c2f0331c0740",
+            "name": "Touchline True",
+            "type": "M",
+            "range": 280,
+            "hst": -18,
+            "lsf": 36,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 10
+        },
+        {
+            "discId": "860242aef07ee47288eef00522d97612",
+            "name": "Touchline Under",
+            "type": "D",
+            "range": 366,
+            "hst": -38,
+            "lsf": 38,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 5
+        },
+        {
+            "discId": "ce783a5725e5a2a89d732697563f75fc",
+            "name": "Voyager",
+            "type": "F",
+            "range": 347,
+            "hst": -38,
+            "lsf": 19,
+            "pdga": "Y",
+            "matrix_x": 6,
+            "matrix_y": 6
+        }
+    ]
 }

@@ -1,16 +1,17 @@
 {
-	"company": "Hole 19",
-	"companyId": "deda5938ddbba084aa440ada3e9d3535",
-	"discs": [
-		{
-			"discId": "dc2b6dab45e2e02c39a2e9721f177453",
-			"name": "All in One",
-			"type": "P",
-			"range": 262,
-			"hst": -36,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 6,
-			"matrix_y": 6
-	}]
+    "company": "Hole 19",
+    "companyId": "deda5938ddbba084aa440ada3e9d3535",
+    "discs": [
+        {
+            "discId": "dc2b6dab45e2e02c39a2e9721f177453",
+            "name": "All in One",
+            "type": "P",
+            "range": 262,
+            "hst": -36,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 6,
+            "matrix_y": 10
+        }
+    ]
 }

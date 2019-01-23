@@ -1,106 +1,116 @@
 {
-	"company": "RPM Discs",
-	"companyId": "b8b2e593c830de0a7b13b69fd959cb8b",
-	"discs": [
-		{
-			"discId": "8eda1196d04a460dd7d43c3df6c98782",
-			"name": "Arcturus",
-			"type": "F",
-			"range": 303,
-			"hst": -27,
-			"lsf": 27,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "a3defc8271ce21e12b9b60adde1a892a",
-			"name": "Atomic Raptor X",
-			"type": "D",
-			"range": 396,
-			"hst": -4,
-			"lsf": 58,
-			"pdga": "Y",
-			"matrix_x": 3,
-			"matrix_y": 3
-		} , {
-			"discId": "d0aa5acce64468f26ff2b42ec5489314",
-			"name": "Kahu",
-			"type": "D",
-			"range": 431,
-			"hst": -12,
-			"lsf": 59,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "483eb090f5bff6eb65358c10494d66b9",
-			"name": "Kea",
-			"type": "M",
-			"range": 297,
-			"hst": 0,
-			"lsf": 55,
-			"pdga": "Y",
-			"matrix_x": 3,
-			"matrix_y": 3
-		} , {
-			"discId": "dccaf01b0544731273c64d6ea6a4f7a5",
-			"name": "Piwakawaka",
-			"type": "M",
-			"range": 285,
-			"hst": -32,
-			"lsf": 27,
-			"pdga": "Y",
-			"matrix_x": 6,
-			"matrix_y": 6
-		} , {
-			"discId": "ddac0bfa21c086ffd64b4dc42f6034f9",
-			"name": "Rippa",
+    "company": "RPM Discs",
+    "companyId": "b8b2e593c830de0a7b13b69fd959cb8b",
+    "discs": [
+        {
+            "discId": "8eda1196d04a460dd7d43c3df6c98782",
+            "name": "Arcturus",
+            "type": "F",
+            "range": 303,
+            "hst": -27,
+            "lsf": 27,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 8
+        },
+        {
+            "discId": "a3defc8271ce21e12b9b60adde1a892a",
+            "name": "Atomic Raptor X",
+            "type": "D",
+            "range": 396,
+            "hst": -4,
+            "lsf": 58,
+            "pdga": "Y",
+            "matrix_x": 3,
+            "matrix_y": 4
+        },
+        {
+            "discId": "d0aa5acce64468f26ff2b42ec5489314",
+            "name": "Kahu",
+            "type": "D",
+            "range": 431,
+            "hst": -12,
+            "lsf": 59,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 2
+        },
+        {
+            "discId": "483eb090f5bff6eb65358c10494d66b9",
+            "name": "Kea",
+            "type": "M",
+            "range": 297,
+            "hst": 0,
+            "lsf": 55,
+            "pdga": "Y",
+            "matrix_x": 3,
+            "matrix_y": 9
+        },
+        {
+            "discId": "dccaf01b0544731273c64d6ea6a4f7a5",
+            "name": "Piwakawaka",
+            "type": "M",
+            "range": 285,
+            "hst": -32,
+            "lsf": 27,
+            "pdga": "Y",
+            "matrix_x": 6,
+            "matrix_y": 9
+        },
+        {
+            "discId": "ddac0bfa21c086ffd64b4dc42f6034f9",
+            "name": "Rippa",
+            "type": "P",
+            "range": 238,
+            "hst": -36,
+            "lsf": 0,
+            "pdga": "Y",
+            "matrix_x": 7,
+            "matrix_y": 12
+        },
+        {
+            "discId": "16a9d08f60bdb3390972e619bf71ecb5",
+            "name": "Ruru",
+            "type": "P",
+            "range": 258,
+            "hst": 0,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 11
+        },
+        {
+            "discId": "9e22bdd38d58738d3d9c0df541d4bdff",
+            "name": "Taniwha",
+            "type": "F",
+            "range": 331,
+            "hst": -56,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 7,
+            "matrix_y": 7
+        },
+        {
+            "discId": "36e1de8354bcf3c375bcecad7c201067",
+            "name": "Te Moko",
+            "type": "M",
+            "range": 256,
+            "hst": 0,
+            "lsf": 22,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 11
+        },
+        {
+            "discId": "9e85181ac3f10499ff3a66980f48c7cb",
+            "name": "Tui",
 			"type": "P",
-			"range": 238,
-			"hst": -36,
-			"lsf": 0,
-			"pdga": "Y",
-			"matrix_x": 7,
-			"matrix_y": 7
-		} , {
-			"discId": "16a9d08f60bdb3390972e619bf71ecb5",
-			"name": "Ruru",
-			"type": "P",
-			"range": 258,
-			"hst": 0,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "9e22bdd38d58738d3d9c0df541d4bdff",
-			"name": "Taniwha",
-			"type": "F",
-			"range": 331,
-			"hst": -56,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 7,
-			"matrix_y": 7
-		} , {
-			"discId": "36e1de8354bcf3c375bcecad7c201067",
-			"name": "Te Moko",
-			"type": "M",
-			"range": 256,
-			"hst": 0,
-			"lsf": 22,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "9e85181ac3f10499ff3a66980f48c7cb",
-			"name": "Tui",
-			"type": "P",
-			"range": 277,
-			"hst": -36,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 6,
-			"matrix_y": 6
-	}]
+            "range": 277,
+            "hst": -36,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 6,
+            "matrix_y": 10
+        }
+    ]
 }

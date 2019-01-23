@@ -1,26 +1,28 @@
 {
-	"company": "Las Aves",
-	"companyId": "1da53f39efe2dff6b667429f055187ca",
-	"discs": [
-		{
-			"discId": "168d8d67bee14de32354e2ec1743c2f3",
-			"name": "Ka-Kaa",
-			"type": "D",
-			"range": 417,
-			"hst": -39,
-			"lsf": 39,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "d99cb1c5b514248bc4a6df39380f7799",
-			"name": "Wo-Hoo",
-			"type": "F",
-			"range": 315,
-			"hst": 0,
-			"lsf": 37,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-	}]
+    "company": "Las Aves",
+    "companyId": "1da53f39efe2dff6b667429f055187ca",
+    "discs": [
+        {
+            "discId": "168d8d67bee14de32354e2ec1743c2f3",
+            "name": "Ka-Kaa",
+            "type": "D",
+            "range": 417,
+            "hst": -39,
+            "lsf": 39,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 3
+        },
+        {
+            "discId": "d99cb1c5b514248bc4a6df39380f7799",
+            "name": "Wo-Hoo",
+            "type": "F",
+            "range": 315,
+            "hst": 0,
+            "lsf": 37,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 8
+        }
+    ]
 }

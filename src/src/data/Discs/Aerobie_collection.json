@@ -1,56 +1,61 @@
 {
-	"company": "Aerobie",
-	"companyId": "314fe4aa5099feacc94a1c8fc4369019",
-	"discs": [
-		{
-			"discId": "0f4e1aaabd074689b7d3ead824d1ee8e",
-			"name": "Arrow",
-			"type": "P",
-			"range": 239,
-			"hst": 0,
-			"lsf": 45,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "e3f530e977d74053c6d70eb84886e756",
-			"name": "Epic",
-			"type": "D",
-			"range": 367,
-			"hst": -38,
-			"lsf": 76,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "97859338d26035df58215f65c743f5b4",
-			"name": "Sharpshooter #1",
-			"type": "F",
-			"range": 309,
-			"hst": 0,
-			"lsf": 56,
-			"pdga": "Y",
-			"matrix_x": 3,
-			"matrix_y": 3
-		} , {
-			"discId": "7b3c5ad487a36cbc719c9c13a9221e36",
-			"name": "Sharpshooter #2",
-			"type": "M",
-			"range": 263,
-			"hst": 0,
-			"lsf": 54,
-			"pdga": "Y",
-			"matrix_x": 3,
-			"matrix_y": 3
-		} , {
-			"discId": "fa7169bc9c26ad218b0a1848311200cf",
-			"name": "Sharpshooter #3",
-			"type": "P",
-			"range": 238,
-			"hst": 0,
-			"lsf": 54,
-			"pdga": "Y",
-			"matrix_x": 3,
-			"matrix_y": 3
-	}]
+    "company": "Aerobie",
+    "companyId": "314fe4aa5099feacc94a1c8fc4369019",
+    "discs": [
+        {
+            "discId": "0f4e1aaabd074689b7d3ead824d1ee8e",
+            "name": "Arrow",
+            "type": "P",
+            "range": 239,
+            "hst": 0,
+            "lsf": 45,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 12
+        },
+        {
+            "discId": "e3f530e977d74053c6d70eb84886e756",
+            "name": "Epic",
+            "type": "D",
+            "range": 367,
+            "hst": -38,
+            "lsf": 76,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 5
+        },
+        {
+            "discId": "97859338d26035df58215f65c743f5b4",
+            "name": "Sharpshooter #1",
+            "type": "F",
+            "range": 309,
+            "hst": 0,
+            "lsf": 56,
+            "pdga": "Y",
+            "matrix_x": 3,
+            "matrix_y": 8
+        },
+        {
+            "discId": "7b3c5ad487a36cbc719c9c13a9221e36",
+            "name": "Sharpshooter #2",
+            "type": "M",
+            "range": 263,
+            "hst": 0,
+            "lsf": 54,
+            "pdga": "Y",
+            "matrix_x": 3,
+            "matrix_y": 10
+        },
+        {
+            "discId": "fa7169bc9c26ad218b0a1848311200cf",
+            "name": "Sharpshooter #3",
+            "type": "P",
+            "range": 238,
+            "hst": 0,
+            "lsf": 54,
+            "pdga": "Y",
+            "matrix_x": 3,
+            "matrix_y": 12
+        }
+    ]
 }

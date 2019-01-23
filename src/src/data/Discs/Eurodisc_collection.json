@@ -1,36 +1,39 @@
 {
-	"company": "Eurodisc",
-	"companyId": "19c8aed1b1aec4d2c80e3827a94feb5c",
-	"discs": [
-		{
-			"discId": "065ab3a28ca4f16f55f103adc7d0226f",
-			"name": "Delivery",
-			"type": "P",
-			"range": 242,
-			"hst": 0,
-			"lsf": 4,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "afedf9afee367f51f98d7cf030c976a6",
-			"name": "Transition",
-			"type": "M",
-			"range": 299,
-			"hst": 0,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "6df09443dfcc41174e580b7facfdc08a",
-			"name": "Transporter",
-			"type": "F",
-			"range": 335,
-			"hst": -37,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 6,
-			"matrix_y": 6
-	}]
+    "company": "Eurodisc",
+    "companyId": "19c8aed1b1aec4d2c80e3827a94feb5c",
+    "discs": [
+        {
+            "discId": "065ab3a28ca4f16f55f103adc7d0226f",
+            "name": "Delivery",
+            "type": "P",
+            "range": 242,
+            "hst": 0,
+            "lsf": 4,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 11
+        },
+        {
+            "discId": "afedf9afee367f51f98d7cf030c976a6",
+            "name": "Transition",
+            "type": "M",
+            "range": 299,
+            "hst": 0,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 9
+        },
+        {
+            "discId": "6df09443dfcc41174e580b7facfdc08a",
+            "name": "Transporter",
+            "type": "F",
+            "range": 335,
+            "hst": -37,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 6,
+            "matrix_y": 7
+        }
+    ]
 }

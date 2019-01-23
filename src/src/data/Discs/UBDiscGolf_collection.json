@@ -1,36 +1,39 @@
 {
-	"company": "UB Disc Golf",
-	"companyId": "358b4c94e5ba602c5d6c57c708a1bb67",
-	"discs": [
-		{
-			"discId": "21dc53a0cf2d378a516f3fc3aca0ec3f",
-			"name": "Lex (Original)",
-			"type": "P",
-			"range": 239,
-			"hst": 0,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "cb6afc251c32a8b13fe01c3f8797a9ea",
-			"name": "Monstrum",
-			"type": "D",
-			"range": 411,
-			"hst": -9,
-			"lsf": 58,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "47f1d10b9dba37c2be840a5487938024",
-			"name": "Procul",
-			"type": "D",
-			"range": 404,
-			"hst": -45,
-			"lsf": 45,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-	}]
+    "company": "UB Disc Golf",
+    "companyId": "358b4c94e5ba602c5d6c57c708a1bb67",
+    "discs": [
+        {
+            "discId": "21dc53a0cf2d378a516f3fc3aca0ec3f",
+            "name": "Lex (Original)",
+            "type": "P",
+            "range": 239,
+            "hst": 0,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 12
+        },
+        {
+            "discId": "cb6afc251c32a8b13fe01c3f8797a9ea",
+            "name": "Monstrum",
+            "type": "D",
+            "range": 411,
+            "hst": -9,
+            "lsf": 58,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 3
+        },
+        {
+            "discId": "47f1d10b9dba37c2be840a5487938024",
+            "name": "Procul",
+            "type": "D",
+            "range": 404,
+            "hst": -45,
+            "lsf": 45,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 3
+        }
+    ]
 }

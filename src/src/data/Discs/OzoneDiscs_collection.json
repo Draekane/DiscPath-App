@@ -1,46 +1,50 @@
 {
-	"company": "Ozone Discs",
-	"companyId": "fc103c77d661e400b4e602eeaafb2325",
-	"discs": [
-		{
-			"discId": "545c556b07e79a110469deeb3750d43c",
-			"name": "Andro 1",
-			"type": "M",
-			"range": 310,
-			"hst": -18,
-			"lsf": 37,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "3f06a209a918ae153dc955ffaae1ab79",
-			"name": "Andro C",
-			"type": "M",
-			"range": 311,
-			"hst": -18,
-			"lsf": 37,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "cb5c2a2c931f1c46f0d655d390feab0c",
-			"name": "Andro C (Retooled)",
-			"type": "M",
-			"range": 311,
-			"hst": -37,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 6,
-			"matrix_y": 6
-		} , {
-			"discId": "57ae9ee5592123dd79c8912bf768cf99",
-			"name": "Hyperion",
-			"type": "D",
-			"range": 400,
-			"hst": 0,
-			"lsf": 78,
-			"pdga": "Y",
-			"matrix_x": 2,
-			"matrix_y": 2
-	}]
+    "company": "Ozone Discs",
+    "companyId": "fc103c77d661e400b4e602eeaafb2325",
+    "discs": [
+        {
+            "discId": "545c556b07e79a110469deeb3750d43c",
+            "name": "Andro 1",
+            "type": "M",
+            "range": 310,
+            "hst": -18,
+            "lsf": 37,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 8
+        },
+        {
+            "discId": "3f06a209a918ae153dc955ffaae1ab79",
+            "name": "Andro C",
+            "type": "M",
+            "range": 311,
+            "hst": -18,
+            "lsf": 37,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 8
+        },
+        {
+            "discId": "cb5c2a2c931f1c46f0d655d390feab0c",
+            "name": "Andro C (Retooled)",
+            "type": "M",
+            "range": 311,
+            "hst": -37,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 6,
+            "matrix_y": 8
+        },
+        {
+            "discId": "57ae9ee5592123dd79c8912bf768cf99",
+            "name": "Hyperion",
+            "type": "D",
+            "range": 400,
+            "hst": 0,
+            "lsf": 78,
+            "pdga": "Y",
+            "matrix_x": 2,
+            "matrix_y": 3
+        }
+    ]
 }

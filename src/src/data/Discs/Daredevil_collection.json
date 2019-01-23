@@ -1,236 +1,259 @@
 {
-	"company": "Daredevil",
-	"companyId": "7b5f57a359d56697e7031b9c98948e5c",
-	"discs": [
-		{
-			"discId": "2c7c7cfc6fda13471aba25999f4d9088",
-			"name": "Albatross",
-			"type": "D",
-			"range": 454,
-			"hst": -39,
-			"lsf": 59,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "4f7ac800f78d2ac09a74533d8b6d3149",
-			"name": "Beaver",
-			"type": "P",
-			"range": 243,
-			"hst": -9,
-			"lsf": 31,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "e48d13b665d070ee3e194935ec282b74",
-			"name": "Big Foot",
-			"type": "D",
-			"range": 438,
-			"hst": -39,
-			"lsf": 39,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "744a1a8fbc15d7fc65b2273789bd5577",
-			"name": "Bighorn",
-			"type": "P",
-			"range": 241,
-			"hst": 0,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "f60acd6991c212d2881fc542bab5fd10",
-			"name": "Buffalo",
-			"type": "D",
-			"range": 359,
-			"hst": -19,
-			"lsf": 95,
-			"pdga": "Y",
-			"matrix_x": 2,
-			"matrix_y": 2
-		} , {
-			"discId": "ddf1327d54fb43fca9350a82eb72e12b",
-			"name": "Caribou",
-			"type": "M",
-			"range": 280,
-			"hst": -36,
-			"lsf": 27,
-			"pdga": "Y",
-			"matrix_x": 6,
-			"matrix_y": 6
-		} , {
-			"discId": "e6aafc63857fa679362236e988058ec2",
-			"name": "Gray Jay",
-			"type": "D",
-			"range": 448,
-			"hst": 0,
-			"lsf": 99,
-			"pdga": "Y",
-			"matrix_x": 2,
-			"matrix_y": 2
-		} , {
-			"discId": "ed058c379e189a2f746c6aaf54929c3e",
-			"name": "Great Horned Owl",
-			"type": "P",
-			"range": 241,
-			"hst": 0,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "655c522b43d1444e55a0a4615c2b59b7",
-			"name": "Grizzly",
-			"type": "M",
-			"range": 280,
-			"hst": -13,
-			"lsf": 36,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "f0ecadf7bd19d55ed082cf51f9aef16d",
-			"name": "Mammoth",
-			"type": "D",
-			"range": 362,
-			"hst": -19,
-			"lsf": 95,
-			"pdga": "Y",
-			"matrix_x": 2,
-			"matrix_y": 2
-		} , {
-			"discId": "51148471b778017b70ba6f85a452dd17",
-			"name": "Merlin",
-			"type": "D",
-			"range": 451,
-			"hst": -19,
-			"lsf": 79,
-			"pdga": "Y",
-			"matrix_x": 3,
-			"matrix_y": 3
-		} , {
-			"discId": "030acfd68d0c19e8b0f891a8c0b525a1",
-			"name": "Moose",
-			"type": "M",
-			"range": 283,
-			"hst": 0,
-			"lsf": 36,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "fa3fa5deffd6808abff1c4cf9fc07e6f",
-			"name": "Ogopogo",
-			"type": "D",
-			"range": 359,
-			"hst": -38,
-			"lsf": 95,
-			"pdga": "Y",
-			"matrix_x": 3,
-			"matrix_y": 3
-		} , {
-			"discId": "b265b39a077f344551fc6ff4518c142c",
-			"name": "Polar Bear",
-			"type": "P",
-			"range": 243,
-			"hst": -18,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "34c6a962590c840e9b679553472ddf22",
-			"name": "Pteranodon",
-			"type": "M",
-			"range": 283,
-			"hst": -36,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 6,
-			"matrix_y": 6
-		} , {
-			"discId": "52c22e4eb689fa9a542964eed8a63168",
-			"name": "Sabertooth",
-			"type": "D",
-			"range": 361,
-			"hst": 0,
-			"lsf": 95,
-			"pdga": "Y",
-			"matrix_x": 2,
-			"matrix_y": 2
-		} , {
-			"discId": "283477b8fb7f326076d8f850d6bb2e88",
-			"name": "Sasquatch",
-			"type": "D",
-			"range": 433,
-			"hst": -98,
-			"lsf": 19,
-			"pdga": "Y",
-			"matrix_x": 8,
-			"matrix_y": 8
-		} , {
-			"discId": "daa2e0b4e425ca0d83636bb7adb1a2c7",
-			"name": "Swift Fox",
-			"type": "F",
-			"range": 367,
-			"hst": -48,
-			"lsf": 38,
-			"pdga": "Y",
-			"matrix_x": 6,
-			"matrix_y": 6
-		} , {
-			"discId": "4a2f074112d0eaa33a0244a5f0796f76",
-			"name": "Timberwolf",
-			"type": "F",
-			"range": 360,
-			"hst": -9,
-			"lsf": 25,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "8f46a03b12aba3fdbfe71920d4d801e7",
-			"name": "Walrus",
-			"type": "M",
-			"range": 280,
-			"hst": 0,
-			"lsf": 55,
-			"pdga": "Y",
-			"matrix_x": 3,
-			"matrix_y": 3
-		} , {
-			"discId": "7b5f17f02b8f6a6a89b529b6f791f3cc",
-			"name": "Wolverine",
-			"type": "F",
-			"range": 363,
-			"hst": -15,
-			"lsf": 51,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "c72f7e9030a283daad6b96090f86a0ea",
-			"name": "Woodchuck",
-			"type": "P",
-			"range": 243,
-			"hst": -24,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 6,
-			"matrix_y": 6
-		} , {
-			"discId": "9cb073d5208162d71991a6077288e01e",
-			"name": "Yeti",
-			"type": "D",
-			"range": 438,
-			"hst": -59,
-			"lsf": 19,
-			"pdga": "Y",
-			"matrix_x": 7,
-			"matrix_y": 7
-	}]
+    "company": "Daredevil",
+    "companyId": "7b5f57a359d56697e7031b9c98948e5c",
+    "discs": [
+        {
+            "discId": "2c7c7cfc6fda13471aba25999f4d9088",
+            "name": "Albatross",
+            "type": "D",
+            "range": 454,
+            "hst": -39,
+            "lsf": 59,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 1
+        },
+        {
+            "discId": "4f7ac800f78d2ac09a74533d8b6d3149",
+            "name": "Beaver",
+            "type": "P",
+            "range": 243,
+            "hst": -9,
+            "lsf": 31,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 11
+        },
+        {
+            "discId": "e48d13b665d070ee3e194935ec282b74",
+            "name": "Big Foot",
+            "type": "D",
+            "range": 438,
+            "hst": -39,
+            "lsf": 39,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 2
+        },
+        {
+            "discId": "744a1a8fbc15d7fc65b2273789bd5577",
+            "name": "Bighorn",
+            "type": "P",
+            "range": 241,
+            "hst": 0,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 11
+        },
+        {
+            "discId": "f60acd6991c212d2881fc542bab5fd10",
+            "name": "Buffalo",
+            "type": "D",
+            "range": 359,
+            "hst": -19,
+            "lsf": 95,
+            "pdga": "Y",
+            "matrix_x": 2,
+            "matrix_y": 6
+        },
+        {
+            "discId": "ddf1327d54fb43fca9350a82eb72e12b",
+            "name": "Caribou",
+            "type": "M",
+            "range": 280,
+            "hst": -36,
+            "lsf": 27,
+            "pdga": "Y",
+            "matrix_x": 6,
+            "matrix_y": 10
+        },
+        {
+            "discId": "e6aafc63857fa679362236e988058ec2",
+            "name": "Gray Jay",
+            "type": "D",
+            "range": 448,
+            "hst": 0,
+            "lsf": 99,
+            "pdga": "Y",
+            "matrix_x": 2,
+            "matrix_y": 1
+        },
+        {
+            "discId": "ed058c379e189a2f746c6aaf54929c3e",
+            "name": "Great Horned Owl",
+            "type": "P",
+            "range": 241,
+            "hst": 0,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 11
+        },
+        {
+            "discId": "655c522b43d1444e55a0a4615c2b59b7",
+            "name": "Grizzly",
+            "type": "M",
+            "range": 280,
+            "hst": -13,
+            "lsf": 36,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 9
+        },
+        {
+            "discId": "f0ecadf7bd19d55ed082cf51f9aef16d",
+            "name": "Mammoth",
+            "type": "D",
+            "range": 362,
+            "hst": -19,
+            "lsf": 95,
+            "pdga": "Y",
+            "matrix_x": 2,
+            "matrix_y": 5
+        },
+        {
+            "discId": "51148471b778017b70ba6f85a452dd17",
+            "name": "Merlin",
+            "type": "D",
+            "range": 451,
+            "hst": -19,
+            "lsf": 79,
+            "pdga": "Y",
+            "matrix_x": 3,
+            "matrix_y": 1
+        },
+        {
+            "discId": "030acfd68d0c19e8b0f891a8c0b525a1",
+            "name": "Moose",
+            "type": "M",
+            "range": 283,
+            "hst": 0,
+            "lsf": 36,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 9
+        },
+        {
+            "discId": "fa3fa5deffd6808abff1c4cf9fc07e6f",
+            "name": "Ogopogo",
+            "type": "D",
+            "range": 359,
+            "hst": -38,
+            "lsf": 95,
+            "pdga": "Y",
+            "matrix_x": 3,
+            "matrix_y": 6
+        },
+        {
+            "discId": "b265b39a077f344551fc6ff4518c142c",
+            "name": "Polar Bear",
+            "type": "P",
+            "range": 243,
+            "hst": -18,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 11
+        },
+        {
+            "discId": "34c6a962590c840e9b679553472ddf22",
+            "name": "Pteranodon",
+            "type": "M",
+            "range": 283,
+            "hst": -36,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 6,
+            "matrix_y": 9
+        },
+        {
+            "discId": "52c22e4eb689fa9a542964eed8a63168",
+            "name": "Sabertooth",
+            "type": "D",
+            "range": 361,
+            "hst": 0,
+            "lsf": 95,
+            "pdga": "Y",
+            "matrix_x": 2,
+            "matrix_y": 5
+        },
+        {
+            "discId": "283477b8fb7f326076d8f850d6bb2e88",
+            "name": "Sasquatch",
+            "type": "D",
+            "range": 433,
+            "hst": -98,
+            "lsf": 19,
+            "pdga": "Y",
+            "matrix_x": 8,
+            "matrix_y": 2
+        },
+        {
+            "discId": "daa2e0b4e425ca0d83636bb7adb1a2c7",
+            "name": "Swift Fox",
+            "type": "F",
+            "range": 367,
+            "hst": -48,
+            "lsf": 38,
+            "pdga": "Y",
+            "matrix_x": 6,
+            "matrix_y": 5
+        },
+        {
+            "discId": "4a2f074112d0eaa33a0244a5f0796f76",
+            "name": "Timberwolf",
+            "type": "F",
+            "range": 360,
+            "hst": -9,
+            "lsf": 25,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 5
+        },
+        {
+            "discId": "8f46a03b12aba3fdbfe71920d4d801e7",
+            "name": "Walrus",
+            "type": "M",
+            "range": 280,
+            "hst": 0,
+            "lsf": 55,
+            "pdga": "Y",
+            "matrix_x": 3,
+            "matrix_y": 10
+        },
+        {
+            "discId": "7b5f17f02b8f6a6a89b529b6f791f3cc",
+            "name": "Wolverine",
+            "type": "F",
+            "range": 363,
+            "hst": -15,
+            "lsf": 51,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 5
+        },
+        {
+            "discId": "c72f7e9030a283daad6b96090f86a0ea",
+            "name": "Woodchuck",
+            "type": "P",
+            "range": 243,
+            "hst": -24,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 6,
+            "matrix_y": 11
+        },
+        {
+            "discId": "9cb073d5208162d71991a6077288e01e",
+            "name": "Yeti",
+            "type": "D",
+            "range": 438,
+            "hst": -59,
+            "lsf": 19,
+            "pdga": "Y",
+            "matrix_x": 7,
+            "matrix_y": 2
+        }
+    ]
 }

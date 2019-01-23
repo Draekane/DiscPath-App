@@ -1,136 +1,149 @@
 {
-	"company": "Salient Discs",
-	"companyId": "5d9256cf69d2279399c1c9658ec77250",
-	"discs": [
-		{
-			"discId": "7c1a80448a8607f3484d7d628516b8d6",
-			"name": "Antidote",
-			"type": "M",
-			"range": 290,
-			"hst": -41,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 6,
-			"matrix_y": 6
-		} , {
-			"discId": "02f88c3356ac83cf7cd1b57a59780161",
-			"name": "Backdraft",
-			"type": "D",
-			"range": 413,
-			"hst": -24,
-			"lsf": 49,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "1a66ab62bfc858b7bcf9e01aa9cd1841",
-			"name": "Cell",
-			"type": "M",
-			"range": 295,
-			"hst": 0,
-			"lsf": 37,
-			"pdga": "N",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "570fca905fac20de54680bb00d421658",
-			"name": "Flatline",
-			"type": "F",
-			"range": 316,
-			"hst": -9,
-			"lsf": 18,
-			"pdga": "N",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "5efb7d24387b25d8325839be958d9adf",
-			"name": "Fracture",
-			"type": "D",
-			"range": 384,
-			"hst": -38,
-			"lsf": 19,
-			"pdga": "N",
-			"matrix_x": 6,
-			"matrix_y": 6
-		} , {
-			"discId": "a901771751a84dcad9416edaa85404a4",
-			"name": "Lock Jaw",
-			"type": "P",
-			"range": 228,
-			"hst": -1,
-			"lsf": 1,
-			"pdga": "N",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "ac4b3142d594367f0ed60205fa4d7b25",
-			"name": "Napalm",
-			"type": "D",
-			"range": 402,
-			"hst": -19,
-			"lsf": 19,
-			"pdga": "N",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "e1723a08afd7bca35570fd31a7656f59",
-			"name": "Prometheus",
-			"type": "D",
-			"range": 411,
-			"hst": -14,
-			"lsf": 41,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "e021476ce48284b328c89031d763a856",
-			"name": "Reign",
-			"type": "D",
-			"range": 437,
-			"hst": 0,
-			"lsf": 39,
-			"pdga": "N",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "bf0eb4c378858755c91f83864f5c5b8e",
-			"name": "Suture",
-			"type": "F",
-			"range": 367,
-			"hst": -38,
-			"lsf": 0,
-			"pdga": "N",
-			"matrix_x": 7,
-			"matrix_y": 7
-		} , {
-			"discId": "f0f31c9700c6b10d8a20dc487b2ae6a8",
-			"name": "Touch",
-			"type": "P",
-			"range": 244,
-			"hst": 0,
-			"lsf": 27,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "1f901ccc06c0d076e11067ff8ab8fb36",
-			"name": "Vaccine",
-			"type": "M",
-			"range": 257,
-			"hst": 0,
-			"lsf": 36,
-			"pdga": "N",
-			"matrix_x": 4,
-			"matrix_y": 4
-		} , {
-			"discId": "39766c8eaaf3f751ce22b99f747e442d",
-			"name": "Vein",
-			"type": "F",
-			"range": 342,
-			"hst": 0,
-			"lsf": 42,
-			"pdga": "Y",
-			"matrix_x": 4,
-			"matrix_y": 4
-	}]
+    "company": "Salient Discs",
+    "companyId": "5d9256cf69d2279399c1c9658ec77250",
+    "discs": [
+        {
+            "discId": "7c1a80448a8607f3484d7d628516b8d6",
+            "name": "Antidote",
+            "type": "M",
+            "range": 290,
+            "hst": -41,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 6,
+            "matrix_y": 9
+        },
+        {
+            "discId": "02f88c3356ac83cf7cd1b57a59780161",
+            "name": "Backdraft",
+            "type": "D",
+            "range": 413,
+            "hst": -24,
+            "lsf": 49,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 3
+        },
+        {
+            "discId": "1a66ab62bfc858b7bcf9e01aa9cd1841",
+            "name": "Cell",
+            "type": "M",
+            "range": 295,
+            "hst": 0,
+            "lsf": 37,
+            "pdga": "N",
+            "matrix_x": 4,
+            "matrix_y": 9
+        },
+        {
+            "discId": "570fca905fac20de54680bb00d421658",
+            "name": "Flatline",
+            "type": "F",
+            "range": 316,
+            "hst": -9,
+            "lsf": 18,
+            "pdga": "N",
+            "matrix_x": 5,
+            "matrix_y": 8
+        },
+        {
+            "discId": "5efb7d24387b25d8325839be958d9adf",
+            "name": "Fracture",
+            "type": "D",
+            "range": 384,
+            "hst": -38,
+            "lsf": 19,
+            "pdga": "N",
+            "matrix_x": 6,
+            "matrix_y": 4
+        },
+        {
+            "discId": "a901771751a84dcad9416edaa85404a4",
+            "name": "Lock Jaw",
+            "type": "P",
+            "range": 228,
+            "hst": -1,
+            "lsf": 1,
+            "pdga": "N",
+            "matrix_x": 5,
+            "matrix_y": 12
+        },
+        {
+            "discId": "ac4b3142d594367f0ed60205fa4d7b25",
+            "name": "Napalm",
+            "type": "D",
+            "range": 402,
+            "hst": -19,
+            "lsf": 19,
+            "pdga": "N",
+            "matrix_x": 5,
+            "matrix_y": 3
+        },
+        {
+            "discId": "e1723a08afd7bca35570fd31a7656f59",
+            "name": "Prometheus",
+            "type": "D",
+            "range": 411,
+            "hst": -14,
+            "lsf": 41,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 3
+        },
+        {
+            "discId": "e021476ce48284b328c89031d763a856",
+            "name": "Reign",
+            "type": "D",
+            "range": 437,
+            "hst": 0,
+            "lsf": 39,
+            "pdga": "N",
+            "matrix_x": 4,
+            "matrix_y": 2
+        },
+        {
+            "discId": "bf0eb4c378858755c91f83864f5c5b8e",
+            "name": "Suture",
+            "type": "F",
+            "range": 367,
+            "hst": -38,
+            "lsf": 0,
+            "pdga": "N",
+            "matrix_x": 7,
+            "matrix_y": 5
+        },
+        {
+            "discId": "f0f31c9700c6b10d8a20dc487b2ae6a8",
+            "name": "Touch",
+            "type": "P",
+            "range": 244,
+            "hst": 0,
+            "lsf": 27,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 11
+        },
+        {
+            "discId": "1f901ccc06c0d076e11067ff8ab8fb36",
+            "name": "Vaccine",
+            "type": "M",
+            "range": 257,
+            "hst": 0,
+            "lsf": 36,
+            "pdga": "N",
+            "matrix_x": 4,
+            "matrix_y": 11
+        },
+        {
+            "discId": "39766c8eaaf3f751ce22b99f747e442d",
+            "name": "Vein",
+            "type": "F",
+            "range": 342,
+            "hst": 0,
+            "lsf": 42,
+            "pdga": "Y",
+            "matrix_x": 4,
+            "matrix_y": 6
+        }
+    ]
 }

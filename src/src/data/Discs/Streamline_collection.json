@@ -1,46 +1,50 @@
 {
-	"company": "Streamline",
-	"companyId": "668c39e0dc06284d37ed849abaa09f31",
-	"discs": [
-		{
-			"discId": "a54b6a3e35542af4b77806be3207b2fd",
-			"name": "Drift",
-			"type": "F",
-			"range": 332,
-			"hst": -37,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 6,
-			"matrix_y": 6
-		} , {
-			"discId": "27cb6a9c075369d09f4a30b8996ec6c3",
-			"name": "Pilot",
-			"type": "P",
-			"range": 246,
-			"hst": -18,
-			"lsf": 18,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-		} , {
-			"discId": "33894a4dc73e8e1836cc4da8d6757449",
-			"name": "Runway",
-			"type": "P",
-			"range": 294,
-			"hst": 0,
-			"lsf": 65,
-			"pdga": "Y",
-			"matrix_x": 3,
-			"matrix_y": 3
-		} , {
-			"discId": "dd4ec0ac4e58f7c32a01244ae91150b1",
-			"name": "Trace",
-			"type": "D",
-			"range": 401,
-			"hst": -19,
-			"lsf": 39,
-			"pdga": "Y",
-			"matrix_x": 5,
-			"matrix_y": 5
-	}]
+    "company": "Streamline",
+    "companyId": "668c39e0dc06284d37ed849abaa09f31",
+    "discs": [
+        {
+            "discId": "a54b6a3e35542af4b77806be3207b2fd",
+            "name": "Drift",
+            "type": "F",
+            "range": 332,
+            "hst": -37,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 6,
+            "matrix_y": 7
+        },
+        {
+            "discId": "27cb6a9c075369d09f4a30b8996ec6c3",
+            "name": "Pilot",
+            "type": "P",
+            "range": 246,
+            "hst": -18,
+            "lsf": 18,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 11
+        },
+        {
+            "discId": "33894a4dc73e8e1836cc4da8d6757449",
+            "name": "Runway",
+            "type": "P",
+            "range": 294,
+            "hst": 0,
+            "lsf": 65,
+            "pdga": "Y",
+            "matrix_x": 3,
+            "matrix_y": 9
+        },
+        {
+            "discId": "dd4ec0ac4e58f7c32a01244ae91150b1",
+            "name": "Trace",
+            "type": "D",
+            "range": 401,
+            "hst": -19,
+            "lsf": 39,
+            "pdga": "Y",
+            "matrix_x": 5,
+            "matrix_y": 3
+        }
+    ]
 }

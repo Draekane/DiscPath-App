@@ -102,7 +102,7 @@ export const getSimilarDiscs = (selectedDisc, companies, thrower, similarity, al
     _.forEach(companies, (company) => {
       _.forEach(company.discs, (disc) => {
         if (disc.matrix_x === selectedDisc.matrix_x && disc.matrix_y === selectedDisc.matrix_y) {
-          similarDiscs.push(new Disc({ ...disc, company: company.compnay }));
+          similarDiscs.push(new Disc({ ...disc, company: company.company }));
         }
       });
     });

@@ -75,7 +75,13 @@ class SimilarDisc extends Component {
 
     changeSimilarity(similarity);
     if (selectedDisc) {
-      const newSimilarDiscs = simDiscUtils.getSimilarDiscs(selectedDisc, companies, thrower, similarity);
+      const newSimilarDiscs = simDiscUtils.getSimilarDiscs(
+        selectedDisc,
+        companies,
+        thrower,
+        similarity,
+        'matrix',
+      );
       setSimilarDiscs(newSimilarDiscs, similarDiscs);
     }
   }
@@ -97,7 +103,13 @@ class SimilarDisc extends Component {
     } = this.props;
 
     const selectDisc = simDiscUtils.getSelectedDisc(selectedDisc, companies, thrower || stateThrower);
-    const newSimilarDiscs = simDiscUtils.getSimilarDiscs(selectDisc, companies, thrower || stateThrower, similarity);
+    const newSimilarDiscs = simDiscUtils.getSimilarDiscs(
+      selectDisc,
+      companies,
+      thrower || stateThrower,
+      similarity,
+      'matrix',
+    );
     selectSimilarDisc(selectDisc, selectedDisc);
     setSimilarDiscs(newSimilarDiscs, similarDiscs, true);
   }
@@ -117,6 +129,7 @@ class SimilarDisc extends Component {
       companies,
       thrower,
       similarity,
+      'matrix',
     );
     setSimilarDiscs(newSimilarDiscs, similarDiscs, true);
   }
@@ -219,17 +232,19 @@ class SimilarDisc extends Component {
               currentSelection={selectedDiscId}
               handleDiscSelection={this.handleDiscSelection}
             />
-            Allowable Divergence: {simDiscUtils.similarityPercentage(similarity)}
-            <Slider
-              value={similarity}
-              orientation="horizontal"
-              min={0.1}
-              max={0.5}
-              step={0.01}
-              className="similarity-slider"
-              format={simDiscUtils.similarityPercentage}
-              onChange={this.handleChangeSimilarity}
-            />
+            {/* <div className="" >
+              Allowable Divergence: {simDiscUtils.similarityPercentage(similarity)}
+              <Slider
+                value={similarity}
+                orientation="horizontal"
+                min={0.1}
+                max={0.5}
+                step={0.01}
+                className="similarity-slider"
+                format={simDiscUtils.similarityPercentage}
+                onChange={this.handleChangeSimilarity}
+              />
+            </div> */}
             <div className="selectedDisc_Display" >
               <DiscList props={discListProps} />
             </div>

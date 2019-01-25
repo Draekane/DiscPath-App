@@ -12,6 +12,8 @@ export default class Disc {
     this.range = discOptions.range || 50;
     this.type = discOptions.type || 'D';
     this.flightPath = discOptions.flightPath || [];
+    this.matrix_x = discOptions.matrix_x || 0;
+    this.matrix_y = discOptions.matrix_y || 0;
   }
 
   isDiscSimilar(checkParams) {

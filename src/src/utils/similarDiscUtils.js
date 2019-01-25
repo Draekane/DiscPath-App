@@ -64,7 +64,7 @@ export const getNewFlightPath = (selectedDisc, thrower) => {
   return flightPath;
 };
 
-export const getSimilarDiscs = (selectedDisc, companies, thrower, similarity) => {
+export const getSimilarDiscs = (selectedDisc, companies, thrower, similarity, algo) => {
   if (!selectedDisc) return [];
   // const percent = similarity;
   // const checkParams = {
@@ -77,25 +77,36 @@ export const getSimilarDiscs = (selectedDisc, companies, thrower, similarity) =>
   // };
 
   const similarDiscs = [];
-  _.forEach(companies, (company) => {
-    _.forEach(company.discs, (disc) => {
-      const pw = 0.6 + (((disc.power || thrower.power) / 48) * 0.6);
-      const pathOptions = {
-        dist: disc.range,
-        hss: disc.hst,
-        lsf: disc.lsf,
-        armspeed: pw,
-        wear: disc.wear || 10,
-        throwType: disc.throwType || 'rhbh',
-      };
-      const flightPath = calculatePath(pathOptions);
-      const convertDisc = new Disc({ ...disc, company: company.company, flightPath });
-      if (convertDisc.isDiscFlightPathSimilar(selectedDisc.flightPath, similarity)
-        && convertDisc.discId !== selectedDisc.discId) {
-        similarDiscs.push(convertDisc);
-      }
+
+  if (!algo || algo === 'flight') {
+    _.forEach(companies, (company) => {
+      _.forEach(company.discs, (disc) => {
+        const pw = 0.6 + (((disc.power || thrower.power) / 48) * 0.6);
+        const pathOptions = {
+          dist: disc.range,
+          hss: disc.hst,
+          lsf: disc.lsf,
+          armspeed: pw,
+          wear: disc.wear || 10,
+          throwType: disc.throwType || 'rhbh',
+        };
+        const flightPath = calculatePath(pathOptions);
+        const convertDisc = new Disc({ ...disc, company: company.company, flightPath });
+        if (convertDisc.isDiscFlightPathSimilar(selectedDisc.flightPath, similarity)
+          && convertDisc.discId !== selectedDisc.discId) {
+          similarDiscs.push(convertDisc);
+        }
+      });
     });
-  });
+  } else if (algo === 'matrix') {
+    _.forEach(companies, (company) => {
+      _.forEach(company.discs, (disc) => {
+        if (disc.matrix_x === selectedDisc.matrix_x && disc.matrix_y === selectedDisc.matrix_y) {
+          similarDiscs.push(new Disc({ ...disc, company: company.compnay }));
+        }
+      });
+    });
+  }
 
   return similarDiscs;
 };

@@ -48,6 +48,11 @@
             "maxWeight": "176"
         },
         {
+            "discId": "ecb135155dc653bbc220d4448490d15e",
+            "name": "Gatekeeper",
+            "maxWeight": "180"
+        },
+        {
             "discId": "6ff015f9a4c7dc3387263aa1a819131f",
             "name": "Giant",
             "maxWeight": "175"

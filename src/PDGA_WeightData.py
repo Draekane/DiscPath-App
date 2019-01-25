@@ -6,7 +6,7 @@ import hashlib
 import companyNameConsts
 import re
 
-workbook = xlrd.open_workbook('./pdga_approved_discs_121618a.xls')
+workbook = xlrd.open_workbook('./pdga_approved_discs_012219.xls')
 worksheet = workbook.sheet_by_index(0)
 rows = worksheet.nrows
 cols = worksheet.ncols

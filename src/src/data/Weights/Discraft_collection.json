@@ -163,6 +163,16 @@
             "maxWeight": "178"
         },
         {
+            "discId": "ea954a0db5ef9725357b898876823a13",
+            "name": "Kong",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "818468ddb460c3bd842a28f371bca99e",
+            "name": "Luna",
+            "maxWeight": "175"
+        },
+        {
             "discId": "883e080d18d9f405b9bd7c70d5f5fa23",
             "name": "Machete",
             "maxWeight": "175"
@@ -256,6 +266,11 @@
             "discId": "20c8a8dc7e28de2a72c0cc386deac031",
             "name": "Putt'r",
             "maxWeight": "174"
+        },
+        {
+            "discId": "6cb576ec13726583fab7df279410f9b2",
+            "name": "Raptor",
+            "maxWeight": "177"
         },
         {
             "discId": "40a89382d118259419cdbc6af805c0f9",

@@ -1,506 +1,506 @@
 {
-	"company": "Discraft",
-	"companyId": "363f2dc2db43467035db28b37e045daa",
-	"discs": [
-		{
-			"discId": "c1ce4c06af5c131c2e7795b1088e3ca8",
-			"name": "APX",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "55429fa01b19f7193811ed985797b9b9",
-			"name": "Archer",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "074afeda56fb27564aeb1315be28036b",
-			"name": "Avenger",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "b50a077df485127dcf901943752152ac",
-			"name": "Avenger-SS",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "37d6a87325798ed62d8deb409e48fab1",
-			"name": "Banger-GT",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "a35715e7a6549f47dc766f75a0b1088c",
-			"name": "Breeze",
-			"maxWeight": "177"
-		},
-		{
-			"discId": "779c366aed4d29b26883b34f938cb861",
-			"name": "Buzzz",
-			"maxWeight": "180"
-		},
-		{
-			"discId": "1057a197c20108544d49aaaa8e75eb2f",
-			"name": "Buzzz OS",
-			"maxWeight": "180"
-		},
-		{
-			"discId": "19332162469901bf99cbb48d8ad4133c",
-			"name": "Buzzz-SS",
-			"maxWeight": "179"
-		},
-		{
-			"discId": "70c7be8ad263c9f6a847206dce6fa249",
-			"name": "Buzzz-GT",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "86576f63453fd5551fcbfc28b1296ff1",
-			"name": "Challenger",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "8f529b3bbef04f4ca6ad1f9332f6b48f",
-			"name": "Challenger OS",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "c17b2c635345fda02b253458af1a6401",
-			"name": "Challenger SS",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "b9a8503552f9f7e1e1bc4a0ba9902594",
-			"name": "Comet",
-			"maxWeight": "181"
-		},
-		{
-			"discId": "25cabb1442cddb2ce008c57eb2be1a7c",
-			"name": "Crank",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "9c3c9bbf94b28483ec20b301e9f6e0a2",
-			"name": "Crank SS",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "abd715b683db0b712626562efe9b3567",
-			"name": "Cruiser",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "4ca344c8f8c7843d127b3a3d7bb4b401",
-			"name": "Cruiser-Windstar",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "acc9e045e4b8f5172d0ac72a8ef49476",
-			"name": "Crush",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "b923235c01c3537277ed9e8f6538936d",
-			"name": "Cyclone",
-			"maxWeight": "177"
-		},
-		{
-			"discId": "fd4f74f453a6947c7d7875c622d6ebb1",
-			"name": "Cyclone 2",
-			"maxWeight": "177"
-		},
-		{
-			"discId": "1ff754e5c5462945db28174838e0898c",
-			"name": "Deuce",
-			"maxWeight": "180"
-		},
-		{
-			"discId": "a178914dea39e23c117e164b05b43995",
-			"name": "Drone",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "32f7222026696f30787889194dee83e5",
-			"name": "Eclipse",
-			"maxWeight": "183"
-		},
-		{
-			"discId": "bf2c44e6fc09515648b91b1bb4ec3f5f",
-			"name": "Flash",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "a718f2f6a92a51d4985d18e4fa7b9472",
-			"name": "Flick",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "e24ee2487879116dcab772c0ac4fe341",
-			"name": "Focus",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "9eb6b78a99cdb6ffd3d40d18621d9f80",
-			"name": "Force",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "26af1b4c2c56012da7e4d0bde330b9b3",
-			"name": "Glide",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "21f59b54f62b5b8b4bc0f63f0f617fc1",
-			"name": "Impact",
-			"maxWeight": "179"
-		},
-		{
-			"discId": "7d486371bb65b0633535ceba4189d8ed",
-			"name": "Heat",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "8eda22ed69c3317f592ca1ba97867881",
-			"name": "Hornet",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "883e080d18d9f405b9bd7c70d5f5fa23",
-			"name": "Machete",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "6c72aa4de620ddfe18b992ae82c0d92f",
-			"name": "Magnet",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "05b86bc18bf9e68fe8af9003ac8e3733",
-			"name": "Mantis",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "fe903ec196b5c23751a6de29c2033cd8",
-			"name": "Marauder",
-			"maxWeight": "185"
-		},
-		{
-			"discId": "26cf32679ec486e40032e24fa39d15c8",
-			"name": "Meteor",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "a401a35d008ef76fe387578408378c9d",
-			"name": "MRV",
-			"maxWeight": "177"
-		},
-		{
-			"discId": "04479dbc62cd4885eda4ac1718944591",
-			"name": "MRX",
-			"maxWeight": "177"
-		},
-		{
-			"discId": "9de3deb185db08ab775d3fa8ad6aed8e",
-			"name": "Nebula",
-			"maxWeight": "177"
-		},
-		{
-			"discId": "3de95e239def5d190d48e38c3867c9fe",
-			"name": "Nuke",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "09fa172fc6ae0661e0b78dc75f3060c4",
-			"name": "Nuke OS",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "681cf5ed0aa06542d4aff8ea69e20dcc",
-			"name": "Nuke SS",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "f0a43d6e5eea19af337a176e9836acdd",
-			"name": "Phantom",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "ec84e1d6c9b7e9b3225daf971e8e158d",
-			"name": "Phantom Deuce",
-			"maxWeight": "180"
-		},
-		{
-			"discId": "cddfe6d2b0a19d76d6f1d82a3fce6404",
-			"name": "Phantom Light",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "96aaac4860c1b91ee53ad2a0f19c4197",
-			"name": "Phantom+",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "83b7fa97dfef4904f774cf6aa003ef74",
-			"name": "Predator",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "ec8374db32bacb4cd9760199ec42819e",
-			"name": "Pulse",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "75f45d8971d0ca04e942639dd06dcc35",
-			"name": "Punisher",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "20c8a8dc7e28de2a72c0cc386deac031",
-			"name": "Putt'r",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "40a89382d118259419cdbc6af805c0f9",
-			"name": "Rattler Putter",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "ac546f1fff780b1b3d9b1e8e9ba9f6d9",
-			"name": "Reaper",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "bf36c786791df40a79c4a64877d7509c",
-			"name": "Ringer",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "4e597c51cf1be0d77c18bbeb5b1cb0e1",
-			"name": "Ringer GT",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "6fa86beeec3a9f12ada1a3b61145624e",
-			"name": "Riptide",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "c2a081a2acc5642bb16930d4868aff12",
-			"name": "Roach",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "ae412534db3879501923fa67e0ea0174",
-			"name": "Rogue",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "3f39588bb19e28051d9aedfbb170025c",
-			"name": "Shadow",
-			"maxWeight": "183"
-		},
-		{
-			"discId": "21a24b98470743fcac71b045bd3bcb67",
-			"name": "Sky Pro",
-			"maxWeight": "200"
-		},
-		{
-			"discId": "956cc37515fe8171f5aad5254fde7f1d",
-			"name": "Sky Streak",
-			"maxWeight": "187"
-		},
-		{
-			"discId": "fb83844c5d6f9f97f2a63ddf30b45e28",
-			"name": "Sky-Star",
-			"maxWeight": "200"
-		},
-		{
-			"discId": "59183679fafaf7f82c61aab94b3e2445",
-			"name": "Sky-Styler",
-			"maxWeight": "200"
-		},
-		{
-			"discId": "c477cd2e9042448370f5ac4001c8d553",
-			"name": "Slipstream-GT",
-			"maxWeight": "177"
-		},
-		{
-			"discId": "5b996692d3aaddae70f43fb4f945dc57",
-			"name": "SoL",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "58cfa0f9df6b562cf96fe03fc6a42b69",
-			"name": "Spectra",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "e65acb2fd0e719eda9fe38a611fcef04",
-			"name": "Squall",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "e732800263daf67472e2a95799246c91",
-			"name": "Stalker",
-			"maxWeight": "179"
-		},
-		{
-			"discId": "fdcf3cdc04f367257c92382e032b6293",
-			"name": "Storm",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "8f29c809b1c2e2b035cff8d40386ff8a",
-			"name": "Stratus",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "3ccca65d3d9843b81f4e251dcf8a3e8c",
-			"name": "Sting",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "24daa4c4850fff2f4d7e44cc79e3eb07",
-			"name": "Surge",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "3ba3bfc8973ad9714261b23f2cd1adc9",
-			"name": "Surge-SS",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "cd156df66f98009063b515cb6621d836",
-			"name": "Talon",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "9cb359af20258a01005d5d53a6f43c13",
-			"name": "The Hawk",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "44624033971ec6a5d099818ab8cfddb6",
-			"name": "Thrasher",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "1aaf5a08dfe16d89a8ca6f8de4cfb0ca",
-			"name": "Torque",
-			"maxWeight": "179"
-		},
-		{
-			"discId": "fb4cf6037171e180a774f85e126f17ff",
-			"name": "Tracer",
-			"maxWeight": "185"
-		},
-		{
-			"discId": "26b8a5f8cbb692e906c8eed4b88cc0bd",
-			"name": "Tracker",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "174147762fec5d9537f498ef166b4a59",
-			"name": "Tsunami",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "13a9ef77542323461c0c325077c0a979",
-			"name": "Typhoon",
-			"maxWeight": "182"
-		},
-		{
-			"discId": "922213350aed0ec86f1de56ed81bca11",
-			"name": "Ultra-Star",
-			"maxWeight": "200"
-		},
-		{
-			"discId": "67e1578e380003021a82e9f0b265eea3",
-			"name": "Undertaker",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "071dbd416520d14b2e3688145801de41",
-			"name": "Venom",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "8e11b2f987a99ed900a44aa1aa8bd3d0",
-			"name": "Vortex",
-			"maxWeight": "180"
-		},
-		{
-			"discId": "d1909449b5a6b5b275919a9512c8e7ef",
-			"name": "Vulture",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "5a2121f3548dc88faf3db43db327f7c7",
-			"name": "Wasp",
-			"maxWeight": "179"
-		},
-		{
-			"discId": "a4b133cec0ad1680d60fe76c1f4b5e26",
-			"name": "Wildcat",
-			"maxWeight": "177"
-		},
-		{
-			"discId": "e226fddcb6c045033412da4d7aa52d27",
-			"name": "Windstar",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "54105bddbfe3f639d49cbe8f5182c958",
-			"name": "X2",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "dab25dc5ba49e2a2e65e498e179082fa",
-			"name": "X-Clone",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "a7a4ccc5e1a068d87f4965e014329201",
-			"name": "XL",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "892168d845e24cda2fe374063f511951",
-			"name": "Xpress",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "4e51ce89637824ccde8d4ee797b78151",
-			"name": "XS",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "cb568dfb3e46fb58ffdc4b03dca727b9",
-			"name": "XTRA",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "ad1b318ce19f4d82a50db9bc25a047d8",
-			"name": "Xtreme",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "8c24ce8dde79d64f3ac213012700e9a9",
-			"name": "Zeppelin",
-			"maxWeight": "183"
-		},
-		{
-			"discId": "b3ff996fe5c77610359114835baf9b38",
-			"name": "Zone",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "2b446fb1a269a080aed802de088d05f6",
-			"name": "Zombee",
-			"maxWeight": "179"
-		},
-		{
-			"discId": "403b4feffa78d6ec5b84d71213773ad3",
-			"name": "Z-Nuke",
-			"maxWeight": "175"
-		}
-	]
+    "company": "Discraft",
+    "companyId": "363f2dc2db43467035db28b37e045daa",
+    "discs": [
+        {
+            "discId": "c1ce4c06af5c131c2e7795b1088e3ca8",
+            "name": "APX",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "55429fa01b19f7193811ed985797b9b9",
+            "name": "Archer",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "074afeda56fb27564aeb1315be28036b",
+            "name": "Avenger",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "b50a077df485127dcf901943752152ac",
+            "name": "Avenger-SS",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "37d6a87325798ed62d8deb409e48fab1",
+            "name": "Banger-GT",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "a35715e7a6549f47dc766f75a0b1088c",
+            "name": "Breeze",
+            "maxWeight": "177"
+        },
+        {
+            "discId": "779c366aed4d29b26883b34f938cb861",
+            "name": "Buzzz",
+            "maxWeight": "180"
+        },
+        {
+            "discId": "1057a197c20108544d49aaaa8e75eb2f",
+            "name": "Buzzz OS",
+            "maxWeight": "180"
+        },
+        {
+            "discId": "19332162469901bf99cbb48d8ad4133c",
+            "name": "Buzzz-SS",
+            "maxWeight": "179"
+        },
+        {
+            "discId": "70c7be8ad263c9f6a847206dce6fa249",
+            "name": "Buzzz-GT",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "86576f63453fd5551fcbfc28b1296ff1",
+            "name": "Challenger",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "8f529b3bbef04f4ca6ad1f9332f6b48f",
+            "name": "Challenger OS",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "c17b2c635345fda02b253458af1a6401",
+            "name": "Challenger SS",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "b9a8503552f9f7e1e1bc4a0ba9902594",
+            "name": "Comet",
+            "maxWeight": "181"
+        },
+        {
+            "discId": "25cabb1442cddb2ce008c57eb2be1a7c",
+            "name": "Crank",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "9c3c9bbf94b28483ec20b301e9f6e0a2",
+            "name": "Crank SS",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "abd715b683db0b712626562efe9b3567",
+            "name": "Cruiser",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "4ca344c8f8c7843d127b3a3d7bb4b401",
+            "name": "Cruiser-Windstar",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "acc9e045e4b8f5172d0ac72a8ef49476",
+            "name": "Crush",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "b923235c01c3537277ed9e8f6538936d",
+            "name": "Cyclone",
+            "maxWeight": "177"
+        },
+        {
+            "discId": "fd4f74f453a6947c7d7875c622d6ebb1",
+            "name": "Cyclone 2",
+            "maxWeight": "177"
+        },
+        {
+            "discId": "1ff754e5c5462945db28174838e0898c",
+            "name": "Deuce",
+            "maxWeight": "180"
+        },
+        {
+            "discId": "a178914dea39e23c117e164b05b43995",
+            "name": "Drone",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "32f7222026696f30787889194dee83e5",
+            "name": "Eclipse",
+            "maxWeight": "183"
+        },
+        {
+            "discId": "bf2c44e6fc09515648b91b1bb4ec3f5f",
+            "name": "Flash",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "a718f2f6a92a51d4985d18e4fa7b9472",
+            "name": "Flick",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "e24ee2487879116dcab772c0ac4fe341",
+            "name": "Focus",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "9eb6b78a99cdb6ffd3d40d18621d9f80",
+            "name": "Force",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "26af1b4c2c56012da7e4d0bde330b9b3",
+            "name": "Glide",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "21f59b54f62b5b8b4bc0f63f0f617fc1",
+            "name": "Impact",
+            "maxWeight": "179"
+        },
+        {
+            "discId": "7d486371bb65b0633535ceba4189d8ed",
+            "name": "Heat",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "8eda22ed69c3317f592ca1ba97867881",
+            "name": "Hornet",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "883e080d18d9f405b9bd7c70d5f5fa23",
+            "name": "Machete",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "6c72aa4de620ddfe18b992ae82c0d92f",
+            "name": "Magnet",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "05b86bc18bf9e68fe8af9003ac8e3733",
+            "name": "Mantis",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "fe903ec196b5c23751a6de29c2033cd8",
+            "name": "Marauder",
+            "maxWeight": "185"
+        },
+        {
+            "discId": "26cf32679ec486e40032e24fa39d15c8",
+            "name": "Meteor",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "a401a35d008ef76fe387578408378c9d",
+            "name": "MRV",
+            "maxWeight": "177"
+        },
+        {
+            "discId": "04479dbc62cd4885eda4ac1718944591",
+            "name": "MRX",
+            "maxWeight": "177"
+        },
+        {
+            "discId": "9de3deb185db08ab775d3fa8ad6aed8e",
+            "name": "Nebula",
+            "maxWeight": "177"
+        },
+        {
+            "discId": "3de95e239def5d190d48e38c3867c9fe",
+            "name": "Nuke",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "09fa172fc6ae0661e0b78dc75f3060c4",
+            "name": "Nuke OS",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "681cf5ed0aa06542d4aff8ea69e20dcc",
+            "name": "Nuke SS",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "f0a43d6e5eea19af337a176e9836acdd",
+            "name": "Phantom",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "ec84e1d6c9b7e9b3225daf971e8e158d",
+            "name": "Phantom Deuce",
+            "maxWeight": "180"
+        },
+        {
+            "discId": "cddfe6d2b0a19d76d6f1d82a3fce6404",
+            "name": "Phantom Light",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "96aaac4860c1b91ee53ad2a0f19c4197",
+            "name": "Phantom+",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "83b7fa97dfef4904f774cf6aa003ef74",
+            "name": "Predator",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "ec8374db32bacb4cd9760199ec42819e",
+            "name": "Pulse",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "75f45d8971d0ca04e942639dd06dcc35",
+            "name": "Punisher",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "20c8a8dc7e28de2a72c0cc386deac031",
+            "name": "Putt'r",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "40a89382d118259419cdbc6af805c0f9",
+            "name": "Rattler Putter",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "ac546f1fff780b1b3d9b1e8e9ba9f6d9",
+            "name": "Reaper",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "bf36c786791df40a79c4a64877d7509c",
+            "name": "Ringer",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "4e597c51cf1be0d77c18bbeb5b1cb0e1",
+            "name": "Ringer GT",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "6fa86beeec3a9f12ada1a3b61145624e",
+            "name": "Riptide",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "c2a081a2acc5642bb16930d4868aff12",
+            "name": "Roach",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "ae412534db3879501923fa67e0ea0174",
+            "name": "Rogue",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "3f39588bb19e28051d9aedfbb170025c",
+            "name": "Shadow",
+            "maxWeight": "183"
+        },
+        {
+            "discId": "21a24b98470743fcac71b045bd3bcb67",
+            "name": "Sky Pro",
+            "maxWeight": "200"
+        },
+        {
+            "discId": "956cc37515fe8171f5aad5254fde7f1d",
+            "name": "Sky Streak",
+            "maxWeight": "187"
+        },
+        {
+            "discId": "fb83844c5d6f9f97f2a63ddf30b45e28",
+            "name": "Sky-Star",
+            "maxWeight": "200"
+        },
+        {
+            "discId": "59183679fafaf7f82c61aab94b3e2445",
+            "name": "Sky-Styler",
+            "maxWeight": "200"
+        },
+        {
+            "discId": "c477cd2e9042448370f5ac4001c8d553",
+            "name": "Slipstream-GT",
+            "maxWeight": "177"
+        },
+        {
+            "discId": "5b996692d3aaddae70f43fb4f945dc57",
+            "name": "SoL",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "58cfa0f9df6b562cf96fe03fc6a42b69",
+            "name": "Spectra",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "e65acb2fd0e719eda9fe38a611fcef04",
+            "name": "Squall",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "e732800263daf67472e2a95799246c91",
+            "name": "Stalker",
+            "maxWeight": "179"
+        },
+        {
+            "discId": "fdcf3cdc04f367257c92382e032b6293",
+            "name": "Storm",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "8f29c809b1c2e2b035cff8d40386ff8a",
+            "name": "Stratus",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "3ccca65d3d9843b81f4e251dcf8a3e8c",
+            "name": "Sting",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "24daa4c4850fff2f4d7e44cc79e3eb07",
+            "name": "Surge",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "3ba3bfc8973ad9714261b23f2cd1adc9",
+            "name": "Surge-SS",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "cd156df66f98009063b515cb6621d836",
+            "name": "Talon",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "9cb359af20258a01005d5d53a6f43c13",
+            "name": "The Hawk",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "44624033971ec6a5d099818ab8cfddb6",
+            "name": "Thrasher",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "1aaf5a08dfe16d89a8ca6f8de4cfb0ca",
+            "name": "Torque",
+            "maxWeight": "179"
+        },
+        {
+            "discId": "fb4cf6037171e180a774f85e126f17ff",
+            "name": "Tracer",
+            "maxWeight": "185"
+        },
+        {
+            "discId": "26b8a5f8cbb692e906c8eed4b88cc0bd",
+            "name": "Tracker",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "174147762fec5d9537f498ef166b4a59",
+            "name": "Tsunami",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "13a9ef77542323461c0c325077c0a979",
+            "name": "Typhoon",
+            "maxWeight": "182"
+        },
+        {
+            "discId": "922213350aed0ec86f1de56ed81bca11",
+            "name": "Ultra-Star",
+            "maxWeight": "200"
+        },
+        {
+            "discId": "67e1578e380003021a82e9f0b265eea3",
+            "name": "Undertaker",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "071dbd416520d14b2e3688145801de41",
+            "name": "Venom",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "8e11b2f987a99ed900a44aa1aa8bd3d0",
+            "name": "Vortex",
+            "maxWeight": "180"
+        },
+        {
+            "discId": "d1909449b5a6b5b275919a9512c8e7ef",
+            "name": "Vulture",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "5a2121f3548dc88faf3db43db327f7c7",
+            "name": "Wasp",
+            "maxWeight": "179"
+        },
+        {
+            "discId": "a4b133cec0ad1680d60fe76c1f4b5e26",
+            "name": "Wildcat",
+            "maxWeight": "177"
+        },
+        {
+            "discId": "e226fddcb6c045033412da4d7aa52d27",
+            "name": "Windstar",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "54105bddbfe3f639d49cbe8f5182c958",
+            "name": "X2",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "dab25dc5ba49e2a2e65e498e179082fa",
+            "name": "X-Clone",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "a7a4ccc5e1a068d87f4965e014329201",
+            "name": "XL",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "892168d845e24cda2fe374063f511951",
+            "name": "Xpress",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "4e51ce89637824ccde8d4ee797b78151",
+            "name": "XS",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "cb568dfb3e46fb58ffdc4b03dca727b9",
+            "name": "XTRA",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "ad1b318ce19f4d82a50db9bc25a047d8",
+            "name": "Xtreme",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "8c24ce8dde79d64f3ac213012700e9a9",
+            "name": "Zeppelin",
+            "maxWeight": "183"
+        },
+        {
+            "discId": "b3ff996fe5c77610359114835baf9b38",
+            "name": "Zone",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "2b446fb1a269a080aed802de088d05f6",
+            "name": "Zombee",
+            "maxWeight": "179"
+        },
+        {
+            "discId": "403b4feffa78d6ec5b84d71213773ad3",
+            "name": "Z-Nuke",
+            "maxWeight": "175"
+        }
+    ]
 }

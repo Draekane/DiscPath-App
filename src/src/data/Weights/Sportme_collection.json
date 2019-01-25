@@ -1,21 +1,21 @@
 {
-	"company": "Sportme",
-	"companyId": "bca48c430fdd1492a6f96c43a222bfa3",
-	"discs": [
-		{
-			"discId": "bd044225d83aab7cd10f2b21c579bbe8",
-			"name": "uControl",
-			"maxWeight": "179"
-		},
-		{
-			"discId": "2c918713efc21ea068bd335e3fd796fe",
-			"name": "uDrive",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "4fc14de63b4a01f21f11a0ce1e9f6d5f",
-			"name": "uPutt",
-			"maxWeight": "175"
-		}
-	]
+    "company": "Sportme",
+    "companyId": "bca48c430fdd1492a6f96c43a222bfa3",
+    "discs": [
+        {
+            "discId": "bd044225d83aab7cd10f2b21c579bbe8",
+            "name": "uControl",
+            "maxWeight": "179"
+        },
+        {
+            "discId": "2c918713efc21ea068bd335e3fd796fe",
+            "name": "uDrive",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "4fc14de63b4a01f21f11a0ce1e9f6d5f",
+            "name": "uPutt",
+            "maxWeight": "175"
+        }
+    ]
 }

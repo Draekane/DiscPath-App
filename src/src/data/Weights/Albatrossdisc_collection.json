@@ -1,36 +1,36 @@
 {
-	"company": "Albatrossdisc",
-	"companyId": "2b98542cf21d0e95c8b5625b484f5a11",
-	"discs": [
-		{
-			"discId": "44d9e6d91e67115c8f8baca8b44de5a7",
-			"name": "Albatrossdisc Driver",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "bdd5aa680999d50099898e49579c20d4",
-			"name": "Albatrossdisc Midrange",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "9a874f23e90d6840cb81fca4e8407293",
-			"name": "Albatrossdisc Putter",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "6c5285f852ced8168a7da70e22c7d6fa",
-			"name": "Caravel",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "13043338eecd23cbe5db922777cbd82e",
-			"name": "Frigate",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "e19685c1859ebca9ab98f1bbbcecb966",
-			"name": "Galley",
-			"maxWeight": "175"
-		}
-	]
+    "company": "Albatrossdisc",
+    "companyId": "2b98542cf21d0e95c8b5625b484f5a11",
+    "discs": [
+        {
+            "discId": "44d9e6d91e67115c8f8baca8b44de5a7",
+            "name": "Albatrossdisc Driver",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "bdd5aa680999d50099898e49579c20d4",
+            "name": "Albatrossdisc Midrange",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "9a874f23e90d6840cb81fca4e8407293",
+            "name": "Albatrossdisc Putter",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "6c5285f852ced8168a7da70e22c7d6fa",
+            "name": "Caravel",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "13043338eecd23cbe5db922777cbd82e",
+            "name": "Frigate",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "e19685c1859ebca9ab98f1bbbcecb966",
+            "name": "Galley",
+            "maxWeight": "175"
+        }
+    ]
 }

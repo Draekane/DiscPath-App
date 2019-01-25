@@ -1,41 +1,41 @@
 {
-	"company": "Reptilian Disc Golf",
-	"companyId": "c4d8ffb775a906cdc63358abbebefd23",
-	"discs": [
-		{
-			"discId": "248f0922f4fdb9d4ed9094e7d3a3ff83",
-			"name": "Gila",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "4f74be77f2ec1b9ebd391a47fbb05263",
-			"name": "Ptero",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "85a7cd587d6142dbfc1a4de05af7b75d",
-			"name": "Scale",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "7cde8b0cc9c769422774241c9f7baf60",
-			"name": "Serpent",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "7a835ef8e67cf95cfd25fc50e0897201",
-			"name": "Stego",
-			"maxWeight": "177"
-		},
-		{
-			"discId": "ad4b2a3a54fa0bade40663a48c59eff1",
-			"name": "Tyrant",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "f1d8deb2f01716e709aba61388c2e7b7",
-			"name": "Velociraptor",
-			"maxWeight": "174"
-		}
-	]
+    "company": "Reptilian Disc Golf",
+    "companyId": "c4d8ffb775a906cdc63358abbebefd23",
+    "discs": [
+        {
+            "discId": "248f0922f4fdb9d4ed9094e7d3a3ff83",
+            "name": "Gila",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "4f74be77f2ec1b9ebd391a47fbb05263",
+            "name": "Ptero",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "85a7cd587d6142dbfc1a4de05af7b75d",
+            "name": "Scale",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "7cde8b0cc9c769422774241c9f7baf60",
+            "name": "Serpent",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "7a835ef8e67cf95cfd25fc50e0897201",
+            "name": "Stego",
+            "maxWeight": "177"
+        },
+        {
+            "discId": "ad4b2a3a54fa0bade40663a48c59eff1",
+            "name": "Tyrant",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "f1d8deb2f01716e709aba61388c2e7b7",
+            "name": "Velociraptor",
+            "maxWeight": "174"
+        }
+    ]
 }

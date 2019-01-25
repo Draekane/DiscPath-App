@@ -1,36 +1,36 @@
 {
-	"company": "ABC Discs",
-	"companyId": "902fbdd2b1df0c4f70b4a5d23525e932",
-	"discs": [
-		{
-			"discId": "57adb874c41b51d508a1f64a39d07b39",
-			"name": "Bee Line",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "7bc1d13a27455a627ac35ea610b05c25",
-			"name": "Flying Squirrel",
-			"maxWeight": "182"
-		},
-		{
-			"discId": "7c87a20a7933e20ae9ee8badcc9fb82a",
-			"name": "Gamma Ray",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "70d529695c253d17e992cb9265abc57f",
-			"name": "Mission",
-			"maxWeight": "181"
-		},
-		{
-			"discId": "a93312829ec4c71aac461cec296faa0e",
-			"name": "Money",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "eea3e2e23d55a3acb82913bfa2938119",
-			"name": "Secret Weapon",
-			"maxWeight": "175"
-		}
-	]
+    "company": "ABC Discs",
+    "companyId": "902fbdd2b1df0c4f70b4a5d23525e932",
+    "discs": [
+        {
+            "discId": "57adb874c41b51d508a1f64a39d07b39",
+            "name": "Bee Line",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "7bc1d13a27455a627ac35ea610b05c25",
+            "name": "Flying Squirrel",
+            "maxWeight": "182"
+        },
+        {
+            "discId": "7c87a20a7933e20ae9ee8badcc9fb82a",
+            "name": "Gamma Ray",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "70d529695c253d17e992cb9265abc57f",
+            "name": "Mission",
+            "maxWeight": "181"
+        },
+        {
+            "discId": "a93312829ec4c71aac461cec296faa0e",
+            "name": "Money",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "eea3e2e23d55a3acb82913bfa2938119",
+            "name": "Secret Weapon",
+            "maxWeight": "175"
+        }
+    ]
 }

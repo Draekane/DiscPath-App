@@ -1,11 +1,11 @@
 {
-	"company": "Hero Leports Co., Ltd.",
-	"companyId": "78c8c391942173e6edf19660b88b87a5",
-	"discs": [
-		{
-			"discId": "25d6e85196930427863b83c573490d90",
-			"name": "Guardian",
-			"maxWeight": "177"
-		}
-	]
+    "company": "Hero Leports Co., Ltd.",
+    "companyId": "78c8c391942173e6edf19660b88b87a5",
+    "discs": [
+        {
+            "discId": "25d6e85196930427863b83c573490d90",
+            "name": "Guardian",
+            "maxWeight": "177"
+        }
+    ]
 }

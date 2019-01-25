@@ -1,311 +1,311 @@
 {
-	"company": "Disc Golf Association",
-	"companyId": "1a0fb2bccd2d8774934f42de18a75106",
-	"discs": [
-		{
-			"discId": "2548a848eafe144b3d35a094459a8edc",
-			"name": "#1 Hi Tec",
-			"maxWeight": "180"
-		},
-		{
-			"discId": "09c8235062963ee0df051915c1ed9c4b",
-			"name": "#1 Professional Driver",
-			"maxWeight": "179"
-		},
-		{
-			"discId": "7c8f137aecb4212e220c3394a119ff6a",
-			"name": "#2 Hi Tec",
-			"maxWeight": "180"
-		},
-		{
-			"discId": "a856d962be6b0e9e7353f3fb129a4206",
-			"name": "#2 Professional Driver",
-			"maxWeight": "179"
-		},
-		{
-			"discId": "21b8e55d2f46b9c3efcf979a2324bfbf",
-			"name": "#3 Hi Tec",
-			"maxWeight": "180"
-		},
-		{
-			"discId": "f1a006a8358688845dad21701cb6f9df",
-			"name": "#3 Professional Driver",
-			"maxWeight": "179"
-		},
-		{
-			"discId": "b14ef2ecb766b73f9af9daed757489df",
-			"name": "#4 Approach",
-			"maxWeight": "179"
-		},
-		{
-			"discId": "b0e023e2b7374af79bcd177219390960",
-			"name": "#4 Hi Tec",
-			"maxWeight": "180"
-		},
-		{
-			"discId": "2b0221d2872accdaf007c72ba69f908a",
-			"name": "#5 Hi Tec",
-			"maxWeight": "180"
-		},
-		{
-			"discId": "95613a867bae01982031f3aa4a338bd3",
-			"name": "#5 Roller-Putter",
-			"maxWeight": "179"
-		},
-		{
-			"discId": "92882c9a224e34ab965385738d63d302",
-			"name": "Aftershock",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "92882c9a224e34ab965385738d63d302",
-			"name": "Aftershock",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "0bd420a223ef0865c903053eb97ff957",
-			"name": "Banzai",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "e9a177a6d9705bed4e8f285c3a88911b",
-			"name": "Blowfly II",
-			"maxWeight": "180"
-		},
-		{
-			"discId": "82a11dc0a74194d17019e6cbb6c98926",
-			"name": "Blunt \"Blowfly\"",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "cc7d5d483dd68b879a424e54765785bc",
-			"name": "DGA Factor I",
-			"maxWeight": "180"
-		},
-		{
-			"discId": "cc7d5d483dd68b879a424e54765785bc",
-			"name": "DGA Factor I",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "fa517691b398027a91235f4bb6a9404e",
-			"name": "DGA Factor IV",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "48cf24486d9a8e65a142b25682f19949",
-			"name": "Driver",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "e2ab411666fc635dd5d29fd5e143d4ef",
-			"name": "Fader",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "a57e4ce58a27f12698bc4951fd418c6b",
-			"name": "Fader 3",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "ae9a91ab39589b72770530542bee7b5a",
-			"name": "Fader II",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "ce1a89972100c528298c04380a7757c0",
-			"name": "Gumbputt",
-			"maxWeight": "180"
-		},
-		{
-			"discId": "2ad0245c6d5a228e1be1b32e8a755de9",
-			"name": "Hellfire",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "9276ebbb39f692ed22fb760b78bd673b",
-			"name": "Hooker",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "17c6115bae2de2648edea8a22105cec5",
-			"name": "Hurricane",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "17c6115bae2de2648edea8a22105cec5",
-			"name": "Hurricane",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "af55206598ce49dc07866a0324f47336",
-			"name": "Kitty Hawk",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "f8fe9ea49e9c824f2d4d5f258c3c35aa",
-			"name": "Kitty Hawk Driver",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "2d32c750077b543bf796ff9a4e209e52",
-			"name": "Kitty Hawk Putter",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "5699bfb7c9cd7f7557bb9ccbad0bc6f2",
-			"name": "Kitty Hawk Softouch",
-			"maxWeight": "195"
-		},
-		{
-			"discId": "b049371b75a8b6f93d70331c2c70f901",
-			"name": "Kitty Hawk Softouch Sureshot",
-			"maxWeight": "193"
-		},
-		{
-			"discId": "aeaeaec51b4e6b88122f10ad96a8de72",
-			"name": "Pipeline",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "bdfad2084c10fbc83d798c20b941d0eb",
-			"name": "Powerdrive",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "505b200164b26c4aad4cefb7a44dbd91",
-			"name": "Power Putter",
-			"maxWeight": "191"
-		},
-		{
-			"discId": "bd1ad2edbbe1a41830e97799b1e2d32a",
-			"name": "Proline Breaker",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "02503efd350bdcb2c0eefaa49f98c58a",
-			"name": "Putter",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "9b24b0fe4571fe790063837a4172bc68",
-			"name": "Putterdrive",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "c64c84c88b991458b38eeaaa0bbd44cb",
-			"name": "Quake",
-			"maxWeight": "179"
-		},
-		{
-			"discId": "b1aa18115590c753cd6b41341f26f1bf",
-			"name": "Reef",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "8e186b0baca79ffd79eab25c9e181793",
-			"name": "Sail",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "822b02e1b751097d290eaad55252eb81",
-			"name": "Shockwave",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "e69b86988cc9cb598e4805015553ff43",
-			"name": "Softtouch",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "e69b86988cc9cb598e4805015553ff43",
-			"name": "Softtouch",
-			"maxWeight": "195"
-		},
-		{
-			"discId": "894fc01f99e56b5efad6ff73e14d89aa",
-			"name": "Sparkle Aftershock",
-			"maxWeight": "179"
-		},
-		{
-			"discId": "de6b22e48b91062327fdba97438fc65f",
-			"name": "Sparkle Reef",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "9ede786e1e3175585aacb6d383a09aaf",
-			"name": "Steady",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "88a7a288849d5738d3eefb5528d31b7d",
-			"name": "Steady - Beadless",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "b0b71a21a3184e87fe4e5d804d743979",
-			"name": "Streamliner",
-			"maxWeight": "180"
-		},
-		{
-			"discId": "261890df190d015af0cb873bc1a75f75",
-			"name": "Super Drive",
-			"maxWeight": "194"
-		},
-		{
-			"discId": "28ea14e7d1ba6e8caab80bc6166952c3",
-			"name": "Sureshot",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "0d779f7363c613edb7eb8b713a68dc80",
-			"name": "Tempest",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "c54e6f7dd4dacc1ac5b0fa66565a4a60",
-			"name": "Titanic",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "c54e6f7dd4dacc1ac5b0fa66565a4a60",
-			"name": "Titanic",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "673299d94aecab173d7dd92565babe1f",
-			"name": "Torrent",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "68e74607c15e37d209b335c0c1b7bde4",
-			"name": "Tremor",
-			"maxWeight": "179"
-		},
-		{
-			"discId": "174147762fec5d9537f498ef166b4a59",
-			"name": "Tsunami",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "e6aec74f4889f1b0a8539ad055487b9a",
-			"name": "Ultra Hi Tech, Approach #4",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "f86b085bdf8337f0614c916178ebee44",
-			"name": "Ultra Hi Tech, Putter #5",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "399033f75fcf47d6736c9c5209222ab8",
-			"name": "Undertow",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "399033f75fcf47d6736c9c5209222ab8",
-			"name": "Undertow",
-			"maxWeight": "178"
-		}
-	]
+    "company": "Disc Golf Association",
+    "companyId": "1a0fb2bccd2d8774934f42de18a75106",
+    "discs": [
+        {
+            "discId": "2548a848eafe144b3d35a094459a8edc",
+            "name": "#1 Hi Tec",
+            "maxWeight": "180"
+        },
+        {
+            "discId": "09c8235062963ee0df051915c1ed9c4b",
+            "name": "#1 Professional Driver",
+            "maxWeight": "179"
+        },
+        {
+            "discId": "7c8f137aecb4212e220c3394a119ff6a",
+            "name": "#2 Hi Tec",
+            "maxWeight": "180"
+        },
+        {
+            "discId": "a856d962be6b0e9e7353f3fb129a4206",
+            "name": "#2 Professional Driver",
+            "maxWeight": "179"
+        },
+        {
+            "discId": "21b8e55d2f46b9c3efcf979a2324bfbf",
+            "name": "#3 Hi Tec",
+            "maxWeight": "180"
+        },
+        {
+            "discId": "f1a006a8358688845dad21701cb6f9df",
+            "name": "#3 Professional Driver",
+            "maxWeight": "179"
+        },
+        {
+            "discId": "b14ef2ecb766b73f9af9daed757489df",
+            "name": "#4 Approach",
+            "maxWeight": "179"
+        },
+        {
+            "discId": "b0e023e2b7374af79bcd177219390960",
+            "name": "#4 Hi Tec",
+            "maxWeight": "180"
+        },
+        {
+            "discId": "2b0221d2872accdaf007c72ba69f908a",
+            "name": "#5 Hi Tec",
+            "maxWeight": "180"
+        },
+        {
+            "discId": "95613a867bae01982031f3aa4a338bd3",
+            "name": "#5 Roller-Putter",
+            "maxWeight": "179"
+        },
+        {
+            "discId": "92882c9a224e34ab965385738d63d302",
+            "name": "Aftershock",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "92882c9a224e34ab965385738d63d302",
+            "name": "Aftershock",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "0bd420a223ef0865c903053eb97ff957",
+            "name": "Banzai",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "e9a177a6d9705bed4e8f285c3a88911b",
+            "name": "Blowfly II",
+            "maxWeight": "180"
+        },
+        {
+            "discId": "82a11dc0a74194d17019e6cbb6c98926",
+            "name": "Blunt \"Blowfly\"",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "cc7d5d483dd68b879a424e54765785bc",
+            "name": "DGA Factor I",
+            "maxWeight": "180"
+        },
+        {
+            "discId": "cc7d5d483dd68b879a424e54765785bc",
+            "name": "DGA Factor I",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "fa517691b398027a91235f4bb6a9404e",
+            "name": "DGA Factor IV",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "48cf24486d9a8e65a142b25682f19949",
+            "name": "Driver",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "e2ab411666fc635dd5d29fd5e143d4ef",
+            "name": "Fader",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "a57e4ce58a27f12698bc4951fd418c6b",
+            "name": "Fader 3",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "ae9a91ab39589b72770530542bee7b5a",
+            "name": "Fader II",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "ce1a89972100c528298c04380a7757c0",
+            "name": "Gumbputt",
+            "maxWeight": "180"
+        },
+        {
+            "discId": "2ad0245c6d5a228e1be1b32e8a755de9",
+            "name": "Hellfire",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "9276ebbb39f692ed22fb760b78bd673b",
+            "name": "Hooker",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "17c6115bae2de2648edea8a22105cec5",
+            "name": "Hurricane",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "17c6115bae2de2648edea8a22105cec5",
+            "name": "Hurricane",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "af55206598ce49dc07866a0324f47336",
+            "name": "Kitty Hawk",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "f8fe9ea49e9c824f2d4d5f258c3c35aa",
+            "name": "Kitty Hawk Driver",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "2d32c750077b543bf796ff9a4e209e52",
+            "name": "Kitty Hawk Putter",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "5699bfb7c9cd7f7557bb9ccbad0bc6f2",
+            "name": "Kitty Hawk Softouch",
+            "maxWeight": "195"
+        },
+        {
+            "discId": "b049371b75a8b6f93d70331c2c70f901",
+            "name": "Kitty Hawk Softouch Sureshot",
+            "maxWeight": "193"
+        },
+        {
+            "discId": "aeaeaec51b4e6b88122f10ad96a8de72",
+            "name": "Pipeline",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "bdfad2084c10fbc83d798c20b941d0eb",
+            "name": "Powerdrive",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "505b200164b26c4aad4cefb7a44dbd91",
+            "name": "Power Putter",
+            "maxWeight": "191"
+        },
+        {
+            "discId": "bd1ad2edbbe1a41830e97799b1e2d32a",
+            "name": "Proline Breaker",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "02503efd350bdcb2c0eefaa49f98c58a",
+            "name": "Putter",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "9b24b0fe4571fe790063837a4172bc68",
+            "name": "Putterdrive",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "c64c84c88b991458b38eeaaa0bbd44cb",
+            "name": "Quake",
+            "maxWeight": "179"
+        },
+        {
+            "discId": "b1aa18115590c753cd6b41341f26f1bf",
+            "name": "Reef",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "8e186b0baca79ffd79eab25c9e181793",
+            "name": "Sail",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "822b02e1b751097d290eaad55252eb81",
+            "name": "Shockwave",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "e69b86988cc9cb598e4805015553ff43",
+            "name": "Softtouch",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "e69b86988cc9cb598e4805015553ff43",
+            "name": "Softtouch",
+            "maxWeight": "195"
+        },
+        {
+            "discId": "894fc01f99e56b5efad6ff73e14d89aa",
+            "name": "Sparkle Aftershock",
+            "maxWeight": "179"
+        },
+        {
+            "discId": "de6b22e48b91062327fdba97438fc65f",
+            "name": "Sparkle Reef",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "9ede786e1e3175585aacb6d383a09aaf",
+            "name": "Steady",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "88a7a288849d5738d3eefb5528d31b7d",
+            "name": "Steady - Beadless",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "b0b71a21a3184e87fe4e5d804d743979",
+            "name": "Streamliner",
+            "maxWeight": "180"
+        },
+        {
+            "discId": "261890df190d015af0cb873bc1a75f75",
+            "name": "Super Drive",
+            "maxWeight": "194"
+        },
+        {
+            "discId": "28ea14e7d1ba6e8caab80bc6166952c3",
+            "name": "Sureshot",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "0d779f7363c613edb7eb8b713a68dc80",
+            "name": "Tempest",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "c54e6f7dd4dacc1ac5b0fa66565a4a60",
+            "name": "Titanic",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "c54e6f7dd4dacc1ac5b0fa66565a4a60",
+            "name": "Titanic",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "673299d94aecab173d7dd92565babe1f",
+            "name": "Torrent",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "68e74607c15e37d209b335c0c1b7bde4",
+            "name": "Tremor",
+            "maxWeight": "179"
+        },
+        {
+            "discId": "174147762fec5d9537f498ef166b4a59",
+            "name": "Tsunami",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "e6aec74f4889f1b0a8539ad055487b9a",
+            "name": "Ultra Hi Tech, Approach #4",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "f86b085bdf8337f0614c916178ebee44",
+            "name": "Ultra Hi Tech, Putter #5",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "399033f75fcf47d6736c9c5209222ab8",
+            "name": "Undertow",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "399033f75fcf47d6736c9c5209222ab8",
+            "name": "Undertow",
+            "maxWeight": "178"
+        }
+    ]
 }

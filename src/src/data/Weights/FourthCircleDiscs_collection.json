@@ -1,11 +1,11 @@
 {
-	"company": "Fourth Circle Discs",
-	"companyId": "72f49aabe744929a55b7c9be38c4b8df",
-	"discs": [
-		{
-			"discId": "a50562e2d44b222992575907853ac76c",
-			"name": "Taipan",
-			"maxWeight": "175"
-		}
-	]
+    "company": "Fourth Circle Discs",
+    "companyId": "72f49aabe744929a55b7c9be38c4b8df",
+    "discs": [
+        {
+            "discId": "a50562e2d44b222992575907853ac76c",
+            "name": "Taipan",
+            "maxWeight": "175"
+        }
+    ]
 }

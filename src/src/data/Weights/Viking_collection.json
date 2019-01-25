@@ -1,61 +1,61 @@
 {
-	"company": "Viking Discs (IP-Agency Finland Oy)",
-	"companyId": "f48a8f161502989fca609408a80bd754",
-	"discs": [
-		{
-			"discId": "ed4dd6cc118ab2500715cbd23b054573",
-			"name": "Axe",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "0a697cba19cd4c1974e2ee11a3c0b9c7",
-			"name": "Barbarian",
-			"maxWeight": "177"
-		},
-		{
-			"discId": "5ee5ec9d8e6b181960c2be1df5f1ad81",
-			"name": "Berserker",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "2c0847f66f16adcc6ddf93f1db5827e7",
-			"name": "Cosmos",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "d39d7a2bb6d430fd238a6aedc7f0cee2",
-			"name": "Knife",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "65f608ef8de2db23e6532165eab49900",
-			"name": "Loki",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "1268db3870b3390265a7f4cb8ea33db8",
-			"name": "Nordic Warrior",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "40d57ba713628f3f1ef5ef204b6d76d2",
-			"name": "Ragnarok",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "201011842cd44b96c4ed73dcff80ac1f",
-			"name": "Rune",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "bcede9a59d312eee69efcc6df53b855c",
-			"name": "Thunder God Thor",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "87584f7e2bc94097b614d00a672c8833",
-			"name": "Valhalla",
-			"maxWeight": "177"
-		}
-	]
+    "company": "Viking Discs (IP-Agency Finland Oy)",
+    "companyId": "f48a8f161502989fca609408a80bd754",
+    "discs": [
+        {
+            "discId": "ed4dd6cc118ab2500715cbd23b054573",
+            "name": "Axe",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "0a697cba19cd4c1974e2ee11a3c0b9c7",
+            "name": "Barbarian",
+            "maxWeight": "177"
+        },
+        {
+            "discId": "5ee5ec9d8e6b181960c2be1df5f1ad81",
+            "name": "Berserker",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "2c0847f66f16adcc6ddf93f1db5827e7",
+            "name": "Cosmos",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "d39d7a2bb6d430fd238a6aedc7f0cee2",
+            "name": "Knife",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "65f608ef8de2db23e6532165eab49900",
+            "name": "Loki",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "1268db3870b3390265a7f4cb8ea33db8",
+            "name": "Nordic Warrior",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "40d57ba713628f3f1ef5ef204b6d76d2",
+            "name": "Ragnarok",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "201011842cd44b96c4ed73dcff80ac1f",
+            "name": "Rune",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "bcede9a59d312eee69efcc6df53b855c",
+            "name": "Thunder God Thor",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "87584f7e2bc94097b614d00a672c8833",
+            "name": "Valhalla",
+            "maxWeight": "177"
+        }
+    ]
 }

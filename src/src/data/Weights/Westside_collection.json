@@ -1,211 +1,211 @@
 {
-	"company": "Westside Golf Discs",
-	"companyId": "3ecdfb60164ee6f0d82f55cc074a28b4",
-	"discs": [
-		{
-			"discId": "a40a8e6fb07f9b795d09f2dff35b7eb1",
-			"name": "Ahti",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "762ee0989af33569108ad1e457093045",
-			"name": "Anvil",
-			"maxWeight": "177"
-		},
-		{
-			"discId": "51a547788c5ebad8e66b330b9fa747c5",
-			"name": "Bard",
-			"maxWeight": "180"
-		},
-		{
-			"discId": "2de17903dd974000434859ddb9e16e69",
-			"name": "Boatman",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "9c760be2476c3c28d84fa953b525db6a",
-			"name": "Boatman VIP Air",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "30f5429a00d4e7da5c060b429e94993e",
-			"name": "Catapult",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "e95a34ce4e7feb3a2939c52ddac5d175",
-			"name": "Crown",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "96407ff0f2171305556432c8a7031bb8",
-			"name": "Destiny",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "3cfbf3022c9e476ea09ebc7ce6d81a8f",
-			"name": "Fortress",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "6ff015f9a4c7dc3387263aa1a819131f",
-			"name": "Giant",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "8350d18f398368c8b77e647ee446cfab",
-			"name": "Giant VIP Air",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "0015d99e65183977a9e65547b37f1cb5",
-			"name": "Harp",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "dc0cb51764a6d220fc314141ea68ebff",
-			"name": "Hatchet",
-			"maxWeight": "177"
-		},
-		{
-			"discId": "719ef271d38a388fd7b2bc967f4bd885",
-			"name": "King",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "12b618bfe1a6c49f04b851a6aedfd8f1",
-			"name": "King VIP Air",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "6646ae62f7a1756013f34b18e417ac92",
-			"name": "Longbowman",
-			"maxWeight": "177"
-		},
-		{
-			"discId": "d6182c2fac305a56db89613f408882c3",
-			"name": "Maiden",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "dd5aee407850e8289bd215f45650f01f",
-			"name": "Northman",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "c66e9b212c45e8b4c09be1a9a779e024",
-			"name": "Northman VIP Air",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "2e32836d6064df9ab7963266c16a6f34",
-			"name": "Pine",
-			"maxWeight": "180"
-		},
-		{
-			"discId": "2c2d2c0291163b077a372c2a9c5a6eda",
-			"name": "Queen",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "efabdb74bf88b1f4165f3e2d0fa9b8b8",
-			"name": "Sampo",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "2e2bc5f26a024d524179c31484460218",
-			"name": "Seer",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "970da5f1f2e32aeb9e488dd017160ab4",
-			"name": "Shield",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "f52ed02e39529973298852a9e0c7087e",
-			"name": "Sling",
-			"maxWeight": "181"
-		},
-		{
-			"discId": "35205ec0ae25c4351599e41f29da7188",
-			"name": "Stag",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "9168967e63a753bdf3dbce63f3dfb2cf",
-			"name": "Stag VIP Air",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "39babca9e3d0ceda5051773a25fe2a4f",
-			"name": "Sorcerer",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "b87078849a142e1b00db02744b4848a6",
-			"name": "Swan",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "b87078849a142e1b00db02744b4848a6",
-			"name": "Swan",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "b6f39b7dbd7378f5ef673e4f2b19e176",
-			"name": "Swan Reborn",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "6c198603789a4928477eccd5d550b6b2",
-			"name": "Sword",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "eb4335e463cbeecc61f1964389e7b38b",
-			"name": "Sword VIP Air",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "3ae22b3e2110e080aa50addf53348c91",
-			"name": "Tursas",
-			"maxWeight": "180"
-		},
-		{
-			"discId": "59a2ba5a3c4a06839b66b3918cf75bdf",
-			"name": "Tursas VIP Air",
-			"maxWeight": "179"
-		},
-		{
-			"discId": "46ccac1474d000676430445ffc4b160a",
-			"name": "Underworld",
-			"maxWeight": "177"
-		},
-		{
-			"discId": "13ecf901a35c126f9a944448277184fd",
-			"name": "Underworld VIP Air",
-			"maxWeight": "177"
-		},
-		{
-			"discId": "00cf20699546cf94c9b80e773fb0051b",
-			"name": "War Horse",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "e520e0b54cb18625457ca0b3d7a43fd2",
-			"name": "Warship",
-			"maxWeight": "180"
-		},
-		{
-			"discId": "7971184368fdcf8be505765a681cf71b",
-			"name": "Warship VIP Air",
-			"maxWeight": "180"
-		},
-		{
-			"discId": "f5a7924e621e84c9280a9a27e1bcb7f6",
-			"name": "World",
-			"maxWeight": "176"
-		}
-	]
+    "company": "Westside Golf Discs",
+    "companyId": "3ecdfb60164ee6f0d82f55cc074a28b4",
+    "discs": [
+        {
+            "discId": "a40a8e6fb07f9b795d09f2dff35b7eb1",
+            "name": "Ahti",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "762ee0989af33569108ad1e457093045",
+            "name": "Anvil",
+            "maxWeight": "177"
+        },
+        {
+            "discId": "51a547788c5ebad8e66b330b9fa747c5",
+            "name": "Bard",
+            "maxWeight": "180"
+        },
+        {
+            "discId": "2de17903dd974000434859ddb9e16e69",
+            "name": "Boatman",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "9c760be2476c3c28d84fa953b525db6a",
+            "name": "Boatman VIP Air",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "30f5429a00d4e7da5c060b429e94993e",
+            "name": "Catapult",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "e95a34ce4e7feb3a2939c52ddac5d175",
+            "name": "Crown",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "96407ff0f2171305556432c8a7031bb8",
+            "name": "Destiny",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "3cfbf3022c9e476ea09ebc7ce6d81a8f",
+            "name": "Fortress",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "6ff015f9a4c7dc3387263aa1a819131f",
+            "name": "Giant",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "8350d18f398368c8b77e647ee446cfab",
+            "name": "Giant VIP Air",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "0015d99e65183977a9e65547b37f1cb5",
+            "name": "Harp",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "dc0cb51764a6d220fc314141ea68ebff",
+            "name": "Hatchet",
+            "maxWeight": "177"
+        },
+        {
+            "discId": "719ef271d38a388fd7b2bc967f4bd885",
+            "name": "King",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "12b618bfe1a6c49f04b851a6aedfd8f1",
+            "name": "King VIP Air",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "6646ae62f7a1756013f34b18e417ac92",
+            "name": "Longbowman",
+            "maxWeight": "177"
+        },
+        {
+            "discId": "d6182c2fac305a56db89613f408882c3",
+            "name": "Maiden",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "dd5aee407850e8289bd215f45650f01f",
+            "name": "Northman",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "c66e9b212c45e8b4c09be1a9a779e024",
+            "name": "Northman VIP Air",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "2e32836d6064df9ab7963266c16a6f34",
+            "name": "Pine",
+            "maxWeight": "180"
+        },
+        {
+            "discId": "2c2d2c0291163b077a372c2a9c5a6eda",
+            "name": "Queen",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "efabdb74bf88b1f4165f3e2d0fa9b8b8",
+            "name": "Sampo",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "2e2bc5f26a024d524179c31484460218",
+            "name": "Seer",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "970da5f1f2e32aeb9e488dd017160ab4",
+            "name": "Shield",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "f52ed02e39529973298852a9e0c7087e",
+            "name": "Sling",
+            "maxWeight": "181"
+        },
+        {
+            "discId": "35205ec0ae25c4351599e41f29da7188",
+            "name": "Stag",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "9168967e63a753bdf3dbce63f3dfb2cf",
+            "name": "Stag VIP Air",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "39babca9e3d0ceda5051773a25fe2a4f",
+            "name": "Sorcerer",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "b87078849a142e1b00db02744b4848a6",
+            "name": "Swan",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "b87078849a142e1b00db02744b4848a6",
+            "name": "Swan",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "b6f39b7dbd7378f5ef673e4f2b19e176",
+            "name": "Swan Reborn",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "6c198603789a4928477eccd5d550b6b2",
+            "name": "Sword",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "eb4335e463cbeecc61f1964389e7b38b",
+            "name": "Sword VIP Air",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "3ae22b3e2110e080aa50addf53348c91",
+            "name": "Tursas",
+            "maxWeight": "180"
+        },
+        {
+            "discId": "59a2ba5a3c4a06839b66b3918cf75bdf",
+            "name": "Tursas VIP Air",
+            "maxWeight": "179"
+        },
+        {
+            "discId": "46ccac1474d000676430445ffc4b160a",
+            "name": "Underworld",
+            "maxWeight": "177"
+        },
+        {
+            "discId": "13ecf901a35c126f9a944448277184fd",
+            "name": "Underworld VIP Air",
+            "maxWeight": "177"
+        },
+        {
+            "discId": "00cf20699546cf94c9b80e773fb0051b",
+            "name": "War Horse",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "e520e0b54cb18625457ca0b3d7a43fd2",
+            "name": "Warship",
+            "maxWeight": "180"
+        },
+        {
+            "discId": "7971184368fdcf8be505765a681cf71b",
+            "name": "Warship VIP Air",
+            "maxWeight": "180"
+        },
+        {
+            "discId": "f5a7924e621e84c9280a9a27e1bcb7f6",
+            "name": "World",
+            "maxWeight": "176"
+        }
+    ]
 }

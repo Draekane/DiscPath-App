@@ -1,26 +1,26 @@
 {
-	"company": "Skyquest Discs",
-	"companyId": "15ee4daa75bfbd64ca36fe351e255038",
-	"discs": [
-		{
-			"discId": "233c3aabe198603a6d75dc624bc14097",
-			"name": "Chainzilla",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "519473b04c6c9a142d4a9dea1a3b9d33",
-			"name": "L13",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "519473b04c6c9a142d4a9dea1a3b9d33",
-			"name": "L13",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "68e064a1e7c8e7eeea682a09049a1400",
-			"name": "Medusa",
-			"maxWeight": "176"
-		}
-	]
+    "company": "Skyquest Discs",
+    "companyId": "15ee4daa75bfbd64ca36fe351e255038",
+    "discs": [
+        {
+            "discId": "233c3aabe198603a6d75dc624bc14097",
+            "name": "Chainzilla",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "519473b04c6c9a142d4a9dea1a3b9d33",
+            "name": "L13",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "519473b04c6c9a142d4a9dea1a3b9d33",
+            "name": "L13",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "68e064a1e7c8e7eeea682a09049a1400",
+            "name": "Medusa",
+            "maxWeight": "176"
+        }
+    ]
 }

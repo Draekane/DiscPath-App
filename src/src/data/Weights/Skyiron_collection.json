@@ -1,11 +1,11 @@
 {
-	"company": "Skyiron",
-	"companyId": "230333552fce62f48eb17e781b8ab605",
-	"discs": [
-		{
-			"discId": "c84f52a0c82fcb7a24b1adb18d34f5e3",
-			"name": "Flagship",
-			"maxWeight": "178"
-		}
-	]
+    "company": "Skyiron",
+    "companyId": "230333552fce62f48eb17e781b8ab605",
+    "discs": [
+        {
+            "discId": "c84f52a0c82fcb7a24b1adb18d34f5e3",
+            "name": "Flagship",
+            "maxWeight": "178"
+        }
+    ]
 }

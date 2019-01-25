@@ -1,51 +1,51 @@
 {
-	"company": "RPM Discs/Disc Golf Aotearoa",
-	"companyId": "5f0bc1cebc12c343bd0cc1cddf012e2a",
-	"discs": [
-		{
-			"discId": "8eda1196d04a460dd7d43c3df6c98782",
-			"name": "Arcturus",
-			"maxWeight": "181"
-		},
-		{
-			"discId": "d0aa5acce64468f26ff2b42ec5489314",
-			"name": "Kahu",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "483eb090f5bff6eb65358c10494d66b9",
-			"name": "Kea",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "ac546ed5e107edc223bd5a2541a0c5e9",
-			"name": "New Zealand 175g Ultimate Disc",
-			"maxWeight": "200"
-		},
-		{
-			"discId": "6cb576ec13726583fab7df279410f9b2",
-			"name": "Raptor",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "ddac0bfa21c086ffd64b4dc42f6034f9",
-			"name": "Rippa",
-			"maxWeight": "188"
-		},
-		{
-			"discId": "16a9d08f60bdb3390972e619bf71ecb5",
-			"name": "Ruru",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "e565b5c0700bd797e017ab042720404e",
-			"name": "Temoko",
-			"maxWeight": "197"
-		},
-		{
-			"discId": "9e85181ac3f10499ff3a66980f48c7cb",
-			"name": "Tui",
-			"maxWeight": "175"
-		}
-	]
+    "company": "RPM Discs/Disc Golf Aotearoa",
+    "companyId": "5f0bc1cebc12c343bd0cc1cddf012e2a",
+    "discs": [
+        {
+            "discId": "8eda1196d04a460dd7d43c3df6c98782",
+            "name": "Arcturus",
+            "maxWeight": "181"
+        },
+        {
+            "discId": "d0aa5acce64468f26ff2b42ec5489314",
+            "name": "Kahu",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "483eb090f5bff6eb65358c10494d66b9",
+            "name": "Kea",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "ac546ed5e107edc223bd5a2541a0c5e9",
+            "name": "New Zealand 175g Ultimate Disc",
+            "maxWeight": "200"
+        },
+        {
+            "discId": "6cb576ec13726583fab7df279410f9b2",
+            "name": "Raptor",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "ddac0bfa21c086ffd64b4dc42f6034f9",
+            "name": "Rippa",
+            "maxWeight": "188"
+        },
+        {
+            "discId": "16a9d08f60bdb3390972e619bf71ecb5",
+            "name": "Ruru",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "e565b5c0700bd797e017ab042720404e",
+            "name": "Temoko",
+            "maxWeight": "197"
+        },
+        {
+            "discId": "9e85181ac3f10499ff3a66980f48c7cb",
+            "name": "Tui",
+            "maxWeight": "175"
+        }
+    ]
 }

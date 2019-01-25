@@ -1,71 +1,71 @@
 {
-	"company": "Prodiscus",
-	"companyId": "f9fad85384d427e052721620d227a784",
-	"discs": [
-		{
-			"discId": "608c923bc246bacc64fcea18ea4be0b7",
-			"name": "FASTi",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "6cff59345733d2e9a189160a509a9c79",
-			"name": "FLIPPERi",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "8f5e4c67fa68eccc7775cdb1b51d5dce",
-			"name": "Jokeri",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "3f56fdb758ce287a06f0d18f0cb98c33",
-			"name": "Laseri",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "6a432b546ddbbae3a0247776f49af2f4",
-			"name": "Legenda",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "e42b54a27167fe48cdd412b2030fb4f1",
-			"name": "Midari",
-			"maxWeight": "179"
-		},
-		{
-			"discId": "e0191c0a15149109f30714db335d6a8c",
-			"name": "Razeri",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "d9cd96b636474c6d8a20e975d7fd2bcd",
-			"name": "Respecti",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "15e8bfff2c10ca22da244d85b2bf7d94",
-			"name": "Rocket",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "118f1e4ef769f983f6c428ec04f2a253",
-			"name": "Slaidi",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "1728d316289a8302c0438a42389e8eb0",
-			"name": "Sparta",
-			"maxWeight": "177"
-		},
-		{
-			"discId": "f70b3954adfbf935ee18ef03ae6bfa0f",
-			"name": "STARi",
-			"maxWeight": "179"
-		},
-		{
-			"discId": "e2bb3f9679fec6d4836fcf8abcc3eeac",
-			"name": "Titan",
-			"maxWeight": "176"
-		}
-	]
+    "company": "Prodiscus",
+    "companyId": "f9fad85384d427e052721620d227a784",
+    "discs": [
+        {
+            "discId": "608c923bc246bacc64fcea18ea4be0b7",
+            "name": "FASTi",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "6cff59345733d2e9a189160a509a9c79",
+            "name": "FLIPPERi",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "8f5e4c67fa68eccc7775cdb1b51d5dce",
+            "name": "Jokeri",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "3f56fdb758ce287a06f0d18f0cb98c33",
+            "name": "Laseri",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "6a432b546ddbbae3a0247776f49af2f4",
+            "name": "Legenda",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "e42b54a27167fe48cdd412b2030fb4f1",
+            "name": "Midari",
+            "maxWeight": "179"
+        },
+        {
+            "discId": "e0191c0a15149109f30714db335d6a8c",
+            "name": "Razeri",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "d9cd96b636474c6d8a20e975d7fd2bcd",
+            "name": "Respecti",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "15e8bfff2c10ca22da244d85b2bf7d94",
+            "name": "Rocket",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "118f1e4ef769f983f6c428ec04f2a253",
+            "name": "Slaidi",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "1728d316289a8302c0438a42389e8eb0",
+            "name": "Sparta",
+            "maxWeight": "177"
+        },
+        {
+            "discId": "f70b3954adfbf935ee18ef03ae6bfa0f",
+            "name": "STARi",
+            "maxWeight": "179"
+        },
+        {
+            "discId": "e2bb3f9679fec6d4836fcf8abcc3eeac",
+            "name": "Titan",
+            "maxWeight": "176"
+        }
+    ]
 }

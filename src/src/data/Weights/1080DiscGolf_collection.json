@@ -1,11 +1,11 @@
 {
-	"company": "1080 Disc Golf",
-	"companyId": "f2739fddd43b5b2221020b56cfcfac3f",
-	"discs": [
-		{
-			"discId": "d1106ccca74e98877ed6d7890c70bb2c",
-			"name": "Radius",
-			"maxWeight": "175"
-		}
-	]
+    "company": "1080 Disc Golf",
+    "companyId": "f2739fddd43b5b2221020b56cfcfac3f",
+    "discs": [
+        {
+            "discId": "d1106ccca74e98877ed6d7890c70bb2c",
+            "name": "Radius",
+            "maxWeight": "175"
+        }
+    ]
 }

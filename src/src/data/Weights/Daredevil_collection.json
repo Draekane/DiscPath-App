@@ -1,126 +1,126 @@
 {
-	"company": "Daredevil Discs",
-	"companyId": "7b5f57a359d56697e7031b9c98948e5c",
-	"discs": [
-		{
-			"discId": "2c7c7cfc6fda13471aba25999f4d9088",
-			"name": "Albatross",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "4f7ac800f78d2ac09a74533d8b6d3149",
-			"name": "Beaver",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "e27c35ae3898e680348baff75e902b20",
-			"name": "Bigfoot",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "744a1a8fbc15d7fc65b2273789bd5577",
-			"name": "Bighorn",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "f60acd6991c212d2881fc542bab5fd10",
-			"name": "Buffalo",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "ddf1327d54fb43fca9350a82eb72e12b",
-			"name": "Caribou",
-			"maxWeight": "181"
-		},
-		{
-			"discId": "30c07312d4c5a440a4135d1c3648fdb8",
-			"name": "Gamedisc",
-			"maxWeight": "200"
-		},
-		{
-			"discId": "e6aafc63857fa679362236e988058ec2",
-			"name": "Gray Jay",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "ed058c379e189a2f746c6aaf54929c3e",
-			"name": "Great Horned Owl",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "655c522b43d1444e55a0a4615c2b59b7",
-			"name": "Grizzly",
-			"maxWeight": "182"
-		},
-		{
-			"discId": "f0ecadf7bd19d55ed082cf51f9aef16d",
-			"name": "Mammoth",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "51148471b778017b70ba6f85a452dd17",
-			"name": "Merlin",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "030acfd68d0c19e8b0f891a8c0b525a1",
-			"name": "Moose",
-			"maxWeight": "181"
-		},
-		{
-			"discId": "fa3fa5deffd6808abff1c4cf9fc07e6f",
-			"name": "Ogopogo",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "b265b39a077f344551fc6ff4518c142c",
-			"name": "Polar Bear",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "34c6a962590c840e9b679553472ddf22",
-			"name": "Pteranodon",
-			"maxWeight": "179"
-		},
-		{
-			"discId": "52c22e4eb689fa9a542964eed8a63168",
-			"name": "Sabertooth",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "283477b8fb7f326076d8f850d6bb2e88",
-			"name": "Sasquatch",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "daa2e0b4e425ca0d83636bb7adb1a2c7",
-			"name": "Swift Fox",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "4a2f074112d0eaa33a0244a5f0796f76",
-			"name": "Timberwolf",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "8f46a03b12aba3fdbfe71920d4d801e7",
-			"name": "Walrus",
-			"maxWeight": "181"
-		},
-		{
-			"discId": "7b5f17f02b8f6a6a89b529b6f791f3cc",
-			"name": "Wolverine",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "c72f7e9030a283daad6b96090f86a0ea",
-			"name": "Woodchuck",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "9cb073d5208162d71991a6077288e01e",
-			"name": "Yeti",
-			"maxWeight": "175"
-		}
-	]
+    "company": "Daredevil Discs",
+    "companyId": "7b5f57a359d56697e7031b9c98948e5c",
+    "discs": [
+        {
+            "discId": "2c7c7cfc6fda13471aba25999f4d9088",
+            "name": "Albatross",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "4f7ac800f78d2ac09a74533d8b6d3149",
+            "name": "Beaver",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "e27c35ae3898e680348baff75e902b20",
+            "name": "Bigfoot",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "744a1a8fbc15d7fc65b2273789bd5577",
+            "name": "Bighorn",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "f60acd6991c212d2881fc542bab5fd10",
+            "name": "Buffalo",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "ddf1327d54fb43fca9350a82eb72e12b",
+            "name": "Caribou",
+            "maxWeight": "181"
+        },
+        {
+            "discId": "30c07312d4c5a440a4135d1c3648fdb8",
+            "name": "Gamedisc",
+            "maxWeight": "200"
+        },
+        {
+            "discId": "e6aafc63857fa679362236e988058ec2",
+            "name": "Gray Jay",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "ed058c379e189a2f746c6aaf54929c3e",
+            "name": "Great Horned Owl",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "655c522b43d1444e55a0a4615c2b59b7",
+            "name": "Grizzly",
+            "maxWeight": "182"
+        },
+        {
+            "discId": "f0ecadf7bd19d55ed082cf51f9aef16d",
+            "name": "Mammoth",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "51148471b778017b70ba6f85a452dd17",
+            "name": "Merlin",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "030acfd68d0c19e8b0f891a8c0b525a1",
+            "name": "Moose",
+            "maxWeight": "181"
+        },
+        {
+            "discId": "fa3fa5deffd6808abff1c4cf9fc07e6f",
+            "name": "Ogopogo",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "b265b39a077f344551fc6ff4518c142c",
+            "name": "Polar Bear",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "34c6a962590c840e9b679553472ddf22",
+            "name": "Pteranodon",
+            "maxWeight": "179"
+        },
+        {
+            "discId": "52c22e4eb689fa9a542964eed8a63168",
+            "name": "Sabertooth",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "283477b8fb7f326076d8f850d6bb2e88",
+            "name": "Sasquatch",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "daa2e0b4e425ca0d83636bb7adb1a2c7",
+            "name": "Swift Fox",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "4a2f074112d0eaa33a0244a5f0796f76",
+            "name": "Timberwolf",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "8f46a03b12aba3fdbfe71920d4d801e7",
+            "name": "Walrus",
+            "maxWeight": "181"
+        },
+        {
+            "discId": "7b5f17f02b8f6a6a89b529b6f791f3cc",
+            "name": "Wolverine",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "c72f7e9030a283daad6b96090f86a0ea",
+            "name": "Woodchuck",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "9cb073d5208162d71991a6077288e01e",
+            "name": "Yeti",
+            "maxWeight": "175"
+        }
+    ]
 }

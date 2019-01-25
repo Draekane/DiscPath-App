@@ -1,101 +1,101 @@
 {
-	"company": "Yikun Sports",
-	"companyId": "7586a3981f0e9bd98d5cbb1641eade92",
-	"discs": [
-		{
-			"discId": "b8f3165b425aafb49e12c497796c6e6b",
-			"name": "135G UltiPro Junior Ultimate disc",
-			"maxWeight": "199"
-		},
-		{
-			"discId": "4a131b1c3176d834bb7e4c1c76fc8bb1",
-			"name": "150G WaKa Freestyle Disc",
-			"maxWeight": "200"
-		},
-		{
-			"discId": "973dc56896455a6e483344d4511dc318",
-			"name": "175G UltiPro Ultimate Disc",
-			"maxWeight": "200"
-		},
-		{
-			"discId": "1de085de1da2f0c5f6c05de8a3d2b2d1",
-			"name": "Claws",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "ecd03afff3ba51979312a1114f791d13",
-			"name": "Crossbow",
-			"maxWeight": "177"
-		},
-		{
-			"discId": "107d7962e8cf68a9b80c09e477157f4e",
-			"name": "Da'e",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "655ee5bac05926e6f9c0ac17d629aa29",
-			"name": "Gou",
-			"maxWeight": "177"
-		},
-		{
-			"discId": "4532438350365f4f46d2c20d43a6246c",
-			"name": "Gui",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "e16aadf94681c0f97fa7a25d37e3c8c9",
-			"name": "Hammer",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "9fabec19f0ee826f7822ccd41dd4f553",
-			"name": "Hu",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "9c0ed21e6f4d9f0ae25a10d918bcec6a",
-			"name": "Jiao",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "eb4b40c1221dad5b23fe7ef84d292be1",
-			"name": "Jun",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "bf94cc52b38f186872942ca2a969f956",
-			"name": "Kui",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "b3a17f7c339aaaad2c632e168123c7bc",
-			"name": "Lu",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "e07af1c614934165914f7c456b1383d3",
-			"name": "Twin Swords",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "4351cfebe4b61d8aa5efa1d020710005",
-			"name": "View",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "d244953cca638489363cf2e17669faf0",
-			"name": "Wei",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "703e7b3b4e2a07715552e466e0d231bd",
-			"name": "Wings",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "7e170de074e1630348aec1364ac26c3d",
-			"name": "Yao",
-			"maxWeight": "179"
-		}
-	]
+    "company": "Yikun Sports",
+    "companyId": "7586a3981f0e9bd98d5cbb1641eade92",
+    "discs": [
+        {
+            "discId": "b8f3165b425aafb49e12c497796c6e6b",
+            "name": "135G UltiPro Junior Ultimate disc",
+            "maxWeight": "199"
+        },
+        {
+            "discId": "4a131b1c3176d834bb7e4c1c76fc8bb1",
+            "name": "150G WaKa Freestyle Disc",
+            "maxWeight": "200"
+        },
+        {
+            "discId": "973dc56896455a6e483344d4511dc318",
+            "name": "175G UltiPro Ultimate Disc",
+            "maxWeight": "200"
+        },
+        {
+            "discId": "1de085de1da2f0c5f6c05de8a3d2b2d1",
+            "name": "Claws",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "ecd03afff3ba51979312a1114f791d13",
+            "name": "Crossbow",
+            "maxWeight": "177"
+        },
+        {
+            "discId": "107d7962e8cf68a9b80c09e477157f4e",
+            "name": "Da'e",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "655ee5bac05926e6f9c0ac17d629aa29",
+            "name": "Gou",
+            "maxWeight": "177"
+        },
+        {
+            "discId": "4532438350365f4f46d2c20d43a6246c",
+            "name": "Gui",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "e16aadf94681c0f97fa7a25d37e3c8c9",
+            "name": "Hammer",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "9fabec19f0ee826f7822ccd41dd4f553",
+            "name": "Hu",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "9c0ed21e6f4d9f0ae25a10d918bcec6a",
+            "name": "Jiao",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "eb4b40c1221dad5b23fe7ef84d292be1",
+            "name": "Jun",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "bf94cc52b38f186872942ca2a969f956",
+            "name": "Kui",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "b3a17f7c339aaaad2c632e168123c7bc",
+            "name": "Lu",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "e07af1c614934165914f7c456b1383d3",
+            "name": "Twin Swords",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "4351cfebe4b61d8aa5efa1d020710005",
+            "name": "View",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "d244953cca638489363cf2e17669faf0",
+            "name": "Wei",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "703e7b3b4e2a07715552e466e0d231bd",
+            "name": "Wings",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "7e170de074e1630348aec1364ac26c3d",
+            "name": "Yao",
+            "maxWeight": "179"
+        }
+    ]
 }

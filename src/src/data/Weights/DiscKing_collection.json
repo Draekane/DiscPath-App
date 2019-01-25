@@ -1,11 +1,11 @@
 {
-	"company": "Disc King",
-	"companyId": "a10786a56f3e403a013ad7e89cccc4b3",
-	"discs": [
-		{
-			"discId": "976472a144efa6a4b849b24ac6b18867",
-			"name": "Lex",
-			"maxWeight": "178"
-		}
-	]
+    "company": "Disc King",
+    "companyId": "a10786a56f3e403a013ad7e89cccc4b3",
+    "discs": [
+        {
+            "discId": "976472a144efa6a4b849b24ac6b18867",
+            "name": "Lex",
+            "maxWeight": "178"
+        }
+    ]
 }

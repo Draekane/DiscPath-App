@@ -1,141 +1,141 @@
 {
-	"company": "Discmania",
-	"companyId": "5e272b85d88b26446ca50ccf0ee3bfa8",
-	"discs": [
-		{
-			"discId": "7fefa3b00e48b633c584a7bde3213180",
-			"name": "CD - Craze",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "60b9fa9d87234916f3dd74101692caef",
-			"name": "CD2",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "6b886f369df82183feae4dec719e235f",
-			"name": "CD3",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "c22fe2c05239f8f9ca0988afae1fa42d",
-			"name": "DD - Hysteria",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "db9cc1ea36f811fdad47185fd60adc09",
-			"name": "DD2 - Frenzy",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "0c5eb0a289ddfdae1760e7cad2236290",
-			"name": "DDx",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "4e8a1e83c747a52cff7532a2ba350707",
-			"name": "FD - Jackal",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "011ea09d9037f25e712e7be51e1f020c",
-			"name": "FD2",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "011ea09d9037f25e712e7be51e1f020c",
-			"name": "FD2",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "77636ec199ab34ee882c7d7616f12943",
-			"name": "FD3",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "7dc10e66da5549d351765bd940b81be9",
-			"name": "MD",
-			"maxWeight": "181"
-		},
-		{
-			"discId": "4ee0cbc1a9df94685f2fa0b14b717678",
-			"name": "MD1 - Midrange Driver",
-			"maxWeight": "180"
-		},
-		{
-			"discId": "1a9b8fa7bd2a02f1a5e29650f766925d",
-			"name": "MD2 - Fiend",
-			"maxWeight": "180"
-		},
-		{
-			"discId": "698f81b30802c9199d774710e0ddc627",
-			"name": "MD3 - Midrange Driver",
-			"maxWeight": "181"
-		},
-		{
-			"discId": "59b6d1f8ea235402832256aa62415fe0",
-			"name": "MD4",
-			"maxWeight": "180"
-		},
-		{
-			"discId": "7f138a09169b250e9dcb378140907378",
-			"name": "MD5",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "3a0142e2eb902835ce7c4eb225740b34",
-			"name": "P1 - Maniac",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "bc09bd666a4ca3ed6ab6ac5c6e7d225d",
-			"name": "P1x",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "2e7f5018f385fb39defc1add514e62a3",
-			"name": "P2 - Psycho",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "e7b452dc33f4a607ac7df13877a36480",
-			"name": "P3 - Putt & Approach",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "d5d3d06abf7b70536339815b6833ffb8",
-			"name": "P3x",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "41127a034d31473c78ec61fd37051a4b",
-			"name": "PD - Freak",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "f55707d3047c5f825bb660edc67cccd2",
-			"name": "PDx",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "0cba8e7339e29d753048c6ee3918ec59",
-			"name": "PD2 - Chaos",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "8ced4432d1e77ebe5f5be9fb355ce864",
-			"name": "TD - Rush",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "3d62aa9510e33c23b7ce8458700b645d",
-			"name": "TD2 - Fever",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "22f2d86d4f1860c21534d86702fb2eb7",
-			"name": "TDx",
-			"maxWeight": "175"
-		}
-	]
+    "company": "Discmania",
+    "companyId": "5e272b85d88b26446ca50ccf0ee3bfa8",
+    "discs": [
+        {
+            "discId": "7fefa3b00e48b633c584a7bde3213180",
+            "name": "CD - Craze",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "60b9fa9d87234916f3dd74101692caef",
+            "name": "CD2",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "6b886f369df82183feae4dec719e235f",
+            "name": "CD3",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "c22fe2c05239f8f9ca0988afae1fa42d",
+            "name": "DD - Hysteria",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "db9cc1ea36f811fdad47185fd60adc09",
+            "name": "DD2 - Frenzy",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "0c5eb0a289ddfdae1760e7cad2236290",
+            "name": "DDx",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "4e8a1e83c747a52cff7532a2ba350707",
+            "name": "FD - Jackal",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "011ea09d9037f25e712e7be51e1f020c",
+            "name": "FD2",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "011ea09d9037f25e712e7be51e1f020c",
+            "name": "FD2",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "77636ec199ab34ee882c7d7616f12943",
+            "name": "FD3",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "7dc10e66da5549d351765bd940b81be9",
+            "name": "MD",
+            "maxWeight": "181"
+        },
+        {
+            "discId": "4ee0cbc1a9df94685f2fa0b14b717678",
+            "name": "MD1 - Midrange Driver",
+            "maxWeight": "180"
+        },
+        {
+            "discId": "1a9b8fa7bd2a02f1a5e29650f766925d",
+            "name": "MD2 - Fiend",
+            "maxWeight": "180"
+        },
+        {
+            "discId": "698f81b30802c9199d774710e0ddc627",
+            "name": "MD3 - Midrange Driver",
+            "maxWeight": "181"
+        },
+        {
+            "discId": "59b6d1f8ea235402832256aa62415fe0",
+            "name": "MD4",
+            "maxWeight": "180"
+        },
+        {
+            "discId": "7f138a09169b250e9dcb378140907378",
+            "name": "MD5",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "3a0142e2eb902835ce7c4eb225740b34",
+            "name": "P1 - Maniac",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "bc09bd666a4ca3ed6ab6ac5c6e7d225d",
+            "name": "P1x",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "2e7f5018f385fb39defc1add514e62a3",
+            "name": "P2 - Psycho",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "e7b452dc33f4a607ac7df13877a36480",
+            "name": "P3 - Putt & Approach",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "d5d3d06abf7b70536339815b6833ffb8",
+            "name": "P3x",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "41127a034d31473c78ec61fd37051a4b",
+            "name": "PD - Freak",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "f55707d3047c5f825bb660edc67cccd2",
+            "name": "PDx",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "0cba8e7339e29d753048c6ee3918ec59",
+            "name": "PD2 - Chaos",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "8ced4432d1e77ebe5f5be9fb355ce864",
+            "name": "TD - Rush",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "3d62aa9510e33c23b7ce8458700b645d",
+            "name": "TD2 - Fever",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "22f2d86d4f1860c21534d86702fb2eb7",
+            "name": "TDx",
+            "maxWeight": "175"
+        }
+    ]
 }

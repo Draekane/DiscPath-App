@@ -1,221 +1,221 @@
 {
-	"company": "Lightning Discs",
-	"companyId": "457ba641340a812b28f949a26fca3e7b",
-	"discs": [
-		{
-			"discId": "27c7a71d1d7ddc13a9cf6d80b7827bc4",
-			"name": "#1 Flyer",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "4e664323e6601a9ba1c57ad00d3e7858",
-			"name": "#1 Helix",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "6583c6d03bdc5b151bf846d46635774e",
-			"name": "#1 Hookshot",
-			"maxWeight": "184"
-		},
-		{
-			"discId": "a32984084da4c10c4e5dbc8edf39b402",
-			"name": "#1 Hyzer",
-			"maxWeight": "180"
-		},
-		{
-			"discId": "e5519b3d4e8c21a59f64c58607e2ae96",
-			"name": "#1 Roller",
-			"maxWeight": "180"
-		},
-		{
-			"discId": "81dca8d72e4cd45bb4026ac0e9617920",
-			"name": "#1 Slice",
-			"maxWeight": "188"
-		},
-		{
-			"discId": "4d6b7bd6a0364b77fa20105eefda2928",
-			"name": "#2 Driver",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "046d32ee6617e078bfd368c36ee4ce26",
-			"name": "#2 Helix",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "4ac059987be2507875f3de0604632f40",
-			"name": "#2 Hookshot",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "f9d14a3195ceba8733b54eb143c82e9e",
-			"name": "#2 Hyzer",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "e8dd5df51f263ec5b54f2ac91b52765f",
-			"name": "#2 Putter",
-			"maxWeight": "181"
-		},
-		{
-			"discId": "0e1d3bbc8ca93a743a3f082e9c533bd1",
-			"name": "#2 Roller",
-			"maxWeight": "196"
-		},
-		{
-			"discId": "1788aeb24cc3a2a561c9d3eabda19475",
-			"name": "#2 Slice",
-			"maxWeight": "179"
-		},
-		{
-			"discId": "173f8fce9daa26cfb08fc88f5bfe91d0",
-			"name": "#2 Upshot",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "365cc52a7eb12779a6ce1a1d0ccc83d2",
-			"name": "#3 Driver",
-			"maxWeight": "187"
-		},
-		{
-			"discId": "18136fd683992c3120fcb4b3ad7e556f",
-			"name": "#3 Flyer",
-			"maxWeight": "185"
-		},
-		{
-			"discId": "2f1e08625834d9162e06e5f58e6ea671",
-			"name": "#3 Hookshot",
-			"maxWeight": "182"
-		},
-		{
-			"discId": "aea8f3bfde9ab8206760d2582c80320a",
-			"name": "#4 Driver",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "d2904abfb5a7166f020316c5cda792ad",
-			"name": "AT-6 Texan",
-			"maxWeight": "179"
-		},
-		{
-			"discId": "a4c2a9e2b6b51fb7ca60bb1f2b72af13",
-			"name": "B-17 Flying Fortress",
-			"maxWeight": "196"
-		},
-		{
-			"discId": "3ccc3a2368bdcce4dfd224161ff5639a",
-			"name": "B-2 Stealth",
-			"maxWeight": "186"
-		},
-		{
-			"discId": "bac92b3ac825e98ed5bfd33ac8c29eac",
-			"name": "B-25 Mitchell",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "bac92b3ac825e98ed5bfd33ac8c29eac",
-			"name": "B-25 Mitchell",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "d9fc7efd94d47e7241ba6b8c5aef4b6f",
-			"name": "Dauntless",
-			"maxWeight": "184"
-		},
-		{
-			"discId": "0784f6537b68386cce64398ad783cdb6",
-			"name": "F-14 Tomcat",
-			"maxWeight": "180"
-		},
-		{
-			"discId": "18bf49a2fba7ed1b7664f034ae9f51b3",
-			"name": "F-15 Eagle",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "fd5abd103b2f1137c4b5bd6f00d0a96c",
-			"name": "F-18 Hornet",
-			"maxWeight": "183"
-		},
-		{
-			"discId": "e9a335ec429eb55076e2250ec4596f21",
-			"name": "F-4-U Corsair",
-			"maxWeight": "181"
-		},
-		{
-			"discId": "4c21fcaa592637869626492a974342ca",
-			"name": "F-6 Hellcat",
-			"maxWeight": "188"
-		},
-		{
-			"discId": "e73325e1d8ca548a932a34dc2a7a4e7e",
-			"name": "F-8-F Bearcat",
-			"maxWeight": "179"
-		},
-		{
-			"discId": "dc526452cd346ea11f29403129c77928",
-			"name": "Falcon",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "743f4eec2ce9012a04d0cc6d1d3a55fb",
-			"name": "Maxline -- 1",
-			"maxWeight": "177"
-		},
-		{
-			"discId": "e0b1417b15d89fecd7ae300bfa6f6c9a",
-			"name": "P-38 Lightning",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "bd24ad72914a45b49c093a527ad73b1e",
-			"name": "P-38J Lightning",
-			"maxWeight": "181"
-		},
-		{
-			"discId": "068fd6b468d8b162595f270bfe51ef09",
-			"name": "P-40 Flying Tiger",
-			"maxWeight": "181"
-		},
-		{
-			"discId": "f0538bb2ef8cae762df4a43478bded58",
-			"name": "P-51 Mustang",
-			"maxWeight": "181"
-		},
-		{
-			"discId": "ad4aaa78d75cbb6e40176d7a0befaf49",
-			"name": "Rubber Putter",
-			"maxWeight": "179"
-		},
-		{
-			"discId": "62254b7ab0a2b3d3138bde893dde64a3",
-			"name": "Spitfire",
-			"maxWeight": "185"
-		},
-		{
-			"discId": "10f1c46caf873486e530570e7a298bbb",
-			"name": "SR-71 Blackbird",
-			"maxWeight": "182"
-		},
-		{
-			"discId": "7cdbeab07cf781a3efd75c7c43333bc4",
-			"name": "The Driver",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "7f428e9e9c552cb53e9b40bdd57be587",
-			"name": "Thunderbolt",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "3cf38032f58c35658eeb35a180cf98ef",
-			"name": "Upshot",
-			"maxWeight": "179"
-		},
-		{
-			"discId": "c947e8d14405aa30d194b5ce156c4e2d",
-			"name": "X-15",
-			"maxWeight": "178"
-		}
-	]
+    "company": "Lightning Discs",
+    "companyId": "457ba641340a812b28f949a26fca3e7b",
+    "discs": [
+        {
+            "discId": "27c7a71d1d7ddc13a9cf6d80b7827bc4",
+            "name": "#1 Flyer",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "4e664323e6601a9ba1c57ad00d3e7858",
+            "name": "#1 Helix",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "6583c6d03bdc5b151bf846d46635774e",
+            "name": "#1 Hookshot",
+            "maxWeight": "184"
+        },
+        {
+            "discId": "a32984084da4c10c4e5dbc8edf39b402",
+            "name": "#1 Hyzer",
+            "maxWeight": "180"
+        },
+        {
+            "discId": "e5519b3d4e8c21a59f64c58607e2ae96",
+            "name": "#1 Roller",
+            "maxWeight": "180"
+        },
+        {
+            "discId": "81dca8d72e4cd45bb4026ac0e9617920",
+            "name": "#1 Slice",
+            "maxWeight": "188"
+        },
+        {
+            "discId": "4d6b7bd6a0364b77fa20105eefda2928",
+            "name": "#2 Driver",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "046d32ee6617e078bfd368c36ee4ce26",
+            "name": "#2 Helix",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "4ac059987be2507875f3de0604632f40",
+            "name": "#2 Hookshot",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "f9d14a3195ceba8733b54eb143c82e9e",
+            "name": "#2 Hyzer",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "e8dd5df51f263ec5b54f2ac91b52765f",
+            "name": "#2 Putter",
+            "maxWeight": "181"
+        },
+        {
+            "discId": "0e1d3bbc8ca93a743a3f082e9c533bd1",
+            "name": "#2 Roller",
+            "maxWeight": "196"
+        },
+        {
+            "discId": "1788aeb24cc3a2a561c9d3eabda19475",
+            "name": "#2 Slice",
+            "maxWeight": "179"
+        },
+        {
+            "discId": "173f8fce9daa26cfb08fc88f5bfe91d0",
+            "name": "#2 Upshot",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "365cc52a7eb12779a6ce1a1d0ccc83d2",
+            "name": "#3 Driver",
+            "maxWeight": "187"
+        },
+        {
+            "discId": "18136fd683992c3120fcb4b3ad7e556f",
+            "name": "#3 Flyer",
+            "maxWeight": "185"
+        },
+        {
+            "discId": "2f1e08625834d9162e06e5f58e6ea671",
+            "name": "#3 Hookshot",
+            "maxWeight": "182"
+        },
+        {
+            "discId": "aea8f3bfde9ab8206760d2582c80320a",
+            "name": "#4 Driver",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "d2904abfb5a7166f020316c5cda792ad",
+            "name": "AT-6 Texan",
+            "maxWeight": "179"
+        },
+        {
+            "discId": "a4c2a9e2b6b51fb7ca60bb1f2b72af13",
+            "name": "B-17 Flying Fortress",
+            "maxWeight": "196"
+        },
+        {
+            "discId": "3ccc3a2368bdcce4dfd224161ff5639a",
+            "name": "B-2 Stealth",
+            "maxWeight": "186"
+        },
+        {
+            "discId": "bac92b3ac825e98ed5bfd33ac8c29eac",
+            "name": "B-25 Mitchell",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "bac92b3ac825e98ed5bfd33ac8c29eac",
+            "name": "B-25 Mitchell",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "d9fc7efd94d47e7241ba6b8c5aef4b6f",
+            "name": "Dauntless",
+            "maxWeight": "184"
+        },
+        {
+            "discId": "0784f6537b68386cce64398ad783cdb6",
+            "name": "F-14 Tomcat",
+            "maxWeight": "180"
+        },
+        {
+            "discId": "18bf49a2fba7ed1b7664f034ae9f51b3",
+            "name": "F-15 Eagle",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "fd5abd103b2f1137c4b5bd6f00d0a96c",
+            "name": "F-18 Hornet",
+            "maxWeight": "183"
+        },
+        {
+            "discId": "e9a335ec429eb55076e2250ec4596f21",
+            "name": "F-4-U Corsair",
+            "maxWeight": "181"
+        },
+        {
+            "discId": "4c21fcaa592637869626492a974342ca",
+            "name": "F-6 Hellcat",
+            "maxWeight": "188"
+        },
+        {
+            "discId": "e73325e1d8ca548a932a34dc2a7a4e7e",
+            "name": "F-8-F Bearcat",
+            "maxWeight": "179"
+        },
+        {
+            "discId": "dc526452cd346ea11f29403129c77928",
+            "name": "Falcon",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "743f4eec2ce9012a04d0cc6d1d3a55fb",
+            "name": "Maxline -- 1",
+            "maxWeight": "177"
+        },
+        {
+            "discId": "e0b1417b15d89fecd7ae300bfa6f6c9a",
+            "name": "P-38 Lightning",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "bd24ad72914a45b49c093a527ad73b1e",
+            "name": "P-38J Lightning",
+            "maxWeight": "181"
+        },
+        {
+            "discId": "068fd6b468d8b162595f270bfe51ef09",
+            "name": "P-40 Flying Tiger",
+            "maxWeight": "181"
+        },
+        {
+            "discId": "f0538bb2ef8cae762df4a43478bded58",
+            "name": "P-51 Mustang",
+            "maxWeight": "181"
+        },
+        {
+            "discId": "ad4aaa78d75cbb6e40176d7a0befaf49",
+            "name": "Rubber Putter",
+            "maxWeight": "179"
+        },
+        {
+            "discId": "62254b7ab0a2b3d3138bde893dde64a3",
+            "name": "Spitfire",
+            "maxWeight": "185"
+        },
+        {
+            "discId": "10f1c46caf873486e530570e7a298bbb",
+            "name": "SR-71 Blackbird",
+            "maxWeight": "182"
+        },
+        {
+            "discId": "7cdbeab07cf781a3efd75c7c43333bc4",
+            "name": "The Driver",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "7f428e9e9c552cb53e9b40bdd57be587",
+            "name": "Thunderbolt",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "3cf38032f58c35658eeb35a180cf98ef",
+            "name": "Upshot",
+            "maxWeight": "179"
+        },
+        {
+            "discId": "c947e8d14405aa30d194b5ce156c4e2d",
+            "name": "X-15",
+            "maxWeight": "178"
+        }
+    ]
 }

@@ -1,31 +1,31 @@
 {
-	"company": "Aerobie",
-	"companyId": "314fe4aa5099feacc94a1c8fc4369019",
-	"discs": [
-		{
-			"discId": "9e9ee40e4ef015a1a7060a492ffb8c2e",
-			"name": "Arrow - Approach & Putter",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "287a6ee647bff86509e4197eedf4ae9c",
-			"name": "Epic Driver",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "97859338d26035df58215f65c743f5b4",
-			"name": "Sharpshooter #1",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "7b3c5ad487a36cbc719c9c13a9221e36",
-			"name": "Sharpshooter #2",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "fa7169bc9c26ad218b0a1848311200cf",
-			"name": "Sharpshooter #3",
-			"maxWeight": "177"
-		}
-	]
+    "company": "Aerobie",
+    "companyId": "314fe4aa5099feacc94a1c8fc4369019",
+    "discs": [
+        {
+            "discId": "9e9ee40e4ef015a1a7060a492ffb8c2e",
+            "name": "Arrow - Approach & Putter",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "287a6ee647bff86509e4197eedf4ae9c",
+            "name": "Epic Driver",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "97859338d26035df58215f65c743f5b4",
+            "name": "Sharpshooter #1",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "7b3c5ad487a36cbc719c9c13a9221e36",
+            "name": "Sharpshooter #2",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "fa7169bc9c26ad218b0a1848311200cf",
+            "name": "Sharpshooter #3",
+            "maxWeight": "177"
+        }
+    ]
 }

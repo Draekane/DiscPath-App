@@ -1,16 +1,16 @@
 {
-	"company": "TOBU Discs",
-	"companyId": "6386842ec0e16b10299ba72b09566ac1",
-	"discs": [
-		{
-			"discId": "517349a3cdc1acf50617693e3ba33988",
-			"name": "Charge",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "33a5998249da6426057e70038ca3b023",
-			"name": "Power Roller",
-			"maxWeight": "175"
-		}
-	]
+    "company": "TOBU Discs",
+    "companyId": "6386842ec0e16b10299ba72b09566ac1",
+    "discs": [
+        {
+            "discId": "517349a3cdc1acf50617693e3ba33988",
+            "name": "Charge",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "33a5998249da6426057e70038ca3b023",
+            "name": "Power Roller",
+            "maxWeight": "175"
+        }
+    ]
 }

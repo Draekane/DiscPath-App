@@ -1,21 +1,21 @@
 {
-	"company": "Black Zombie Disc Golf",
-	"companyId": "9421499350632fc32954aab05155c6e8",
-	"discs": [
-		{
-			"discId": "559bda7910370648e34fc55783eec393",
-			"name": "Berzerker",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "21de0335eff140f1016b34f30cc83ae0",
-			"name": "Chainsaw",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "ecd03afff3ba51979312a1114f791d13",
-			"name": "Crossbow",
-			"maxWeight": "182"
-		}
-	]
+    "company": "Black Zombie Disc Golf",
+    "companyId": "9421499350632fc32954aab05155c6e8",
+    "discs": [
+        {
+            "discId": "559bda7910370648e34fc55783eec393",
+            "name": "Berzerker",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "21de0335eff140f1016b34f30cc83ae0",
+            "name": "Chainsaw",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "ecd03afff3ba51979312a1114f791d13",
+            "name": "Crossbow",
+            "maxWeight": "182"
+        }
+    ]
 }

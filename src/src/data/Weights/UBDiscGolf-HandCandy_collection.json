@@ -1,21 +1,21 @@
 {
-	"company": "UB Disc Golf - Hand Candy",
-	"companyId": "875aab8fffb72da924395c71a359deb6",
-	"discs": [
-		{
-			"discId": "976472a144efa6a4b849b24ac6b18867",
-			"name": "Lex",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "47f1d10b9dba37c2be840a5487938024",
-			"name": "Procul",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "cb6afc251c32a8b13fe01c3f8797a9ea",
-			"name": "Monstrum",
-			"maxWeight": "175"
-		}
-	]
+    "company": "UB Disc Golf - Hand Candy",
+    "companyId": "875aab8fffb72da924395c71a359deb6",
+    "discs": [
+        {
+            "discId": "976472a144efa6a4b849b24ac6b18867",
+            "name": "Lex",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "47f1d10b9dba37c2be840a5487938024",
+            "name": "Procul",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "cb6afc251c32a8b13fe01c3f8797a9ea",
+            "name": "Monstrum",
+            "maxWeight": "175"
+        }
+    ]
 }

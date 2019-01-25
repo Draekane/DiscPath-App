@@ -1,16 +1,16 @@
 {
-	"company": "Plastic Addicts",
-	"companyId": "06cee8e0dec92600135338304bf626b7",
-	"discs": [
-		{
-			"discId": "ed39614395abc84cc06199f96fd4e6ca",
-			"name": "Habit",
-			"maxWeight": "183"
-		},
-		{
-			"discId": "c143a2430949511de6ed78cf1c63afc9",
-			"name": "Intervention",
-			"maxWeight": "176"
-		}
-	]
+    "company": "Plastic Addicts",
+    "companyId": "06cee8e0dec92600135338304bf626b7",
+    "discs": [
+        {
+            "discId": "ed39614395abc84cc06199f96fd4e6ca",
+            "name": "Habit",
+            "maxWeight": "183"
+        },
+        {
+            "discId": "c143a2430949511de6ed78cf1c63afc9",
+            "name": "Intervention",
+            "maxWeight": "176"
+        }
+    ]
 }

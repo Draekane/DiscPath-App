@@ -1,21 +1,21 @@
 {
-	"company": "Kestrel Outdoors",
-	"companyId": "3dba2ec67f859b90d21d5f05f42c7933",
-	"discs": [
-		{
-			"discId": "a378932898306bb7a93a085135eb2be0",
-			"name": "Beginner Fairway Driver",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "bc4b49ffff1585c80ecf582f51258e7b",
-			"name": "Beginner Mid-Range",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "ed043820e22239875ee02f924c98badb",
-			"name": "Beginner Putter",
-			"maxWeight": "176"
-		}
-	]
+    "company": "Kestrel Outdoors",
+    "companyId": "3dba2ec67f859b90d21d5f05f42c7933",
+    "discs": [
+        {
+            "discId": "a378932898306bb7a93a085135eb2be0",
+            "name": "Beginner Fairway Driver",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "bc4b49ffff1585c80ecf582f51258e7b",
+            "name": "Beginner Mid-Range",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "ed043820e22239875ee02f924c98badb",
+            "name": "Beginner Putter",
+            "maxWeight": "176"
+        }
+    ]
 }

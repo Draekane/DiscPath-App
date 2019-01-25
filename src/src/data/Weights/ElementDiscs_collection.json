@@ -1,36 +1,36 @@
 {
-	"company": "Element Discs",
-	"companyId": "eaf219a5cdcf1d798d5fc5504c7c6e44",
-	"discs": [
-		{
-			"discId": "65d5644b4049b4215a6faa532e7e5ad5",
-			"name": "Chromium",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "603b50bf5216929f5d77e2fbfcdd1cf1",
-			"name": "Iridium",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "a0a569e51b6942b08a4a72a5dbfabcb6",
-			"name": "Lithium",
-			"maxWeight": "182"
-		},
-		{
-			"discId": "67f993309d1f63621f22d9f2f485b4c2",
-			"name": "Plutonium",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "858d5d4d6658569e29daf666063402d8",
-			"name": "Radium",
-			"maxWeight": "182"
-		},
-		{
-			"discId": "4ddad617ae03a4b0a7eebd557bdd9bde",
-			"name": "Uranium",
-			"maxWeight": "176"
-		}
-	]
+    "company": "Element Discs",
+    "companyId": "eaf219a5cdcf1d798d5fc5504c7c6e44",
+    "discs": [
+        {
+            "discId": "65d5644b4049b4215a6faa532e7e5ad5",
+            "name": "Chromium",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "603b50bf5216929f5d77e2fbfcdd1cf1",
+            "name": "Iridium",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "a0a569e51b6942b08a4a72a5dbfabcb6",
+            "name": "Lithium",
+            "maxWeight": "182"
+        },
+        {
+            "discId": "67f993309d1f63621f22d9f2f485b4c2",
+            "name": "Plutonium",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "858d5d4d6658569e29daf666063402d8",
+            "name": "Radium",
+            "maxWeight": "182"
+        },
+        {
+            "discId": "4ddad617ae03a4b0a7eebd557bdd9bde",
+            "name": "Uranium",
+            "maxWeight": "176"
+        }
+    ]
 }

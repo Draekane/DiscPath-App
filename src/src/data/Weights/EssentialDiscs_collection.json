@@ -1,11 +1,11 @@
 {
-	"company": "Essential Discs",
-	"companyId": "2e5b2c143a89898fd6c86cbe290e6f80",
-	"discs": [
-		{
-			"discId": "8dc0611245a871ac51bbeebb85f33a58",
-			"name": "Honey",
-			"maxWeight": "176"
-		}
-	]
+    "company": "Essential Discs",
+    "companyId": "2e5b2c143a89898fd6c86cbe290e6f80",
+    "discs": [
+        {
+            "discId": "8dc0611245a871ac51bbeebb85f33a58",
+            "name": "Honey",
+            "maxWeight": "176"
+        }
+    ]
 }

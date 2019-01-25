@@ -1,11 +1,11 @@
 {
-	"company": "Best Disc Golf Discs",
-	"companyId": "f1ba040f0fba99541056d59fa6f904c3",
-	"discs": [
-		{
-			"discId": "0a68eacd3d12d899f78c180b3fa6e9c4",
-			"name": "MaxGlide",
-			"maxWeight": "175"
-		}
-	]
+    "company": "Best Disc Golf Discs",
+    "companyId": "f1ba040f0fba99541056d59fa6f904c3",
+    "discs": [
+        {
+            "discId": "0a68eacd3d12d899f78c180b3fa6e9c4",
+            "name": "MaxGlide",
+            "maxWeight": "175"
+        }
+    ]
 }

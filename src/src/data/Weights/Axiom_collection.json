@@ -1,101 +1,101 @@
 {
-	"company": "Axiom Discs",
-	"companyId": "2c5d94dd609855f43c21c46744afec3d",
-	"discs": [
-		{
-			"discId": "effdb9ce6c5d44df31b89d7069c8e0fb",
-			"name": "Alias",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "d3ea5af450fafb77cc11358608b40381",
-			"name": "Clash",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "793f61767f801fd89dc3a2c0b4bb85c4",
-			"name": "Crave",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "ba197673301ae3096b5bbdbe46168817",
-			"name": "Defy",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "9bfbee9ca8a689f3a593fa0cf118982f",
-			"name": "Envy",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "367648c2bd291d5f051540a44e75327d",
-			"name": "Excite",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "a8155b0ea02bae01cd41369018837d6b",
-			"name": "Fireball",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "ef97df9d746d0e65ed18786ab30031c6",
-			"name": "Insanity",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "52bc99d5390cae1d4097906abde0560e",
-			"name": "Inspire",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "a09633237c07a2d334952914bfd17327",
-			"name": "Mayhem",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "d4dbdf6f8e0aa2f9cb0e0efa247d4762",
-			"name": "Panic",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "f56ec2ab97d604832d90f6394e3f341f",
-			"name": "Proxy",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "09b530d59645f71d7b2ac90a69ba18de",
-			"name": "Tantrum",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "5a727a99621f9e7f1d95f26fb6e5c529",
-			"name": "Tenacity",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "700172587c791cceb2ca5c6744e211db",
-			"name": "Theory",
-			"maxWeight": "178"
-		},
-		{
-			"discId": "a5f799ea7465e196f726736ff8551980",
-			"name": "Thrill",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "bf5b9a8cd84acfc66a57b8a4903fb353",
-			"name": "Vanish",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "a94d4950bba6053ab0fa6feb2ebe04ec",
-			"name": "Virus",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "9b1271f437c566a7fb4836696ee65de6",
-			"name": "Wrath",
-			"maxWeight": "175"
-		}
-	]
+    "company": "Axiom Discs",
+    "companyId": "2c5d94dd609855f43c21c46744afec3d",
+    "discs": [
+        {
+            "discId": "effdb9ce6c5d44df31b89d7069c8e0fb",
+            "name": "Alias",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "d3ea5af450fafb77cc11358608b40381",
+            "name": "Clash",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "793f61767f801fd89dc3a2c0b4bb85c4",
+            "name": "Crave",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "ba197673301ae3096b5bbdbe46168817",
+            "name": "Defy",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "9bfbee9ca8a689f3a593fa0cf118982f",
+            "name": "Envy",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "367648c2bd291d5f051540a44e75327d",
+            "name": "Excite",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "a8155b0ea02bae01cd41369018837d6b",
+            "name": "Fireball",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "ef97df9d746d0e65ed18786ab30031c6",
+            "name": "Insanity",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "52bc99d5390cae1d4097906abde0560e",
+            "name": "Inspire",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "a09633237c07a2d334952914bfd17327",
+            "name": "Mayhem",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "d4dbdf6f8e0aa2f9cb0e0efa247d4762",
+            "name": "Panic",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "f56ec2ab97d604832d90f6394e3f341f",
+            "name": "Proxy",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "09b530d59645f71d7b2ac90a69ba18de",
+            "name": "Tantrum",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "5a727a99621f9e7f1d95f26fb6e5c529",
+            "name": "Tenacity",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "700172587c791cceb2ca5c6744e211db",
+            "name": "Theory",
+            "maxWeight": "178"
+        },
+        {
+            "discId": "a5f799ea7465e196f726736ff8551980",
+            "name": "Thrill",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "bf5b9a8cd84acfc66a57b8a4903fb353",
+            "name": "Vanish",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "a94d4950bba6053ab0fa6feb2ebe04ec",
+            "name": "Virus",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "9b1271f437c566a7fb4836696ee65de6",
+            "name": "Wrath",
+            "maxWeight": "175"
+        }
+    ]
 }

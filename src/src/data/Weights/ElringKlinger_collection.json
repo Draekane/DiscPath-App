@@ -1,21 +1,21 @@
 {
-	"company": "ElringKlinger",
-	"companyId": "89f6bc04df7b122bbe0361209a510402",
-	"discs": [
-		{
-			"discId": "5470f88d3b4136d589ef86dcda82cde3",
-			"name": "Bull Bay",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "f2b6dcdc344bf345a187b3c6c19af47e",
-			"name": "Oak",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "9498cfff62ca3992ca606d9f3744891a",
-			"name": "Willow",
-			"maxWeight": "178"
-		}
-	]
+    "company": "ElringKlinger",
+    "companyId": "89f6bc04df7b122bbe0361209a510402",
+    "discs": [
+        {
+            "discId": "5470f88d3b4136d589ef86dcda82cde3",
+            "name": "Bull Bay",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "f2b6dcdc344bf345a187b3c6c19af47e",
+            "name": "Oak",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "9498cfff62ca3992ca606d9f3744891a",
+            "name": "Willow",
+            "maxWeight": "178"
+        }
+    ]
 }

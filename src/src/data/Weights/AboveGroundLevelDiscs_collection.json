@@ -1,21 +1,21 @@
 {
-	"company": "Above Ground Level",
-	"companyId": "7c2cadc0ba9202828038b2d1b8189cf8",
-	"discs": [
-		{
-			"discId": "598dc6cac8e88fcb24b8947ff0c8566e",
-			"name": "Cypress",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "3c76b950a9a791f8ad4ee7e2d0d87dc9",
-			"name": "Madrone",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "894d3f0306b8ebebb46b53d81d0f04a8",
-			"name": "Manzanita",
-			"maxWeight": "174"
-		}
-	]
+    "company": "Above Ground Level",
+    "companyId": "7c2cadc0ba9202828038b2d1b8189cf8",
+    "discs": [
+        {
+            "discId": "598dc6cac8e88fcb24b8947ff0c8566e",
+            "name": "Cypress",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "3c76b950a9a791f8ad4ee7e2d0d87dc9",
+            "name": "Madrone",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "894d3f0306b8ebebb46b53d81d0f04a8",
+            "name": "Manzanita",
+            "maxWeight": "174"
+        }
+    ]
 }

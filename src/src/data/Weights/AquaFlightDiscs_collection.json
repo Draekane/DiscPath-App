@@ -1,31 +1,31 @@
 {
-	"company": "AquaFlight Discs",
-	"companyId": "0d347de92f5fec80acca948bbc884b5f",
-	"discs": [
-		{
-			"discId": "48f63cb503df1d50950dbdf8c3b84e0c",
-			"name": "Dragonfly",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "8ead667a956b4d987491bc9346c2c3b6",
-			"name": "Osprey",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "bc7b25f9a21537aa9f3027177d3647eb",
-			"name": "Peace Frog",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "a6d15caf7e8c9d203af5aa134219bab2",
-			"name": "Pelican",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "ae832e9b5bda2699db45f3fa6aa8c556",
-			"name": "Swift",
-			"maxWeight": "174"
-		}
-	]
+    "company": "AquaFlight Discs",
+    "companyId": "0d347de92f5fec80acca948bbc884b5f",
+    "discs": [
+        {
+            "discId": "48f63cb503df1d50950dbdf8c3b84e0c",
+            "name": "Dragonfly",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "8ead667a956b4d987491bc9346c2c3b6",
+            "name": "Osprey",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "bc7b25f9a21537aa9f3027177d3647eb",
+            "name": "Peace Frog",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "a6d15caf7e8c9d203af5aa134219bab2",
+            "name": "Pelican",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "ae832e9b5bda2699db45f3fa6aa8c556",
+            "name": "Swift",
+            "maxWeight": "174"
+        }
+    ]
 }

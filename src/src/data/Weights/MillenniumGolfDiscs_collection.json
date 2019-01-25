@@ -1,136 +1,136 @@
 {
-	"company": "Millennium Golf Discs",
-	"companyId": "fe4da5ff7d0b5fd9efd54d2013c9efdd",
-	"discs": [
-		{
-			"discId": "a0678bcea04dbd6852c219062ab2bb3c",
-			"name": "Aquarius",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "397cbf6db9d7ae6906ae420aedc5346c",
-			"name": "Aries",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "3cce5f3eaf76e098ba8e28f7bbba3f92",
-			"name": "Astra",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "ac93382a9df95a1c9ddc5e6e052f3007",
-			"name": "Aurora MF",
-			"maxWeight": "180"
-		},
-		{
-			"discId": "8c670f8c37b95e1ed14a0ce414b049c7",
-			"name": "EXP",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "f0124ab87a56fb8b9d5388e502bffcd2",
-			"name": "JLS",
-			"maxWeight": "174"
-		},
-		{
-			"discId": "64f11d52551be1c9cb27d573c767a4d6",
-			"name": "Marksman",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "4b22a8d4e9bfac264a6f5786888cca2b",
-			"name": "Midrange MS/Aurora",
-			"maxWeight": "181"
-		},
-		{
-			"discId": "a0af9aa292e905b158a006fc4b365e65",
-			"name": "Moab",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "90232e671a3437d278a825bfe0c7d7e0",
-			"name": "Mortar",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "39e25ac3d737c46452305eefe324372c",
-			"name": "Omega",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "a7ccd35d68db2bc6622a35aeed0db649",
-			"name": "Omega SuperSoft Putter Big Bead",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "89d4985fd9a24d7c5c7f3c0873c7d8d0",
-			"name": "Orion LF",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "e445c44738302f368201d1cb840d98e3",
-			"name": "Orion LS",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "81a3565d2b09dcefc93277fff519cc13",
-			"name": "Polaris LF",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "4d12a57e1a8519f0f30ad7acc6c004d5",
-			"name": "Polaris LS",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "d19ab717497af52699b73126bf3d9944",
-			"name": "Quasar",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "8dad7d40eb3d1497ad04c5b5caf79820",
-			"name": "QJLS",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "cdd0b760e6acae49fd7f2f8c848ab818",
-			"name": "QMS",
-			"maxWeight": "181"
-		},
-		{
-			"discId": "cade02da531ec7b83540ce770161b4d3",
-			"name": "Scorpius",
-			"maxWeight": "175"
-		},
-		{
-			"discId": "583f4e97c5e19fa60586877a2adef4ee",
-			"name": "Sentinel MF",
-			"maxWeight": "180"
-		},
-		{
-			"discId": "8dd179092876db14002c8202b69063c2",
-			"name": "Tachyon LF",
-			"maxWeight": "180"
-		},
-		{
-			"discId": "7850a9832d955be91c703dda9e6be412",
-			"name": "Tachyon LS",
-			"maxWeight": "180"
-		},
-		{
-			"discId": "c72916caa11ab2366bc6884f13edf9b1",
-			"name": "Tank - Panzer",
-			"maxWeight": "176"
-		},
-		{
-			"discId": "b9c94e8a87e3647c5a0fa4ff358ecc65",
-			"name": "Taurus",
-			"maxWeight": "180"
-		},
-		{
-			"discId": "55a8998f66694a4e848bede0fad3684a",
-			"name": "Veteran",
-			"maxWeight": "175"
-		}
-	]
+    "company": "Millennium Golf Discs",
+    "companyId": "fe4da5ff7d0b5fd9efd54d2013c9efdd",
+    "discs": [
+        {
+            "discId": "a0678bcea04dbd6852c219062ab2bb3c",
+            "name": "Aquarius",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "397cbf6db9d7ae6906ae420aedc5346c",
+            "name": "Aries",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "3cce5f3eaf76e098ba8e28f7bbba3f92",
+            "name": "Astra",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "ac93382a9df95a1c9ddc5e6e052f3007",
+            "name": "Aurora MF",
+            "maxWeight": "180"
+        },
+        {
+            "discId": "8c670f8c37b95e1ed14a0ce414b049c7",
+            "name": "EXP",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "f0124ab87a56fb8b9d5388e502bffcd2",
+            "name": "JLS",
+            "maxWeight": "174"
+        },
+        {
+            "discId": "64f11d52551be1c9cb27d573c767a4d6",
+            "name": "Marksman",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "4b22a8d4e9bfac264a6f5786888cca2b",
+            "name": "Midrange MS/Aurora",
+            "maxWeight": "181"
+        },
+        {
+            "discId": "a0af9aa292e905b158a006fc4b365e65",
+            "name": "Moab",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "90232e671a3437d278a825bfe0c7d7e0",
+            "name": "Mortar",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "39e25ac3d737c46452305eefe324372c",
+            "name": "Omega",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "a7ccd35d68db2bc6622a35aeed0db649",
+            "name": "Omega SuperSoft Putter Big Bead",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "89d4985fd9a24d7c5c7f3c0873c7d8d0",
+            "name": "Orion LF",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "e445c44738302f368201d1cb840d98e3",
+            "name": "Orion LS",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "81a3565d2b09dcefc93277fff519cc13",
+            "name": "Polaris LF",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "4d12a57e1a8519f0f30ad7acc6c004d5",
+            "name": "Polaris LS",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "d19ab717497af52699b73126bf3d9944",
+            "name": "Quasar",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "8dad7d40eb3d1497ad04c5b5caf79820",
+            "name": "QJLS",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "cdd0b760e6acae49fd7f2f8c848ab818",
+            "name": "QMS",
+            "maxWeight": "181"
+        },
+        {
+            "discId": "cade02da531ec7b83540ce770161b4d3",
+            "name": "Scorpius",
+            "maxWeight": "175"
+        },
+        {
+            "discId": "583f4e97c5e19fa60586877a2adef4ee",
+            "name": "Sentinel MF",
+            "maxWeight": "180"
+        },
+        {
+            "discId": "8dd179092876db14002c8202b69063c2",
+            "name": "Tachyon LF",
+            "maxWeight": "180"
+        },
+        {
+            "discId": "7850a9832d955be91c703dda9e6be412",
+            "name": "Tachyon LS",
+            "maxWeight": "180"
+        },
+        {
+            "discId": "c72916caa11ab2366bc6884f13edf9b1",
+            "name": "Tank - Panzer",
+            "maxWeight": "176"
+        },
+        {
+            "discId": "b9c94e8a87e3647c5a0fa4ff358ecc65",
+            "name": "Taurus",
+            "maxWeight": "180"
+        },
+        {
+            "discId": "55a8998f66694a4e848bede0fad3684a",
+            "name": "Veteran",
+            "maxWeight": "175"
+        }
+    ]
 }

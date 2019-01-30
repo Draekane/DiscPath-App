@@ -40,20 +40,20 @@ const DiscList = (props) => {
         return (
           <div className="selectedDisc-display">
             <span title="Click to Hide this Disc" >
-              <FaEye onClick={handleDisableSelectedDisc} className="fa-eye-icon" />
+              <FaEye onClick={handleDisableSelectedDisc} className="fa-eye-icon greenFill" />
             </span> {selectedDisc.company} {selectedDisc.name} - ({getDiscType(selectedDisc.type)})&nbsp;&nbsp;&nbsp;
             <span title="Click to Edit this Disc" >
-              <FaEdit className="fa-edit-icon" onClick={handleSelectDiscOpenModal} />
+              <FaEdit className="fa-edit-icon greenFill" onClick={handleSelectDiscOpenModal} />
             </span>
           </div>);
       }
       return (
         <div className="selectedDisc-display">
           <span title="Click to Show this Disc" >
-            <FaEyeSlash onClick={handleDisableSelectedDisc} className="fa-eye-slash-icon" />
+            <FaEyeSlash onClick={handleDisableSelectedDisc} className="fa-eye-slash-icon greyFill" />
           </span> {selectedDisc.company} {selectedDisc.name} - ({getDiscType(selectedDisc.type)})&nbsp;&nbsp;&nbsp;
           <span title="Click to Edit this Disc" >
-            <FaEdit className="fa-edit-icon" onClick={handleSelectDiscOpenModal} />
+            <FaEdit className="fa-edit-icon greenFill" onClick={handleSelectDiscOpenModal} />
           </span>
         </div>);
     }
@@ -106,12 +106,15 @@ const DiscList = (props) => {
                   if (row.value === true) {
                     return (
                       <span title="Click to Hide this Disc" >
-                        <FaEye onClick={handleDisableSimilarDisc.bind(this, row)} className="fa-eye-icon" />
+                        <FaEye onClick={handleDisableSimilarDisc.bind(this, row)} className="fa-eye-icon greenFill" />
                       </span>);
                   }
                   return (
                     <span title="Click to Show this Disc" >
-                      <FaEyeSlash onClick={handleDisableSimilarDisc.bind(this, row)} className="fa-eye-slash-icon" />
+                      <FaEyeSlash
+                        onClick={handleDisableSimilarDisc.bind(this, row)}
+                        className="fa-eye-slash-icon greyFill"
+                      />
                     </span>);
                 },
                 width: 25,

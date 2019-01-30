@@ -25,12 +25,40 @@ body {
   font-weight: bolder;
 }
 
-.fa-eye-icon, 
-.fa-pencil-icon, 
-.fa-floppyO-icon,
-.fa-edit-icon,
-.fa-question-circle-icon,
-.fa-money-icon {
+/* Color Fills */
+/* Primary Colors */
+.redFill {
+  color: $red10;
+  fill: $red10;
+
+  &:hover {
+    color: $red14;
+    fill: $red14;
+  }
+}
+
+.blueFill {
+  color: $blue10;
+  fill: $blue10;
+
+  &:hover {
+    color: $turquoise14;
+    fill: $turquoise14;
+  }
+}
+
+.yellowFill {
+  color: $yellow10;
+  fill: $yellow10;
+
+  &:hover {
+    color: $yellow14;
+    fill: $yellow14;
+  }
+}
+
+/* Secondary Colors */
+.greenFill {
   color: $green10;
   fill: $green10;
 
@@ -40,8 +68,89 @@ body {
   }
 }
 
-.fa-eye-slash-icon,
-.fa-database-icon {
+.purpleFill {
+  color: $purple10;
+  fill: $purple10;
+
+  &:hover {
+    color: $purple14;
+    fill: $purple14;
+  }
+}
+
+.orangeFill {
+  color: $orange10;
+  fill: $orange10;
+
+  &:hover {
+    color: $orange14;
+    fill: $orange14;
+  }
+}
+
+/* Tertiary Colors */
+.magentaFill {
+  color: $magenta10;
+  fill: $magenta10;
+
+  &:hover {
+    color: $magenta14;
+    fill: $magenta14;
+  }
+}
+
+.vermillionFill {
+  color: $vermillion10;
+  fill: $vermillion10;
+
+  &:hover {
+    color: $vermillion14;
+    fill: $vermillion14;
+  }
+}
+
+.amberFill {
+  color: $amber10;
+  fill: $amber10;
+
+  &:hover {
+    color: $amber14;
+    fill: $amber14;
+  }
+}
+
+.chartreuseFill {
+  color: $chartreuse10;
+  fill: $chartreuse10;
+
+  &:hover {
+    color: $chartreuse14;
+    fill: $chartreuse14;
+  }
+}
+
+.tealFill {
+  color: $teal10;
+  fill: $teal10;
+
+  &:hover {
+    color: $teal14;
+    fill: $teal14;
+  }
+}
+
+.violetFill {
+  color: $violet10;
+  fill: $violet10;
+
+  &:hover {
+    color: $violet14;
+    fill: $violet14;
+  }
+}
+
+/* Hues */
+.greyFill {
   color: $grey04;
   fill: $grey04;
 
@@ -51,39 +160,7 @@ body {
   }
 }
 
-.fa-times-circleO-icon,
-.fa-trashO-icon,
-.fa-exclamation-triangle-icon {
-  color: $red10;
-  fill: $red10;
-
-  &:hover {
-    color: $red14;
-    fill: $red14;
-  }
-}
-
 .fa-close-icon {
   float: right;  
-  color: $red10;
   z-index: '100';
-  fill: $red10;
-
-  &:hover {
-    color: $red14;
-    fill: $red14;
-  }
-}
-
-.fa-plus-squareO-icon,
-.fa-toggle-on-icon,
-.fa-paypal-icon,
-.fa-envelope-icon {
-  color: $blue10;
-  fill: $blue10;
-
-  &:hover {
-    color: $turquoise14;
-    fill: $turquoise14;
-  }
 }

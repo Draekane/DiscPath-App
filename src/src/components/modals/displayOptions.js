@@ -20,18 +20,18 @@ const DisplayOptions = ({
   };
 
   const getCurrentSpread = (fanPower) => {
-    if (fanPower) return (<FaToggleOn onClick={changeFanPower} className="fa-toggle-on-icon" />);
-    return (<FaToggleOff onClick={changeFanPower} className="fa-toggle-on-icon" />);
+    if (fanPower) return (<FaToggleOn onClick={changeFanPower} className="fa-toggle-on-icon blueFill" />);
+    return (<FaToggleOff onClick={changeFanPower} className="fa-toggle-on-icon blueFill" />);
   };
 
   const getLabels = (lieDistance) => {
-    if (lieDistance) return (<FaToggleOn onClick={changeDistance} className="fa-toggle-on-icon" />);
-    return (<FaToggleOff onClick={changeDistance} className="fa-toggle-on-icon" />);
+    if (lieDistance) return (<FaToggleOn onClick={changeDistance} className="fa-toggle-on-icon blueFill" />);
+    return (<FaToggleOff onClick={changeDistance} className="fa-toggle-on-icon blueFill" />);
   };
 
   const getCircles = (lieCircle) => {
-    if (lieCircle) return (<FaToggleOn onClick={changeCircles} className="fa-toggle-on-icon" />);
-    return (<FaToggleOff onClick={changeCircles} className="fa-toggle-on-icon" />);
+    if (lieCircle) return (<FaToggleOn onClick={changeCircles} className="fa-toggle-on-icon blueFill" />);
+    return (<FaToggleOff onClick={changeCircles} className="fa-toggle-on-icon blueFill" />);
   };
 
   const pathsOptions = [

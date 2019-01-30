@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import DocumentTitle from 'react-document-title';
 import _ from 'lodash';
-import Slider from 'react-rangeslider';
+// import Slider from 'react-rangeslider';
 
 import WithHeaderAndNav from '../../hoc/withHeaderAndNav';
 import FlightMap from '../../components/map/flightMap';
@@ -110,7 +110,7 @@ class SimilarDisc extends Component {
       similarity,
       'matrix',
     );
-    selectSimilarDisc(selectDisc, selectedDisc);
+    selectSimilarDisc({ ...selectDisc, color: 'blue' }, selectedDisc);
     setSimilarDiscs(newSimilarDiscs, similarDiscs, true);
   }
 
@@ -167,7 +167,7 @@ class SimilarDisc extends Component {
       selectedDiscId,
       similarDiscs,
       similarDiscEditModal,
-      similarity,
+      // similarity,
       enlargeMap,
       changeFanPower,
       changeThrowerType,

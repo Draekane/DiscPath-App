@@ -27,6 +27,7 @@
   "dependencies": {
     "babel-preset-env": "^1.6.1",
     "babel-register": "^6.26.0",
+    "classnames": "^2.2.6",
     "expect": "^23.1.0",
     "express": "4.16.3",
     "faker": "^4.1.0",

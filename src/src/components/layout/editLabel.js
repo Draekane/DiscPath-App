@@ -119,10 +119,10 @@ export default class EditLabel extends Component {
             onBlur={onTextboxBlur}
           />
           <span title="Save Name Edit" style={{ 'padding-left': '10px' }} >
-            <FaFloppyO className="fa-floppyO-icon" onClick={this.handleSave} />
+            <FaFloppyO className="fa-floppyO-icon greenFill" onClick={this.handleSave} />
           </span>
           <span title="Cancel Name Edit" style={{ 'padding-left': '10px' }} >
-            <FaTimesCircleO className="fa-times-circleO-icon" onClick={this.resetState} />
+            <FaTimesCircleO className="fa-times-circleO-icon redFill" onClick={this.resetState} />
           </span>
         </div>
       );
@@ -134,7 +134,7 @@ export default class EditLabel extends Component {
             title={`${this.state.editValue} (Double click to edit)`}
             className="edit-label_value"
           >
-            {this.state.editValue} <FaEdit onClick={this.handleDoubleClick} className="fa-edit-icon" />
+            {this.state.editValue} <FaEdit onClick={this.handleDoubleClick} className="fa-edit-icon greenFill" />
           </div>
         </div>
       );

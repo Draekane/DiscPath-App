@@ -5,6 +5,7 @@ import { FaMinusSquare, FaPlusSquare, FaCircle, FaSquare, FaSquareO } from 'reac
 
 import { discShape, throwerShape, displayOptionsShape } from '../../propTypeShapes/bagShapes';
 import { processForHex, hb, drawPath, drawLie } from '../../utils/calculatorUtils';
+import * as splineColors from '../../utils/colors';
 
 const lieConfig = {
   D: { color: '#ff7800', outline: '#884000' }, // Distance Driver Colors
@@ -28,11 +29,7 @@ const mapColorsDark = {
   fonts: '#aaaaaa',
 };
 
-const splinePoints = {
-  spr: [0, 0, 0, 0, 0, 0, 255, 255],
-  spg: [255, 255, 255, 255, 255, 255, 255, 0],
-  spb: [0, 0, 0, 0, 0, 0, 0, 0],
-};
+let splinePoints = splineColors.green;
 
 let canvas;
 let pathBuffer;
@@ -164,6 +161,11 @@ class FlightMap extends Component {
     // Cycle through Discs
     _.forEach(orderedDiscs, (disc) => {
       if (!disc.enabled) { return; }
+      if (disc.color) {
+        splinePoints = splineColors[disc.color];
+      } else {
+        splinePoints = splineColors.green;
+      }
 
       const {
         maxWeight,

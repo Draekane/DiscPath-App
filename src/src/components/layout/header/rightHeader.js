@@ -12,7 +12,7 @@ import {
 const RightHeader = () => (
   <header className="App-header">
     <Popup
-      trigger={<div className="right-header-item">Donate <FaMoney className="fa-money-icon" /></div>}
+      trigger={<div className="right-header-item">Donate <FaMoney className="fa-money-icon greenFill" /></div>}
       position="bottom left"
       on="click"
       closeOnDocumentClick
@@ -27,7 +27,7 @@ const RightHeader = () => (
           target="_blank"
           rel="noopener noreferrer"
           className="help-request"
-        ><FaMoney className="fa-money-icon" /> Support us on Patreon<br />(recurring donation)
+        ><FaMoney className="fa-money-icon greenFill" /> Support us on Patreon<br />(recurring donation)
         </a>
       </div>
       <div className="menu-items">
@@ -36,12 +36,12 @@ const RightHeader = () => (
           target="_blank"
           rel="noopener noreferrer"
           className="help-request"
-        ><FaPaypal className="fa-paypal-icon" /> Donate via PayPal<br />(one-time donation)
+        ><FaPaypal className="fa-paypal-icon blueFill" /> Donate via PayPal<br />(one-time donation)
         </a>
       </div>
     </Popup>
     <Popup
-      trigger={<div className="right-header-item">Contact Us <FaEnvelope className="fa-envelope-icon" /></div>}
+      trigger={<div className="right-header-item">Contact Us <FaEnvelope className="fa-envelope-icon blueIcon" /></div>}
       position="bottom left"
       on="click"
       closeOnDocumentClick
@@ -56,7 +56,7 @@ const RightHeader = () => (
           target="_blank"
           rel="noopener noreferrer"
           className="help-request"
-        ><FaExclamationTriangle className="fa-exclamation-triangle-icon" /> Report a Problem / Offer Suggestions
+        ><FaExclamationTriangle className="fa-exclamation-triangle-icon redFill" /> Report a Problem / Offer Suggestions
         </a>
       </div>
       <div className="menu-items">
@@ -65,7 +65,7 @@ const RightHeader = () => (
           target="_blank"
           rel="noopener noreferrer"
           className="help-request"
-        ><FaQuestionCircle className="fa-question-circle-icon" /> View Documentation / Ask Questions
+        ><FaQuestionCircle className="fa-question-circle-icon greenFill" /> View Documentation / Ask Questions
         </a>
       </div>
       <div className="menu-items">
@@ -74,7 +74,7 @@ const RightHeader = () => (
           target="_blank"
           rel="noopener noreferrer"
           className="help-request"
-        ><FaDatabase className="fa-database-icon" /> Disc flight information from Inbounds Disc Golf InFlight Guide
+        ><FaDatabase className="fa-database-icon greyFill" /> Disc flight information from Inbounds Disc Golf InFlight Guide
         </a>
       </div>
     </Popup>

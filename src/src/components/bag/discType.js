@@ -37,13 +37,13 @@ const DiscType = (props) => {
       if (enabled) {
         return (
           <div className={headerClassName} title={`Hide All ${title}`}>
-            <FaEye onClick={handleDisableDiscType} className="fa-eye-icon" />
+            <FaEye onClick={handleDisableDiscType} className="fa-eye-icon greenFill" />
             &nbsp;&nbsp;{title}
           </div>);
       }
       return (
         <div className={headerClassName} title={`Show All ${title}`}>
-          <FaEyeSlash onClick={handleDisableDiscType} className="fa-eye-slash-icon" />&nbsp;&nbsp;{title}
+          <FaEyeSlash onClick={handleDisableDiscType} className="fa-eye-slash-icon greyFill" />&nbsp;&nbsp;{title}
         </div>);
     }
     return <div className={headerClassName}>&nbsp;&nbsp;{title}</div>;
@@ -67,12 +67,12 @@ const DiscType = (props) => {
                 if (row.value === true) {
                   return (
                     <span title="Click to Hide this Disc" >
-                      <FaEye onClick={handleDisableDisc.bind(this, row)} className="fa-eye-icon" />
+                      <FaEye onClick={handleDisableDisc.bind(this, row)} className="fa-eye-icon greenFill" />
                     </span>);
                 }
                 return (
                   <span title="Click to Show this Disc" >
-                    <FaEyeSlash onClick={handleDisableDisc.bind(this, row)} className="fa-eye-slash-icon" />
+                    <FaEyeSlash onClick={handleDisableDisc.bind(this, row)} className="fa-eye-slash-icon greyFill" />
                   </span>);
               },
               width: 25,
@@ -91,7 +91,7 @@ const DiscType = (props) => {
               width: 25,
               Cell: row => (
                 <span title="Click to Edit this Disc" >
-                  <FaEdit onClick={handleDiscEdit.bind(this, row.value)} className="fa-edit-icon" />
+                  <FaEdit onClick={handleDiscEdit.bind(this, row.value)} className="fa-edit-icon greenFill" />
                 </span>
               ),
             },
@@ -101,7 +101,7 @@ const DiscType = (props) => {
               width: 25,
               Cell: row => (
                 <span title="Click to Remove Disc from Basket" >
-                  <FaTrashO onClick={handleDiscRemove.bind(this, row.value)} className="fa-trashO-icon" />
+                  <FaTrashO onClick={handleDiscRemove.bind(this, row.value)} className="fa-trashO-icon redFill" />
                 </span>),
             },
           ],

@@ -68,10 +68,10 @@ const BagSelector = (props) => {
         defaultValue={currentBag.name}
       />&nbsp;&nbsp;&nbsp;
       <span title="Save Bag Name Update" >
-        <FaFloppyO onClick={handleUpdateBagNameFinish} className="fa-floppyO-icon" />
+        <FaFloppyO onClick={handleUpdateBagNameFinish} className="fa-floppyO-icon greenFill" />
       </span>&nbsp;&nbsp;&nbsp;
       <span title="Cancel Bag Name Update" >
-        <FaTimesCircleO onClick={handleUpdateBagNameCancel} className="fa-times-circleO-icon" />
+        <FaTimesCircleO onClick={handleUpdateBagNameCancel} className="fa-times-circleO-icon redFill" />
       </span>
     </React.Fragment>
   );
@@ -85,10 +85,10 @@ const BagSelector = (props) => {
         defaultValue={currentBag.name}
       />&nbsp;&nbsp;&nbsp;
       <span title="Save New Bag">
-        <FaFloppyO onClick={handleAddBagFinish} className="fa-floppyO-icon" />
+        <FaFloppyO onClick={handleAddBagFinish} className="fa-floppyO-icon greenFill" />
       </span>&nbsp;&nbsp;&nbsp;
       <span title="Cancel Adding New Bag" >
-        <FaTimesCircleO onClick={handleAddBagCancel} className="fa-times-circleO-icon" />
+        <FaTimesCircleO onClick={handleAddBagCancel} className="fa-times-circleO-icon redFill" />
       </span>
     </React.Fragment>
   );
@@ -100,13 +100,13 @@ const BagSelector = (props) => {
         {currentBagOptions}
       </select>&nbsp;&nbsp;&nbsp;
       <span title="Edit Current Bag Name" >
-        <FaPencil onClick={handleUpdateBagNameStart} className="fa-pencil-icon" />
+        <FaPencil onClick={handleUpdateBagNameStart} className="fa-pencil-icon greenFill" />
       </span>&nbsp;&nbsp;&nbsp;
       <span title="Add New Bag" >
-        <FaPlusSquareO onClick={handleAddBagStart} className="fa-plus-squareO-icon" />
+        <FaPlusSquareO onClick={handleAddBagStart} className="fa-plus-squareO-icon blueFill" />
       </span>&nbsp;&nbsp;&nbsp;
       <span title="Remove Existing Bag" >
-        <FaTrashO onClick={handleRemoveBag} className="fa-trashO-icon" />
+        <FaTrashO onClick={handleRemoveBag} className="fa-trashO-icon redFill" />
       </span>
     </React.Fragment>
   );

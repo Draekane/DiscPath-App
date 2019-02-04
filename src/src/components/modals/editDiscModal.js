@@ -4,9 +4,14 @@ import Modal from 'react-modal';
 import Select from 'react-select';
 import Slider from 'react-rangeslider';
 import { FaClose } from 'react-icons/lib/fa';
+import { getColorPoint } from '../../utils/colors';
 
 import { discShape, throwerShape } from '../../propTypeShapes/bagShapes';
-import { powerPercentage, throwerTypeOptions } from '../../utils/throwerValueUtils';
+import {
+  powerPercentage,
+  throwerTypeOptions,
+  flightColorOptions,
+} from '../../utils/throwerValueUtils';
 import EditLabel from '../layout/editLabel';
 
 const EditDiscModal = (props) => {
@@ -78,7 +83,45 @@ const EditDiscModal = (props) => {
     },
   };
 
+  const dot = (color = '#cccccc') => ({
+    alignItems: 'center',
+    display: 'flex',
+
+    ':before': {
+      backgroundColor: color,
+      borderRadius: 10,
+      content: '" "',
+      display: 'block',
+      marginRight: 8,
+      height: 10,
+      width: 10,
+    },
+  });
+
   const displayedName = (displayName && displayName !== '') ? displayName : `${company} ${name}`;
+
+  const colorStyles = {
+    control: styles => ({ ...styles, backgroundColor: 'white' }),
+    option: (styles, {
+      data,
+      isDisabled,
+    }) => {
+      const color = getColorPoint(data.value, 0.25);
+      return {
+        ...styles,
+        backgroundColor: isDisabled
+          ? null
+          : color,
+        color: isDisabled
+          ? '#cccccc'
+          : 'black',
+        cursor: isDisabled ? 'not-allowed' : 'default',
+      };
+    },
+    input: styles => ({ ...styles, ...dot() }),
+    placeholder: styles => ({ ...styles, ...dot() }),
+    singleValue: (styles, { data }) => ({ ...styles, ...dot(getColorPoint(data.value, 0.25)) }),
+  };
 
   const displayWeightSelector = (weight, maxWeight) => {
     if (maxWeight) {
@@ -109,6 +152,18 @@ const EditDiscModal = (props) => {
       <FaClose onClick={handleCloseEdit} className="fa-close-icon" />
       <h2><EditLabel value={displayedName} updateFunction={handleDiscDisplayNameChange} disabled={disableNameEdit} /></h2>
       <div>
+        <div className="editBlock" >
+          <label htmlFor="flightPathColor">Flight Path Color: </label>
+          <Select
+            name="flightpathColorSelector"
+            id="flightpathColorSelector"
+            className="color-select"
+            options={flightColorOptions}
+            value=""
+            styles={colorStyles}
+            // onChange={handleDiscThrowTypeChange}
+          />
+        </div>
         { (!hideWeight) ? displayWeightSelector(weight, maxWeight) : null}
         { (!hidePower) ? (
           <div className="editBlock">

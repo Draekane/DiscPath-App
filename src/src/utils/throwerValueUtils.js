@@ -10,3 +10,54 @@ export const throwerTypeOptions = [
     value: 'lhbh',
   },
 ];
+
+export const flightColorOptions = [
+  {
+    label: 'yellow',
+    value: 'yellow',
+  },
+  {
+    label: 'blue',
+    value: 'blue',
+  },
+  {
+    label: 'red',
+    value: 'red',
+  },
+  {
+    label: 'purple',
+    value: 'purple',
+  },
+  {
+    label: 'orange',
+    value: 'orange',
+  },
+  {
+    label: 'green',
+    value: 'green',
+  },
+  {
+    label: 'magenta',
+    value: 'magenta',
+  },
+  {
+    label: 'vermillion',
+    value: 'vermillion',
+  },
+  {
+    label: 'amber',
+    value: 'amber',
+  },
+  {
+    label: 'chartreuse',
+    value: 'chartreuse',
+  },
+  {
+    label: 'teal',
+    value: 'teal',
+  },
+  {
+    label: 'violet',
+    value: 'violet',
+  },
+];

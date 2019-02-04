@@ -37,6 +37,10 @@ body {
   }
 }
 
+.redBack { 
+  background-color: $red15;
+}
+
 .blueFill {
   color: $blue10;
   fill: $blue10;
@@ -47,6 +51,10 @@ body {
   }
 }
 
+.blueBack {
+  background-color: $blue15;
+}
+
 .yellowFill {
   color: $yellow10;
   fill: $yellow10;
@@ -55,6 +63,10 @@ body {
     color: $yellow14;
     fill: $yellow14;
   }
+}
+
+.yellowBack {
+  background-color: $yellow15;
 }
 
 /* Secondary Colors */
@@ -68,6 +80,10 @@ body {
   }
 }
 
+.greenBack {
+  background-color: $green15;
+}
+
 .purpleFill {
   color: $purple10;
   fill: $purple10;
@@ -78,6 +94,10 @@ body {
   }
 }
 
+.purpleBack {
+  background-color: $purple15;
+}
+
 .orangeFill {
   color: $orange10;
   fill: $orange10;
@@ -86,6 +106,10 @@ body {
     color: $orange14;
     fill: $orange14;
   }
+}
+
+.orangeBack {
+  background-color: $orange15;
 }
 
 /* Tertiary Colors */
@@ -99,6 +123,10 @@ body {
   }
 }
 
+.magentaBack {
+  background-color: $magenta15;
+}
+
 .vermillionFill {
   color: $vermillion10;
   fill: $vermillion10;
@@ -107,6 +135,10 @@ body {
     color: $vermillion14;
     fill: $vermillion14;
   }
+}
+
+.vermillionBack {
+  background-color: $vermillion15;
 }
 
 .amberFill {
@@ -119,6 +151,10 @@ body {
   }
 }
 
+.amberBack {
+  background-color: $amber15;
+}
+
 .chartreuseFill {
   color: $chartreuse10;
   fill: $chartreuse10;
@@ -127,6 +163,10 @@ body {
     color: $chartreuse14;
     fill: $chartreuse14;
   }
+}
+
+.chartreuseBack {
+  background-color: $chartreuse15;
 }
 
 .tealFill {
@@ -139,6 +179,10 @@ body {
   }
 }
 
+.tealBack {
+  background-color: $teal15;
+}
+
 .violetFill {
   color: $violet10;
   fill: $violet10;
@@ -147,6 +191,10 @@ body {
     color: $violet14;
     fill: $violet14;
   }
+}
+
+.violetBack {
+  background-color: $violet15;
 }
 
 /* Hues */

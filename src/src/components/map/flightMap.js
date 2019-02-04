@@ -4,8 +4,8 @@ import _ from 'lodash';
 import { FaMinusSquare, FaPlusSquare, FaCircle, FaSquare, FaSquareO } from 'react-icons/lib/fa';
 
 import { discShape, throwerShape, displayOptionsShape } from '../../propTypeShapes/bagShapes';
-import { processForHex, hb, drawPath, drawLie } from '../../utils/calculatorUtils';
-import * as splineColors from '../../utils/colors';
+import { drawPath, drawLie } from '../../utils/calculatorUtils';
+import { getColorPoint } from '../../utils/colors';
 
 const lieConfig = {
   D: { color: '#ff7800', outline: '#884000' }, // Distance Driver Colors
@@ -28,8 +28,6 @@ const mapColorsDark = {
   centerLine: '#ff0000',
   fonts: '#aaaaaa',
 };
-
-let splinePoints = splineColors.green;
 
 let canvas;
 let pathBuffer;
@@ -142,9 +140,6 @@ class FlightMap extends Component {
     let pwi;
     let pw;
     let lie;
-    let ry;
-    let gy;
-    let by;
     let pws;
     let pointColor;
     let weightDiff = 0;
@@ -161,11 +156,6 @@ class FlightMap extends Component {
     // Cycle through Discs
     _.forEach(orderedDiscs, (disc) => {
       if (!disc.enabled) { return; }
-      if (disc.color) {
-        splinePoints = splineColors[disc.color];
-      } else {
-        splinePoints = splineColors.green;
-      }
 
       const {
         maxWeight,
@@ -189,14 +179,11 @@ class FlightMap extends Component {
       if (displayOptions.fanPower) {
         for (let i = 0; i <= 24; i++) {
           pws = i / 24.0;
-          ry = processForHex(splinePoints.spr, pws, 8);
-          gy = processForHex(splinePoints.spg, pws, 8);
-          by = processForHex(splinePoints.spb, pws, 8);
           const pwf = 0.6 + (pws * 0.6);
           const delta = Math.abs(pw - pwf);
           const a = Math.min(0.4, Math.max(0.3, Math.cos(delta * 5.5)));
 
-          const pointColor = `#${hb(a * ry)}${hb(a * gy)}${hb(a * by)}`;
+          const pointColor = getColorPoint(disc.color, pws);
           const drawPathOptions = {
             dist: (disc.range * ((weightDiff * 0.005) + 1)),
             hss: disc.hst,
@@ -229,10 +216,7 @@ class FlightMap extends Component {
 
       // draw disc path for selected throw power
       pws = (pwi / 48.0);
-      ry = processForHex(splinePoints.spr, pws, 8);
-      gy = processForHex(splinePoints.spg, pws, 8);
-      by = processForHex(splinePoints.spb, pws, 8);
-      pointColor = `#${hb(ry)}${hb(gy)}${hb(by)}`;
+      pointColor = getColorPoint(disc.color, pws);
       const drawPathOptions = {
         dist: (disc.range * ((weightDiff * 0.005) + 1)),
         hss: disc.hst,

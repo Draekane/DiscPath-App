@@ -148,6 +148,14 @@ class BagContainer extends Component {
       editDiscPower(power, disc, bag);
     }
 
+    handleSetDiscColor = (color) => {
+      const { editDiscColor } = this.props;
+      const bag = this.getCurrentBag();
+      const disc = this.getCurrentEditingDisc();
+
+      editDiscColor(color, disc, bag);
+    }
+
     handleSetDiscThrowType = (throwType) => {
       const { editDiscThrowType } = this.props;
       const bag = this.getCurrentBag();
@@ -269,6 +277,7 @@ class BagContainer extends Component {
           changeDiscWeight: this.handleSetDiscWeight,
           changeDiscPower: this.handleSetDiscPower,
           changeDiscThrowType: this.handleSetDiscThrowType,
+          changeDiscColor: this.handleSetDiscColor,
         },
       };
 
@@ -340,6 +349,7 @@ BagContainer.propTypes = {
   editDiscEnabled: PropTypes.func,
   editDiscTypeEnabled: PropTypes.func,
   editDiscName: PropTypes.func,
+  editDiscColor: PropTypes.func,
   updateDiscWear: PropTypes.func,
   editDiscWeight: PropTypes.func,
   editDiscPower: PropTypes.func,
@@ -391,6 +401,7 @@ const mapDispatchToProps = dispatch => ({
   updateDiscWear: (wear, disc, bag) => dispatch(BagActions.updateDiscWear(wear, disc, bag)),
   editDiscWeight: (weight, disc, bag) => dispatch(BagActions.editDiscWeight(weight, disc, bag)),
   editDiscPower: (power, disc, bag) => dispatch(BagActions.editDiscPower(power, disc, bag)),
+  editDiscColor: (color, disc, bag) => dispatch(BagActions.editDiscColor(color, disc, bag)),
   editDiscThrowType: (throwType, disc, bag) => dispatch(BagActions.editDiscThrowType(throwType, disc, bag)),
   removeDiscFromBag: (disc, bag) => dispatch(BagActions.removeDiscFromBag(disc, bag)),
   removeExistingBag: (currentBags, bag) => dispatch(BagActions.removeExistingBag(currentBags, bag)),

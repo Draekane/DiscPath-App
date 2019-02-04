@@ -119,6 +119,23 @@ export const editDiscEnabledFailure = error => ({
   error,
 });
 
+export const editDiscColor = (color, disc, bag) => ({
+  type: bagActionTypes.EDIT_DISC_COLOR,
+  color,
+  disc,
+  bag,
+});
+
+export const editDiscColorSuccess = bag => ({
+  type: bagActionTypes.EDIT_DISC_COLOR_SUCCESS,
+  bag,
+});
+
+export const editDiscColorFailure = error => ({
+  type: bagActionTypes.EDIT_DISC_COLOR_FAILURE,
+  error,
+});
+
 export const editDiscTypeEnabled = (enabled, discType, bag) => ({
   type: bagActionTypes.EDIT_DISC_TYPE_ENABLED,
   enabled,

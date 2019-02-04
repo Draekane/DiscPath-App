@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import ReactTable from 'react-table';
-import { FaEyeSlash, FaEye, FaTrashO, FaEdit } from 'react-icons/lib/fa';
+import { FaEyeSlash, FaEye, FaTrashO, FaEdit, FaCircle } from 'react-icons/lib/fa';
 
 import { discShape } from '../../propTypeShapes/bagShapes';
 
@@ -81,7 +81,17 @@ const DiscType = (props) => {
               id: 'discDisplayName',
               Header: 'Company',
               accessor: d => ((d.displayName && d.displayName !== '') ? d.displayName : `${d.company} ${d.name}`),
-              Cell: row => (row.value),
+              Cell: (row) => {
+                if (row.original.color) {
+                  return (
+                    <span>
+                      {row.value}
+                      <FaCircle className={`${row.original.color}Fill`} />
+                    </span>
+                  );
+                }
+                return row.value;
+              },
               className: 'leftAlignCell',
               width: 250,
             },

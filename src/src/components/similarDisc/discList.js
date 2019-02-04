@@ -85,6 +85,7 @@ const DiscList = (props) => {
       changeDiscWear: functions.handleSimilarDiscEditWear,
       changeDiscWeight: functions.handleSimilarDiscEditWeight,
       changeDiscPower: functions.handleSimilarDiscEditPower,
+      changeDiscColor: functions.handleSimilarDiscEditColor,
     },
   };
 

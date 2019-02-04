@@ -62,3 +62,8 @@ export const editSelectDiscPower = power => ({
   type: similarDiscActions.SIMILAR_EDIT_SELECT_POWER,
   power,
 });
+
+export const editSelectDiscColor = color => ({
+  type: similarDiscActions.SIMILAR_EDIT_SELECT_COLOR,
+  color,
+});

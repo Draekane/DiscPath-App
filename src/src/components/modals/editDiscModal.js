@@ -4,7 +4,7 @@ import Modal from 'react-modal';
 import Select from 'react-select';
 import Slider from 'react-rangeslider';
 import { FaClose } from 'react-icons/lib/fa';
-import { getColorPoint } from '../../utils/colors';
+import { getColorPoint, dotBefore } from '../../utils/colors';
 
 import { discShape, throwerShape } from '../../propTypeShapes/bagShapes';
 import {
@@ -32,6 +32,7 @@ const EditDiscModal = (props) => {
     maxWeight,
     name,
     power,
+    color,
     throwType,
     wear,
     weight,
@@ -63,6 +64,10 @@ const EditDiscModal = (props) => {
     if (value) functions.changeDiscThrowType(value.value);
   };
 
+  const handleDiscColorChange = (value) => {
+    if (value) functions.changeDiscColor(value.value);
+  };
+
   const handleCloseEdit = () => {
     functions.closeModal();
   };
@@ -82,21 +87,6 @@ const EditDiscModal = (props) => {
       border: 'none',
     },
   };
-
-  const dot = (color = '#cccccc') => ({
-    alignItems: 'center',
-    display: 'flex',
-
-    ':before': {
-      backgroundColor: color,
-      borderRadius: 10,
-      content: '" "',
-      display: 'block',
-      marginRight: 8,
-      height: 10,
-      width: 10,
-    },
-  });
 
   const displayedName = (displayName && displayName !== '') ? displayName : `${company} ${name}`;
 
@@ -118,9 +108,9 @@ const EditDiscModal = (props) => {
         cursor: isDisabled ? 'not-allowed' : 'default',
       };
     },
-    input: styles => ({ ...styles, ...dot() }),
-    placeholder: styles => ({ ...styles, ...dot() }),
-    singleValue: (styles, { data }) => ({ ...styles, ...dot(getColorPoint(data.value, 0.25)) }),
+    input: styles => ({ ...styles, ...dotBefore() }),
+    placeholder: styles => ({ ...styles, ...dotBefore() }),
+    singleValue: (styles, { data }) => ({ ...styles, ...dotBefore(getColorPoint(data.value, 0.25)) }),
   };
 
   const displayWeightSelector = (weight, maxWeight) => {
@@ -143,6 +133,8 @@ const EditDiscModal = (props) => {
     return null;
   };
 
+  console.log('color: ', color);
+
   return (
     <Modal
       isOpen={editDisc !== null}
@@ -159,9 +151,10 @@ const EditDiscModal = (props) => {
             id="flightpathColorSelector"
             className="color-select"
             options={flightColorOptions}
-            value=""
+            defaultValue={color}
+            value={flightColorOptions.filter(({ value }) => value === color)}
             styles={colorStyles}
-            // onChange={handleDiscThrowTypeChange}
+            onChange={handleDiscColorChange}
           />
         </div>
         { (!hideWeight) ? displayWeightSelector(weight, maxWeight) : null}
@@ -188,7 +181,7 @@ const EditDiscModal = (props) => {
               id="ThrowerTypeSelector"
               className="type-select"
               options={throwerTypeOptions}
-              value={throwType || throwerThrowType}
+              value={throwerTypeOptions.filter(({ value }) => (value === throwType || value === throwerThrowType))}
               onChange={handleDiscThrowTypeChange}
             />
           </div>) : null }
@@ -224,6 +217,7 @@ EditDiscModal.propTypes = {
       changeDiscPower: PropTypes.func,
       changeDiscThrowType: PropTypes.func,
       changeDiscWear: PropTypes.func,
+      changeDiscColor: PropTypes.func,
       closeModal: PropTypes.func,
     }),
   }),

@@ -183,7 +183,7 @@ class FlightMap extends Component {
           const delta = Math.abs(pw - pwf);
           const a = Math.min(0.4, Math.max(0.3, Math.cos(delta * 5.5)));
 
-          const pointColor = getColorPoint(disc.color, pws);
+          const pointColor = getColorPoint(disc.color, pws, a);
           const drawPathOptions = {
             dist: (disc.range * ((weightDiff * 0.005) + 1)),
             hss: disc.hst,

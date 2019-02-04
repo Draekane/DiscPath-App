@@ -77,6 +77,14 @@ const thrower = (state = initialState, action = {}) => {
           power: action.power,
         },
       };
+    case similarDiscActionTypes.SIMILAR_EDIT_SELECT_COLOR:
+      return {
+        ...state,
+        selecteDisc: {
+          ...state.selectedDisc,
+          color: action.color,
+        },
+      };
     default:
       return state;
   }

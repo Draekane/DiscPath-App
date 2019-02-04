@@ -153,6 +153,12 @@ class SimilarDisc extends Component {
     this.handleUpdateSelectedDisc({ ...selectedDisc, power });
   }
 
+  handleSimilarDiscEditColor = (color) => {
+    const { editSelectDiscColor, selectedDisc } = this.props;
+    editSelectDiscColor(color);
+    this.handleUpdateSelectedDisc({ ...selectedDisc, color });
+  }
+
   render() {
     const {
       pageTitle,
@@ -204,6 +210,7 @@ class SimilarDisc extends Component {
         handleSimilarDiscEditWeight: this.handleSimilarDiscEditWeight,
         handleSimilarDiscEditWear: this.handleSimilarDiscEditWear,
         handleSimilarDiscEditPower: this.handleSimilarDiscEditPower,
+        handleSimilarDiscEditColor: this.handleSimilarDiscEditColor,
       },
     };
 
@@ -311,6 +318,7 @@ SimilarDisc.propTypes = {
   editSelectDiscWeight: PropTypes.func,
   editSelectDiscWear: PropTypes.func,
   editSelectDiscPower: PropTypes.func,
+  editSelectDiscColor: PropTypes.func,
   setTheme: PropTypes.func,
 };
 
@@ -367,6 +375,7 @@ const mapDispatchToProps = dispatch => ({
   editSelectDiscWeight: weight => dispatch(SimilarDiscActions.editSelectDiscWeight(weight)),
   editSelectDiscWear: wear => dispatch(SimilarDiscActions.editSelectDiscWear(wear)),
   editSelectDiscPower: power => dispatch(SimilarDiscActions.editSelectDiscPower(power)),
+  editSelectDiscColor: color => dispatch(SimilarDiscActions.editSelectDiscColor(color)),
 });
 
 const withWrappers = _.flowRight(connect(mapStateToProps, mapDispatchToProps), [WithHeaderAndNav]);

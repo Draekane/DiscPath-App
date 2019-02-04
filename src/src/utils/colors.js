@@ -76,7 +76,7 @@ const violet = {
   spb: [255, 255, 255, 255, 255, 185, 125, 0],
 };
 
-export const getColorPoint = (color, power) => {
+export const getColorPoint = (color, power, a = 1) => {
   let splineColor = green;
   if (color) {
     switch (color.toLowerCase()) {
@@ -126,5 +126,35 @@ export const getColorPoint = (color, power) => {
   const gy = processForHex(splineColor.spg, power, 8);
   const by = processForHex(splineColor.spb, power, 8);
 
-  return `#${hb(ry)}${hb(gy)}${hb(by)}`;
+  return `#${hb(a * ry)}${hb(a * gy)}${hb(a * by)}`;
 };
+
+export const dotBefore = (color = '#cccccc') => ({
+  alignItems: 'center',
+  display: 'flex',
+
+  ':before': {
+    backgroundColor: color,
+    borderRadius: 10,
+    content: '" "',
+    display: 'block',
+    marginRight: 8,
+    height: 10,
+    width: 10,
+  },
+});
+
+export const dotAfter = (color = '#cccccc') => ({
+  alignItems: 'center',
+  display: 'flex',
+
+  ':after': {
+    backgroundColor: color,
+    borderRadius: 10,
+    content: '" "',
+    display: 'block',
+    marginRight: 8,
+    height: 10,
+    width: 10,
+  },
+});

@@ -87,6 +87,23 @@ export function* editDiscPowerSaga({ power, disc, bag }) {
   yield put(actions.editDiscPowerSuccess(newBag));
 }
 
+export function* editDiscColorSaga({ color, disc, bag }) {
+  if (!color || !disc || !bag) {
+    yield put(actions.editDiscColorFailure('Color, Disc, or Bag are not present'));
+  }
+  const newBag = {
+    ...bag,
+    discs: _.map(bag.discs, (d) => {
+      if (d.baggedDiscId === disc.baggedDiscId) {
+        return { ...disc, color };
+      }
+      return d;
+    }),
+  };
+
+  yield put(actions.editDiscColorSuccess(newBag));
+}
+
 export function* editDiscThrowTypeSaga({ throwType, disc, bag }) {
   if (!throwType || !disc || !bag) {
     yield put(actions.editDiscThrowTypeFailure('ThrowType, Disc, or Bag are not present'));
@@ -260,6 +277,7 @@ export default function* () {
   yield takeEvery(actionTypes.EDIT_DISC_THROW_TYPE, editDiscThrowTypeSaga);
   yield takeEvery(actionTypes.EDIT_DISC_NAME, editDiscNameSaga);
   yield takeEvery(actionTypes.EDIT_DISC_ENABLED, editDiscEnabledSaga);
+  yield takeEvery(actionTypes.EDIT_DISC_COLOR, editDiscColorSaga);
   yield takeEvery(actionTypes.EDIT_DISC_TYPE_ENABLED, editDiscTypeEnabledSaga);
   yield takeEvery(actionTypes.REMOVE_DISC_FROM_BAG, removeDiscFromBagSaga);
   yield takeEvery(actionTypes.EXPORT_BAGS_TO_FILE, exportBagsToFileSaga);

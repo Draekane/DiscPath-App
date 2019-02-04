@@ -50,6 +50,7 @@ const bag = (state = getInitialState(), action = {}) => {
     case bagActionTypes.EDIT_DISC_POWER_SUCCESS:
     case bagActionTypes.EDIT_DISC_THROW_TYPE_SUCCESS:
     case bagActionTypes.EDIT_DISC_NAME_SUCCESS:
+    case bagActionTypes.EDIT_DISC_COLOR_SUCCESS:
     case bagActionTypes.EDIT_DISC_ENABLED_SUCCESS:
     case bagActionTypes.REMOVE_DISC_FROM_BAG_SUCCESS:
     case bagActionTypes.EDIT_BAG_NAME_SUCCESS:

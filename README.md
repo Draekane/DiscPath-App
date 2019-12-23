@@ -18,3 +18,6 @@ Tests have been added and can be run with:
 `npm run test-reducers` - runs just the reducer tests
 
 `npm run test-actions` - runs just the action tests
+
+
+If interested in collaborating on this project, providing feedback on this project, or general communication on this project, feel free to join the [Slack Workspace](https://join.slack.com/t/discpath/shared_invite/enQtODczMDIzOTI5NTIzLTQ5MjgwZmUzMjA4OWE4MWY5YWFlYjRkYzJjN2Y0Yjk3ZDM1MDBkODViZDQxNjdmNDkwZWViNzZmYzI5MDVmZGI) for this project

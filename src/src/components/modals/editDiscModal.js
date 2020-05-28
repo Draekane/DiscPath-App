@@ -133,8 +133,6 @@ const EditDiscModal = (props) => {
     return null;
   };
 
-  console.log('color: ', color);
-
   return (
     <Modal
       isOpen={editDisc !== null}

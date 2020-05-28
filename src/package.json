@@ -9,15 +9,14 @@
   "scripts": {
     "start": "node server.js",
     "start-parcel": "parcel ./public/index.html",
-    "start-dev": "react-scripts start",
+    "start-dev": "node scripts/start.js",
     "start-watch": "npm-run-all -p watch-css start-dev",
     "build": "npm-run-all build-css build-js",
-    "build-js": "react-scripts build",
+    "build-js": "node scripts/build.js",
     "clean": "rimraf dist",
     "test": "mocha --require babel-core/register --require mock-local-storage --require babel-polyfill \"./tests/**/*.js\"",
     "test-actions": "mocha --require babel-core/register --require mock-local-storage --require babel-polyfill \"./tests/actions/*.js\"",
     "test-reducers": "mocha --require babel-core/register --require mock-local-storage --require babel-polyfill \"./tests/reducers/*.js\"",
-    "eject": "react-scripts eject",
     "lint": "eslint \"./src/**/*.js\"",
     "lintClean": "eslint --fix src/**/*.{js,jsx}",
     "lint-sass": "sass-lint -v",
@@ -25,21 +24,58 @@
     "watch-css": "node-sass-chokidar ./src/styles/scss -o ./src/styles/css -w --recursive"
   },
   "dependencies": {
+    "@babel/core": "7.2.2",
+    "@svgr/webpack": "4.1.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "9.0.0",
+    "babel-jest": "23.6.0",
+    "babel-loader": "8.0.5",
+    "babel-plugin-named-asset-import": "^0.3.1",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-react-app": "^7.0.2",
     "babel-register": "^6.26.0",
+    "bfj": "6.1.1",
+    "case-sensitive-paths-webpack-plugin": "2.2.0",
     "classnames": "^2.2.6",
+    "css-loader": "1.0.0",
+    "dotenv": "6.0.0",
+    "dotenv-expand": "4.2.0",
     "emotion": "^10.0.7",
+    "eslint": "5.12.0",
+    "eslint-config-react-app": "^3.0.8",
+    "eslint-loader": "2.1.1",
+    "eslint-plugin-flowtype": "2.50.1",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-jsx-a11y": "6.1.2",
+    "eslint-plugin-react": "7.12.4",
     "expect": "^23.1.0",
     "express": "4.16.3",
     "faker": "^4.1.0",
+    "file-loader": "2.0.0",
     "file-saver": "^1.3.8",
+    "fs-extra": "7.0.1",
     "history": "^4.7.2",
+    "html-webpack-plugin": "4.0.0-alpha.2",
+    "identity-obj-proxy": "3.0.0",
     "immutability-helper": "^2.6.6",
+    "jest": "23.6.0",
+    "jest-pnp-resolver": "1.0.2",
+    "jest-resolve": "23.6.0",
+    "jest-watch-typeahead": "^0.2.1",
     "lodash": "^4.17.5",
+    "mini-css-extract-plugin": "0.5.0",
     "node-sass-chokidar": "^1.3.4",
     "npm-run-all": "^4.1.5",
+    "optimize-css-assets-webpack-plugin": "5.0.1",
+    "pnp-webpack-plugin": "1.2.1",
+    "postcss-flexbugs-fixes": "4.1.0",
+    "postcss-loader": "3.0.0",
+    "postcss-preset-env": "6.5.0",
+    "postcss-safe-parser": "4.0.1",
     "prop-types": "^15.6.1",
     "react": "^16.2.0",
+    "react-app-polyfill": "^0.2.2",
+    "react-dev-utils": "^8.0.0",
     "react-document-title": "^2.0.3",
     "react-dom": "^16.2.0",
     "react-hot-loader": "^4.3.3",
@@ -50,7 +86,6 @@
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-router-redux": "^4.0.8",
-    "react-scripts": "^2.1.3",
     "react-select": "^2.3.0",
     "react-table": "^6.8.2",
     "reactjs-popup": "^1.1.1",
@@ -62,8 +97,17 @@
     "redux-saga": "^0.16.2",
     "redux-thunk": "~2.3.0",
     "reselect": "^3.0.1",
+    "resolve": "1.10.0",
+    "sass-loader": "7.1.0",
     "serve": "^9.2.0",
-    "sinon": "^7.2.2"
+    "sinon": "^7.2.2",
+    "style-loader": "0.23.1",
+    "terser-webpack-plugin": "1.2.2",
+    "url-loader": "1.1.2",
+    "webpack": "4.28.3",
+    "webpack-dev-server": "3.1.14",
+    "webpack-manifest-plugin": "2.0.4",
+    "workbox-webpack-plugin": "3.6.3"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -102,5 +146,58 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/**/*.d.ts"
+    ],
+    "resolver": "jest-pnp-resolver",
+    "setupFiles": [
+      "react-app-polyfill/jsdom"
+    ],
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+      "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,ts,tsx}"
+    ],
+    "testEnvironment": "jsdom",
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
+      "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+      "^.+\\.module\\.(css|sass|scss)$"
+    ],
+    "moduleNameMapper": {
+      "^react-native$": "react-native-web",
+      "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+    },
+    "moduleFileExtensions": [
+      "web.js",
+      "js",
+      "web.ts",
+      "ts",
+      "web.tsx",
+      "tsx",
+      "json",
+      "web.jsx",
+      "jsx",
+      "node"
+    ],
+    "watchPlugins": [
+      "D:\\Repos\\DiscPath-App\\src\\node_modules\\jest-watch-typeahead\\filename.js",
+      "D:\\Repos\\DiscPath-App\\src\\node_modules\\jest-watch-typeahead\\testname.js"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  }
 }

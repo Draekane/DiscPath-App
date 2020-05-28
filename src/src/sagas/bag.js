@@ -14,7 +14,7 @@ export function* addDiscToBagSaga({ disc, bag }) {
       ...bag.discs,
       {
         ...disc,
-        baggedDiscId: (_.max(_.map(bag.discs, disc => disc.baggedDiscId)) || 0) + 1,
+        baggedDiscId: (_.max(_.map(bag.discs, d => d.baggedDiscId)) || 0) + 1,
       },
     ],
   };

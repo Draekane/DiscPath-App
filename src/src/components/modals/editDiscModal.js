@@ -96,12 +96,12 @@ const EditDiscModal = (props) => {
       data,
       isDisabled,
     }) => {
-      const color = getColorPoint(data.value, 0.25);
+      const pointColor = getColorPoint(data.value, 0.25);
       return {
         ...styles,
         backgroundColor: isDisabled
           ? null
-          : color,
+          : pointColor,
         color: isDisabled
           ? '#cccccc'
           : 'black',
@@ -113,16 +113,16 @@ const EditDiscModal = (props) => {
     singleValue: (styles, { data }) => ({ ...styles, ...dotBefore(getColorPoint(data.value, 0.25)) }),
   };
 
-  const displayWeightSelector = (weight, maxWeight) => {
-    if (maxWeight) {
+  const displayWeightSelector = (currentWeight, currentMaxWeight) => {
+    if (currentMaxWeight) {
       return (
         <div className="editBlock">
-          <label htmlFor="discWeight">Weight (optional): {weight || maxWeight}g</label>
+          <label htmlFor="discWeight">Weight (optional): {currentWeight || currentMaxWeight}g</label>
           <Slider
-            value={weight || maxWeight}
+            value={currentWeight || currentMaxWeight}
             orientation="horizontal"
             min={120}
-            max={maxWeight}
+            max={currentMaxWeight}
             className="wear-slider"
             format={value => `${value}g`}
             onChange={handleDiscWeightChange}

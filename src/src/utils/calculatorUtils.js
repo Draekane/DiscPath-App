@@ -22,7 +22,7 @@ export const catmull = (p, i, pc) => {
 export const processForHex = (p, i, pc) =>
   Math.min(255, Math.max(0, Math.floor(catmull(p, i, pc))));
 
-export const drawPath = (options) => {
+export const drawPathMethod = (options) => {
   const {
     dist,
     hss,

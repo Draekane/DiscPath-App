@@ -30,13 +30,8 @@ for rowIndex in range(5, rows-2):
 	if (currentCompany == ""):
 		 currentCompany = { "company": worksheet.cell_value(rowIndex, 0), "companyId": str(hashlib.md5(str.encode(companyName)).hexdigest()), "discs": [] }
 
-	# out_handle.write("{\n\t\"company\": \"" + worksheet.cell_value(rowIndex, 0) + "\",\n\t\"companyId\": \"" + str(hashlib.md5(str.encode(companyName)).hexdigest()) +"\",\n\t\"discs\": [\n")
-	# out_handle.write("\t\t{\n")
 	discName = removeParens.sub('',worksheet.cell_value(rowIndex, 1)).strip()
 	discWeight = worksheet.cell_value(rowIndex, 2)
-	# out_handle.write("\t\t\t\"discId\": \"" + str(hashlib.md5(str.encode(discName)).hexdigest()) + "\",\n")
-	# out_handle.write("\t\t\t\"name\": \"" + discName + "\",\n")
-	# out_handle.write("\t\t\t\"maxWeight\": \"" + str(round(discWeight)) + "\"\n")
 	
 	currentDisc = {
 		"discId": str(hashlib.md5(str.encode(discName)).hexdigest()),

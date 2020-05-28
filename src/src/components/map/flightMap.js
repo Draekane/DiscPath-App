@@ -183,8 +183,8 @@ class FlightMap extends Component {
           const delta = Math.abs(pw - pwf);
           const a = Math.min(0.4, Math.max(0.3, Math.cos(delta * 5.5)));
 
-          const pointColor = getColorPoint(disc.color, pws, a);
-          const drawPathOptions = {
+          pointColor = getColorPoint(disc.color, pws, a);
+          const drawFanPathOptions = {
             dist: (disc.range * ((weightDiff * 0.005) + 1)),
             hss: disc.hst,
             lsf: disc.lsf,
@@ -197,8 +197,8 @@ class FlightMap extends Component {
             canvas,
             zoom,
           };
-          lie = drawPath(drawPathOptions);
-          const drawLieOptions = {
+          lie = drawPath(drawFanPathOptions);
+          const drawFanLieOptions = {
             x: lie[0],
             y: lie[1],
             markLie: (drawPath === 'all' && i % 2 === 0),
@@ -210,7 +210,7 @@ class FlightMap extends Component {
             outlineBuffer,
             zoom,
           };
-          drawLie(drawLieOptions);
+          drawLie(drawFanLieOptions);
         }
       }
 
@@ -277,17 +277,17 @@ class FlightMap extends Component {
 
     if (displayOptions.lieDistance) {
       _.forEach(lieLabels, (key) => {
-        const lie = key[0];
+        const keyLie = key[0];
         const dn = key[1];
-        const txt = `${setHeight - lie[1]}' ${Math.floor((setHeight - lie[1]) / 3.33)}m`;
+        const txt = `${setHeight - keyLie[1]}' ${Math.floor((setHeight - keyLie[1]) / 3.33)}m`;
         // const txt = `x: ${175 - lie[0]}, y: ${550 - lie[1]}`;
         context.font = '10px helvetica';
         context.textAlign = 'center';
         context.strokeStyle = colors.background;
         context.fillStyle = colors.fonts;
         context.lineWidth = 1;
-        const adjustX = lie[0] * zoom;
-        const adjustY = lie[1] * zoom;
+        const adjustX = keyLie[0] * zoom;
+        const adjustY = keyLie[1] * zoom;
         context.strokeText(txt, adjustX, adjustY - 6);
         context.fillText(txt, adjustX, adjustY - 6);
         context.font = '9px helvetica';

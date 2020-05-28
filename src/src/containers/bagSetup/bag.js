@@ -26,9 +26,9 @@ class BagContainer extends Component {
       const discData = discId.split('-');
 
       if (discData.length === 2) {
-        const company = _.find(companies, company => company.companyId === discData[0]);
+        const company = _.find(companies, c => c.companyId === discData[0]);
         if (company) {
-          const disc = _.find(company.discs, disc => disc.discId === discData[1]);
+          const disc = _.find(company.discs, d => d.discId === discData[1]);
           return { company, disc };
         }
       }
@@ -38,9 +38,9 @@ class BagContainer extends Component {
     getBaggedDiscById = (baggedDiscId) => {
       const { currentBags, selectedBagId } = this.props;
       if (!baggedDiscId) return null;
-      const bag = _.find(currentBags, bag => bag.bagId === selectedBagId);
+      const bag = _.find(currentBags, b => b.bagId === selectedBagId);
       if (bag) {
-        const disc = _.find(bag.discs, disc => disc.baggedDiscId === baggedDiscId);
+        const disc = _.find(bag.discs, d => d.baggedDiscId === baggedDiscId);
         return disc;
       }
       return null;
@@ -60,7 +60,7 @@ class BagContainer extends Component {
     getCurrentBag = () => {
       const { currentBags, selectedBagId } = this.props;
       if (!selectedBagId) return null;
-      const bag = _.find(currentBags, bag => bag.bagId === selectedBagId);
+      const bag = _.find(currentBags, b => b.bagId === selectedBagId);
       return bag;
     }
 

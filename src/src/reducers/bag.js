@@ -39,7 +39,7 @@ const saveToLocalStore = (updateState) => {
   localStorage.setItem(localStoreName, JSON.stringify(updateState));
 };
 
-const bag = (state = getInitialState(), action = {}) => {
+const bagArray = (state = getInitialState(), action = {}) => {
   let newState;
   let newBag;
 
@@ -108,13 +108,9 @@ const bag = (state = getInitialState(), action = {}) => {
       };
       break;
     case bagActionTypes.ADD_NEW_BAG_FINISH:
-      newState = {
-        ...state,
-        addBag: false,
-        updateBag: false,
-      };
-      break;
     case bagActionTypes.ADD_NEW_BAG_CANCEL:
+    case bagActionTypes.UPDATE_BAG_NAME_FINISH:
+    case bagActionTypes.UPDATE_BAG_NAME_CANCEL:
       newState = {
         ...state,
         addBag: false,
@@ -126,20 +122,6 @@ const bag = (state = getInitialState(), action = {}) => {
         ...state,
         addBag: false,
         updateBag: true,
-      };
-      break;
-    case bagActionTypes.UPDATE_BAG_NAME_FINISH:
-      newState = {
-        ...state,
-        addBag: false,
-        updateBag: false,
-      };
-      break;
-    case bagActionTypes.UPDATE_BAG_NAME_CANCEL:
-      newState = {
-        ...state,
-        addBag: false,
-        updateBag: false,
       };
       break;
     case bagActionTypes.REMOVE_EXISTING_BAG_SUCCESS:
@@ -201,4 +183,4 @@ const bag = (state = getInitialState(), action = {}) => {
   return newState;
 };
 
-export default bag;
+export default bagArray;

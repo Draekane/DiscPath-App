@@ -14,9 +14,9 @@
     "build": "npm-run-all build-css build-js",
     "build-js": "node scripts/build.js",
     "clean": "rimraf dist",
-    "test": "mocha --require babel-core/register --require mock-local-storage --require babel-polyfill \"./tests/**/*.js\"",
-    "test-actions": "mocha --require babel-core/register --require mock-local-storage --require babel-polyfill \"./tests/actions/*.js\"",
-    "test-reducers": "mocha --require babel-core/register --require mock-local-storage --require babel-polyfill \"./tests/reducers/*.js\"",
+    "test": "jest",
+    "test-actions": "jest \"./tests/actions/*.js\"",
+    "test-reducers": "jest \"./tests/reducers/*.js\"",
     "lint": "eslint \"./src/**/*.js\"",
     "lintClean": "eslint --fix src/**/*.{js,jsx}",
     "lint-sass": "sass-lint -v",
@@ -24,15 +24,14 @@
     "watch-css": "node-sass-chokidar ./src/styles/scss -o ./src/styles/css -w --recursive"
   },
   "dependencies": {
-    "@babel/core": "7.2.2",
     "@svgr/webpack": "4.1.0",
-    "babel-core": "7.0.0-bridge.0",
-    "babel-eslint": "9.0.0",
-    "babel-jest": "23.6.0",
-    "babel-loader": "8.0.5",
-    "babel-plugin-named-asset-import": "^0.3.1",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react-app": "^7.0.2",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.0.1",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-named-asset-import": "^0.3.6",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react-app": "^9.1.2",
     "babel-register": "^6.26.0",
     "bfj": "6.1.1",
     "case-sensitive-paths-webpack-plugin": "2.2.0",
@@ -58,10 +57,10 @@
     "html-webpack-plugin": "4.0.0-alpha.2",
     "identity-obj-proxy": "3.0.0",
     "immutability-helper": "^2.6.6",
-    "jest": "23.6.0",
-    "jest-pnp-resolver": "1.0.2",
-    "jest-resolve": "23.6.0",
-    "jest-watch-typeahead": "^0.2.1",
+    "jest": "^26.0.1",
+    "jest-pnp-resolver": "^1.2.1",
+    "jest-resolve": "^26.0.1",
+    "jest-watch-typeahead": "^0.6.0",
     "lodash": "^4.17.5",
     "mini-css-extract-plugin": "0.5.0",
     "node-sass-chokidar": "^1.3.4",
@@ -111,13 +110,9 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
-    "babel-eslint": "9.0.0",
-    "babel-loader": "8.0.4",
     "babel-plugin-transform-inline-environment-variables": "^0.3.0",
     "babel-plugin-wildcard": "^4.0.0",
     "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "eslint": "5.6.0",
     "eslint-config-airbnb": "^16.1.0",
@@ -157,8 +152,7 @@
       "react-app-polyfill/jsdom"
     ],
     "testMatch": [
-      "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
-      "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,ts,tsx}"
+      "<rootDir>/__tests__/**/*.{js,jsx,ts,tsx}"
     ],
     "testEnvironment": "jsdom",
     "testURL": "http://localhost",
@@ -191,13 +185,5 @@
       "D:\\Repos\\DiscPath-App\\src\\node_modules\\jest-watch-typeahead\\filename.js",
       "D:\\Repos\\DiscPath-App\\src\\node_modules\\jest-watch-typeahead\\testname.js"
     ]
-  },
-  "babel": {
-    "presets": [
-      "react-app"
-    ]
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   }
 }

@@ -62,7 +62,7 @@
     "redux-saga": "^0.16.2",
     "redux-thunk": "~2.3.0",
     "reselect": "^3.0.1",
-    "serve": "^9.2.0",
+    "serve": "^11.3.2",
     "sinon": "^7.2.2"
   },
   "devDependencies": {
